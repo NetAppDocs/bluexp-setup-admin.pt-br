@@ -1,0 +1,141 @@
+= 
+:allow-uri-read: 
+
+
+. Certifique-se de ter permissões no Azure para criar um aplicativo do ative Directory e atribuir o aplicativo a uma função.
++
+Para obter mais informações, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentação do Microsoft Azure: Permissões necessárias"^]
+
+. No portal do Azure, abra o serviço *Microsoft Entra ID*.
++
+image:screenshot_azure_ad.png["Mostra o serviço ative Directory no Microsoft Azure."]
+
+. No menu, selecione *inscrições de aplicativos*.
+. Selecione *novo registo*.
+. Especifique detalhes sobre o aplicativo:
++
+** *Nome*: Insira um nome para o aplicativo.
+** *Tipo de conta*: Selecione um tipo de conta (qualquer funcionará com o BlueXP ).
+** * URI de redirecionamento*: Você pode deixar este campo em branco.
+
+
+. Selecione *Registe-se*.
++
+Você criou o aplicativo AD e o principal de serviço.
+
+
+
+. Crie uma função personalizada:
++
+Observe que você pode criar uma função personalizada do Azure usando o portal do Azure, o Azure PowerShell, a CLI do Azure ou a API REST. As etapas a seguir mostram como criar a função usando a CLI do Azure. Se você preferir usar um método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentação do Azure"^]
+
++
+.. Copie o conteúdo do link:reference-permissions-azure.html["Permissões de função personalizadas para o conetor"] e salve-o em um arquivo JSON.
+.. Modifique o arquivo JSON adicionando IDs de assinatura do Azure ao escopo atribuível.
++
+Você deve adicionar o ID para cada assinatura do Azure a partir da qual os usuários criarão sistemas Cloud Volumes ONTAP.
+
++
+*Exemplo*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. Use o arquivo JSON para criar uma função personalizada no Azure.
++
+As etapas a seguir descrevem como criar a função usando o Bash no Azure Cloud Shell.
+
++
+*** Comece https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] e escolha o ambiente Bash.
+*** Carregue o arquivo JSON.
++
+image:screenshot_azure_shell_upload.png["Uma captura de tela do Azure Cloud Shell, onde você pode escolher a opção para carregar um arquivo."]
+
+*** Use a CLI do Azure para criar a função personalizada:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+Agora você deve ter uma função personalizada chamada Operador BlueXP  que você pode atribuir à máquina virtual do conetor.
+
+
+
+
+
+. Atribua o aplicativo à função:
++
+.. No portal do Azure, abra o serviço *Subscrições*.
+.. Selecione a subscrição.
+.. Selecione *Access Control (IAM) > Add > Add > Add Role assignment* (Adicionar controlo de acesso).
+.. Na guia *função*, selecione a função *Operador BlueXP * e selecione *seguinte*.
+.. Na guia *Membros*, execute as seguintes etapas:
++
+*** Mantenha *Usuário, grupo ou responsável do serviço* selecionado.
+*** Selecione *Selecionar membros*.
++
+image:screenshot-azure-service-principal-role.png["Uma captura de tela do portal do Azure que mostra a guia Membros ao adicionar uma função a um aplicativo."]
+
+*** Procure o nome da aplicação.
++
+Aqui está um exemplo:
+
++
+image:screenshot_azure_service_principal_role.png["Uma captura de tela do portal do Azure que mostra o formulário Adicionar atribuição de função no portal do Azure."]
+
+*** Selecione a aplicação e selecione *Select*.
+*** Selecione *seguinte*.
+
+
+.. Selecione *Rever e atribuir*.
++
+O principal de serviço agora tem as permissões necessárias do Azure para implantar o conetor.
+
++
+Se você quiser implantar o Cloud Volumes ONTAP a partir de várias assinaturas do Azure, então você deve vincular o principal de serviço a cada uma dessas assinaturas. O BlueXP  permite que você selecione a assinatura que deseja usar ao implantar o Cloud Volumes ONTAP.
+
+
+
+
+
+. No serviço *Microsoft Entra ID*, selecione *inscrições de aplicativos* e selecione o aplicativo.
+. Selecione *permissões de API > Adicionar uma permissão*.
+. Em *Microsoft APIs*, selecione *Azure Service Management*.
++
+image:screenshot_azure_service_mgmt_apis.gif["Uma captura de tela do portal do Azure que mostra as permissões da API de Gerenciamento de Serviços do Azure."]
+
+. Selecione *Acesse o Gerenciamento de Serviços do Azure como usuários da organização* e selecione *Adicionar permissões*.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Uma captura de tela do portal do Azure que mostra a adição das APIs de Gerenciamento de Serviços do Azure."]
+
+
+
+. No serviço *Microsoft Entra ID*, selecione *inscrições de aplicativos* e selecione o aplicativo.
+. Copie o *ID do aplicativo (cliente)* e o *ID do diretório (locatário)*.
++
+image:screenshot_azure_app_ids.gif["Uma captura de tela que mostra o ID do aplicativo (cliente) e ID do diretório (locatário) para um aplicativo no Microsoft Entra IDy."]
+
++
+Quando você adiciona a conta do Azure ao BlueXP , você precisa fornecer o ID do aplicativo (cliente) e o ID do diretório (locatário) para o aplicativo. O BlueXP  usa os IDs para fazer login programaticamente.
+
+
+
+. Abra o serviço *Microsoft Entra ID*.
+. Selecione *inscrições de aplicativos* e selecione sua inscrição.
+. Selecione *certificados e segredos > segredo de novo cliente*.
+. Forneça uma descrição do segredo e uma duração.
+. Selecione *Adicionar*.
+. Copie o valor do segredo do cliente.
++
+image:screenshot_azure_client_secret.gif["Uma captura de tela do portal do Azure que mostra um segredo de cliente para o responsável do serviço Microsoft Entra."]
+
++
+Agora você tem um segredo de cliente que o BlueXP  pode usá-lo para autenticar com o Microsoft Entra ID.
+
+

@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-saas-console.html 
+keywords: networking, urls, endpoints, web browser, console, network, set up networking 
+summary: À medida que você usa o console baseado na Web do BlueXP  fornecido pela camada SaaS, ele entra em Contato com vários endpoints ao concluir algumas tarefas administrativas. Os computadores que acessam o console BlueXP  devem ter conexões com esses endpoints. 
+---
+= Prepare a rede para o console BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+À medida que você usa o console baseado na Web do BlueXP  fornecido pela camada SaaS, ele entra em Contato com vários endpoints ao concluir algumas tarefas administrativas. Os computadores que acessam o console BlueXP  devem ter conexões com esses endpoints.
+
+Esses endpoints são contatados do computador de um usuário ao concluir ações específicas do console BlueXP . Você também deve consultar os requisitos de rede para o conetor e para serviços BlueXP  específicos. Para obter detalhes, consulte os links relacionados no final desta página.
+
+[cols="2*"]
+|===
+| Endpoints | Finalidade 
+
+
+| https://console.BlueXP .NetApp.com https://*.console.BlueXP .NetApp.com | O navegador da Web entra em Contato com esses URLs quando você usa o console baseado na Web do BlueXP . 
+
+
+| https://aiq.NetApp.com | Necessário para acessar o consultor digital da BlueXP . 
+
+
+ a| 
+Serviços da AWS (amazonaws.com):
+
+* CloudFormation
+* Nuvem de computação elástica (EC2)
+* Key Management Service (KMS)
+* Serviço de token de segurança (STS)
+* Serviço de armazenamento simples (S3)
+
+| Necessário para implantar um conetor da BlueXP  na AWS. O ponto final exato depende da região em que você implementa o conetor. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte a documentação da AWS para obter detalhes."^] 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com | Necessário para implantar um conetor da BlueXP  na maioria das regiões do Azure. 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de | Necessário para implantar um conetor da BlueXP  nas regiões do Azure Alemanha. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | Necessário para implantar um conetor da BlueXP  nas regiões do Azure US Gov. 
+
+
+| \https://www.googleapis.com | Necessário para implantar um conetor do BlueXP  no Google Cloud. 
+
+
+| https://signin.b2c.NetApp.com | Necessário para atualizar as credenciais do site de suporte da NetApp (NSS) ou para adicionar novas credenciais NSS ao BlueXP . 
+
+
+| https://NetApp-cloud-account.auth0.com \https://cdn.auth0.com https://services.cloud.NetApp.com | Seu navegador da Web se coneta a esses endpoints para autenticação de usuário centralizada por meio do BlueXP . 
+
+
+| \https://widget.intercom.io | Para um bate-papo no produto que permite conversar com especialistas em nuvem da NetApp. 
+|===
+Além desses endpoints, você também precisa garantir que o conetor tenha acesso de saída à Internet para contatar endpoints específicos para operações diárias. Você pode encontrar a lista desses endpoints seguindo os links na próxima seção abaixo.
+
+.Informações relacionadas
+* Prepare a rede para o conetor
++
+** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Configurar a rede AWS"]
+** link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["Configurar a rede do Azure"]
+** link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["Configurar a rede do Google Cloud"]
+** link:task-install-connector-on-prem.html#step-3-set-up-networking["Configurar redes locais"]
+
+
+* Prepare a rede para os serviços BlueXP 
++
+Consulte a documentação de cada serviço BlueXP .
+
++
+https://docs.netapp.com/us-en/bluexp-family/["Documentação do BlueXP"^]
+
+

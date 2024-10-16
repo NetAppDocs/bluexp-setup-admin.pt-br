@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-private-mode.html 
+keywords: private mode quick start, quick start, aws top secret cloud, aws secret cloud, secret cloud, top secret cloud 
+summary: Comece a usar o BlueXP  no modo privado, preparando seu ambiente e implantando o conetor. 
+---
+= Fluxo de trabalho de introdução (modo privado)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Comece a usar o BlueXP  no modo privado, preparando seu ambiente e implantando o conetor.
+
+O modo privado é normalmente utilizado com ambientes locais que não têm ligação à Internet e com regiões de nuvem seguras, que incluem https://aws.amazon.com/federal/secret-cloud/["Nuvem secreta da AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Nuvem secreta principal da AWS"^] e. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+Antes de começar, você deve ter uma compreensão de link:concept-netapp-accounts.html["Contas BlueXP "], link:concept-connectors.html["Conetores"]e link:concept-modes.html["modos de implantação"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] link:task-prepare-private-mode.html["Prepare-se para a implantação"]
+[role="quick-margin-list"]
+. Prepare um host Linux dedicado que atenda aos requisitos de CPU, RAM, espaço em disco, ferramenta de orquestração de contentores e muito mais.
+. Configure a rede que forneça acesso às redes de destino.
+. Para implantações de nuvem, configure permissões no seu provedor de nuvem para que você possa associar essas permissões ao conetor depois de instalar o software.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] link:task-install-private-mode.html["Implante o conetor"]
+[role="quick-margin-list"]
+. Instale o software Connector em seu próprio host Linux.
+. Configure o BlueXP  abrindo um navegador da Web e inserindo o endereço IP do host Linux.
+. Para implantações de nuvem, forneça ao BlueXP  as permissões que você configurou anteriormente.
+

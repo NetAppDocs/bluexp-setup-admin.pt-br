@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: Gerencie a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. 
+---
+= Gerencie a hierarquia de recursos em sua organização do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando você usa o gerenciamento de identidade e acesso do BlueXP  (IAM) para associar um membro à sua organização, você fornece permissões no nível da organização, pasta ou projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um ambiente de trabalho que o BlueXP  já gerencia.
+
+
+
+== Veja os recursos na sua organização
+
+Para começar a gerenciar sua hierarquia de recursos, você deve estar ciente dos recursos associados à sua organização.
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Selecione *recursos*.
+
+
+.Resultado
+Os recursos associados à sua organização são exibidos na tabela *recursos*.
+
+.O que se segue?
+Para encontrar um recurso específico, você pode <<find-resources,pesquise e filtre o conteúdo da tabela>>.
+
+Depois de encontrar o recurso que você está procurando, você pode concluir qualquer uma das seguintes ações:
+
+* <<view-folders-and-projects,Exiba as pastas e projetos associados ao recurso>>
+* <<associate-resource,Associe o recurso a pastas e projetos adicionais>>
+* <<remove-resource,Remova o recurso de uma pasta ou projeto>>
+
+
+
+
+== Encontre recursos específicos em sua organização
+
+Se você tiver um grande número de recursos em sua organização, poderá usar as opções de pesquisa e filtro para encontrar um recurso específico.
+
+.Passos
+. Na página *recursos*, selecione *Pesquisa avançada & filtragem*.
+. Use qualquer uma das opções disponíveis para encontrar o recurso que você está procurando:
++
+** *Pesquisar por nome do recurso*: Insira uma cadeia de texto e selecione *Adicionar*.
+** *Plataforma*: Selecione uma ou mais plataformas, como Amazon Web Services.
+** *Recursos*: Selecione um ou mais recursos, como o Cloud Volumes ONTAP.
+** *Organização, pasta ou projeto*: Selecione toda a organização, uma pasta específica ou um projeto específico.
+
+
+. Selecione *pesquisar*.
+
+
+.Resultado
+O conteúdo da tabela recursos é atualizado para mostrar os recursos que correspondem às seleções de pesquisa e filtro.
+
+
+
+== Associar um recurso a pastas e projetos
+
+Se você quiser disponibilizar um recurso para outra pasta ou projeto em sua organização, precisará criar uma associação entre a pasta ou projeto e o recurso.
+
+.Antes de começar
+Você deve entender como a associação de recursos funciona. link:concept-identity-and-access-management.html#resources["Saiba mais sobre recursos, incluindo quando associar um recurso a uma pasta"].
+
+.Passos
+. Na página *recursos*, navegue até um recurso na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *associar a pastas ou projetos*.
+. Selecione uma pasta ou projeto e, em seguida, selecione *Accept*.
+. Para associar uma pasta ou projeto adicional, selecione *Adicionar pasta ou projeto* e, em seguida, selecione a pasta ou projeto.
++
+Observe que você só pode selecionar a partir das pastas e projetos para os quais você tem permissões de administrador.
+
+. Selecione *recursos associados*.
+
+
+.Resultado
+O BlueXP  associa o recurso às pastas e projetos selecionados.
+
+* Se você associou o recurso a projetos, os membros que têm permissões para esses projetos agora terão a capacidade de acessar o recurso no BlueXP .
+* Se você associou o recurso a uma pasta, um _pasta ou administrador de projeto_ agora pode acessar o recurso a partir do BlueXP  IAM. link:concept-identity-and-access-management.html#resources["Saiba mais sobre como associar um recurso a uma pasta"].
+
+
+.Depois de terminar
+Se o recurso associado for descoberto usando um BlueXP  Connector e tiver outros membros em sua organização, você também precisará associar o conetor ao projeto ao qual o recurso está agora associado. Caso contrário, o conetor e seu recurso associado não são acessíveis a partir da tela do BlueXP  por membros que não têm a função _administrador da organização_.
+
+link:task-iam-associate-connectors.html["Saiba como associar um conetor a uma pasta ou projeto"].
+
+
+
+== Exibir as pastas e projetos associados a um recurso
+
+Para identificar onde um recurso está disponível na hierarquia da sua organização, você pode exibir as pastas e projetos associados a esse recurso.
+
+.Passos
+. Na página *recursos*, navegue até um recurso na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
+
+
+.Resultado
+O BlueXP  exibe as pastas e projetos associados ao recurso.
+
+O exemplo a seguir mostra um recurso que está associado a um projeto.
+
+image:screenshot-iam-resource-details.png["Uma captura de tela da página de detalhes do recurso que mostra um recurso associado a um projeto que está diretamente abaixo da organização."]
+
+.O que se segue?
+* Você pode <<associate-resource,associe o recurso a um projeto ou pasta adicional>>.
+* Você pode <<remove-resource,remova o recurso de uma pasta ou projeto específico>>.
+* Se precisar determinar quais membros da organização têm acesso ao recurso, você pode link:task-iam-manage-folders-projects.html#view-associated-resources-members["visualize os membros que têm acesso às pastas e projetos associados ao recurso"].
+
+
+
+
+== Remover um recurso de uma pasta ou projeto
+
+Para remover um recurso de uma pasta ou projeto, você precisa remover a associação entre a pasta ou projeto e o recurso. Depois de remover a associação, os membros da organização não podem mais gerenciar o recurso da pasta ou do projeto.
+
+.Sobre esta tarefa
+Se você quiser remover um recurso descoberto de toda a organização, será necessário remover o ambiente de trabalho da tela BlueXP .
+
+.Passos
+. Na página *recursos*, navegue até um recurso na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
+. Para a pasta ou projeto para o qual você deseja remover o recurso, selecione image:icon-delete.png["Um ícone de uma lata de lixo"]
+. Confirme que deseja remover a associação selecionando *Delete*.
+
+
+.Resultado
+O BlueXP  remove a associação. Os membros não podem mais acessar o recurso a partir dessa pasta ou projeto.
+
+
+
+== Informações relacionadas
+
+* link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
+* link:task-iam-get-started.html["Comece a usar o BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Saiba mais sobre a API para BlueXP  IAM"^]
+

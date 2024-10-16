@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+.Passos
+. Vá para o console do Amazon EC2.
+. Selecione *instâncias*.
+. Selecione a instância do conetor.
+. Selecione *ações > Segurança > Modificar função do IAM*.
+. Selecione a função do IAM e selecione *Atualizar função do IAM*.
+
+
+.Resultado
+O BlueXP  agora tem as permissões necessárias para executar ações na AWS em seu nome.

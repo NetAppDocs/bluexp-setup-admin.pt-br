@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+Manter o sistema operacional no host do conetor é sua responsabilidade. Por exemplo, você deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.
+
+Observe que você não precisa interromper nenhum serviço no host do conetor ao aplicar pequenas atualizações de segurança.
+
+Se você precisar parar e, em seguida, iniciar a VM do conetor, você deve fazê-lo a partir do console do seu provedor de nuvem ou usando os procedimentos padrão para gerenciamento no local.

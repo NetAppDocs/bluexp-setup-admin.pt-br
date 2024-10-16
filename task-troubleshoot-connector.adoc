@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: task-troubleshoot-connector.html 
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure 
+summary: Para solucionar problemas com o conetor, você pode trabalhar com o suporte da NetApp, que pode solicitar a ID do sistema ou as mensagens mais recentes do AutoSupport. Você também pode visualizar a base de dados de Conhecimento da NetApp para solucionar problemas sozinho. 
+---
+= Solucione o problema do conetor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Para solucionar problemas com o conetor, você pode trabalhar com o suporte da NetApp, que pode solicitar a ID do sistema, a versão do conetor ou as mensagens mais recentes do AutoSupport. Você também pode visualizar a base de dados de Conhecimento da NetApp para solucionar problemas sozinho.
+
+.Link relacionado
+link:task-get-help.html["Obtenha ajuda do suporte da NetApp"].
+
+
+
+== Localize a ID do sistema para um conetor
+
+Para ajudá-lo a começar, o representante da NetApp poderá pedir-lhe a ID do sistema do seu conetor. O ID é normalmente utilizado para fins de licenciamento e resolução de problemas.
+
+.Passos
+. No canto superior direito do console do BlueXP , selecione o ícone Ajuda.
+. Selecione *suporte > conetor BlueXP *.
++
+A ID do sistema aparece na parte superior da página.
+
++
+*Exemplo*
+
++
+image:screenshot-system-id.png["Uma captura de tela que mostra a ID do sistema para BlueXP  que aparece no Painel de suporte."]
+
+
+
+
+
+== Ver a versão de um conetor
+
+Você pode visualizar a versão do conetor para verificar se o conetor foi atualizado automaticamente para a versão mais recente ou porque você precisa compartilhá-lo com seu representante da NetApp.
+
+.Passos
+. No canto superior direito do console do BlueXP , selecione o ícone Ajuda.
+. Selecione *suporte > conetor BlueXP *.
++
+A versão é exibida na parte superior da página.
+
++
+image:screenshot-connector-version.png["Uma captura de tela que mostra a versão do conetor no Painel de suporte."]
+
+
+
+
+
+== Transfira ou envie uma mensagem AutoSupport
+
+Se você estiver tendo problemas, a equipe do NetApp pode pedir que você envie uma mensagem do AutoSupport para o suporte do NetApp para fins de solução de problemas.
+
+.Passos
+. No canto superior direito do console do BlueXP , selecione o ícone Ajuda e selecione *suporte*.
++
+image:screenshot-help-support.png["Uma captura de tela do menu Ajuda onde suporte é a primeira opção listada"]
+
+. Selecione *BlueXP  Connector*.
+. Dependendo de como você precisa enviar as informações para o suporte do NetApp, escolha uma das seguintes opções:
++
+.. Selecione a opção para transferir a mensagem AutoSupport para a sua máquina local. Em seguida, você pode enviá-lo para o suporte da NetApp usando um método preferido.
+.. Selecione *Enviar AutoSupport* para enviar diretamente a mensagem para o suporte da NetApp.
+
+
++
+image:screenshot-connector-autosupport.png["Uma captura de tela do Painel de suporte mostrando onde os usuários podem selecionar para baixar e enviar mensagens do AutoSupport."]
+
+
+
+
+
+== Corrigir falhas de download ao usar um gateway NAT do Google Cloud
+
+O conetor transfere automaticamente atualizações de software para o Cloud Volumes ONTAP. O download pode falhar se a configuração usar um gateway NAT do Google Cloud. Você pode corrigir esse problema limitando o número de partes nas quais a imagem do software está dividida. Esta etapa deve ser concluída usando a API do BlueXP .
+
+.Passo
+. Envie uma SOLICITAÇÃO PUT para /occm/config com o seguinte JSON como corpo:
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+O valor para _maxDownloadSessions_ pode ser 1 ou qualquer número inteiro maior que 1. Se o valor for 1, a imagem transferida não será dividida.
+
++
+Note que 32 é um valor de exemplo. O valor que você deve usar depende da configuração NAT e do número de sessões que você pode ter simultaneamente.
+
+
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["Saiba mais sobre a chamada API /occm/config"^]
+
+
+
+== Obtenha ajuda da base de dados de Conhecimento da NetApp
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["Veja as informações de solução de problemas criadas pela equipe de suporte da NetApp"].

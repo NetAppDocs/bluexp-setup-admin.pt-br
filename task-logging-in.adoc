@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: task-logging-in.html 
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
+summary: A forma como inicia sessão no BlueXP  depende do modo de implementação do BlueXP  que está a utilizar para a sua conta. 
+---
+= Inicie sessão no BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+A forma como inicia sessão no BlueXP  depende do modo de implementação do BlueXP  que está a utilizar para a sua conta.
+
+O conetor inclui uma IU local, acessível a partir do host do conetor. Esta interface de usuário é fornecida para clientes que estão usando o BlueXP  no modo restrito ou no modo privado. Quando utilizar o BlueXP  no modo padrão, deve aceder à interface do utilizador a partir do https://console.bluexp.netapp.com/["Console BlueXP  SaaS"^]
+
+link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
+
+[role="tabbed-block"]
+====
+.Modo padrão
+--
+Depois de se inscrever no BlueXP , você poderá fazer login no console baseado na Web para começar a gerenciar sua infraestrutura de dados e armazenamento.
+
+.Sobre esta tarefa
+Você pode fazer login no console baseado na Web do BlueXP  usando uma das seguintes opções:
+
+* Suas credenciais existentes do site de suporte da NetApp (NSS)
+* Um login na nuvem do NetApp usando seu endereço de e-mail e uma senha
+* Uma conexão federada
++
+Você pode usar o logon único para fazer login usando credenciais de seu diretório corporativo (identidade federada). link:concept-federation.html["Saiba como usar a federação de identidade com o BlueXP "].
+
+
+
+.Passos
+. Abra um navegador da Web e aceda ao https://console.bluexp.netapp.com["Consola BlueXP"^]
+. Na página *Log in*, insira o endereço de e-mail associado ao seu login.
+. Dependendo do método de autenticação associado ao seu login, você será solicitado a inserir suas credenciais:
++
+** Credenciais de nuvem do NetApp: Insira sua senha
+** Usuário federado: Insira suas credenciais de identidade federada
+** Conta do site de suporte da NetApp: Insira suas credenciais do site de suporte da NetApp
+
+
+
+
+.Resultado
+Agora você está logado e pode começar a usar o BlueXP  para gerenciar sua infraestrutura multicloud híbrida.
+
+--
+.Modo restrito
+--
+Quando você usa o BlueXP  no modo restrito, você precisa fazer login no console do BlueXP  a partir da interface do usuário que é executada localmente no conetor.
+
+.Sobre esta tarefa
+O BlueXP  oferece suporte ao login com uma das seguintes opções quando sua conta está configurada no modo restrito:
+
+* Um login na nuvem do NetApp usando seu endereço de e-mail e uma senha
+* Uma conexão federada
++
+Você pode usar o logon único para fazer login usando credenciais de seu diretório corporativo (identidade federada). link:concept-federation.html["Saiba como usar a federação de identidade com o BlueXP "].
+
+
+
+.Passos
+. Abra um navegador da Web e insira o seguinte URL:
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ pode ser localhost, um endereço IP privado ou um endereço IP público, dependendo da configuração do host onde você instalou o conetor. Por exemplo, talvez seja necessário inserir um endereço IP privado de um host que tenha uma conexão com o host do conetor.
+
+. Introduza o seu nome de utilizador e palavra-passe para iniciar sessão.
+
+
+.Resultado
+Agora você está logado e pode começar a usar o BlueXP  para gerenciar sua infraestrutura multicloud híbrida.
+
+--
+.Modo privado
+--
+Quando você usa o BlueXP  no modo privado, você precisa fazer login no console do BlueXP  a partir da interface do usuário que é executada localmente no conetor.
+
+.Sobre esta tarefa
+O modo privado suporta a gestão e o acesso de utilizadores locais. A autenticação não é fornecida através do serviço de nuvem da BlueXP .
+
+.Passos
+. Abra um navegador da Web e insira o seguinte URL:
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ pode ser localhost, um endereço IP privado ou um endereço IP público, dependendo da configuração do host onde você instalou o conetor. Por exemplo, talvez seja necessário inserir um endereço IP privado de um host que tenha uma conexão com o host do conetor.
+
+. Introduza o seu nome de utilizador e palavra-passe para iniciar sessão.
+
+
+.Resultado
+Agora você está logado e pode começar a usar o BlueXP  para gerenciar sua infraestrutura multicloud híbrida.
+
+--
+====

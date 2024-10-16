@@ -1,0 +1,403 @@
+---
+sidebar: sidebar 
+permalink: task-adding-azure-accounts.html 
+keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
+summary: Adicione e gerencie credenciais do Azure para que o BlueXP  tenha as permissões necessárias para implantar e gerenciar recursos de nuvem em suas assinaturas do Azure. Se você gerenciar várias assinaturas do Azure Marketplace, poderá atribuir cada uma delas a diferentes credenciais do Azure na página credenciais. 
+---
+= Gerencie as credenciais do Azure e as assinaturas do marketplace para o BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Adicione e gerencie credenciais do Azure para que o BlueXP  tenha as permissões necessárias para implantar e gerenciar recursos de nuvem em suas assinaturas do Azure. Se você gerenciar várias assinaturas do Azure Marketplace, poderá atribuir cada uma delas a diferentes credenciais do Azure na página credenciais.
+
+Siga as etapas nesta página se precisar usar várias credenciais do Azure ou várias assinaturas do Azure Marketplace para o Cloud Volumes ONTAP.
+
+
+
+== Visão geral
+
+Há duas maneiras de adicionar assinaturas e credenciais adicionais do Azure no BlueXP .
+
+. Associe subscrições adicionais do Azure à identidade gerenciada do Azure.
+. Se você quiser implantar o Cloud Volumes ONTAP usando diferentes credenciais do Azure, conceda permissões do Azure usando um princípio de serviço e adicione suas credenciais ao BlueXP .
+
+
+
+
+== Associe subscrições adicionais do Azure a uma identidade gerida
+
+O BlueXP  permite que você escolha as credenciais do Azure e a assinatura do Azure na qual você deseja implantar o Cloud Volumes ONTAP. Não é possível selecionar uma assinatura diferente do Azure para o perfil de identidade gerenciado, a menos que você associe a https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidade gerenciada"^] essas assinaturas.
+
+.Sobre esta tarefa
+Uma identidade gerenciada é link:concept-accounts-azure.html["A conta inicial do Azure"] quando você implementa um conetor do BlueXP . Quando você implantou o conetor, o BlueXP  criou a função Operador do BlueXP  e atribuiu-a à máquina virtual do conetor.
+
+.Passos
+. Faça login no portal do Azure.
+. Abra o serviço *assinaturas* e selecione a assinatura na qual deseja implantar o Cloud Volumes ONTAP.
+. Selecione *Access Control (IAM)*.
++
+.. Selecione *Adicionar* > *Adicionar atribuição de função* e adicione as permissões:
++
+*** Selecione a função *Operador BlueXP *.
++
+
+NOTE: Operador BlueXP  é o nome padrão fornecido na política de conetores. Se você escolher um nome diferente para a função, selecione esse nome em vez disso.
+
+*** Atribua acesso a uma *Máquina Virtual*.
+*** Selecione a assinatura na qual a máquina virtual do conetor foi criada.
+*** Selecione a máquina virtual do conetor.
+*** Selecione *Guardar*.
+
+
+
+
+. Repita estes passos para subscrições adicionais.
+
+
+.Resultado
+Ao criar um novo ambiente de trabalho, agora você deve ter a capacidade de selecionar entre várias assinaturas do Azure para o perfil de identidade gerenciado.
+
+image:screenshot_accounts_switch_azure_subscription.gif["Uma captura de tela que mostra a capacidade de selecionar várias assinaturas do Azure ao selecionar uma conta do Microsoft Azure Provider."]
+
+
+
+== Adicione credenciais adicionais do Azure ao BlueXP 
+
+Quando você implementa um conetor do BlueXP , o BlueXP  ativa uma identidade gerenciada atribuída ao sistema na máquina virtual que tem as permissões necessárias. O BlueXP  seleciona essas credenciais do Azure por padrão quando você cria um novo ambiente de trabalho para o Cloud Volumes ONTAP.
+
+
+TIP: Um conjunto inicial de credenciais não é adicionado se você instalou manualmente o software Connector em um sistema existente. link:concept-accounts-azure.html["Saiba mais sobre as credenciais e permissões do Azure"].
+
+Se você quiser implantar o Cloud Volumes ONTAP usando _diferentes_ credenciais do Azure, você deve conceder as permissões necessárias criando e configurando um responsável de serviço no Microsoft Entra ID para cada conta do Azure. Em seguida, você pode adicionar as novas credenciais ao BlueXP .
+
+
+
+=== Conceda permissões do Azure usando um princípio de serviço
+
+O BlueXP  precisa de permissões para executar ações no Azure. Você pode conceder as permissões necessárias a uma conta do Azure criando e configurando um responsável de serviço no Microsoft Entra ID e obtendo as credenciais do Azure de que o BlueXP  precisa.
+
+.Sobre esta tarefa
+A imagem a seguir mostra como o BlueXP  obtém permissões para executar operações no Azure. Um objeto principal de serviço, que está vinculado a uma ou mais assinaturas do Azure, representa o BlueXP  no Microsoft Entra ID e é atribuído a uma função personalizada que permite as permissões necessárias.
+
+image:diagram_azure_authentication.png["Imagem conceitual que mostra o BlueXP  obtendo autenticação e autorização do Microsoft Entra ID antes que ele possa fazer uma chamada de API. No ative Directory, a função BlueXP  define permissões. Ele está vinculado a uma ou mais assinaturas do Azure e a um objeto principal de serviço que representa o aplicativo Cloud Manager."]
+
+.Passos
+. <<Crie uma aplicação Microsoft Entra>>.
+. <<Atribua a aplicação a uma função>>.
+. <<Adicione permissões da API de Gerenciamento de Serviços do Windows Azure>>.
+. <<Obtenha o ID do aplicativo e o ID do diretório>>.
+. <<Crie um segredo de cliente>>.
+
+
+
+
+==== Crie uma aplicação Microsoft Entra
+
+Crie um aplicativo e um responsável de serviço do Microsoft Entra que o BlueXP  pode usar para controle de acesso baseado em funções.
+
+.Passos
+. Certifique-se de ter permissões no Azure para criar um aplicativo do ative Directory e atribuir o aplicativo a uma função.
++
+Para obter mais informações, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentação do Microsoft Azure: Permissões necessárias"^]
+
+. No portal do Azure, abra o serviço *Microsoft Entra ID*.
++
+image:screenshot_azure_ad.png["Mostra o serviço ative Directory no Microsoft Azure."]
+
+. No menu, selecione *inscrições de aplicativos*.
+. Selecione *novo registo*.
+. Especifique detalhes sobre o aplicativo:
++
+** *Nome*: Insira um nome para o aplicativo.
+** *Tipo de conta*: Selecione um tipo de conta (qualquer funcionará com o BlueXP ).
+** * URI de redirecionamento*: Você pode deixar este campo em branco.
+
+
+. Selecione *Registe-se*.
++
+Você criou o aplicativo AD e o principal de serviço.
+
+
+
+.Resultado
+Você criou o aplicativo AD e o principal de serviço.
+
+
+
+==== Atribua a aplicação a uma função
+
+Você deve vincular o principal de serviço a uma ou mais assinaturas do Azure e atribuir-lhe a função personalizada "Operador do BlueXP " para que o BlueXP  tenha permissões no Azure.
+
+.Passos
+. Crie uma função personalizada:
++
+Observe que você pode criar uma função personalizada do Azure usando o portal do Azure, o Azure PowerShell, a CLI do Azure ou a API REST. As etapas a seguir mostram como criar a função usando a CLI do Azure. Se você preferir usar um método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentação do Azure"^]
+
++
+.. Copie o conteúdo do link:reference-permissions-azure.html["Permissões de função personalizadas para o conetor"] e salve-o em um arquivo JSON.
+.. Modifique o arquivo JSON adicionando IDs de assinatura do Azure ao escopo atribuível.
++
+Você deve adicionar o ID para cada assinatura do Azure a partir da qual os usuários criarão sistemas Cloud Volumes ONTAP.
+
++
+*Exemplo*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. Use o arquivo JSON para criar uma função personalizada no Azure.
++
+As etapas a seguir descrevem como criar a função usando o Bash no Azure Cloud Shell.
+
++
+*** Comece https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] e escolha o ambiente Bash.
+*** Carregue o arquivo JSON.
++
+image:screenshot_azure_shell_upload.png["Uma captura de tela do Azure Cloud Shell, onde você pode escolher a opção para carregar um arquivo."]
+
+*** Use a CLI do Azure para criar a função personalizada:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+Agora você deve ter uma função personalizada chamada Operador BlueXP  que você pode atribuir à máquina virtual do conetor.
+
+
+
+
+
+. Atribua o aplicativo à função:
++
+.. No portal do Azure, abra o serviço *Subscrições*.
+.. Selecione a subscrição.
+.. Selecione *Access Control (IAM) > Add > Add > Add Role assignment* (Adicionar controlo de acesso).
+.. Na guia *função*, selecione a função *Operador BlueXP * e selecione *seguinte*.
+.. Na guia *Membros*, execute as seguintes etapas:
++
+*** Mantenha *Usuário, grupo ou responsável do serviço* selecionado.
+*** Selecione *Selecionar membros*.
++
+image:screenshot-azure-service-principal-role.png["Uma captura de tela do portal do Azure que mostra a guia Membros ao adicionar uma função a um aplicativo."]
+
+*** Procure o nome da aplicação.
++
+Aqui está um exemplo:
+
++
+image:screenshot_azure_service_principal_role.png["Uma captura de tela do portal do Azure que mostra o formulário Adicionar atribuição de função no portal do Azure."]
+
+*** Selecione a aplicação e selecione *Select*.
+*** Selecione *seguinte*.
+
+
+.. Selecione *Rever e atribuir*.
++
+O principal de serviço agora tem as permissões necessárias do Azure para implantar o conetor.
+
++
+Se você quiser implantar o Cloud Volumes ONTAP a partir de várias assinaturas do Azure, então você deve vincular o principal de serviço a cada uma dessas assinaturas. O BlueXP  permite que você selecione a assinatura que deseja usar ao implantar o Cloud Volumes ONTAP.
+
+
+
+
+
+
+
+==== Adicione permissões da API de Gerenciamento de Serviços do Windows Azure
+
+O responsável do serviço deve ter permissões "Windows Azure Service Management API".
+
+.Passos
+. No serviço *Microsoft Entra ID*, selecione *inscrições de aplicativos* e selecione o aplicativo.
+. Selecione *permissões de API > Adicionar uma permissão*.
+. Em *Microsoft APIs*, selecione *Azure Service Management*.
++
+image:screenshot_azure_service_mgmt_apis.gif["Uma captura de tela do portal do Azure que mostra as permissões da API de Gerenciamento de Serviços do Azure."]
+
+. Selecione *Acesse o Gerenciamento de Serviços do Azure como usuários da organização* e selecione *Adicionar permissões*.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Uma captura de tela do portal do Azure que mostra a adição das APIs de Gerenciamento de Serviços do Azure."]
+
+
+
+
+
+==== Obtenha o ID do aplicativo e o ID do diretório
+
+Quando você adiciona a conta do Azure ao BlueXP , você precisa fornecer o ID do aplicativo (cliente) e o ID do diretório (locatário) para o aplicativo. O BlueXP  usa os IDs para fazer login programaticamente.
+
+.Passos
+. No serviço *Microsoft Entra ID*, selecione *inscrições de aplicativos* e selecione o aplicativo.
+. Copie o *ID do aplicativo (cliente)* e o *ID do diretório (locatário)*.
++
+image:screenshot_azure_app_ids.gif["Uma captura de tela que mostra o ID do aplicativo (cliente) e ID do diretório (locatário) para um aplicativo no Microsoft Entra IDy."]
+
++
+Quando você adiciona a conta do Azure ao BlueXP , você precisa fornecer o ID do aplicativo (cliente) e o ID do diretório (locatário) para o aplicativo. O BlueXP  usa os IDs para fazer login programaticamente.
+
+
+
+
+
+==== Crie um segredo de cliente
+
+Você precisa criar um segredo de cliente e, em seguida, fornecer ao BlueXP  o valor do segredo para que o BlueXP  possa usá-lo para autenticar com o Microsoft Entra ID.
+
+.Passos
+. Abra o serviço *Microsoft Entra ID*.
+. Selecione *inscrições de aplicativos* e selecione sua inscrição.
+. Selecione *certificados e segredos > segredo de novo cliente*.
+. Forneça uma descrição do segredo e uma duração.
+. Selecione *Adicionar*.
+. Copie o valor do segredo do cliente.
++
+image:screenshot_azure_client_secret.gif["Uma captura de tela do portal do Azure que mostra um segredo de cliente para o responsável do serviço Microsoft Entra."]
+
++
+Agora você tem um segredo de cliente que o BlueXP  pode usá-lo para autenticar com o Microsoft Entra ID.
+
+
+
+.Resultado
+Seu responsável de serviço está configurado e você deve ter copiado o ID do aplicativo (cliente), o ID do diretório (locatário) e o valor do segredo do cliente. Você precisa inserir essas informações no BlueXP  ao adicionar uma conta do Azure.
+
+
+
+=== Adicione as credenciais ao BlueXP 
+
+Depois de fornecer uma conta do Azure com as permissões necessárias, você pode adicionar as credenciais dessa conta ao BlueXP . A conclusão desta etapa permite que você inicie o Cloud Volumes ONTAP usando diferentes credenciais do Azure.
+
+.Antes de começar
+Se você acabou de criar essas credenciais no seu provedor de nuvem, talvez demore alguns minutos até que elas estejam disponíveis para uso. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
+
+.Antes de começar
+Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#how-to-create-a-connector["Saiba como criar um conetor"].
+
+.Passos
+. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
++
+image:screenshot-settings-icon-organization.png["Uma captura de tela que mostra o ícone Configurações no canto superior direito do console BlueXP ."]
+
+. Selecione *Adicionar credenciais* e siga as etapas do assistente.
++
+.. *Credentials Location*: Selecione *Microsoft Azure > Connector*.
+.. *Definir credenciais*: Insira informações sobre o responsável do serviço Microsoft Entra que concede as permissões necessárias:
++
+*** ID da aplicação (cliente)
+*** ID do diretório (locatário)
+*** Segredo Cliente
+
+
+.. *Assinatura do Marketplace*: Associe uma assinatura do Marketplace a essas credenciais assinando agora ou selecionando uma assinatura existente.
+.. *Revisão*: Confirme os detalhes sobre as novas credenciais e selecione *Adicionar*.
+
+
+
+
+.Resultado
+Agora você pode alternar para diferentes conjuntos de credenciais na página Detalhes e credenciais https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["ao criar um novo ambiente de trabalho"^]
+
+image:screenshot_accounts_switch_azure.gif["Uma captura de tela que mostra a seleção entre credenciais após selecionar Editar credenciais na página Detalhes  credenciais."]
+
+
+
+== Gerenciar credenciais existentes
+
+Gerencie as credenciais do Azure que você já adicionou ao BlueXP  associando uma assinatura do Marketplace, editando credenciais e excluindo-as.
+
+
+
+=== Associe uma assinatura do Azure Marketplace às credenciais
+
+Depois de adicionar suas credenciais do Azure ao BlueXP , você pode associar uma assinatura do Azure Marketplace a essas credenciais. A assinatura permite que você crie um sistema Cloud Volumes ONTAP com pagamento conforme o uso e use outros serviços do BlueXP .
+
+Há dois cenários em que você pode associar uma assinatura do Azure Marketplace depois de já ter adicionado as credenciais ao BlueXP :
+
+* Você não associou uma assinatura quando adicionou inicialmente as credenciais ao BlueXP .
+* Você deseja alterar a assinatura do Azure Marketplace associada às credenciais do Azure.
++
+A substituição da assinatura atual do marketplace por uma nova assinatura altera a assinatura do marketplace para todos os ambientes de trabalho existentes da Cloud Volumes ONTAP e todos os novos ambientes de trabalho.
+
+
+
+.Antes de começar
+Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#how-to-create-a-connector["Saiba como"].
+
+.Passos
+. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *assinatura associada*.
++
+Você deve selecionar credenciais associadas a um conetor. Não é possível associar uma assinatura do marketplace a credenciais associadas ao BlueXP .
+
++
+image:screenshot_azure_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
+
+. Para associar as credenciais a uma assinatura existente, selecione a assinatura na lista suspensa e selecione *Associate*.
+. Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura > continuar* e siga as etapas no Azure Marketplace:
++
+.. Se solicitado, faça login na sua conta do Azure.
+.. Selecione *Subscribe*.
+.. Preencha o formulário e selecione *Subscribe*.
+.. Depois que o processo de assinatura estiver concluído, selecione *Configurar conta agora*.
++
+Você será redirecionado para o site da BlueXP .
+
+.. Na página *atribuição de assinatura*:
++
+*** Selecione as organizações ou contas do BlueXP  às quais você deseja associar essa assinatura.
+*** No campo *Substituir subscrição existente*, escolha se pretende substituir automaticamente a subscrição existente de uma organização ou conta por esta nova subscrição.
++
+O BlueXP  substitui a assinatura existente para todas as credenciais na organização ou conta por essa nova assinatura. Se um conjunto de credenciais nunca foi associado a uma assinatura, essa nova assinatura não será associada a essas credenciais.
+
++
+Para todas as outras organizações ou contas, você precisará associar manualmente a assinatura repetindo estas etapas.
+
+*** Selecione *Guardar*.
++
+O vídeo a seguir mostra as etapas para se inscrever no Azure Marketplace:
+
++
+.Inscreva-se no BlueXP  a partir do Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+
+
+
+
+
+
+=== Editar credenciais
+
+Edite suas credenciais do Azure no BlueXP  modificando os detalhes sobre suas credenciais de serviço do Azure. Por exemplo, você pode precisar atualizar o segredo do cliente se um novo segredo foi criado para o aplicativo principal do serviço.
+
+.Passos
+. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. Na página *credenciais da organização* ou *credenciais da conta*, selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Editar credenciais*.
+. Faça as alterações necessárias e selecione *aplicar*.
+
+
+
+
+=== Eliminar credenciais
+
+Se você não precisar mais de um conjunto de credenciais, poderá excluí-las do BlueXP . Você só pode excluir credenciais que não estão associadas a um ambiente de trabalho.
+
+.Passos
+. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. Na página *credenciais da organização* ou *credenciais da conta*, selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Excluir credenciais*.
+. Selecione *Eliminar* para confirmar.
+

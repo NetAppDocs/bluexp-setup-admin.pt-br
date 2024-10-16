@@ -1,0 +1,181 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-operating-system-changes.html 
+keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman 
+summary: À medida que adicionamos e removemos suporte para o conetor em sistemas operacionais Linux específicos, você pode ter dúvidas sobre como esse suporte afeta suas implantações de conetores existentes. 
+---
+= Alterações nos sistemas operacionais Linux suportados
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+À medida que adicionamos e removemos suporte para o conetor em sistemas operacionais Linux específicos, você pode ter dúvidas sobre como esse suporte afeta suas implantações de conetores existentes.
+
+
+
+== Sistemas operacionais suportados
+
+O conetor BlueXP  é compatível com os seguintes sistemas operacionais Linux.
+
+[role="tabbed-block"]
+====
+.Modo padrão
+--
+Instalação manual::
++
+--
+* Ubuntu 24,04 LTS
+* Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** 8,6 a 8,10
+** 9,1 a 9,4
+
+
+
+
+--
+Implantação da BlueXP :: Ubuntu 22,04 LTS
+Implantação no AWS Marketplace:: Ubuntu 22,04 LTS
+Implantação a partir do Azure Marketplace:: Ubuntu 22,04 LTS
+
+
+--
+.Modo restrito
+--
+Instalação manual::
++
+--
+* Ubuntu 24,04 LTS
+* Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** 8,6 a 8,10
+** 9,1 a 9,4
+
+
+
+
+--
+Implantação no AWS Marketplace:: Ubuntu 22,04 LTS
+Implantação a partir do Azure Marketplace:: Ubuntu 22,04 LTS
+
+
+--
+.Modo privado
+--
+Instalação manual::
++
+--
+* Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** 8,6 a 8,10
+** 9,1 a 9,4
+
+
+
+
+--
+
+
+--
+====
+
+
+== Suporte para RHEL 8 e 9
+
+Observe o seguinte sobre o suporte para RHEL 8 e 9:
+
+Limitações::
++
+--
+* Quando o conetor é instalado em um host RHEL 8 ou 9, o backup e a recuperação do BlueXP  têm limitações relacionadas à restauração de um único arquivo e à verificação de ransomware. Para obter mais informações, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["Limitações conhecidas para backup e recuperação do BlueXP "^]
+* A classificação BlueXP  é suportada se você instalar o conetor em um host RHEL 8 ou 9 que reside no local. Não será compatível se o host RHEL 8 ou 9 residir na AWS, Azure ou Google Cloud.
+
+
+--
+Ferramenta de orquestração de contêineres:: O Podman é necessário como a ferramenta de orquestração de contentores quando você instala o conetor em um host RHEL 8 ou 9. O Docker Engine não é compatível com RHEL 8 e 9.
+Modo de implantação:: RHEL 8 e 9 são suportados quando se usa BlueXP  no modo padrão, modo restrito e modo privado.
+Versões de conetor suportadas:: RHEL 8 e 9 são suportados a partir das seguintes versões do conetor:
++
+--
+* 3.9.40 ao utilizar o BlueXP  no modo padrão ou no modo restrito
+* 3.9.42 ao usar o BlueXP  no modo privado
+
+
+--
+Apenas novas instalações manuais:: RHEL 8 e 9 são suportados com instalações _new_ Connector ao instalar manualmente o conetor em hosts executados em suas instalações ou na nuvem.
+Atualizações RHEL:: Se você tiver um conetor existente em execução em um host RHEL 7, não suportaremos a atualização do sistema operacional RHEL 7 para RHEL 8 ou 9. <<Conetores existentes no RHEL 7 ou CentOS 7,Saiba mais sobre os conetores existentes no RHEL 7 ou CentOS 7>>.
+
+
+
+
+== Fim do suporte para RHEL 7 e CentOS 7
+
+Em 30 de junho de 2024, o RHEL 7 chegou ao fim da manutenção (MOE), enquanto o CentOS 7 chegou ao fim da vida útil (EOL). O NetApp parou de suportar o conetor nessas distribuições Linux em 30 de junho de 2024.
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat: O que saber sobre o fim da manutenção do Red Hat Enterprise Linux 7"^]
+
+
+
+=== Conetores existentes no RHEL 7 ou CentOS 7
+
+Se você tiver um conetor existente em execução no RHEL 7 ou CentOS 7, não suportaremos a atualização ou conversão do sistema operacional para RHEL 8 ou 9. Para começar a executar um conetor em um host RHEL 8 ou 9, você precisa fazer o seguinte:
+
+. Configure um host RHEL 8 ou 9.
+. Instale o Podman.
+. Execute uma instalação do conetor _new_.
+. Configure o conetor para descobrir os ambientes de trabalho que o conetor antigo gerenciava.
+
+
+
+
+== Links relacionados
+
+
+
+=== Como começar a usar o RHEL 8 e 9
+
+Consulte as páginas a seguir para obter detalhes sobre os requisitos do host, os requisitos do Podman e as etapas para instalar o Podman e o conetor:
+
+[role="tabbed-block"]
+====
+.Modo padrão
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Instale e configure um conetor no local"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Instale manualmente o conetor na AWS"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Instale manualmente o conetor no Azure"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Instale manualmente o conetor no Google Cloud"]
+
+
+--
+.Modo restrito
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["Prepare-se para a implantação no modo restrito"]
+
+--
+.Modo privado
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html["Prepare-se para a implantação no modo privado"]
+
+--
+====
+
+
+=== Como redescobrir seus ambientes de trabalho
+
+Consulte as páginas a seguir para redescobrir seus ambientes de trabalho após uma nova implantação do conetor.
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Adicione sistemas Cloud Volumes ONTAP existentes ao BlueXP "^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Descubra clusters ONTAP no local"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["Crie ou descubra um ambiente de trabalho do FSX for ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Crie um ambiente de trabalho Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Descubra os sistemas e-Series"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["Descubra os sistemas StorageGRID"^]
+

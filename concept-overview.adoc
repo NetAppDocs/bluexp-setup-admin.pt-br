@@ -1,0 +1,142 @@
+---
+sidebar: sidebar 
+permalink: concept-overview.html 
+keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
+summary: O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem. A plataforma SaaS do BlueXP  inclui serviços que oferecem gerenciamento de storage, mobilidade de dados, proteção de dados e análise e controle de dados. Os recursos de gerenciamento são fornecidos por meio de um console e APIs baseados na Web. 
+---
+= Saiba mais sobre o BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem. A plataforma SaaS do BlueXP  inclui serviços que oferecem gerenciamento de storage, mobilidade de dados, proteção de dados e análise e controle de dados. Os recursos de gerenciamento são fornecidos por meio de um console e APIs baseados na Web.
+
+
+
+== Caraterísticas
+
+A plataforma BlueXP  oferece quatro pilares principais do gerenciamento de dados: Storage, mobilidade, proteção, análise e controle.
+
+Armazenamento:: Descubra, implante e gerencie o storage, seja na AWS, Azure, Google Cloud ou no local.
++
+--
+* Configurar e usar serviços de storage de arquivos na nuvem:
++
+** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
+** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX para NetApp ONTAP"^]
+** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service para Google Cloud"^]
+
+
+* Configure e use https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] para um gerenciamento de dados eficiente em vários protocolos nas nuvens.
+* Descobrir e https://bluexp.netapp.com/netapp-on-premises["storage no local"^] gerenciar :
++
+** Sistemas e-Series
+** Clusters de ONTAP
+** Sistemas StorageGRID
+
+
+
+
+--
+Mobilidade:: Migre dados para onde for necessário sincronizando, copiando e dispondo dados.
++
+--
+* https://bluexp.netapp.com/cloud-sync-service["Copiar e sincronizar"^]
+* https://bluexp.netapp.com/cloud-tiering["Disposição em camadas"^]
+
+
+--
+Proteção:: Use mecanismos de proteção automatizados para proteger dados contra perda de dados, interrupções não planejadas, ransomware e outras ameaças cibernéticas.
++
+--
+* https://bluexp.netapp.com/cloud-backup["Backup e recuperação"^]
+* https://bluexp.netapp.com/disaster-recovery["Recuperação de desastres"^]
+* https://bluexp.netapp.com/replication["Replicação"^]
+* https://bluexp.netapp.com/ransomware-protection["Proteção contra ransomware"^]
+
+
+--
+Análise e controle:: Use ferramentas para monitorar, mapear e otimizar o storage e a infraestrutura de dados. Obtenha inteligência acionável para otimizar a integridade, a resiliência e a economia do storage.
++
+--
+* https://bluexp.netapp.com/netapp-cloud-data-sense["Classificação"^]
+* https://bluexp.netapp.com/digital-advisor["Consultor digital"^]
+* https://bluexp.netapp.com/digital-advisor["Eficiência económica"^]
+* https://bluexp.netapp.com/digital-advisor["Resiliência operacional"^]
+
+
+--
+
+
+https://bluexp.netapp.com/["Saiba mais sobre como usar o BlueXP  para gerenciar dados em seu ambiente multicloud híbrido"^]
+
+
+
+== Fornecedores de nuvem compatíveis
+
+O BlueXP  permite que você gerencie o storage de nuvem e use serviços de nuvem no Amazon Web Services, no Microsoft Azure e no Google Cloud.
+
+
+
+== Custo
+
+O preço do BlueXP  depende dos serviços que você planeja usar. https://bluexp.netapp.com/pricing["Saiba mais sobre os preços do BlueXP "^]
+
+
+
+== Como o BlueXP  funciona
+
+O BlueXP  inclui um console baseado na Web fornecido pela camada SaaS, um sistema de gerenciamento de recursos e acessos e conetores que gerenciam ambientes de trabalho e habilitam serviços na nuvem da BlueXP .
+
+
+
+=== Software como serviço
+
+O BlueXP  é acessível por meio de APIs a https://console.bluexp.netapp.com["console baseado na web"^] e. Essa experiência SaaS permite que você acesse automaticamente os recursos mais recentes à medida que são lançados e alterne facilmente entre suas organizações, projetos e conetores BlueXP .
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de recursos e acessos que fornece gerenciamento granular de recursos e permissões:
+
+* Uma _organização_ de nível superior permite que você gerencie o acesso em seus vários _projetos_
+* _Pastas_ permitem agrupar projetos relacionados
+* O gerenciamento de recursos permite associar um recurso a uma ou mais pastas ou projetos
+* O gerenciamento de acesso permite que você atribua uma função a membros em diferentes níveis da hierarquia da organização
+
+
+O BlueXP  IAM é suportado ao usar o BlueXP  no modo padrão. Se você estiver usando o BlueXP  no modo restrito ou privado, use uma conta _BlueXP _ para gerenciar espaços de trabalho, usuários e recursos.
+
+* link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"]
+* link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]
+
+
+
+
+=== Conetores
+
+Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP . Um conetor permite o gerenciamento de recursos e processos em ambientes locais e de nuvem. É necessário gerenciar ambientes de trabalho (por exemplo, Cloud Volumes ONTAP) e usar muitos serviços BlueXP .
+
+link:concept-connectors.html["Saiba mais sobre conetores"].
+
+
+
+=== Modos de implantação
+
+O BlueXP  é compatível com ambientes com restrições de segurança e conetividade. Você pode usar _modo restrito_ ou _modo privado_ para limitar a conetividade de saída à camada SaaS do BlueXP .
+
+link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
+
+
+
+== Certificação SOC 2 tipo 2
+
+Uma empresa de contabilidade pública certificada independente e auditor de serviços examinou a BlueXP  e afirmou que alcançou relatórios SOC 2 tipo 2 com base nos critérios de Serviços de confiança aplicáveis.
+
+https://www.netapp.com/company/trust-center/compliance/soc-2/["Veja os relatórios SOC 2 da NetApp"^]

@@ -1,0 +1,337 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-aws-bluexp.html 
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, create connector 
+summary: Para criar um conetor na AWS a partir do BlueXP , você precisa configurar sua rede, preparar permissões da AWS e criar o conetor. 
+---
+= Crie um conetor na AWS a partir do BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Uma das opções de instalação disponíveis é criar um conetor na AWS diretamente do BlueXP . Para criar um conetor na AWS a partir do BlueXP , você precisa configurar sua rede, preparar permissões da AWS e criar o conetor.
+
+.Antes de começar
+* Você deve ter um link:concept-connectors.html["Compreensão dos conetores"].
+* Você deve rever link:reference-limitations.html["Limitações do conetor"].
+
+
+
+
+== Passo 1: Configurar a rede
+
+Certifique-se de que a localização da rede onde pretende instalar o conetor suporta os seguintes requisitos. Atender a esses requisitos permite que o conetor gerencie recursos e processos em seu ambiente de nuvem híbrida.
+
+VPC e sub-rede:: Ao criar o conetor, você precisa especificar a VPC e a sub-rede onde o conetor deve residir.
+
+
+Conexões com redes de destino:: Um conetor requer uma conexão de rede com o local onde você está planejando criar e gerenciar ambientes de trabalho. Por exemplo, a rede em que você planeja criar sistemas Cloud Volumes ONTAP ou um sistema de storage em seu ambiente local.
+
+
+Acesso de saída à Internet:: O local de rede onde você implantar o conetor deve ter uma conexão de saída de Internet para contatar pontos de extremidade específicos.
+
+
+Terminais contactados a partir do conetor:: O conetor requer acesso de saída à Internet para entrar em Contato com os seguintes endpoints, a fim de gerenciar recursos e processos em seu ambiente de nuvem pública para operações diárias.
++
+--
+Observe que os endpoints listados abaixo são todas as entradas CNAME.
+
+[cols="2a,1a"]
+|===
+| Endpoints | Finalidade 
+
+
+ a| 
+Serviços da AWS (amazonaws.com):
+
+* CloudFormation
+* Nuvem de computação elástica (EC2)
+* Gerenciamento de identidade e acesso (IAM)
+* Key Management Service (KMS)
+* Serviço de token de segurança (STS)
+* Serviço de armazenamento simples (S3)
+
+ a| 
+Para gerenciar recursos na AWS. O endpoint exato depende da região da AWS que você está usando. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte a documentação da AWS para obter detalhes"^]
+
+
+
+ a| 
+https://support.NetApp.com https://mysupport.NetApp.com
+ a| 
+Para obter informações de licenciamento e enviar mensagens do AutoSupport para o suporte do NetApp.
+
+
+
+ a| 
+https://*.api.BlueXP .NetApp.com
+
+https://api.BlueXP .NetApp.com
+
+https://*.cloudmanager.cloud.NetApp.com
+
+https://cloudmanager.cloud.NetApp.com
+
+https://NetApp-cloud-account.auth0.com
+ a| 
+Para fornecer recursos e serviços SaaS no BlueXP .
+
+Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Para atualizar o conetor e seus componentes do Docker.
+
+|===
+--
+
+
+Terminais contactados a partir da consola BlueXP :: À medida que você usa o console baseado na Web do BlueXP  fornecido pela camada SaaS, ele entra em Contato com vários endpoints para concluir as tarefas de gerenciamento de dados. Isso inclui endpoints que são contatados para implantar o conetor a partir do console BlueXP .
++
+--
+link:reference-networking-saas-console.html["Veja a lista de endpoints contactados a partir da consola BlueXP "].
+
+--
+
+
+Servidor proxy:: Se a sua empresa exigir a implantação de um servidor proxy para todo o tráfego de saída da Internet, obtenha as seguintes informações sobre o proxy HTTP ou HTTPS. Você precisará fornecer essas informações durante a instalação. Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
++
+--
+* Endereço IP
+* Credenciais
+* Certificado HTTPS
+
+
+--
+
+
+Portas:: Não há tráfego de entrada para o conetor, a menos que você o inicie ou se o conetor for usado como um proxy para enviar mensagens AutoSupport do Cloud Volumes ONTAP para o suporte da NetApp.
++
+--
+* HTTP (80) e HTTPS (443) fornecem acesso à IU local, que você usará em circunstâncias raras.
+* SSH (22) só é necessário se você precisar se conetar ao host para solução de problemas.
+* Conexões de entrada pela porta 3128 são necessárias se você implantar sistemas Cloud Volumes ONTAP em uma sub-rede onde uma conexão de saída à Internet não está disponível.
++
+Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configura automaticamente esses sistemas para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Você precisará abrir essa porta depois de implantar o conetor.
+
+
+
+--
+
+
+Ativar NTP:: Se estiver a planear utilizar a classificação BlueXP  para analisar as suas fontes de dados empresariais, deve ativar um serviço de Protocolo de tempo de rede (NTP) no sistema de conetores BlueXP  e no sistema de classificação BlueXP  para que o tempo seja sincronizado entre os sistemas. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^]
++
+--
+Você precisará implementar esse requisito de rede depois de criar o conetor.
+
+--
+
+
+
+
+== Etapa 2: Configurar permissões da AWS
+
+O BlueXP  precisa se autenticar com a AWS antes de implantar a instância do Connector na VPC. Você pode escolher um destes métodos de autenticação:
+
+* Deixe o BlueXP  assumir uma função do IAM que tenha as permissões necessárias
+* Forneça uma chave de acesso da AWS e uma chave secreta para um usuário do IAM que tenha as permissões necessárias
+
+
+Com qualquer uma das opções, o primeiro passo é criar uma política do IAM. Esta política contém apenas as permissões necessárias para iniciar a instância do Connector no AWS a partir do BlueXP .
+
+Se necessário, você pode restringir a política do IAM usando o elemento IAM `Condition`. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentação da AWS: Elemento condição"^]
+
+.Passos
+. Vá para o console do AWS IAM.
+. Selecione *políticas > criar política*.
+. Selecione *JSON*.
+. Copie e cole a seguinte política:
++
+Esta política contém apenas as permissões necessárias para iniciar a instância do Connector no AWS a partir do BlueXP . Quando o BlueXP  cria o conetor, ele aplica um novo conjunto de permissões à instância do conetor que permite que o conetor gerencie recursos da AWS. link:reference-permissions-aws.html["Exibir permissões necessárias para a própria instância do conetor"].
+
++
+[source, json]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:PutRolePolicy",
+        "iam:CreateInstanceProfile",
+        "iam:DeleteRolePolicy",
+        "iam:AddRoleToInstanceProfile",
+        "iam:RemoveRoleFromInstanceProfile",
+        "iam:DeleteInstanceProfile",
+        "iam:PassRole",
+        "iam:ListRoles",
+        "ec2:DescribeInstanceStatus",
+        "ec2:RunInstances",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:CreateSecurityGroup",
+        "ec2:DeleteSecurityGroup",
+        "ec2:DescribeSecurityGroups",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DeleteNetworkInterface",
+        "ec2:ModifyNetworkInterfaceAttribute",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeDhcpOptions",
+        "ec2:DescribeKeyPairs",
+        "ec2:DescribeRegions",
+        "ec2:DescribeInstances",
+        "ec2:CreateTags",
+        "ec2:DescribeImages",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeLaunchTemplates",
+        "ec2:CreateLaunchTemplate",
+        "cloudformation:CreateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStacks",
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:ValidateTemplate",
+        "ec2:AssociateIamInstanceProfile",
+        "ec2:DescribeIamInstanceProfileAssociations",
+        "ec2:DisassociateIamInstanceProfile",
+        "iam:GetRole",
+        "iam:TagRole",
+        "kms:ListAliases",
+        "cloudformation:ListStacks"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:TerminateInstances"
+      ],
+      "Condition": {
+        "StringLike": {
+          "ec2:ResourceTag/OCCMInstance": "*"
+        }
+      },
+      "Resource": [
+        "arn:aws:ec2:*:*:instance/*"
+      ]
+    }
+  ]
+}
+----
+. Selecione *Next* e adicione tags, se necessário.
+. Selecione *seguinte* e introduza um nome e uma descrição.
+. Selecione *criar política*.
+. Anexe a política a uma função do IAM que o BlueXP  pode assumir ou a um usuário do IAM para que você possa fornecer chaves de acesso ao BlueXP :
++
+** (Opção 1) Configurar uma função do IAM que o BlueXP  pode assumir:
++
+... Vá para o console do AWS IAM na conta de destino.
+... Em Gerenciamento de Acesso, selecione *funções > criar função* e siga as etapas para criar a função.
+... Em *tipo de entidade confiável*, selecione *conta AWS*.
+... Selecione *outra conta AWS* e insira o ID da conta SaaS do BlueXP : 952013314444
+... Selecione a política que você criou na seção anterior.
+... Depois de criar a função, copie a função ARN para que possa colá-la no BlueXP  quando criar o conetor.
+
+
+** (Opção 2) Configurar permissões para um usuário do IAM para que você possa fornecer chaves de acesso ao BlueXP :
++
+... No console do AWS IAM, selecione *Users* e, em seguida, selecione o nome de usuário.
+... Selecione *Adicionar permissões > Anexar políticas existentes diretamente*.
+... Selecione a política criada.
+... Selecione *seguinte* e, em seguida, selecione *Adicionar permissões*.
+... Certifique-se de que tem a chave de acesso e a chave secreta para o utilizador do IAM.
+
+
+
+
+
+
+.Resultado
+Agora você deve ter uma função do IAM que tenha as permissões necessárias ou um usuário do IAM que tenha as permissões necessárias. Ao criar o conetor a partir do BlueXP , você pode fornecer informações sobre a função ou as chaves de acesso.
+
+
+
+== Passo 3: Crie o conetor
+
+Crie o conetor diretamente do console baseado na Web do BlueXP .
+
+.Sobre esta tarefa
+* A criação do conetor do BlueXP  implanta uma instância do EC2 na AWS usando uma configuração padrão. Depois de criar o conetor, você não deve mudar para um tipo de instância EC2 menor que tenha menos CPU ou RAM. link:reference-connector-default-config.html["Saiba mais sobre a configuração padrão do conetor"].
+* Quando o BlueXP  cria o conetor, ele cria uma função do IAM e um perfil de instância para a instância. Essa função inclui permissões que permitem que o conetor gerencie recursos da AWS. Você precisa garantir que a função seja mantida atualizada à medida que novas permissões são adicionadas em versões subsequentes. link:reference-permissions-aws.html["Saiba mais sobre a política do IAM para o conetor"].
+
+
+.Antes de começar
+Você deve ter o seguinte:
+
+* Um método de autenticação da AWS: Uma função do IAM ou chaves de acesso para um usuário do IAM com as permissões necessárias.
+* VPC e sub-rede que atendem aos requisitos de rede.
+* Um par de chaves para a instância EC2.
+* Detalhes sobre um servidor proxy, se for necessário um proxy para acesso à Internet a partir do conetor.
+
+
+.Passos
+. Selecione a lista suspensa *Connector* e selecione *Add Connector*.
++
+image:screenshot_connector_add.gif["Uma captura de tela que mostra o ícone do conetor no cabeçalho e a ação Adicionar conetor."]
+
+. Escolha *Amazon Web Services* como seu provedor de nuvem e selecione *continuar*.
+. Na página *implantando um conetor*, revise os detalhes sobre o que você precisará. Você tem duas opções:
++
+.. Selecione *continuar* para se preparar para a implantação usando o guia do produto. Cada etapa do guia do produto inclui as informações contidas nesta página da documentação.
+.. Selecione *Skip to Deployment* se você já tiver preparado seguindo as etapas desta página.
+
+
+. Siga as etapas no assistente para criar o conetor:
++
+** *Get Ready*: Revise o que você vai precisar.
+** *Credenciais da AWS*: Especifique sua região da AWS e escolha um método de autenticação, que é uma função do IAM que o BlueXP  pode assumir ou uma chave de acesso e chave secreta da AWS.
++
+
+TIP: Se você escolher *assumir função*, você poderá criar o primeiro conjunto de credenciais a partir do assistente de implantação do conetor. Qualquer conjunto adicional de credenciais deve ser criado a partir da página credenciais. Eles estarão disponíveis no assistente em uma lista suspensa. link:task-adding-aws-accounts.html["Saiba como adicionar credenciais adicionais"].
+
+** * Detalhes *: Fornecer detalhes sobre o conetor.
++
+*** Insira um nome para a instância.
+*** Adicione tags personalizadas (metadados) à instância.
+*** Escolha se deseja que o BlueXP  crie uma nova função que tenha as permissões necessárias ou se deseja selecionar uma função existente configurada com link:reference-permissions-aws.html["as permissões necessárias"]o .
+*** Escolha se pretende encriptar os discos EBS do conetor. Você tem a opção de usar a chave de criptografia padrão ou usar uma chave personalizada.
+
+
+** *Rede*: Especifique uma VPC, sub-rede e par de chaves para a instância, escolha se deseja ativar um endereço IP público e, opcionalmente, especifique uma configuração de proxy.
++
+Certifique-se de que tem o par de chaves correto a utilizar com o conetor. Sem um par de chaves, você não será capaz de acessar a máquina virtual do conetor.
+
+** *Grupo de segurança*: Escolha se deseja criar um novo grupo de segurança ou se deseja selecionar um grupo de segurança existente que permita as regras de entrada e saída necessárias.
++
+link:reference-ports-aws.html["Veja as regras do grupo de segurança da AWS"].
+
+** *Revisão*: Revise suas seleções para verificar se a configuração está correta.
+
+
+. Selecione *Adicionar*.
++
+A instância deve estar pronta em cerca de 7 minutos. Você deve permanecer na página até que o processo esteja concluído.
+
+
+
+.Resultado
+Após o processo ser concluído, o conetor está disponível para uso no BlueXP .
+
+Se você tiver buckets do Amazon S3 na mesma conta da AWS onde criou o conetor, verá um ambiente de trabalho do Amazon S3 aparecer automaticamente na tela do BlueXP . https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Saiba como gerenciar buckets do S3 no BlueXP "^]

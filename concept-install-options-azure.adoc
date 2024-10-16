@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: concept-install-options-azure.html 
+keywords: install connector azure, azure install connector, connector azure, azure connector, installation options, azure marketplace, manual install 
+summary: Existem algumas maneiras diferentes de criar um conetor no Azure. Diretamente de BlueXP  é a maneira mais comum. 
+---
+= Opções de instalação do conetor no Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Existem algumas maneiras diferentes de criar um conetor no Azure. Diretamente de BlueXP  é a maneira mais comum.
+
+Estão disponíveis as seguintes opções de instalação:
+
+* link:task-install-connector-azure-bluexp.html["Crie um conetor diretamente do BlueXP "] (esta é a opção padrão)
++
+Esta ação lança uma VM executando Linux e o software Connector em um VNet de sua escolha.
+
+* link:task-install-connector-azure-marketplace.html["Crie um conetor a partir do Azure Marketplace"]
++
+Essa ação também lança uma VM executando o Linux e o software Connector, mas a implantação é iniciada diretamente do Azure Marketplace, em vez do BlueXP .
+
+* link:task-install-connector-azure-manual.html["Baixe e instale manualmente o software em seu próprio host Linux"]
+
+
+A opção de instalação que você escolher afeta a forma como você se prepara para a instalação. Isso inclui como você fornece ao BlueXP  as permissões necessárias que ele precisa para autenticar e gerenciar recursos no Azure.

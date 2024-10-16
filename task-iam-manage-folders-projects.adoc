@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-folders-projects.html 
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management 
+summary: O gerenciamento de identidade e acesso do BlueXP  permite que você represente uma hierarquia completa de recursos usando pastas e projetos. 
+---
+= Organize seus recursos no BlueXP  IAM com pastas e projetos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O BlueXP  Identity and Access Management (IAM) permite que você organize seus recursos do NetApp usando projetos e pastas. Um _project_ representa um workspace no BlueXP  que os membros da organização acessam para gerenciar _resources_ (por exemplo, um sistema Cloud Volumes ONTAP). Uma _folder_ agrupa os projetos relacionados. Depois de organizar seus recursos em pastas e projetos, você pode conceder acesso granular a recursos fornecendo aos membros da organização permissões para pastas e projetos específicos.
+
+
+
+== Adicione uma pasta ou projeto
+
+Quando você cria sua organização do BlueXP , ele inclui um único projeto. Você pode criar projetos adicionais para gerenciar os recursos da sua organização. Opcionalmente, você pode criar pastas para agrupar projetos relacionados.
+
+.Sobre esta tarefa
+A profundidade da hierarquia da sua organização pode descer para 7 níveis. Como resultado, você pode criar pastas aninhadas até 6 níveis. A última pasta aninhada pode então incluir projetos no sétimo nível da hierarquia.
+
+A imagem a seguir ilustra a profundidade máxima da hierarquia da sua organização:
+
+image:screenshot-iam-max-depth.png["Uma captura de tela que mostra uma organização, seis pastas aninhadas e um projeto na última pasta aninhada."]
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Na página *Organização*, selecione *Adicionar pasta ou projeto*.
+. Selecione *pasta* ou *Projeto*.
+. Forneça detalhes sobre a pasta ou projeto:
++
+** *Nome e localização*: Insira um nome e escolha um local na hierarquia para a pasta ou projeto. Uma pasta ou projeto pode residir diretamente abaixo da organização ou dentro de uma pasta.
+** *Recursos*: Selecione os recursos que você deseja associar a essa pasta ou projeto.
++
+Você só pode selecionar a partir dos recursos que estão associados ao pai da pasta ou projeto. Se o pai for a organização, você poderá escolher entre qualquer recurso na organização. Se o pai for uma pasta, você só poderá selecionar os recursos associados à pasta.
+
++
+link:concept-identity-and-access-management.html#associate-resource-folder["Saiba quando você pode associar um recurso a uma pasta"].
+
+** *Access*: Visualize os membros que terão acesso à pasta ou projeto com base nas permissões existentes já definidas na hierarquia de recursos.
++
+Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.
+
++
+link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefinidas do IAM"].
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O BlueXP  cria a pasta ou projeto e associa os recursos e membros especificados.
+
+
+
+== Exibir os recursos e membros associados a uma pasta ou projeto
+
+Para verificar se seus recursos estão organizados de forma adequada e acessíveis aos membros certos na sua organização, você pode ver quais recursos e membros estão associados a uma pasta ou projeto.
+
+.Passos
+. Na página *Organização*, navegue até um projeto ou pasta na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Editar pasta* ou *Editar projeto*.
++
+image:screenshot-iam-edit-project.png["Uma captura de tela da página Organização que mostra a opção Editar projeto ao selecionar o menu de ação para um projeto na tabela."]
+
+. Na página *Editar*, veja detalhes sobre os recursos associados e o acesso aos membros:
++
+** Selecione *Resources* para exibir os recursos associados. Na tabela, a coluna *Status* identifica os recursos associados à pasta ou projeto.
++
+image:screenshot-iam-allocated-resources.png["Uma captura de tela da página Editar projeto que mostra os recursos disponíveis que você pode associar ou desassociar ao projeto."]
+
+** Selecione *Access* para ver os membros que têm acesso à pasta ou projeto.
++
+image:screenshot-iam-member-access.png["Uma captura de tela da página Editar projeto que mostra os membros que têm acesso ao projeto."]
+
+
+
+
+
+.O que se segue?
+Se necessário, você pode <<modify-resources,modifique os recursos associados>> ou <<modify-members,modifique o acesso de membro>>.
+
+
+
+== Modifique os recursos associados a uma pasta ou projeto
+
+Você pode modificar os recursos associados a uma pasta ou projeto associando ou desassociando um recurso. Por exemplo, você pode querer associar um recurso a outro projeto porque esse recurso tem capacidade que outra equipe pode utilizar.
+
+.Antes de começar
+link:concept-identity-and-access-management.html#associate-resource-folder["Saiba quando você pode associar um recurso a uma pasta"].
+
+.Passos
+. Na página *Organização*, navegue até um projeto ou pasta na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Editar pasta* ou *Editar projeto*.
+. Na página *Editar*, selecione *recursos*.
++
+Na tabela, a coluna *Status* identifica os recursos associados à pasta ou projeto.
+
+. Selecione os recursos que você deseja associar ou desassociar.
+. Dependendo dos recursos selecionados, selecione *associar ao projeto* ou *desassociar do projeto*.
++
+image:screenshot-iam-associate-resources.png["Uma captura de tela da página Editar projeto que mostra a opção recursos associados que está disponível depois de selecionar recursos que não estão associados no momento."]
+
+. Selecione *aplicar*
+
+
+.Resultado
+O BlueXP  associa os recursos à pasta ou ao projeto. Os membros da organização que têm permissões para essa pasta ou projeto agora podem acessar os recursos associados.
+
+
+
+== Modifique o acesso de membro a uma pasta ou projeto
+
+Modifique o acesso de membro a uma pasta ou projeto para garantir que os membros direitos tenham acesso aos recursos associados à pasta ou projeto.
+
+.Passos
+. Na página *Organização*, navegue até um projeto ou pasta na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Editar pasta* ou *Editar projeto*.
+. Na página *Editar*, selecione *Acesso*.
++
+O BlueXP  exibe a lista de membros que têm acesso à pasta ou projeto.
+
+. Modificar acesso de membro:
++
+** *Adicionar um membro*: Selecione o membro que você deseja adicionar à pasta ou projeto e atribua a ele uma função.
+** *Alterar a função de um membro*: Para quaisquer membros com uma função diferente de Administrador da Organização, selecione sua função existente e, em seguida, escolha uma nova função.
++
+Se uma função foi fornecida em um nível mais alto da hierarquia (no nível de pasta ou organização), então você deve considerar se deve alterar a função no nível mais baixo ou superior. Por exemplo, se você atribuiu a função _pasta ou admin_ do projeto no nível da pasta, alterar a função no nível do projeto para permissões de nível inferior não alterará as permissões para o membro. Como as funções são herdadas na hierarquia da organização, o membro ainda teria permissões de administrador no nível do projeto.
+
++
+link:concept-identity-and-access-management.html#role-inheritance["Saiba mais sobre a herança de funções"].
+
+** *Remover acesso de membro*: Para membros que têm uma função definida na pasta ou projeto para o qual você está visualizando, você pode remover seu acesso.
++
+Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover o acesso de membro ao visualizar essa pasta ou projeto. Você precisa mudar para essa parte da hierarquia. Alternativamente, você pode link:task-iam-manage-members-permissions.html#manage-permissions["Gerenciar permissões a partir da página Membros"].
+
+
+
+. Selecione *aplicar*.
+
+
+.Resultado
+O BlueXP  atualiza os membros que têm acesso à pasta ou projeto.
+
+
+
+== Renomeie uma pasta ou projeto
+
+Se necessário, você pode alterar o nome de suas pastas e projetos.
+
+.Passos
+. Na página *Organização*, navegue até um projeto ou pasta na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Editar pasta* ou *Editar projeto*.
+. Na página *Editar*, insira um novo nome e selecione *aplicar*.
+
+
+.Resultado
+O BlueXP  atualiza o nome da pasta ou projeto.
+
+
+
+== Excluir uma pasta ou projeto
+
+Você pode excluir as pastas e projetos que você não precisa mais.
+
+.Antes de começar
+* A pasta ou projeto não deve ter recursos associados. <<modify-resources,Saiba como desassociar recursos>>.
+* Uma pasta não deve conter subpastas ou projetos. Você precisa excluir essas pastas e projetos primeiro.
+
+
+.Passos
+. Na página *Organização*, navegue até um projeto ou pasta na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Excluir*.
+. Confirme se deseja excluir a pasta ou o projeto.
+
+
+.Resultado
+O BlueXP  exclui a pasta ou o projeto. Essa pasta ou projeto não está mais disponível para os membros da organização.
+
+
+
+== Informações relacionadas
+
+* link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
+* link:task-iam-get-started.html["Comece a usar o BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Saiba mais sobre a API para BlueXP  IAM"^]
+

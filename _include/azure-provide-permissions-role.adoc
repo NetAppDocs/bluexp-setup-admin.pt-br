@@ -1,0 +1,34 @@
+= 
+:allow-uri-read: 
+
+
+Vá para o portal do Azure e atribua a função personalizada do Azure à máquina virtual Connector para uma ou mais subscrições.
+
+.Passos
+. No Portal do Azure, abra o serviço *Subscrições* e selecione a sua subscrição.
++
+É importante atribuir a função do serviço *Subscrições* porque especifica o escopo da atribuição de função no nível da assinatura. O _scope_ define o conjunto de recursos aos quais o acesso se aplica. Se você especificar um escopo em um nível diferente (por exemplo, no nível da máquina virtual), sua capacidade de concluir ações de dentro do BlueXP  será afetada.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Documentação do Microsoft Azure: Entenda o escopo do Azure RBAC"^]
+
+. Selecione *Access control (IAM)* > *Add* > *Add* > *Add role assignment*.
+. Na guia *função*, selecione a função *Operador BlueXP * e selecione *seguinte*.
++
+
+NOTE: Operador BlueXP  é o nome padrão fornecido na política BlueXP . Se você escolher um nome diferente para a função, selecione esse nome em vez disso.
+
+. Na guia *Membros*, execute as seguintes etapas:
++
+.. Atribua acesso a uma *identidade gerenciada*.
+.. Selecione *Selecionar membros*, selecione a assinatura na qual a máquina virtual do conetor foi criada, em *identidade gerenciada*, escolha *Máquina Virtual* e, em seguida, selecione a máquina virtual do conetor.
+.. Selecione *Selecionar*.
+.. Selecione *seguinte*.
+.. Selecione *Rever e atribuir*.
+.. Se você quiser gerenciar recursos em assinaturas adicionais do Azure, mude para essa assinatura e repita essas etapas.
+
+
+
+
+.Resultado
+O BlueXP  agora tem as permissões necessárias para executar ações no Azure em seu nome.

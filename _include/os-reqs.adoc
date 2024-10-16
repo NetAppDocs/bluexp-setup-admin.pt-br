@@ -1,0 +1,161 @@
+= 
+:allow-uri-read: 
+
+
+Host dedicado:: O conetor não é suportado em um host que é compartilhado com outros aplicativos. O host deve ser um host dedicado.
+
+
+Hipervisor:: É necessário um hypervisor bare metal ou hospedado certificado para executar um sistema operacional suportado.
+
+
+[[podman-versions]]requisitos de sistema operacional e contentor:: O BlueXP  suporta o conetor com os seguintes sistemas operacionais ao usar o BlueXP  no modo padrão ou no modo restrito. Uma ferramenta de orquestração de contêineres é necessária antes de instalar o conetor.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Sistema operacional | Versões de OS compatíveis | Versões de conetor suportadas | Ferramenta de recipiente necessária | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9,1 a 9,4
+
+8,6 a 8,10
+ a| 
+3.9.40 ou posterior com BlueXP  no modo padrão ou modo restrito
+ a| 
+Podman versão 4.6.1 ou 4.9.4
+
+<<podman-configuration,Veja os requisitos de configuração do Podman>>.
+ a| 
+Suportado no modo de imposição ou modo permissivo
+
+
+
+ a| 
+Ubuntu
+ a| 
+24,04 LTS
+ a| 
+3.9.45 ou posterior com BlueXP  no modo padrão ou modo restrito
+ a| 
+Docker Engine 26.0.0
+ a| 
+Não suportado
+
+
+
+ a| 
+22,04 LTS
+ a| 
+3.9.29 ou posterior
+ a| 
+Docker Engine 23.0.6 a 26.0.0
+
+26.0.0 é suportado com _new_ Connector 3.9.44 ou instalações posteriores
+ a| 
+Não suportado
+
+|===
+Notas:
+
+* O conetor é suportado em versões em inglês destes sistemas operativos.
+* Para o RHEL, o host deve estar registrado no Red Hat Subscription Management. Se não estiver registrado, o host não poderá acessar repositórios para atualizar o software necessário de 3rd partes durante a instalação do conetor.
+
+
+--
+
+
+[[podman-versions]]requisitos de sistema operacional e contentor:: O BlueXP  suporta o conetor com os seguintes sistemas operacionais ao usar o BlueXP  no modo privado. Uma ferramenta de orquestração de contêineres é necessária antes de instalar o conetor.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Sistema operacional | Versões de OS compatíveis | Versões de conetor suportadas | Ferramenta de recipiente necessária | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9,1 a 9,4
+
+8,6 a 8,10
+ a| 
+3.9.42 ou posterior com BlueXP  em modo privado
+ a| 
+Podman versão 4.6.1 ou 4.9.4
+
+<<podman-configuration,Veja os requisitos de configuração do Podman>>.
+ a| 
+Suportado no modo de imposição ou modo permissivo
+
+
+
+ a| 
+Ubuntu
+ a| 
+22,04 LTS
+ a| 
+3.9.29 ou posterior
+ a| 
+Docker Engine 23.0.6 a 26.0.0
+
+26.0.0 é suportado com _new_ Connector 3.9.44 ou instalações posteriores
+ a| 
+Não suportado
+
+|===
+Notas:
+
+* O conetor é suportado em versões em inglês destes sistemas operativos.
+* Para o RHEL, o host deve estar registrado no Red Hat Subscription Management. Se não estiver registrado, o host não poderá acessar repositórios para atualizar o software necessário de 3rd partes durante a instalação do conetor.
+
+
+--
+
+
+CPU:: 8 núcleos ou 8 vCPUs
+RAM:: 32 GB
+
+
+Tipo de instância do AWS EC2:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos t3,2xlarge.
+
+
+Par de chaves:: Ao criar o conetor, você precisará selecionar um par de chaves EC2 para usar com a instância.
+
+
+COLOQUE limite de salto de resposta ao usar IMDSv2:: Se IMDSv2 estiver habilitado na instância EC2 (essa é a configuração padrão para novas instâncias EC2), você deverá alterar o limite de salto de resposta PUT na instância para 3. Se você não alterar o limite na instância do EC2, receberá um erro de inicialização da IU quando tentar configurar o conetor.
++
+--
+* link:task-require-imdsv2.html["Exigir o uso do IMDSv2 em instâncias do Amazon EC2"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentação da AWS: Altere o limite de saltos de resposta PUT"^]
+
+
+--
+
+
+Tamanho da VM do Azure:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos Standard_D8s_v3.
+
+
+Tipo de máquina Google Cloud:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos n2-standard-8.
++
+--
+O conetor é compatível com o Google Cloud em uma instância de VM com um sistema operacional compatível https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Recursos de VM blindados"^]
+
+--
+
+
+Espaço em disco em /opt:: 100 GiB de espaço deve estar disponível
++
+--
+O BlueXP  usa `/opt` para instalar o `/opt/application/netapp` diretório e seu conteúdo.
+
+--
+Espaço em disco em /var:: 20 GiB de espaço deve estar disponível
++
+--
+O BlueXP  requer esse espaço `/var` porque o Docker ou o Podman são arquitetados para criar os contentores dentro desse diretório. Especificamente, eles irão criar contentores no `/var/lib/containers/storage` diretório. Montagens externas ou links simbólicos não funcionam para este espaço.
+
+--
+

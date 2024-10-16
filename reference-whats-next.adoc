@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next.html 
+keywords: standard mode, what you can do 
+summary: Agora que você fez login e configurou o BlueXP  no modo padrão, os usuários podem criar e descobrir ambientes de trabalho e usar os serviços do BlueXP . 
+---
+= O que você pode fazer a seguir (modo padrão)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Agora que você fez login e configurou o BlueXP  no modo padrão, os usuários podem criar e descobrir ambientes de trabalho e usar os serviços de dados do BlueXP .
+
+
+TIP: Se você instalou um conector na AWS, no Microsoft Azure ou no Google Cloud, o BlueXP  detetará automaticamente informações sobre os buckets do Amazon S3, o storage Blob do Azure ou os buckets do Google Cloud Storage no local onde o conector é instalado. Um ambiente de trabalho é adicionado automaticamente à tela BlueXP .
+
+Para obter ajuda, vá para a https://docs.netapp.com/us-en/bluexp-family/["Página inicial para a documentação do BlueXP "^] para visualizar os documentos de todos os serviços do BlueXP .
+
+.Link relacionado
+link:concept-modes.html["Modos de implantação do BlueXP"]

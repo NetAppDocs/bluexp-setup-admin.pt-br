@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource 
+summary: Se os membros da sua organização precisarem usar um conetor em outro projeto, você precisará criar uma associação do BlueXP  IAM. 
+---
+= Associe um conetor BlueXP  a outras pastas e projetos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um conetor é necessário para gerenciar vários tipos de ambientes de trabalho da BlueXP . Quando um _administrador da organização_ cria um conetor, o BlueXP  associa automaticamente esse conetor à organização e ao projeto atualmente selecionado. O _Organization admin_ tem acesso automaticamente a esse conetor de qualquer lugar da organização. Outros membros da sua organização só podem acessar esse conetor do projeto no qual ele foi criado, a menos que você associe esse conetor a outros projetos do gerenciamento de identidade e acesso (IAM) do BlueXP .
+
+.Antes de começar
+Você deve entender como a associação de conetores funciona. link:concept-identity-and-access-management.html#associate-connectors["Saiba mais sobre como usar conetores com o BlueXP  IAM"].
+
+.Sobre esta tarefa
+* Quando um _Folder ou administrador de projeto_ exibe a página *Connectors*, a página exibe todos os conetores na organização. No entanto, um membro com essa função só pode exibir e associar conetores com as pastas e projetos para os quais eles têm permissões. link:reference-iam-predefined-roles.html["Saiba mais sobre as ações que um _Folder ou administrador de projeto_ pode concluir"].
+* Devido a um problema conhecido, a página conetores no BlueXP  IAM exibe quaisquer conetores antigos removidos anteriormente do BlueXP .
+
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Selecione *conetores*.
+. Na tabela, localize o conetor que você deseja associar.
++
+Para encontrar um conetor específico, você pode usar a pesquisa acima da tabela e filtrar o conteúdo da tabela selecionando uma parte específica da hierarquia de recursos.
+
+. Para exibir primeiro as pastas e projetos aos quais o conetor está associado, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
++
+O BlueXP  exibe detalhes sobre as pastas e projetos aos quais o conetor está associado.
+
+. Selecione *associar à pasta ou projeto*.
+. Selecione uma pasta ou projeto e, em seguida, selecione *Accept*.
+. Para associar o conetor a uma pasta ou projeto adicional, selecione *Adicionar uma pasta ou projeto* e, em seguida, selecione a pasta ou projeto.
+. Selecione *conetor associado*.
+
+
+.Resultado
+O BlueXP  associa o conetor às pastas e projetos selecionados. Os membros que têm permissões para essas pastas e projetos agora têm a capacidade de selecionar esse conetor.
+
+.Depois de terminar
+Se você quiser associar os recursos que o conetor gerencia com as mesmas pastas e projetos, você pode fazê-lo na página recursos.
+
+link:task-iam-manage-resources.html#associate-resource["Saiba como associar um recurso a pastas e projetos"].
+
+.Informações relacionadas
+* link:concept-connectors.html["Saiba mais sobre conetores BlueXP "]
+* link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
+* link:task-iam-get-started.html["Comece a usar o BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Saiba mais sobre a API para BlueXP  IAM"^]
+

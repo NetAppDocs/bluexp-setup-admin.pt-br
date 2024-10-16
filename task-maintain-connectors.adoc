@@ -1,0 +1,123 @@
+---
+sidebar: sidebar 
+permalink: task-maintain-connectors.html 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+summary: Manter o sistema operacional no host do conetor é sua responsabilidade. Por exemplo, você deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional. 
+---
+= Mantenha o conetor VM e o sistema operacional
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Manter o sistema operacional no host do conetor é sua responsabilidade. Por exemplo, você deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.
+
+
+TIP: Se você tiver um conetor existente, você deve estar ciente link:reference-connector-operating-system-changes.html["Alterações nos sistemas operacionais Linux suportados"]do .
+
+
+
+== Patches do sistema operacional e o conetor
+
+Você não precisa parar nenhum serviço no host do conetor ao aplicar patches de segurança do sistema operacional.
+
+
+
+== Tipo de VM ou instância
+
+Se você criou um conetor diretamente do BlueXP , o BlueXP  implantou uma instância de máquina virtual em seu provedor de nuvem usando uma configuração padrão. Depois de criar o conetor, você não deve mudar para uma instância de VM menor que tenha menos CPU ou RAM.
+
+Os requisitos de CPU e RAM são os seguintes:
+
+CPU:: 8 núcleos ou 8 vCPUs
+RAM:: 32 GB
+
+
+link:reference-connector-default-config.html["Saiba mais sobre a configuração padrão do conetor"].
+
+
+
+== Parar o arranque do conetor VM
+
+Se você precisar parar e, em seguida, iniciar a VM Connector, você deve fazê-lo a partir do console do seu provedor de nuvem ou usando os procedimentos padrão para gerenciamento no local.
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["Tenha em atenção que o conetor deve estar sempre operacional"].
+
+
+
+== Conete-se à VM Linux
+
+Se você precisar se conetar à VM Linux em que o conetor é executado, você pode fazer isso usando as opções de conetividade disponíveis no seu provedor de nuvem.
+
+AWS:: Quando você criou a instância do Connector na AWS, forneceu uma chave de acesso e uma chave secreta da AWS. Você pode usar esse par de chaves para SSH para a instância. O nome de usuário para a instância do EC2 Linux é ubuntu (para conetores criados antes de maio de 2023, o nome de usuário era EC2-user).
++
+--
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Conete-se à sua instância do Linux"^]
+
+--
+Azure:: Quando você criou a VM Connector no Azure, você especificou um nome de usuário e escolheu autenticar com uma senha ou chave pública SSH. Use o método de autenticação que você escolheu para se conetar à VM.
++
+--
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Documentos do Azure: SSH na sua VM"^]
+
+--
+Google Cloud:: Não é possível especificar um método de autenticação ao criar um conetor no Google Cloud. No entanto, você pode se conectar à instância de VM do Linux usando o Google Cloud Console ou o Google Cloud CLI (gcloud).
++
+--
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Conete-se a VMs Linux"^]
+
+--
+
+
+
+
+== Altere o endereço IP de um conetor
+
+Se for necessário para a sua empresa, você pode alterar o endereço IP interno e o endereço IP público da instância do conetor que é atribuído automaticamente pelo seu provedor de nuvem.
+
+.Passos
+. Siga as instruções do seu provedor de nuvem para alterar o endereço IP local ou o endereço IP público (ou ambos) da instância do conetor.
+. Se você alterou o endereço IP público e precisar se conetar à interface de usuário local em execução no conetor, reinicie a instância do conetor para Registrar o novo endereço IP no BlueXP .
+. Se você alterou o endereço IP privado, atualize o local de backup para os arquivos de configuração do Cloud Volumes ONTAP para que os backups estejam sendo enviados para o novo endereço IP privado no conetor.
++
+Você precisará atualizar o local de backup para cada sistema Cloud Volumes ONTAP.
+
++
+.. Na CLI do Cloud Volumes ONTAP, defina o nível de privilégio como avançado:
++
+[source, cli]
+----
+set -privilege advanced
+----
+.. Execute o seguinte comando para exibir o destino de backup atual:
++
+[source, cli]
+----
+system configuration backup settings show
+----
+.. Execute o seguinte comando para atualizar o endereço IP para o destino de backup:
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
+
+
+
+
+
+
+== Edite as URIs de um conetor
+
+Adicione e remova o URI (Uniform Resource Identifier) para um conetor.
+
+.Passos
+. Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
+. Selecione *Gerenciar conetores*.
+. Selecione o menu de ação para um conetor e selecione *Edit URIs*.
+. Adicione e remova URIs e selecione *Apply*.
+

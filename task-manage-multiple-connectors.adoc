@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: task-manage-multiple-connectors.html 
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
+summary: Se você usar vários conetores, o BlueXP  permite alternar entre esses conetores diretamente do console. Você também pode gerenciar um único ambiente de trabalho com vários conetores. 
+---
+= Trabalhe com vários conetores
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se você usar vários conetores, o BlueXP  permite alternar entre esses conetores diretamente do console. Você também pode gerenciar um único ambiente de trabalho com vários conetores.
+
+
+
+== Alternar entre os conetores
+
+Se você tiver vários conetores, pode alternar entre eles para ver os ambientes de trabalho associados a um conetor específico.
+
+Por exemplo, digamos que você está trabalhando em um ambiente multicloud. Você pode ter um conetor na AWS e outro no Google Cloud. Você precisa alternar entre esses conetores para gerenciar os sistemas Cloud Volumes ONTAP executados nessas nuvens.
+
+.Passo
+. Selecione a lista suspensa *Connector*, selecione outro conetor e, em seguida, selecione *Switch*.
++
+image:screenshot-connector-switch.png["Uma captura de tela que mostra o ícone do conetor no cabeçalho e na ação Switch."]
+
+
+
+.Resultado
+O BlueXP  atualiza e mostra os ambientes de trabalho associados ao conetor selecionado.
+
+
+
+== Configure uma configuração de recuperação de desastres
+
+Você pode gerenciar um ambiente de trabalho com vários conetores ao mesmo tempo para fins de recuperação de desastres. Se um conetor descer, você pode alternar para o outro conetor para gerenciar imediatamente o ambiente de trabalho.
+
+.Passos
+. Mude para o outro conetor que você deseja gerenciar com o ambiente de trabalho.
+. Descubra o ambiente de trabalho existente.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Adicione sistemas Cloud Volumes ONTAP existentes ao BlueXP "^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Descubra os clusters do ONTAP"^]
+
+
+. Se estiver a gerir um ambiente de trabalho Cloud Volumes ONTAP, selecione *Definições > Definições do conetor* e defina o modo de gestão de capacidade para *modo manual*.
++
+Para evitar problemas de contenção, apenas o conetor principal deve ser definido como *modo Automático*.
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html#capacity-management["Saiba mais sobre o modo de gerenciamento de capacidade"^]
+
+

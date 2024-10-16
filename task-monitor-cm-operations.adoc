@@ -1,0 +1,177 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-cm-operations.html 
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email 
+summary: Você pode monitorar o status das operações que o BlueXP  está executando para ver se há algum problema que você precisa resolver. Você pode exibir o status na linha do tempo, na Central de notificações ou ter notificações enviadas para seu e-mail. 
+---
+= Monitorar operações do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode monitorar o status das operações que o BlueXP  está executando para ver se há algum problema que você precisa resolver. Você pode exibir o status na linha do tempo, na Central de notificações ou ter notificações enviadas para seu e-mail.
+
+A tabela a seguir fornece uma comparação entre a linha do tempo e a Central de notificações para que você possa entender o que cada um tem a oferecer.
+
+[cols="47,47"]
+|===
+| Centro de notificações | Linha do tempo 
+
+
+| Mostra o status de alto nível para eventos e ações | Fornece detalhes para cada evento ou ação para investigação adicional 
+
+
+| Mostra o status da sessão de login atual (as informações não aparecerão no Centro de notificações após o logout) | Mantém o status do último mês 
+
+
+| Mostra apenas ações iniciadas na interface do usuário | Mostra todas as ações da IU ou APIs 
+
+
+| Mostra ações iniciadas pelo usuário | Mostra todas as ações, iniciadas pelo usuário ou iniciadas pelo sistema 
+
+
+| Filtrar resultados por importância | Filtre por serviço, ação, usuário, status e muito mais 
+
+
+| Fornece a capacidade de enviar notificações por e-mail para usuários e para outros | Sem capacidade de e-mail 
+|===
+
+
+== Auditar a atividade do usuário a partir da linha do tempo do BlueXP 
+
+A linha do tempo no BlueXP  mostra as ações que os usuários concluíram para gerenciar sua organização ou conta. Isso inclui ações de gerenciamento, como associar usuários, criar ambientes de trabalho, criar conetores e muito mais.
+
+Verificar a linha do tempo pode ser útil se você precisar identificar quem executou uma ação específica ou se precisar identificar o status de uma ação.
+
+.Passos
+. No canto superior direito do console BlueXP , selecione image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."] > *linha do tempo*.
+. Use os filtros acima da tabela para alterar as ações exibidas na tabela.
++
+Por exemplo, você pode usar o filtro *Serviço* para mostrar ações relacionadas a um serviço BlueXP  específico ou usar o filtro *Usuário* para mostrar ações relacionadas a uma conta de usuário específica.
+
+
+
+.Resultado
+A linha do tempo é atualizada para mostrar as ações de gerenciamento concluídas.
+
+
+
+== Monitore atividades usando o Centro de notificações
+
+As notificações rastreiam o progresso das operações iniciadas no BlueXP  para que você possa verificar se a operação foi bem-sucedida ou não. Eles permitem que você visualize o status de muitas ações do BlueXP  iniciadas durante sua sessão de login atual. Neste momento, nem todos os serviços BlueXP  reportam informações na Central de notificações.
+
+É possível exibir as notificações selecionando o sino de notificação (image:icon_bell.png["campainha de notificação"]) na barra de menus. A cor da pequena bolha no sino indica a notificação de gravidade de nível mais alto que está ativa. Então, se você vir uma bolha vermelha, isso significa que há uma notificação importante que você deve olhar.
+
+image:screenshot_notification_full.png["Uma captura de tela mostrando a lista de notificações atuais no Centro de notificações."]
+
+Você também pode configurar o BlueXP  para enviar certos tipos de notificações por e-mail, para que você possa ser informado sobre atividades importantes do sistema, mesmo quando não estiver conetado ao sistema. Os e-mails podem ser enviados a qualquer usuário que faça parte da sua organização ou conta do BlueXP  ou a qualquer outro destinatário que precise estar ciente de certos tipos de atividade do sistema. Consulte como <<Defina as configurações de notificação por e-mail,defina as configurações de notificação por e-mail>>.
+
+
+
+=== Comparação da Central de notificações com alertas do BlueXP 
+
+A Central de notificações permite visualizar o status das operações iniciadas pelo BlueXP  e configurar notificações de alerta para determinados tipos de atividades do sistema. Enquanto isso, os alertas do BlueXP  permitem visualizar problemas ou riscos potenciais no ambiente de storage do ONTAP relacionados à capacidade, disponibilidade, desempenho, proteção e segurança.
+
+https://docs.netapp.com/us-en/bluexp-alerts/index.html["Saiba mais sobre os alertas do BlueXP "^]
+
+
+
+=== Tipos de notificação
+
+As notificações são classificadas nas seguintes categorias:
+
+[cols="20,60"]
+|===
+| Tipo de notificação | Descrição 
+
+
+| Crítico | Ocorreu um problema que pode levar à interrupção do serviço se não forem tomadas medidas corretivas imediatamente. 
+
+
+| Erro | Uma ação ou processo terminou com falha, ou pode levar à falha se não for tomada uma ação corretiva. 
+
+
+| Aviso | Um problema que você deve estar ciente para se certificar de que ele não atinge a gravidade crítica. As notificações desta gravidade não causam interrupções no serviço e podem não ser necessárias ações corretivas imediatas. 
+
+
+| Recomendação | Uma recomendação do sistema para que você tome uma ação para melhorar o sistema ou um determinado serviço; por exemplo: Economia de custos, sugestão de novos serviços, configuração de segurança recomendada, etc. 
+
+
+| Informações | Uma mensagem que fornece informações adicionais sobre uma ação ou processo. 
+
+
+| Sucesso | Uma ação ou processo concluído com sucesso. 
+|===
+
+
+=== Filtrar notificações
+
+Por padrão, você verá todas as notificações ativas no Centro de notificações. Você pode filtrar as notificações que você vê para mostrar apenas as notificações que são importantes para você. Você pode filtrar por BlueXP  "Serviço" e por notificação "tipo".
+
+image:screenshot_notification_filters.png["Uma captura de tela mostrando os dois tipos de filtros disponíveis no Centro de notificações."]
+
+Por exemplo, se você quiser ver apenas notificações de "erro" e "Aviso" para operações do BlueXP , selecione essas entradas e você verá apenas esses tipos de notificações.
+
+
+
+=== Ignorar notificações
+
+Você pode remover notificações da página se não precisar mais vê-las. Você pode ignorar todas as notificações de uma só vez ou ignorar notificações individuais.
+
+Para ignorar todas as notificações, na Central de notificações, image:button_3_vert_dots.png["um ícone com três pontos verticais"]selecione e selecione *Descartar tudo*. image:screenshot_notification_menu.png["Uma captura de tela mostrando o menu notificações para selecionar configurações e ignorar todas as opções."]
+
+Para ignorar notificações individuais, passe o cursor sobre a notificação e selecione *Dismiss*. image:screenshot_notification_dismiss1.png["Uma captura de tela mostrando como descartar uma única notificação."]
+
+
+
+=== Defina as configurações de notificação por e-mail
+
+Você pode enviar tipos específicos de notificações por e-mail para que você possa ser informado sobre atividades importantes do sistema, mesmo quando não estiver conetado ao BlueXP . Os e-mails podem ser enviados a qualquer usuário que faça parte da sua organização ou conta do BlueXP  ou a qualquer outro destinatário que precise estar ciente de certos tipos de atividade do sistema.
+
+[NOTE]
+====
+* As notificações são enviadas por e-mail para os seguintes recursos e serviços do BlueXP : Conetor, carteira digital BlueXP , cópia e sincronização do BlueXP  e backup e recuperação do BlueXP .
+* O envio de notificações por e-mail não é suportado quando o conetor é instalado em um site sem acesso à Internet.
+
+
+====
+Os filtros definidos na Central de notificações não determinam os tipos de notificações que você receberá por e-mail. Por padrão, qualquer administrador do BlueXP  receberá e-mails para todas as notificações "críticas" e "Recomendação". Essas notificações estão em todos os serviços - você não pode optar por receber notificações apenas para determinados serviços, por exemplo, conetores ou backup e recuperação do BlueXP .
+
+Todos os outros usuários e destinatários estão configurados para não receber nenhum e-mail de notificação - portanto, você precisará configurar as configurações de notificação para quaisquer usuários adicionais.
+
+Você deve ser um administrador do BlueXP  para personalizar as configurações de notificações.
+
+.Passos
+. Na barra de menus do BlueXP , selecione *Definições > Definições de alertas e notificações*.
++
+image:screenshot-settings-notifications.png["Uma captura de tela mostrando como exibir a página Configurações de alertas e notificações."]
+
+. Selecione um usuário ou vários usuários na guia _Users_ ou _Additional Recipients_ e escolha o tipo de notificações a serem enviadas:
++
+** Para fazer alterações para um único usuário, selecione o menu na coluna notificações para esse usuário, verifique os tipos de notificações a serem enviadas e selecione *aplicar*.
+** Para fazer alterações para vários usuários, marque a caixa para cada usuário, selecione *Gerenciar notificações por e-mail*, marque os tipos de notificações a serem enviadas e selecione *aplicar*.
+
+
++
+image:screenshot-change-notifications.png["Uma captura de tela mostrando como alterar notificações para vários usuários."]
+
+
+
+
+
+=== Adicionar destinatários de e-mail adicionais
+
+Os usuários que aparecem na guia _Users_ são preenchidos automaticamente a partir dos usuários na sua organização ou conta do BlueXP . Você pode adicionar endereços de e-mail na guia _destinatários adicionais_ para outras pessoas, ou grupos, que não têm acesso ao BlueXP , mas que precisam ser notificados sobre certos tipos de alertas e notificações.
+
+.Passos
+. Na página Configurações de alertas e notificações, selecione *Adicionar novos destinatários*.
++
+image:screenshot-add-email-recipient.png["Uma captura de tela mostrando como adicionar novos destinatários de e-mail para alertas e notificações."]
+
+. Digite o nome, o endereço de e-mail e selecione os tipos de notificações que o destinatário receberá e selecione *Adicionar novo destinatário*.
+

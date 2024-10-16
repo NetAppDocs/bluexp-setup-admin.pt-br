@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-predefined-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização. 
+---
+= Funções e permissões do IAM predefinidas do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui.
+
+
+
+== Administrador da organização
+
+Descrição:: Fornece controle total de toda a organização BlueXP .
+Permissões:: Um membro que tenha essa função pode concluir todas as ações no BlueXP .
+
+
+
+
+== Administrador de pasta ou projeto
+
+Descrição:: Fornece controle total de um ou mais projetos e pastas.
++
+--
+Observe que se você atribuir essa função no nível da pasta, o membro tem permissões para todos os projetos associados a essa pasta.
+
+--
+Permissões:: Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :
++
+--
+* Gerencie todos os ambientes de trabalho nos projetos e pastas para os quais eles têm permissões
+* Use todos os serviços do BlueXP 
+* No BlueXP  IAM, um administrador de uma pasta pode administrar as pastas, projetos e recursos que são filhos dessa pasta:
++
+** Adicione pastas ou projetos dentro da pasta
+** Editar pastas e projetos: Seus nomes, recursos associados e acesso a membros
+** Excluir pastas e projetos
+** Adicione uma conta de usuário e associe uma função no nível de pasta ou projeto
+** Associar um conetor a uma pasta ou projeto
+** Adicione uma função a um membro no nível de pasta ou projeto
+** Exibir recursos associados a pastas e projetos
+** Associe recursos visíveis a pastas ou projetos adicionais
+** Dissociar um recurso de uma pasta ou projeto
+
+
+* A partir do BlueXP  IAM, um administrador de um projeto pode administrar esse projeto e seus recursos associados da seguinte forma:
++
+** Edite o projeto: Seu nome, recursos associados e acesso a membros
+** Adicione uma conta de usuário e associe uma função no nível do projeto
+** Associe um conetor a um projeto, se o membro tiver permissões de administrador para outros projetos que tenham outros conetores associados
+** Adicione uma função a um membro no nível do projeto
+** Veja os recursos associados ao projeto
+** Associe recursos ao projeto, se o membro tiver permissões de administrador para outros projetos que tenham outros recursos associados
+** Dissociar um recurso do projeto
+** Exclua o projeto
+
+
+* Gerir credenciais a partir de Definições > credenciais
+* Veja a linha do tempo do BlueXP 
+* Registre o BlueXP  para obter suporte e enviar casos
+
+
+--
+
+
+
+
+== Administrador do SnapCenter
+
+Descrição:: Permite fazer backup de snapshots de clusters ONTAP on-premises usando o backup e a recuperação do BlueXP  para aplicações.
+Permissões:: Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :
++
+--
+* Conclua qualquer ação a partir de cópia de Segurança e recuperação > aplicações
+* Gerencie todos os ambientes de trabalho nos projetos e pastas para os quais eles têm permissões
+* Use todos os serviços do BlueXP 
+
+
+--
+
+
+
+
+== Visualizador de classificação
+
+Descrição:: Fornece os resultados do exame de classificação BlueXP  da vista de capacidade.
+Permissões:: Visualize as informações de conformidade e gere relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados.
++
+--
+Nenhuma outra ação está disponível para um membro que tenha essa função.
+
+--
+
+
+
+
+== Links relacionados
+
+* link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
+* link:task-iam-get-started.html["Comece a usar o BlueXP  IAM"]
+* link:task-iam-manage-members-permissions.html["Gerenciar membros do BlueXP  e suas permissões"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Saiba mais sobre a API para BlueXP  IAM"^]
+

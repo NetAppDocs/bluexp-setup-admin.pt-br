@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
+summary: As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado. 
+---
+= Limitações conhecidas
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.
+
+Essas limitações são específicas para a configuração e administração do BlueXP : O conetor, a plataforma SaaS e muito mais.
+
+
+
+== Limitações do conetor
+
+
+
+=== Servidores proxy transparentes não são suportados
+
+O BlueXP  não suporta servidores proxy transparentes com o conetor.
+
+link:task-configuring-proxy.html["Saiba mais sobre como usar um servidor proxy com o conetor"].
+
+
+
+=== Possível conflito com endereços IP no intervalo 172
+
+O BlueXP  implanta o conetor com duas interfaces que têm endereços IP nos intervalos 172.17.0.0/16 e 172.18.0.0/16.
+
+Se a rede tiver uma sub-rede configurada com qualquer um desses intervalos, poderá ocorrer falhas de conetividade do BlueXP . Por exemplo, a descoberta de clusters ONTAP no local no BlueXP  pode falhar.
+
+Consulte o artigo da base de dados de Conhecimento link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Conflito de IP do conetor BlueXP  com a rede existente"]para obter instruções sobre como alterar o endereço IP das interfaces do conetor.
+
+
+
+=== A descriptografia SSL não é suportada
+
+O BlueXP  não suporta configurações de firewall que tenham a descriptografia SSL ativada. Se a descriptografia SSL estiver ativada, as mensagens de erro aparecerão no BlueXP  e a instância do conetor será exibida como inativa.
+
+Para uma segurança melhorada, tem a opção de link:task-installing-https-cert.html["Instalar um certificado HTTPS assinado por uma autoridade de certificação (CA)"].
+
+
+
+=== Página em branco ao carregar a IU local
+
+Se você carregar o console baseado na Web que está sendo executado em um conetor, a interface pode não ser exibida às vezes, e você apenas obtém uma página em branco.
+
+Este problema está relacionado a um problema de armazenamento em cache. A solução alternativa é usar uma sessão anônima ou privada do navegador da Web.
+
+
+
+=== Hosts Linux compartilhados não são suportados
+
+O conetor não é suportado em uma VM compartilhada com outros aplicativos. A VM deve ser dedicada ao software do conetor.
+
+
+
+=== agentes e extensões de 3rd partes
+
+Agentes de 3rd partes ou extensões de VM não são suportados na VM do conetor.

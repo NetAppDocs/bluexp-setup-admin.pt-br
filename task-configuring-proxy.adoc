@@ -1,0 +1,141 @@
+---
+sidebar: sidebar 
+permalink: task-configuring-proxy.html 
+keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
+summary: Se suas políticas corporativas exigirem que você use um servidor proxy para toda a comunicação com a Internet, você precisará configurar seus conetores para usar esse servidor proxy. Se você não configurou um conetor para usar um servidor proxy durante a instalação, então você pode configurar o conetor para usar esse servidor proxy a qualquer momento. 
+---
+= Configure um conetor para usar um servidor proxy
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se suas políticas corporativas exigirem que você use um servidor proxy para toda a comunicação com a Internet, você precisará configurar seus conetores para usar esse servidor proxy. Se você não configurou um conetor para usar um servidor proxy durante a instalação, então você pode configurar o conetor para usar esse servidor proxy a qualquer momento.
+
+Configurar o conetor para usar um servidor proxy fornece acesso de saída à Internet se um endereço IP público ou um gateway NAT não estiver disponível. Este servidor proxy fornece apenas o conetor com uma conexão de saída. Ele não fornece nenhuma conetividade para sistemas Cloud Volumes ONTAP.
+
+Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Você precisará abrir essa porta depois de implantar o conetor.
+
+
+
+== Configurações compatíveis
+
+* O BlueXP  suporta HTTP e HTTPS.
+* O servidor proxy pode estar na nuvem ou na rede.
+* O BlueXP  não suporta servidores proxy transparentes.
+
+
+
+
+== Ative um proxy em um conetor
+
+Quando você configura um conetor para usar um servidor proxy, esse conetor e os sistemas Cloud Volumes ONTAP que ele gerencia (incluindo quaisquer mediadores de HA), todos usam o servidor proxy.
+
+Tenha em atenção que esta operação reinicia o conetor. Certifique-se de que o conetor não está a efetuar quaisquer operações antes de prosseguir.
+
+.Passos
+. Navegue até a página *Edit BlueXP  Connector*.
++
+A forma como você navega depende se você está usando o BlueXP  no modo padrão (acessando a interface do BlueXP  a partir do site SaaS) ou usando o BlueXP  no modo restrito ou no modo privado (acessando a interface do BlueXP  localmente a partir do host do conetor).
+
++
+[role="tabbed-block"]
+====
+.Modo padrão
+--
+.. Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
+.. Selecione *Gerenciar conetores*.
++
+image:screenshot-manage-connectors.png["Uma captura de tela que mostra a página Gerenciar conetores que está disponível após a seleção do conetor."]
+
+.. Selecione o menu de ação de um conetor e selecione *Editar conetor*.
++
+image:screenshot-edit-connector-standard.png["Uma captura de tela que mostra a opção Editar conetores que está disponível no menu de ação."]
+
+
+
+--
+.Modo restrito ou privado
+--
+.. Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
+.. Selecione *Editar conetor*.
++
+image:screenshot-edit-connector.png["Uma captura de tela que mostra a opção Editar conetor que está disponível depois de expandir o menu do conetor."]
+
+
+
+--
+====
+. Selecione *Configuração de proxy HTTP*.
+. Configure o proxy:
++
+.. Selecione *Ativar proxy*.
+.. Especifique o servidor usando a http://_address:port_[] sintaxe ou https://_address:port_[]
+.. Especifique um nome de usuário e uma senha se a autenticação básica for necessária para o servidor.
++
+Observe o seguinte:
+
++
+*** O usuário pode ser um usuário local ou usuário de domínio.
+*** Para um usuário de domínio, você deve digitar o código ASCII para o nome de domínio%92user-name
++
+Por exemplo: NetApp%92proxy
+
+*** O BlueXP  não suporta senhas que incluem o caractere A.
+
+
+.. Selecione *Guardar*.
+
+
+
+
+
+
+== Ative o tráfego direto da API
+
+Se você configurou um conetor para usar um servidor proxy, você pode habilitar o tráfego direto da API no conetor para enviar chamadas de API diretamente para os serviços do provedor de nuvem sem passar pelo proxy. Essa opção é compatível com conetores executados na AWS, no Azure ou no Google Cloud.
+
+Se você desativou o uso de links privados do Azure com o Cloud Volumes ONTAP e estiver usando endpoints de serviço, então você deverá habilitar o tráfego direto da API. Caso contrário, o tráfego não será encaminhado corretamente.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Saiba mais sobre como usar um link privado do Azure ou endpoints de serviço com o Cloud Volumes ONTAP"^]
+
+.Passos
+. Navegue até a página *Edit BlueXP  Connector*:
++
+A forma como você navega depende se você está usando o BlueXP  no modo padrão (acessando a interface do BlueXP  a partir do site SaaS) ou usando o BlueXP  no modo restrito ou no modo privado (acessando a interface do BlueXP  localmente a partir do host do conetor).
+
++
+[role="tabbed-block"]
+====
+.Modo padrão
+--
+.. Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
+.. Selecione *Gerenciar conetores*.
++
+image:screenshot-manage-connectors.png["Uma captura de tela que mostra a página Gerenciar conetores que está disponível após a seleção do conetor."]
+
+.. Selecione o menu de ação de um conetor e selecione *Editar conetor*.
++
+image:screenshot-edit-connector-standard.png["Uma captura de tela que mostra a opção Editar conetores que está disponível no menu de ação."]
+
+
+
+--
+.Modo restrito ou privado
+--
+.. Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
+.. Selecione *Editar conetor*.
++
+image:screenshot-edit-connector.png["Uma captura de tela que mostra a opção Editar conetor que está disponível depois de expandir o menu do conetor."]
+
+
+
+--
+====
+. Selecione *Support Direct API Traffic*.
+. Selecione a caixa de verificação para ativar a opção e, em seguida, selecione *Guardar*.
+

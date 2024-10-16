@@ -1,0 +1,67 @@
+= 
+:allow-uri-read: 
+
+
+.Passos
+. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *assinatura associada*.
++
+image:screenshot_gcp_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
+
+. Para associar as credenciais a uma assinatura existente, selecione um projeto e assinatura do Google Cloud na lista suspensa e, em seguida, selecione *Associate*.
++
+image:screenshot_gcp_associate.gif["Uma captura de tela de um projeto e assinatura do Google Cloud selecionados para credenciais do Google Cloud."]
+
+. Se você ainda não tiver uma assinatura, selecione *Adicionar assinatura > continuar* e siga as etapas no Google Cloud Marketplace.
++
+
+NOTE: Antes de concluir as etapas a seguir, certifique-se de que você tenha o Privileges de Administração de faturamento na sua conta do Google Cloud, bem como um login no BlueXP .
+
++
+.. Depois de ser redirecionado para o https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página do NetApp BlueXP  no Google Cloud Marketplace"^], certifique-se de que o projeto correto está selecionado no menu de navegação superior.
++
+image:screenshot_gcp_cvo_marketplace.png["Uma captura de tela da página de mercado do Cloud Volumes ONTAP no Google Cloud."]
+
+.. Selecione *Subscribe*.
+.. Selecione a conta de faturamento apropriada e concorde com os termos e condições.
+.. Selecione *Subscribe*.
++
+Esta etapa envia sua solicitação de transferência para o NetApp.
+
+.. Na caixa de diálogo pop-up, selecione *Register with NetApp, Inc.*
++
+Essa etapa deve ser concluída para vincular a assinatura do Google Cloud à sua organização ou conta do BlueXP . O processo de vinculação de uma assinatura não está concluído até que você seja redirecionado desta página e, em seguida, entre no BlueXP .
+
++
+image:screenshot_gcp_marketplace_register.png["Uma captura de tela de um pop-up de Registro."]
+
+.. Conclua as etapas na página *atribuição de assinatura*:
++
+
+NOTE: Se alguém da sua organização já se inscreveu na assinatura do NetApp BlueXP  da sua conta de faturamento, então você será redirecionado para https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["A página Cloud Volumes ONTAP no site da BlueXP "^]. Se isso for inesperado, entre em Contato com sua equipe de vendas da NetApp. O Google ativa apenas uma assinatura por conta de faturamento do Google.
+
++
+*** Selecione as organizações ou contas do BlueXP  às quais você deseja associar essa assinatura.
+*** No campo *Substituir subscrição existente*, escolha se pretende substituir automaticamente a subscrição existente de uma organização ou conta por esta nova subscrição.
++
+O BlueXP  substitui a assinatura existente para todas as credenciais na organização ou conta por essa nova assinatura. Se um conjunto de credenciais nunca foi associado a uma assinatura, essa nova assinatura não será associada a essas credenciais.
+
++
+Para todas as outras organizações ou contas, você precisará associar manualmente a assinatura repetindo estas etapas.
+
+*** Selecione *Guardar*.
++
+O vídeo a seguir mostra as etapas para se inscrever no Google Cloud Marketplace:
+
++
+.Inscreva-se no BlueXP  no Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+.. Quando esse processo estiver concluído, navegue de volta para a página credenciais no BlueXP  e selecione essa nova assinatura.
++
+image:screenshot_gcp_associate.gif["Uma captura de tela da página de atribuição de assinatura."]
+
+
+
+

@@ -1,0 +1,73 @@
+= 
+:allow-uri-read: 
+
+
+Terminais contactados a partir do conetor:: O conetor requer acesso de saída à Internet para entrar em Contato com os seguintes endpoints, a fim de gerenciar recursos e processos em seu ambiente de nuvem pública para operações diárias.
++
+--
+Observe que os endpoints listados abaixo são todas as entradas CNAME.
+
+--
+
+
+| Serviços da AWS (amazonaws.com):
+
+* CloudFormation
+* Nuvem de computação elástica (EC2)
+* Gerenciamento de identidade e acesso (IAM)
+* Key Management Service (KMS)
+* Serviço de token de segurança (STS)
+* Serviço de armazenamento simples (S3)
+
+
+| para gerenciar recursos na AWS. O endpoint exato depende da região da AWS que você está usando. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte a documentação da AWS para obter detalhes"^]
+
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net
+
+| para gerenciar recursos em regiões públicas do Azure.
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud
+
+| para gerenciar recursos na região do Azure IL6.
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net
+
+| para gerenciar recursos nas regiões do Azure Government.
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn
+
+| para gerenciar recursos nas regiões do Azure China.
+
+| \https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects
+
+| para gerenciar recursos no Google Cloud.
+
+| https://support.NetApp.com https://mysupport.NetApp.com | para obter informações de licenciamento e enviar mensagens AutoSupport para o suporte do NetApp.
+
+| https://*.api.BlueXP .NetApp.com
+
+https://api.BlueXP .NetApp.com
+
+https://*.cloudmanager.cloud.NetApp.com
+
+https://cloudmanager.cloud.NetApp.com
+
+https://NetApp-cloud-account.auth0.com
+
+| para fornecer recursos e serviços SaaS dentro do BlueXP .
+
+Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.
+
+| \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+
+| para atualizar o conetor e seus componentes do Docker.
+
+| \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io este endpoint não é necessário nas regiões do Azure Government.
+
+\https://occmclientinfragov.azurecr.us este endpoint só é necessário nas regiões do governo do Azure.
+
+| para atualizar o conetor e seus componentes do Docker.

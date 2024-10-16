@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-connector.html 
+keywords: uninstall, remove connector, uninstall connector 
+summary: Desinstale o software do conetor para solucionar problemas ou remover permanentemente o software do host. As etapas que você precisa usar dependem do modo de implantação que você está usando. Depois de remover um conetor do seu ambiente, você pode removê-lo do BlueXP . 
+---
+= Desinstale e remova o conetor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Desinstale o software do conetor para solucionar problemas ou remover permanentemente o software do host. As etapas que você precisa usar dependem do modo de implantação que você está usando. Depois de remover um conetor do seu ambiente, você pode removê-lo do BlueXP .
+
+link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
+
+
+
+== Desinstale o conetor ao utilizar o modo padrão ou restrito
+
+Se você estiver usando o BlueXP  no modo padrão ou no modo restrito (em outras palavras, o host do conetor tem conetividade de saída), siga as etapas abaixo para desinstalar o software do conetor.
+
+.Passos
+. Conete-se à VM Linux para o conetor.
+. A partir do host Linux, execute o script de desinstalação:
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
++
+_silent_ executa o script sem solicitar confirmação.
+
+
+
+.Resultado
+O software Connector agora é desinstalado do host Linux.
+
+
+
+== Desinstale o conetor ao utilizar o modo privado
+
+Se você estiver usando o BlueXP  no modo privado (em outras palavras, o host do conetor tem conetividade _no_ de saída), siga as etapas abaixo para desinstalar o software do conetor.
+
+.Passo
+. Conete-se à VM Linux para o conetor.
+. A partir do host Linux, execute os seguintes comandos:
++
+`/opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
+
+
+.Resultado
+O software Connector agora é desinstalado do host Linux.
+
+
+
+== Remova os conetores do BlueXP 
+
+Se um conetor estiver inativo, você pode removê-lo da lista de conetores no BlueXP . Pode fazê-lo se tiver eliminado a máquina virtual do conetor ou se tiver desinstalado o software do conetor.
+
+Observe o seguinte sobre como remover um conetor:
+
+* Esta ação não exclui a máquina virtual.
+* Esta ação não pode ser revertida - uma vez que você remover um conetor do BlueXP , você não pode adicioná-lo de volta.
+
+
+.Passos
+. Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
+. Selecione *Gerenciar conetores*.
+. Selecione o menu de ação para um conetor inativo e selecione *Remover conetor*.
++
+image:screenshot_connector_remove.gif["Uma captura de tela do widget do conetor onde você pode remover um conetor inativo."]
+
+. Introduza o nome do conetor para confirmar e, em seguida, selecione *Remover*.
+
+
+.Resultado
+O BlueXP  remove o conetor dos seus registos.

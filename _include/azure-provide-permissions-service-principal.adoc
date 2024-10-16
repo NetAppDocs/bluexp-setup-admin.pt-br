@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
++
+image:screenshot-settings-icon-organization.png["Uma captura de tela que mostra o ícone Configurações no canto superior direito do console BlueXP ."]
+
+. Selecione *Adicionar credenciais* e siga as etapas do assistente.
++
+.. *Credentials Location*: Selecione *Microsoft Azure > Connector*.
+.. *Definir credenciais*: Insira informações sobre o responsável do serviço Microsoft Entra que concede as permissões necessárias:
++
+*** ID da aplicação (cliente)
+*** ID do diretório (locatário)
+*** Segredo Cliente
+
+
+.. *Assinatura do Marketplace*: Associe uma assinatura do Marketplace a essas credenciais assinando agora ou selecionando uma assinatura existente.
+.. *Revisão*: Confirme os detalhes sobre as novas credenciais e selecione *Adicionar*.
+
+
+

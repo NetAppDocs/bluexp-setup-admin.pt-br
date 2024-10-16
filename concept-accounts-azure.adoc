@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-azure.html 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
+summary: Saiba como o BlueXP  usa as credenciais do Azure para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de uma ou mais assinaturas do Azure. Por exemplo, você pode querer saber quando adicionar credenciais adicionais do Azure ao BlueXP . 
+---
+= Saiba mais sobre as credenciais e permissões do Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba como o BlueXP  usa as credenciais do Azure para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de uma ou mais assinaturas do Azure. Por exemplo, você pode querer saber quando adicionar credenciais adicionais do Azure ao BlueXP .
+
+
+
+== Credenciais iniciais do Azure
+
+Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a máquina virtual do Connector. As permissões necessárias estão listadas no link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Política de implantação do Connector para Azure"].
+
+Quando o BlueXP  implanta a máquina virtual Connector no Azure, ele ativa uma https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidade gerenciada atribuída ao sistema"^] máquina virtual on, cria uma função personalizada e a atribui à máquina virtual. A função fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. link:reference-permissions-azure.html["Veja como o BlueXP  usa as permissões"].
+
+image:diagram_permissions_initial_azure.png["Uma imagem conceitual que mostra o BlueXP  implantando um conetor em uma conta e assinatura do Azure. Uma identidade gerenciada atribuída ao sistema é ativada e uma função personalizada é atribuída à máquina virtual do conetor."]
+
+Se você criar um novo ambiente de trabalho para o Cloud Volumes ONTAP, o BlueXP  selecionará essas credenciais do Azure por padrão:
+
+image:screenshot_accounts_select_azure.gif["Uma captura de tela que mostra a opção trocar conta na página Detalhes  credenciais."]
+
+Você pode implantar todos os seus sistemas Cloud Volumes ONTAP usando as credenciais iniciais do Azure ou adicionar credenciais adicionais.
+
+
+
+== Subscrições adicionais do Azure para uma identidade gerida
+
+A identidade gerenciada atribuída ao sistema atribuída à VM do conetor está associada à assinatura na qual você iniciou o conetor. Se você quiser selecionar uma assinatura diferente do Azure, precisará link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["associe a identidade gerenciada a essas assinaturas"]do .
+
+
+
+== Credenciais adicionais do Azure
+
+Se você quiser usar diferentes credenciais do Azure com o BlueXP , você deve conceder as permissões necessárias para link:task-adding-azure-accounts.html["Criação e configuração de um responsável de serviço no Microsoft Entra ID"]cada conta do Azure. A imagem a seguir mostra duas contas adicionais, cada uma configurada com uma função principal de serviço e personalizada que fornece permissões:
+
+image:diagram_permissions_multiple_azure.png["Uma imagem conceitual que mostra a conta inicial do Azure, que recebe permissões por meio de uma função personalizada e identidade gerenciada, e duas contas adicionais que recebem permissões por meio de uma função personalizada e principal de serviço."]
+
+Em seguida, você link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Adicione as credenciais da conta ao BlueXP "]forneceria detalhes sobre o diretor de serviço do AD.
+
+Por exemplo, você pode alternar entre credenciais ao criar um novo ambiente de trabalho do Cloud Volumes ONTAP:
+
+image:screenshot_accounts_switch_azure.gif["Uma captura de tela que mostra a seleção entre contas do provedor de nuvem depois de selecionar trocar conta na página Detalhes  credenciais."]
+
+
+
+== Credenciais e assinaturas de mercado
+
+As credenciais que você adicionar a um conetor devem estar associadas a uma assinatura do Azure Marketplace para que você possa pagar pelo Cloud Volumes ONTAP a uma taxa por hora (PAYGO) ou por meio de um contrato anual e usar outros serviços da BlueXP .
+
+link:task-adding-azure-accounts.html#subscribe["Saiba como associar uma assinatura do Azure"].
+
+Observe o seguinte sobre as credenciais do Azure e as assinaturas do marketplace:
+
+* Você pode associar apenas uma assinatura do Azure Marketplace a um conjunto de credenciais do Azure
+* Você pode substituir uma assinatura existente do mercado por uma nova
+
+
+
+
+== FAQ
+
+A pergunta a seguir está relacionada a credenciais e assinaturas.
+
+
+
+=== Posso alterar a assinatura do Azure Marketplace para ambientes de trabalho do Cloud Volumes ONTAP?
+
+Sim, você pode. Quando você altera a assinatura do Azure Marketplace associada a um conjunto de credenciais do Azure, todos os ambientes de trabalho do Cloud Volumes ONTAP existentes e novos serão cobrados com a nova assinatura.
+
+link:task-adding-azure-accounts.html#subscribe["Saiba como associar uma assinatura do Azure"].
+
+
+
+=== Posso adicionar várias credenciais do Azure, cada uma com diferentes assinaturas do marketplace?
+
+Todas as credenciais do Azure que pertencem à mesma assinatura do Azure serão associadas à mesma assinatura do Azure Marketplace.
+
+Se você tiver várias credenciais do Azure que pertencem a diferentes assinaturas do Azure, essas credenciais podem ser associadas à mesma assinatura do Azure Marketplace ou a diferentes assinaturas do marketplace.
+
+
+
+=== Posso mover os ambientes de trabalho existentes do Cloud Volumes ONTAP para uma assinatura diferente do Azure?
+
+Não, não é possível mover os recursos do Azure associados ao seu ambiente de trabalho do Cloud Volumes ONTAP para uma assinatura diferente do Azure.
+
+
+
+=== Como as credenciais funcionam para implantações no mercado e implantações locais?
+
+As seções acima descrevem o método de implantação recomendado para o conetor, que é da BlueXP . Você também pode implantar um conetor no Azure a partir do Azure Marketplace, e você pode instalar o software Connector em seu próprio host Linux.
+
+Se você usar o Marketplace, poderá fornecer permissões atribuindo uma função personalizada à VM do conetor e a uma identidade gerenciada atribuída ao sistema, ou você pode usar um responsável de serviço do Microsoft Entra.
+
+Para implantações locais, não é possível configurar uma identidade gerenciada para o conetor, mas você pode fornecer permissões usando um princípio de serviço.
+
+Para saber como configurar permissões, consulte as seguintes páginas:
+
+* Modo padrão
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurar permissões para uma implantação do Azure Marketplace"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurar permissões para implantações locais"]
+
+
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configurar permissões para o modo restrito"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Configurar permissões para o modo privado"]
+

@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: task-sign-up-saas.html 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: O BlueXP  é acessível a partir de um console baseado na Web. Quando você começar a usar o BlueXP , sua primeira etapa é se inscrever usando suas credenciais existentes do site de suporte da NetApp ou criando um login na nuvem do NetApp. 
+---
+= Inscreva-se ou faça login no BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O BlueXP  é acessível a partir de um console baseado na Web. Quando você começar a usar o BlueXP , seu primeiro passo é se inscrever ou fazer login usando suas credenciais do site de suporte da NetApp ou credenciais SSO do diretório corporativo.
+
+.Sobre esta tarefa
+Quando você acessa o BlueXP  pela primeira vez, o BlueXP  permite que você se inscreva ou faça login usando uma das seguintes opções:
+
+Login BlueXP:: Você pode se inscrever criando um login no BlueXP . Este método de autenticação requer que você especifique seu endereço de e-mail e uma senha. Depois de verificar seu endereço de e-mail, você pode fazer login e criar uma organização do BlueXP , se você ainda não pertence a uma.
+Credenciais do site de suporte da NetApp (NSS):: Se você tiver credenciais do site de suporte da NetApp, não precisará se inscrever no BlueXP . Você faz login usando suas credenciais NSS e, em seguida, o BlueXP  solicita que você crie uma organização do BlueXP , se você ainda não pertence a uma.
++
+--
+Observe que a experiência de senha padrão é uma senha de uso único (OTP) para o endereço de e-mail registrado. Uma nova OTP é gerada a cada tentativa de login.
+
+--
+Ligação federada:: Você pode usar o logon único para fazer login usando credenciais de seu diretório corporativo (identidade federada). O primeiro usuário na conta da sua organização deve se inscrever no BlueXP  ou fazer login usando credenciais NSS e, em seguida, configurar a federação de identidade. Depois disso, você pode adicionar membros da sua identidade corporativa à sua organização. Esses usuários podem então fazer login usando suas credenciais SSO.
++
+--
+link:concept-federation.html["Saiba como usar a federação de identidade com o BlueXP "].
+
+--
+
+
+.Passos
+. Abra um navegador da Web e aceda ao https://console.bluexp.netapp.com["Consola BlueXP"^]
+. Se você tiver uma conta do site de suporte da NetApp ou já tiver configurado uma federação de identidade, insira o endereço de e-mail associado à sua conta diretamente na página *entrar*.
++
+Em ambos os casos, o BlueXP  irá inscrevê-lo como parte deste início de sessão inicial.
+
+. Se você quiser se inscrever criando um login no BlueXP , selecione *Inscrever-se*.
++
+.. Na página *Inscrever-se*, insira as informações necessárias e selecione *seguinte*.
++
+Observe que somente carateres em inglês são permitidos no formulário de inscrição.
+
+.. Verifique se há um e-mail do NetApp na sua caixa de entrada que inclua instruções para verificar o seu endereço de e-mail.
++
+Este passo é necessário antes de poder iniciar sessão no BlueXP .
+
+
+
+. Depois de iniciar sessão, reveja o Contrato de Licença de Utilizador final e aceite os termos.
++
+Se sua conta de usuário ainda não pertencer a uma organização do BlueXP , você será solicitado a criar uma.
+
+. Na página *bem-vindo*, insira um nome para sua organização do BlueXP .
++
+Uma organização é o elemento de alto nível no gerenciamento de identidade e acesso (IAM) do BlueXP . link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"].
+
++
+Se sua empresa já tem uma organização BlueXP  e você deseja ingressar nela, você deve fechar o BlueXP  e pedir ao proprietário para associá-lo à organização. Depois que o proprietário adicionar você, você pode fazer login e terá acesso à conta. link:task-iam-manage-members-permissions#add-members["Saiba como adicionar membros a uma organização existente"].
+
++
+image:screenshot-create-organization.png["Uma captura de tela da página de boas-vindas que aparece quando você faz login com uma nova conta de usuário que não pertence a uma organização."]
+
+. Selecione *vamos começar*.
+
+
+.Resultado
+Agora você tem um login no BlueXP  e uma organização. Na maioria dos casos, a próxima etapa é criar um conetor, que conecta os serviços da BlueXP  ao seu ambiente de nuvem híbrida.

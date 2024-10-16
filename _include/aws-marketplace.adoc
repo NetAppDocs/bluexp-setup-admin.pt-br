@@ -1,0 +1,48 @@
+= 
+:allow-uri-read: 
+
+
+.Passos
+. Vá para https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listagem do BlueXP  Connector no AWS Marketplace"^]
+. Na página Marketplace, selecione *Continue to Subscribe*.
++
+image:screenshot-subscribe-aws-continue.png["Uma captura de tela que mostra os botões continuar para assinar e continuar para Configuração no AWS Marketplace."]
+
+. Para assinar o software, selecione *aceitar termos*.
++
+O processo de assinatura pode levar alguns minutos.
+
+. Depois que o processo de assinatura estiver concluído, selecione *Continue to Configuration*.
++
+image:screenshot-subscribe-aws-configuration.png["Uma captura de tela que mostra os botões continuar para assinar e continuar para Configuração no AWS Marketplace."]
+
+. Na página *Configure this software*, certifique-se de que selecionou a região correta e selecione *Continue to Launch*.
+. Na página *Launch this software*, em *Choose Action*, selecione *Launch through EC2* e, em seguida, selecione *Launch*.
++
+Estas etapas descrevem como iniciar a instância a partir do Console EC2 porque o console permite que você anexe uma função do IAM à instância do conetor. Isso não é possível usando a ação *Launch from Website*.
+
+. Siga as instruções para configurar e implantar a instância:
++
+** *Nome e tags*: Insira um nome e tags para a instância.
+** *Imagens de aplicativos e SO*: Pule esta seção. O AMI do conetor já está selecionado.
+** *Tipo de instância*: Dependendo da disponibilidade da região, escolha um tipo de instância que atenda aos requisitos de RAM e CPU (t3,2xlarge é pré-selecionado e recomendado).
+** *Par de chaves (login)*: Selecione o par de chaves que você deseja usar para se conetar com segurança à instância.
+** *Configurações de rede*: Edite as configurações de rede conforme necessário:
++
+*** Escolha a VPC e a sub-rede desejadas.
+*** Especifique se a instância deve ter um endereço IP público.
+*** Especifique as configurações do grupo de segurança que ativam os métodos de conexão necessários para a instância do conetor: SSH, HTTP e HTTPS.
++
+link:reference-ports-aws.html["Veja as regras do grupo de segurança da AWS"].
+
+
+
+** *Configurar armazenamento*: Mantenha o tamanho padrão e o tipo de disco para o volume raiz.
++
+Se você quiser ativar a criptografia do Amazon EBS no volume raiz, selecione *Avançado*, expanda *volume 1*, selecione *criptografado* e escolha uma chave KMS.
+
+** *Detalhes avançados*: Em *Perfil de instância do IAM*, escolha a função do IAM que inclui as permissões necessárias para o conetor.
+** *Summary*: Revise o resumo e selecione *Launch instance*.
+
+
+

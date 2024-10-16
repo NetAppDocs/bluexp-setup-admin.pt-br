@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-gcp.html 
+keywords: ports, firewall rules, http, https, inbound, outbound 
+summary: As regras de firewall do Google Cloud para o conetor exigem regras de entrada e saída. O BlueXP  cria automaticamente esse grupo de segurança quando você cria um conetor do BlueXP . Você precisa configurar este grupo de segurança para todas as outras opções de instalação. 
+---
+= Regras de firewall do conetor no Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+As regras de firewall do Google Cloud para o conetor exigem regras de entrada e saída. O BlueXP  cria automaticamente esse grupo de segurança quando você cria um conetor do BlueXP . Você precisa configurar este grupo de segurança para todas as outras opções de instalação.
+
+
+
+== Regras de entrada
+
+[cols="10,10,80"]
+|===
+| Protocolo | Porta | Finalidade 
+
+
+| SSH | 22 | Fornece acesso SSH ao host do conetor 
+
+
+| HTTP | 80  a| 
+* Fornece acesso HTTP a partir de navegadores da Web cliente para a interface de usuário local
+* Usado durante o processo de atualização do Cloud Volumes ONTAP
+
+
+
+
+| HTTPS | 443 | Fornece acesso HTTPS a partir de navegadores da Web cliente para a interface de usuário local 
+
+
+| TCP | 3128 | Fornece ao Cloud Volumes ONTAP acesso à Internet para enviar mensagens AutoSupport para o suporte da NetApp. Você deve abrir manualmente essa porta após a implantação. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Saiba como o conetor é usado como proxy para mensagens AutoSupport"^] 
+|===
+
+
+== Regras de saída
+
+As regras de firewall predefinidas para o conetor abrem todo o tráfego de saída. Se isso for aceitável, siga as regras básicas de saída. Se você precisar de regras mais rígidas, use as regras de saída avançadas.
+
+
+
+=== Regras básicas de saída
+
+As regras de firewall predefinidas para o conetor incluem as seguintes regras de saída.
+
+[cols="20,20,60"]
+|===
+| Protocolo | Porta | Finalidade 
+
+
+| Todo o TCP | Tudo | Todo o tráfego de saída 
+
+
+| Todos os UDP | Tudo | Todo o tráfego de saída 
+|===
+
+
+=== Regras de saída avançadas
+
+Se você precisar de regras rígidas para o tráfego de saída, você pode usar as seguintes informações para abrir apenas as portas necessárias para a comunicação de saída pelo conetor.
+
+
+NOTE: O endereço IP de origem é o host do conetor.
+
+[cols="5*"]
+|===
+| Serviço | Protocolo | Porta | Destino | Finalidade 
+
+
+| Chamadas de API e AutoSupport | HTTPS | 443 | LIF de gerenciamento de cluster de ONTAP e Internet de saída | Chamadas de API para Google Cloud, ONTAP, classificação BlueXP  e envio de mensagens AutoSupport para o NetApp 
+
+
+| Chamadas de API | TCP | 8080 | Classificação BlueXP | Sonda para a instância de classificação BlueXP  durante a implantação 
+
+
+| DNS | UDP | 53 | DNS | Usado para resolução de DNS por BlueXP 
+|===

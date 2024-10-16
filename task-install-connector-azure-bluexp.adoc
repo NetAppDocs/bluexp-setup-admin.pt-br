@@ -1,0 +1,506 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-azure-bluexp.html 
+keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector 
+summary: Para criar um conetor no Azure a partir do BlueXP , você precisa configurar sua rede, preparar permissões do Azure e, em seguida, criar o conetor. 
+---
+= Crie um conetor no Azure a partir do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Uma das opções de instalação disponíveis é criar um conetor no Azure diretamente a partir do BlueXP . Para criar um conetor no Azure a partir do BlueXP , você precisa configurar sua rede, preparar permissões do Azure e, em seguida, criar o conetor.
+
+.Antes de começar
+* Você deve ter um link:concept-connectors.html["Compreensão dos conetores"].
+* Você deve rever link:reference-limitations.html["Limitações do conetor"].
+
+
+
+
+== Passo 1: Configurar a rede
+
+Certifique-se de que a localização da rede onde pretende instalar o conetor suporta os seguintes requisitos. Atender a esses requisitos permite que o conetor gerencie recursos e processos em seu ambiente de nuvem híbrida.
+
+Região do Azure:: Se você usar o Cloud Volumes ONTAP, o conetor deve ser implantado na mesma região do Azure que os sistemas Cloud Volumes ONTAP gerenciados ou no https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiões do Azure"^] para os sistemas Cloud Volumes ONTAP. Esse requisito garante que uma conexão com o Azure Private Link seja usada entre o Cloud Volumes ONTAP e suas contas de armazenamento associadas.
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Saiba como o Cloud Volumes ONTAP usa um link privado do Azure"^]
+
+--
+
+
+VNet e sub-rede:: Ao criar o conetor, você precisa especificar a VNet e a sub-rede onde o conetor deve residir.
+
+
+Conexões com redes de destino:: Um conetor requer uma conexão de rede com o local onde você está planejando criar e gerenciar ambientes de trabalho. Por exemplo, a rede em que você planeja criar sistemas Cloud Volumes ONTAP ou um sistema de storage em seu ambiente local.
+
+
+Acesso de saída à Internet:: O local de rede onde você implantar o conetor deve ter uma conexão de saída de Internet para contatar pontos de extremidade específicos.
+
+
+Terminais contactados a partir do conetor:: O conetor requer acesso de saída à Internet para entrar em Contato com os seguintes endpoints, a fim de gerenciar recursos e processos em seu ambiente de nuvem pública para operações diárias.
++
+--
+Observe que os endpoints listados abaixo são todas as entradas CNAME.
+
+[cols="2a,1a"]
+|===
+| Endpoints | Finalidade 
+
+
+ a| 
+\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net
+ a| 
+Para gerenciar recursos em regiões públicas do Azure.
+
+
+
+ a| 
+\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn
+ a| 
+Para gerenciar recursos nas regiões do Azure China.
+
+
+
+ a| 
+https://support.NetApp.com https://mysupport.NetApp.com
+ a| 
+Para obter informações de licenciamento e enviar mensagens do AutoSupport para o suporte do NetApp.
+
+
+
+ a| 
+https://*.api.BlueXP .NetApp.com
+
+https://api.BlueXP .NetApp.com
+
+https://*.cloudmanager.cloud.NetApp.com
+
+https://cloudmanager.cloud.NetApp.com
+
+https://NetApp-cloud-account.auth0.com
+ a| 
+Para fornecer recursos e serviços SaaS no BlueXP .
+
+Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Para atualizar o conetor e seus componentes do Docker.
+
+|===
+--
+
+
+Terminais contactados a partir da consola BlueXP :: À medida que você usa o console baseado na Web do BlueXP  fornecido pela camada SaaS, ele entra em Contato com vários endpoints para concluir as tarefas de gerenciamento de dados. Isso inclui endpoints que são contatados para implantar o conetor a partir do console BlueXP .
++
+--
+link:reference-networking-saas-console.html["Veja a lista de endpoints contactados a partir da consola BlueXP "].
+
+--
+
+
+Servidor proxy:: Se a sua empresa exigir a implantação de um servidor proxy para todo o tráfego de saída da Internet, obtenha as seguintes informações sobre o proxy HTTP ou HTTPS. Você precisará fornecer essas informações durante a instalação. Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
++
+--
+* Endereço IP
+* Credenciais
+* Certificado HTTPS
+
+
+--
+
+
+Portas:: Não há tráfego de entrada para o conetor, a menos que você o inicie ou se o conetor for usado como um proxy para enviar mensagens AutoSupport do Cloud Volumes ONTAP para o suporte da NetApp.
++
+--
+* HTTP (80) e HTTPS (443) fornecem acesso à IU local, que você usará em circunstâncias raras.
+* SSH (22) só é necessário se você precisar se conetar ao host para solução de problemas.
+* Conexões de entrada pela porta 3128 são necessárias se você implantar sistemas Cloud Volumes ONTAP em uma sub-rede onde uma conexão de saída à Internet não está disponível.
++
+Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configura automaticamente esses sistemas para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Você precisará abrir essa porta depois de implantar o conetor.
+
+
+
+--
+
+
+Ativar NTP:: Se estiver a planear utilizar a classificação BlueXP  para analisar as suas fontes de dados empresariais, deve ativar um serviço de Protocolo de tempo de rede (NTP) no sistema de conetores BlueXP  e no sistema de classificação BlueXP  para que o tempo seja sincronizado entre os sistemas. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^]
++
+--
+Você precisará implementar esse requisito de rede depois de criar o conetor.
+
+--
+
+
+
+
+== Passo 2: Crie uma função personalizada
+
+Crie uma função personalizada do Azure que você pode atribuir à sua conta do Azure ou a um diretor de serviço do Microsoft Entra. O BlueXP  se autentica com o Azure e usa essas permissões para criar a instância do Connector em seu nome.
+
+Observe que você pode criar uma função personalizada do Azure usando o portal do Azure, o Azure PowerShell, a CLI do Azure ou a API REST. As etapas a seguir mostram como criar a função usando a CLI do Azure. Se você preferir usar um método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentação do Azure"^]
+
+.Passos
+. Copie as permissões necessárias para uma nova função personalizada no Azure e salve-as em um arquivo JSON.
++
+
+NOTE: Esta função personalizada contém apenas as permissões necessárias para iniciar a VM Connector no Azure a partir do BlueXP . Não use esta política para outras situações. Quando o BlueXP  cria o conetor, ele aplica um novo conjunto de permissões à VM do conetor que permite que o conetor gerencie recursos do Azure.
+
++
+[source, json]
+----
+{
+    "Name": "Azure SetupAsService",
+    "Actions": [
+        "Microsoft.Compute/disks/delete",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Compute/locations/operations/read",
+        "Microsoft.Compute/operations/read",
+        "Microsoft.Compute/virtualMachines/instanceView/read",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/write",
+        "Microsoft.Compute/virtualMachines/delete",
+        "Microsoft.Compute/virtualMachines/extensions/write",
+        "Microsoft.Compute/virtualMachines/extensions/read",
+        "Microsoft.Compute/availabilitySets/read",
+        "Microsoft.Network/locations/operationResults/read",
+        "Microsoft.Network/locations/operations/read",
+        "Microsoft.Network/networkInterfaces/join/action",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkInterfaces/write",
+        "Microsoft.Network/networkInterfaces/delete",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/write",
+        "Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/virtualMachines/read",
+        "Microsoft.Network/virtualNetworks/virtualMachines/read",
+        "Microsoft.Network/publicIPAddresses/write",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/publicIPAddresses/delete",
+        "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        "Microsoft.Network/networkSecurityGroups/securityRules/write",
+        "Microsoft.Network/networkSecurityGroups/securityRules/delete",
+        "Microsoft.Network/publicIPAddresses/join/action",
+        "Microsoft.Network/locations/virtualNetworkAvailableEndpointServices/read",
+        "Microsoft.Network/networkInterfaces/ipConfigurations/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/delete",
+        "Microsoft.Resources/deployments/cancel/action",
+        "Microsoft.Resources/deployments/validate/action",
+        "Microsoft.Resources/resources/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/delete",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Authorization/roleDefinitions/write",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read",
+        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write",
+        "Microsoft.Network/networkSecurityGroups/delete",
+        "Microsoft.Storage/storageAccounts/delete",
+        "Microsoft.Storage/storageAccounts/write",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/deployments/operationStatuses/read",
+        "Microsoft.Authorization/roleAssignments/read"
+    ],
+    "NotActions": [],
+    "AssignableScopes": [],
+    "Description": "Azure SetupAsService",
+    "IsCustom": "true"
+}
+----
+. Modifique o JSON adicionando seu ID de assinatura do Azure ao escopo atribuível.
++
+*Exemplo*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz"
+],
+----
+. Use o arquivo JSON para criar uma função personalizada no Azure.
++
+As etapas a seguir descrevem como criar a função usando o Bash no Azure Cloud Shell.
+
++
+.. Comece https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] e escolha o ambiente Bash.
+.. Carregue o arquivo JSON.
++
+image:screenshot_azure_shell_upload.png["Uma captura de tela do Azure Cloud Shell, onde você pode escolher a opção para carregar um arquivo."]
+
+.. Digite o seguinte comando CLI do Azure:
++
+[source, azurecli]
+----
+az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
+----
+
+
++
+Agora você deve ter uma função personalizada chamada _Azure SetupAsService_. Agora você pode aplicar essa função personalizada à sua conta de usuário ou a um responsável de serviço.
+
+
+
+
+
+== Passo 3: Configurar a autenticação
+
+Ao criar o conetor do BlueXP , você precisa fornecer um login que permita que o BlueXP  se autentique com o Azure e implante a VM. Você tem duas opções:
+
+. Inicie sessão com a sua conta Azure quando solicitado. Essa conta deve ter permissões específicas do Azure. Esta é a opção padrão.
+. Fornecer detalhes sobre um responsável de serviço Microsoft Entra. Este princípio de serviço também requer permissões específicas.
+
+
+Siga as etapas para preparar um desses métodos de autenticação para uso com o BlueXP .
+
+[role="tabbed-block"]
+====
+.Conta Azure
+--
+Atribua a função personalizada ao usuário que implantará o conetor do BlueXP .
+
+.Passos
+. No portal do Azure, abra o serviço *Subscrições* e selecione a assinatura do usuário.
+. Clique em *Access Control (IAM)*.
+. Clique em *Adicionar* > *Adicionar atribuição de função* e, em seguida, adicione as permissões:
++
+.. Selecione a função *Azure SetupAsService* e clique em *Next*.
++
+
+NOTE: Azure SetupAsService é o nome padrão fornecido na política de implantação do conetor para o Azure. Se você escolher um nome diferente para a função, selecione esse nome em vez disso.
+
+.. Mantenha *Usuário, grupo ou responsável do serviço* selecionado.
+.. Clique em *Selecionar membros*, escolha sua conta de usuário e clique em *Selecionar*.
+.. Clique em *seguinte*.
+.. Clique em *Rever e atribuir*.
+
+
+
+
+.Resultado
+O usuário do Azure agora tem as permissões necessárias para implantar o conetor do BlueXP .
+
+--
+.Serviço principal
+--
+Em vez de iniciar sessão com a sua conta Azure, pode fornecer à BlueXP  as credenciais de um responsável de serviço do Azure que tem as permissões necessárias.
+
+Crie e configure um princípio de serviço no Microsoft Entra ID e obtenha as credenciais do Azure de que o BlueXP  precisa.
+
+.Crie um aplicativo Microsoft Entra para controle de acesso baseado em funções
+. Certifique-se de ter permissões no Azure para criar um aplicativo do ative Directory e atribuir o aplicativo a uma função.
++
+Para obter mais informações, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentação do Microsoft Azure: Permissões necessárias"^]
+
+. No portal do Azure, abra o serviço *Microsoft Entra ID*.
++
+image:screenshot_azure_ad.png["Mostra o serviço ative Directory no Microsoft Azure."]
+
+. No menu, selecione *inscrições de aplicativos*.
+. Selecione *novo registo*.
+. Especifique detalhes sobre o aplicativo:
++
+** *Nome*: Insira um nome para o aplicativo.
+** *Tipo de conta*: Selecione um tipo de conta (qualquer funcionará com o BlueXP ).
+** * URI de redirecionamento*: Você pode deixar este campo em branco.
+
+
+. Selecione *Registe-se*.
++
+Você criou o aplicativo AD e o principal de serviço.
+
+
+
+.Atribua a função personalizada ao aplicativo
+. No portal do Azure, abra o serviço *Subscrições*.
+. Selecione a subscrição.
+. Clique em *Access control (IAM) > Add > Add Role assignment* (Adicionar > Adicionar atribuição de função*).
+. Na guia *Role*, selecione a função *Operador BlueXP * e clique em *Avançar*.
+. Na guia *Membros*, execute as seguintes etapas:
++
+.. Mantenha *Usuário, grupo ou responsável do serviço* selecionado.
+.. Clique em *Selecionar membros*.
++
+image:screenshot-azure-service-principal-role.png["Uma captura de tela do portal do Azure que mostra a guia Membros ao adicionar uma função a um aplicativo."]
+
+.. Procure o nome da aplicação.
++
+Aqui está um exemplo:
+
++
+image:screenshot_azure_service_principal_role.png["Uma captura de tela do portal do Azure que mostra o formulário Adicionar atribuição de função no portal do Azure."]
+
+.. Selecione a aplicação e clique em *Select*.
+.. Clique em *seguinte*.
+
+
+. Clique em *Rever e atribuir*.
++
+O principal de serviço agora tem as permissões necessárias do Azure para implantar o conetor.
+
++
+Se você quiser gerenciar recursos em várias assinaturas do Azure, então você deve vincular o principal de serviço a cada uma dessas assinaturas. Por exemplo, o BlueXP  permite que você selecione a assinatura que deseja usar ao implantar o Cloud Volumes ONTAP.
+
+
+
+.Adicione permissões da API de Gerenciamento de Serviços do Windows Azure
+. No serviço *Microsoft Entra ID*, selecione *inscrições de aplicativos* e selecione o aplicativo.
+. Selecione *permissões de API > Adicionar uma permissão*.
+. Em *Microsoft APIs*, selecione *Azure Service Management*.
++
+image:screenshot_azure_service_mgmt_apis.gif["Uma captura de tela do portal do Azure que mostra as permissões da API de Gerenciamento de Serviços do Azure."]
+
+. Selecione *Acesse o Gerenciamento de Serviços do Azure como usuários da organização* e selecione *Adicionar permissões*.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Uma captura de tela do portal do Azure que mostra a adição das APIs de Gerenciamento de Serviços do Azure."]
+
+
+
+.Obtenha o ID do aplicativo e o ID do diretório para o aplicativo
+. No serviço *Microsoft Entra ID*, selecione *inscrições de aplicativos* e selecione o aplicativo.
+. Copie o *ID do aplicativo (cliente)* e o *ID do diretório (locatário)*.
++
+image:screenshot_azure_app_ids.gif["Uma captura de tela que mostra o ID do aplicativo (cliente) e ID do diretório (locatário) para um aplicativo no Microsoft Entra IDy."]
+
++
+Quando você adiciona a conta do Azure ao BlueXP , você precisa fornecer o ID do aplicativo (cliente) e o ID do diretório (locatário) para o aplicativo. O BlueXP  usa os IDs para fazer login programaticamente.
+
+
+
+.Crie um segredo de cliente
+. Abra o serviço *Microsoft Entra ID*.
+. Selecione *inscrições de aplicativos* e selecione sua inscrição.
+. Selecione *certificados e segredos > segredo de novo cliente*.
+. Forneça uma descrição do segredo e uma duração.
+. Selecione *Adicionar*.
+. Copie o valor do segredo do cliente.
++
+image:screenshot_azure_client_secret.gif["Uma captura de tela do portal do Azure que mostra um segredo de cliente para o responsável do serviço Microsoft Entra."]
+
++
+Agora você tem um segredo de cliente que o BlueXP  pode usá-lo para autenticar com o Microsoft Entra ID.
+
+
+
+.Resultado
+Seu responsável de serviço está configurado e você deve ter copiado o ID do aplicativo (cliente), o ID do diretório (locatário) e o valor do segredo do cliente. Você precisa inserir essas informações no BlueXP  quando você criar o conetor.
+
+--
+====
+
+
+== Passo 4: Crie o conetor
+
+Crie o conetor diretamente do console baseado na Web do BlueXP .
+
+.Sobre esta tarefa
+* A criação do conetor do BlueXP  implanta uma máquina virtual no Azure usando uma configuração padrão. Depois de criar o conetor, você não deve mudar para um tipo de VM menor que tenha menos CPU ou RAM. link:reference-connector-default-config.html["Saiba mais sobre a configuração padrão do conetor"].
+* Quando o BlueXP  implanta o conetor, ele cria uma função personalizada e o atribui à VM do conetor. Essa função inclui permissões que permitem que o conetor gerencie recursos do Azure. Você precisa garantir que a função seja mantida atualizada à medida que novas permissões são adicionadas em versões subsequentes. link:reference-permissions-azure.html["Saiba mais sobre a função personalizada para o conetor"].
+
+
+.Antes de começar
+Você deve ter o seguinte:
+
+* Uma subscrição do Azure.
+* Uma VNet e uma sub-rede na sua região do Azure escolhida.
+* Detalhes sobre um servidor proxy, se a sua organização exigir um proxy para todo o tráfego de saída da Internet:
++
+** Endereço IP
+** Credenciais
+** Certificado HTTPS
+
+
+* Uma chave pública SSH, se você quiser usar esse método de autenticação para a máquina virtual do conetor. A outra opção para o método de autenticação é usar uma senha.
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Saiba mais sobre como conetar-se a uma VM Linux no Azure"^]
+
+* Se você não quiser que o BlueXP  crie automaticamente uma função do Azure para o conetor, precisará criar o seu próprio link:reference-permissions-azure.html["uso da política nesta página"].
++
+Essas permissões são para a própria instância do conetor. É um conjunto diferente de permissões do que você configurou anteriormente para implantar a VM Connector.
+
+
+
+.Passos
+. Selecione a lista suspensa *Connector* e selecione *Add Connector*.
++
+image:screenshot_connector_add.gif["Uma captura de tela que mostra o ícone do conetor no cabeçalho e a ação Adicionar conetor."]
+
+. Escolha *Microsoft Azure* como seu provedor de nuvem.
+. Na página *Implantando um conetor*:
++
+.. Em *Autenticação*, selecione a opção de autenticação que corresponde à configuração das permissões do Azure:
++
+*** Selecione *conta de utilizador do Azure* para iniciar sessão na sua conta Microsoft, que deve ter as permissões necessárias.
++
+O formulário é de propriedade e hospedado pela Microsoft. Suas credenciais não são fornecidas ao NetApp.
+
++
+
+TIP: Se você já estiver conetado a uma conta do Azure, o BlueXP  usará essa conta automaticamente. Se você tiver várias contas, talvez seja necessário fazer logout primeiro para garantir que esteja usando a conta certa.
+
+*** Selecione *Principal de serviço do ative Directory* para inserir informações sobre o principal de serviço do Microsoft Entra que concede as permissões necessárias:
++
+**** ID da aplicação (cliente)
+**** ID do diretório (locatário)
+**** Segredo Cliente
+
+
+
+
+
+
++
+<<Passo 3: Configurar a autenticação,Saiba como obter esses valores para um responsável de serviço>>.
+
+. Siga as etapas no assistente para criar o conetor:
++
+** *Autenticação da VM*: Escolha uma assinatura do Azure, um local, um novo grupo de recursos ou um grupo de recursos existente e, em seguida, escolha um método de autenticação para a máquina virtual do conetor que você está criando.
++
+O método de autenticação para a máquina virtual pode ser uma senha ou uma chave pública SSH.
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Saiba mais sobre como conetar-se a uma VM Linux no Azure"^]
+
+** *Detalhes*: Insira um nome para a instância, especifique tags e escolha se deseja que o BlueXP  crie uma nova função que tenha as permissões necessárias ou se deseja selecionar uma função existente configurada com link:reference-permissions-azure.html["as permissões necessárias"]o .
++
+Observe que você pode escolher as assinaturas do Azure associadas a essa função. Cada assinatura escolhida fornece as permissões do conetor para gerenciar recursos nessa assinatura (por exemplo, Cloud Volumes ONTAP).
+
+** *Rede*: Escolha uma VNet e uma sub-rede, se deseja ativar um endereço IP público e, opcionalmente, especifique uma configuração de proxy.
+** *Grupo de segurança*: Escolha se deseja criar um novo grupo de segurança ou se deseja selecionar um grupo de segurança existente que permita as regras de entrada e saída necessárias.
++
+link:reference-ports-azure.html["Veja as regras do grupo de segurança para o Azure"].
+
+** *Revisão*: Revise suas seleções para verificar se a configuração está correta.
+
+
+. Clique em *Add*.
++
+A máquina virtual deve estar pronta em cerca de 7 minutos. Você deve permanecer na página até que o processo esteja concluído.
+
+
+
+.Resultado
+Após o processo ser concluído, o conetor está disponível para uso no BlueXP .
+
+Se você tiver o armazenamento de Blobs do Azure na mesma assinatura do Azure em que criou o conetor, verá um ambiente de trabalho de armazenamento de Blobs do Azure aparecer automaticamente na tela do BlueXP . https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Saiba como gerenciar o armazenamento de Blobs do Azure a partir do BlueXP "^]

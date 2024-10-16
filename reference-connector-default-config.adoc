@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-default-config.html 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu 
+summary: Talvez você queira saber mais sobre o conetor antes de implantá-lo ou se precisar solucionar problemas. 
+---
+= Configuração padrão para o conetor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Talvez você queira saber mais sobre a configuração do conetor antes de implantá-lo ou se precisar solucionar problemas.
+
+
+
+== Configuração padrão com acesso à Internet
+
+Os detalhes de configuração a seguir se aplicam se você implantou o conetor do BlueXP , a partir do mercado do seu provedor de nuvem, ou se você instalou manualmente o conetor em um host Linux local que tem acesso à Internet.
+
+
+
+=== Detalhes AWS
+
+Se você implantou o conetor da BlueXP  ou do mercado do provedor de nuvem, observe o seguinte:
+
+* O tipo de instância EC2 é t3,2xlarge.
+* O sistema operacional para a imagem é Ubuntu 22,04 LTS.
++
+O sistema operacional não inclui uma GUI. Tem de utilizar um terminal para aceder ao sistema.
+
+* A instalação inclui o Docker Engine, que é a ferramenta de orquestração de contentores necessária.
+* O nome de usuário para a instância do EC2 Linux é ubuntu (para conetores criados antes de maio de 2023, o nome de usuário era EC2-user).
+* O disco padrão do sistema é um disco GP2 de 100 gib.
+
+
+
+
+=== Detalhes do Azure
+
+Se você implantou o conetor da BlueXP  ou do mercado do provedor de nuvem, observe o seguinte:
+
+* O tipo de VM é Standard_D8s_v3.
+* O sistema operacional para a imagem é Ubuntu 22,04 LTS.
++
+O sistema operacional não inclui uma GUI. Tem de utilizar um terminal para aceder ao sistema.
+
+* A instalação inclui o Docker Engine, que é a ferramenta de orquestração de contentores necessária.
+* O disco padrão do sistema é um disco SSD premium de 100 GiB.
+
+
+
+
+=== Detalhes do Google Cloud
+
+Se você implantou o conetor do BlueXP , observe o seguinte:
+
+* A instância da VM é n2-standard-8.
+* O sistema operacional para a imagem é Ubuntu 22,04 LTS.
++
+O sistema operacional não inclui uma GUI. Tem de utilizar um terminal para aceder ao sistema.
+
+* A instalação inclui o Docker Engine, que é a ferramenta de orquestração de contentores necessária.
+* O disco do sistema padrão é um disco persistente SSD de 100 GiB.
+
+
+
+
+=== Pasta de instalação
+
+A pasta de instalação do conetor reside no seguinte local:
+
+/opt/application/NetApp/cloudmanager
+
+
+
+=== Ficheiros de registo
+
+Os arquivos de log estão contidos nas seguintes pastas:
+
+* /opt/application/NetApp/cloudmanager/log or
+* /opt/application/NetApp/service-manager-2/logs (começando com novas instalações 3.9.23)
++
+Os registos nestas pastas fornecem detalhes sobre o conetor.
+
+* /opt/application/NetApp/cloudmanager/docker_occm/data/log
++
+Os logs nesta pasta fornecem detalhes sobre os serviços de nuvem e o serviço BlueXP  que é executado no conetor.
+
+
+
+
+
+=== Serviço do conetor
+
+* O serviço BlueXP  é chamado occm.
+* O serviço occm depende do serviço MySQL.
++
+Se o serviço MySQL estiver inativo, o serviço occm também estará inativo.
+
+
+
+
+
+=== Portas
+
+O conetor usa as seguintes portas no host Linux:
+
+* 80 para acesso HTTP
+* 443 para acesso HTTPS
+
+
+
+
+== Configuração padrão sem acesso à Internet
+
+A configuração a seguir se aplica se você instalou manualmente o conetor em um host Linux local que não tem acesso à Internet. link:task-quick-start-private-mode.html["Saiba mais sobre esta opção de instalação"].
+
+* A pasta de instalação do conetor reside no seguinte local:
++
+/opt/application/NetApp/ds
+
+* Os arquivos de log estão contidos nas seguintes pastas:
++
+/var/lib/docker/volumes/ds_occmdata/_data/log
+
++
+Os logs nesta pasta fornecem detalhes sobre as imagens do conetor e do docker.
+
+* Todos os serviços são executados dentro de contentores docker
++
+Os serviços dependem do serviço runtime do docker em execução
+
+* O conetor usa as seguintes portas no host Linux:
++
+** 80 para acesso HTTP
+** 443 para acesso HTTPS
+
+
+

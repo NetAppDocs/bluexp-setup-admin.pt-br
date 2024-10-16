@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-gcp.html 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
+summary: Saiba como o BlueXP  usa as credenciais do Google Cloud para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de um ou mais projetos do Google Cloud. Por exemplo, você pode querer saber mais sobre a conta de serviço associada à VM do conetor. 
+---
+= Saiba mais sobre os projetos e permissões do Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba como o BlueXP  usa as credenciais do Google Cloud para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de um ou mais projetos do Google Cloud. Por exemplo, você pode querer saber mais sobre a conta de serviço associada à VM do conetor.
+
+
+
+== Projeto e permissões para BlueXP 
+
+Antes de usar o BlueXP  para gerenciar recursos em seu projeto do Google Cloud, primeiro é necessário implantar um conetor. O conetor não pode ser executado em suas instalações ou em um provedor de nuvem diferente.
+
+Dois conjuntos de permissões devem estar em vigor antes de implantar um conetor diretamente do BlueXP :
+
+. Você precisa implantar um conetor usando uma conta do Google que tenha permissões para iniciar a instância de VM Connector do BlueXP .
+. Ao implantar o conetor, você será solicitado a selecionar um https://cloud.google.com/iam/docs/service-accounts["conta de serviço"^] para a instância de VM. O BlueXP  obtém permissões da conta de serviço para criar e gerenciar sistemas Cloud Volumes ONTAP, gerenciar backups usando backup e recuperação do BlueXP  e muito mais. As permissões são fornecidas anexando uma função personalizada à conta de serviço.
+
+
+A imagem a seguir mostra os requisitos de permissão descritos nos números 1 e 2 acima:
+
+image:diagram_permissions_gcp.png["Uma imagem conceitual que descreve os requisitos de permissões para o google e as contas de serviço implantarem o Cloud Volumes ONTAP."]
+
+Para saber como configurar permissões, consulte as seguintes páginas:
+
+* link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configurar permissões do Google Cloud para o modo padrão"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configurar permissões para o modo restrito"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Configurar permissões para o modo privado"]
+
+
+
+
+== Credenciais e assinaturas de mercado
+
+Ao implantar um conetor no Google Cloud, o BlueXP  cria um conjunto padrão de credenciais para a conta de serviço do Google Cloud no projeto em que o conetor reside. Essas credenciais devem estar associadas a uma assinatura do Google Cloud Marketplace para que você possa pagar pelo Cloud Volumes ONTAP por uma taxa por hora (PAYGO) e usar outros serviços da BlueXP .
+
+link:task-adding-gcp-accounts.html["Saiba como associar uma assinatura do Google Cloud Marketplace"].
+
+Observe o seguinte sobre as credenciais do Google Cloud e as assinaturas de mercado:
+
+* Apenas um conjunto de credenciais do Google Cloud pode ser associado a um conetor
+* Você pode associar apenas uma assinatura do Google Cloud Marketplace às credenciais
+* Você pode substituir uma assinatura existente do mercado por uma nova
+
+
+
+
+== Projeto para Cloud Volumes ONTAP
+
+O Cloud Volumes ONTAP pode residir no mesmo projeto que o conetor, ou em um projeto diferente. Para implantar o Cloud Volumes ONTAP em um projeto diferente, você precisa primeiro adicionar a conta de serviço do Connector e a função a esse projeto.
+
+* link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["Saiba como configurar a conta de serviço"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Saiba como implantar o Cloud Volumes ONTAP no Google Cloud e selecione um projeto"^]
+
