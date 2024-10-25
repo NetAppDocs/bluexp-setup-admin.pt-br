@@ -14,7 +14,7 @@ summary: Um conetor é o software NetApp executado em sua rede na nuvem ou na re
 
 
 [role="lead"]
-Um _Connector_ é um software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada SaaS do BlueXP  para quaisquer ações que ele precise tomar. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP .
+Um _Connector_ é um software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada de software como serviço (SaaS) da BlueXP  para qualquer ação que precise ser executada. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP .
 
 
 

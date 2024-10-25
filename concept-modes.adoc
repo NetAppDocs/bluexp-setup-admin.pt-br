@@ -14,7 +14,7 @@ summary: O BlueXP  oferece vários modos de implantação que permitem que voc�
 
 
 [role="lead"]
-O BlueXP  oferece vários _modos de implantação_ que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O _modo padrão_ aproveita a camada SaaS do BlueXP  para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações que têm restrições de conetividade.
+O BlueXP  oferece vários _modos de implantação_ que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O _modo padrão_ aproveita a camada de software como serviço (SaaS) do BlueXP  para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações que têm restrições de conetividade.
 
 Embora o BlueXP  iniba o fluxo de tráfego, comunicação e dados ao usar o modo restrito ou o modo privado, é sua responsabilidade garantir que seu ambiente (no local e na nuvem) esteja em conformidade com os regulamentos exigidos.
 

@@ -14,7 +14,7 @@ summary: Implante o conetor no modo restrito para que você possa usar o BlueXP�
 
 
 [role="lead"]
-Implante o conetor no modo restrito para que você possa usar o BlueXP  com conetividade de saída limitada à camada SaaS do BlueXP . Para começar, instale o conetor, configure o BlueXP  acessando a interface do usuário que está sendo executada no conetor e, em seguida, forneça as permissões de nuvem que você configurou anteriormente.
+Implante o conetor no modo restrito para que você possa usar o BlueXP  com conetividade de saída limitada à camada de software como serviço (SaaS) da BlueXP . Para começar, instale o conetor, configure o BlueXP  acessando a interface do usuário que está sendo executada no conetor e, em seguida, forneça as permissões de nuvem que você configurou anteriormente.
 
 
 

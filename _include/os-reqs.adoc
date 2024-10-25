@@ -29,7 +29,7 @@ Podman versão 4.6.1 ou 4.9.4
 
 <<podman-configuration,Veja os requisitos de configuração do Podman>>.
  a| 
-Suportado no modo de imposição ou modo permissivo
+Suporte no modo de execução ou modo permissivo 1
 
 
 
@@ -60,8 +60,9 @@ Não suportado
 |===
 Notas:
 
-* O conetor é suportado em versões em inglês destes sistemas operativos.
-* Para o RHEL, o host deve estar registrado no Red Hat Subscription Management. Se não estiver registrado, o host não poderá acessar repositórios para atualizar o software necessário de 3rd partes durante a instalação do conetor.
+. O gerenciamento de sistemas Cloud Volumes ONTAP não é suportado por conetores que tenham o SELinux habilitado no sistema operacional.
+. O conetor é suportado em versões em inglês destes sistemas operativos.
+. Para o RHEL, o host deve estar registrado no Red Hat Subscription Management. Se não estiver registrado, o host não poderá acessar repositórios para atualizar o software necessário de 3rd partes durante a instalação do conetor.
 
 
 --
@@ -88,7 +89,7 @@ Podman versão 4.6.1 ou 4.9.4
 
 <<podman-configuration,Veja os requisitos de configuração do Podman>>.
  a| 
-Suportado no modo de imposição ou modo permissivo
+Suporte no modo de execução ou modo permissivo 1
 
 
 
@@ -108,8 +109,9 @@ Não suportado
 |===
 Notas:
 
-* O conetor é suportado em versões em inglês destes sistemas operativos.
-* Para o RHEL, o host deve estar registrado no Red Hat Subscription Management. Se não estiver registrado, o host não poderá acessar repositórios para atualizar o software necessário de 3rd partes durante a instalação do conetor.
+. O gerenciamento de sistemas Cloud Volumes ONTAP não é suportado por conetores que tenham o SELinux habilitado no sistema operacional.
+. O conetor é suportado em versões em inglês destes sistemas operativos.
+. Para o RHEL, o host deve estar registrado no Red Hat Subscription Management. Se não estiver registrado, o host não poderá acessar repositórios para atualizar o software necessário de 3rd partes durante a instalação do conetor.
 
 
 --

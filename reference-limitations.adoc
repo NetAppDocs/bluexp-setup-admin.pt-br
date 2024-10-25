@@ -16,7 +16,7 @@ summary: As limitações conhecidas identificam plataformas, dispositivos ou fun
 [role="lead"]
 As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.
 
-Essas limitações são específicas para a configuração e administração do BlueXP : O conetor, a plataforma SaaS e muito mais.
+Essas limitações são específicas para a configuração e administração do BlueXP : O conetor, a plataforma de software como serviço (SaaS) e muito mais.
 
 
 

@@ -372,7 +372,6 @@
   <block id="4a7c3449c74a5d09f39518a207c28558" category="paragraph">Podman versão 4.6.1 ou 4.9.4</block>
   <block id="98119697a8c596d6a586655f867a2cda" category="inline-xref">Veja os requisitos de configuração do Podman</block>
   <block id="a4facfb2d16d1ed97d33467440808582" category="paragraph"><block ref="70e106a4b5e10c3f8e254a047f7ddb34" category="inline-xref-macro-rx"></block>.</block>
-  <block id="80626b31c22fa123b11c56011b1f23b6" category="paragraph">Suportado no modo de imposição ou modo permissivo</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
   <block id="4cb2cce5e859bbc5a24d65a5385fba47" category="paragraph">24,04 LTS</block>
   <block id="8be08c10396c9c621de2a80e7ee83e4b" category="paragraph">3.9.45 ou posterior com BlueXP  no modo padrão ou modo restrito</block>
@@ -642,7 +641,6 @@
   <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
   <block id="cdc80f7691441e19b9937f7e3719514f" category="summary">Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada SaaS do BlueXP  para quaisquer ações que ele precise tomar. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP .</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">Saiba mais sobre conetores</block>
-  <block id="571d48465b61d33b57b6d0d2d497fc4d" category="paragraph">Um _Connector_ é um software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada SaaS do BlueXP  para quaisquer ações que ele precise tomar. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP .</block>
   <block id="0c1ff69304e8a667d66b73796ae020d8" category="section-title">O que você pode fazer sem um conetor</block>
   <block id="4d3fca1d2cf37433752c20e52858221f" category="paragraph">Não é necessário um conetor para começar a usar o BlueXP . Você pode usar vários recursos e serviços no BlueXP  sem nunca criar um conetor.</block>
   <block id="224dffcf542a8351c726ceb793464d58" category="paragraph">Você pode usar os seguintes recursos e serviços do BlueXP  sem um conetor:</block>
@@ -995,7 +993,6 @@
   <block id="ab98f632a22cf265a09e9110157eba1f" category="list-text"><block ref="ab98f632a22cf265a09e9110157eba1f" category="inline-link-macro-rx"></block></block>
   <block id="aad2c066ffe748669f0919517c62b920" category="paragraph">A opção de instalação que você escolher afeta a forma como você se prepara para a instalação. Isso inclui como você fornece ao BlueXP  as permissões necessárias que ele precisa para autenticar e gerenciar recursos no Google Cloud.</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">O BlueXP  oferece vários modos de implantação que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O modo padrão aproveita a camada SaaS do BlueXP  para fornecer funcionalidade completa, enquanto o modo restrito e o modo privado estão disponíveis para organizações com restrições de conetividade.</block>
-  <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">O BlueXP  oferece vários _modos de implantação_ que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O _modo padrão_ aproveita a camada SaaS do BlueXP  para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações que têm restrições de conetividade.</block>
   <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">Embora o BlueXP  iniba o fluxo de tráfego, comunicação e dados ao usar o modo restrito ou o modo privado, é sua responsabilidade garantir que seu ambiente (no local e na nuvem) esteja em conformidade com os regulamentos exigidos.</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">Visão geral</block>
   <block id="352b89440d5beff7b1d3a05b715d29f3" category="paragraph">O BlueXP  oferece três modos de implantação. Cada modo difere em termos de requisitos de conetividade de saída, localização de implementação, processo de instalação, método de autenticação, serviços de dados e armazenamento disponíveis e métodos de carregamento.</block>
@@ -1458,7 +1455,6 @@
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limitações conhecidas</block>
-  <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">Essas limitações são específicas para a configuração e administração do BlueXP : O conetor, a plataforma SaaS e muito mais.</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitações do conetor</block>
   <block id="79911dec911bf03733bda7065e7e3964" category="section-title">Servidores proxy transparentes não são suportados</block>
   <block id="d0da98586108cb1be969ff43380eee45" category="paragraph">O BlueXP  não suporta servidores proxy transparentes com o conetor.</block>
@@ -1482,10 +1478,8 @@
   <block id="c305e694f602a4913fd20d15e3508fcc" category="paragraph">Agentes de 3rd partes ou extensões de VM não são suportados na VM do conetor.</block>
   <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">À medida que você usa o console baseado na Web do BlueXP  fornecido pela camada SaaS, ele entra em Contato com vários endpoints ao concluir algumas tarefas administrativas. Os computadores que acessam o console BlueXP  devem ter conexões com esses endpoints.</block>
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">Prepare a rede para o console BlueXP </block>
-  <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">Esses endpoints são contatados do computador de um usuário ao concluir ações específicas do console BlueXP . Você também deve consultar os requisitos de rede para o conetor e para serviços BlueXP  específicos. Para obter detalhes, consulte os links relacionados no final desta página.</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">Endpoints</block>
   <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">https://console.BlueXP .NetApp.com https://*.console.BlueXP .NetApp.com</block>
-  <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">O navegador da Web entra em Contato com esses URLs quando você usa o console baseado na Web do BlueXP .</block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">https://aiq.NetApp.com</block>
   <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">Necessário para acessar o consultor digital da BlueXP .</block>
   <block id="b3f4a5004c2a10094d2af8bd28589cbf" category="paragraph">Serviços da AWS (amazonaws.com):</block>
@@ -2260,7 +2254,6 @@
   <block id="b210da359773bedea1c22163a6dfd9aa" category="section-title">Adicione credenciais ao BlueXP  para criar um conetor</block>
   <block id="d47da26b990c110e9fc01f6de5204588" category="paragraph">Adicione credenciais da AWS ao BlueXP  fornecendo o ARN de uma função do IAM que dá ao BlueXP  as permissões necessárias para criar um conetor. Você pode escolher essas credenciais ao criar um novo conetor.</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">Configure a função do IAM</block>
-  <block id="e7f0046e5c4acbd3c62bc559d3b9989c" category="paragraph">Configure uma função do IAM que permita que a camada SaaS do BlueXP  assuma a função.</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">Vá para o console do IAM na conta de destino.</block>
   <block id="f8fb427b03f3548b0b9a6e3f2f1349de" category="list-text">Selecione *outra conta da AWS* e insira o ID do SaaS do BlueXP : 952013314444</block>
   <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">Crie uma política que inclua as permissões necessárias para criar um conetor.</block>
@@ -4703,4 +4696,24 @@
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referência</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Resumo das permissões</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
+  <block id="2f0fe646e8dbdc5b077179ddfc54ea80" category="list-text">Endpoints contatados de computadores ao usar o console baseado na Web do BlueXP </block>
+  <block id="f523b9cc17a5029df41584382b959f5e" category="list-text">Os computadores que acessam o console BlueXP  a partir de um navegador da Web devem ter a capacidade de entrar em Contato com vários endpoints. Você precisará usar o console BlueXP  para configurar o conetor e para uso diário do BlueXP .</block>
+  <block id="9b9f80f24ed0b93047113544607e2066" category="paragraph"><block ref="3a812ba80ae549f721789bceed3eb28a" category="inline-link-macro-rx"></block>.</block>
+  <block id="7e4159d172a1854b6946f160a149d326" category="paragraph">Suporte no modo de execução ou modo permissivo 1</block>
+  <block id="3093ae1f44e0f8ba4d59f282f1fccf4d" category="list-text">O gerenciamento de sistemas Cloud Volumes ONTAP não é suportado por conetores que tenham o SELinux habilitado no sistema operacional.</block>
+  <block id="2a1c6b0713eb3b0e8cc5584c21fe42b6" category="paragraph">Um _Connector_ é um software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada de software como serviço (SaaS) da BlueXP  para qualquer ação que precise ser executada. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP .</block>
+  <block id="7dbbe2a034f912c5cb9e37aea8e9795a" category="paragraph">O BlueXP  oferece vários _modos de implantação_ que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O _modo padrão_ aproveita a camada de software como serviço (SaaS) do BlueXP  para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações que têm restrições de conetividade.</block>
+  <block id="1503e47ef7de6f4f44b59422cf94ceec" category="paragraph">O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem. A plataforma software como serviço (SaaS) da BlueXP  inclui serviços que fornecem gerenciamento de storage, mobilidade de dados, proteção de dados e análise e controle. Os recursos de gerenciamento são fornecidos por meio de um console e APIs baseados na Web.</block>
+  <block id="9d110ddb304e37d908c266c47eeed9f9" category="paragraph">Essas limitações são específicas para a configuração e administração do BlueXP : O conetor, a plataforma de software como serviço (SaaS) e muito mais.</block>
+  <block id="157e45a951f5f71fa231797b436e86ed" category="paragraph">Quando você faz login e usa o console baseado na Web do BlueXP , o BlueXP  entra em Contato com vários endpoints para concluir as ações iniciadas. Os computadores que acessam o console BlueXP  devem ter conexões com esses endpoints.</block>
+  <block id="4a4c7c5f33ddbb7440e81d7d69be19b1" category="paragraph">Esses endpoints são contatados em dois cenários:</block>
+  <block id="f953e73ddb1786ffb7e0d885c981d45b" category="list-text">A partir do computador de um usuário ao concluir ações específicas do<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block> que está disponível como software como serviço (SaaS).</block>
+  <block id="a130f473bab21dbd8976611dd2d0dd46" category="list-text">No computador de um usuário ao abrir um navegador da Web, insira o endereço IP do host do conetor e, em seguida, efetue login e configure o conetor. Estes passos são necessários se instalar manualmente o conetor.</block>
+  <block id="272b8aa6fbc5bf0bcb26f3efff6fd7b6" category="cell">Este é o ponto de extremidade que você insere no navegador da Web para usar o console baseado na Web do BlueXP .</block>
+  <block id="f2895e2cb7bd6fae5d08822b80c241ad" category="cell">O console baseado na Web do BlueXP  entra em Contato com esse endpoint para interagir com a API do BlueXP  para ações relacionadas a autorização, licenciamento, assinaturas, credenciais, notificações e muito mais.</block>
+  <block id="750d08022e9ecef4d0922cebbac41f77" category="paragraph">Configure uma função do IAM que permita que a camada de software como serviço (SaaS) do BlueXP  assuma a função.</block>
+  <block id="80659acde30e18ea087a9d28003264b3" category="paragraph">Implante o conetor no modo privado para que você possa usar o BlueXP  sem conetividade de saída à camada de software como serviço (SaaS) da BlueXP . Para começar, instale o conetor, configure o BlueXP  acessando a interface do usuário que está sendo executada no conetor e, em seguida, forneça as permissões de nuvem que você configurou anteriormente.</block>
+  <block id="cc1296d9134596683711d3700fb2e202" category="paragraph">Implante o conetor no modo restrito para que você possa usar o BlueXP  com conetividade de saída limitada à camada de software como serviço (SaaS) da BlueXP . Para começar, instale o conetor, configure o BlueXP  acessando a interface do usuário que está sendo executada no conetor e, em seguida, forneça as permissões de nuvem que você configurou anteriormente.</block>
+  <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">Observe as seguintes limitações:</block>
+  <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">Gerenciamento de sistemas Cloud Volumes ONTAP não é suportado por conetores que têm SELinux habilitado no sistema operacional.</block>
 </blocks>

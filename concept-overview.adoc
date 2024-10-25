@@ -14,7 +14,7 @@ summary: O NetApp BlueXP  oferece à sua organização um único painel de cont
 
 
 [role="lead"]
-O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem. A plataforma SaaS do BlueXP  inclui serviços que oferecem gerenciamento de storage, mobilidade de dados, proteção de dados e análise e controle de dados. Os recursos de gerenciamento são fornecidos por meio de um console e APIs baseados na Web.
+O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem. A plataforma software como serviço (SaaS) da BlueXP  inclui serviços que fornecem gerenciamento de storage, mobilidade de dados, proteção de dados e análise e controle. Os recursos de gerenciamento são fornecidos por meio de um console e APIs baseados na Web.
 
 
 
