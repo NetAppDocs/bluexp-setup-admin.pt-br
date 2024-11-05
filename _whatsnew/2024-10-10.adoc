@@ -1,0 +1,9 @@
+= Conetor 3.9.45 patch
+:allow-uri-read: 
+
+
+
+
+=== Conetor 3.9.45 patch
+
+Este patch inclui correções de bugs.
