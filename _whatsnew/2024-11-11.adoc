@@ -1,0 +1,19 @@
+= Conetor 3.9.46
+:allow-uri-read: 
+
+
+
+
+=== Conetor 3.9.46
+
+Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.
+
+Neste momento, a versão 3.9.46 está disponível para o modo padrão e modo restrito.
+
+
+
+=== ID para projetos IAM
+
+Agora você pode exibir o ID de um projeto a partir do gerenciamento de identidade e acesso do BlueXP . Talvez seja necessário usar o ID ao fazer uma chamada à API.
+
+link:task-iam-manage-folders-projects.html#project-id["Saiba como obter o ID de um projeto"].

@@ -4718,4 +4718,18 @@
   <block id="b761d39c43ee7b44b5589e7be65657ea" category="paragraph">Algumas ações exigem um conetor ou um link de fábrica da carga de trabalho do BlueXP .<block ref="eab18bd75996775296aa94b3a12b305e" category="inline-link-rx"></block></block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="list-text">Fábrica de carga de trabalho</block>
   <block id="d5094f4772a2d747eb41596de33fc883" category="paragraph">O conetor faz as seguintes solicitações de API para gerenciar um sistema de arquivos do Amazon FSX for ONTAP:</block>
+  <block id="54eca49362b96a7e1899f1d9f7fbdeef" category="doc">Conetor 3.9.46</block>
+  <block id="5b7c2a7de0cce99684e946ddad5735bd" category="paragraph">Neste momento, a versão 3.9.46 está disponível para o modo padrão e modo restrito.</block>
+  <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">ID para projetos IAM</block>
+  <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">Agora você pode exibir o ID de um projeto a partir do gerenciamento de identidade e acesso do BlueXP . Talvez seja necessário usar o ID ao fazer uma chamada à API.</block>
+  <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link-macro">Saiba como obter o ID de um projeto</block>
+  <block id="89d67911b68ccc5d2e1c1ba76f5d85d2" category="paragraph"><block ref="05b01cf8b541aa707e135b6ea0dd3477" category="inline-link-macro-rx"></block>.</block>
+  <block id="9c0c9fdc01dbde3e19b2b95d0ed36308" category="section-title">Obtenha o ID de um projeto</block>
+  <block id="b653cd33888ca8dc048a0fd0c8ce7280" category="paragraph">Se você estiver usando a API do BlueXP , talvez seja necessário obter o ID de um projeto. Por exemplo, ao criar um ambiente de trabalho Cloud Volumes ONTAP.</block>
+  <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">Na página *Organização*, navegue até um projeto na tabela e selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">O ID do projeto é exibido.</block>
+  <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">Para copiar a ID, selecione o botão Copy (cópia).</block>
+  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Uma captura de tela da tabela de pastas e projetos que mostra o remetente de ID do projeto selecionando o menu de ação para um projeto.</block>
+  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de novembro de 2024</block>
 </blocks>
