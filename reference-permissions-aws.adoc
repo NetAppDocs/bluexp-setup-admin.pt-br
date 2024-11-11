@@ -764,7 +764,7 @@ As seções a seguir descrevem como as permissões são usadas para cada serviç
 
 === Amazon FSX para ONTAP
 
-O conetor faz as seguintes solicitações de API para gerenciar o Amazon FSX for ONTAP:
+O conetor faz as seguintes solicitações de API para gerenciar um sistema de arquivos do Amazon FSX for ONTAP:
 
 * EC2: DescribeInstances
 * EC2:DescribeInstanceStatus

@@ -148,9 +148,6 @@ Serviços BlueXP  compatíveis:: O BlueXP  oferece suporte aos seguintes servi
 | Serviços compatíveis | Notas 
 
 
-| Amazon FSX para ONTAP | Suporte completo 
-
-
 | Azure NetApp Files | Suporte completo 
 
 
@@ -321,7 +318,7 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | Área do produto | Serviço ou recurso do BlueXP  | Modo restrito | Modo privado 
 
 
-.10+| *Ambientes de trabalho* esta parte da tabela lista o suporte para o gerenciamento do ambiente de trabalho a partir da tela BlueXP . Ele não indica os destinos de backup suportados para backup e recuperação do BlueXP . | Amazon FSX para ONTAP | Sim | Não 
+.10+| *Ambientes de trabalho* esta parte da tabela lista o suporte para o gerenciamento do ambiente de trabalho a partir da tela BlueXP . Ele não indica os destinos de backup suportados para backup e recuperação do BlueXP . | Amazon FSX para ONTAP | Não | Não 
 
 
 | Amazon S3 | Não | Não 
@@ -351,7 +348,7 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | StorageGRID | Não | Não 
 
 
-.16+| *Serviços* | Alertas | Não | Não 
+.17+| *Serviços* | Alertas | Não | Não 
 
 
 | Backup e recuperação | Sim https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] | Sim https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] 
@@ -397,6 +394,9 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 
 
 | Armazenamento em cache de volume | Não | Não 
+
+
+| Fábrica de carga de trabalho | Não | Não 
 
 
 .7+| *Caraterísticas* | Gerenciamento de identidade e acesso do BlueXP | Não | Não 
