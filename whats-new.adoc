@@ -34,7 +34,7 @@ Neste momento, a versão 3.9.46 está disponível para o modo padrão e modo res
 
 Agora você pode exibir o ID de um projeto a partir do gerenciamento de identidade e acesso do BlueXP . Talvez seja necessário usar o ID ao fazer uma chamada à API.
 
-link:task-iam-manage-folders-projects.html#project-id["Saiba como obter o ID de um projeto"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["Saiba como obter o ID de um projeto"].
 
 
 
