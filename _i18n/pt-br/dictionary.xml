@@ -4732,4 +4732,25 @@
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de novembro de 2024</block>
   <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>.</block>
   <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Para executar o conetor no local, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões de nuvem, instalar o conetor, configurar o conetor e, em seguida, fornecer as permissões que você preparou.</block>
+  <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">Lançamento do modo privado (3,9.46)</block>
+  <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">Uma nova versão do modo privado está agora disponível para transferência a partir do<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
+  <block id="579c9c5aad40c47e8203472b55439941" category="paragraph">A versão 3.9.46 inclui atualizações para os seguintes componentes e serviços do BlueXP .</block>
+  <block id="394b364c6ed61ed167a4f14316ef5ffc" category="cell">Componente ou serviço</block>
+  <block id="2f9dd95401f68032a97298d35b87f433" category="cell">Versão incluída nesta versão</block>
+  <block id="5431c829b8b64da3908e102d64527909" category="cell">Alterações desde a versão anterior do modo privado</block>
+  <block id="3d93fe525e5005a3aa89376ce36eaf7d" category="cell">3.9.46</block>
+  <block id="2e6f33758bf126679d5a0225c22673d3" category="cell">Pequenas melhorias de segurança e correções de bugs</block>
+  <block id="008c6d012aabba0e44e2b94f8259635c" category="cell">22 de novembro de 2024</block>
+  <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">Novidades na página de backup e recuperação do BlueXP</block>
+  <block id="cc73bd495467f0768e5ab6fbca8c9fc3" category="cell">Aceda ao<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e consulte as alterações incluídas na versão de Novembro de 2024</block>
+  <block id="d9865720c88f775c3c7aa2407f42807e" category="cell">4 de Novembro de 2024 (versão 1,37)</block>
+  <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">Novidades na página de classificação do BlueXP</block>
+  <block id="3634786b3e46e41488029a1f5adcfb51" category="cell">Aceda ao<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e consulte as alterações incluídas nas versões 1,32 a 1,37</block>
+  <block id="5cee96e11788b0260fca227a2882f413" category="inline-link">Novidades na página de gerenciamento do Cloud Volumes ONTAP</block>
+  <block id="2b06273c345679e8396f450bec75502c" category="cell">Acesse<block ref="90e3b44730452fe495e75ab6e2b7eb58" category="inline-link-rx"></block> e consulte as alterações incluídas nos lançamentos de outubro de 2024 e novembro de 2024</block>
+  <block id="d415b73567ff8e090cdf21c20afeaa64" category="cell">26 de novembro de 2024</block>
+  <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">Novidades na página de gerenciamento de clusters do ONTAP no local</block>
+  <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">Aceda ao<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block> e consulte as alterações incluídas na versão de Novembro de 2024</block>
+  <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">Embora a carteira digital BlueXP  e a replicação BlueXP  também estejam incluídas no modo privado, não há alterações na versão anterior do modo privado.</block>
+  <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>s</block>
 </blocks>
