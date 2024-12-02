@@ -4750,7 +4750,7 @@
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">Aceda ao<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block> e consulte as alterações incluídas na versão de Novembro de 2024</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">Embora a carteira digital BlueXP  e a replicação BlueXP  também estejam incluídas no modo privado, não há alterações na versão anterior do modo privado.</block>
   <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>s</block>
-  <block id="d9e0b5302621c1c23c370143ae83f9e2" category="paragraph">A pessoa que configura o BlueXP  Connector deve fazer login no BlueXP  usando um login que não pertence a uma organização do BlueXP  que esteja operando no modo padrão.</block>
-  <block id="958a2cecb2c46938c95b34d62fe1951c" category="paragraph">Se o seu login no BlueXP  estiver associado a uma organização que esteja operando no modo padrão, você precisará se inscrever com um novo login do BlueXP  ou credenciais do site de suporte da NetApp que não pertencem a uma organização. Caso contrário, você não verá a opção de ativar o modo restrito na tela de configuração.</block>
   <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">Introduza um nome para uma nova conta BlueXP .</block>
+  <block id="57d3121acc1a5ab1d49ad8c9d1074921" category="paragraph">A pessoa que configura o BlueXP  Connector deve fazer login no BlueXP  usando um login que não pertence a uma conta ou organização do BlueXP .</block>
+  <block id="b1308196c2d004e3aef97cd9d7807956" category="paragraph">Se o seu login do BlueXP  estiver associado a outra conta ou organização, você precisará se inscrever com um novo login do BlueXP . Caso contrário, você não verá a opção de ativar o modo restrito na tela de configuração.</block>
 </blocks>
