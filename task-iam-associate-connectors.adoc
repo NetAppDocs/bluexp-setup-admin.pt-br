@@ -21,7 +21,6 @@ Você deve entender como a associação de conetores funciona. link:concept-iden
 
 .Sobre esta tarefa
 * Quando um _Folder ou administrador de projeto_ exibe a página *Connectors*, a página exibe todos os conetores na organização. No entanto, um membro com essa função só pode exibir e associar conetores com as pastas e projetos para os quais eles têm permissões. link:reference-iam-predefined-roles.html["Saiba mais sobre as ações que um _Folder ou administrador de projeto_ pode concluir"].
-* Devido a um problema conhecido, a página conetores no BlueXP  IAM exibe quaisquer conetores antigos removidos anteriormente do BlueXP .
 
 
 .Passos

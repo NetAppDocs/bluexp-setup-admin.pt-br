@@ -1,0 +1,22 @@
+= Conetor 3.9.47
+:allow-uri-read: 
+
+
+
+
+=== Conetor 3.9.47
+
+Esta versão do conetor BlueXP  inclui correções de erros e uma alteração nos pontos finais contactados durante a instalação do conetor.
+
+Neste momento, a versão 3.9.47 está disponível para o modo padrão e modo restrito.
+
+.Endpoint para entrar em Contato com o suporte do NetApp durante a instalação
+Quando instala manualmente o conetor, o instalador deixa de entrar em contacto com a https://support.NetApp.com.
+
+O instalador ainda entra em Contato com https://mysupport.NetApp.com.
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP
+
+A página conetores lista apenas os conetores atualmente disponíveis. Ele não exibe mais conetores que você removeu.

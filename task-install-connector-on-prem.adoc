@@ -253,7 +253,6 @@ link:reference-networking-saas-console.html["Prepare a rede para o console BlueX
 Terminais contactados durante a instalação manual:: Quando você instala manualmente o conetor em seu próprio host Linux, o instalador do conetor requer acesso aos seguintes URLs durante o processo de instalação:
 +
 --
-* https://support.NetApp.com
 * https://mysupport.NetApp.com
 * https://signin.b2c.NetApp.com (este endpoint é o URL CNAME para https://mysupport.NetApp.com)
 * https://cloudmanager.cloud.NetApp.com/locação

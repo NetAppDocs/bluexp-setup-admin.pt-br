@@ -18,63 +18,65 @@ O BlueXP  Identity and Access Management (IAM) inclui várias funções predefi
 
 
 
-== Administrador da organização
+== Funções da plataforma
 
-Descrição:: Fornece controle total de toda a organização BlueXP .
-Permissões:: Um membro que tenha essa função pode concluir todas as ações no BlueXP .
+O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo. A função de administrador da organização tem permissões em todas as pastas e projetos; enquanto o administrador da pasta ou do projeto só tem permissões na pasta ou projeto ao qual foram atribuídos.
+
+A função de administrador de pasta ou projeto não pode criar conetores.
+
+Permissões::
 
 
+[cols="24,19,19"]
+|===
+| Tarefa | Administrador da organização | Administrador de pasta ou Projeto 
 
 
-== Administrador de pasta ou projeto
+| Crie conetores | Sim | Não 
 
-Descrição:: Fornece controle total de um ou mais projetos e pastas.
+
+| Criar, modificar ou excluir ambientes de trabalho (adicionar ou descobrir novos recursos usando a tela BlueXP ) | Sim | Sim 
+
+
+| Crie projetos/pastas, incluindo renomeação, exclusão e edição | Sim | Sim 
+
+
+| Atribua funções e adicione usuários | Sim | Sim 
+
+
+| Associar recursos e conetores a pastas e projetos | Sim | Sim 
+
+
+| Gerir credenciais a partir de Definições > credenciais | Sim | Sim 
+
+
+| Veja a linha do tempo do BlueXP  | Sim | Sim 
+
+
+| Use os serviços do BlueXP  | Sim | Sim 
+
+
+| Registre o BlueXP  para obter suporte e enviar casos | Sim | Sim 
+|===
+Exemplo para funções de organização em BlueXP  para uma grande organização multinacional:: A XYZ Corporation, uma empresa multinacional, tem como objetivo separar o acesso a recursos de storage de dados com base em regiões geográficas: América do Norte, Europa e Ásia-Pacífico. Eles querem que cada região tenha controle exclusivo sobre seus recursos, mantendo a supervisão centralizada.
 +
 --
-Observe que se você atribuir essa função no nível da pasta, o membro tem permissões para todos os projetos associados a essa pasta.
+Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.
 
---
-Permissões:: Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :
-+
---
-* Gerencie todos os ambientes de trabalho nos projetos e pastas para os quais eles têm permissões
-* Use todos os serviços do BlueXP 
-* No BlueXP  IAM, um administrador de uma pasta pode administrar as pastas, projetos e recursos que são filhos dessa pasta:
-+
-** Adicione pastas ou projetos dentro da pasta
-** Editar pastas e projetos: Seus nomes, recursos associados e acesso a membros
-** Excluir pastas e projetos
-** Adicione uma conta de usuário e associe uma função no nível de pasta ou projeto
-** Associar um conetor a uma pasta ou projeto
-** Adicione uma função a um membro no nível de pasta ou projeto
-** Exibir recursos associados a pastas e projetos
-** Associe recursos visíveis a pastas ou projetos adicionais
-** Dissociar um recurso de uma pasta ou projeto
-
-
-* A partir do BlueXP  IAM, um administrador de um projeto pode administrar esse projeto e seus recursos associados da seguinte forma:
-+
-** Edite o projeto: Seu nome, recursos associados e acesso a membros
-** Adicione uma conta de usuário e associe uma função no nível do projeto
-** Associe um conetor a um projeto, se o membro tiver permissões de administrador para outros projetos que tenham outros conetores associados
-** Adicione uma função a um membro no nível do projeto
-** Veja os recursos associados ao projeto
-** Associe recursos ao projeto, se o membro tiver permissões de administrador para outros projetos que tenham outros recursos associados
-** Dissociar um recurso do projeto
-** Exclua o projeto
-
-
-* Gerir credenciais a partir de Definições > credenciais
-* Veja a linha do tempo do BlueXP 
-* Registre o BlueXP  para obter suporte e enviar casos
-
+Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador pasta ou Projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.
 
 --
 
 
 
 
-== Administrador do SnapCenter
+== Funções de serviços de dados
+
+As funções de serviços de dados podem concluir suas tarefas em qualquer projeto ou pasta.
+
+
+
+=== Administrador do SnapCenter
 
 Descrição:: Permite fazer backup de snapshots de clusters ONTAP on-premises usando o backup e a recuperação do BlueXP  para aplicações.
 Permissões:: Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :
@@ -90,7 +92,7 @@ Permissões:: Um membro que tenha essa função pode concluir as seguintes açõ
 
 
 
-== Visualizador de classificação
+=== Visualizador de classificação
 
 Descrição:: Fornece os resultados do exame de classificação BlueXP  da vista de capacidade.
 Permissões:: Visualize as informações de conformidade e gere relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados.

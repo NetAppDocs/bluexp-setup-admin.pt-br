@@ -35,5 +35,5 @@ Para obter mais detalhes sobre o modo privado, incluindo como atualizar, consult
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Saiba mais sobre o modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Saiba como começar a usar o BlueXP  no modo privado"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Saiba como atualizar o conetor ao usar o modo privado"]s
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Saiba como atualizar o conetor ao usar o modo privado"]
 

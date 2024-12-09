@@ -18,6 +18,29 @@ Saiba o que há de novo com os recursos de administração do BlueXP : Gerencia
 
 
 
+== 9 de dezembro de 2024
+
+
+
+=== Conetor 3.9.47
+
+Esta versão do conetor BlueXP  inclui correções de erros e uma alteração nos pontos finais contactados durante a instalação do conetor.
+
+Neste momento, a versão 3.9.47 está disponível para o modo padrão e modo restrito.
+
+.Endpoint para entrar em Contato com o suporte do NetApp durante a instalação
+Quando instala manualmente o conetor, o instalador deixa de entrar em contacto com a https://support.NetApp.com.
+
+O instalador ainda entra em Contato com https://mysupport.NetApp.com.
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP
+
+A página conetores lista apenas os conetores atualmente disponíveis. Ele não exibe mais conetores que você removeu.
+
+
+
 == 26 de novembro de 2024
 
 
@@ -53,7 +76,7 @@ Para obter mais detalhes sobre o modo privado, incluindo como atualizar, consult
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Saiba mais sobre o modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Saiba como começar a usar o BlueXP  no modo privado"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Saiba como atualizar o conetor ao usar o modo privado"]s
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Saiba como atualizar o conetor ao usar o modo privado"]
 
 
 
@@ -1134,7 +1157,7 @@ https://bluexp.netapp.com["Saiba mais no site da BlueXP "^]
 Novo menu de navegação:: No menu de navegação do BlueXP , os serviços são agora organizados por categorias e são nomeados de acordo com a sua funcionalidade. Por exemplo, você pode acessar o backup e a recuperação do BlueXP  a partir da categoria *proteção*.
 +
 --
-image:screenshot-navigation-menu.png["Uma captura de tela do menu de navegação no BlueXP  que mostra categorias como armazenamento e integridade."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png["Uma captura de tela do menu de navegação no BlueXP  que mostra categorias como armazenamento e integridade."]
 
 --
 Integrações de novos produtos::
@@ -1510,7 +1533,7 @@ As contas do site de suporte da NetApp (NSS) agora são gerenciadas a partir do 
 
 link:task-adding-nss-accounts.html["Saiba como gerenciar contas NSS"].
 
-image:screenshot_nss_management.png["Uma captura de tela da guia Gerenciamento do NSS no Painel de suporte, onde você pode adicionar contas NSS."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["Uma captura de tela da guia Gerenciamento do NSS no Painel de suporte, onde você pode adicionar contas NSS."]
 
 
 
