@@ -4781,7 +4781,7 @@
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Na página *Editar*, selecione *Access* para visualizar a lista de membros que têm acesso à pasta ou projeto selecionado.</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Quando você usa o gerenciamento de identidade e acesso do BlueXP  (IAM) para associar um membro à sua organização, você fornece permissões no nível da organização, pasta ou projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um recurso de armazenamento que o BlueXP  já gerencia ou conhece.</block>
   <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">Você pode exibir recursos descobertos e não descobertos associados à sua organização. Os recursos não descobertos geralmente são recursos de storage conhecidos pelo consultor digital para os quais você não adicionou como ambientes de trabalho.</block>
-  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Os recursos do Amazon FSX for NetApp ONTAP não são exibidos na página recursos do IAM, pois você não pode associá-los a uma função do IAM. Você pode visualizar esses recursos na respetiva tela ou nas cargas de trabalho.</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Os recursos do Amazon FSX for NetApp ONTAP não são exibidos na página recursos do IAM, pois você não pode associá-los a uma função do IAM. Você pode visualizar esses recursos na respetiva tela ou nas cargas de trabalho.</block>
   <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">Selecione *recursos* para visualizar a página recursos.</block>
   <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">Selecione *Pesquisa avançada e filtragem*.</block>
   <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">Se você quiser disponibilizar um recurso para pasta ou projeto em sua organização, precisará criar uma associação entre a pasta ou projeto e o recurso.</block>
@@ -4799,4 +4799,13 @@
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Se o conetor estiver em uma região comercial ou região soberana, você poderá escolher entre dois conjuntos de endpoints:</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Para obter imagens para atualizações de conetores quando o conetor é instalado em uma região comercial ou região soberana.</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de dezembro de 2024</block>
+  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="doc">Conetor 3.9.48</block>
+  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">Neste momento, a versão 3.9.48 está disponível para o modo padrão e modo restrito.</block>
+  <block id="a8afa3393166930c13f7426758547bca" category="list-text">A página recursos agora exibe recursos não descobertos. Recursos não descobertos são recursos de storage que a BlueXP  conhece, mas para os quais você não criou ambientes de trabalho. Por exemplo, os recursos exibidos no consultor digital que ainda não possuem ambientes de trabalho são exibidos na página recursos como recursos não descobertos.</block>
+  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">Crie um caso de suporte para serviços BlueXP  adicionais</block>
+  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">Depois de Registrar o BlueXP  para obter suporte, você pode criar um caso de suporte diretamente no console baseado na Web do BlueXP . Ao criar o caso, você precisa selecionar o serviço ao qual o problema está associado.</block>
+  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">A partir desta versão, agora você pode criar um caso de suporte e associá-lo a serviços BlueXP  adicionais:</block>
+  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">Saiba mais sobre como criar um caso de suporte</block>
+  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>.</block>
+  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 de janeiro de 2025</block>
 </blocks>
