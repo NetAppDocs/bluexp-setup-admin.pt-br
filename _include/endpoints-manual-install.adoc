@@ -10,11 +10,72 @@ Terminais contactados durante a instalação manual:: Quando você instala manua
 * https://cloudmanager.cloud.NetApp.com/locação
 * https://stream.cloudmanager.cloud.NetApp.com
 * https://production-artifacts.cloudmanager.cloud.NetApp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* Para obter imagens, o instalador precisa de acesso a um destes dois conjuntos de endpoints:
++
+** Opção 1 (recomendado):
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Opção 2:
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
 
 
 --
 
+
+Terminais contactados durante a instalação manual:: Quando você instala manualmente o conetor em seu próprio host Linux, o instalador do conetor requer acesso a vários URLs durante o processo de instalação.
++
+--
+* Os seguintes pontos finais são sempre contactados, independentemente de onde instalar o conetor:
++
+** https://mysupport.NetApp.com
+** https://signin.b2c.NetApp.com (este endpoint é o URL CNAME para https://mysupport.NetApp.com)
+** https://cloudmanager.cloud.NetApp.com/locação
+** https://stream.cloudmanager.cloud.NetApp.com
+** https://production-artifacts.cloudmanager.cloud.NetApp.com
+
+
+* Se você instalar o conetor em uma região do AWS Government, o instalador também precisará acessar esses endpoints:
++
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* Se você instalar o conetor em uma região do Azure Government, o instalador também precisará acessar esses endpoints:
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* Se você instalar o conetor em uma região comercial ou região soberana, poderá escolher entre dois conjuntos de endpoints:
++
+** Opção 1 (recomendado):
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Opção 2:
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
+
+
+--
+
+
+Os endpoints listados na opção 1 são recomendados porque são mais seguros. Recomendamos que você configure seu firewall para permitir os endpoints listados na opção 1, ao mesmo tempo em que rejeita os endpoints listados na opção 2. Observe o seguinte sobre esses endpoints: ** Os endpoints listados na opção 1 são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor. ** O conetor entra em Contato com os pontos finais listados na opção 2 primeiro. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os endpoints listados na opção 1. ** Os pontos de extremidade na opção 1 não são suportados se você usar o conetor com backup e recuperação BlueXP  ou proteção contra ransomware BlueXP . Nesse caso, você pode desativar os endpoints listados na opção 1, ao mesmo tempo em que permite os endpoints listados na opção 2.
 
 O host pode tentar atualizar os pacotes do sistema operacional durante a instalação. O host pode entrar em Contato com diferentes sites de espelhamento para esses pacotes do sistema operacional.

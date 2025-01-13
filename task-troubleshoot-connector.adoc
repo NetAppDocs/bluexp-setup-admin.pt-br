@@ -16,7 +16,7 @@ summary: Para solucionar problemas com o conetor, você pode trabalhar com o sup
 [role="lead"]
 Para solucionar problemas com o conetor, você pode trabalhar com o suporte da NetApp, que pode solicitar a ID do sistema, a versão do conetor ou as mensagens mais recentes do AutoSupport. Você também pode visualizar a base de dados de Conhecimento da NetApp para solucionar problemas sozinho.
 
-.Link relacionado
+.Informações relacionadas
 link:task-get-help.html["Obtenha ajuda do suporte da NetApp"].
 
 

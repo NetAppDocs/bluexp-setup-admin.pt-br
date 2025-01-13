@@ -25,5 +25,5 @@ Para obter ajuda, consulte a seguinte documentação:
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Fazer backup de dados de volume do ONTAP no local para o StorageGRID usando o backup e a recuperação do BlueXP "^]
 
 
-.Link relacionado
+.Informações relacionadas
 link:concept-modes.html["Modos de implantação do BlueXP"]

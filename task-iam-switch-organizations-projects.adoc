@@ -73,7 +73,7 @@ Se você tiver vários conetores, pode alternar entre eles para ver os ambientes
 .Resultado
 O BlueXP  atualiza e mostra os ambientes de trabalho associados ao conetor selecionado.
 
-.Link relacionado
+.Informações relacionadas
 link:task-iam-associate-connectors.html["Associar conetores a pastas e projetos"].
 
 

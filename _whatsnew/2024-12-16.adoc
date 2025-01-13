@@ -1,0 +1,40 @@
+= Novos terminais seguros para obter imagens de conetores
+:allow-uri-read: 
+
+
+
+
+=== Novos terminais seguros para obter imagens de conetores
+
+Quando instala o conetor ou quando ocorre uma atualização automática, o conetor contacta os repositórios para transferir imagens para a instalação ou atualização. Por padrão, o conetor sempre contatou os seguintes pontos finais:
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+O primeiro endpoint inclui um Wild card porque não podemos fornecer um local definitivo. O balanceamento de carga do repositório é gerenciado pelo provedor de serviços, o que significa que os downloads podem acontecer de diferentes pontos de extremidade.
+
+Para uma maior segurança, o conetor pode agora transferir a instalação e atualizar imagens de endpoints dedicados:
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+Recomendamos que você comece a usar esses novos endpoints removendo os endpoints existentes de suas regras de firewall e permitindo os novos endpoints.
+
+Esses novos terminais são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor.
+
+Observe o seguinte:
+
+* Os endpoints existentes ainda são suportados. Se você não quiser usar os novos endpoints, nenhuma alteração será necessária.
+* O conetor entra em contacto primeiro com os terminais existentes. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os novos endpoints.
+* Os novos endpoints não são suportados nos seguintes cenários:
++
+** Se o conetor estiver instalado numa região governamental.
+** Se você usar o conetor com backup e recuperação do BlueXP  ou com proteção contra ransomware BlueXP .
+
+
++
+Para ambos os cenários, pode continuar a utilizar os endpoints existentes.
+
+

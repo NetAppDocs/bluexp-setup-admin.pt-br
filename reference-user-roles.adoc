@@ -71,5 +71,5 @@ Se você estiver usando o BlueXP  no modo padrão, você não terá uma conta d
 
 | Visualize e gerencie o Painel de suporte | Sim | Sim | Não | Não 
 |===
-.Link relacionado
+.Informações relacionadas
 link:task-managing-netapp-accounts.html["Gerencie sua conta do BlueXP "]

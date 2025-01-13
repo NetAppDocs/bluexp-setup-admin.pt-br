@@ -136,7 +136,7 @@ Se você tiver um conetor existente em execução no RHEL 7 ou CentOS 7, não su
 
 
 
-== Links relacionados
+== Informações relacionadas
 
 
 

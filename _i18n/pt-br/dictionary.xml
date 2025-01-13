@@ -165,18 +165,10 @@
   <block id="1e20d05d6d0ad597892e7e3d08324340" category="paragraph">| \https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| para gerenciar recursos no Google Cloud.</block>
   <block id="e3f6d97d14c949f7b5db051894f11c57" category="paragraph">| https://support.NetApp.com https://mysupport.NetApp.com | para obter informações de licenciamento e enviar mensagens AutoSupport para o suporte do NetApp.</block>
-  <block id="cbb0e5cc736eaf87107f863bf695f576" category="paragraph">| https://*.api.BlueXP .NetApp.com</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">https://api.BlueXP .NetApp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">https://*.cloudmanager.cloud.NetApp.com</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">https://cloudmanager.cloud.NetApp.com</block>
-  <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">https://NetApp-cloud-account.auth0.com</block>
   <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| para fornecer recursos e serviços SaaS dentro do BlueXP .</block>
   <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.</block>
-  <block id="315cc875789c13a43c4e0c550413aeb3" category="paragraph">| \https://*.blob.core.windows.net</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="f921751bfd3f9ccb8d1939fdcf454c55" category="paragraph">| para atualizar o conetor e seus componentes do Docker.</block>
-  <block id="8e999f16c9e1bf3513a187ca219b352d" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io este endpoint não é necessário nas regiões do Azure Government.</block>
-  <block id="badc30c7f0d12562a8053216959ee48c" category="paragraph">\https://occmclientinfragov.azurecr.us este endpoint só é necessário nas regiões do governo do Azure.</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="list-text">Terminais contactados durante a instalação manual</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="list-text">Quando você instala manualmente o conetor em seu próprio host Linux, o instalador do conetor requer acesso aos seguintes URLs durante o processo de instalação:</block>
   <block id="d03b3625d28d43168905850da108e917" category="list-text">https://mysupport.NetApp.com</block>
@@ -467,7 +459,6 @@
   <block id="ef19fc2e03027a590127656e945205e1" category="list-text">No campo *Substituir subscrição existente*, escolha se pretende substituir automaticamente a subscrição existente de uma organização ou conta por esta nova subscrição.</block>
   <block id="c999131c88aa02b0f9b7250262aa1fa6" category="paragraph">O BlueXP  substitui a assinatura existente para todas as credenciais na organização ou conta por essa nova assinatura. Se um conjunto de credenciais nunca foi associado a uma assinatura, essa nova assinatura não será associada a essas credenciais.</block>
   <block id="c64577fbea6506f38ae9b43ab46da844" category="paragraph">Para todas as outras organizações ou contas, você precisará associar manualmente a assinatura repetindo estas etapas.</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">O vídeo a seguir mostra as etapas para se inscrever no AWS Marketplace:</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Inscreva-se no BlueXP  no AWS Marketplace</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura &gt; continuar* e siga as etapas no Azure Marketplace:</block>
@@ -571,7 +562,6 @@
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Política de implantação do Connector para Azure</block>
   <block id="e80d828d2459b04d1fa1c01c4becbe8b" category="paragraph">Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a máquina virtual do Connector. As permissões necessárias estão listadas no <block ref="87670d19e81a277edefeb1f9eed2acf4" category="inline-link-macro-rx"></block>.</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">identidade gerenciada atribuída ao sistema</block>
-  <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">Quando o BlueXP  implanta a máquina virtual Connector no Azure, ele ativa uma<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> máquina virtual on, cria uma função personalizada e a atribui à máquina virtual. A função fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">Uma imagem conceitual que mostra o BlueXP  implantando um conetor em uma conta e assinatura do Azure. Uma identidade gerenciada atribuída ao sistema é ativada e uma função personalizada é atribuída à máquina virtual do conetor.</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">Se você criar um novo ambiente de trabalho para o Cloud Volumes ONTAP, o BlueXP  selecionará essas credenciais do Azure por padrão:</block>
@@ -2088,7 +2078,6 @@
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="cell">Gerenciar credenciais</block>
   <block id="d7cea5f953c31662cd13f98b3b7d8608" category="cell">Modificar as definições do BlueXP </block>
   <block id="59d212e47ec92d175a35d52f6c448d89" category="cell">Visualize e gerencie o Painel de suporte</block>
-  <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">Link relacionado</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="inline-link-macro">Gerencie sua conta do BlueXP </block>
   <block id="e351b985910352ae6ebe3e03c618e2b9" category="paragraph"><block ref="e351b985910352ae6ebe3e03c618e2b9" category="inline-link-macro-rx"></block></block>
   <block id="b8c45dd3fc7b806721f81b6d91964231" category="summary">Depois de iniciar e executar com o BlueXP  no modo privado, você pode começar a usar os serviços do BlueXP  que são compatíveis com o modo privado.</block>
@@ -2204,11 +2193,7 @@
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">Adicione credenciais ao BlueXP  para o Amazon FSX for ONTAP</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Documentação do BlueXP  para o Amazon FSX for ONTAP</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Para obter mais informações, consulte a.<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
-  <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">Associar uma assinatura da AWS</block>
-  <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">Depois de adicionar suas credenciais da AWS ao BlueXP , você pode associar uma assinatura do AWS Marketplace a essas credenciais. A assinatura permite que você pague pelo Cloud Volumes ONTAP a uma taxa por hora (PAYGO) ou usando um contrato anual e use outros serviços da BlueXP .</block>
-  <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">Há dois cenários em que você pode associar uma assinatura do AWS Marketplace depois de já ter adicionado as credenciais ao BlueXP :</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">Você não associou uma assinatura quando adicionou inicialmente as credenciais ao BlueXP .</block>
-  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Você deseja alterar a assinatura do AWS Marketplace associada às credenciais da AWS.</block>
   <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">A substituição da assinatura atual do marketplace por uma nova assinatura altera a assinatura do marketplace para todos os ambientes de trabalho existentes da Cloud Volumes ONTAP e todos os novos ambientes de trabalho.</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Saiba como criar um conetor</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
@@ -2600,8 +2585,6 @@
   <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">O BlueXP  Identity and Access Management (IAM) permite que você organize seus recursos do NetApp usando projetos e pastas. Um _project_ representa um workspace no BlueXP  que os membros da organização acessam para gerenciar _resources_ (por exemplo, um sistema Cloud Volumes ONTAP). Uma _folder_ agrupa os projetos relacionados. Depois de organizar seus recursos em pastas e projetos, você pode conceder acesso granular a recursos fornecendo aos membros da organização permissões para pastas e projetos específicos.</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">Adicione uma pasta ou projeto</block>
   <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">Quando você cria sua organização do BlueXP , ele inclui um único projeto. Você pode criar projetos adicionais para gerenciar os recursos da sua organização. Opcionalmente, você pode criar pastas para agrupar projetos relacionados.</block>
-  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">A profundidade da hierarquia da sua organização pode descer para 7 níveis. Como resultado, você pode criar pastas aninhadas até 6 níveis. A última pasta aninhada pode então incluir projetos no sétimo nível da hierarquia.</block>
-  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">A imagem a seguir ilustra a profundidade máxima da hierarquia da sua organização:</block>
   <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">Uma captura de tela que mostra uma organização, seis pastas aninhadas e um projeto na última pasta aninhada.</block>
   <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">Na página *Organização*, selecione *Adicionar pasta ou projeto*.</block>
@@ -2616,24 +2599,17 @@
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">Saiba mais sobre as funções predefinidas do IAM</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>.</block>
-  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">O BlueXP  cria a pasta ou projeto e associa os recursos e membros especificados.</block>
-  <block id="698adc884d432ec429a17995e5d34320" category="section-title">Exibir os recursos e membros associados a uma pasta ou projeto</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">Para verificar se seus recursos estão organizados de forma adequada e acessíveis aos membros certos na sua organização, você pode ver quais recursos e membros estão associados a uma pasta ou projeto.</block>
   <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">Na página *Organização*, navegue até um projeto ou pasta na tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Editar pasta* ou *Editar projeto*.</block>
   <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">Uma captura de tela da página Organização que mostra a opção Editar projeto ao selecionar o menu de ação para um projeto na tabela.</block>
   <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">Na página *Editar*, veja detalhes sobre os recursos associados e o acesso aos membros:</block>
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">Selecione *Resources* para exibir os recursos associados. Na tabela, a coluna *Status* identifica os recursos associados à pasta ou projeto.</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">Uma captura de tela da página Editar projeto que mostra os recursos disponíveis que você pode associar ou desassociar ao projeto.</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">Selecione *Access* para ver os membros que têm acesso à pasta ou projeto.</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">Uma captura de tela da página Editar projeto que mostra os membros que têm acesso ao projeto.</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">modifique os recursos associados</block>
-  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">modifique o acesso de membro</block>
-  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">Se necessário, você pode <block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block> ou <block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">Modifique os recursos associados a uma pasta ou projeto</block>
-  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">Você pode modificar os recursos associados a uma pasta ou projeto associando ou desassociando um recurso. Por exemplo, você pode querer associar um recurso a outro projeto porque esse recurso tem capacidade que outra equipe pode utilizar.</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">Na página *Editar*, selecione *recursos*.</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">Na tabela, a coluna *Status* identifica os recursos associados à pasta ou projeto.</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">Selecione os recursos que você deseja associar ou desassociar.</block>
@@ -2641,26 +2617,20 @@
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">Uma captura de tela da página Editar projeto que mostra a opção recursos associados que está disponível depois de selecionar recursos que não estão associados no momento.</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Selecione *aplicar*</block>
-  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">O BlueXP  associa os recursos à pasta ou ao projeto. Os membros da organização que têm permissões para essa pasta ou projeto agora podem acessar os recursos associados.</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modifique o acesso de membro a uma pasta ou projeto</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modifique o acesso de membro a uma pasta ou projeto para garantir que os membros direitos tenham acesso aos recursos associados à pasta ou projeto.</block>
   <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">Na página *Editar*, selecione *Acesso*.</block>
-  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">O BlueXP  exibe a lista de membros que têm acesso à pasta ou projeto.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modificar acesso de membro:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Adicionar um membro*: Selecione o membro que você deseja adicionar à pasta ou projeto e atribua a ele uma função.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Alterar a função de um membro*: Para quaisquer membros com uma função diferente de Administrador da Organização, selecione sua função existente e, em seguida, escolha uma nova função.</block>
-  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">Se uma função foi fornecida em um nível mais alto da hierarquia (no nível de pasta ou organização), então você deve considerar se deve alterar a função no nível mais baixo ou superior. Por exemplo, se você atribuiu a função _pasta ou admin_ do projeto no nível da pasta, alterar a função no nível do projeto para permissões de nível inferior não alterará as permissões para o membro. Como as funções são herdadas na hierarquia da organização, o membro ainda teria permissões de administrador no nível do projeto.</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">Saiba mais sobre a herança de funções</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>.</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*Remover acesso de membro*: Para membros que têm uma função definida na pasta ou projeto para o qual você está visualizando, você pode remover seu acesso.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gerenciar permissões a partir da página Membros</block>
-  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover o acesso de membro ao visualizar essa pasta ou projeto. Você precisa mudar para essa parte da hierarquia. Alternativamente, você pode <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Selecione *aplicar*.</block>
-  <block id="d93816509ec30392c51369fac191445e" category="paragraph">O BlueXP  atualiza os membros que têm acesso à pasta ou projeto.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">Renomeie uma pasta ou projeto</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">Se necessário, você pode alterar o nome de suas pastas e projetos.</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">Na página *Editar*, insira um novo nome e selecione *aplicar*.</block>
-  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">O BlueXP  atualiza o nome da pasta ou projeto.</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">Excluir uma pasta ou projeto</block>
   <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">Você pode excluir as pastas e projetos que você não precisa mais.</block>
   <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">Saiba como desassociar recursos</block>
@@ -2668,7 +2638,6 @@
   <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">Uma pasta não deve conter subpastas ou projetos. Você precisa excluir essas pastas e projetos primeiro.</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">Na página *Organização*, navegue até um projeto ou pasta na tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Excluir*.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Confirme se deseja excluir a pasta ou o projeto.</block>
-  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">O BlueXP  exclui a pasta ou o projeto. Essa pasta ou projeto não está mais disponível para os membros da organização.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Gerencie os membros da sua organização para fornecer permissões em diferentes níveis da hierarquia de recursos da sua organização.</block>
   <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">Adicione membros do BlueXP  IAM e gerencie suas permissões</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">O BlueXP  Identity and Access Management (IAM) permite adicionar membros à sua organização e atribuir-lhes uma ou mais funções na hierarquia de recursos. Um _role_ contém um conjunto de permissões que permite que um membro execute ações específicas em um nível específico da hierarquia de recursos. Você pode associar novas contas de usuário e contas de serviço, gerenciar funções de membro e muito mais.</block>
@@ -2762,13 +2731,7 @@
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confirme se deseja remover o membro da sua organização.</block>
   <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  remove o membro. Se esse membro fizer login no BlueXP  novamente, ele não terá mais acesso à sua organização do BlueXP .</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gerencie a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos.</block>
-  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">Quando você usa o gerenciamento de identidade e acesso do BlueXP  (IAM) para associar um membro à sua organização, você fornece permissões no nível da organização, pasta ou projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um ambiente de trabalho que o BlueXP  já gerencia.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Veja os recursos na sua organização</block>
-  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">Para começar a gerenciar sua hierarquia de recursos, você deve estar ciente dos recursos associados à sua organização.</block>
-  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">Selecione *recursos*.</block>
-  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">Os recursos associados à sua organização são exibidos na tabela *recursos*.</block>
-  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">pesquise e filtre o conteúdo da tabela</block>
-  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">Para encontrar um recurso específico, você pode <block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>.</block>
   <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">Depois de encontrar o recurso que você está procurando, você pode concluir qualquer uma das seguintes ações:</block>
   <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">Exiba as pastas e projetos associados ao recurso</block>
   <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
@@ -2776,25 +2739,19 @@
   <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
   <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">Remova o recurso de uma pasta ou projeto</block>
   <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
-  <block id="a29510a9013088f354480f508c907c2e" category="section-title">Encontre recursos específicos em sua organização</block>
-  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">Se você tiver um grande número de recursos em sua organização, poderá usar as opções de pesquisa e filtro para encontrar um recurso específico.</block>
-  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">Na página *recursos*, selecione *Pesquisa avançada &amp; filtragem*.</block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">Use qualquer uma das opções disponíveis para encontrar o recurso que você está procurando:</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*Pesquisar por nome do recurso*: Insira uma cadeia de texto e selecione *Adicionar*.</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*Plataforma*: Selecione uma ou mais plataformas, como Amazon Web Services.</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*Recursos*: Selecione um ou mais recursos, como o Cloud Volumes ONTAP.</block>
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*Organização, pasta ou projeto*: Selecione toda a organização, uma pasta específica ou um projeto específico.</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">Selecione *pesquisar*.</block>
-  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">O conteúdo da tabela recursos é atualizado para mostrar os recursos que correspondem às seleções de pesquisa e filtro.</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">Associar um recurso a pastas e projetos</block>
-  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">Se você quiser disponibilizar um recurso para outra pasta ou projeto em sua organização, precisará criar uma associação entre a pasta ou projeto e o recurso.</block>
   <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">Saiba mais sobre recursos, incluindo quando associar um recurso a uma pasta</block>
   <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">Você deve entender como a associação de recursos funciona. <block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>.</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">Na página *recursos*, navegue até um recurso na tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *associar a pastas ou projetos*.</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">Para associar uma pasta ou projeto adicional, selecione *Adicionar pasta ou projeto* e, em seguida, selecione a pasta ou projeto.</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">Observe que você só pode selecionar a partir das pastas e projetos para os quais você tem permissões de administrador.</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">Selecione *recursos associados*.</block>
-  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">O BlueXP  associa o recurso às pastas e projetos selecionados.</block>
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">Se você associou o recurso a projetos, os membros que têm permissões para esses projetos agora terão a capacidade de acessar o recurso no BlueXP .</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">Saiba mais sobre como associar um recurso a uma pasta</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">Se você associou o recurso a uma pasta, um _pasta ou administrador de projeto_ agora pode acessar o recurso a partir do BlueXP  IAM. <block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>.</block>
@@ -2802,7 +2759,6 @@
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">Exibir as pastas e projetos associados a um recurso</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">Para identificar onde um recurso está disponível na hierarquia da sua organização, você pode exibir as pastas e projetos associados a esse recurso.</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">Na página *recursos*, navegue até um recurso na tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Exibir detalhes*.</block>
-  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">O BlueXP  exibe as pastas e projetos associados ao recurso.</block>
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">O exemplo a seguir mostra um recurso que está associado a um projeto.</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">Uma captura de tela da página de detalhes do recurso que mostra um recurso associado a um projeto que está diretamente abaixo da organização.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -2817,7 +2773,6 @@
   <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">Se você quiser remover um recurso descoberto de toda a organização, será necessário remover o ambiente de trabalho da tela BlueXP .</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">Para a pasta ou projeto para o qual você deseja remover o recurso, selecione <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">Confirme que deseja remover a associação selecionando *Delete*.</block>
-  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">O BlueXP  remove a associação. Os membros não podem mais acessar o recurso a partir dessa pasta ou projeto.</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">Se necessário, você pode alterar o nome da sua organização do BlueXP .</block>
   <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">Se necessário, você pode alterar o nome da sua organização do BlueXP  a partir do gerenciamento de identidade e acesso (IAM) do BlueXP . O nome da organização aparece na parte superior do console baseado na Web do BlueXP  e nas páginas do IAM.</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">Na página *Organização*, navegue até a primeira linha da tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Editar organização*.</block>
@@ -2864,9 +2819,7 @@
   <block id="49436e703f28a7e02a6fa78f445122ab" category="paragraph">Para gerenciar recursos na AWS. O endpoint exato depende da região da AWS que você está usando.<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
   <block id="e4790a0da59cd51d8f46272b21b89870" category="paragraph">https://support.NetApp.com https://mysupport.NetApp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="paragraph">Para obter informações de licenciamento e enviar mensagens do AutoSupport para o suporte do NetApp.</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">https://*.api.BlueXP .NetApp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">Para fornecer recursos e serviços SaaS no BlueXP .</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="paragraph">Para atualizar o conetor e seus componentes do Docker.</block>
   <block id="9ed6715eace733ae6dc526b52a03058e" category="paragraph">Você precisará implementar esse requisito de rede depois de criar o conetor.</block>
   <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">Etapa 2: Configurar permissões da AWS</block>
   <block id="92c5959c8282fd63c3afcbd1c9b13f51" category="paragraph">O BlueXP  precisa se autenticar com a AWS antes de implantar a instância do Connector na VPC. Você pode escolher um destes métodos de autenticação:</block>
@@ -3656,9 +3609,7 @@
   <block id="539f3f37fd39a23eafb39c20263238f1" category="paragraph">Se você está planejando instalar manualmente o software Connector, você precisa preparar o host instalando Podman ou Docker Engine.</block>
   <block id="65c06ded772ceb4963d08fe97b164419" category="list-text">Prepare a rede para o acesso do usuário ao console BlueXP </block>
   <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">No modo restrito, a interface do utilizador do BlueXP  é acessível a partir do conetor. À medida que você usa a interface de usuário do BlueXP , ele entra em Contato com alguns endpoints para concluir as tarefas de gerenciamento de dados. Esses endpoints são contatados do computador de um usuário ao concluir ações específicas do console BlueXP .</block>
-  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Este endpoint não é necessário nas regiões do Azure Government.</block>
   <block id="1f29f58c7cdabd46095c6ad242933991" category="list-text">\https://occmclientinfragov.azurecr.us</block>
-  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Esse endpoint só é necessário nas regiões do Azure Government.</block>
   <block id="fa5cc2cb386581601ffd1b12fb1e1e4f" category="list-text">Acesso de saída à Internet para operações diárias</block>
   <block id="ba12ed831d0f3c55f2691461b5995db5" category="list-text">O local de rede onde você implantar o conetor deve ter uma conexão de saída de Internet. O conetor requer acesso de saída à Internet para contactar os seguintes endpoints, a fim de gerir recursos e processos no seu ambiente de nuvem pública.</block>
   <block id="6e3cecb8c14fa9293d2b497e9f907cbd" category="paragraph">\https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net</block>
@@ -4772,4 +4723,80 @@
   <block id="936eb1752a4903797cd8c4e6f2cfa68b" category="paragraph"><block ref="936eb1752a4903797cd8c4e6f2cfa68b" category="inline-link-rx"></block></block>
   <block id="e444b5bc216b871d85a48d564b7ce0c4" category="paragraph">O BlueXP  inclui um console baseado na Web fornecido pela camada SaaS, um sistema de gerenciamento de recursos e acessos, conetores que gerenciam ambientes de trabalho e habilitam serviços em nuvem da BlueXP  e diferentes modos de implantação para atender aos requisitos de negócios.</block>
   <block id="c7c20b1a51c664c1850bab1281296aca" category="paragraph">O BlueXP  oferece três modos de implantação. _Modo padrão_ utiliza a camada de software como serviço (SaaS) da BlueXP  para fornecer funcionalidade completa. Se o seu ambiente tiver restrições de segurança e conetividade, o _modo restrito_ e o _modo privado_ limitam a conetividade de saída à camada SaaS do BlueXP .</block>
+  <block id="670c21c09cc12fa2b540e85129379b5e" category="paragraph">| https://\*.api.BlueXP .NetApp.com https://api.BlueXP .NetApp.com https://*.cloudmanager.cloud.NetApp.com https://cloudmanager.cloud.NetApp.com https://NetApp-cloud-account.auth0.com</block>
+  <block id="1eda4150e04890cf41a6ea76d98f697a" category="paragraph">A| escolha entre dois conjuntos de endpoints:</block>
+  <block id="5f6428bd6c6248b828101aca600e81cd" category="list-text">Opção 1 (recomendado) 1</block>
+  <block id="7d9fb0da2a7d9c9f4e35c19e20d063fa" category="paragraph">\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io</block>
+  <block id="e24963e40778134b357f4a5eac58e1f5" category="list-text">Opção 2</block>
+  <block id="136fa3635085015cd64da15749cb05d3" category="paragraph">\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="ba7444feff898fd31052b2c3d71eb3bc" category="paragraph">| para obter imagens para atualizações de conetores.</block>
+  <block id="98514385a1eee063dc909984510770cc" category="paragraph">1 os pontos de extremidade listados na opção 1 são recomendados porque são mais seguros. Recomendamos que você configure seu firewall para permitir os endpoints listados na opção 1, ao mesmo tempo em que rejeita os endpoints listados na opção 2. Observe o seguinte sobre esses endpoints:</block>
+  <block id="730c1767bb447dca00c8c31982caa0e8" category="paragraph">* Os pontos de extremidade listados na opção 1 são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor. * O conetor entra em Contato com os pontos finais listados na opção 2 primeiro. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os endpoints listados na opção 1. * Os pontos de extremidade na opção 1 não são suportados se você usar o conetor com backup e recuperação BlueXP  ou proteção contra ransomware BlueXP . Nesse caso, você pode desativar os endpoints listados na opção 1, ao mesmo tempo em que permite os endpoints listados na opção 2.</block>
+  <block id="feba1f9c9ed23d57a6a6b22c3aee5bf0" category="paragraph">| se o conetor estiver em uma região do governo da AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="e2fb4de75efd2de9f857c298fc2dedf1" category="paragraph">| para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do governo da AWS.</block>
+  <block id="d6e105e0a43b0f59c5054550eb57e887" category="paragraph">| se o conetor estiver em uma região do governo do Azure: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us</block>
+  <block id="030609409e7ee56f73f54985a1ac8e7b" category="paragraph">| para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do Azure Government.</block>
+  <block id="257dc55948667c2bded118f045b26704" category="paragraph">A| se o conetor estiver em uma região comercial ou região soberana, você poderá escolher entre dois conjuntos de endpoints:</block>
+  <block id="2372eafae2ad885dc502beb3fb342503" category="paragraph">| para obter imagens para atualizações de conetores quando o conetor é instalado em uma região comercial ou região soberana.</block>
+  <block id="938bc2259b1b16dfbf9d1ea13da23930" category="list-text">Para obter imagens, o instalador precisa de acesso a um destes dois conjuntos de endpoints:</block>
+  <block id="947479331852b9cc69da9bbd894654d1" category="list-text">Opção 1 (recomendado):</block>
+  <block id="534d469c55031860cef85b868a9332d8" category="list-text">\https://bluexpinfraprod.eastus2.data.azurecr.io</block>
+  <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\https://bluexpinfraprod.azurecr.io</block>
+  <block id="eb499f7aadd76ba50d5925ea6552dcff" category="list-text">Opção 2:</block>
+  <block id="61544f9ceda91554eec420c29453fe62" category="list-text">Quando você instala manualmente o conetor em seu próprio host Linux, o instalador do conetor requer acesso a vários URLs durante o processo de instalação.</block>
+  <block id="a8565aa4839817f4f46d7e5c184c47e5" category="list-text">Os seguintes pontos finais são sempre contactados, independentemente de onde instalar o conetor:</block>
+  <block id="97f55477feef294b3e2c4fa6015719fa" category="list-text">Se você instalar o conetor em uma região do AWS Government, o instalador também precisará acessar esses endpoints:</block>
+  <block id="13a671e048cea402a53e9e2f012a3ae5" category="list-text">Se você instalar o conetor em uma região do Azure Government, o instalador também precisará acessar esses endpoints:</block>
+  <block id="414389f3238c146f25f4038ff7741948" category="list-text">Se você instalar o conetor em uma região comercial ou região soberana, poderá escolher entre dois conjuntos de endpoints:</block>
+  <block id="1c65ce30d8659b289e38be6782d58dd0" category="paragraph">Os endpoints listados na opção 1 são recomendados porque são mais seguros. Recomendamos que você configure seu firewall para permitir os endpoints listados na opção 1, ao mesmo tempo em que rejeita os endpoints listados na opção 2. Observe o seguinte sobre esses endpoints: ** Os endpoints listados na opção 1 são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor. ** O conetor entra em Contato com os pontos finais listados na opção 2 primeiro. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os endpoints listados na opção 1. ** Os pontos de extremidade na opção 1 não são suportados se você usar o conetor com backup e recuperação BlueXP  ou proteção contra ransomware BlueXP . Nesse caso, você pode desativar os endpoints listados na opção 1, ao mesmo tempo em que permite os endpoints listados na opção 2.</block>
+  <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">O vídeo a seguir mostra as etapas para se inscrever no BlueXP  no AWS Marketplace:</block>
+  <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*.</block>
+  <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">Para associar as credenciais a uma assinatura existente, selecione-a na lista suspensa e selecione *Configurar*.</block>
+  <block id="ab83866f9abfe93d14a14fa21b156b05" category="doc">Novos terminais seguros para obter imagens de conetores</block>
+  <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">Quando instala o conetor ou quando ocorre uma atualização automática, o conetor contacta os repositórios para transferir imagens para a instalação ou atualização. Por padrão, o conetor sempre contatou os seguintes pontos finais:</block>
+  <block id="e5eb8016a9764345b2f3dd5672e2f245" category="paragraph">O primeiro endpoint inclui um Wild card porque não podemos fornecer um local definitivo. O balanceamento de carga do repositório é gerenciado pelo provedor de serviços, o que significa que os downloads podem acontecer de diferentes pontos de extremidade.</block>
+  <block id="5a04f5940b391aa471ffcf2f682f6390" category="paragraph">Para uma maior segurança, o conetor pode agora transferir a instalação e atualizar imagens de endpoints dedicados:</block>
+  <block id="6265c6aedeb8e4c15d99cb681317d569" category="paragraph">Recomendamos que você comece a usar esses novos endpoints removendo os endpoints existentes de suas regras de firewall e permitindo os novos endpoints.</block>
+  <block id="0569478319ea7c217c7aeaef42de04a2" category="paragraph">Esses novos terminais são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor.</block>
+  <block id="b7045cdc7261ab3a7b9e78efb0461bfa" category="list-text">Os endpoints existentes ainda são suportados. Se você não quiser usar os novos endpoints, nenhuma alteração será necessária.</block>
+  <block id="4cd508d6b82e76524216714f78d79d2c" category="list-text">O conetor entra em contacto primeiro com os terminais existentes. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os novos endpoints.</block>
+  <block id="a5f507c0714656865b1f8986b83613de" category="list-text">Os novos endpoints não são suportados nos seguintes cenários:</block>
+  <block id="6b4d63c99144b38df035c167f8c99b23" category="list-text">Se o conetor estiver instalado numa região governamental.</block>
+  <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">Se você usar o conetor com backup e recuperação do BlueXP  ou com proteção contra ransomware BlueXP .</block>
+  <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">Para ambos os cenários, pode continuar a utilizar os endpoints existentes.</block>
+  <block id="f75f2bfc89f28bf6c3d0cd6ecc334d38" category="paragraph">Quando o BlueXP  implanta a máquina virtual Connector no Azure, ele ativa um<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> na máquina virtual, cria uma função personalizada e a atribui à máquina virtual. A função fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
+  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">Informações relacionadas</block>
+  <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">Configurar uma assinatura da AWS</block>
+  <block id="b8da1935866ccfc3044b85a99232dc4f" category="paragraph">Depois de adicionar suas credenciais da AWS ao BlueXP , você pode configurar uma assinatura do AWS Marketplace com essas credenciais. A assinatura permite que você pague pelo Cloud Volumes ONTAP a uma taxa por hora (PAYGO) ou usando um contrato anual e use outros serviços da BlueXP .</block>
+  <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Há dois cenários em que você pode configurar uma assinatura do AWS Marketplace depois de adicionar as credenciais ao BlueXP :</block>
+  <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">Você não configurou uma assinatura quando adicionou inicialmente as credenciais ao BlueXP .</block>
+  <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Você deseja alterar a assinatura do AWS Marketplace configurada com as credenciais da AWS.</block>
+  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">A profundidade da hierarquia de recursos da sua organização pode descer para 7 níveis. Como resultado, você pode criar pastas aninhadas até 6 níveis. A última pasta aninhada pode então incluir projetos no sétimo nível da hierarquia.</block>
+  <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">A imagem a seguir ilustra a profundidade máxima da hierarquia de recursos da sua organização:</block>
+  <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Exibir os recursos associados a uma pasta ou projeto</block>
+  <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Na página *Editar*, você pode ver detalhes sobre a pasta ou projeto selecionado expandindo as seções *Resources* ou *Access*.</block>
+  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">Você pode modificar os recursos associados a uma pasta ou projeto associando ou desassociando um recurso. Por exemplo, você pode querer associar um recurso a outro projeto porque esse recurso tem capacidade que outra equipe pode utilizar. Depois de associar um recurso a uma pasta ou projeto, os membros da organização que tenham permissões para essa pasta ou projeto podem acessar o recurso associado.</block>
+  <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Exibir membros associados a uma pasta ou projeto</block>
+  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
+  <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Na página *Editar*, selecione *Access* para visualizar a lista de membros que têm acesso à pasta ou projeto selecionado.</block>
+  <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Quando você usa o gerenciamento de identidade e acesso do BlueXP  (IAM) para associar um membro à sua organização, você fornece permissões no nível da organização, pasta ou projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um recurso de armazenamento que o BlueXP  já gerencia ou conhece.</block>
+  <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">Você pode exibir recursos descobertos e não descobertos associados à sua organização. Os recursos não descobertos geralmente são recursos de storage conhecidos pelo consultor digital para os quais você não adicionou como ambientes de trabalho.</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Os recursos do Amazon FSX for NetApp ONTAP não são exibidos na página recursos do IAM, pois você não pode associá-los a uma função do IAM. Você pode visualizar esses recursos na respetiva tela ou nas cargas de trabalho.</block>
+  <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">Selecione *recursos* para visualizar a página recursos.</block>
+  <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">Selecione *Pesquisa avançada e filtragem*.</block>
+  <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">Se você quiser disponibilizar um recurso para pasta ou projeto em sua organização, precisará criar uma associação entre a pasta ou projeto e o recurso.</block>
+  <block id="74f0517d27c893250b30440df50aedff" category="paragraph">https://\*.api.BlueXP .NetApp.com https://api.BlueXP .NetApp.com https://*.cloudmanager.cloud.NetApp.com https://cloudmanager.cloud.NetApp.com https://NetApp-cloud-account.auth0.com</block>
+  <block id="929fbbf8aa4e2b9b9d79089f06f4a42b" category="paragraph">Escolha entre dois conjuntos de endpoints:</block>
+  <block id="aaecfad986484269a7c076712941aa35" category="paragraph">Para obter imagens para atualizações de conetores.</block>
+  <block id="0e268539cbf07323a5b9a48997c1d209" category="list-text">Os pontos finais listados na opção 1 são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor.</block>
+  <block id="e8707387f125fbbc4fea2bcf7fb74c5c" category="list-text">O conetor entra em contacto primeiro com os pontos finais listados na opção 2. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os endpoints listados na opção 1.</block>
+  <block id="4780ada9ee9a956e6ffeed073bbca78a" category="list-text">Os pontos de extremidade na opção 1 não são compatíveis se você usar o conetor com backup e recuperação do BlueXP  ou com proteção contra ransomware BlueXP . Nesse caso, você pode desativar os endpoints listados na opção 1, ao mesmo tempo em que permite os endpoints listados na opção 2.</block>
+  <block id="f079ba6f508e4d8fffaecae1a59c5bf3" category="paragraph">Os endpoints listados na opção 1 são recomendados porque são mais seguros. Recomendamos que você configure seu firewall para permitir os endpoints listados na opção 1, ao mesmo tempo em que rejeita os endpoints listados na opção 2. Observe o seguinte sobre esses endpoints:</block>
+  <block id="335c5fa07bab41313fe3574d00015e28" category="paragraph">Se o conetor estiver em uma região do governo da AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="8f250cee3d9453c744424495f2571a74" category="paragraph">Para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do governo da AWS.</block>
+  <block id="a082af315082759bee1f9bba491f14f8" category="paragraph">Se o conetor estiver em uma região do governo do Azure: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us</block>
+  <block id="cb6ffdd85c34b43b9e70c8dcf3c0e51c" category="paragraph">Para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do Azure Government.</block>
+  <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Se o conetor estiver em uma região comercial ou região soberana, você poderá escolher entre dois conjuntos de endpoints:</block>
+  <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Para obter imagens para atualizações de conetores quando o conetor é instalado em uma região comercial ou região soberana.</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de dezembro de 2024</block>
 </blocks>

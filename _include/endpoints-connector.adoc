@@ -44,30 +44,48 @@ Observe que os endpoints listados abaixo são todas as entradas CNAME.
 
 | https://support.NetApp.com https://mysupport.NetApp.com | para obter informações de licenciamento e enviar mensagens AutoSupport para o suporte do NetApp.
 
-| https://*.api.BlueXP .NetApp.com
-
-https://api.BlueXP .NetApp.com
-
-https://*.cloudmanager.cloud.NetApp.com
-
-https://cloudmanager.cloud.NetApp.com
-
-https://NetApp-cloud-account.auth0.com
+| https://\*.api.BlueXP .NetApp.com https://api.BlueXP .NetApp.com https://*.cloudmanager.cloud.NetApp.com https://cloudmanager.cloud.NetApp.com https://NetApp-cloud-account.auth0.com
 
 | para fornecer recursos e serviços SaaS dentro do BlueXP .
 
 Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.
 
-| \https://*.blob.core.windows.net
+A| escolha entre dois conjuntos de endpoints:
 
-\https://cloudmanagerinfraprod.azurecr.io
+* Opção 1 (recomendado) 1
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
 
-| para atualizar o conetor e seus componentes do Docker.
+* Opção 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
 
-| \https://*.blob.core.windows.net
 
-\https://cloudmanagerinfraprod.azurecr.io este endpoint não é necessário nas regiões do Azure Government.
 
-\https://occmclientinfragov.azurecr.us este endpoint só é necessário nas regiões do governo do Azure.
+| para obter imagens para atualizações de conetores.
 
-| para atualizar o conetor e seus componentes do Docker.
+1 os pontos de extremidade listados na opção 1 são recomendados porque são mais seguros. Recomendamos que você configure seu firewall para permitir os endpoints listados na opção 1, ao mesmo tempo em que rejeita os endpoints listados na opção 2. Observe o seguinte sobre esses endpoints:
+
+* Os pontos de extremidade listados na opção 1 são suportados a partir da versão 3.9.47 do conetor. Não há compatibilidade retroativa com versões anteriores do conetor. * O conetor entra em Contato com os pontos finais listados na opção 2 primeiro. Se esses endpoints não estiverem acessíveis, o conetor entrará em Contato automaticamente com os endpoints listados na opção 1. * Os pontos de extremidade na opção 1 não são suportados se você usar o conetor com backup e recuperação BlueXP  ou proteção contra ransomware BlueXP . Nesse caso, você pode desativar os endpoints listados na opção 1, ao mesmo tempo em que permite os endpoints listados na opção 2.
+
+| se o conetor estiver em uma região do governo da AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+| para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do governo da AWS.
+
+| se o conetor estiver em uma região do governo do Azure: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+
+| para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do Azure Government.
+
+A| se o conetor estiver em uma região comercial ou região soberana, você poderá escolher entre dois conjuntos de endpoints:
+
+* Opção 1 (recomendado) 1
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Opção 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+| para obter imagens para atualizações de conetores quando o conetor é instalado em uma região comercial ou região soberana.
