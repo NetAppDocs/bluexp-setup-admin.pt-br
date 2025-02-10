@@ -92,14 +92,7 @@ Instalação manual::
 
 Observe o seguinte sobre o suporte para RHEL 8 e 9:
 
-Limitações::
-+
---
-* Quando o conetor é instalado em um host RHEL 8 ou 9, o backup e a recuperação do BlueXP  têm limitações relacionadas à restauração de um único arquivo e à verificação de ransomware. Para obter mais informações, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["Limitações conhecidas para backup e recuperação do BlueXP "^]
-* A classificação BlueXP  é suportada se você instalar o conetor em um host RHEL 8 ou 9 que reside no local. Não será compatível se o host RHEL 8 ou 9 residir na AWS, Azure ou Google Cloud.
-
-
---
+Limitações:: A classificação BlueXP  é suportada se você instalar o conetor em um host RHEL 8 ou 9 que reside no local. Não será compatível se o host RHEL 8 ou 9 residir na AWS, Azure ou Google Cloud.
 Ferramenta de orquestração de contêineres:: O Podman é necessário como a ferramenta de orquestração de contentores quando você instala o conetor em um host RHEL 8 ou 9. O Docker Engine não é compatível com RHEL 8 e 9.
 Modo de implantação:: RHEL 8 e 9 são suportados quando se usa BlueXP  no modo padrão, modo restrito e modo privado.
 Versões de conetor suportadas:: RHEL 8 e 9 são suportados a partir das seguintes versões do conetor:

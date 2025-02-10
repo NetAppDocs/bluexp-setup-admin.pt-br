@@ -248,7 +248,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 Você deve selecionar credenciais associadas a um conetor. Não é possível associar uma assinatura do marketplace a credenciais associadas ao BlueXP .
 
 +
-image:screenshot_associate_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
+image:screenshot_aws_configure_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
 
 . Para associar as credenciais a uma assinatura existente, selecione-a na lista suspensa e selecione *Configurar*.
 . Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura > continuar* e siga as etapas no AWS Marketplace:

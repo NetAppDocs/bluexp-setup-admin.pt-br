@@ -14,9 +14,9 @@ summary: Gerencie sua conta do BlueXP  adicionando usuários, criando contas de
 
 
 [role="lead"]
-Quando você usa o BlueXP  no modo restrito ou privado, você usará uma conta _BlueXP _ para gerenciar usuários e organizar recursos. Quando você cria sua conta, ela inclui apenas um único usuário administrativo e um workspace. Você pode gerenciar a conta de acordo com suas necessidades adicionando usuários, criando contas de serviço para fins de automação, adicionando espaços de trabalho e muito mais.
+Quando você usa o BlueXP  no modo privado, você usará uma conta _BlueXP _ para gerenciar usuários e organizar recursos. Quando você cria sua conta, ela inclui apenas um único usuário administrativo e um workspace. Você pode gerenciar a conta de acordo com suas necessidades adicionando usuários, criando contas de serviço para fins de automação, adicionando espaços de trabalho e muito mais.
 
-Se você estiver usando o BlueXP  no modo padrão, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização _BlueXP _ que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM).
+Se você estiver usando o BlueXP  no modo padrão ou no modo restrito, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização _BlueXP _ que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM).
 
 * link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"]
 * link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"]

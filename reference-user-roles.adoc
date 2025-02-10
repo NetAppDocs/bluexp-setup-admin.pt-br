@@ -14,9 +14,9 @@ summary: As funções Administrador da conta, Administrador do espaço de trabal
 
 
 [role="lead"]
-Quando você usa o BlueXP  no modo restrito ou privado, você usará uma conta _BlueXP _ para gerenciar usuários. Você pode fornecer permissões específicas para usuários em sua conta selecionando uma das seguintes funções: Administrador de conta, Administrador do espaço de trabalho, Visualizador de conformidade e Administrador do SnapCenter
+Quando você usa o BlueXP  no modo privado, você usará uma conta _BlueXP _ para gerenciar usuários. Você pode fornecer permissões específicas para usuários em sua conta selecionando uma das seguintes funções: Administrador de conta, Administrador do espaço de trabalho, Visualizador de conformidade e Administrador do SnapCenter
 
-Se você estiver usando o BlueXP  no modo padrão, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização _BlueXP _ que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM).
+Se você estiver usando o BlueXP  no modo padrão ou no modo restrito, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização _BlueXP _ que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM).
 
 * link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"]
 * link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"]

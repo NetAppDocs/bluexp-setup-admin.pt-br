@@ -4,7 +4,7 @@ permalink: task-subscribe-standard-mode.html
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
 summary: Inscreva-se no BlueXP  no mercado do seu fornecedor de nuvem para pagar os serviços da BlueXP  a uma taxa por hora ou por meio de um contrato anual. Se você comprou uma licença da NetApp, você também precisa se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar. 
 ---
-= Assinar BlueXP  (modo padrão)
+= Subscrever serviços de dados BlueXP  (modo padrão)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,16 +16,17 @@ summary: Inscreva-se no BlueXP  no mercado do seu fornecedor de nuvem para paga
 [role="lead"]
 Inscreva-se no BlueXP  no mercado do seu fornecedor de nuvem para pagar os serviços da BlueXP  a uma taxa por hora (PAYGO) ou por meio de um contrato anual. Se você comprou uma licença da NetApp (BYOL), também precisará se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar.
 
-Uma assinatura do mercado permite o carregamento dos seguintes serviços BlueXP :
+Uma assinatura do mercado permite o carregamento dos seguintes serviços de dados da BlueXP :
 
 * Backup e recuperação
-* Classificação
 * Cloud Volumes ONTAP
 * Disposição em camadas
+* Proteção contra ransomware
+* Recuperação de desastres
 
 
 .Antes de começar
-A assinatura do BlueXP  envolve a associação de mercado às credenciais de nuvem associadas a um conector. Se você seguiu o fluxo de trabalho "começar com o modo padrão", então você já deve ter um conetor. Para saber mais, consulte o link:task-quick-start-standard-mode.html["Início rápido para BlueXP  no modo padrão"].
+A assinatura de serviços de dados do BlueXP  envolve a associação de mercado às credenciais de nuvem associadas a um conector. Se você seguiu o fluxo de trabalho "começar com o modo padrão", então você já deve ter um conetor. Para saber mais, consulte o link:task-quick-start-standard-mode.html["Início rápido para BlueXP  no modo padrão"].
 
 [role="tabbed-block"]
 ====
@@ -42,7 +43,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 Você deve selecionar credenciais associadas a um conetor. Não é possível associar uma assinatura do marketplace a credenciais associadas ao BlueXP .
 
 +
-image:screenshot_associate_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
+image:screenshot_aws_configure_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
 
 . Para associar as credenciais a uma assinatura existente, selecione-a na lista suspensa e selecione *Configurar*.
 . Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura > continuar* e siga as etapas no AWS Marketplace:
@@ -75,14 +76,14 @@ Para todas as outras organizações ou contas, você precisará associar manualm
 --
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
-. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *assinatura associada*.
+. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*.
 +
 Você deve selecionar credenciais associadas a um conetor. Não é possível associar uma assinatura do marketplace a credenciais associadas ao BlueXP .
 
 +
 image:screenshot_azure_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
 
-. Para associar as credenciais a uma assinatura existente, selecione a assinatura na lista suspensa e selecione *Associate*.
+. Para associar as credenciais a uma assinatura existente, selecione-a na lista suspensa e selecione *Configurar*.
 . Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura > continuar* e siga as etapas no Azure Marketplace:
 +
 .. Se solicitado, faça login na sua conta do Azure.
@@ -120,11 +121,8 @@ video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 --
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
-. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *assinatura associada*.
-+
-image:screenshot_gcp_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
-
-. Para associar as credenciais a uma assinatura existente, selecione um projeto e assinatura do Google Cloud na lista suspensa e, em seguida, selecione *Associate*.
+. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*. Nova captura de tela necessária (TS) image:screenshot_gcp_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
+. Para configurar uma assinatura existente com as credenciais selecionadas, selecione um projeto e assinatura do Google Cloud na lista suspensa e selecione *Configurar*.
 +
 image:screenshot_gcp_associate.gif["Uma captura de tela de um projeto e assinatura do Google Cloud selecionados para credenciais do Google Cloud."]
 

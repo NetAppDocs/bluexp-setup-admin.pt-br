@@ -1,0 +1,78 @@
+= Conetor 3.9.49
+:allow-uri-read: 
+
+
+
+
+=== Conetor 3.9.49
+
+Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.
+
+Neste momento, a versão 3.9.49 está disponível para o modo padrão e modo restrito.
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+* Suporte para atribuir mais de uma função a um usuário.
+* As funções agora estão associadas a uma das três categorias: Plataforma, aplicativo e serviços de dados.
+* Duas novas funções estão associadas à categoria de aplicação: Visualizador de armazenamento e administrador de armazenamento. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Leia sobre as funções do IAM"]
+* Agora o IAM é usado no modo restrito do BlueXP 
+
+
+
+
+==== O modo restrito agora usa o BlueXP  IAM
+
+O gerenciamento de identidade e acesso do BlueXP  (IAM) agora é usado no modo restrito.
+
+O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de recursos e acessos que substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP  ao usar o BlueXP  no modo padrão e restrito.
+
+.Informações relacionadas
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Comece a usar o BlueXP  IAM"]
+
+
+O BlueXP  IAM fornece gerenciamento mais granular de recursos e permissões:
+
+* Uma _organização_ de nível superior permite que você gerencie o acesso em seus vários _projetos_.
+* _Pastas_ permitem agrupar projetos relacionados.
+* O gerenciamento de recursos aprimorado permite associar um recurso a uma ou mais pastas ou projetos.
++
+Por exemplo, você pode associar um sistema Cloud Volumes ONTAP a vários projetos.
+
+* O gerenciamento de acesso aprimorado permite que você atribua uma função a membros em diferentes níveis da hierarquia da organização.
+
+
+Esses aprimoramentos fornecem melhor controle sobre as ações que os usuários podem executar e os recursos que podem acessar.
+
+.Como o BlueXP  IAM afeta sua conta existente no modo restrito
+Ao fazer login no BlueXP , você notará estas alterações:
+
+* Sua _conta_ agora é chamada de _organização_
+* Seus _workspaces_ agora são chamados de _projects_
+* Os nomes das funções de usuário mudaram:
++
+** _Account admin_ é agora _Organization admin_
+** _Workspace admin_ agora é _pasta ou projeto admin_
+** _Compliance Viewer_ agora é _Classification Viewer_
+
+
+* Em Configurações, você pode acessar o gerenciamento de identidade e acesso do BlueXP  para aproveitar esses aprimoramentos
+
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["Uma captura de tela do BlueXP  que mostra a Organização e o Projeto selecionáveis na parte superior da interface, bem como o gerenciamento de identidade e acesso, que está disponível no menu Configurações."]
+
+Observe o seguinte:
+
+* Não há alterações nos seus usuários ou ambientes de trabalho existentes.
+* Embora os nomes das funções tenham mudado, não há diferenças em relação a uma perspetiva de permissões. Os usuários continuarão a ter acesso aos mesmos ambientes de trabalho que antes.
+* Não há alterações na forma como inicia sessão no BlueXP . O BlueXP  IAM funciona com logins na nuvem do NetApp, credenciais do site de suporte da NetApp e conexões federadas, assim como as contas do BlueXP .
+* Se você tivesse várias contas do BlueXP , agora você tem várias organizações do BlueXP .
+
+
+.API para BlueXP  IAM
+Essa alteração introduz uma nova API para o BlueXP  IAM, mas é retrocompatível com a API de alocação anterior. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Saiba mais sobre a API para BlueXP  IAM"^]
+
+.Modos de implantação suportados
+O BlueXP  IAM é suportado ao usar o BlueXP  no modo padrão e restrito. Se você estiver usando o BlueXP  no modo privado, continuará usando uma conta _BlueXP _ para gerenciar espaços de trabalho, usuários e recursos.

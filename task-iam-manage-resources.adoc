@@ -40,14 +40,6 @@ NOTE: Os recursos do Amazon FSX for NetApp ONTAP não são exibidos na página r
 . Selecione *pesquisar*.
 
 
-.O que se segue?
-Depois de encontrar o recurso que você está procurando, você pode concluir qualquer uma das seguintes ações:
-
-* <<associate-resource,Associe o recurso a pastas e projetos adicionais>>
-* <<view-folders-and-projects,Exiba as pastas e projetos associados ao recurso>>
-* <<remove-resource,Remova o recurso de uma pasta ou projeto>>
-
-
 
 
 == Associar um recurso a pastas e projetos
@@ -83,6 +75,9 @@ link:task-iam-associate-connectors.html["Saiba como associar um conetor a uma pa
 
 Para identificar onde um recurso está disponível na hierarquia da sua organização, você pode exibir as pastas e projetos associados a esse recurso.
 
+
+NOTE: Se precisar determinar quais membros da organização têm acesso ao recurso, você pode link:task-iam-manage-folders-projects.html#view-associated-resources-members["visualize os membros que têm acesso às pastas e projetos associados ao recurso"].
+
 .Passos
 . Na página *recursos*, navegue até um recurso na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
 
@@ -91,11 +86,8 @@ O exemplo a seguir mostra um recurso que está associado a um projeto.
 
 image:screenshot-iam-resource-details.png["Uma captura de tela da página de detalhes do recurso que mostra um recurso associado a um projeto que está diretamente abaixo da organização."]
 
-.O que se segue?
-* Você pode <<associate-resource,associe o recurso a um projeto ou pasta adicional>>.
-* Você pode <<remove-resource,remova o recurso de uma pasta ou projeto específico>>.
-* Se precisar determinar quais membros da organização têm acesso ao recurso, você pode link:task-iam-manage-folders-projects.html#view-associated-resources-members["visualize os membros que têm acesso às pastas e projetos associados ao recurso"].
 
+NOTE: Se precisar determinar quais membros da organização têm acesso ao recurso, você pode link:task-iam-manage-folders-projects.html#view-associated-resources-members["visualize os membros que têm acesso às pastas e projetos associados ao recurso"].
 
 
 
@@ -103,8 +95,8 @@ image:screenshot-iam-resource-details.png["Uma captura de tela da página de det
 
 Para remover um recurso de uma pasta ou projeto, você precisa remover a associação entre a pasta ou projeto e o recurso. Depois de remover a associação, os membros da organização não podem mais gerenciar o recurso da pasta ou do projeto.
 
-.Sobre esta tarefa
-Se você quiser remover um recurso descoberto de toda a organização, será necessário remover o ambiente de trabalho da tela BlueXP .
+
+NOTE: Se você quiser remover um recurso descoberto de toda a organização, será necessário remover o ambiente de trabalho da tela BlueXP .
 
 .Passos
 . Na página *recursos*, navegue até um recurso na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.

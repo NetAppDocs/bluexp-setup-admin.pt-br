@@ -14,9 +14,9 @@ summary: Ao configurar o BlueXP  no modo restrito ou privado, você será solic
 
 
 [role="lead"]
-Ao configurar o BlueXP  no modo restrito ou privado, você será solicitado a criar uma conta _BlueXP _, que permite gerenciar usuários e organizar recursos. Essa conta pode ser tudo o que você precisa, mas se sua empresa precisar de várias contas, você precisará criar contas adicionais usando a API do Tenancy.
+Ao configurar o BlueXP  no modo privado, você será solicitado a criar uma conta _BlueXP _, que permite gerenciar usuários e organizar recursos. Essa conta pode ser tudo o que você precisa, mas se sua empresa precisar de várias contas, você precisará criar contas adicionais usando a API do Tenancy.
 
-Se você estiver usando o BlueXP  no modo padrão, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM). link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"].
+Se você estiver usando o BlueXP  no modo padrão ou restrito, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM). link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"].
 
 .Passos
 . Use a seguinte chamada de API para criar uma conta BlueXP  adicional:

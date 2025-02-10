@@ -338,14 +338,14 @@ Você precisa criar um conetor antes de poder alterar as configurações do Blue
 
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
-. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *assinatura associada*.
+. Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*.
 +
 Você deve selecionar credenciais associadas a um conetor. Não é possível associar uma assinatura do marketplace a credenciais associadas ao BlueXP .
 
 +
 image:screenshot_azure_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
 
-. Para associar as credenciais a uma assinatura existente, selecione a assinatura na lista suspensa e selecione *Associate*.
+. Para associar as credenciais a uma assinatura existente, selecione-a na lista suspensa e selecione *Configurar*.
 . Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura > continuar* e siga as etapas no Azure Marketplace:
 +
 .. Se solicitado, faça login na sua conta do Azure.

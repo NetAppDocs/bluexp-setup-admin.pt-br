@@ -48,6 +48,15 @@ O software do conetor deve ser executado em um host que atenda a requisitos espe
 Ao implantar o conetor do AWS ou do Azure Marketplace, a imagem inclui os componentes de software e sistema operacional necessários. Você simplesmente precisa escolher um tipo de instância que atenda aos requisitos de CPU e RAM.
 
 Host dedicado:: O conetor não é suportado em um host que é compartilhado com outros aplicativos. O host deve ser um host dedicado.
++
+--
+O host pode ser de qualquer arquitetura que atenda aos seguintes requisitos de tamanho.
+
+* * CPU:* 8 núcleos ou 8 vCPUs
+* *RAM:* 32 GB
+
+
+--
 Hipervisor:: É necessário um hypervisor bare metal ou hospedado certificado para executar um sistema operacional suportado.
 [[podman-versions]]requisitos de sistema operacional e contentor:: O BlueXP  suporta o conetor com os seguintes sistemas operacionais ao usar o BlueXP  no modo padrão ou no modo restrito. Uma ferramenta de orquestração de contêineres é necessária antes de instalar o conetor.
 +
@@ -107,8 +116,13 @@ Notas:
 
 
 --
-CPU:: 8 núcleos ou 8 vCPUs
-RAM:: 32 GB
+
+
+O host pode ser de qualquer arquitetura que atenda a esses requisitos de tamanho.
+
+* * CPU:* 8 núcleos ou 8 vCPUs
+* *RAM:* 32 GB
++
 Tipo de instância do AWS EC2:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos t3,2xlarge.
 Tamanho da VM do Azure:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos Standard_D8s_v3.
 Tipo de máquina Google Cloud:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos n2-standard-8.
@@ -129,6 +143,8 @@ Espaço em disco em /var:: 20 GiB de espaço deve estar disponível
 O BlueXP  requer esse espaço `/var` porque o Docker ou o Podman são arquitetados para criar os contentores dentro desse diretório. Especificamente, eles irão criar contentores no `/var/lib/containers/storage` diretório. Montagens externas ou links simbólicos não funcionam para este espaço.
 
 --
+
+
 
 
 
