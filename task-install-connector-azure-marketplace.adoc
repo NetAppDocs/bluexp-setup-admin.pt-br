@@ -149,14 +149,9 @@ Você precisará implementar esse requisito de rede depois de criar o conetor.
 
 Ao criar o conetor, você precisa escolher um tipo de máquina virtual que atenda aos seguintes requisitos.
 
-O host pode ser de qualquer arquitetura que atenda a esses requisitos de tamanho.
-
-* * CPU:* 8 núcleos ou 8 vCPUs
-* *RAM:* 32 GB
-+
+CPU:: 8 núcleos ou 8 vCPUs
+RAM:: 32 GB
 Tamanho da VM do Azure:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos Standard_D8s_v3.
-
-
 
 
 

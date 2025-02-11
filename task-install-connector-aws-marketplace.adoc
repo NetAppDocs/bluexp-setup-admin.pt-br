@@ -173,14 +173,9 @@ Agora você tem uma função do IAM que pode associar à instância do EC2 duran
 
 Ao criar o conetor, você precisa escolher um tipo de instância EC2 que atenda aos seguintes requisitos.
 
-O host pode ser de qualquer arquitetura que atenda a esses requisitos de tamanho.
-
-* * CPU:* 8 núcleos ou 8 vCPUs
-* *RAM:* 32 GB
-+
+CPU:: 8 núcleos ou 8 vCPUs
+RAM:: 32 GB
 Tipo de instância do AWS EC2:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos t3,2xlarge.
-
-
 
 
 

@@ -28,15 +28,6 @@ Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local 
 O software do conetor deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de porta, etc.
 
 Host dedicado:: O conetor não é suportado em um host que é compartilhado com outros aplicativos. O host deve ser um host dedicado.
-+
---
-O host pode ser de qualquer arquitetura que atenda aos seguintes requisitos de tamanho.
-
-* * CPU:* 8 núcleos ou 8 vCPUs
-* *RAM:* 32 GB
-
-
---
 Hipervisor:: É necessário um hypervisor bare metal ou hospedado certificado para executar um sistema operacional suportado.
 [[podman-versions]]requisitos de sistema operacional e contentor:: O BlueXP  suporta o conetor com os seguintes sistemas operacionais ao usar o BlueXP  no modo padrão ou no modo restrito. Uma ferramenta de orquestração de contêineres é necessária antes de instalar o conetor.
 +
@@ -96,21 +87,18 @@ Notas:
 
 
 --
-
-
-O host pode ser de qualquer arquitetura que atenda a esses requisitos de tamanho.
-
-* * CPU:* 8 núcleos ou 8 vCPUs
-* *RAM:* 32 GB
-+
+CPU:: 8 núcleos ou 8 vCPUs
+RAM:: 32 GB
 Tipo de instância do AWS EC2:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos t3,2xlarge.
 Par de chaves:: Ao criar o conetor, você precisará selecionar um par de chaves EC2 para usar com a instância.
 COLOQUE limite de salto de resposta ao usar IMDSv2:: Se IMDSv2 estiver habilitado na instância EC2 (essa é a configuração padrão para novas instâncias EC2), você deverá alterar o limite de salto de resposta PUT na instância para 3. Se você não alterar o limite na instância do EC2, receberá um erro de inicialização da IU quando tentar configurar o conetor.
-
-
++
+--
 * link:task-require-imdsv2.html["Exigir o uso do IMDSv2 em instâncias do Amazon EC2"]
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentação da AWS: Altere o limite de saltos de resposta PUT"^]
-+
+
+
+--
 Espaço em disco em /opt:: 100 GiB de espaço deve estar disponível
 +
 --
@@ -123,8 +111,6 @@ Espaço em disco em /var:: 20 GiB de espaço deve estar disponível
 O BlueXP  requer esse espaço `/var` porque o Docker ou o Podman são arquitetados para criar os contentores dentro desse diretório. Especificamente, eles irão criar contentores no `/var/lib/containers/storage` diretório. Montagens externas ou links simbólicos não funcionam para este espaço.
 
 --
-
-
 
 
 
