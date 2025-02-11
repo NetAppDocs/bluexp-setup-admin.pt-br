@@ -14,7 +14,7 @@ summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funç
 
 
 [role="lead"]
-O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em três categorias: Plataforma, aplicação e serviço de dados.
+O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em duas categorias: Plataforma e serviço de dados.
 
 
 
@@ -89,54 +89,6 @@ Exemplo para funções de organização em BlueXP  para uma grande organizaçã
 Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.
 
 Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador pasta ou Projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.
-
---
-
-
-
-
-== Funções da aplicação
-
-As funções de aplicativo fornecem acesso a aplicativos do BlueXP , como o consultor digital do Active IQ (também conhecido como consultor digital).
-
-
-
-=== Administrador de storage
-
-Fornece ao usuário a capacidade de executar funções de administração de storage no BlueXP , como atualizações de software e criação e exclusão de ambientes de trabalho do BlueXP .
-
-Permissões:: Pode visualizar a tela BlueXP . Pode criar e gerenciar conetores BlueXP . Tem acesso de leitura/gravação às funções de governança e integridade do storage do BlueXP , incluindo:
-+
---
-* Consultor digital
-* Resiliência operacional
-* Atualizações de software (pode executar atualizações de software)
-* Carteira digital
-* Eficiência económica
-* Painel de sustentabilidade
-* Alertas
-
-
---
-
-
-
-
-=== Visualizador de armazenamento
-
-Fornece acesso somente leitura às funções de saúde e governança do BlueXP . Essa função geralmente é atribuída a usuários que são responsáveis pelo monitoramento da integridade dos recursos de armazenamento de uma organização. Os usuários com essa função podem visualizar várias aplicações no BlueXP  para criar planos de atualização de software e planos de eficiência, bem como visualizar a integridade geral do storage.
-
-Permissões:: Tem acesso somente leitura às funções de governança e integridade do storage do BlueXP , incluindo:
-+
---
-* Consultor digital
-* Resiliência operacional
-* Atualizações de software (pode transferir planos de atualização)
-* Carteira digital
-* Eficiência económica
-* Painel de sustentabilidade
-* Alertas
-
 
 --
 

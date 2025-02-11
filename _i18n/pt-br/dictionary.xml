@@ -3804,10 +3804,8 @@
   <block id="4a3d304c0a44921333425fa75ae2ca14" category="summary">Saiba as novidades com os recursos de administração do BlueXP : BlueXP  IAM, conetores, credenciais de provedor de nuvem e muito mais.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">O que há de novo</block>
   <block id="3659e0ccde34b7f8fd95294187ed03d5" category="paragraph">Saiba o que há de novo com os recursos de administração do BlueXP : Gerenciamento de identidade e acesso (IAM), conetores, credenciais de provedor de nuvem e muito mais.</block>
-  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 de outubro de 2024</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">Conetor 3.9.45 patch</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Este patch inclui correções de bugs.</block>
-  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">7 de outubro de 2024</block>
   <block id="cfb96b15394efa48725d4b6de4d3529b" category="paragraph">O BlueXP  Identity and Access Management (IAM) é um novo modelo de gerenciamento de recursos e acessos que substitui e aprimora a funcionalidade anterior fornecida pelas contas BlueXP  ao usar o BlueXP  no modo padrão.</block>
   <block id="3a3009b65a0b76e5f313a7be507a533e" category="paragraph">O BlueXP  IAM fornece gerenciamento mais granular de recursos e permissões:</block>
   <block id="97bcbb158b23b5f59aa77340528d8c84" category="list-text">Uma _organização_ de nível superior permite que você gerencie o acesso em seus vários _projetos_.</block>
@@ -3850,7 +3848,6 @@
   <block id="69613b7c17d10062f3fcc9393553d449" category="paragraph">O BlueXP  não suporta SELinux com hosts Ubuntu.</block>
   <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">Saiba mais sobre o SELinux</block>
   <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
-  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">30 de setembro de 2024</block>
   <block id="0beb94109608ff82d313b33947162f96" category="section-title">Lançamento do modo privado (3,9.44)</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Uma nova versão do modo privado está agora disponível para download a partir do site de suporte da NetApp.</block>
   <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">Esta versão inclui as seguintes versões dos componentes e serviços do BlueXP  compatíveis com o modo privado.</block>
@@ -3883,7 +3880,6 @@
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Saiba como atualizar o conetor ao usar o modo privado</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
-  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">Conetor 3.9.44</block>
   <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">Esta versão inclui suporte para Docker Engine 26, um aprimoramento para certificados SSL e correções de bugs.</block>
   <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">A versão 3.9.44 está disponível para o modo padrão e modo restrito.</block>
   <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">Suporte para Docker Engine 26 com novas instalações</block>
@@ -3896,23 +3892,19 @@
   <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">Nesta versão, fizemos alterações no certificado SSL para conetores novos e existentes:</block>
   <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">O Nome Comum para o certificado agora corresponde ao nome curto do host</block>
   <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">O Nome alternativo do assunto do certificado é o nome de domínio totalmente qualificado (FQDN) da máquina host</block>
-  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Suporte para RHEL 9,4</block>
   <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">O BlueXP  agora suporta a instalação do conetor em um host Red Hat Enterprise Linux 9,4 ao usar o BlueXP  no modo padrão ou no modo restrito.</block>
   <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">O suporte para RHEL 9,4 começa com a liberação 3.9.40 do conetor.</block>
   <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">A lista atualizada de versões RHEL compatíveis para o modo padrão e modo restrito agora inclui o seguinte:</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Saiba mais sobre o suporte para RHEL 8 e 9 com o conetor</block>
   <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>.</block>
-  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">Suporte para Podman 4.9.4 com todas as versões RHEL</block>
   <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">O Podman 4.9.4 agora é compatível com todas as versões suportadas do Red Hat Enterprise Linux. A versão 4.9.4 foi anteriormente suportada com apenas RHEL 8,10.</block>
   <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">A lista atualizada de versões suportadas do Podman inclui 4.6.1 e 4.9.4 com hosts Red Hat Enterprise Linux.</block>
   <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">Podman é necessário para hosts RHEL começando com a versão 3.9.40 do conetor.</block>
-  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">Permissões da AWS e do Azure atualizadas</block>
   <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">Atualizamos as políticas da AWS e do Azure para que o conetor remova permissões que não são mais necessárias. As permissões estavam relacionadas ao armazenamento em cache na borda do BlueXP  e à descoberta e gerenciamento de clusters do Kubernetes, que não são mais compatíveis em agosto de 2024.</block>
   <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">Saiba o que mudou na política da AWS</block>
   <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>.</block>
   <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Saiba o que mudou na política do Azure</block>
   <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>.</block>
-  <block id="335b63351c39337de35ede84c3852d4d" category="section-title">Conetor 3.9.43 patch</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Atualizamos o conetor para suportar a versão Cloud Volumes ONTAP 9.15.1.</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">O suporte para esta versão inclui uma atualização da política de conetores para Azure. A política agora inclui as seguintes permissões:</block>
   <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Essas permissões são necessárias para o suporte do Cloud Volumes ONTAP de conjuntos de escala de máquinas virtuais. Se você tiver conetores existentes e quiser usar esse novo recurso, será necessário adicionar essas permissões às funções personalizadas associadas às credenciais do Azure.</block>
@@ -3920,11 +3912,8 @@
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="21952e368aec0a06297b408b56d39588" category="inline-link">Ver permissões do Azure para o conetor</block>
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>.</block>
-  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 de agosto de 2024</block>
-  <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Conetor 3.9.43</block>
   <block id="d30916c53949113e97a8033f02e41364" category="paragraph">Esta versão inclui pequenas melhorias e correções de bugs.</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">A versão 3.9.43 está disponível para o modo padrão e modo restrito.</block>
-  <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Requisitos atualizados de CPU e RAM</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">Para fornecer maior confiabilidade e melhorar o desempenho do BlueXP  e do conetor, agora precisamos de CPU e RAM adicionais para a máquina virtual do conetor:</block>
   <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU: 8 núcleos ou 8 vCPUs (o requisito anterior era 4)</block>
   <block id="f8cac741f7a99da8594b5802a47567ab" category="list-text">RAM: 32 GB (o requisito anterior era de 14 GB)</block>
@@ -3933,12 +3922,8 @@
   <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure: Standard_D8s_v3</block>
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud: N2-standard-8</block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">Os requisitos atualizados de CPU e RAM aplicam-se a todos os novos conetores. Para os conetores existentes, é recomendável aumentar a CPU e a RAM para fornecer melhor desempenho e confiabilidade.</block>
-  <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">Suporte para Podman 4.9.4 com RHEL 8,10</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">O Podman versão 4.9.4 agora é suportado ao instalar o conetor em um host Red Hat Enterprise Linux 8,10.</block>
-  <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">Validação de usuário para federação de identidade</block>
   <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">Se você usar a federação de identidade com o BlueXP , cada usuário que fizer login no BlueXP  pela primeira vez precisará preencher um formulário rápido para validar sua identidade.</block>
-  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">31 de julho de 2024</block>
-  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">Lançamento do modo privado (3,9.42)</block>
   <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">Esta versão inclui suporte para instalar o conetor em um host Red Hat Enterprise Linux 8 ou 9 ao usar o BlueXP  em modo privado. As seguintes versões do RHEL são suportadas:</block>
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9,1 a 9,3</block>
   <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">O Podman é necessário como a ferramenta de orquestração de contentores para esses sistemas operacionais.</block>
@@ -3956,30 +3941,19 @@
   <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Saiba o que há de novo com o gerenciamento de Cloud Volumes ONTAP no BlueXP </block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
-  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 de julho de 2024</block>
-  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Suporte para RHEL 8,10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">O BlueXP  agora suporta a instalação do conetor em um host Red Hat Enterprise Linux 8,10 quando usa o modo padrão ou o modo restrito.</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">O suporte para RHEL 8,10 começa com a liberação 3.9.40 do conetor.</block>
-  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">8 de julho de 2024</block>
-  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">Conetor 3.9.42</block>
   <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">Esta versão inclui pequenas melhorias, correções de bugs e suporte para o conetor na região AWS Canada West (Calgary).</block>
   <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">A versão 3.9.42 está disponível para o modo padrão e modo restrito.</block>
-  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">Requisitos atualizados do Docker Engine</block>
   <block id="a8b199c601f75b6af66327457070a9f8" category="paragraph">Quando o conetor é instalado em um host Ubuntu, a versão mínima suportada do Docker Engine é agora 23,0.6. Era anteriormente 19,3.1.</block>
   <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">A versão máxima suportada ainda é 25,0.5.</block>
-  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">A verificação de e-mail agora é necessária</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">Os novos usuários que se inscreverem no BlueXP  agora precisam verificar seu endereço de e-mail antes de poderem fazer login.</block>
-  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">12 de junho de 2024</block>
-  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">Conetor 3.9.41</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">A versão 3.9.41 está disponível para o modo padrão e modo restrito.</block>
-  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">4 de junho de 2024</block>
-  <block id="87174c130fb334601e88a5630bf24478" category="section-title">Lançamento do modo privado (3,9.40)</block>
   <block id="3a88f5b91fe23c6da00e330b440f9fd7" category="paragraph">Uma nova versão do modo privado está agora disponível para download a partir do site de suporte da NetApp. Esta versão inclui as seguintes versões dos serviços BlueXP  que são compatíveis com o modo privado.</block>
   <block id="4f56b8c7a0f62edc59659cfaecc68958" category="paragraph">Observe que essa versão de modo privado _não_ inclui suporte para o conetor com Red Hat Enterprise Linux 8 e 9.</block>
   <block id="f691a3ef752f6e51a74183a6b7b1c432" category="cell">3.9.40</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="cell">17 de maio de 2024</block>
-  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">Conetor 3.9.40</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Esta versão do conetor BlueXP  inclui suporte para sistemas operacionais adicionais, pequenas melhorias de segurança e correções de bugs.</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">Neste momento, a versão 3.9.40 está disponível para o modo padrão e modo restrito.</block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">O conetor agora é suportado em hosts que executam as seguintes versões do Red Hat Enterprise Linux com instalações _new_ Connector ao usar o BlueXP  no modo padrão ou no modo restrito:</block>
@@ -3993,27 +3967,20 @@
   <block id="bad85d32b5f3e46e956809c13b502817" category="list-text"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>.</block>
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">Saiba mais sobre o suporte para zonas locais da AWS</block>
   <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
-  <block id="1389c5e279a667948337a56d97caf570" category="section-title">Conetor 3.9.39</block>
   <block id="103f00dbabbbaa84ff4ad44e1ae8f0e0" category="paragraph">Neste momento, a versão 3.9.39 está disponível para o modo padrão e modo restrito.</block>
-  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">Permissões da AWS para criar um conetor</block>
   <block id="492d5f07c90a7db03029f9a6c5532ce3" category="paragraph">Duas permissões adicionais agora são necessárias para criar um conetor na AWS a partir do BlueXP :</block>
   <block id="d563c67cb5d34e4276aadadd838867f8" category="paragraph">Essas permissões são necessárias para habilitar o IMDSv2 na instância EC2 para o conetor.</block>
   <block id="99c957a89e85bd737f02914924c399b3" category="paragraph">Incluímos essas permissões na política exibida na interface de usuário do BlueXP  ao criar um conetor e na mesma política fornecida na documentação.</block>
   <block id="679562c52996a8e2a4db9524251394f4" category="admonition">Esta política contém apenas as permissões necessárias para iniciar a instância do Connector no AWS a partir do BlueXP . Não é a mesma política que é atribuída à instância do conetor.</block>
   <block id="1c51e24c3b44b362001f3c1a6c51b065" category="inline-link">Saiba como configurar permissões da AWS para criar um conetor da AWS</block>
   <block id="16a785388c44f1116fdb34f01d8816bb" category="paragraph"><block ref="53bbefe6872cea40f97befa74964b71d" category="inline-link-rx"></block>.</block>
-  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">11 de abril de 2024</block>
-  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Atualização do Docker Engine</block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Atualizamos os requisitos do Docker Engine para especificar a versão máxima suportada no conetor, que é 25,0.5. A versão mínima suportada ainda é 19,3.1.</block>
-  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">26 de março de 2024</block>
-  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">Lançamento do modo privado (3,9.38)</block>
   <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">Uma nova versão do modo privado está agora disponível para o BlueXP . Esta versão inclui as seguintes versões dos serviços BlueXP  que são compatíveis com o modo privado.</block>
   <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
   <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 de março de 2024</block>
   <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">4 de março de 2024</block>
   <block id="4a1a05ee22994e328d9ec0402052b926" category="cell">8 de março de 2024</block>
   <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Esta nova versão está disponível para download no site de suporte da NetApp.</block>
-  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">Conetor 3.9.38</block>
   <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">Neste momento, a versão 3.9.38 está disponível para o modo padrão e modo restrito. Esta versão inclui suporte para IMDSv2 na AWS e uma atualização de permissões da AWS.</block>
   <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">Suporte para IMDSv2</block>
   <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">O BlueXP  agora oferece suporte ao serviço de metadados de instância do Amazon EC2 versão 2 (IMDSv2) com a instância do conetor e com instâncias do Cloud Volumes ONTAP. O IMDSv2 fornece proteção aprimorada contra vulnerabilidades. Apenas IMDSv1 foi anteriormente suportado.</block>
@@ -4021,43 +3988,29 @@
   <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Saiba como configurar o IMDSv2 em instâncias existentes</block>
   <block id="bac0b5f0ce34c6e2b396323f31301d29" category="paragraph"><block ref="c76726faac091108ba3ec0f1466b791f" category="inline-link-rx"></block>.</block>
   <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Atualizamos a política de conetores para a AWS para incluir a permissão "EC2:DescribeAvailabilityZones". Esta permissão é necessária para uma próxima versão. Atualizaremos as notas de versão com mais detalhes quando essa versão estiver disponível.</block>
-  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Configurações de proxy e configurações de Cloud Volumes ONTAP</block>
   <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">As configurações do servidor proxy para o conetor estão agora disponíveis na página *Gerenciar conetores* (modo padrão) ou na página *Editar conetores* (modo restrito e modo privado).</block>
   <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">Saiba como configurar o conetor para usar um servidor proxy</block>
   <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>.</block>
   <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">Além disso, renomeamos a página *Configurações do conetor* para *Configurações do Cloud Volumes ONTAP*.</block>
   <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">Uma captura de tela que mostra a opção Configurações do Cloud Volumes ONTAP que está disponível no menu Configurações.</block>
   <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">15 de fevereiro de 2024</block>
-  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">Conetor 3.9.37</block>
   <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">Neste momento, a versão 3.9.37 está disponível para o modo padrão e modo restrito.</block>
-  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Editar nome</block>
   <block id="c42458c54134318669b685ee8730a478" category="paragraph">Se você usar credenciais de nuvem do NetApp para fazer login no BlueXP , agora você pode editar seu nome em *Configurações do usuário*.</block>
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Uma captura de tela que mostra a capacidade de editar seu nome em Configurações do usuário.</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">Editar seu nome não é suportado se você fizer login com uma conexão federada ou com sua conta do site de suporte da NetApp.</block>
-  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 de janeiro de 2024</block>
-  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Conetor 3.9.36</block>
   <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Esta versão inclui pequenas melhorias, correções de bugs e suporte para o conetor nas seguintes regiões de nuvem:</block>
   <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">A região de Israel (Tel Aviv) na AWS</block>
   <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">A região da Arábia Saudita no Google Cloud</block>
-  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">Lançamento do modo privado (3,9.35)</block>
   <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">Uma nova versão do modo privado está agora disponível para o BlueXP . Esta versão inclui a versão 3.9.35 do conetor e versões dos serviços BlueXP  que são suportados com o modo privado a partir de outubro de 2023.</block>
   <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">Saiba mais sobre os serviços BlueXP  que estão incluídos no modo privado</block>
   <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
-  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">8 de novembro de 2023</block>
-  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Conetor 3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Esta versão contém pequenas melhorias de segurança e correções de bugs.</block>
-  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 de outubro de 2023</block>
-  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">Conetor 3.9.34</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">Esta versão contém pequenas melhorias e correções de bugs.</block>
-  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 de setembro de 2023</block>
-  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Conetor 3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Quando você cria um conetor no AWS a partir do BlueXP , agora você pode pesquisar no campo par de chaves para encontrar mais facilmente o par de chaves que deseja usar com a instância do Connector.</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Uma captura de tela da opção de pesquisa no campo par de chaves que aparece na página rede ao criar um conetor na AWS a partir do BlueXP .</block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Esta atualização também inclui correções de bugs.</block>
-  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Conetor 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">Agora você pode usar a API de serviço de auditoria do BlueXP  para exportar logs de auditoria.</block>
   <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">O serviço de auditoria Registra informações sobre as operações realizadas pelos serviços BlueXP . Isso inclui espaços de trabalho, conetores usados e outros dados de telemetria. Você pode usar esses dados para determinar quais ações foram executadas, quem as executou e quando elas ocorreram.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Saiba mais sobre como usar a API de serviço de auditoria</block>
@@ -4068,8 +4021,6 @@
   <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
   <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">Saiba mais sobre os aprimoramentos de cluster no ONTAP on-premise</block>
   <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
-  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 de julho de 2023</block>
-  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Conetor 3.9.31</block>
   <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Agora você pode descobrir clusters ONTAP no local na guia *My ESTATE* (anteriormente *Minhas oportunidades*)</block>
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Saiba como descobrir clusters a partir da página My ESTATE</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
@@ -4077,8 +4028,6 @@
   <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Este endpoint é necessário para instalar manualmente o conetor e atualizar o conetor e seus componentes do Docker.</block>
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Como resultado dessa alteração, um conetor em uma região do Azure Government não entra em Contato com o seguinte endpoint:</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Observe que esse ponto final ainda é necessário para todas as outras configurações de modo restrito e para o modo padrão.</block>
-  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">4 de junho de 2023</block>
-  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">Conetor 3.9.30</block>
   <block id="390bbe3d279d4d842ce6e1afdbef9cac" category="list-text">Quando você abre um caso de suporte da NetApp no Painel de suporte, o BlueXP  agora abre o caso usando a conta do site de suporte da NetApp associada ao login do BlueXP . A BlueXP  usou anteriormente a conta do site de suporte da NetApp associada a toda a conta do BlueXP .</block>
   <block id="cf4de1590dec786ba89a784b76abf972" category="paragraph">Como parte dessa alteração, o Registro de suporte para uma conta do BlueXP  agora é feito através da conta do site de suporte da NetApp associada ao login do BlueXP  de um usuário. Anteriormente, o Registro de suporte foi feito através de uma conta NSS associada a toda a conta BlueXP . Como resultado, outros usuários do BlueXP  não verão o mesmo status de Registro de suporte se não associarem uma conta do site de suporte da NetApp ao login do BlueXP . Se você já registrou sua conta do BlueXP  para obter suporte, então seu status de Registro ainda é válido. Você só precisa adicionar uma conta NSS no nível do usuário para ver o status.</block>
   <block id="d0b3c9ce9c494292be2aeea8cdac5477" category="inline-link">Saiba como criar um caso com o suporte da NetApp</block>
@@ -4109,8 +4058,6 @@
   <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">Dallas (US-south1)</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">Veja a lista completa de regiões suportadas</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
-  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 de maio de 2023</block>
-  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">Conetor 3.9.29</block>
   <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22,04 é o novo sistema operacional para o conetor quando você implementa um conetor do BlueXP  ou do mercado do seu provedor de nuvem.</block>
   <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">Você também tem a opção de instalar manualmente o conetor em seu próprio host Linux que está executando o Ubuntu 22,04.</block>
   <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">O Red Hat Enterprise Linux 8,6 e 8,7 não são mais compatíveis com novas implantações de conetores.</block>
@@ -4120,13 +4067,10 @@
   <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">O conetor também é suportado na região Central da Suécia no Microsoft Azure.</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">Esta versão do conetor inclui melhorias no Cloud Volumes ONTAP.</block>
   <block id="4d5f6e2e2b72482865cac1c14f3d2d3d" category="paragraph"><block ref="4d5f6e2e2b72482865cac1c14f3d2d3d" category="inline-link-rx"></block></block>
-  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">4 de abril de 2023</block>
   <block id="9e2110ccb138521e2ed734b9376c3f5b" category="paragraph">BlueXP  _modos de implantação_ permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. Você pode escolher entre três modos:</block>
   <block id="14862370498786066b8605b6924a2605" category="inline-link">Saiba mais sobre esses modos de implantação</block>
   <block id="0e243030d4d37c15e7b806556f21cdc3" category="paragraph"><block ref="07b6d38a8467f077daba3577bc2ba852" category="inline-link-rx"></block>.</block>
   <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">A introdução do modo restrito substitui a opção de ativar ou desativar a plataforma SaaS. Você pode ativar o modo restrito no momento da criação da conta. Não pode ser ativado ou desativado mais tarde.</block>
-  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 de abril de 2023</block>
-  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">Conetor 3.9.28</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">As notificações por e-mail são agora suportadas com a carteira digital BlueXP .</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Se você configurar suas configurações de notificação, você poderá receber notificações por e-mail quando suas licenças BYOL estiverem prestes a expirar (uma notificação de "Aviso") ou se elas já tiverem expirado (uma notificação de "erro").</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Saiba como configurar notificações por e-mail</block>
@@ -4141,8 +4085,6 @@
   <block id="e076d1de7062df2857bf544f4a4aa82d" category="paragraph"><block ref="c7a2ab7c05c0b984c7e95e609cb46e34" category="inline-link-rx"></block>.</block>
   <block id="55a6750574b4447541f67bb4e01cab9a" category="list-text"><block ref="55a6750574b4447541f67bb4e01cab9a" category="inline-link-rx"></block></block>
   <block id="6ee17626d7e1b5c782c10c267de6f85c" category="list-text"><block ref="6ee17626d7e1b5c782c10c267de6f85c" category="inline-link-rx"></block></block>
-  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 de março de 2023</block>
-  <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">Conetor 3.9.27</block>
   <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">A pesquisa já está disponível no console do BlueXP . Neste momento, você pode usar a pesquisa para encontrar serviços e recursos do BlueXP .</block>
   <block id="da1115c120e230094c1f271ddc8b2faa" category="paragraph"><block ref="da1115c120e230094c1f271ddc8b2faa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Saiba como gerenciar seus casos de suporte</block>
@@ -4160,8 +4102,6 @@
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">Veja como adicionar novos buckets do Amazon S3 na sua conta da AWS a partir do BlueXP </block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
   <block id="98a589e7baa6e35fa2a8b5710c9f3908" category="paragraph"><block ref="98a589e7baa6e35fa2a8b5710c9f3908" category="inline-link-rx"></block></block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 de fevereiro de 2023</block>
-  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">Conetor 3.9.26</block>
   <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">Na página *Log in*, você será solicitado a inserir o endereço de e-mail associado ao seu login. Depois de selecionar *seguinte*, o BlueXP  solicita que você se autentique usando o método de autenticação associado ao seu login:</block>
   <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">A senha para suas credenciais de nuvem do NetApp</block>
   <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">Suas credenciais de identidade federadas</block>
@@ -4185,25 +4125,17 @@
   <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">Veja as permissões do Google Cloud para o conetor</block>
   <block id="bc8eecd65f39947b42bdec4a565aee14" category="paragraph"><block ref="3a8bfb7187fb3fb54b749c274662351f" category="inline-link-rx"></block>.</block>
   <block id="9c5e093bf7de6f191f4ed6fb5788faf1" category="paragraph"><block ref="9c5e093bf7de6f191f4ed6fb5788faf1" category="inline-link-rx"></block></block>
-  <block id="1f7138998459804601fc351f8d442e29" category="section-title">1 de janeiro de 2023</block>
-  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">Conetor 3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">Esta versão do conetor inclui melhorias no Cloud Volumes ONTAP e correções de bugs.</block>
   <block id="babe9b67734a993940360f5907bd1420" category="paragraph"><block ref="babe9b67734a993940360f5907bd1420" category="inline-link-rx"></block></block>
-  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 de dezembro de 2022</block>
-  <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">Conetor 3.9.24</block>
   <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">Atualizamos o URL para o console do BlueXP <block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
   <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">O conetor agora é suportado na região do Google Cloud Israel.</block>
   <block id="b48a790ba42e24d7c2c6394ead9c61e4" category="list-text"><block ref="b48a790ba42e24d7c2c6394ead9c61e4" category="inline-link-rx"></block></block>
   <block id="e88218c7954191edd5ee25a2260fe7c2" category="list-text"><block ref="e88218c7954191edd5ee25a2260fe7c2" category="inline-link-rx"></block></block>
-  <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 de novembro de 2022</block>
-  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">Conetor 3.9.23</block>
   <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">As suas subscrições PAYGO e contratos anuais para a BlueXP  estão agora disponíveis para visualizar e gerir a partir da carteira digital.</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Saiba como gerenciar suas assinaturas</block>
   <block id="a36a7ffe5c1160531a9a2bc1012be15f" category="paragraph"><block ref="a36a7ffe5c1160531a9a2bc1012be15f" category="inline-link-rx"></block></block>
   <block id="e8249b4253d6a921188373a80621c098" category="list-text">Esta versão do conetor também inclui melhorias no Cloud Volumes ONTAP.</block>
   <block id="6524b30e2d34e6852c60c79bb9d67c29" category="paragraph"><block ref="6524b30e2d34e6852c60c79bb9d67c29" category="inline-link-rx"></block></block>
-  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1 de novembro de 2022</block>
-  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">Introdução do BlueXP </block>
   <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">O NetApp BlueXP  estende e aprimora as funcionalidades fornecidas pelo Cloud Manager. O BlueXP  é um painel de controle unificado que oferece uma experiência multicloud híbrida para serviços de storage e dados em ambientes locais e de nuvem.</block>
   <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">Experiência de gerenciamento unificado</block>
   <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">O BlueXP  permite gerenciar todos os ativos de storage e dados em uma única interface.</block>
@@ -4226,33 +4158,24 @@
   <block id="e85444ee57c2061143502fa15b083bcc" category="list-text"><block ref="e85444ee57c2061143502fa15b083bcc" category="inline-link-rx"></block></block>
   <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">Saiba mais sobre a integração do Digital Advisor</block>
   <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
-  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">Solicitar a atualização das credenciais do NSS</block>
   <block id="23888423406e47190ca0cf40a113c61f" category="inline-link">Saiba como gerenciar contas NSS</block>
   <block id="bc3b6ce11bc131cddf59507a7187bfbc" category="paragraph">O Cloud Manager agora solicita que você atualize as credenciais associadas às contas do site de suporte da NetApp quando o token de atualização associado à sua conta expirar após 3 meses.<block ref="b5aca352b3ac5d4c653cd51f399b48e6" category="inline-link-rx"></block></block>
-  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de setembro de 2022</block>
-  <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">Conetor 3.9.22</block>
   <block id="e9da1b86eba52d6822a9d7c294a3641c" category="list-text">Melhoramos o assistente de implantação do conetor adicionando um _guia no produto_ que fornece etapas para atender aos requisitos mínimos para instalação do conetor: Permissões, autenticação e rede.</block>
   <block id="871cd14deee4188642f0f5e041d9e0bd" category="list-text">Agora você pode criar um caso de suporte do NetApp diretamente do Cloud Manager no *Painel de suporte*.</block>
   <block id="59c4ba689ab2a5e1f09df561f47e0d6c" category="inline-link">Saiba como criar um caso</block>
   <block id="f7bc2ed8f1653bdae4ed33e135b933fa" category="paragraph"><block ref="1c4e2cbcc125deda8a1f9448e89a249c" category="inline-link-rx"></block>.</block>
   <block id="f7a745eee26de3b09a57038d4d6f94a7" category="paragraph"><block ref="f7a745eee26de3b09a57038d4d6f94a7" category="inline-link-rx"></block></block>
-  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 de julho de 2022</block>
-  <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">Conetor 3.9.21</block>
   <block id="1beb197487d0f07564b924071751aa36" category="list-text">Apresentamos uma nova maneira de descobrir os recursos de nuvem que você ainda não está gerenciando no Cloud Manager.</block>
   <block id="155ccfd3578c4b827fbaaa1208c5c86a" category="paragraph">No Canvas, a guia *Minhas oportunidades* fornece um local centralizado para descobrir os recursos existentes que você pode adicionar ao Cloud Manager para serviços e operações de dados consistentes em sua multicloud híbrida.</block>
   <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">Nesta versão inicial, My Opportunities permite que você descubra os sistemas de arquivos FSX for ONTAP existentes em sua conta da AWS.</block>
   <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">Saiba como descobrir o FSX for ONTAP usando Minhas oportunidades</block>
   <block id="dbf8be04ee9b9497c4f7beac27323eeb" category="paragraph"><block ref="dbf8be04ee9b9497c4f7beac27323eeb" category="inline-link-rx"></block></block>
   <block id="a76dc10e8aea3ac33b469f1f4d1b205e" category="paragraph"><block ref="a76dc10e8aea3ac33b469f1f4d1b205e" category="inline-link-rx"></block></block>
-  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">15 de julho de 2022</block>
-  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">Mudanças de política</block>
   <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">Atualizamos a documentação adicionando as políticas do Cloud Manager diretamente dentro dos documentos. Isso significa que agora você pode visualizar as permissões necessárias para o conetor e o Cloud Volumes ONTAP ao lado das etapas que descrevem como configurá-los. Essas políticas eram anteriormente acessíveis a partir de uma página no site de suporte da NetApp.</block>
   <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link">Aqui está um exemplo que mostra as permissões de função do AWS IAM usadas para criar um conetor</block>
   <block id="099c2f45c6328b262e8d5da1618fec9b" category="paragraph"><block ref="f70d5a4ad5c8fe20f2b360d971a18930" category="inline-link-rx"></block>.</block>
   <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link">Veja o resumo das permissões do Cloud Manager</block>
   <block id="f6ffbcd57505ff07c352c6a7e1d00866" category="paragraph">Também criamos uma página que fornece links para cada uma das políticas.<block ref="8572a9016022bfa78d3a8c5f3218a764" category="inline-link-rx"></block>.</block>
-  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">3 de julho de 2022</block>
-  <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">Conetor 3.9.20</block>
   <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">Introduzimos uma nova maneira de navegar para a crescente lista de recursos na interface do Cloud Manager. Todos os recursos familiares do Cloud Manager agora podem ser encontrados facilmente, passando o Mouse sobre o painel esquerdo.</block>
   <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">Uma captura de tela que mostra o novo menu de navegação à esquerda no Cloud Manager.</block>
   <block id="3b7c35b218804d1e919a0e6912230bad" category="paragraph"><block ref="3b7c35b218804d1e919a0e6912230bad" category="inline-image-macro-rx" type="image"></block></block>
@@ -4271,21 +4194,13 @@
   <block id="05f08f9410eed79855c8ade92149a276" category="list-text">O conetor agora é suportado na região do Azure West US 3.</block>
   <block id="075b5f25465b6b108fb916bce6a2219f" category="paragraph"><block ref="075b5f25465b6b108fb916bce6a2219f" category="inline-link-rx"></block></block>
   <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
-  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">28 de junho de 2022</block>
-  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">Faça login com credenciais NetApp</block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">Quando novos usuários se inscrevem no Cloud Central, eles agora podem selecionar a opção *entrar com o NetApp* para fazer login com suas credenciais do site de suporte da NetApp. Esta é uma alternativa para inserir um endereço de e-mail e uma senha.</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">Os logins existentes que usam um endereço de e-mail e senha precisam continuar usando esse método de login. A opção entrar com NetApp está disponível para novos usuários que se inscreverem.</block>
-  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">7 de junho de 2022</block>
-  <block id="40beea3ec23a7affa39b1a1cbd52f21d" category="section-title">Conetor 3.9.19</block>
   <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">O conetor agora é suportado na região AWS Jakarta (ap-sudeste-3).</block>
   <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">O conetor agora é suportado na região Sudeste do Azure Brasil.</block>
   <block id="046fc05000d85b784cc7466da1c65e32" category="list-text"><block ref="046fc05000d85b784cc7466da1c65e32" category="inline-link-rx"></block></block>
   <block id="e9917715e557501b320f321479432f1b" category="list-text"><block ref="e9917715e557501b320f321479432f1b" category="inline-link-rx"></block></block>
-  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">12 de maio de 2022</block>
-  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">Conetor 3.9.18 patch</block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">Atualizamos o conetor para introduzir correções de bugs. A correção mais notável é um problema que afeta a implantação do Cloud Volumes ONTAP no Google Cloud quando o conetor está em uma VPC compartilhada.</block>
-  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2 de maio de 2022</block>
-  <block id="def752908b0fa662bfb5de654a533140" category="section-title">Conetor 3.9.18</block>
   <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">Delhi (Ásia-south2)</block>
   <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">Melbourne (austrália-southeast2)</block>
   <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">Milão (Europa-west8)</block>
@@ -4301,61 +4216,39 @@
   <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">Essas permissões agora são necessárias para otimizar a forma como o Cloud Manager cria o grupo de posicionamento.</block>
   <block id="68d143cf782abb32ef2c0a2af3d73ed4" category="inline-link-macro">Veja a política do IAM mais recente para o conetor</block>
   <block id="09bd71829ddb9c7aa4915fa8ccecf682" category="paragraph">Certifique-se de fornecer essas permissões a cada conjunto de credenciais da AWS que você adicionou ao Cloud Manager. <block ref="43fc0841595bdc0f90ae6430b0122798" category="inline-link-macro-rx"></block>.</block>
-  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">3 de abril de 2022</block>
-  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">Conetor 3.9.17</block>
   <block id="dc45cdfe41bbcfa7f2d8bf1ed54a89ed" category="list-text">Agora você pode criar um conetor deixando o Cloud Manager assumir uma função do IAM configurada no seu ambiente. Esse método de autenticação é mais seguro do que compartilhar uma chave de acesso da AWS e uma chave secreta.</block>
   <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">Saiba como criar um conetor usando uma função do IAM</block>
   <block id="ed3ab201d61a32b83ced6fa1b246aa09" category="paragraph"><block ref="c3443234c58f728fd298c85cd8d82362" category="inline-link-rx"></block>.</block>
   <block id="083fb54a2c12a01865494f9eb4787b79" category="list-text">Esta versão do conetor também inclui melhorias no Cloud Volumes ONTAP.<block ref="59d6f0d19109fca55e6311099497ddc1" category="inline-link-rx"></block></block>
-  <block id="ba26e4556a0f160834687982b0479336" category="section-title">27 de fevereiro de 2022</block>
-  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">Conetor 3.9.16</block>
   <block id="23ea931bf11f885e1a49e6970b0aa60a" category="list-text">Quando você cria um novo conetor no Google Cloud, o Cloud Manager agora exibirá todas as políticas de firewall existentes. Anteriormente, o Cloud Manager não exibiria nenhuma política que não tivesse uma tag de destino.</block>
   <block id="5c12e90820b2bd6edf6f35e22754cc6a" category="list-text">Esta versão do conetor também inclui melhorias no Cloud Volumes ONTAP.<block ref="5929cea9f40a354c605f108001043659" category="inline-link-rx"></block></block>
-  <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">30 de janeiro de 2022</block>
-  <block id="1bb66afbb0f9c20ad9ce021a7051d622" category="section-title">Conetor 3.9.15</block>
   <block id="1890045039c9b689a989ddeed52a35b2" category="paragraph">Esta versão do conetor inclui melhorias no Cloud Volumes ONTAP.<block ref="a470e47cfb4b58628c6adb8bf11e8d1b" category="inline-link-rx"></block></block>
-  <block id="586301717819197e24001cac47efdaaa" category="section-title">2 de janeiro de 2022</block>
-  <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">Pontos finais reduzidos para o conetor</block>
   <block id="3ea953e33860f2fb58e83ea9f9842e28" category="paragraph">Reduzimos o número de endpoints que um conetor precisa entrar em Contato para gerenciar recursos e processos em seu ambiente de nuvem pública.</block>
   <block id="deb7ce1a594b9c903900b5242dc0085e" category="inline-link">Veja a lista de endpoints necessários</block>
   <block id="7b9d4f51a2aafa446c6306500b5e250f" category="paragraph"><block ref="7b9d4f51a2aafa446c6306500b5e250f" category="inline-link-rx"></block></block>
-  <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">Encriptação do disco EBS para o conetor</block>
   <block id="dcf92cfff3fdb05a27221d7e0f407165" category="paragraph">Ao implantar um novo conetor no AWS a partir do Cloud Manager, agora você pode optar por criptografar os discos EBS do conetor usando a chave mestra padrão ou uma chave gerenciada.</block>
   <block id="e47c7d2e2b0dfe5aea5df23ca3dc5523" category="inline-image-macro">Uma captura de tela que mostra a opção de criptografia de disco ao criar um conetor na AWS.</block>
   <block id="a91afa6fb41cab23d456769cc6adc832" category="paragraph"><block ref="a91afa6fb41cab23d456769cc6adc832" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c9ace35ceff752453d1b0f7978e94417" category="section-title">Endereço de e-mail para contas NSS</block>
   <block id="09a67f36e39e8933808ee04f43addc27" category="paragraph">Agora, o Cloud Manager pode exibir o endereço de e-mail associado a uma conta do site de suporte da NetApp.</block>
   <block id="0e6019dd7421286538155e3cea252d8a" category="paragraph"><block ref="0e6019dd7421286538155e3cea252d8a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f61163b681442ac500a8018c87241770" category="section-title">28 de novembro de 2021</block>
-  <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">Atualização necessária para contas do site de suporte da NetApp</block>
   <block id="cd9cf4a2a1c115f8da1d3cd4b0b783dd" category="paragraph">A partir de dezembro de 2021, o NetApp agora usa o Microsoft Azure ative Directory como provedor de identidade para serviços de autenticação específicos para suporte e licenciamento. Como resultado desta atualização, o Cloud Manager solicitará que você atualize as credenciais de quaisquer contas existentes do site de suporte da NetApp que você adicionou anteriormente.</block>
   <block id="a47acc65b2885cddfc6096e5aa5324f7" category="paragraph">Se você ainda não migrou sua conta NSS para IDaaS, primeiro você precisa migrar a conta e, em seguida, atualizar suas credenciais no Cloud Manager.</block>
   <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">Saiba mais sobre o uso do ative Directory do NetApp para gerenciamento de identidades</block>
   <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
-  <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">Alterar contas NSS para Cloud Volumes ONTAP</block>
   <block id="e99f30e825d98bd08033ec588636b5fc" category="paragraph">Se a sua organização tiver várias contas do site de suporte da NetApp, agora você pode alterar qual conta está associada a um sistema Cloud Volumes ONTAP.</block>
   <block id="410c9dea5614a1c565dab22836dac506" category="inline-link-macro">Saiba como anexar um ambiente de trabalho a uma conta NSS diferente</block>
   <block id="716da4ef7d1a5f241e18d6b446014f1c" category="paragraph"><block ref="ef9f07c493626712a09129088a5e9304" category="inline-link-macro-rx"></block>.</block>
-  <block id="0c8656a54bb3c58b8facb7ba72092bdc" category="section-title">4 de novembro de 2021</block>
   <block id="ac0f5e08f6053e35cd41705edc1764e6" category="paragraph">Uma empresa de contabilidade pública e um auditor de serviços certificado independente examinou o Cloud Manager, o Cloud Sync, o Cloud Tiering, o Cloud Data Sense e o Cloud Backup (plataforma Cloud Manager) e afirmou que eles alcançaram relatórios SOC 2 tipo 2 com base nos critérios de Serviços de confiança aplicáveis.</block>
   <block id="f982fa3c6fb84f7cccc6a84a6ffc9a1d" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block>.</block>
-  <block id="28d0f6acaa631c64f65938cc5be01ffc" category="section-title">O conetor não é mais suportado como proxy</block>
   <block id="5c8306d9be4948716015bb2f9e79b2c6" category="paragraph">Você não pode mais usar o Cloud Manager Connector como um servidor proxy para enviar mensagens AutoSupport do Cloud Volumes ONTAP. Esta funcionalidade foi removida e já não é suportada. Você precisará fornecer conetividade AutoSupport por meio de uma instância NAT ou dos serviços proxy do seu ambiente.</block>
   <block id="52fc1a06d2ae446b85445e7fc0cf985d" category="inline-link">Saiba mais sobre como verificar o AutoSupport com o Cloud Volumes ONTAP</block>
   <block id="082ecd74d4bf71395df6986a8098fad0" category="paragraph"><block ref="082ecd74d4bf71395df6986a8098fad0" category="inline-link-rx"></block></block>
-  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 de outubro de 2021</block>
-  <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">Autenticação com o responsável pelo serviço</block>
   <block id="8c14c862f5a121ac56cd7c2e45b59e09" category="paragraph">Quando você cria um novo conetor no Microsoft Azure, agora você pode autenticar com um responsável de serviço do Azure, em vez de com as credenciais da conta do Azure.</block>
   <block id="2b5f7271b3a292c88ce5b4850153c1f4" category="inline-link-macro">Saiba como autenticar com um diretor de serviço do Azure</block>
   <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>.</block>
-  <block id="c4f5f37a3eac48a6747104e3821bdfc7" category="section-title">Aprimoramento de credenciais</block>
   <block id="927ebf0b3ebac11b90b010cce510f149" category="paragraph">Redesenhamos a página credenciais para facilitar o uso e corresponder à aparência atual da interface do Cloud Manager.</block>
-  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2 de setembro de 2021</block>
-  <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">Foi adicionado um novo Serviço de notificação</block>
   <block id="3c1b23b324258ff4cbade594bf9bba9d" category="inline-link-macro">Veja como monitorar operações em sua conta</block>
   <block id="e2945895b2a6a405c218350491024401" category="paragraph">O serviço de notificação foi introduzido para que você possa visualizar o status das operações do Cloud Manager iniciadas durante a sessão de login atual. Você pode verificar se a operação foi bem-sucedida ou se ela falhou. <block ref="f47b918ef0cfcb851278e7a8f756b776" category="inline-link-macro-rx"></block>.</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">7 de julho de 2021</block>
-  <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">Melhorias no assistente Adicionar conetor</block>
   <block id="49b04ecdbf78ac3e84e01d5ad6dcb05f" category="paragraph">Redesenhamos o assistente *Add Connector* para adicionar novas opções e facilitar o uso. Agora você pode adicionar tags, especificar uma função (para AWS ou Azure), carregar um certificado raiz para um servidor proxy, exibir código para automação do Terraform, exibir detalhes de progresso e muito mais.</block>
   <block id="9b740c2dda97a2c23cd8f8cf0fc5aac6" category="inline-link-macro">Crie um conetor na AWS</block>
   <block id="12c969b885d7dd7b0a231afa774da316" category="list-text"><block ref="12c969b885d7dd7b0a231afa774da316" category="inline-link-macro-rx"></block></block>
@@ -4363,35 +4256,25 @@
   <block id="24358245886d680d1757bf06273da574" category="list-text"><block ref="24358245886d680d1757bf06273da574" category="inline-link-macro-rx"></block></block>
   <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="inline-link-macro">Crie um conetor no Google Cloud</block>
   <block id="b3aa89c8e307c0edbec167df38d4b12e" category="list-text"><block ref="b3aa89c8e307c0edbec167df38d4b12e" category="inline-link-macro-rx"></block></block>
-  <block id="290ecf7cca4e38fcf54e2b2afd77bb68" category="section-title">Gerenciamento de contas NSS no Painel de suporte</block>
   <block id="0f0fe41ab5bd818721db20f8d7a2404a" category="paragraph">As contas do site de suporte da NetApp (NSS) agora são gerenciadas a partir do painel de suporte, em vez do menu Configurações. Essa alteração facilita a localização e o gerenciamento de todas as informações relacionadas ao suporte a partir de um único local.</block>
   <block id="432f05a278abb2c3428b70a3a4f99dbd" category="paragraph"><block ref="c61e9c0c9cae1a8c2affa1de687f1e0d" category="inline-link-macro-rx"></block>.</block>
   <block id="2a41aea826ac3cd59f94685c0507de72" category="inline-image-macro">Uma captura de tela da guia Gerenciamento do NSS no Painel de suporte, onde você pode adicionar contas NSS.</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">5 de maio de 2021</block>
-  <block id="d818c001b3cfbc2033e278823ec2a52a" category="section-title">Contas na linha do tempo</block>
   <block id="9b67e1ec262493b1df3ec41cc4fbd4a0" category="paragraph">A linha do tempo no Cloud Manager agora mostra ações e eventos relacionados ao gerenciamento de contas. As ações incluem coisas como associar usuários, criar espaços de trabalho e criar conetores. Verificar a linha do tempo pode ser útil se você precisar identificar quem executou uma ação específica ou se precisar identificar o status de uma ação.</block>
   <block id="2355c6490a09de53516a5be37a0fe654" category="inline-link-macro">Saiba como filtrar a linha do tempo para o serviço de alocação</block>
   <block id="46764118606f1e8527ee8d7c6a3005a3" category="paragraph"><block ref="5741665325bf1620748daff7a5523b04" category="inline-link-macro-rx"></block>.</block>
-  <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 de abril de 2021</block>
-  <block id="a751a999298090bf2562492d1817e583" category="section-title">A API chama diretamente para o Cloud Manager</block>
   <block id="c22052aa83aad03ab1340970700a2c27" category="paragraph">Se você configurou um servidor proxy, agora você pode habilitar uma opção para enviar chamadas de API diretamente para o Cloud Manager sem passar pelo proxy. Essa opção é compatível com conetores executados na AWS ou no Google Cloud.</block>
   <block id="9dede71b8a52f35ab437be508256e623" category="inline-link-macro">Saiba mais sobre esta definição</block>
   <block id="bf9a05fbf0a532f9d751fa547baf1a5d" category="paragraph"><block ref="79d5e82538c5093b89289f16504c3104" category="inline-link-macro-rx"></block>.</block>
-  <block id="d2ed2d8d9f18d3b3c06c154cfe6e0970" category="section-title">Usuários de conta de serviço</block>
   <block id="e6a71362eab01fb017f9ece8e67215b8" category="paragraph">Agora você pode criar um usuário de conta de serviço.</block>
   <block id="83510fd4a5d6f463975ffcf1a28079a3" category="paragraph">Uma conta de serviço atua como um "usuário" que pode fazer chamadas de API autorizadas para o Cloud Manager para fins de automação. Isso torna mais fácil gerenciar a automação porque você não precisa criar scripts de automação com base na conta de usuário de uma pessoa real que pode sair da empresa a qualquer momento. E se você estiver usando federação, você pode criar um token sem gerar um token de atualização a partir da nuvem.</block>
   <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">Saiba mais sobre como usar contas de serviço</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>.</block>
-  <block id="a214c30250196bf3a7430f258daa1c0a" category="section-title">Pré-visualizações privadas</block>
   <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">Agora você pode permitir que visualizações privadas em sua conta tenham acesso a novos serviços de nuvem do NetApp, já que eles são disponibilizados como uma prévia no Cloud Manager.</block>
   <block id="50ea4e8dccd315b387c3720bf218560a" category="inline-link-macro">Saiba mais sobre esta opção</block>
   <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>.</block>
-  <block id="e4be032a3be0dcfffde1cc853ce81a9f" category="section-title">Serviços de terceiros</block>
   <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">Você também pode permitir que serviços de terceiros em sua conta tenham acesso a serviços de terceiros que estão disponíveis no Cloud Manager.</block>
   <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>.</block>
-  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">8 de março de 2021</block>
   <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">Esta atualização inclui melhorias para vários recursos e serviços.</block>
-  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">Melhorias no Cloud Volumes ONTAP</block>
   <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">Esta versão do Cloud Manager inclui melhorias no gerenciamento do Cloud Volumes ONTAP.</block>
   <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">Aprimoramento disponível em todos os provedores de nuvem</block>
   <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">O Cloud Manager agora pode implantar e gerenciar o Cloud Volumes ONTAP 9,9.0.</block>
@@ -4414,12 +4297,10 @@
   <block id="933d399c3cb0f03992675d49630ab818" category="list-text">Ao implantar um par de HA do Cloud Volumes ONTAP no Google Cloud, você pode escolher VPCs compartilhados para VPC-1, VPC-2 e VPC-3. Anteriormente, apenas a VPC-0 poderia ser uma VPC compartilhada. Esta alteração é suportada com o Cloud Volumes ONTAP 9,8 e posterior.</block>
   <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link">Saiba mais sobre os requisitos de rede do Google Cloud</block>
   <block id="0007fc2f224950d7146482dd816d045a" category="paragraph"><block ref="0007fc2f224950d7146482dd816d045a" category="inline-link-rx"></block></block>
-  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">Melhorias no conetor</block>
   <block id="c620fdcd127f42421f0ebb82ca0160b3" category="list-text">O Cloud Manager agora notifica os usuários Admin por meio de um e-mail quando um conetor não está sendo executado.</block>
   <block id="f4923be5b51cdac20509609eb07ce1aa" category="paragraph">Manter seus conetores ativos e em funcionamento ajuda a garantir o melhor gerenciamento do Cloud Volumes ONTAP e de outros serviços de nuvem da NetApp.</block>
   <block id="fbbb26e1a604e4bb843aa5158a56bf75" category="list-text">O Cloud Manager agora exibe uma notificação se você precisar alterar o tipo de instância do seu conetor.</block>
   <block id="07a7156f8ae2953eb97fcedc0f846001" category="paragraph">Alterar o tipo de instância garante que você possa usar os novos recursos e recursos que você está faltando no momento.</block>
-  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">Melhorias no Cloud Sync</block>
   <block id="dd7348bf6510a0f506ab7acf9e645e94" category="list-text">O Cloud Sync agora suporta relações de sincronização entre o armazenamento ONTAP S3 e os servidores SMB:</block>
   <block id="eb6261f1bc2ebf45d278c1fde4d7cfc4" category="list-text">Armazenamento ONTAP S3 para um servidor SMB</block>
   <block id="cc619045f8d284993e15378035fbf631" category="list-text">Um servidor SMB para o armazenamento ONTAP S3</block>
@@ -4429,15 +4310,11 @@
   <block id="e0341128a5853714165581951816b70b" category="paragraph">Não recomendamos alterar a configuração por conta própria. Você deve consultar o NetApp para entender quando alterar a configuração e como alterá-la.</block>
   <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">Saiba mais sobre como definir uma configuração unificada</block>
   <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
-  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">Melhorias no Cloud Tiering</block>
   <block id="b4baef0a3a494382cb3865753733f031" category="list-text">Ao dispor em camadas no Google Cloud Storage, você pode aplicar uma regra de ciclo de vida para que os dados em camadas façam a transição da classe de storage padrão para o storage Nearline, Coldline ou Archive de baixo custo após 30 dias.</block>
   <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">A disposição em camadas na nuvem agora é exibida se você tiver clusters ONTAP no local não descobertos para que você possa adicioná-los ao Cloud Manager para habilitar a disposição em categorias ou outros serviços nesses clusters.</block>
   <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">Saiba como descobrir esses clusters adicionais</block>
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
-  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Melhorias no Azure NetApp Files</block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Agora você pode alterar dinamicamente o nível de serviço de um volume para atender às necessidades de workload e otimizar seus custos. O volume é movido para o outro pool de capacidade sem afetar o volume.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
-  <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 de fevereiro de 2021</block>
-  <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Melhorias no painel de suporte</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">Atualizamos o Painel de suporte permitindo que você adicione suas credenciais do site de suporte da NetApp, que o Registra para obter suporte. Você também pode iniciar um caso de suporte da NetApp diretamente no painel. Basta clicar no ícone Ajuda e, em seguida, *suporte*.</block>
   <block id="2cc038b51982044440dd65fe627f5133" category="sidebar">Comece a usar o NetApp BlueXP  para começar a criar, proteger e governar dados em ambientes locais e de nuvem. Após a conclusão da configuração, você pode controlar o acesso aos seus recursos usando o gerenciamento de identidade e acesso (IAM) do BlueXP  e administrar conetores, contas de provedores de nuvem e muito mais.</block>
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="sidebar">Documentação de configuração e administração do BlueXP </block>
@@ -4595,7 +4472,6 @@
   <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.</block>
   <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador pasta ou Projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="section-title">Funções de serviços de dados</block>
-  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">9 de dezembro de 2024</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c203240d7d7088c0a43d84641289267" category="summary">O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem.</block>
@@ -4727,7 +4603,6 @@
   <block id="cb6ffdd85c34b43b9e70c8dcf3c0e51c" category="paragraph">Para obter imagens para atualizações de conetores quando o conetor é instalado em uma região do Azure Government.</block>
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Se o conetor estiver em uma região comercial ou região soberana, você poderá escolher entre dois conjuntos de endpoints:</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Para obter imagens para atualizações de conetores quando o conetor é instalado em uma região comercial ou região soberana.</block>
-  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de dezembro de 2024</block>
   <block id="19cb29a89a6fbf6d87da92950ea8482c" category="doc">Conetor 3.9.48</block>
   <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">Neste momento, a versão 3.9.48 está disponível para o modo padrão e modo restrito.</block>
   <block id="a8afa3393166930c13f7426758547bca" category="list-text">A página recursos agora exibe recursos não descobertos. Recursos não descobertos são recursos de storage que a BlueXP  conhece, mas para os quais você não criou ambientes de trabalho. Por exemplo, os recursos exibidos no consultor digital que ainda não possuem ambientes de trabalho são exibidos na página recursos como recursos não descobertos.</block>
@@ -4736,7 +4611,6 @@
   <block id="c16acacf37243c052df936e1994e4488" category="paragraph">A partir desta versão, agora você pode criar um caso de suporte e associá-lo a serviços BlueXP  adicionais:</block>
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">Saiba mais sobre como criar um caso de suporte</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>.</block>
-  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 de janeiro de 2025</block>
   <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">O host pode ser de qualquer arquitetura que atenda aos seguintes requisitos de tamanho.</block>
   <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">* CPU:* 8 núcleos ou 8 vCPUs</block>
   <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">*RAM:* 32 GB</block>
@@ -4751,7 +4625,6 @@
   <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">Leia sobre as funções do IAM</block>
   <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">Duas novas funções estão associadas à categoria de aplicação: Visualizador de armazenamento e administrador de armazenamento.<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
   <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">Agora o IAM é usado no modo restrito do BlueXP </block>
-  <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">O modo restrito agora usa o BlueXP  IAM</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">O gerenciamento de identidade e acesso do BlueXP  (IAM) agora é usado no modo restrito.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de recursos e acessos que substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP  ao usar o BlueXP  no modo padrão e restrito.</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">Como o BlueXP  IAM afeta sua conta existente no modo restrito</block>
@@ -4760,7 +4633,6 @@
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">O BlueXP  IAM é suportado quando se utiliza o BlueXP  no modo padrão e no modo restrito. Se você estiver usando o BlueXP  no modo privado, use uma conta _BlueXP _ para gerenciar usuários e recursos.</block>
   <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">Ao usar o BlueXP  no modo privado, você usará uma conta _BlueXP _ para gerenciar usuários e organizar recursos em _workspaces_ isolados. Por exemplo, um grupo de usuários pode implantar e gerenciar ambientes de trabalho do Cloud Volumes ONTAP em um workspace que não seja visível para usuários que gerenciam ambientes de trabalho em um workspace diferente.</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">Se você estiver usando o BlueXP  no modo padrão ou no modo restrito, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização _BlueXP _ que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM).</block>
-  <block id="0a53964e7a92fbb432f9201620004f32" category="paragraph">O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em três categorias: Plataforma, aplicação e serviço de dados.</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir permissões amplas para administração do BlueXP , incluindo a atribuição de funções e a adição de usuários, além de poder executar todas as funções do BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.</block>
   <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados.</block>
   <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">Administrador de pasta ou projeto</block>
@@ -4796,7 +4668,6 @@
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">*Adicionar função*: Se você quiser fornecer acesso a pastas ou projetos adicionais dentro de sua organização ou conceder ao usuário mais permissões na área selecionada, selecione *Adicionar função*, especifique outra pasta ou projeto ou uma categoria de função diferente e escolha uma função.</block>
   <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">A remoção de um membro da sua organização não exclui a conta do BlueXP  ou a conta do site de suporte da NetApp. Ele simplesmente remove o membro e suas permissões associadas de sua organização.</block>
   <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">Gerenciar funções de membros</block>
-  <block id="e4195c5655315762128bb9e5d89d8f01" category="paragraph">Os membros da organização podem receber funções em cada nível e mais de um nível da hierarquia de recursos. Você pode atribuir funções aos membros relevantes para suas responsabilidades na organização do BlueXP . Por exemplo, se você tiver sete na hierarquia de recursos representando os respetivos projetos (ambientes de trabalho) dentro deles, poderá atribuir a alguém a função de administrador de armazenamento para três dos projetos e atribuir a um membro diferente o administrador de armazenamento para os projetos restantes. Outra possibilidade seria atribuir a um usuário a função de administrador de armazenamento para toda a organização. Você pode gerenciar as funções dos membros de acordo com as necessidades de sua organização.</block>
   <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">Você pode anular a atribuição de uma função de um membro, adicionar uma nova função ou ambos. Uma função define as permissões atribuídas a um membro no nível da organização, pasta ou projeto. Você pode atribuir aos membros funções relevantes para suas responsabilidades na sua organização do BlueXP .</block>
   <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">Cada membro da organização pode ter uma função atribuída em diferentes níveis da hierarquia da organização. Pode ser o mesmo papel ou um papel diferente. Por exemplo, você pode atribuir uma função de membro A para o projeto 1 e a função B para o projeto 2.</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">Exibir papéis atribuídos a um membro</block>
@@ -4804,13 +4675,11 @@
   <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja exibir a função atribuída ao membro e selecione *Exibir* na coluna *função*.</block>
   <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">Atribua uma função</block>
   <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">Saiba mais sobre as funções do IAM</block>
-  <block id="e55e8648841d578e12ecc4f02dcf8c7e" category="list-text">*Selecione uma categoria*: BlueXP  separe as funções em três categorias: Plataforma, aplicativo e serviços de dados. <block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>.</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">Selecione um *papel*: Escolha uma função que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto selecionado.</block>
   <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">*Adicionar função*: Se você quiser fornecer acesso a pastas ou projetos adicionais dentro de sua organização, selecione *Adicionar função*, especifique outra pasta ou projeto ou categoria de função e selecione uma categoria de função e uma função correspondente.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">Altere a função atribuída a um membro</block>
   <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">Você pode alterar a função atribuída para um no nível de organização, pasta ou projeto. Os membros podem ter funções diferentes em diferentes níveis da sua organização.</block>
   <block id="28e019f4a845184dbf1a98b3299252a4" category="list-text">Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja alterar a função atribuída ao membro e selecione *Exibir* na coluna *função* para exibir as funções atribuídas a esse membro.</block>
-  <block id="4dfcfc5ce7a8e9f46e4eabc1e80c4d28" category="list-text">Para alterar a função de um membro, selecione *alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de aplicativo para outra. Ser-lhe-á pedido que confirme a alteração.</block>
   <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">Um ícone que se assemelha a uma lata de lixo</block>
   <block id="9410d39af130c313b964685327e24e7a" category="list-text">Para anular a atribuição da função de um membro, selecione <block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block> ao lado da função para anular a atribuição do membro à respetiva função. Você será solicitado a confirmar a remoção.</block>
   <block id="1712db0afa6be365f3fb2fe0061eb0c7" category="section-title">Anular a atribuição de uma função de um membro</block>
@@ -4823,4 +4692,160 @@
   <block id="4c98c292f5ea23f8a2d9dd45741b9411" category="paragraph">Uma assinatura do mercado permite o carregamento dos seguintes serviços de dados da BlueXP :</block>
   <block id="dcaa51b19c3334da8a1c68178fddabbe" category="paragraph">A assinatura de serviços de dados do BlueXP  envolve a associação de mercado às credenciais de nuvem associadas a um conector. Se você seguiu o fluxo de trabalho "começar com o modo padrão", então você já deve ter um conetor. Para saber mais, consulte o <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">10 de fevereiro de 2025</block>
+  <block id="5a1f7548d3f8b383dfe658d26f915cce" category="list-text">As funções agora estão associadas a uma de duas categorias: Plataforma e serviço de dados.</block>
+  <block id="8f14bfe5ce946b9a708f23b393e578d4" category="paragraph">O modo restrito agora usa o BlueXP  IAM</block>
+  <block id="46c10ba27472d93c08d7a9eea31b47a2" category="paragraph">Exemplo de tarefa: Por exemplo, se você tiver sete na hierarquia de recursos representando os respetivos projetos (ambientes de trabalho) dentro deles, poderá atribuir a alguém a função de administrador de armazenamento para três dos projetos e atribuir a um membro diferente o administrador de armazenamento para os projetos restantes. Outra possibilidade seria atribuir a um usuário a função de administrador de armazenamento para toda a organização. Você pode gerenciar as funções dos membros de acordo com as necessidades de sua organização.</block>
+  <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em duas categorias: Plataforma e serviço de dados.</block>
+  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">Os membros da organização podem receber funções em cada nível e mais de um nível da hierarquia de recursos. Você pode atribuir funções aos membros relevantes para suas responsabilidades na organização do BlueXP .</block>
+  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">*Selecione uma categoria*: BlueXP  separe as funções em duas categorias: Plataforma e serviço de dados. <block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>.</block>
+  <block id="9c7bc4ef4922fcab1fc451f7902a3977" category="list-text">Para alterar a função de um membro, selecione *alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de serviço de dados para outra. Ser-lhe-á pedido que confirme a alteração.</block>
+  <block id="fde594c950cb66b3f18c91ad7f07890f" category="paragraph">13 de janeiro de 2025</block>
+  <block id="3aeee87708382bc4780f390a12e92956" category="paragraph">Ficha 3.9.48</block>
+  <block id="9de16a4d6c81a766f620276c40f9d7e7" category="paragraph">Gerenciamento de identidade e acesso do BlueXP </block>
+  <block id="b1ed8c3eee0e1cc20b12f90da99ddcb1" category="paragraph">Crie um caso de suporte para serviços BlueXP  adicionais</block>
+  <block id="ad9e144e9551835a00fd63c1c124e0c6" category="paragraph">16 de dezembro de 2024</block>
+  <block id="fd50ebc3f1142d7c394d2543ebc91a71" category="paragraph">Novos endpoints seguros para obter imagens de conetores</block>
+  <block id="34ba14a5f3d06589e3f02e476b5b33a5" category="paragraph">9 de dezembro de 2024</block>
+  <block id="cebfc4594b2eb6d8bffc21979b6b6b38" category="paragraph">Ficha 3.9.47</block>
+  <block id="c72445da7784db670e6d5c6bab0ecfaf" category="paragraph">26 de novembro de 2024</block>
+  <block id="22c61182c3fbfe487c19b5a7efb8555d" category="paragraph">Versão de modo privado (3,9.46)</block>
+  <block id="9a9439b3fea989a82de1f85ca361df54" category="paragraph">11 de novembro de 2024</block>
+  <block id="36691ee8d92f1ddc4e0ab31ac80fface" category="paragraph">Ficha 3.9.46</block>
+  <block id="9623bef4cfd1c771decd23dd3e4e26ce" category="paragraph">ID para projetos IAM</block>
+  <block id="75b68ca4d5f056f8bb5c2d8c14ab71e3" category="paragraph">10 de Outubro de 2024</block>
+  <block id="f5d2c2531e8fb161896e73bc1ad70662" category="paragraph">Conetor 3.9.45 patch</block>
+  <block id="3d877da6dc8695dd9a37fdce8eb3a966" category="paragraph">7 de Outubro de 2024</block>
+  <block id="087c6125fdb9c1a42cbca98d988cfb4a" category="paragraph">Ficha 3.9.45</block>
+  <block id="97e2c7cb047effa09bfda4bceb45f7e3" category="paragraph">Suporte para SELinux com hosts RHEL</block>
+  <block id="60f91190506e61c4d76451d51e853b2a" category="paragraph">30 de setembro de 2024</block>
+  <block id="0edb8ad2591093df0393919643573cfb" category="paragraph">Versão de modo privado (3,9.44)</block>
+  <block id="c8757123530ec7c8303591c9f14c2e7f" category="paragraph">9 de setembro de 2024</block>
+  <block id="a4b247714b0a316c88c8b716829b13cb" category="paragraph">Ficha 3.9.44</block>
+  <block id="77a2aa810d2940649203ad09240c9798" category="paragraph">Suporte para RHEL 9,4</block>
+  <block id="9c530dff18502171c6fabfa38c5d9452" category="paragraph">Suporte para Podman 4.9.4 com todas as versões RHEL</block>
+  <block id="04613846ca9d1b1923e2bb00af5d2bf4" category="paragraph">Permissões atualizadas da AWS e do Azure</block>
+  <block id="c93a2754f7f483d4c6f937309fed8312" category="paragraph">22 de Agosto de 2024</block>
+  <block id="9d5796c7d7f35c54581ceb60642f9db8" category="paragraph">Conetor 3.9.43 patch</block>
+  <block id="6307649b339b47245650021d85bcbcc5" category="paragraph">8 de Agosto de 2024</block>
+  <block id="98572768026b5e76a4023197bb0258f2" category="paragraph">Ficha 3.9.43</block>
+  <block id="43a257684ca1bb7d2041fa675c44dec7" category="paragraph">Requisitos atualizados de CPU e RAM</block>
+  <block id="3e1ca1f77c52e44c920ba3bc6f69621e" category="paragraph">Suporte para Podman 4.9.4 com RHEL 8,10</block>
+  <block id="d0be31adb0f7bcadc549c526f1949da5" category="paragraph">Validação do usuário para federação de identidade</block>
+  <block id="3b06db209bc32adaf1bbbbba48daabbb" category="paragraph">31 de Julho de 2024</block>
+  <block id="652e58d9ab93d24e57da886dc3c3c2fe" category="paragraph">Versão de modo privado (3,9.42)</block>
+  <block id="db601bd67ae9ac13ebd2a95fb86b681f" category="paragraph">15 de Julho de 2024</block>
+  <block id="ea2a64501a8cb55da9c712a433620da3" category="paragraph">Suporte para RHEL 8,10</block>
+  <block id="5304d2e5eb644477806cad8aa20c079a" category="paragraph">8 de Julho de 2024</block>
+  <block id="c4cbddf8bbc0569856078c6750f942c3" category="paragraph">Ficha 3.9.42</block>
+  <block id="dd3c6cafb9970e26aa699884769c61a6" category="paragraph">Requisitos atualizados do Docker Engine</block>
+  <block id="bf9a73b61ef24e03d526d20d0e5c5d96" category="paragraph">Verificação de e-mail agora necessária</block>
+  <block id="71e4188a388cf9d2dc303867f1e0d933" category="paragraph">12 de Junho de 2024</block>
+  <block id="f2e4086aed2119715d2909a0216e1f93" category="paragraph">Ficha 3.9.41</block>
+  <block id="89144b4737404fc1490312c8c4ff65dc" category="paragraph">4 de Junho de 2024</block>
+  <block id="e224c82e63c1106b3559739bebfd2324" category="paragraph">Versão de modo privado (3,9.40)</block>
+  <block id="4c925eba87cdf49efa98c4a4eb1b39ac" category="paragraph">17 de maio de 2024</block>
+  <block id="66ee71b7aa3ab0656b1959820159a499" category="paragraph">Ficha 3.9.40</block>
+  <block id="49145aaa899f4208efd1bd4862cbc717" category="paragraph">22 de abril de 2024</block>
+  <block id="185745d2a6ae82cd21b5865f4a215f41" category="paragraph">Ficha 3.9.39</block>
+  <block id="198e6bafe0326548d37dd955f1052351" category="paragraph">Permissões da AWS para criar um conetor</block>
+  <block id="b369a71413a2d45bb546511758ca166f" category="paragraph">11 de abril de 2024</block>
+  <block id="0887fd6ff9e912cef46f60f246161af1" category="paragraph">Atualização do Docker Engine</block>
+  <block id="0056ef372d846dfb115d92b5e12ef1c8" category="paragraph">26 de Março de 2024</block>
+  <block id="7dba9fc9b6bbaa9d597ef24c74f9db22" category="paragraph">Versão de modo privado (3,9.38)</block>
+  <block id="dd661beeeae00b750e119b53b648a4e2" category="paragraph">8 de Março de 2024</block>
+  <block id="c0ad5c1fe3ad2869ab13a3d8aaef3c2c" category="paragraph">Ficha 3.9.38</block>
+  <block id="2c095b0c521964bd2a03207f8042f8d6" category="paragraph">Configurações de proxy e configurações de Cloud Volumes ONTAP</block>
+  <block id="377a1ac8f7f92bf339ff46295c4109c9" category="paragraph">15 de fevereiro de 2024</block>
+  <block id="0e00e89bb53fceee03b0057fca2279fe" category="paragraph">Ficha 3.9.37</block>
+  <block id="bf52ba94a181fcc45fd4b68252b8e3eb" category="paragraph">Edite o nome</block>
+  <block id="eaf368a6664fdb727ed36e3ad72573b8" category="paragraph">11 de janeiro de 2024</block>
+  <block id="a29ae659d6eb8a8c2545f0dab3bbd09e" category="paragraph">Ficha 3.9.36</block>
+  <block id="a43941bb00355570a4a3029f2e674e9a" category="paragraph">5 de dezembro de 2023</block>
+  <block id="6ea18388ba7507dc2fc23db52eda62e0" category="paragraph">Versão de modo privado (3,9.35)</block>
+  <block id="a758b4c1f74383995d4c2e33694dcbc2" category="paragraph">8 de novembro de 2023</block>
+  <block id="7eddb9a40b53d1fb8ac8da4abb1451f0" category="paragraph">Ficha 3.9.35</block>
+  <block id="bb7c9c40b7024c59ff43e34ddce76549" category="paragraph">6 de Outubro de 2023</block>
+  <block id="a0c0302c13d3a2d5ffb8859f716233d5" category="paragraph">Ficha 3.9.34</block>
+  <block id="855e89b8da5c0b4ce9f6a2e112383cac" category="paragraph">10 de setembro de 2023</block>
+  <block id="df5ecc723ae3b6518086fca3aa1366bc" category="paragraph">Ficha 3.9.33</block>
+  <block id="4284a9ec4f65cfa9d42f9c354b1b81e8" category="paragraph">30 de Julho de 2023</block>
+  <block id="9382b1d0f36bcf98a686b50dc83232df" category="paragraph">Ficha 3.9.32</block>
+  <block id="87f126342598fc6c6a8d4dda812fcb35" category="paragraph">2 de Julho de 2023</block>
+  <block id="ce4d94660ef589c1b99d564b322965a5" category="paragraph">Ficha 3.9.31</block>
+  <block id="82081f1a0a7e8b788d5dc845018429e8" category="paragraph">4 de Junho de 2023</block>
+  <block id="e8db98f27b9dde59a98ff7b2883bf710" category="paragraph">Ficha 3.9.30</block>
+  <block id="ea3c27e74e23fbbbe486d22957cdcbfa" category="paragraph">7 de maio de 2023</block>
+  <block id="8b37535c50b26884cfb928b06c8ff5fc" category="paragraph">Ficha 3.9.29</block>
+  <block id="4d5d317330f4bc873847c0cfedaa5891" category="paragraph">4 de abril de 2023</block>
+  <block id="8f7f3ec12d5b9d30ebbb5afae5345055" category="paragraph">Modos de implantação</block>
+  <block id="999a77e2da5001492a83aac85133723f" category="paragraph">3 de abril de 2023</block>
+  <block id="4e4bc4209079e01b29bd23543443814f" category="paragraph">Ficha 3.9.28</block>
+  <block id="68c98feb558670370472cd1f20f8b5da" category="paragraph">5 de Março de 2023</block>
+  <block id="fa7e83942ba75437b3b59a0963f3bc9a" category="paragraph">Ficha 3.9.27</block>
+  <block id="84fc0f6df4babb21ec9ffd68478201bd" category="paragraph">5 de fevereiro de 2023</block>
+  <block id="db439755de0aedc826f20aeaf8b85665" category="paragraph">Ficha 3.9.26</block>
+  <block id="b8a4ac8a67155065b6ae7d58adb58950" category="paragraph">1 de janeiro de 2023</block>
+  <block id="d187e1ba69211c283711cac4bf3c4bc9" category="paragraph">Ficha 3.9.25</block>
+  <block id="1ce6a5c7fe7b574a3d820ee2c921e289" category="paragraph">4 de dezembro de 2022</block>
+  <block id="992a11d3c17828e88759860a33deda60" category="paragraph">Ficha 3.9.24</block>
+  <block id="6b3219b7aea220702f103ff6eefd7252" category="paragraph">6 de novembro de 2022</block>
+  <block id="d50c5e5d6ea814c6ff63491714b7bb22" category="paragraph">Ficha 3.9.23</block>
+  <block id="1fc03a6128d14799523b2a38e8a42116" category="paragraph">1 de novembro de 2022</block>
+  <block id="dbf7a771613eb7de6c8ed16cb3cb3c50" category="paragraph">Introdução do BlueXP </block>
+  <block id="4947d1323f3d33619cb826c9d26c149c" category="paragraph">Solicite a atualização das credenciais NSS</block>
+  <block id="11b1f9630d8a8b5d20d5607b00ed30c8" category="paragraph">18 de setembro de 2022</block>
+  <block id="7d68d71b65ec6ee24410ec90c0021e57" category="paragraph">Ficha 3.9.22</block>
+  <block id="e5e576e473f0b1175767ea74de91db00" category="paragraph">31 de Julho de 2022</block>
+  <block id="4574128c767429addbcb7a65b9df33c1" category="paragraph">Ficha 3.9.21</block>
+  <block id="d41d107da6988c13975a6a6150f98d93" category="paragraph">15 de Julho de 2022</block>
+  <block id="0183eb2afe72b4e9feb0eda4946baa36" category="paragraph">Mudanças de política</block>
+  <block id="33064b3086cd44b07c14eb285f88b8ac" category="paragraph">3 de Julho de 2022</block>
+  <block id="bfcf1e30f4d242f15838008f26ceea59" category="paragraph">Ficha 3.9.20</block>
+  <block id="88907daba481e0804ac616a3d970086c" category="paragraph">28 de Junho de 2022</block>
+  <block id="c37545fd3f7644b626cfe4bce4a36d07" category="paragraph">Faça login com credenciais NetApp</block>
+  <block id="1ff1e2ef857e13c3c37a3772e1a246c0" category="paragraph">7 de Junho de 2022</block>
+  <block id="9b0d391743416126f0f798369698b4ca" category="paragraph">Ficha 3.9.19</block>
+  <block id="f65af70cbb477f8f15c77932fe8e9481" category="paragraph">12 de maio de 2022</block>
+  <block id="6f0edeaa3d802df6363ee6e04671b297" category="paragraph">Conetor 3.9.18 patch</block>
+  <block id="751b324567f22a4abcbbd075ce956735" category="paragraph">2 de maio de 2022</block>
+  <block id="8deffb57cbc0cfa24bc20bc2d95a64f9" category="paragraph">Ficha 3.9.18</block>
+  <block id="60f48b297008bd94119c106eed7af878" category="paragraph">3 de abril de 2022</block>
+  <block id="7e68888b126d72fd224ca006119b34cf" category="paragraph">Ficha 3.9.17</block>
+  <block id="0b1d7b9b9bd8c9b024bae09b227cf9e3" category="paragraph">27 de fevereiro de 2022</block>
+  <block id="30fd205e9fa46b8bb70df5ce15ae27b6" category="paragraph">Ficha 3.9.16</block>
+  <block id="8a4c3f33bcbb78652f9bb85dff9e0ee1" category="paragraph">30 de janeiro de 2022</block>
+  <block id="e428168607a665e3c1240d1b9974c28b" category="paragraph">Ficha 3.9.15</block>
+  <block id="caa0ba355dcd0ee18edd0cb319408218" category="paragraph">2 de janeiro de 2022</block>
+  <block id="ede380fc6dd49f41ee756315ea010637" category="paragraph">Redução de pontos de extremidade para o conetor</block>
+  <block id="13977f81b81008d3792a9a1b8254b757" category="paragraph">Encriptação de disco EBS para o conetor</block>
+  <block id="580b71f5903e92234a88fd284584b0b3" category="paragraph">Endereço de e-mail para contas NSS</block>
+  <block id="0458addfe949743f8b4c288e8e71d894" category="paragraph">28 de novembro de 2021</block>
+  <block id="918c310a18db63ca6654f91e1be11bf3" category="paragraph">Atualização necessária para contas do site de suporte da NetApp</block>
+  <block id="c7b9e02750a0fc15c7294c6775bda022" category="paragraph">Altere as contas NSS para Cloud Volumes ONTAP</block>
+  <block id="2da029ef6994b27f39178baa54415a39" category="paragraph">4 de novembro de 2021</block>
+  <block id="41ce27119ae5331220c89fd0afbf19cc" category="paragraph">Certificação SOC 2 tipo 2</block>
+  <block id="d9614d86f0b053c2aca35484ddbceda9" category="paragraph">O conetor não é mais suportado como um proxy</block>
+  <block id="60521726fe42ced004774f715a02d3c2" category="paragraph">31 de Outubro de 2021</block>
+  <block id="eccbc7aa6bf8b8be290c2bc9d7ae8c26" category="paragraph">Autenticação com o serviço principal</block>
+  <block id="33c82bad32687f9d37aefa14b5369f88" category="paragraph">Melhoria de credenciais</block>
+  <block id="dc166e78e49cb35757bbd7d705139a8d" category="paragraph">2 de setembro de 2021</block>
+  <block id="6e60c0bf75add61cfbbb033a220f86e2" category="paragraph">Um novo Serviço de notificação foi adicionado</block>
+  <block id="df8565ae35633fcb91d58c0da5962e81" category="paragraph">7 de Julho de 2021</block>
+  <block id="c140966fa1061d52e8f60024bb5ffa9a" category="paragraph">Melhorias para o assistente Adicionar conetor</block>
+  <block id="fba1354b4985a6802bd4e78e48bd882b" category="paragraph">Gerenciamento de contas NSS do Support Dashboard</block>
+  <block id="3276b68888a00d2d4b9e14a15287d6f8" category="paragraph">5 de maio de 2021</block>
+  <block id="ed6bc9ed22101c19fb4da7a2343e4689" category="paragraph">Contas na linha do tempo</block>
+  <block id="adb4829dfe3cc92189095befde229dd4" category="paragraph">11 de abril de 2021</block>
+  <block id="d8638688a8d4722e9c53fc7743a1a62b" category="paragraph">API chama diretamente para o Cloud Manager</block>
+  <block id="bea7b1d47c0245907b7de0e471fb9c77" category="paragraph">Usuários de conta de serviço</block>
+  <block id="c1b25b034c07d6f894068d2dfefb0623" category="paragraph">Previews privadas</block>
+  <block id="989d6f1625a08009991494b7f5c0a4e3" category="paragraph">Serviços de terceiros</block>
+  <block id="4cc5a3d9e8c43a39a5b692c0a1db140a" category="paragraph">8 de Março de 2021</block>
+  <block id="b34212b682317ac993f17675d714bece" category="paragraph">Melhorias do Cloud Volumes ONTAP</block>
+  <block id="7d5b63b99b68b403ad22fd7794c7b3c8" category="paragraph">Melhorias no conetor</block>
+  <block id="8a7a1ba1607ed764cfb1593bfbb47787" category="paragraph">Melhorias do Cloud Sync</block>
+  <block id="def23cac8f6290f84b7067bad7da2ef9" category="paragraph">Melhorias na disposição em camadas na nuvem</block>
+  <block id="115a366c4eaee860ef62ded22f52bf83" category="paragraph">Melhorias do Azure NetApp Files</block>
+  <block id="b3861887a96662e04f060780761c856e" category="paragraph">9 de fevereiro de 2021</block>
+  <block id="39cef9e5890819aaff5b08cfc78c59a4" category="paragraph">Melhorias no painel de suporte</block>
 </blocks>

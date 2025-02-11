@@ -194,7 +194,7 @@ link:task-iam-manage-folders-projects.html#view-associated-resources-members["Ve
 
 == Gerenciar funções de membros
 
-Os membros da organização podem receber funções em cada nível e mais de um nível da hierarquia de recursos. Você pode atribuir funções aos membros relevantes para suas responsabilidades na organização do BlueXP . Por exemplo, se você tiver sete na hierarquia de recursos representando os respetivos projetos (ambientes de trabalho) dentro deles, poderá atribuir a alguém a função de administrador de armazenamento para três dos projetos e atribuir a um membro diferente o administrador de armazenamento para os projetos restantes. Outra possibilidade seria atribuir a um usuário a função de administrador de armazenamento para toda a organização. Você pode gerenciar as funções dos membros de acordo com as necessidades de sua organização.
+Os membros da organização podem receber funções em cada nível e mais de um nível da hierarquia de recursos. Você pode atribuir funções aos membros relevantes para suas responsabilidades na organização do BlueXP .
 
 Você pode anular a atribuição de uma função de um membro, adicionar uma nova função ou ambos. Uma função define as permissões atribuídas a um membro no nível da organização, pasta ou projeto. Você pode atribuir aos membros funções relevantes para suas responsabilidades na sua organização do BlueXP .
 
@@ -227,7 +227,7 @@ Forneça permissões adicionais a um membro em sua organização adicionando fun
 +
 Se você selecionar a organização ou uma pasta, o membro terá permissões para tudo o que reside dentro da organização ou pasta.
 
-** *Selecione uma categoria*: BlueXP  separe as funções em três categorias: Plataforma, aplicativo e serviços de dados. link:reference-iam-predefined-roles.html["Saiba mais sobre as funções do IAM"^].
+** *Selecione uma categoria*: BlueXP  separe as funções em duas categorias: Plataforma e serviço de dados. link:reference-iam-predefined-roles.html["Saiba mais sobre as funções do IAM"^].
 ** Selecione um *papel*: Escolha uma função que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto selecionado.
 +
 *** Se você selecionou a organização, você pode escolher entre qualquer função que não seja *Folder ou Project admin*.
@@ -252,7 +252,7 @@ Você pode alterar a função atribuída para um no nível de organização, pas
 .Passos
 . Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
 . Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja alterar a função atribuída ao membro e selecione *Exibir* na coluna *função* para exibir as funções atribuídas a esse membro.
-. Para alterar a função de um membro, selecione *alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de aplicativo para outra. Ser-lhe-á pedido que confirme a alteração.
+. Para alterar a função de um membro, selecione *alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de serviço de dados para outra. Ser-lhe-á pedido que confirme a alteração.
 +
 .. Para anular a atribuição da função de um membro, selecione image:icon-delete.png["Um ícone que se assemelha a uma lata de lixo"] ao lado da função para anular a atribuição do membro à respetiva função. Você será solicitado a confirmar a remoção.
 
