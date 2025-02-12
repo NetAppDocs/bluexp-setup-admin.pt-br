@@ -28,6 +28,15 @@ Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local 
 O software do conetor deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de porta, etc.
 
 Host dedicado:: O conetor não é suportado em um host que é compartilhado com outros aplicativos. O host deve ser um host dedicado.
++
+--
+O host pode ser de qualquer arquitetura que atenda aos seguintes requisitos de tamanho:
+
+* CPU: 8 núcleos ou 8 vCPUs
+* RAM: 32 GB
+
+
+--
 Hipervisor:: É necessário um hypervisor bare metal ou hospedado certificado para executar um sistema operacional suportado.
 [[podman-versions]]requisitos de sistema operacional e contentor:: O BlueXP  suporta o conetor com os seguintes sistemas operacionais ao usar o BlueXP  no modo padrão ou no modo restrito. Uma ferramenta de orquestração de contêineres é necessária antes de instalar o conetor.
 +
@@ -87,8 +96,6 @@ Notas:
 
 
 --
-CPU:: 8 núcleos ou 8 vCPUs
-RAM:: 32 GB
 Tipo de máquina Google Cloud:: Um tipo de instância que atende aos requisitos de CPU e RAM acima. Recomendamos n2-standard-8.
 +
 --
