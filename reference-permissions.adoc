@@ -112,7 +112,7 @@ O BlueXP  requer permissões do Azure para o conetor e para serviços individua
 | Meta | Descrição | Link 
 
 
-| Implante o conetor do BlueXP  | Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a VM do Connector no Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Configurar permissões do Azure"] 
+| Implante o conetor do BlueXP  | Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a VM do Connector no Azure. | link:task-install-connector-azure-bluexp.html#connector-custom-role["Configurar permissões do Azure"] 
 
 
 | Forneça permissões para o conetor  a| 

@@ -402,7 +402,7 @@ Ativar NTP:: Se estiver a planear utilizar a classificação BlueXP  para anali
 
 
 
-== Passo 4: Configurar permissões
+== Etapa 4: Configurar permissões de implantação do conetor
 
 Você precisa fornecer permissões do Azure ao BlueXP  usando uma das seguintes opções:
 
@@ -414,7 +414,7 @@ Siga as etapas para preparar permissões para o BlueXP .
 
 [role="tabbed-block"]
 ====
-.Função personalizada
+.Crie uma função personalizada para a implantação do conetor
 --
 Observe que você pode criar uma função personalizada do Azure usando o portal do Azure, o Azure PowerShell, a CLI do Azure ou a API REST. As etapas a seguir mostram como criar a função usando a CLI do Azure. Se você preferir usar um método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentação do Azure"^]
 

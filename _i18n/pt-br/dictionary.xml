@@ -551,7 +551,6 @@
   <block id="960aa67e3f5a73b6b0ebfceb7ad917b1" category="doc">Saiba mais sobre as credenciais e permissões do Azure</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Credenciais iniciais do Azure</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Política de implantação do Connector para Azure</block>
-  <block id="e80d828d2459b04d1fa1c01c4becbe8b" category="paragraph">Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a máquina virtual do Connector. As permissões necessárias estão listadas no <block ref="87670d19e81a277edefeb1f9eed2acf4" category="inline-link-macro-rx"></block>.</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">identidade gerenciada atribuída ao sistema</block>
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">Uma imagem conceitual que mostra o BlueXP  implantando um conetor em uma conta e assinatura do Azure. Uma identidade gerenciada atribuída ao sistema é ativada e uma função personalizada é atribuída à máquina virtual do conetor.</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
@@ -1620,11 +1619,6 @@
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">A seguinte permissão agora é necessária para a disposição em camadas do BlueXP :</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">Quando o BlueXP  inicia a VM Connector no Azure, ele atribui uma função personalizada à VM que fornece ao conetor permissões para gerenciar recursos e processos dentro dessa assinatura do Azure. O conetor usa as permissões para fazer chamadas de API para vários serviços do Azure.</block>
   <block id="94864bc66faf9702eb87f3ddb6665c2c" category="doc">Permissões do Azure para o conetor</block>
-  <block id="9fbcb95374723e2f8d5b7c17a2ece586" category="section-title">Permissões de função personalizadas</block>
-  <block id="35065a906fcb04c8b9fad94c74ed75b6" category="paragraph">A função personalizada mostrada abaixo fornece as permissões que um conetor precisa para gerenciar recursos e processos na sua rede Azure.</block>
-  <block id="770735bf1cfd4e882dd9ac93b90271d3" category="list-text">Quando você cria um conetor diretamente do BlueXP , o BlueXP  aplica automaticamente essa função personalizada ao conetor.</block>
-  <block id="83b9ca4036ac15d5479b1b6947eb5d6b" category="list-text">Se você implantar o conetor a partir do Azure Marketplace ou instalar manualmente o conetor em um host Linux, precisará configurar a função personalizada por conta própria.</block>
-  <block id="676f79631572648a20e41bdcef2aa88e" category="list-text">Em ambos os casos, você precisa garantir que a função esteja atualizada à medida que novas permissões são adicionadas em versões subsequentes. Se novas permissões forem necessárias, elas serão listadas nas notas de versão.</block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Como as permissões do Azure são usadas</block>
   <block id="8281d32bb775e644bd52916734e16bef" category="paragraph">O conetor faz as seguintes solicitações de API quando você usa a classificação BlueXP  para verificar dados do Azure NetApp Files:</block>
   <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
@@ -1929,7 +1923,6 @@
   <block id="459077578e6bfda6360917f5762cecbd" category="paragraph">O BlueXP  requer permissões do Azure para o conetor e para serviços individuais.</block>
   <block id="bd39c8654fa47d44bbd01a5d81c6197e" category="cell">Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a VM do Connector no Azure.</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Configurar permissões do Azure</block>
-  <block id="fce0a0b0a267cd8305c849b06f175b89" category="cell"><block ref="fce0a0b0a267cd8305c849b06f175b89" category="inline-link-macro-rx"></block></block>
   <block id="80487192abab0ee504d52b82c771727f" category="paragraph">Quando o BlueXP  implanta a VM Connector no Azure, ele cria uma função personalizada que fornece as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure.</block>
   <block id="652a30691608448a6f2f15a1d2bb02f5" category="inline-link-macro">Adicione mais credenciais do Azure a um conetor</block>
   <block id="19be7d05557bac8d8c8cdcd69e418046" category="paragraph">Você precisa configurar a função personalizada sozinho se você iniciar um conetor do mercado, se você instalar manualmente o conetor ou se você <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>.</block>
@@ -2866,12 +2859,10 @@
   <block id="31b69cff9901ca80c50a1d680a9b258a" category="paragraph">Abra um navegador da Web e vá para a<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> para começar a usar o conetor com o BlueXP .</block>
   <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">Para criar um conetor no Azure a partir do BlueXP , você precisa configurar sua rede, preparar permissões do Azure e, em seguida, criar o conetor.</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">Crie um conetor no Azure a partir do BlueXP </block>
-  <block id="f83b4f8c16705e26d282f2cb4ed19e78" category="paragraph">Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Uma das opções de instalação disponíveis é criar um conetor no Azure diretamente a partir do BlueXP . Para criar um conetor no Azure a partir do BlueXP , você precisa configurar sua rede, preparar permissões do Azure e, em seguida, criar o conetor.</block>
   <block id="7dfb843f052469a3cc66d13554feb0f4" category="paragraph">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="paragraph">Para gerenciar recursos em regiões públicas do Azure.</block>
   <block id="6d03c18e4e6ecfac89f686c621314d96" category="paragraph">\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn</block>
   <block id="232055d452a21264f8d549e50d695b18" category="paragraph">Para gerenciar recursos nas regiões do Azure China.</block>
-  <block id="383a4f176227e611b43fffaef447cf94" category="section-title">Passo 2: Crie uma função personalizada</block>
   <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">Crie uma função personalizada do Azure que você pode atribuir à sua conta do Azure ou a um diretor de serviço do Microsoft Entra. O BlueXP  se autentica com o Azure e usa essas permissões para criar a instância do Connector em seu nome.</block>
   <block id="fdf818accfe04434a4c9fd9ccfe6d56c" category="list-text">Copie as permissões necessárias para uma nova função personalizada no Azure e salve-as em um arquivo JSON.</block>
   <block id="3799b61c7b8f19b2e2054544594671c3" category="admonition">Esta função personalizada contém apenas as permissões necessárias para iniciar a VM Connector no Azure a partir do BlueXP . Não use esta política para outras situações. Quando o BlueXP  cria o conetor, ele aplica um novo conjunto de permissões à VM do conetor que permite que o conetor gerencie recursos do Azure.</block>
@@ -4614,8 +4605,6 @@
   <block id="8e64dfb0168516c0e7f7880ae745072a" category="doc">Conetor 3.9.49</block>
   <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">Neste momento, a versão 3.9.49 está disponível para o modo padrão e modo restrito.</block>
   <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Suporte para atribuir mais de uma função a um usuário.</block>
-  <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">As funções agora estão associadas a uma das três categorias: Plataforma, aplicativo e serviços de dados.</block>
-  <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">Leia sobre as funções do IAM</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">O gerenciamento de identidade e acesso do BlueXP  (IAM) agora é usado no modo restrito.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de recursos e acessos que substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP  ao usar o BlueXP  no modo padrão e restrito.</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">Como o BlueXP  IAM afeta sua conta existente no modo restrito</block>
@@ -4819,12 +4808,23 @@
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 núcleos ou 8 vCPUs</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
-  <block id="3a85c700de68ae35770a964c115eb7cb" category="list-title">Melhorias adicionais do IAM</block>
-  <block id="afa69926e5d0001214117331ecb2e622" category="list-text">Duas novas funções estão associadas à categoria de aplicação: Visualizador de armazenamento e administrador de armazenamento.</block>
-  <block id="df90fe85a844ffa5c11d99e37754376f" category="paragraph"><block ref="df90fe85a844ffa5c11d99e37754376f" category="inline-link-rx"></block></block>
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">O host pode ser de qualquer arquitetura que atenda aos seguintes requisitos de tamanho:</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU: 8 núcleos ou 8 vCPUs</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM: 32 GB</block>
   <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">A partir de fevereiro de 2025, essas funções de usuário são obsoletas para os modos de implantação padrão e restrito. O modo privado do BlueXP  fornece apenas uma função para associar aos usuários, que é a função de administrador do Cloud Manager que concede todas as permissões do BlueXP .</block>
   <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">O BlueXP  Identity and Access Management (IAM) permite organizar e controlar o acesso aos seus recursos do NetApp. Você pode organizar seus recursos de acordo com a hierarquia da sua organização. Por exemplo, você pode organizar recursos por localização geográfica, local ou unidade de negócios. Em seguida, você pode atribuir funções do IAM a membros em partes específicas da hierarquia, o que impede o acesso a recursos em outras partes da hierarquia.</block>
+  <block id="179864dbcf93f914bb2504e0d17f7afc" category="paragraph">Ao implantar um conetor do BlueXP , você precisa usar uma conta do Azure ou um responsável de serviço que tenha permissões para implantar a máquina virtual do Connector. As permissões necessárias estão listadas no <block ref="a3d6867da21f74b7e760876f5e090de9" category="inline-link-macro-rx"></block>.</block>
+  <block id="1f0c50a54c656fee9ca2814ffcfc5d68" category="paragraph">Se você precisa ou não criar essa função personalizada para o conetor depende de como você o implantou.</block>
+  <block id="fa922c926b9bd1ffad4f5c26c082d203" category="paragraph-title">Implantando a partir do BlueXP </block>
+  <block id="657d65defc193e1f1ae69cc71d8dde9c" category="paragraph">Quando você usa o BlueXP  para implantar a máquina virtual Connector no Azure, ele habilita um<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> na máquina virtual, cria uma função personalizada e a atribui à máquina virtual. A função fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. As permissões da função são mantidas atualizadas quando o conetor é atualizado. Você não precisa criar essa função para o conetor ou gerenciar atualizações.</block>
+  <block id="17187c9f3c6d4fe394ea1db0cb6f0b16" category="paragraph-title">Implantação manual ou a partir do marketplace do Azure</block>
+  <block id="a4d75af0169953eb40d887c4820fd6c1" category="paragraph">Ao implantar o conetor a partir do Azure Marketplace ou se você instalar manualmente o conetor em um host Linux, você precisará configurar a função personalizada e manter suas permissões com quaisquer alterações.</block>
+  <block id="ad7d7ef56b8ff6022bbad683c5492270" category="paragraph">Você precisará garantir que a função esteja atualizada à medida que novas permissões forem adicionadas nas versões subsequentes. Se novas permissões forem necessárias, elas serão listadas nas notas de versão.</block>
+  <block id="97d45041217492c3fe9ac0d49a0674a5" category="cell"><block ref="97d45041217492c3fe9ac0d49a0674a5" category="inline-link-macro-rx"></block></block>
+  <block id="2ff6b1064f88d62b00c4062b5e82d23f" category="paragraph">Você pode criar um conetor no Azure diretamente a partir do BlueXP . Para criar um conetor no Azure a partir do BlueXP , você precisa configurar sua rede, preparar uma função do Azure para usar para implantar o conetor e, em seguida, implantar o conetor.</block>
+  <block id="799e45e78d3615d4d8005dadaa50f617" category="section-title">Etapa 2: Criar uma política de implantação de conetores (função personalizada)</block>
+  <block id="7916ff578d0c4f1b6b2fb089e194887a" category="paragraph">Você precisa criar uma função personalizada que tenha permissões para implantar o conetor no Azure.</block>
+  <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">Depois que o BlueXP  implanta a máquina virtual Connector no Azure, ele ativa um<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> na máquina virtual, cria automaticamente a função que ela precisa e atribui à máquina virtual. A função criada automaticamente fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
+  <block id="be77518281f390b896a01faba311cae7" category="section-title">Etapa 4: Configurar permissões de implantação do conetor</block>
+  <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">Crie uma função personalizada para a implantação do conetor</block>
 </blocks>

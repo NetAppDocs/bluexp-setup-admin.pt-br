@@ -16,17 +16,16 @@ summary: Quando o BlueXP  inicia a VM Connector no Azure, ele atribui uma funç
 [role="lead"]
 Quando o BlueXP  inicia a VM Connector no Azure, ele atribui uma função personalizada à VM que fornece ao conetor permissões para gerenciar recursos e processos dentro dessa assinatura do Azure. O conetor usa as permissões para fazer chamadas de API para vários serviços do Azure.
 
+Se você precisa ou não criar essa função personalizada para o conetor depende de como você o implantou.
 
+.Implantando a partir do BlueXP 
+Quando você usa o BlueXP  para implantar a máquina virtual Connector no Azure, ele habilita um https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidade gerenciada atribuída ao sistema"^] na máquina virtual, cria uma função personalizada e a atribui à máquina virtual. A função fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. As permissões da função são mantidas atualizadas quando o conetor é atualizado. Você não precisa criar essa função para o conetor ou gerenciar atualizações.
 
-== Permissões de função personalizadas
+.Implantação manual ou a partir do marketplace do Azure
+Ao implantar o conetor a partir do Azure Marketplace ou se você instalar manualmente o conetor em um host Linux, você precisará configurar a função personalizada e manter suas permissões com quaisquer alterações.
 
-A função personalizada mostrada abaixo fornece as permissões que um conetor precisa para gerenciar recursos e processos na sua rede Azure.
+Você precisará garantir que a função esteja atualizada à medida que novas permissões forem adicionadas nas versões subsequentes. Se novas permissões forem necessárias, elas serão listadas nas notas de versão.
 
-Observe o seguinte:
-
-* Quando você cria um conetor diretamente do BlueXP , o BlueXP  aplica automaticamente essa função personalizada ao conetor.
-* Se você implantar o conetor a partir do Azure Marketplace ou instalar manualmente o conetor em um host Linux, precisará configurar a função personalizada por conta própria.
-* Em ambos os casos, você precisa garantir que a função esteja atualizada à medida que novas permissões são adicionadas em versões subsequentes. Se novas permissões forem necessárias, elas serão listadas nas notas de versão.
 * Para ver instruções passo a passo para utilizar estas políticas, consulte as seguintes páginas:
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurar permissões para uma implantação do Azure Marketplace"]
