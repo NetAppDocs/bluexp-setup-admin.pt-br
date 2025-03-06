@@ -1,0 +1,9 @@
+= Forçar os usuários a inserir credenciais do ONTAP para acessar o modo de exibição avançado (Gerenciador do sistema do ONTAP)
+:allow-uri-read: 
+
+
+
+
+=== Forçar os usuários a inserir credenciais do ONTAP para acessar o modo de exibição avançado (Gerenciador do sistema do ONTAP)
+
+Agora, você pode forçar os usuários a inserir suas credenciais ONTAP para acessar o Gerenciador de sistema do ONTAP. Essa configuração se aplica tanto ao Cloud Volumes ONTAP quanto ao ONTAP on-premises. Os usuários com a função de administrador da organização podem configurar essa configuração.
