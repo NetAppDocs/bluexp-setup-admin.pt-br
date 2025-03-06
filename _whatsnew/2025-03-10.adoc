@@ -1,14 +1,6 @@
-= Conetor 3.9.50
+= Atualização do conetor 3.9.49
 :allow-uri-read: 
 
-
-
-
-=== Conetor 3.9.50
-
-Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs, bem como os seguintes recursos.
-
-Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.
 
 
 

@@ -22,14 +22,6 @@ Saiba o que há de novo com os recursos de administração do BlueXP : Gerencia
 
 
 
-=== Conetor 3.9.50
-
-Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs, bem como os seguintes recursos.
-
-Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.
-
-
-
 === Atualização do conetor 3.9.49
 
 
