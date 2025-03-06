@@ -4598,7 +4598,6 @@
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">Para configurar uma assinatura existente com as credenciais selecionadas, selecione um projeto e assinatura do Google Cloud na lista suspensa e selecione *Configurar*.</block>
   <block id="8e64dfb0168516c0e7f7880ae745072a" category="doc">Conetor 3.9.49</block>
   <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">Neste momento, a versão 3.9.49 está disponível para o modo padrão e modo restrito.</block>
-  <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Suporte para atribuir mais de uma função a um usuário.</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">O gerenciamento de identidade e acesso do BlueXP  (IAM) agora é usado no modo restrito.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de recursos e acessos que substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP  ao usar o BlueXP  no modo padrão e restrito.</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">Como o BlueXP  IAM afeta sua conta existente no modo restrito</block>
@@ -4821,12 +4820,7 @@
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">Depois que o BlueXP  implanta a máquina virtual Connector no Azure, ele ativa um<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> na máquina virtual, cria automaticamente a função que ela precisa e atribui à máquina virtual. A função criada automaticamente fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">Etapa 4: Configurar permissões de implantação do conetor</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">Crie uma função personalizada para a implantação do conetor</block>
-  <block id="68ea9cebb3c452c83085356b253868c5" category="paragraph">Agora você pode desativar as atualizações automáticas para o conetor. Isso é útil se você precisar lidar manualmente com atualizações de software por motivos comerciais.</block>
-  <block id="3d4e00cd939cc5521989a751b4b1dbdb" category="paragraph">Os clientes do conetor versão 3.9.48 ou superior podem desativar atualizações automáticas.</block>
   <block id="71ae02c171873e7af0f7b72300d1da9b" category="inline-link">Gerenciar atualizações de conetores</block>
-  <block id="d8d6c527b108697862bc5a357c01048f" category="list-text"><block ref="d8d6c527b108697862bc5a357c01048f" category="inline-link-rx"></block></block>
-  <block id="56997c9a04ad826028323008fa4ae68f" category="doc">Forçar os usuários a inserir credenciais do ONTAP para acessar o modo de exibição avançado (Gerenciador do sistema do ONTAP)</block>
-  <block id="7947a3598cd43dbb491dfbcdf1970bb1" category="paragraph">Agora, você pode forçar os usuários a inserir suas credenciais ONTAP para acessar o Gerenciador de sistema do ONTAP. Essa configuração se aplica tanto ao Cloud Volumes ONTAP quanto ao ONTAP on-premises. Os usuários com a função de administrador da organização podem configurar essa configuração.</block>
   <block id="47c94941fabbd38f1b71c23663c608d6" category="section-title">Parar e iniciar o conetor VM</block>
   <block id="90754b70edd81e7b1f33fbe6f09ee188" category="list-text">Expanda a barra *Connector URIs* para visualizar os URIs de um conetor.</block>
   <block id="fbd9d54f39ed5129df98414b561236de" category="paragraph">Os usuários precisam de credenciais de administrador do ONTAP para descobrir clusters do ONTAP no BlueXP . No entanto, o acesso ao Gerenciador de sistema do ONTAP depende se você está ou não usando um conetor.</block>
@@ -4849,7 +4843,6 @@
   <block id="651a32308986dea9de3797c8e0997c14" category="paragraph">Quando você usa o BlueXP  no modo padrão ou no modo restrito, o BlueXP  atualiza automaticamente seu conetor para a versão mais recente, desde que o conetor tenha acesso de saída à Internet para obter a atualização de software. Se você precisar gerenciar manualmente quando o conetor é atualizado, você pode desativar as atualizações automáticas para o modo padrão ou modo restrito.</block>
   <block id="a30a1e13c5419a2d602474533f69dcd1" category="admonition">Ao executar o BlueXP  no modo privado, você deve sempre atualizar o conetor sozinho.</block>
   <block id="6c66e308926fc039cc9e20fe56d7abdf" category="section-title">Desativar atualizações automáticas</block>
-  <block id="a1188a88192f3f804b6f1b62d79bcd67" category="paragraph">A desativação da atualização automática para o conetor consiste em duas etapas. Primeiro, você precisa garantir que seu conetor atual esteja saudável e atualizado. Em seguida, você edita um arquivo de configuração para desativar o recurso de atualização automática.</block>
   <block id="04b99f73471ca057d71f53c3f053b60e" category="admonition">Só pode desativar as atualizações automáticas se tiver a versão 3.9.48 ou superior do conetor.</block>
   <block id="377245fa7e4be29c2941f9c3069eae57" category="section-title">Verifique a integridade do conetor</block>
   <block id="70a6926b672111815dfe273a0292468d" category="paragraph">Você deve verificar se o conetor está estável e todos os contentores em execução na VM do conetor estão em bom estado e em execução. Depois de desativar as atualizações automáticas, a VM do conetor pára de verificar se há novos serviços ou pacotes de atualização.</block>
@@ -4863,6 +4856,25 @@
   <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">Salve seu arquivo.</block>
   <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">Reinicie o serviço Service Manager 2 executando o seguinte comando:</block>
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">Atualize o conetor</block>
-  <block id="084d853adc45dcd521da8dd702d68cc0" category="section-title">15 de fevereiro de 2025</block>
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">Aplicar permissões ONTAP no BlueXP </block>
+  <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">Suporte para atribuir várias funções a um usuário do BlueXP .</block>
+  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">Suporte para atribuir uma função em vários recursos da organização BlueXP  (Org/pasta/projeto)</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">Conetor 3.9.50</block>
+  <block id="d1ff7c4409f85da727e1eb68fa6e3a26" category="paragraph">Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs, bem como os seguintes recursos.</block>
+  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.</block>
+  <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">Atualização do conetor 3.9.49</block>
+  <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">Acesso do Gerenciador do sistema ONTAP quando o BlueXP  usa um conetor</block>
+  <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">Um administrador do BlueXP  (usuários com a função de administrador da organização) pode configurar o BlueXP  para solicitar aos usuários que inseram suas credenciais ONTAP para acessar o gerenciador de sistema do ONTAP. Quando essa configuração está ativada, os usuários precisam inserir suas credenciais ONTAP sempre que não estiverem armazenadas no BlueXP .</block>
+  <block id="990a2328425e217648ea5dd2ae370ffb" category="inline-link-macro">Saiba como configurar as configurações de credenciais.</block>
+  <block id="65ac46c0fd2260c1febd841aed98d599" category="paragraph">Esta funcionalidade está disponível na versão 3.9.49 e superior do conetor. <block ref="3a5e8b35a098e08d607fb27978dec106" category="inline-link-macro-rx"></block>.</block>
+  <block id="a03c6dfbb1d64911f1090d54175ff8d3" category="section-title">Atualização do conetor 3.9.48</block>
+  <block id="1697b2b05dc5c7ad63e22e713e94ba7c" category="section-title">Capacidade de desativar a definição de atualização automática para o conetor</block>
+  <block id="91f4c340492e583f80db57f970516c1f" category="paragraph">Pode desativar a funcionalidade de atualização automática do conetor.</block>
+  <block id="459e65cb3fcf9e226149b023791951b2" category="paragraph">Quando você usa o BlueXP  no modo padrão ou no modo restrito, o BlueXP  atualiza automaticamente seu conetor para a versão mais recente, desde que o conetor tenha acesso de saída à Internet para obter a atualização de software. Se você precisar gerenciar manualmente quando o conetor é atualizado, agora você pode desativar as atualizações automáticas para o modo padrão ou modo restrito.</block>
+  <block id="01d6125faf020265bf432216c335698c" category="admonition">Esta alteração não afeta o modo privado do BlueXP , onde deve sempre atualizar o conetor sozinho.</block>
+  <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">Esta funcionalidade está disponível na versão 3.9.48 e superior do conetor.</block>
+  <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">Saiba como desativar a atualização automática para o conetor.</block>
+  <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
+  <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">A desativação da atualização automática para o conetor consiste em duas etapas. Primeiro, você precisa garantir que seu conetor atual esteja saudável e atualizado. Em seguida, você editará um arquivo de configuração para desativar o recurso de atualização automática.</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de março de 2025</block>
 </blocks>

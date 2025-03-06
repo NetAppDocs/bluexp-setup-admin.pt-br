@@ -14,7 +14,8 @@ Neste momento, a versão 3.9.49 está disponível para o modo padrão e modo res
 
 === Gerenciamento de identidade e acesso do BlueXP  (IAM)
 
-* Suporte para atribuir mais de uma função a um usuário.
+* Suporte para atribuir várias funções a um usuário do BlueXP .
+* Suporte para atribuir uma função em vários recursos da organização BlueXP  (Org/pasta/projeto)
 * As funções agora estão associadas a uma de duas categorias: Plataforma e serviço de dados.
 
 

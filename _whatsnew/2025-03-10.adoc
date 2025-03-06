@@ -1,9 +1,42 @@
-= Forçar os usuários a inserir credenciais do ONTAP para acessar o modo de exibição avançado (Gerenciador do sistema do ONTAP)
+= Conetor 3.9.50
 :allow-uri-read: 
 
 
 
 
-=== Forçar os usuários a inserir credenciais do ONTAP para acessar o modo de exibição avançado (Gerenciador do sistema do ONTAP)
+=== Conetor 3.9.50
 
-Agora, você pode forçar os usuários a inserir suas credenciais ONTAP para acessar o Gerenciador de sistema do ONTAP. Essa configuração se aplica tanto ao Cloud Volumes ONTAP quanto ao ONTAP on-premises. Os usuários com a função de administrador da organização podem configurar essa configuração.
+Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs, bem como os seguintes recursos.
+
+Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.
+
+
+
+=== Atualização do conetor 3.9.49
+
+
+
+==== Acesso do Gerenciador do sistema ONTAP quando o BlueXP  usa um conetor
+
+Um administrador do BlueXP  (usuários com a função de administrador da organização) pode configurar o BlueXP  para solicitar aos usuários que inseram suas credenciais ONTAP para acessar o gerenciador de sistema do ONTAP. Quando essa configuração está ativada, os usuários precisam inserir suas credenciais ONTAP sempre que não estiverem armazenadas no BlueXP .
+
+Esta funcionalidade está disponível na versão 3.9.49 e superior do conetor. link:task-ontap-access-connector.html["Saiba como configurar as configurações de credenciais."^].
+
+
+
+=== Atualização do conetor 3.9.48
+
+
+
+==== Capacidade de desativar a definição de atualização automática para o conetor
+
+Pode desativar a funcionalidade de atualização automática do conetor.
+
+Quando você usa o BlueXP  no modo padrão ou no modo restrito, o BlueXP  atualiza automaticamente seu conetor para a versão mais recente, desde que o conetor tenha acesso de saída à Internet para obter a atualização de software. Se você precisar gerenciar manualmente quando o conetor é atualizado, agora você pode desativar as atualizações automáticas para o modo padrão ou modo restrito.
+
+
+NOTE: Esta alteração não afeta o modo privado do BlueXP , onde deve sempre atualizar o conetor sozinho.
+
+Esta funcionalidade está disponível na versão 3.9.48 e superior do conetor.
+
+link:task-upgrade-connector.html["Saiba como desativar a atualização automática para o conetor."^]

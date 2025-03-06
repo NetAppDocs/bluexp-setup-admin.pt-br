@@ -118,7 +118,7 @@ Adicione e remova o URI (Uniform Resource Identifier) para um conetor.
 .Passos
 . Selecione a lista suspensa *Connector* no cabeçalho BlueXP .
 . Selecione *Gerenciar conetores*.
-. Selecione o menu de ação de um conetor e selecione *Editar conetor*.
+. Expanda a barra *Connector URIs* para visualizar os URIs de um conetor.
 . Expanda a barra *Connector URIs* para visualizar os URIs de um conetor.
 . Adicione e remova URIs e selecione *Apply*.
 
