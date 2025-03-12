@@ -4874,9 +4874,9 @@
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">A desativação da atualização automática para o conetor consiste em duas etapas. Primeiro, você precisa garantir que seu conetor atual esteja saudável e atualizado. Em seguida, você editará um arquivo de configuração para desativar o recurso de atualização automática.</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">Por padrão, os usuários não são solicitados a inserir suas credenciais ONTAP para acessar o Gerenciador de sistema do ONTAP. No entanto, um administrador do BlueXP  (com a função de administrador da organização) pode configurar o BlueXP  para solicitar aos usuários que inseram suas credenciais do ONTAP. Quando essa configuração está ativada, os usuários precisam inserir suas credenciais ONTAP todas as vezes.</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 de março de 2025</block>
-  <block id="7f1693b8d0ac4ce81a83df26522897a8" category="doc">Atualização do conetor 3.9.50</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.</block>
   <block id="3f45680fc0523f726aa3afe05af65c63" category="section-title">NetApp Keystone beta disponível no BlueXP </block>
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">O NetApp Keystone estará disponível em breve no BlueXP  e agora está em beta. Você pode acessar a página de inscrição para o NetApp Keystone beta na barra de navegação à esquerda do BlueXP .</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de março de 2025</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">Conetor 3.9.50</block>
 </blocks>

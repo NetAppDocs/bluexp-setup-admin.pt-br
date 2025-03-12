@@ -22,7 +22,7 @@ Saiba o que há de novo com os recursos de administração do BlueXP : Gerencia
 
 
 
-=== Atualização do conetor 3.9.50
+=== Conetor 3.9.50
 
 Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.
 

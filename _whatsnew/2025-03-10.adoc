@@ -1,10 +1,10 @@
-= Atualização do conetor 3.9.50
+= Conetor 3.9.50
 :allow-uri-read: 
 
 
 
 
-=== Atualização do conetor 3.9.50
+=== Conetor 3.9.50
 
 Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.
 
