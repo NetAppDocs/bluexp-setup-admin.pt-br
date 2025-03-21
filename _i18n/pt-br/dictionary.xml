@@ -4848,10 +4848,8 @@
   <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">Use um dos seguintes comandos para verificar o conetor. Todos os serviços devem ter um status de _Running_. Se este não for o caso, contacte o suporte da NetApp antes de desativar a atualização automática.</block>
   <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
   <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">Desative a atualização automática para o conetor</block>
-  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">Você desativa atualizações automáticas definindo o sinalizador _isUpgradeDisabled_ no arquivo _com/opt/Application/NetApp/Service-manager-2/config.json_. Por padrão, esse sinalizador é definido como false e seu conetor é atualizado automaticamente. Você pode definir este sinalizador como verdadeiro para desativar as atualizações automáticas.</block>
   <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">Para reativar a atualização automática, siga estas etapas e defina o sinalizador _isUpgradeDisabled_ como false.</block>
   <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">Certifique-se de ter verificado que o seu conetor está atualizado e saudável.</block>
-  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">Edite o arquivo _/opt/Application/NetApp/Service-manager-2/config.json_ e altere o valor da bandeira _isUpgradeDisabled_ para true como mostrado na parte inferior deste exemplo.</block>
   <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">Salve seu arquivo.</block>
   <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">Reinicie o serviço Service Manager 2 executando o seguinte comando:</block>
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">Atualize o conetor</block>
@@ -4871,7 +4869,6 @@
   <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">Esta funcionalidade está disponível na versão 3.9.48 e superior do conetor.</block>
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">Saiba como desativar a atualização automática para o conetor.</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
-  <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">A desativação da atualização automática para o conetor consiste em duas etapas. Primeiro, você precisa garantir que seu conetor atual esteja saudável e atualizado. Em seguida, você editará um arquivo de configuração para desativar o recurso de atualização automática.</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">Por padrão, os usuários não são solicitados a inserir suas credenciais ONTAP para acessar o Gerenciador de sistema do ONTAP. No entanto, um administrador do BlueXP  (com a função de administrador da organização) pode configurar o BlueXP  para solicitar aos usuários que inseram suas credenciais do ONTAP. Quando essa configuração está ativada, os usuários precisam inserir suas credenciais ONTAP todas as vezes.</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 de março de 2025</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.</block>
@@ -4879,4 +4876,9 @@
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">O NetApp Keystone estará disponível em breve no BlueXP  e agora está em beta. Você pode acessar a página de inscrição para o NetApp Keystone beta na barra de navegação à esquerda do BlueXP .</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de março de 2025</block>
   <block id="23b3b711859803a815b81aca1cc4811c" category="doc">Conetor 3.9.50</block>
+  <block id="099436dc59c324fbeaf1a2dd276b98f6" category="paragraph">A desativação da atualização automática para o conetor consiste em duas etapas. Primeiro, você precisa garantir que seu conetor esteja saudável e atualizado. Em seguida, você editará um arquivo de configuração para desativar o recurso de atualização automática.</block>
+  <block id="7b9ab409364ad80b26951a7c1a1d28d7" category="paragraph">Você desativa atualizações automáticas definindo o sinalizador _isUpgradeDisabled_ no arquivo _com/opt/Application/NetApp/Service-manager-2/config.json_. Por padrão, esse sinalizador é definido como false e seu conetor é atualizado automaticamente. Você pode definir este sinalizador como verdadeiro para desativar as atualizações automáticas. Você deve estar familiarizado com a sintaxe JSON antes de concluir esta etapa.</block>
+  <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">Crie uma cópia de backup do arquivo _/opt/Application/NetApp/Service-manager-2/config.json_ para garantir que você possa reverter suas alterações.</block>
+  <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">Edite o arquivo _/opt/Application/NetApp/Service-manager-2/config.json_ e altere o valor da flag _isUpgradeDisabled_ para true.</block>
+  <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Execute o seguinte comando e verifique se o status do conetor é exibido como _active(running)_: _</block>
 </blocks>
