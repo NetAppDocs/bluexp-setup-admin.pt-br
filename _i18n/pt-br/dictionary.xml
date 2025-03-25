@@ -4881,4 +4881,5 @@
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">Crie uma cópia de backup do arquivo _/opt/Application/NetApp/Service-manager-2/config.json_ para garantir que você possa reverter suas alterações.</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">Edite o arquivo _/opt/Application/NetApp/Service-manager-2/config.json_ e altere o valor da flag _isUpgradeDisabled_ para true.</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Execute o seguinte comando e verifique se o status do conetor é exibido como _active(running)_: _</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">Carteira digital (apenas licenças, o monitoramento de assinaturas requer um conetor)</block>
 </blocks>

@@ -36,7 +36,7 @@ Embora um conetor não seja necessário para configurar e gerenciar Azure NetApp
 * Cloud Volumes Service para Google Cloud
 * Copiar e sincronizar
 * Consultor digital
-* Carteira digital
+* Carteira digital (apenas licenças, o monitoramento de assinaturas requer um conetor)
 +
 Em quase todos os casos, você pode adicionar uma licença à carteira digital sem um conetor.
 
