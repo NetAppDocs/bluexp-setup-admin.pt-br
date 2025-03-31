@@ -193,14 +193,11 @@ Para o Cloud Volumes ONTAP, o licenciamento baseado em capacidade e o licenciame
 Como começar com o modo restrito:: Você precisa ativar o modo restrito ao criar sua conta do BlueXP .
 +
 --
-Se ainda não tiver uma conta, ser-lhe-á pedido que crie a sua conta e ative o modo restrito quando iniciar sessão no BlueXP  pela primeira vez a partir de um conetor que instalou manualmente ou que criou a partir do mercado do seu fornecedor de nuvem.
+Se você ainda não tiver uma organização, será solicitado que você crie sua organização e ative o modo restrito quando fizer login no BlueXP  pela primeira vez a partir de um conetor que você instalou manualmente ou que criou a partir do mercado do seu provedor de nuvem.
 
-Se você já tem uma conta e deseja criar outra, então você precisa usar a API do Tenancy.
-
-Observe que você não pode alterar a configuração do modo restrito depois que o BlueXP  criar a conta. Não é possível ativar o modo restrito mais tarde e não é possível desativá-lo mais tarde. Ele deve ser definido no momento da criação da conta.
+Observe que você não pode alterar a configuração do modo restrito depois que o BlueXP  criar a organização. Não é possível ativar o modo restrito mais tarde e não é possível desativá-lo mais tarde.
 
 * link:task-quick-start-restricted-mode.html["Saiba como começar com o modo restrito"].
-* link:task-create-account.html["Saiba como criar uma conta BlueXP  adicional"].
 
 
 --

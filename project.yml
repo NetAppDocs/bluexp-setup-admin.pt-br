@@ -95,6 +95,12 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: Implante o conetor
         url: "/task-install-private-mode.html"
+      - title: Contas BlueXP 
+        entries:
+        - title: Saiba mais sobre contas
+          url: "/concept-netapp-accounts.html"
+        - title: Gerencie sua conta do BlueXP 
+          url: "/task-managing-netapp-accounts.html"
       - title: O que você pode fazer a seguir
         url: "/reference-whats-next-private-mode.html"
     - title: Inicie sessão no BlueXP 
@@ -123,16 +129,12 @@ sidebar:
         url: "/task-iam-audit-actions-timeline.html"
       - title: Funções do IAM predefinidas
         url: "/reference-iam-predefined-roles.html"
-    - title: Contas BlueXP 
+    - title: Contas BlueXP  (somente no modo privado)
       entries:
       - title: Saiba mais sobre contas
         url: "/concept-netapp-accounts.html"
       - title: Gerencie sua conta do BlueXP 
         url: "/task-managing-netapp-accounts.html"
-      - title: Crie outra conta do BlueXP 
-        url: "/task-create-account.html"
-      - title: Funções de utilizador
-        url: "/reference-user-roles.html"
     - title: Federação de identidade
       url: "/concept-federation.html"
     - title: Conetores
