@@ -2634,12 +2634,10 @@
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">Para a pasta ou projeto para o qual você deseja remover o recurso, selecione <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">Confirme que deseja remover a associação selecionando *Delete*.</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">Se necessário, você pode alterar o nome da sua organização do BlueXP .</block>
-  <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">Se necessário, você pode alterar o nome da sua organização do BlueXP  a partir do gerenciamento de identidade e acesso (IAM) do BlueXP . O nome da organização aparece na parte superior do console baseado na Web do BlueXP  e nas páginas do IAM.</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">Na página *Organização*, navegue até a primeira linha da tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Editar organização*.</block>
   <block id="bd0f6a5b8c74b52e8b6d378a779a799b" category="inline-image-macro">Uma captura de tela da página Visão geral que mostra o ícone ações e a opção Editar organização.</block>
   <block id="f891b6d41b0ea20e756113027427df78" category="paragraph"><block ref="f891b6d41b0ea20e756113027427df78" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b9669849e9961b7f3f4dc1a2f6787c34" category="list-text">Introduza um novo nome de organização e selecione *Apply* (aplicar).</block>
-  <block id="814a9fcdd4787ffa2a66999138964d04" category="paragraph">O BlueXP  atualiza o nome da sua organização. Você deve ver imediatamente o nome atualizado na parte superior do console BlueXP .</block>
   <block id="23a90e2bf1cd3468b9e164d1e2b979f6" category="summary">Alterne entre organizações, projetos e conetores para acessar os recursos associados a eles.</block>
   <block id="112749b02c84e8790747c190f1f78319" category="doc">Alterne entre organizações, projetos e conetores da BlueXP </block>
   <block id="c4a2bf83344fa23edffba2df8fadd3a5" category="paragraph">Você pode pertencer a várias organizações do BlueXP  ou ter permissões para acessar vários projetos ou conetores em uma organização do BlueXP . Quando necessário, você pode alternar facilmente entre organizações, projetos e conetores para acessar os recursos associados a essa organização, projeto ou conetor.</block>
@@ -4295,7 +4293,6 @@
   <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Uma captura de tela da tabela de pastas e projetos que mostra o remetente de ID do projeto selecionando o menu de ação para um projeto.</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de novembro de 2024</block>
-  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>.</block>
   <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Para executar o conetor no local, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões de nuvem, instalar o conetor, configurar o conetor e, em seguida, fornecer as permissões que você preparou.</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">Lançamento do modo privado (3,9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">Uma nova versão do modo privado está agora disponível para transferência a partir do<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4797,4 +4794,15 @@
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10 Março 2025 (versão 1,41)</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Aceda ao<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e consulte as alterações incluídas nas versões 1,38 a 1.371.41.</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 de março de 2025</block>
+  <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>.</block>
+  <block id="1920da3586c2e2872f88b02997c971c3" category="doc">IDs de organização e projeto</block>
+  <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">Sua organização do BlueXP  tem um nome e um ID. Você pode escolher um nome para sua organização para ajudá-lo a identificá-lo na implantação do BlueXP . Você também pode precisar recuperar o ID da organização para certas integrações.</block>
+  <block id="93ef23628d0f701bc432c95a0b1c2f79" category="paragraph">Você pode renomear sua organização no BlueXP . Isso é útil se você oferecer suporte a mais do que a organização na implantação do BlueXP .</block>
+  <block id="48aadcc35505b6db48ac02a9ec0cc774" category="section-title">Obtenha o ID da organização</block>
+  <block id="f16a668fcd5a3f02beed85650fcb3882" category="paragraph">O ID da organização é usado para certas integrações com o BlueXP .</block>
+  <block id="07705e77e8129994d0ee9d1cbd506a7e" category="paragraph">Você pode exibir o ID da organização na página organizações e copiá-lo para a área de transferência para suas necessidades.</block>
+  <block id="c8ac3017c892b58622f21f78871d1208" category="list-text">Selecione a guia *Organização* para exibir a página *Organização*.</block>
+  <block id="65684205c2c17c1079112735fcb6d59c" category="list-text">Na página *Organização*, procure o ID da sua organização na barra de resumo e copie-o para a área de transferência. Você pode salvar isso para uso posterior ou copiá-lo diretamente para onde você precisa usá-lo.</block>
+  <block id="3b114d25af2bc979de4e8bf4773b092f" category="inline-image-macro">Uma captura de tela da tabela de pastas e projetos que mostra o ID do projeto depois de selecionar o menu de ação para um projeto.</block>
+  <block id="03666f94d7af611921b392c3ee39f483" category="paragraph"><block ref="03666f94d7af611921b392c3ee39f483" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

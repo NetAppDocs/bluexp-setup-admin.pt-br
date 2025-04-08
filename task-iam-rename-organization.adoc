@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-rename-organization.html 
-keywords: rename organization, change organization name, name change, rename, change name, iam, identity and access management 
+keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, project, organization, API, identity and access management 
 summary: Se necessário, você pode alterar o nome da sua organização do BlueXP . 
 ---
-= Renomeie sua organização do BlueXP 
+= IDs de organização e projeto
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,13 @@ summary: Se necessário, você pode alterar o nome da sua organização do BlueX
 
 
 [role="lead"]
-Se necessário, você pode alterar o nome da sua organização do BlueXP  a partir do gerenciamento de identidade e acesso (IAM) do BlueXP . O nome da organização aparece na parte superior do console baseado na Web do BlueXP  e nas páginas do IAM.
+Sua organização do BlueXP  tem um nome e um ID. Você pode escolher um nome para sua organização para ajudá-lo a identificá-lo na implantação do BlueXP . Você também pode precisar recuperar o ID da organização para certas integrações.
+
+
+
+== Renomeie sua organização
+
+Você pode renomear sua organização no BlueXP . Isso é útil se você oferecer suporte a mais do que a organização na implantação do BlueXP .
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -25,8 +31,36 @@ image:screenshot-iam-edit-organization.png["Uma captura de tela da página Visã
 . Introduza um novo nome de organização e selecione *Apply* (aplicar).
 
 
-.Resultado
-O BlueXP  atualiza o nome da sua organização. Você deve ver imediatamente o nome atualizado na parte superior do console BlueXP .
+
+
+== Obtenha o ID da organização
+
+O ID da organização é usado para certas integrações com o BlueXP .
+
+Você pode exibir o ID da organização na página organizações e copiá-lo para a área de transferência para suas necessidades.
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Selecione a guia *Organização* para exibir a página *Organização*.
+. Na página *Organização*, procure o ID da sua organização na barra de resumo e copie-o para a área de transferência. Você pode salvar isso para uso posterior ou copiá-lo diretamente para onde você precisa usá-lo.
+
+
+
+
+== Obtenha o ID de um projeto
+
+Se você estiver usando a API do BlueXP , talvez seja necessário obter o ID de um projeto. Por exemplo, ao criar um ambiente de trabalho Cloud Volumes ONTAP.
+
+.Passos
+. Na página *Organização*, navegue até um projeto na tabela e selecione image:icon-action.png["Um ícone que é três pontos lado a lado"]
++
+O ID do projeto é exibido.
+
+. Para copiar a ID, selecione o botão Copy (cópia).
++
+image:screenshot-iam-project-id.png["Uma captura de tela da tabela de pastas e projetos que mostra o ID do projeto depois de selecionar o menu de ação para um projeto."]
+
+
 
 .Informações relacionadas
 * link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
