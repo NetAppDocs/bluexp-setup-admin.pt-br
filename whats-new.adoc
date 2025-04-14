@@ -37,7 +37,7 @@ Neste momento, a versão 3.9.51 está disponível para o modo padrão e modo res
 * Se você tiver a função de administrador de Org ou pasta ou administrador de projeto, agora poderá associar uma assinatura do Keystone a um projeto do IAM. A associação de uma assinatura do Keystone a um projeto do IAM permite que você controle o acesso ao Keystone no BlueXP .
 
 
-link:reference-iam-predefined-roles.html["Saiba mais sobre as novas funções."^].
+link:reference-iam-predefined-roles.html["Saiba mais sobre as novas funções."^]
 
 
 
