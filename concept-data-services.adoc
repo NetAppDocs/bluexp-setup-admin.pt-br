@@ -1,0 +1,136 @@
+---
+sidebar: sidebar 
+permalink: concept-data-services.html 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
+summary: Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada SaaS do BlueXP  para quaisquer ações que ele precise tomar. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP . 
+---
+= Saiba mais sobre os serviços da BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem.
+
+Você pode optar por usar o serviço SaaS BlueXP  (modo padrão), executar o BlueXP  em seu ambiente de nuvem restrito (modo restrito) ou instalá-lo em seu próprio data center local (modo privado). Seja qual for o seu ambiente, você pode aproveitar o gerenciamento centralizado e os serviços de dados adicionais que mantêm seus recursos de storage íntegros e protegidos.
+
+O modo escolhido determina quais serviços estão disponíveis para você e quais recursos de armazenamento você pode gerenciar.
+
+Antes de começar, compare os diferentes recursos de armazenamento suportados por cada modo, juntamente com os serviços de dados disponíveis para ajudá-lo a decidir o que faz sentido para as necessidades da sua empresa.
+
+
+
+== Serviços de dados
+
+A tabela a seguir indica quais serviços de dados estão disponíveis em cada modo de implantação, se você precisa de uma assinatura e quando precisa de uma conta de suporte.
+
+[NOTE]
+====
+*Conetores* a coluna do conetor na tabela indica quando você precisa ter um conetor para o modo padrão. Você sempre precisa ter um conetor se você usar o BlueXP  no modo restrito ou no modo privado.
+
+====
+[cols="24,19,19,19,19"]
+|===
+|  | Requer conta de suporte | Requer conetor | Requer subscrição | Disponibilidade do modo 
+
+
+| Alertas | Sim | Sim | Não | Tudo 
+
+
+| Backup e recuperação | Sim | Sim | Sim | Padrão, restrito 
+
+
+| Classificação | Sim | Não | Não | Tudo 
+
+
+| Copiar e sincronizar | Não | Não | Sim |  
+
+
+| Consultor digital | Sim | Não | Não | Tudo 
+
+
+| Carteira digital | Sim | Não* | Não | Tudo 
+
+
+| Recuperação de desastres | Não | Sim | Sim | Padrão, restrito 
+
+
+| Eficiência económica | Sim | Sim | Não |  
+
+
+| Resiliência operacional | Sim | Sim* | Não |  
+
+
+| Proteção contra ransomware | Não | Sim | Não | Padrão 
+
+
+| Replicação | Não | Não* | Não | Padrão, restrito 
+
+
+| Atualizações de software | Sim | Não | Não | Tudo 
+
+
+| Gerenciamento de casos de suporte | Sim | Não | Não | Tudo 
+
+
+| Disposição em camadas | Não | Não* | Sim | Padrão 
+
+
+| Armazenamento em cache de volume | Não | Não | Não | Padrão 
+|===
+
+
+== Storage NetApp
+
+Você pode gerenciar a maioria dos seus recursos de storage do NetApp diretamente do BlueXP , permitindo visualizar todos os recursos do mesmo aplicativo.
+
+A tabela a seguir lista quais recursos de armazenamento você pode gerenciar em cada modo de implantação, bem como se você precisar de um conetor ou uma assinatura.
+
+[NOTE]
+====
+*Conetores* a coluna do conetor na tabela indica quando você precisa ter um conetor para o modo padrão. Você sempre precisa ter um conetor se você usar o BlueXP  no modo restrito ou no modo privado.
+
+====
+[cols="24,19,19,19,19"]
+|===
+|  | Requer conta de suporte | Requer conetor | Requer subscrição | Disponibilidade do modo 
+
+
+| Amazon FSX para NetApp ONTAP | Sim | 1 | Sim | Padrão 
+
+
+| Storage Amazon S3 | Sim | Não | Sim | Padrão 
+
+
+| Storage Azure Blob | Sim | Não | Não | Padrão 
+
+
+| Azure NetApp Files | Não | 2 | Sim | Padrão, restrito 
+
+
+| Cloud Volumes ONTAP | Sim | Sim | Sim | Padrão, restrito 
+
+
+| Cloud Volumes Service para Google Cloud | Não | Não | Sim? | Padrão 
+
+
+| Sistemas e-Series | Não | Sim | Não | Padrão 
+
+
+| Google Cloud Storage | Não | Sim | Sim? | Padrão 
+
+
+| Clusters ONTAP on-premises | Sim | 3 | Não | Tudo 
+
+
+| StorageGRID | Sim | Sim | Não | Padrão, restrito 
+|===
+1 algumas ações requerem um conetor ou um link de fábrica da carga de trabalho do BlueXP . https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["Saiba quais ações exigem um conetor ou link"^]
+
+2 enquanto um conetor não é necessário para configurar e gerenciar Azure NetApp Files, um conetor é necessário se você quiser usar a classificação BlueXP  para verificar dados Azure NetApp Files.
+
+3 embora um conetor não seja necessário para a descoberta direta de um cluster ONTAP no local, um conetor é necessário se você quiser aproveitar os recursos adicionais do BlueXP . https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Saiba mais sobre as opções de descoberta e gerenciamento para clusters ONTAP no local"^]

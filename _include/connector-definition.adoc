@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Um conetor é o software NetApp instalado que executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de storage. Você não precisa de um conetor para muitos dos recursos do BlueXP , mas alguns recursos não estão disponíveis se você não o fizer.

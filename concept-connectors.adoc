@@ -14,13 +14,15 @@ summary: Um conetor é o software NetApp executado em sua rede na nuvem ou na re
 
 
 [role="lead"]
-Um _Connector_ é um software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada de software como serviço (SaaS) da BlueXP  para qualquer ação que precise ser executada. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP .
+Um conetor é o software NetApp instalado que executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de storage. Você não precisa de um conetor para muitos dos recursos do BlueXP , mas alguns recursos não estão disponíveis se você não o fizer.
+
+Se você executar o BlueXP  no modo padrão, não precisará instalar um conetor para executar alguns dos serviços do BlueXP , como atualizações de software e carteira digital. No entanto, alguns dos serviços premium da BlueXP , como proteção contra ransomware ou recuperação de desastres, exigem a instalação de um conetor. Se você usar o BlueXP  no modo restrito ou privado, precisará instalar um conetor.
 
 
 
-== O que você pode fazer sem um conetor
+== O que você pode fazer sem um conetor no modo padrão
 
-Não é necessário um conetor para começar a usar o BlueXP . Você pode usar vários recursos e serviços no BlueXP  sem nunca criar um conetor.
+Alguns dos serviços mais importantes do BlueXP  estão disponíveis sem instalar um conetor se você estiver executando no modo padrão.
 
 Você pode usar os seguintes recursos e serviços do BlueXP  sem um conetor:
 
@@ -41,7 +43,7 @@ Embora um conetor não seja necessário para configurar e gerenciar Azure NetApp
 Em quase todos os casos, você pode adicionar uma licença à carteira digital sem um conetor.
 
 +
-A única vez que um conetor é necessário para adicionar uma licença à carteira digital é para licenças Cloud Volumes ONTAP _node-based_. Neste caso, é necessário um conetor porque os dados são retirados das licenças instaladas em sistemas Cloud Volumes ONTAP.
+A única vez que um conetor é necessário para adicionar uma licença à carteira digital é para licenças Cloud Volumes ONTAP _node-based_. Um conetor é necessário porque o BlueXP  precisa alcançar os dados de licença instalados em seus sistemas Cloud Volumes ONTAP.
 
 * Detecção direta de clusters ONTAP no local
 +
@@ -59,7 +61,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["S
 
 == Quando é necessário um conetor
 
-Quando você usa o BlueXP  no modo padrão, um conetor é necessário para os seguintes recursos e serviços no BlueXP :
+Ao usar o BlueXP  no modo padrão, você precisará instalar um ou mais conetores para habilitar os seguintes recursos e serviços no BlueXP :
 
 * Alertas
 * Recursos de gerenciamento do Amazon FSX for ONTAP
@@ -70,25 +72,21 @@ Quando você usa o BlueXP  no modo padrão, um conetor é necessário para os s
 * Cloud Volumes ONTAP
 * Recuperação de desastres
 * Sistemas e-Series
-* Eficiência econômica 1
+* Eficiência económica (apenas vista)
 * Buckets do Google Cloud Storage
 * Integração de clusters ONTAP no local com serviços de dados BlueXP 
-* Resiliência operacional 1
+* Resiliência operacional (somente visualização)
 * Proteção contra ransomware
 * Sistemas StorageGRID
 * Disposição em camadas
 * Armazenamento em cache de volume
 
 
-1 enquanto você pode acessar esses serviços sem um conetor, um conetor é necessário para iniciar ações a partir dos serviços.
-
-É necessário um conetor para utilizar o BlueXP  no modo restrito ou no modo privado.
-
 
 
 == Os conetores devem estar sempre operacionais
 
-Os conetores são uma parte fundamental da arquitetura de serviços do BlueXP . É da sua responsabilidade garantir que os conetores relevantes estejam sempre ativos, operacionais e acessíveis. Embora o serviço seja projetado para superar interrupções curtas da disponibilidade do conetor, você precisa tomar medidas imediatas quando necessário para solucionar falhas de infraestrutura.
+Como os conetores são uma parte fundamental da arquitetura de serviço BlueXP , você precisa garantir que seus conetores relevantes estejam sempre ativos, operacionais e acessíveis. Embora o serviço seja projetado para superar interrupções curtas da disponibilidade do conetor, você precisa tomar medidas imediatas quando necessário para solucionar falhas de infraestrutura.
 
 Esta documentação é regida pelo EULA. Se o produto não for operado de acordo com a documentação, a funcionalidade e o funcionamento do produto, bem como os seus direitos ao abrigo do EULA, podem ser afetados negativamente.
 
@@ -104,12 +102,12 @@ Se o seu sistema Cloud Volumes ONTAP tiver uma licença BYOL baseada em nós, o 
 
 == Locais suportados
 
-Um conetor é suportado nos seguintes locais:
+É possível instalar conetores em um ambiente com suporte de hyperscaler ou no local, dependendo das suas necessidades.
 
 * Amazon Web Services
 * Microsoft Azure
 +
-Um conetor no Azure deve ser implantado na mesma região do Azure que os sistemas Cloud Volumes ONTAP que gerencia, ou no https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiões do Azure"^] para os sistemas Cloud Volumes ONTAP. Esse requisito garante que uma conexão com o Azure Private Link seja usada entre o Cloud Volumes ONTAP e suas contas de armazenamento associadas. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Saiba como o Cloud Volumes ONTAP usa um link privado do Azure"^]
+Implante seu conetor na mesma região do Azure que os sistemas Cloud Volumes ONTAP que ele gerencia ou no https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiões do Azure"^] para os sistemas Cloud Volumes ONTAP. Isso garante que uma conexão do Azure Private Link seja usada entre o Cloud Volumes ONTAP e suas contas de armazenamento associadas. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Saiba como o Cloud Volumes ONTAP usa um link privado do Azure"^]
 
 * Google Cloud
 +
@@ -179,7 +177,7 @@ Para ver as permissões exatas que o conetor precisa para operações diárias, 
 
 == Atualizações do conetor
 
-Normalmente, atualizamos o software Connector a cada mês para introduzir novos recursos e fornecer melhorias de estabilidade. Embora a maioria dos serviços e recursos na plataforma BlueXP  sejam oferecidos por software baseado em SaaS, alguns recursos dependem da versão do conetor. Isso inclui gerenciamento de Cloud Volumes ONTAP, gerenciamento de cluster do ONTAP no local, configurações e ajuda.
+O NetApp normalmente atualiza o software Connector a cada mês para introduzir novos recursos e fornecer melhorias de estabilidade. Embora a maioria dos serviços e recursos na plataforma BlueXP  sejam oferecidos por software baseado em SaaS, alguns recursos dependem da versão do conetor. Isso inclui gerenciamento de Cloud Volumes ONTAP, gerenciamento de cluster do ONTAP no local, configurações e ajuda.
 
 Quando você usa o BlueXP  no modo padrão ou no modo restrito, o conetor atualiza automaticamente seu software para a versão mais recente, desde que tenha acesso de saída à Internet para obter a atualização de software. Se você estiver usando o BlueXP  no modo privado, precisará atualizar manualmente o conetor.
 
@@ -201,13 +199,13 @@ Se você precisar parar e, em seguida, iniciar a VM do conetor, você deve fazê
 
 == Vários ambientes de trabalho e conetores
 
-Um conetor pode gerenciar vários ambientes de trabalho no BlueXP . O número máximo de ambientes de trabalho que um único conetor deve gerenciar varia. Depende do tipo de ambiente de trabalho, do número de volumes, da capacidade que está sendo gerenciada e do número de usuários.
+Você pode usar o mesmo conetor para gerenciar vários ambientes de trabalho no BlueXP . O número máximo de ambientes de trabalho que um único conetor deve gerenciar varia. Depende do tipo de ambiente de trabalho, do número de volumes, da capacidade que está sendo gerenciada e do número de usuários.
 
-Se você tiver uma implantação em grande escala, trabalhe com seu representante da NetApp para dimensionar o ambiente. Se você tiver algum problema ao longo do caminho, entre em Contato conosco usando o bate-papo no produto.
+Se você tiver uma implantação em grande escala, trabalhe com seu representante da NetApp para dimensionar o ambiente.
 
-Em alguns casos, você pode precisar apenas de um conetor, mas você pode encontrar-se precisando de dois ou mais conetores.
+Outra consideração ao determinar quantos conetores você precisa é de onde reside o storage. Por exemplo, se você tiver o Cloud Volumes ONTAP no Google Cloud e no Azure, precisará de um conector para cada ambiente. Nos casos em que o storage existe totalmente no local, é possível executar o conector em qualquer hyperscaler ou no local.
 
-Aqui estão alguns exemplos:
+Aqui estão outros exemplos:
 
 * Você tem um ambiente multicloud (por exemplo, AWS e Azure) e prefere ter um conetor na AWS e outro no Azure. Cada um gerencia os sistemas Cloud Volumes ONTAP executados nesses ambientes.
 * Um provedor de serviços pode usar uma organização da BlueXP  para fornecer serviços para seus clientes, enquanto usa outra organização para fornecer recuperação de desastres para uma de suas unidades de negócios. Cada organização teria conetores separados.
