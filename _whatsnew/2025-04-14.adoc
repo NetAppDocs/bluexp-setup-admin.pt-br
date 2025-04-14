@@ -1,0 +1,22 @@
+= Conetor 3.9.51
+:allow-uri-read: 
+
+
+
+
+=== Conetor 3.9.51
+
+Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.
+
+Neste momento, a versão 3.9.51 está disponível para o modo padrão e modo restrito.
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+* Agora você precisa atribuir funções aos usuários para que eles tenham acesso à proteção contra ransomware. Você pode atribuir a um usuário uma de duas funções: Administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.
+* Agora você precisa atribuir funções aos usuários para que eles tenham acesso ao NetApp Keystone. Você pode atribuir a um usuário uma de duas funções: Administrador do Keystone ou visualizador do Keystone.
+* Agora você pode associar uma assinatura do Keystone a um projeto do IAM. A associação de uma assinatura do Keystone a um projeto do IAM permite que você controle o acesso ao Keystone no BlueXP .
+
+
+link:reference-iam-predefined-roles.html["Saiba mais sobre as novas funções."^].
