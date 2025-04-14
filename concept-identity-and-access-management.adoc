@@ -14,7 +14,9 @@ summary: 'O BlueXP  Identity and Access Management (IAM) permite controlar o ac
 
 
 [role="lead"]
-O BlueXP  Identity and Access Management (IAM) permite organizar e controlar o acesso aos seus recursos do NetApp. Você pode organizar seus recursos de acordo com a hierarquia da sua organização. Por exemplo, você pode organizar recursos por localização geográfica, local ou unidade de negócios. Em seguida, você pode atribuir funções do IAM a membros em partes específicas da hierarquia, o que impede o acesso a recursos em outras partes da hierarquia.
+O BlueXP  Identity and Access Management (IAM) é um mecanismo de controle de acesso fundamental e escalável que gerencia o acesso do usuário aos recursos do BlueXP , concedendo níveis de permissão apropriados por meio de funções de privilégio menores.
+
+Com o IAM, você pode organizar e controlar o acesso aos recursos do NetApp. Você pode organizar seus recursos de acordo com a hierarquia da sua organização. Por exemplo, você pode organizar recursos por localização geográfica, local ou unidade de negócios. Em seguida, você pode atribuir funções do IAM a membros em partes específicas da hierarquia, o que impede o acesso a recursos em outras partes da hierarquia.
 
 O BlueXP  IAM substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP . link:whats-new.html#iam["Saiba mais sobre a introdução do BlueXP  IAM"].
 
@@ -30,14 +32,18 @@ O BlueXP  IAM é suportado quando se utiliza o BlueXP  no modo padrão e no mo
 
 O BlueXP  IAM permite que você conceda acesso aos recursos da sua organização, definindo quais membros têm permissões para partes específicas da hierarquia da organização. Por exemplo, um membro pode ter permissões de administrador de projeto para um projeto que tenha cinco recursos associados.
 
-Ao usar o BlueXP  IAM, você gerenciará os seguintes componentes:
+Os usuários devem ter a função de administrador da organização ou a função de administrador de pasta ou projeto para gerenciar pastas. Os usuários com função de administrador da organização podem criar e gerenciar recursos em qualquer lugar da sua organização BlueXP . Os usuários com função de administrador de pasta e projeto só podem fazê-lo para as pastas ou projetos aos quais foram atribuídos.
+
+Link::reference-iam-predefined-roles.html[Saiba mais sobre as funções do BlueXP .]
+
+Ao usar o BlueXP  IAM, os usuários com essas funções gerenciarão os seguintes componentes:
 
 * A organização
 * Pastas
 * Projetos
 * Recursos
 * Membros
-* Funções e permissões
+* Funções
 * Conetores
 
 
@@ -57,9 +63,7 @@ image:diagram-iam-resource-hierarchy.png["Um diagrama conceitual que mostra a hi
 
 === Organização
 
-Uma _organização_ é o nível superior do sistema IAM da BlueXP  e normalmente representa a sua empresa. Sua organização consiste em pastas, projetos, membros, funções e recursos. Os conetores estão associados a projetos específicos na organização.
-
-Ao se inscrever no BlueXP , você será solicitado a criar uma nova organização.
+Uma _organização_ é o nível superior do sistema IAM da BlueXP  e normalmente representa a sua empresa. Sua organização consiste em recursos como conetores, armazenamento e assinaturas que você pode organizar em pastas e projetos. Em seguida, você pode atribuir aos membros da organização (usuário) acesso a pastas ou projetos de acordo com suas responsabilidades no gerenciamento de seus ambientes de armazenamento.
 
 
 
@@ -69,7 +73,9 @@ Uma _folder_ permite agrupar projetos relacionados e separá-los de outros proje
 
 As pastas podem conter projetos, outras pastas ou uma combinação de ambos.
 
-Você não precisa criar pastas. Eles são opcionais.
+Dependendo do tamanho da sua organização e do número de recursos de armazenamento que você tem, as pastas são uma ferramenta útil para manter os recursos do NetApp organizados. Eles também permitem que você gerencie melhor o acesso se quiser compartilhar a administração de diferentes pastas com diferentes usuários. Você pode atribuir a um usuário a função de administrador de pasta ou projeto para uma pasta específica e, em seguida, eles podem gerenciar o acesso à pasta e seus projetos, bem como criar novos projetos na pasta.
+
+Ao criar uma pasta, você pode atribuir aos usuários acesso a ela. Quando você atribui a um usuário uma função de acesso a uma pasta, esse usuário pode executar as tarefas associadas a essa função para todos os projetos dentro da respetiva pasta. Por outro lado, você pode optar por conceder acesso ao usuário em um projeto por projeto.
 
 
 
@@ -77,7 +83,11 @@ Você não precisa criar pastas. Eles são opcionais.
 
 Um _project_ representa um espaço de trabalho no BlueXP  que os membros da organização acessam a partir da tela BlueXP  para gerenciar recursos. Por exemplo, um projeto pode incluir um sistema Cloud Volumes ONTAP, um cluster ONTAP no local ou um sistema de arquivos FSX for ONTAP.
 
+Você cria vários projetos para fornecer acesso mais granular aos recursos do NetApp. Por exemplo, organizações menores podem ter um projeto para cada unidade de negócios ou localização geográfica. Organizações maiores podem querer organizar seus recursos de armazenamento em vários projetos por unidade de negócios para controlar ainda mais o acesso. Você pode atribuir aos usuários acesso a recursos por projeto ou pasta.
+
 Uma organização pode ter um ou muitos projetos. Um projeto pode residir diretamente abaixo da organização ou dentro de uma pasta.
+
+Quando seus projetos residem em uma pasta, você pode
 
 
 
@@ -162,11 +172,11 @@ Você pode atribuir a cada membro da organização uma função em diferentes n�
 
 
 
-==== Funções predefinidas
+==== Funções de acesso
 
-O BlueXP  suporta várias funções predefinidas que podem ser atribuídas aos membros da sua organização.
+O BlueXP  oferece suporte a várias funções de acesso que você pode atribuir aos membros da sua organização.
 
-link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefinidas do IAM"].
+link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso"].
 
 
 

@@ -4,7 +4,7 @@ permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
 summary: Gerencie os membros da sua organização para fornecer permissões em diferentes níveis da hierarquia de recursos da sua organização. 
 ---
-= Adicione membros do BlueXP  IAM e gerencie suas permissões
+= Adicione membros do BlueXP  e gerencie suas permissões
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -75,7 +75,7 @@ Observe o seguinte:
 +
 *** Se você selecionou uma pasta ou projeto, você pode escolher entre qualquer função que não seja *Organization admin*.
 +
-link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefinidas do IAM"].
+link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso"].
 
 
 
@@ -132,18 +132,9 @@ O segredo do cliente é visível apenas uma vez e não é armazenado em nenhum l
 
 === Veja os membros da organização
 
-Você pode exibir uma lista de todos os membros da sua organização do BlueXP . Para entender quais recursos e permissões estão disponíveis para um membro, você pode exibir as funções atribuídas ao membro em diferentes níveis da hierarquia de recursos da sua organização.
+Você pode exibir uma lista de todos os membros da sua organização do BlueXP . Para entender quais recursos e permissões estão disponíveis para um membro, você pode exibir as funções atribuídas ao membro em diferentes níveis da hierarquia de recursos da sua organização. link:task-iam-manage-roles.html["Saiba como usar funções para controlar o acesso aos recursos do BlueXP ."^]
 
-Aqui está um exemplo de um membro que é atribuído a função _pasta ou administrador do projeto_ para uma pasta, que fornece permissões para os três projetos na pasta.
-
-image:screenshot-iam-member-details.png["Uma captura de tela da página de detalhes para um membro que tem permissões para um projeto e uma pasta."]
-
-Aqui está outro exemplo que mostra um membro que tem a função de administrador da organização, que dá ao usuário acesso a todos os recursos da organização.
-
-image:screenshot-iam-member-details-org-admin.png["Uma captura de tela da página de detalhes para um membro que tem permissões de administrador da Organização."]
-
-.Sobre esta tarefa
-A página *Membros* mostra detalhes sobre dois tipos de membros: Contas de usuário e contas de serviço.
+TYou pode visualizar contas de usuário e contas de serviço na página *Membros*.
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -189,75 +180,6 @@ O segredo do cliente é visível apenas uma vez e não é armazenado em nenhum l
 
 .Informações relacionadas
 link:task-iam-manage-folders-projects.html#view-associated-resources-members["Veja todos os membros associados a uma pasta ou projeto específico"].
-
-
-
-== Gerenciar funções de membros
-
-Os membros da organização podem receber funções em cada nível e mais de um nível da hierarquia de recursos. Você pode atribuir funções aos membros relevantes para suas responsabilidades na organização do BlueXP .
-
-Você pode anular a atribuição de uma função de um membro, adicionar uma nova função ou ambos. Uma função define as permissões atribuídas a um membro no nível da organização, pasta ou projeto. Você pode atribuir aos membros funções relevantes para suas responsabilidades na sua organização do BlueXP .
-
-Cada membro da organização pode ter uma função atribuída em diferentes níveis da hierarquia da organização. Pode ser o mesmo papel ou um papel diferente. Por exemplo, você pode atribuir uma função de membro A para o projeto 1 e a função B para o projeto 2.
-
-
-TIP: Um membro que tenha a função de administrador da organização não pode ser atribuído a nenhuma função adicional. Eles já têm permissões em toda a organização.
-
-
-
-=== Exibir papéis atribuídos a um membro
-
-Você pode exibir um membro para verificar quais funções ele está atribuído no momento.
-
-. Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
-. Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja exibir a função atribuída ao membro e selecione *Exibir* na coluna *função*.
-
-
-
-
-=== Atribua uma função
-
-Forneça permissões adicionais a um membro em sua organização adicionando funções que se aplicam ao nível da organização, pasta ou projeto.
-
-.Passos
-. Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Adicionar uma função*.
-. Para adicionar uma função, execute as etapas na caixa de diálogo:
-+
-** *Selecione uma organização, pasta ou projeto*: Escolha o nível da hierarquia de recursos para o qual o membro deve ter permissões.
-+
-Se você selecionar a organização ou uma pasta, o membro terá permissões para tudo o que reside dentro da organização ou pasta.
-
-** *Selecione uma categoria*: BlueXP  separe as funções em duas categorias: Plataforma e serviço de dados. link:reference-iam-predefined-roles.html["Saiba mais sobre as funções do IAM"^].
-** Selecione um *papel*: Escolha uma função que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto selecionado.
-+
-*** Se você selecionou a organização, você pode escolher entre qualquer função que não seja *Folder ou Project admin*.
-*** Se você selecionou uma pasta ou projeto, você pode escolher entre qualquer função que não seja *Organization admin*.
-+
-link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefinidas do IAM"].
-
-
-
-** *Adicionar função*: Se você quiser fornecer acesso a pastas ou projetos adicionais dentro de sua organização, selecione *Adicionar função*, especifique outra pasta ou projeto ou categoria de função e selecione uma categoria de função e uma função correspondente.
-
-
-. Selecione *Adicionar novas funções*.
-
-
-
-
-=== Altere a função atribuída a um membro
-
-Você pode alterar a função atribuída para um no nível de organização, pasta ou projeto. Os membros podem ter funções diferentes em diferentes níveis da sua organização.
-
-.Passos
-. Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
-. Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja alterar a função atribuída ao membro e selecione *Exibir* na coluna *função* para exibir as funções atribuídas a esse membro.
-. Para alterar a função de um membro, selecione *alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de serviço de dados para outra. Ser-lhe-á pedido que confirme a alteração.
-+
-.. Para anular a atribuição da função de um membro, selecione image:icon-delete.png["Um ícone que se assemelha a uma lata de lixo"] ao lado da função para anular a atribuição do membro à respetiva função. Você será solicitado a confirmar a remoção.
-
-
-
 
 
 
