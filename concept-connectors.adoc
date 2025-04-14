@@ -22,7 +22,7 @@ Se você executar o BlueXP  no modo padrão, não precisará instalar um coneto
 
 == O que você pode fazer sem um conetor no modo padrão
 
-Alguns dos serviços mais importantes do BlueXP  estão disponíveis sem instalar um conetor se você estiver executando no modo padrão.
+Você pode começar a usar o BlueXP  para gerenciar centralmente seus recursos de storage sem instalar um conetor se estiver executando no modo padrão.
 
 Você pode usar os seguintes recursos e serviços do BlueXP  sem um conetor:
 
