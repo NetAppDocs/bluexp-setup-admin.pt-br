@@ -4772,7 +4772,6 @@
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">O BlueXP  suporta várias funções predefinidas que podem ser atribuídas aos membros da sua organização.</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Saiba mais sobre as funções predefinidas do IAM</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
-  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">Funções e permissões do IAM predefinidas do BlueXP</block>
   <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em duas categorias: Plataforma e serviço de dados.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Funções da plataforma</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir permissões amplas para administração do BlueXP , incluindo a atribuição de funções e a adição de usuários, além de poder executar todas as funções do BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.</block>
@@ -4781,7 +4780,6 @@
   <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">A função de administrador de pasta ou projeto não pode criar conetores.</block>
   <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Tabela de comparação de funções da plataforma</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Exemplo para funções de organização em BlueXP  para uma grande organização multinacional</block>
-  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">As funções de serviços de dados fornecem aos usuários permissão para usar os serviços de dados dentro da organização, projeto ou pasta a que eles têm acesso.</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gerenciar permissões a partir da página Membros</block>
   <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
@@ -4819,7 +4817,72 @@
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">Você pode instalar um conetor em uma de suas máquinas locais. Para executar o conetor no local, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões de nuvem, instalar o conetor, configurar o conetor e, em seguida, fornecer as permissões que você preparou.</block>
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">Documentos de configuração e administração do BlueXP</block>
   <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">Adicione membros e gerencie suas permissões</block>
-  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">Funções do IAM predefinidas</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Saiba mais sobre as funções de acesso.</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
+  <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">Funções de acesso do BlueXP</block>
+  <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
+  <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Funções da aplicação</block>
+  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">Abaixo está uma lista das funções na categoria aplicação.</block>
+  <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Funções do Keystone</block>
+  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">Você pode usar as funções a seguir para atribuir acesso aos usuários ao Keystone.</block>
+  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">O acesso ao Keystone por meio do BlueXP  está atualmente em fase beta. Se você quiser participar da versão beta do Keystone, entre em Contato com seu representante da NetApp.</block>
+  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Admin do Keystone*: Gerencie a assinatura do Keystone e tome medidas em alertas, relatórios e assinaturas.</block>
+  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">*Keystone Viewer*: Visualize a assinatura do Keystone, além de exibir relatórios, alertas e ativos.</block>
+  <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">A tabela a seguir indica as ações que cada função do Keystone pode executar.</block>
+  <block id="4420e7353184ac575b539cdce1b991db" category="cell">Recurso e ação</block>
+  <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Administrador do Keystone</block>
+  <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Visualizador Keystone</block>
+  <block id="3d96431c652abba07d810be9a4a3b187" category="cell">Veja as seguintes guias: Assinatura, ativos, Monitor e Administração</block>
+  <block id="04b2aaee865f1746c975de785d02e95f" category="cell">*Página de assinatura Keystone*:</block>
+  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">Pode ver subscrições</block>
+  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">Pode alterar ou renovar subscrições</block>
+  <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">*Keystone Assets page*:</block>
+  <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">Ver ativos</block>
+  <block id="bb295074f705be0407b1b743a2f6e967" category="cell">Gerenciar ativos</block>
+  <block id="f00f11f1b7ecc36f276ac4d83ea8ba95" category="cell">*Página de alertas do Keystone*:</block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="cell">Ver alertas</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="cell">Gerenciar alertas</block>
+  <block id="683e7b4cc33c1c5bb12cefaa8e17c9da" category="cell">Crie alertas para si mesmo</block>
+  <block id="203311c515509be12349a4f1fc044cd7" category="cell">*Carteira digital*:</block>
+  <block id="d7609c91ac60bd14d6f61465cd81ab5a" category="cell">Pode ver a carteira digital</block>
+  <block id="605bf3e1f808ef9bc9fe99c9bf4cdf1f" category="cell">*Página de relatórios do Keystone*:</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">Transferir relatórios</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="cell">Gerenciar relatórios</block>
+  <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">Crie relatórios para si mesmo</block>
+  <block id="3b8988881170da948296006bcb3af098" category="cell">*Pedidos de serviço*:</block>
+  <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">Criar solicitações de serviço</block>
+  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">Pode ver a solicitação de serviço criada por qualquer usuário dentro da Organização</block>
+  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">Abaixo está a lista de funções na categoria Serviços de dados.</block>
+  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">A classificação não tem uma função de administrador.</block>
+  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">Você pode usar as funções a seguir para atribuir aos usuários acesso à proteção contra ransomware.</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">* Administrador de proteção contra ransomware*: Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios.</block>
+  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">* Visualizador de proteção contra ransomware*: Visualize dados de carga de trabalho, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios.</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">Administração de proteção contra ransomware</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">Visualizador de proteção contra ransomware</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">Visualize o painel e todas as guias</block>
+  <block id="78c7efbfa07116553a52f59800129dde" category="cell">Inicie o teste gratuito</block>
+  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">Inicie a descoberta de cargas de trabalho</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*Na guia proteger*:</block>
+  <block id="0ceaa792ae3f25d0f79dcd1125e9284e" category="cell">Adicionar, modificar ou eliminar políticas</block>
+  <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">Proteja workloads</block>
+  <block id="21a74bcaa4f6aef211c1ce1e13ed98fe" category="cell">Identificar dados confidenciais</block>
+  <block id="c102bfc829ed11fa589522aa305984a3" category="cell">Editar a proteção da carga de trabalho</block>
+  <block id="d1e541a95d5060702dc6153a411c6c35" category="cell">Ver detalhes do workload</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">Transferir dados</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*Na guia Alertas*:</block>
+  <block id="9f64c529078a13eebc43993d1ac578d4" category="cell">Veja os detalhes do alerta</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">Editar o status do incidente</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">Ver detalhes do incidente</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">Obtenha a lista completa dos arquivos afetados</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">Transferir dados de alertas</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*Na guia recuperar*:</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">Transferir ficheiros afetados</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">Restaure o workload</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">Transferir dados de recuperação</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*Na guia Configurações*:</block>
+  <block id="988c84a947938e98e39deda3665fae89" category="cell">Adicionar ou modificar destinos de cópia de segurança</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">Adicionar ou modificar alvos SIEM</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Na guia relatórios*:</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">O SnapCenter não tem uma função de visualizador.</block>
 </blocks>
