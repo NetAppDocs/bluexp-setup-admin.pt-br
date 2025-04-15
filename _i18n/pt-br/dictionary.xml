@@ -4820,4 +4820,6 @@
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">Documentos de configuração e administração do BlueXP</block>
   <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">Adicione membros e gerencie suas permissões</block>
   <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">Funções do IAM predefinidas</block>
+  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Saiba mais sobre as funções de acesso.</block>
+  <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
 </blocks>

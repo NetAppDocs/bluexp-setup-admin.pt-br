@@ -34,6 +34,10 @@ Neste momento, a versão 3.9.51 está disponível para o modo padrão e modo res
 
 * Os usuários sem o administrador Org ou pasta ou administrador de projeto devem receber uma função de proteção contra ransomware para ter acesso à proteção contra ransomware. Você pode atribuir a um usuário uma de duas funções: Administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.
 * Os usuários sem o administrador da organização ou pasta ou administrador do projeto devem ter uma função do Keystone para ter acesso ao Keystone. Você pode atribuir a um usuário uma de duas funções: Administrador do Keystone ou visualizador do Keystone.
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso."^]
+
 * Se você tiver a função de administrador de Org ou pasta ou administrador de projeto, agora poderá associar uma assinatura do Keystone a um projeto do IAM. A associação de uma assinatura do Keystone a um projeto do IAM permite que você controle o acesso ao Keystone no BlueXP .
 
 
