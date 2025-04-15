@@ -45,10 +45,10 @@ link:concept-identity-and-access-management.html#associate-resource-folder["Saib
 
 ** *Access*: Visualize os membros que terão acesso à pasta ou projeto com base nas permissões existentes já definidas na hierarquia de recursos.
 +
-Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função de acesso define as permissões que os membros têm para a pasta ou projeto.
+Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.
 
 +
-link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso"].
+link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefinidas do IAM"].
 
 
 
@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["Uma captura de tela da página Editar pr
 
 Modifique o acesso de membro a uma pasta ou projeto para garantir que os membros direitos tenham acesso aos recursos associados à pasta ou projeto.
 
-Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar sua função ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar a função do membro lá. Alternativamente, você pode link:task-iam-manage-roles.html#manage-permissions["Gerenciar funções na página Membros"].
+Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode link:task-iam-manage-members-permissions.html#manage-permissions["Gerenciar permissões a partir da página Membros"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Saiba mais sobre a herança de funções"].
 

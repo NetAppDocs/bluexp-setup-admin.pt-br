@@ -14,7 +14,7 @@ summary: Para criar um conetor na AWS a partir do BlueXP , você precisa config
 
 
 [role="lead"]
-Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Uma das opções de instalação disponíveis é criar um conetor na AWS diretamente do BlueXP . Para criar um conetor na AWS a partir do BlueXP , você precisa configurar sua rede, preparar permissões da AWS e criar o conetor.
+Você pode criar um conetor na AWS diretamente a partir do BlueXP . Para criar um conetor na AWS a partir do BlueXP , você precisa configurar sua rede, preparar permissões da AWS e criar o conetor.
 
 .Antes de começar
 * Você deve ter um link:concept-connectors.html["Compreensão dos conetores"].

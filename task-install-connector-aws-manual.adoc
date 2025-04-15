@@ -14,7 +14,7 @@ summary: Para instalar manualmente o conetor em seu próprio host Linux, você p
 
 
 [role="lead"]
-Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . Uma das opções de instalação disponíveis é instalar manualmente o software Connector em um host Linux executado na AWS. Para instalar manualmente o conetor em seu próprio host Linux, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões da AWS, instalar o conetor e fornecer as permissões que você preparou.
+Você pode instalar manualmente um conetor em um host Linux em execução na AWS. Para instalar manualmente o conetor em seu próprio host Linux, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões da AWS, instalar o conetor e fornecer as permissões que você preparou.
 
 .Antes de começar
 * Você deve ter um link:concept-connectors.html["Compreensão dos conetores"].

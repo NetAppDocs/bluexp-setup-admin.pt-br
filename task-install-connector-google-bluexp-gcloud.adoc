@@ -14,7 +14,7 @@ summary: Para criar um conetor no Google Cloud a partir do BlueXP  ou usando o 
 
 
 [role="lead"]
-Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local que permite usar todos os recursos e serviços do BlueXP . As opções de instalação disponíveis incluem a criação do conetor na AWS diretamente do BlueXP  ou usando o gcloud. Para criar um conetor no Google Cloud a partir do BlueXP  ou usando o gcloud, você precisa configurar sua rede, preparar permissões do Google Cloud, ativar as APIs do Google Cloud e, em seguida, criar o conetor.
+Você pode criar um conetor no Google Cloud a partir do BlueXP  ou usando o Google Cloud. Você precisa configurar sua rede, preparar permissões do Google Cloud, ativar as APIs do Google Cloud e, em seguida, criar o conetor.
 
 .Antes de começar
 * Você deve ter um link:concept-connectors.html["Compreensão dos conetores"].

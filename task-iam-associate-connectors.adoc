@@ -13,9 +13,7 @@ summary: Se os membros da sua organização precisarem usar um conetor em outro 
 :imagesdir: ./media/
 
 
-[role="lead"]
-Um conetor é necessário para gerenciar vários tipos de ambientes de trabalho da BlueXP . Quando um _administrador da organização_ cria um conetor, o BlueXP  associa automaticamente esse conetor à organização e ao projeto atualmente selecionado. O _Organization admin_ tem acesso automaticamente a esse conetor de qualquer lugar da organização. Outros membros da sua organização só podem acessar esse conetor do projeto no qual ele foi criado, a menos que você associe esse conetor a outros projetos do gerenciamento de identidade e acesso (IAM) do BlueXP .
-
+ \When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. Other members in your organization can only access that Connector from the project in which it was created, unless you associate that Connector with other projects from BlueXP identity and access management (IAM).
 .Antes de começar
 Você deve entender como a associação de conetores funciona. link:concept-identity-and-access-management.html#associate-connectors["Saiba mais sobre como usar conetores com o BlueXP  IAM"].
 

@@ -12,7 +12,7 @@
 
 Um administrador do BlueXP  (usuários com a função de administrador da organização) pode configurar o BlueXP  para solicitar aos usuários que inseram suas credenciais ONTAP para acessar o gerenciador de sistema do ONTAP. Quando essa configuração está ativada, os usuários precisam inserir suas credenciais ONTAP sempre que não estiverem armazenadas no BlueXP .
 
-Esta funcionalidade está disponível na versão 3.9.49 e superior do conetor. link:task-ontap-access-connector.html["Saiba como configurar as configurações de credenciais."^].
+Esta funcionalidade está disponível na versão 3.9.49 e superior do conetor. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Saiba como configurar as configurações de credenciais."^].
 
 
 
@@ -31,4 +31,4 @@ NOTE: Esta alteração não afeta o modo privado do BlueXP , onde deve sempre a
 
 Esta funcionalidade está disponível na versão 3.9.48 e superior do conetor.
 
-link:task-upgrade-connector.html["Saiba como desativar a atualização automática para o conetor."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Saiba como desativar a atualização automática para o conetor."^]
