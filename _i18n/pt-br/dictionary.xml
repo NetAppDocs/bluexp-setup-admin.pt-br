@@ -4740,7 +4740,6 @@
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">Neste momento, a versão 3.9.51 está disponível para o modo padrão e modo restrito.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gerenciamento de identidade e acesso do BlueXP  (IAM)</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 de abril de 2025</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Os usuários sem o administrador Org ou pasta ou administrador de projeto devem receber uma função de proteção contra ransomware para ter acesso à proteção contra ransomware. Você pode atribuir a um usuário uma de duas funções: Administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Os usuários sem o administrador da organização ou pasta ou administrador do projeto devem ter uma função do Keystone para ter acesso ao Keystone. Você pode atribuir a um usuário uma de duas funções: Administrador do Keystone ou visualizador do Keystone.</block>
   <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Se você tiver a função de administrador de Org ou pasta ou administrador de projeto, agora poderá associar uma assinatura do Keystone a um projeto do IAM. A associação de uma assinatura do Keystone a um projeto do IAM permite que você controle o acesso ao Keystone no BlueXP .</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 de março de 2025</block>
@@ -4885,4 +4884,5 @@
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">Adicionar ou modificar alvos SIEM</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Na guia relatórios*:</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">O SnapCenter não tem uma função de visualizador.</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Os usuários sem o administrador Org ou pasta ou administrador de projeto devem ter uma função de proteção contra ransomware para ter acesso à proteção contra ransomware. Você pode atribuir a um usuário uma de duas funções: Administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.</block>
 </blocks>
