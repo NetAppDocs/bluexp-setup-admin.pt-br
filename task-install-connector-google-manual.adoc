@@ -332,8 +332,6 @@ https://\*.api.BlueXP .NetApp.com https://api.BlueXP .NetApp.com https://*.clo
  a| 
 Para fornecer recursos e serviços SaaS no BlueXP .
 
-Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.
-
 
 
  a| 

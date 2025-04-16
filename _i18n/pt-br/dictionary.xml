@@ -167,7 +167,6 @@
   <block id="e3f6d97d14c949f7b5db051894f11c57" category="paragraph">| https://support.NetApp.com https://mysupport.NetApp.com | para obter informações de licenciamento e enviar mensagens AutoSupport para o suporte do NetApp.</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">https://api.BlueXP .NetApp.com</block>
   <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| para fornecer recursos e serviços SaaS dentro do BlueXP .</block>
-  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="list-text">Terminais contactados durante a instalação manual</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="list-text">Quando você instala manualmente o conetor em seu próprio host Linux, o instalador do conetor requer acesso aos seguintes URLs durante o processo de instalação:</block>
@@ -4885,4 +4884,12 @@
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Na guia relatórios*:</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">O SnapCenter não tem uma função de visualizador.</block>
   <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Os usuários sem o administrador Org ou pasta ou administrador de projeto devem ter uma função de proteção contra ransomware para ter acesso à proteção contra ransomware. Você pode atribuir a um usuário uma de duas funções: Administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.</block>
+  <block id="92b9ccffb9a7aebd350ecfd6d0c224c9" category="section-title">Lançamento do modo privado (3,9.48)</block>
+  <block id="cbf6e80d5966345d963bedae0e933eb6" category="paragraph">A versão 3.9.48 inclui atualizações para os seguintes componentes e serviços do BlueXP .</block>
+  <block id="b3a482492c0cc68db9c85faa2f89ba61" category="cell">3.9.48</block>
+  <block id="6a8544d6477cbe97e8f2b597011b60cc" category="cell">Aceda ao<block ref="682cda11c1c81d1c1e6c42597faddff3" category="inline-link-rx"></block> e consulte as alterações incluídas nas versões 3,9.48.</block>
+  <block id="2fd37378e1e9677d0e420385f414d8f5" category="cell">5 de fevereiro de 2025</block>
+  <block id="ea4e82ea5af0ff62421ac55574c06dca" category="cell">Aceda ao<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e consulte as alterações incluídas no lançamento de Fevereiro de 2025.</block>
+  <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 de janeiro de 2025 (versão 1,39)</block>
+  <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Aceda ao<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e consulte as alterações incluídas na versão 1,39.</block>
 </blocks>

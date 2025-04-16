@@ -48,8 +48,6 @@ Observe que os endpoints listados abaixo são todas as entradas CNAME.
 
 | para fornecer recursos e serviços SaaS dentro do BlueXP .
 
-Observe que o conetor está entrando em Contato atualmente com "cloudmanager.cloud.NetApp.com", mas começará a entrar em Contato com "API.BlueXP .NetApp.com" em uma próxima versão.
-
 A| escolha entre dois conjuntos de endpoints:
 
 * Opção 1 (recomendado) 1
