@@ -4267,14 +4267,9 @@
   <block id="1aba7245086f9fd7cc09aa3efc3bf6c3" category="paragraph">Quando instala manualmente o conetor, o instalador deixa de entrar em contacto com a https://support.NetApp.com.</block>
   <block id="2b595e935d43f3d843783e855ec947b7" category="paragraph">O instalador ainda entra em Contato com https://mysupport.NetApp.com.</block>
   <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">A página conetores lista apenas os conetores atualmente disponíveis. Ele não exibe mais conetores que você removeu.</block>
-  <block id="36dc01ca540c36d8a66ee2b32bacb1b6" category="cell">Administrador de pasta ou Projeto</block>
-  <block id="10c51a836e78385fbf6ad623ad658ee0" category="cell">Crie conetores</block>
   <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">Criar, modificar ou excluir ambientes de trabalho (adicionar ou descobrir novos recursos usando a tela BlueXP )</block>
   <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">Atribua funções e adicione usuários</block>
   <block id="c89eaf90b9f27cb0ed6b4d2e288716ba" category="list-text">A XYZ Corporation, uma empresa multinacional, tem como objetivo separar o acesso a recursos de storage de dados com base em regiões geográficas: América do Norte, Europa e Ásia-Pacífico. Eles querem que cada região tenha controle exclusivo sobre seus recursos, mantendo a supervisão centralizada.</block>
-  <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.</block>
-  <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador pasta ou Projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.</block>
-  <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="section-title">Funções de serviços de dados</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c203240d7d7088c0a43d84641289267" category="summary">O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem.</block>
@@ -4425,12 +4420,7 @@
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">O BlueXP  IAM é suportado quando se utiliza o BlueXP  no modo padrão e no modo restrito. Se você estiver usando o BlueXP  no modo privado, use uma conta _BlueXP _ para gerenciar usuários e recursos.</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">Se você estiver usando o BlueXP  no modo padrão ou no modo restrito, você não terá uma conta do BlueXP . Em vez disso, você terá uma organização _BlueXP _ que você gerencia usando o gerenciamento de identidade e acesso do BlueXP  (IAM).</block>
   <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">Administrador de pasta ou projeto</block>
-  <block id="7a6a3038937ff2733afeba79c5939221" category="cell">Crie projetos/pastas, incluindo a exclusão</block>
-  <block id="9190c2227acc58d22f06cf5bd5f7f517" category="cell">Renomeie projetos/pastas existentes</block>
   <block id="f713962a8902c207873eb4046423a1bd" category="cell">Associar recursos a pastas e projetos</block>
-  <block id="894e6dbd6e66d6ab2ca99432100d70c4" category="cell">Associar conetores a pastas e projetos</block>
-  <block id="aa3ec14d13bb1138309921733478241a" category="cell">Remova os conetores de pastas e projetos</block>
-  <block id="a45abfc4b47949975fbb4a65b1c69386" category="cell">Gerenciar conetores (editar certificados, configurações e assim por diante)</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">Para gerenciar usuários e suas permissões, você deve receber uma das seguintes funções:</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">Os usuários com essa função podem gerenciar todos os membros</block>
   <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">Os usuários com essa função podem gerenciar membros apenas da pasta ou projeto designado</block>
@@ -4766,12 +4756,8 @@
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">O BlueXP  suporta várias funções predefinidas que podem ser atribuídas aos membros da sua organização.</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Saiba mais sobre as funções predefinidas do IAM</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
-  <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em duas categorias: Plataforma e serviço de dados.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Funções da plataforma</block>
-  <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir permissões amplas para administração do BlueXP , incluindo a atribuição de funções e a adição de usuários, além de poder executar todas as funções do BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.</block>
   <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados.</block>
-  <block id="d35d08b038947991ac552eb86cf0f88e" category="paragraph">Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a projetos ou pastas que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados dentro da pasta ou projeto que são atribuídos.</block>
-  <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">A função de administrador de pasta ou projeto não pode criar conetores.</block>
   <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Tabela de comparação de funções da plataforma</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Exemplo para funções de organização em BlueXP  para uma grande organização multinacional</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.</block>
@@ -4790,10 +4776,8 @@
   <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">Funções de acesso do BlueXP</block>
   <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Funções da aplicação</block>
-  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">Abaixo está uma lista das funções na categoria aplicação.</block>
   <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Funções do Keystone</block>
   <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">Você pode usar as funções a seguir para atribuir acesso aos usuários ao Keystone.</block>
-  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">O acesso ao Keystone por meio do BlueXP  está atualmente em fase beta. Se você quiser participar da versão beta do Keystone, entre em Contato com seu representante da NetApp.</block>
   <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Admin do Keystone*: Gerencie a assinatura do Keystone e tome medidas em alertas, relatórios e assinaturas.</block>
   <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">*Keystone Viewer*: Visualize a assinatura do Keystone, além de exibir relatórios, alertas e ativos.</block>
   <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">A tabela a seguir indica as ações que cada função do Keystone pode executar.</block>
@@ -4802,8 +4786,6 @@
   <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Visualizador Keystone</block>
   <block id="3d96431c652abba07d810be9a4a3b187" category="cell">Veja as seguintes guias: Assinatura, ativos, Monitor e Administração</block>
   <block id="04b2aaee865f1746c975de785d02e95f" category="cell">*Página de assinatura Keystone*:</block>
-  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">Pode ver subscrições</block>
-  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">Pode alterar ou renovar subscrições</block>
   <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">*Keystone Assets page*:</block>
   <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">Ver ativos</block>
   <block id="bb295074f705be0407b1b743a2f6e967" category="cell">Gerenciar ativos</block>
@@ -4819,8 +4801,6 @@
   <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">Crie relatórios para si mesmo</block>
   <block id="3b8988881170da948296006bcb3af098" category="cell">*Pedidos de serviço*:</block>
   <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">Criar solicitações de serviço</block>
-  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">Pode ver a solicitação de serviço criada por qualquer usuário dentro da Organização</block>
-  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">Abaixo está a lista de funções na categoria Serviços de dados.</block>
   <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">A classificação não tem uma função de administrador.</block>
   <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">Você pode usar as funções a seguir para atribuir aos usuários acesso à proteção contra ransomware.</block>
   <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">* Administrador de proteção contra ransomware*: Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios.</block>
@@ -4871,4 +4851,22 @@
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Adicione membros e contas de serviço</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Use funções para controlar o acesso dos membros aos recursos</block>
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configuração e administração do BlueXP</block>
+  <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram nas seguintes categorias: Plataforma, aplicativo e serviço de dados.</block>
+  <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.</block>
+  <block id="354b5c7e04f33eff066b4dc5b8104237" category="paragraph">Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos.</block>
+  <block id="ac6f21d3ccd4ab7c12a14f56f9a464bd" category="paragraph">A função de administrador de pasta ou projeto não pode criar conetores.</block>
+  <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">Crie conetores</block>
+  <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">Crie pastas e projetos, incluindo exclusão</block>
+  <block id="3e02e95230f791e515adffdd7086123c" category="cell">Renomeie pastas e projetos existentes</block>
+  <block id="c9cff18229760a66e25f980da9c1850b" category="cell">Remova os conetores de pastas e projetos</block>
+  <block id="b6f5b5483997d6dff9a8ee0bc1932433" category="cell">Gerenciar conetores (editar certificados, configurações e assim por diante)</block>
+  <block id="0600246627669cf56a49de00fb320e66" category="paragraph">Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.</block>
+  <block id="35a83113bde80420d7102c597d0dfac6" category="paragraph">Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador de pasta ou projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.</block>
+  <block id="d76310e425debd9a2b76f8114d4c1d27" category="paragraph">A seguir está uma lista de funções na categoria de aplicativo. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de aplicativo necessária ou uma função de plataforma não poderão acessar o aplicativo.</block>
+  <block id="4be5ebc45ada5051c97493c24dafb98f" category="admonition">O acesso ao Keystone por meio do BlueXP  está atualmente em fase beta. Se você quiser participar da versão beta do Keystone, entre em Contato com seu representante da NetApp.</block>
+  <block id="124cd0f2df6f1c0e90303ec188b16200" category="cell">Ver subscrições</block>
+  <block id="d01d98071916332acadef4e86c7ff279" category="cell">Alterar ou renovar subscrições</block>
+  <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">Solicitações de serviço CView criadas por qualquer usuário dentro da Organização</block>
+  <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Funções de serviço de dados</block>
+  <block id="3b5148467641fe76592e826ef571410c" category="paragraph">A seguir está uma lista de funções na categoria de serviço de dados. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de serviço de dados necessária ou uma função de plataforma não poderão acessar o serviço de dados.</block>
 </blocks>

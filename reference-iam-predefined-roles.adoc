@@ -14,13 +14,13 @@ summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funç
 
 
 [role="lead"]
-O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram em duas categorias: Plataforma e serviço de dados.
+O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram nas seguintes categorias: Plataforma, aplicativo e serviço de dados.
 
 
 
 == Funções da plataforma
 
-As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir permissões amplas para administração do BlueXP , incluindo a atribuição de funções e a adição de usuários, além de poder executar todas as funções do BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.
+As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.
 
 
 
@@ -32,7 +32,7 @@ Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de u
 
 === Administrador de pasta ou projeto
 
-Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a projetos ou pastas que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados dentro da pasta ou projeto que são atribuídos.
+Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos.
 
 A função de administrador de pasta ou projeto não pode criar conetores.
 
@@ -42,7 +42,7 @@ A função de administrador de pasta ou projeto não pode criar conetores.
 
 [cols="24,19,19"]
 |===
-| Tarefa | Administrador da organização | Administrador de pasta ou Projeto 
+| Tarefa | Administrador da organização | Administrador de pasta ou projeto 
 
 
 | Crie conetores | Sim | Não 
@@ -51,10 +51,10 @@ A função de administrador de pasta ou projeto não pode criar conetores.
 | Criar, modificar ou excluir ambientes de trabalho (adicionar ou descobrir novos recursos usando a tela BlueXP ) | Sim | Sim 
 
 
-| Crie projetos/pastas, incluindo a exclusão | Sim | Não 
+| Crie pastas e projetos, incluindo exclusão | Sim | Não 
 
 
-| Renomeie projetos/pastas existentes | Sim | Sim 
+| Renomeie pastas e projetos existentes | Sim | Sim 
 
 
 | Atribua funções e adicione usuários | Sim | Sim 
@@ -88,7 +88,7 @@ Exemplo para funções de organização em BlueXP  para uma grande organizaçã
 --
 Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.
 
-Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador pasta ou Projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.
+Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador de pasta ou projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.
 
 --
 
@@ -97,7 +97,7 @@ Quando a configuração inicial estiver concluída, os administradores regionais
 
 == Funções da aplicação
 
-Abaixo está uma lista das funções na categoria aplicação.
+A seguir está uma lista de funções na categoria de aplicativo. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de aplicativo necessária ou uma função de plataforma não poderão acessar o aplicativo.
 
 
 
@@ -129,14 +129,14 @@ Sim
 3+| *Página de assinatura Keystone*: 
 
 
-| Pode ver subscrições  a| 
+| Ver subscrições  a| 
 Sim
  a| 
 Sim
 
 
 
-| Pode alterar ou renovar subscrições  a| 
+| Alterar ou renovar subscrições  a| 
 Sim
  a| 
 Não
@@ -228,7 +228,7 @@ Não
 
 
 
-| Pode ver a solicitação de serviço criada por qualquer usuário dentro da Organização  a| 
+| Solicitações de serviço CView criadas por qualquer usuário dentro da Organização  a| 
 Sim
  a| 
 Sim
@@ -236,9 +236,9 @@ Sim
 |===
 
 
-== Funções de serviços de dados
+== Funções de serviço de dados
 
-Abaixo está a lista de funções na categoria Serviços de dados.
+A seguir está uma lista de funções na categoria de serviço de dados. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de serviço de dados necessária ou uma função de plataforma não poderão acessar o serviço de dados.
 
 
 
