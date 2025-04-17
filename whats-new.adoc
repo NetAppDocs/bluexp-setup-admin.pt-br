@@ -1840,15 +1840,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["Saib
 
 Agora você pode permitir que visualizações privadas em sua conta tenham acesso a novos serviços de nuvem do NetApp, já que eles são disponibilizados como uma prévia no Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allow-private-previews["Saiba mais sobre esta opção"].
-
 
 
 === Serviços de terceiros
 
 Você também pode permitir que serviços de terceiros em sua conta tenham acesso a serviços de terceiros que estão disponíveis no Cloud Manager.
-
-link:task-managing-netapp-accounts.html#allow-third-party-services["Saiba mais sobre esta opção"].
 
 
 

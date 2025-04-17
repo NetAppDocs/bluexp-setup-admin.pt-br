@@ -4086,10 +4086,7 @@
   <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">Saiba mais sobre como usar contas de serviço</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>.</block>
   <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">Agora você pode permitir que visualizações privadas em sua conta tenham acesso a novos serviços de nuvem do NetApp, já que eles são disponibilizados como uma prévia no Cloud Manager.</block>
-  <block id="50ea4e8dccd315b387c3720bf218560a" category="inline-link-macro">Saiba mais sobre esta opção</block>
-  <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>.</block>
   <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">Você também pode permitir que serviços de terceiros em sua conta tenham acesso a serviços de terceiros que estão disponíveis no Cloud Manager.</block>
-  <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>.</block>
   <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">Esta atualização inclui melhorias para vários recursos e serviços.</block>
   <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">Esta versão do Cloud Manager inclui melhorias no gerenciamento do Cloud Volumes ONTAP.</block>
   <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">Aprimoramento disponível em todos os provedores de nuvem</block>
@@ -4141,7 +4138,6 @@
   <block id="10895cced39195f7b9456b154a2c8530" category="sidebar">Comece com o modo privado</block>
   <block id="d7818a3dcaa08963a99fa80d50e4d009" category="sidebar">IAM BlueXP</block>
   <block id="f9979c483e6c4c3e0bb110084e2529e7" category="sidebar">Organize seus recursos com pastas e projetos</block>
-  <block id="ff72511bc39f980fe978f1f136d5b661" category="sidebar">Gerencie membros e suas permissões</block>
   <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">Gerencie sua hierarquia de recursos</block>
   <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">Exibir permissões da AWS</block>
   <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">Ver permissões do Azure</block>
@@ -4780,30 +4776,6 @@
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Exemplo para funções de organização em BlueXP  para uma grande organização multinacional</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gerenciar permissões a partir da página Membros</block>
-  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
-  <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">Adicione membros do BlueXP  IAM e gerencie suas permissões</block>
-  <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">Você pode exibir uma lista de todos os membros da sua organização do BlueXP . Para entender quais recursos e permissões estão disponíveis para um membro, você pode exibir as funções atribuídas ao membro em diferentes níveis da hierarquia de recursos da sua organização.</block>
-  <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">Aqui está um exemplo de um membro que é atribuído a função _pasta ou administrador do projeto_ para uma pasta, que fornece permissões para os três projetos na pasta.</block>
-  <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">Uma captura de tela da página de detalhes para um membro que tem permissões para um projeto e uma pasta.</block>
-  <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ec798ce1d65b266be695e73de188467" category="paragraph">Aqui está outro exemplo que mostra um membro que tem a função de administrador da organização, que dá ao usuário acesso a todos os recursos da organização.</block>
-  <block id="8395f2651a81b25e9b7a23fbee8b9549" category="inline-image-macro">Uma captura de tela da página de detalhes para um membro que tem permissões de administrador da Organização.</block>
-  <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">A página *Membros* mostra detalhes sobre dois tipos de membros: Contas de usuário e contas de serviço.</block>
-  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">Gerenciar funções de membros</block>
-  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">Os membros da organização podem receber funções em cada nível e mais de um nível da hierarquia de recursos. Você pode atribuir funções aos membros relevantes para suas responsabilidades na organização do BlueXP .</block>
-  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">Você pode anular a atribuição de uma função de um membro, adicionar uma nova função ou ambos. Uma função define as permissões atribuídas a um membro no nível da organização, pasta ou projeto. Você pode atribuir aos membros funções relevantes para suas responsabilidades na sua organização do BlueXP .</block>
-  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">Cada membro da organização pode ter uma função atribuída em diferentes níveis da hierarquia da organização. Pode ser o mesmo papel ou um papel diferente. Por exemplo, você pode atribuir uma função de membro A para o projeto 1 e a função B para o projeto 2.</block>
-  <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">Um membro que tenha a função de administrador da organização não pode ser atribuído a nenhuma função adicional. Eles já têm permissões em toda a organização.</block>
-  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">Você pode exibir um membro para verificar quais funções ele está atribuído no momento.</block>
-  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja exibir a função atribuída ao membro e selecione *Exibir* na coluna *função*.</block>
-  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">Atribua uma função</block>
-  <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">Forneça permissões adicionais a um membro em sua organização adicionando funções que se aplicam ao nível da organização, pasta ou projeto.</block>
-  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">Saiba mais sobre as funções do IAM</block>
-  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">*Selecione uma categoria*: BlueXP  separe as funções em duas categorias: Plataforma e serviço de dados. <block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>.</block>
-  <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">Se você selecionou a organização, você pode escolher entre qualquer função que não seja *Folder ou Project admin*.</block>
-  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">*Adicionar função*: Se você quiser fornecer acesso a pastas ou projetos adicionais dentro de sua organização, selecione *Adicionar função*, especifique outra pasta ou projeto ou categoria de função e selecione uma categoria de função e uma função correspondente.</block>
-  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">Você pode alterar a função atribuída para um no nível de organização, pasta ou projeto. Os membros podem ter funções diferentes em diferentes níveis da sua organização.</block>
   <block id="2862531e5d6bc94c86cde4ee59b36495" category="paragraph">Você pode criar um conetor na AWS diretamente a partir do BlueXP . Para criar um conetor na AWS a partir do BlueXP , você precisa configurar sua rede, preparar permissões da AWS e criar o conetor.</block>
   <block id="6c6728a3304e61d70edb5c350db7efa1" category="paragraph">Você pode instalar manualmente um conetor em um host Linux em execução na AWS. Para instalar manualmente o conetor em seu próprio host Linux, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões da AWS, instalar o conetor e fornecer as permissões que você preparou.</block>
   <block id="0beb1e6219ede132ce0fe96557a2c156" category="paragraph">Você cria um conetor na AWS diretamente do AWS Marketplace. Para criar um conetor no AWS Marketplace, você precisa configurar sua rede, preparar permissões da AWS, analisar os requisitos de instância e criar o conetor.</block>
@@ -4813,8 +4785,6 @@
   <block id="44fc4ca54d8261b4facf220d04704531" category="paragraph">Você pode criar um conetor no Google Cloud a partir do BlueXP  ou usando o Google Cloud. Você precisa configurar sua rede, preparar permissões do Google Cloud, ativar as APIs do Google Cloud e, em seguida, criar o conetor.</block>
   <block id="5e7dbc359167a6195a71df82607e8477" category="paragraph">Você pode instalar manualmente o conetor q em um host Linux em execução no Google Cloud. Para instalar manualmente o conetor em seu próprio host Linux, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões do Google Cloud, ativar APIs, instalar o conetor e, em seguida, fornecer as permissões que você preparou.</block>
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">Você pode instalar um conetor em uma de suas máquinas locais. Para executar o conetor no local, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões de nuvem, instalar o conetor, configurar o conetor e, em seguida, fornecer as permissões que você preparou.</block>
-  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">Documentos de configuração e administração do BlueXP</block>
-  <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">Adicione membros e gerencie suas permissões</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Saiba mais sobre as funções de acesso.</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
   <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">Funções de acesso do BlueXP</block>
@@ -4892,4 +4862,13 @@
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 de janeiro de 2025 (versão 1,39)</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Aceda ao<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e consulte as alterações incluídas na versão 1,39.</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">21 de fevereiro de 2025</block>
+  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
+  <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">Adicione membros do BlueXP  e gerencie suas permissões</block>
+  <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
+  <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">Saiba como usar funções para controlar o acesso aos recursos do BlueXP .</block>
+  <block id="eef972128da3061d69cdfbbd20808652" category="paragraph">Você pode exibir uma lista de todos os membros da sua organização do BlueXP . Para entender quais recursos e permissões estão disponíveis para um membro, você pode exibir as funções atribuídas ao membro em diferentes níveis da hierarquia de recursos da sua organização. <block ref="4e7a66baee137600d665a8be3cbcb6a5" category="inline-link-macro-rx"></block></block>
+  <block id="57c4db21a8e5f9688baa21606de89184" category="paragraph">TYou pode visualizar contas de usuário e contas de serviço na página *Membros*.</block>
+  <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Adicione membros e contas de serviço</block>
+  <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Use funções para controlar o acesso dos membros aos recursos</block>
+  <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configuração e administração do BlueXP</block>
 </blocks>

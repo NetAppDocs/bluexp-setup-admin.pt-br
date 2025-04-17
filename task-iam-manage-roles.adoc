@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-roles.html 
-keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles 
 summary: O gerenciamento de identidade e acesso do BlueXP  permite que você represente uma hierarquia completa de recursos usando pastas e projetos. 
 ---
 = Use funções para gerenciar o acesso do usuário aos recursos
