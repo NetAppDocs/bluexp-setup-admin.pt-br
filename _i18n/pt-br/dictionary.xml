@@ -2211,7 +2211,6 @@
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Atualizar o software Cloud Volumes ONTAP para a versão mais recente</block>
   <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">Essas credenciais estão associadas ao número de série específico da sua conta BlueXP . Os usuários que pertencem à organização ou conta do BlueXP  podem acessar essas credenciais a partir de *suporte &gt; Gerenciamento do NSS*.</block>
   <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">Adicione uma conta NSS</block>
-  <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">O Painel de suporte permite que você adicione e gerencie suas contas do site de suporte da NetApp para uso com o BlueXP  no nível da organização ou da conta da BlueXP .</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Se você tiver uma conta no nível do cliente, pode adicionar uma ou mais contas NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Se você tiver uma conta de parceiro ou revendedor, você pode adicionar uma ou mais contas NSS, mas elas não podem ser adicionadas ao lado de contas de nível de cliente.</block>
   <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">No canto superior direito do console do BlueXP , selecione o ícone Ajuda e selecione *suporte*.</block>
@@ -2242,9 +2241,6 @@
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="inline-link">Registar sistemas de pagamento conforme o uso</block>
   <block id="b973035f0b680495b14f344d6beef53c" category="list-text"><block ref="b973035f0b680495b14f344d6beef53c" category="inline-link-rx"></block></block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">Atualizar credenciais NSS</block>
-  <block id="90488de845793cd541dd12866e86b44a" category="paragraph">Você precisará atualizar as credenciais para suas contas NSS no BlueXP  quando uma das seguintes situações acontecer:</block>
-  <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">Você altera as credenciais da conta</block>
-  <block id="b3926834345be7a1da662eba385876a4" category="list-text">O token de atualização associado à sua conta expira após 3 meses</block>
   <block id="b7d544e19d5b26255a1df1dd3e33d678" category="list-text">Selecione *NSS Management*.</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">Um ícone que é três pontos lado a lado</block>
   <block id="a316383f81642dfed8c486925c8bc0d9" category="list-text">Para a conta NSS que você deseja atualizar, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Atualizar credenciais*.</block>
@@ -2252,7 +2248,6 @@
   <block id="2aa3557242cb0eddbff8233ad0c81a45" category="paragraph"><block ref="2aa3557242cb0eddbff8233ad0c81a45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="297e9bab56e72eca06bc12c5f89c3007" category="section-title">Anexe um ambiente de trabalho a uma conta NSS diferente</block>
   <block id="8b65cb7585cade7e7c6df120ae10da1b" category="paragraph">Se a sua organização tiver várias contas do site de suporte da NetApp, você poderá alterar qual conta está associada a um sistema Cloud Volumes ONTAP.</block>
-  <block id="dfec517d439938ca1ef24de3972ed1d6" category="paragraph">Este recurso é suportado apenas com contas NSS que estão configuradas para usar o Microsoft Entra ID adotado pelo NetApp para gerenciamento de identidades. Antes de poder utilizar esta funcionalidade, é necessário selecionar *Adicionar conta NSS* ou *Atualizar conta*.</block>
   <block id="2b1290920584c08c2e2b07569cf0a3b0" category="list-text">Execute as seguintes etapas para alterar a conta do NSS:</block>
   <block id="7ebef2f036d00a5760c52a09582f43b4" category="list-text">Expanda a linha para a conta do site de suporte da NetApp à qual o ambiente de trabalho está atualmente associado.</block>
   <block id="4ff944075f223ced34dfceaeee89f003" category="list-text">Para o ambiente de trabalho para o qual você deseja alterar a associação, selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
@@ -2261,16 +2256,11 @@
   <block id="11ecc3de6ba7beb5561699b813f5f452" category="paragraph"><block ref="11ecc3de6ba7beb5561699b813f5f452" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17b44f0405de560bdd9ba352b67adb7a" category="list-text">Selecione a conta e, em seguida, selecione *Salvar*.</block>
   <block id="504f62cd55407d98070b45659035b7f5" category="section-title">Exibir o endereço de e-mail de uma conta NSS</block>
-  <block id="a5b46ae1ec2ad5287349444529a0b53c" category="paragraph">Agora que as contas do site de suporte da NetApp usam o ID do Microsoft Entra para serviços de autenticação, o nome de usuário do NSS que é exibido no BlueXP  é normalmente um identificador gerado pelo Microsoft Entra. Como resultado, você pode não saber imediatamente o endereço de e-mail associado a essa conta. Mas o BlueXP  tem uma opção para mostrar o endereço de e-mail associado.</block>
-  <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">Quando você acessa a página Gerenciamento do NSS, o BlueXP  gera um token para cada conta na tabela. Esse token inclui informações sobre o endereço de e-mail associado. O token é então removido quando você sai da página. As informações nunca são armazenadas em cache, o que ajuda a proteger sua privacidade.</block>
-  <block id="fb62719b7db2f72c6247845a1f5cbcb1" category="list-text">Para a conta NSS que você deseja atualizar, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Exibir endereço de e-mail*.</block>
   <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">Uma captura de tela que mostra o menu de ação de uma conta do site de suporte da NetApp, que inclui a capacidade de exibir o endereço de e-mail.</block>
   <block id="e1116fc74825566193b6ce2f33cadc2b" category="paragraph"><block ref="e1116fc74825566193b6ce2f33cadc2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7a6c5419388c54dd17826c0c6b4dc85" category="paragraph">O BlueXP  exibe o nome de usuário do site de suporte da NetApp e o endereço de e-mail associado. Você pode usar o botão copiar para copiar o endereço de e-mail.</block>
   <block id="269f277ce2140226081fe499a22595d6" category="section-title">Remover uma conta NSS</block>
   <block id="09e40761f22ee02fc6f59d79db4d6f93" category="paragraph">Exclua qualquer uma das contas NSS que você não deseja mais usar com o BlueXP .</block>
   <block id="5f74d1c3714e49926cf5f752029ebcc2" category="inline-xref">Anexe esses ambientes de trabalho a uma conta NSS diferente</block>
-  <block id="76734448143dd55adf6431fa26af46e4" category="paragraph">Observe que não é possível excluir uma conta que esteja atualmente associada a um ambiente de trabalho do Cloud Volumes ONTAP. Primeiro você precisa <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="e5db2949e66eb1e7684dd81e4145d6e3" category="list-text">Para a conta NSS que você deseja excluir, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Excluir*.</block>
   <block id="007f1e2d3f01b80a8179746ea45b3c41" category="paragraph"><block ref="007f1e2d3f01b80a8179746ea45b3c41" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Se suas políticas corporativas exigirem que você use um servidor proxy para toda a comunicação com a Internet, você precisará configurar seus conetores para usar esse servidor proxy. Se você não configurou um conetor para usar um servidor proxy durante a instalação, então você pode configurar o conetor para usar esse servidor proxy a qualquer momento.</block>
@@ -4869,4 +4859,25 @@
   <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">Solicitações de serviço CView criadas por qualquer usuário dentro da Organização</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Funções de serviço de dados</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">A seguir está uma lista de funções na categoria de serviço de dados. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de serviço de dados necessária ou uma função de plataforma não poderão acessar o serviço de dados.</block>
+  <block id="490e13bea5876f4583d326593619ee16" category="list-text">O gerenciamento de sistemas Cloud Volumes ONTAP agora é suportado por conetores que têm o SELinux habilitado no sistema operacional.</block>
+  <block id="a34db0f5fbf1e24b51b5a7a24f301c5e" category="doc">Gerenciar as credenciais do NSS associadas ao BlueXP </block>
+  <block id="c60157a3e7becc31536d0dc036b53af0" category="admonition">Se você estiver usando o BlueXP  no modo padrão ou no modo restrito, você terá uma _BlueXP  Organization_, que você gerencia usando o BlueXP  Identity and Access Management (IAM). Mas se você estiver usando o BlueXP  no modo privado, então você terá uma conta _BlueXP _.</block>
+  <block id="6dbd01b1c2b8dd3f051f0a9d6b7b2bd3" category="paragraph">Você pode adicionar e gerenciar suas contas do site de suporte da NetApp para uso com o BlueXP  no painel de suporte do BlueXP .</block>
+  <block id="cd35825320d9b999711fdb0b0b96b105" category="paragraph">Quando você tiver adicionado sua conta NSS, o BlueXP  poderá usar essas informações para itens como downloads de licenças, verificação de atualização de software e futuros Registros de suporte.</block>
+  <block id="668a927dea46030d99f290f562cf9a8c" category="paragraph">Você pode associar várias contas NSS à sua organização do BlueXP ; no entanto, não é possível ter contas de clientes e contas de parceiros na mesma organização.</block>
+  <block id="aa46302bfdec80cdcbdb3268e1b7a8f4" category="list-text">Selecione *continuar* para ser redirecionado para uma página de login da Microsoft.</block>
+  <block id="55e65cdb758bf0c89a872d9cbd3e9b79" category="list-text">Na página de login, forneça seu endereço de e-mail e senha registrados no site de suporte da NetApp.</block>
+  <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">Saiba mais sobre o Centro de notificações</block>
+  <block id="4689ffd51b2968888f8c155b13dfcaf5" category="paragraph">Por razões de segurança, você deve atualizar suas credenciais NSS a cada 90 dias. Você será notificado no centro de notificações do BlueXP  se sua credencial do NSS tiver expirado. <block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block>.</block>
+  <block id="a68bd898b36ffcd9b8247470114f5f4a" category="paragraph">As credenciais expiradas podem interromper o seguinte, mas não estão limitadas a:</block>
+  <block id="41a210fc1fd64ddb44bf15d9fe670679" category="list-text">atualizações de licença em carteira digital, o que significa que você não poderá aproveitar a capacidade recém-adquirida.</block>
+  <block id="9866777d09d57d152447888262701c25" category="list-text">Capacidade de enviar e acompanhar casos de suporte.</block>
+  <block id="6179959f116f310a8ad1ec9ecbaf81f6" category="paragraph">Além disso, você pode atualizar as credenciais do NSS associadas à sua organização se quiser alterar a conta do NSS associada à sua organização do BlueXP . Por exemplo, se a pessoa associada à sua conta NSS tiver deixado a sua empresa.</block>
+  <block id="021c1a8115e127518ed9afb84086b193" category="paragraph">O NetApp usa o Microsoft Entra ID como provedor de identidade para serviços de autenticação relacionados ao suporte e licenciamento.</block>
+  <block id="eeda1356f6044cf81d9e31043444b9aa" category="paragraph">Primeiro, você deve ter associado a conta ao BlueXP .</block>
+  <block id="2f8da686adebbe94321da99d4cee7340" category="paragraph">Para segurança, o endereço de e-mail associado a uma conta NSS não é exibido por padrão. Você pode exibir o endereço de e-mail e o nome de usuário associado de uma conta NSS.</block>
+  <block id="9231e2c70a8d6560c0d7f9c307c71524" category="admonition">Quando você acessa a página Gerenciamento do NSS, o BlueXP  gera um token para cada conta na tabela. Esse token inclui informações sobre o endereço de e-mail associado. O token é removido quando você sai da página. As informações nunca são armazenadas em cache, o que ajuda a proteger sua privacidade.</block>
+  <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">Para a conta NSS que você deseja atualizar, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Exibir endereço de e-mail*. Você pode usar o botão copiar para copiar o endereço de e-mail.</block>
+  <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Não é possível excluir uma conta que esteja atualmente associada a um ambiente de trabalho do Cloud Volumes ONTAP. Primeiro você precisa <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
+  <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de fevereiro de 2025</block>
 </blocks>

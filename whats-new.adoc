@@ -82,6 +82,12 @@ Para obter mais detalhes sobre o modo privado, incluindo como atualizar, consult
 
 Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs.
 
+* O gerenciamento de sistemas Cloud Volumes ONTAP agora é suportado por conetores que têm o SELinux habilitado no sistema operacional.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Saiba mais sobre o SELinux"^]
+
+
+
 Neste momento, a versão 3.9.50 está disponível para o modo padrão e modo restrito.
 
 
@@ -125,6 +131,31 @@ Esta funcionalidade está disponível na versão 3.9.48 e superior do conetor.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Saiba como desativar a atualização automática para o conetor."^]
 
+
+
+== 18 de fevereiro de 2025
+
+
+
+=== Lançamento do modo privado (3,9.48)
+
+Uma nova versão do modo privado está agora disponível para transferência a partir do https://mysupport.netapp.com/site/downloads["Site de suporte da NetApp"^]
+
+A versão 3.9.48 inclui atualizações para os seguintes componentes e serviços do BlueXP .
+
+[cols="3*"]
+|===
+| Componente ou serviço | Versão incluída nesta versão | Alterações desde a versão anterior do modo privado 
+
+
+| Conetor | 3.9.48 | Aceda ao https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["Novidades na página do conetor BlueXP "] e consulte as alterações incluídas nas versões 3,9.48. 
+
+
+| Backup e recuperação | 21 de fevereiro de 2025 | Aceda ao https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novidades na página de backup e recuperação do BlueXP"^] e consulte as alterações incluídas no lançamento de Fevereiro de 2025. 
+
+
+| Classificação | 22 de janeiro de 2025 (versão 1,39) | Aceda ao https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novidades na página de classificação do BlueXP"^] e consulte as alterações incluídas na versão 1,39. 
+|===
 
 
 == 10 de fevereiro de 2025
