@@ -452,7 +452,6 @@
   <block id="c999131c88aa02b0f9b7250262aa1fa6" category="paragraph">O BlueXP  substitui a assinatura existente para todas as credenciais na organização ou conta por essa nova assinatura. Se um conjunto de credenciais nunca foi associado a uma assinatura, essa nova assinatura não será associada a essas credenciais.</block>
   <block id="c64577fbea6506f38ae9b43ab46da844" category="paragraph">Para todas as outras organizações ou contas, você precisará associar manualmente a assinatura repetindo estas etapas.</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Inscreva-se no BlueXP  no AWS Marketplace</block>
-  <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">Para associar as credenciais a uma nova assinatura, selecione *Adicionar assinatura &gt; continuar* e siga as etapas no Azure Marketplace:</block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Se solicitado, faça login na sua conta do Azure.</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">Preencha o formulário e selecione *Subscribe*.</block>
@@ -4860,7 +4859,6 @@
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Funções de serviço de dados</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">A seguir está uma lista de funções na categoria de serviço de dados. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de serviço de dados necessária ou uma função de plataforma não poderão acessar o serviço de dados.</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">O gerenciamento de sistemas Cloud Volumes ONTAP agora é suportado por conetores que têm o SELinux habilitado no sistema operacional.</block>
-  <block id="a34db0f5fbf1e24b51b5a7a24f301c5e" category="doc">Gerenciar as credenciais do NSS associadas ao BlueXP </block>
   <block id="c60157a3e7becc31536d0dc036b53af0" category="admonition">Se você estiver usando o BlueXP  no modo padrão ou no modo restrito, você terá uma _BlueXP  Organization_, que você gerencia usando o BlueXP  Identity and Access Management (IAM). Mas se você estiver usando o BlueXP  no modo privado, então você terá uma conta _BlueXP _.</block>
   <block id="6dbd01b1c2b8dd3f051f0a9d6b7b2bd3" category="paragraph">Você pode adicionar e gerenciar suas contas do site de suporte da NetApp para uso com o BlueXP  no painel de suporte do BlueXP .</block>
   <block id="cd35825320d9b999711fdb0b0b96b105" category="paragraph">Quando você tiver adicionado sua conta NSS, o BlueXP  poderá usar essas informações para itens como downloads de licenças, verificação de atualização de software e futuros Registros de suporte.</block>
@@ -4870,7 +4868,6 @@
   <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">Saiba mais sobre o Centro de notificações</block>
   <block id="4689ffd51b2968888f8c155b13dfcaf5" category="paragraph">Por razões de segurança, você deve atualizar suas credenciais NSS a cada 90 dias. Você será notificado no centro de notificações do BlueXP  se sua credencial do NSS tiver expirado. <block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block>.</block>
   <block id="a68bd898b36ffcd9b8247470114f5f4a" category="paragraph">As credenciais expiradas podem interromper o seguinte, mas não estão limitadas a:</block>
-  <block id="41a210fc1fd64ddb44bf15d9fe670679" category="list-text">atualizações de licença em carteira digital, o que significa que você não poderá aproveitar a capacidade recém-adquirida.</block>
   <block id="9866777d09d57d152447888262701c25" category="list-text">Capacidade de enviar e acompanhar casos de suporte.</block>
   <block id="6179959f116f310a8ad1ec9ecbaf81f6" category="paragraph">Além disso, você pode atualizar as credenciais do NSS associadas à sua organização se quiser alterar a conta do NSS associada à sua organização do BlueXP . Por exemplo, se a pessoa associada à sua conta NSS tiver deixado a sua empresa.</block>
   <block id="021c1a8115e127518ed9afb84086b193" category="paragraph">O NetApp usa o Microsoft Entra ID como provedor de identidade para serviços de autenticação relacionados ao suporte e licenciamento.</block>
@@ -4880,4 +4877,6 @@
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">Para a conta NSS que você deseja atualizar, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Exibir endereço de e-mail*. Você pode usar o botão copiar para copiar o endereço de e-mail.</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Não é possível excluir uma conta que esteja atualmente associada a um ambiente de trabalho do Cloud Volumes ONTAP. Primeiro você precisa <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de fevereiro de 2025</block>
+  <block id="186343db38833a48df757e694e69337d" category="doc">Gerenciar credenciais NSS associadas ao BlueXP </block>
+  <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Atualizações de licença em carteira digital, o que significa que você não poderá aproveitar a capacidade recém-adquirida.</block>
 </blocks>
