@@ -189,7 +189,7 @@ link:task-upgrade-connector.html["Saiba como atualizar manualmente o software do
 
 == Manutenção do sistema operacional e VM
 
-Manter o sistema operacional no host do conetor é sua responsabilidade. Por exemplo, você deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.
+Manter o sistema operacional no host do conetor é sua responsabilidade (do cliente). Por exemplo, você (cliente) deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.
 
 Observe que você não precisa interromper nenhum serviço no host do conetor ao aplicar pequenas atualizações de segurança.
 

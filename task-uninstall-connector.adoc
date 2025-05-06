@@ -35,9 +35,6 @@ _silent_ executa o script sem solicitar confirmação.
 
 
 
-.Resultado
-O software Connector agora é desinstalado do host Linux.
-
 
 
 == Desinstale o conetor ao utilizar o modo privado
@@ -48,13 +45,31 @@ Se você estiver usando o BlueXP  no modo privado (em outras palavras, o host d
 . Conete-se à VM Linux para o conetor.
 . A partir do host Linux, execute os seguintes comandos:
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. A partir do host Linux, remova os arquivos de imagem de contentor antigos, agora não utilizados. Isso garante que haja espaço suficiente no diretório /var para reinstalar.
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.Resultado
-O software Connector agora é desinstalado do host Linux.
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["Uma captura de tela do widget do conetor 
 
 . Introduza o nome do conetor para confirmar e, em seguida, selecione *Remover*.
 
-
-.Resultado
-O BlueXP  remove o conetor dos seus registos.

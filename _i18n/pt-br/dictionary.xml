@@ -3590,11 +3590,9 @@
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">A partir do host Linux, execute o script de desinstalação:</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ executa o script sem solicitar confirmação.</block>
-  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">O software Connector agora é desinstalado do host Linux.</block>
   <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">Desinstale o conetor ao utilizar o modo privado</block>
   <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">Se você estiver usando o BlueXP  no modo privado (em outras palavras, o host do conetor tem conetividade _no_ de saída), siga as etapas abaixo para desinstalar o software do conetor.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">A partir do host Linux, execute os seguintes comandos:</block>
-  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="c18f35b968a9596c1426357bd905370f" category="section-title">Remova os conetores do BlueXP </block>
   <block id="f70f27cb36a2c55ba397f836520ac028" category="paragraph">Se um conetor estiver inativo, você pode removê-lo da lista de conetores no BlueXP . Pode fazê-lo se tiver eliminado a máquina virtual do conetor ou se tiver desinstalado o software do conetor.</block>
   <block id="c5c64fb69c2266a9bd084b1cc03349b6" category="paragraph">Observe o seguinte sobre como remover um conetor:</block>
@@ -3604,7 +3602,6 @@
   <block id="e8e3de05575910fc8863b3e5715b75a4" category="inline-image-macro">Uma captura de tela do widget do conetor onde você pode remover um conetor inativo.</block>
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">Introduza o nome do conetor para confirmar e, em seguida, selecione *Remover*.</block>
-  <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">O BlueXP  remove o conetor dos seus registos.</block>
   <block id="1963a5845bb573651eecf0188b584456" category="summary">O BlueXP  atualiza automaticamente um conetor para a versão mais recente quando você usa o BlueXP  no modo padrão ou no modo restrito. Novas versões são normalmente lançadas a cada mês para introduzir novos recursos e para fornecer melhorias de estabilidade. Se preferir, você pode configurar o conetor para puxar atualizações de imagem de um repositório local. Para implantações de modo privado, você sempre precisa atualizar manualmente o conetor sozinho.</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">O conetor precisa reiniciar durante o processo de atualização para que o console baseado na Web fique indisponível durante a atualização.</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">Transfira o software do conetor a partir do<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>.</block>
@@ -4879,4 +4876,6 @@
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de fevereiro de 2025</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">Gerenciar credenciais NSS associadas ao BlueXP </block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Atualizações de licença em carteira digital, o que significa que você não poderá aproveitar a capacidade recém-adquirida.</block>
+  <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">Manter o sistema operacional no host do conetor é sua responsabilidade (do cliente). Por exemplo, você (cliente) deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.</block>
+  <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">A partir do host Linux, remova os arquivos de imagem de contentor antigos, agora não utilizados. Isso garante que haja espaço suficiente no diretório /var para reinstalar.</block>
 </blocks>
