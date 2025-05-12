@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: O gerenciamento de identidade e acesso do BlueXP  fornece duas funções administrativas que podem ser atribuídas aos membros da sua organização. 
+---
+= Funções do Keystone Access para BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+As funções do Keystone fornecem acesso aos painéis do Keystone e permitem que os usuários visualizem e gerenciem a assinatura do Keystone. Há duas funções do Keystone: Administração do Keystone e visualizador do Keystone. A principal diferença entre as duas funções é as ações que podem ser executadas no Keystone. A função de administrador do Keystone é a única função que tem permissão para criar solicitações de serviço ou modificar assinaturas.
+
+.Exemplo de funções do Keystone no BlueXP 
+Em uma subscrição do Keystone, a XYZ Corporation tem quatro engenheiros de storage de diferentes departamentos que visualizam informações sobre a assinatura do Keystone. Embora todos esses usuários precisem monitorar a assinatura do Keystone, apenas o líder da equipe pode fazer solicitações de serviço. Três dos membros da equipe recebem a função *Keystone Viewer*, enquanto o líder da equipe recebe a função *Keystone admin* para que haja um ponto de controle sobre as solicitações de serviço para a empresa.
+
+A tabela a seguir indica as ações que cada função do Keystone pode executar.
+
+[cols="40,20a,20a"]
+|===
+| Recurso e ação | Administrador do Keystone | Visualizador Keystone 
+
+
+| Veja as seguintes guias: Assinatura, ativos, Monitor e Administração  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Página de assinatura Keystone*: 
+
+
+| Ver subscrições  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Alterar ou renovar subscrições  a| 
+Sim
+ a| 
+Não
+
+
+
+3+| *Keystone Assets page*: 
+
+
+| Ver ativos  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Gerenciar ativos  a| 
+Sim
+ a| 
+Não
+
+
+
+3+| *Página de alertas do Keystone*: 
+
+
+| Ver alertas  a| 
+Sim
+ a| 
+Não
+
+
+
+| Gerenciar alertas  a| 
+Sim
+ a| 
+Não
+
+
+
+| Crie alertas para si mesmo  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Carteira digital*: 
+
+
+| Pode ver a carteira digital  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Página de relatórios do Keystone*: 
+
+
+| Transferir relatórios  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Gerenciar relatórios  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Crie relatórios para si mesmo  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Pedidos de serviço*: 
+
+
+| Criar solicitações de serviço  a| 
+Sim
+ a| 
+Não
+
+
+
+| Exibir solicitações de serviço criadas por qualquer usuário dentro da Organização  a| 
+Sim
+ a| 
+Sim
+
+|===

@@ -130,7 +130,19 @@ sidebar:
       - title: Monitorar ou auditar a atividade do IAM
         url: "/task-iam-audit-actions-timeline.html"
       - title: Funções de acesso do BlueXP
-        url: "/reference-iam-predefined-roles.html"
+        entries:
+        - title: Saiba mais sobre as funções do BlueXP  Access
+          url: "/reference-iam-predefined-roles.html"
+        - title: Funções da plataforma
+          url: "/reference-iam-platform-roles.html"
+        - title: Funções da aplicação
+          entries:
+          - title: Funções do Keystone
+            url: "/reference-iam-keystone-roles.html"
+        - title: Funções de serviços de dados
+          entries:
+          - title: Funções de proteção contra ransomware
+            url: "/reference-iam-ransomware-roles.html"
     - title: Contas BlueXP  (somente no modo privado)
       entries:
       - title: Saiba mais sobre contas

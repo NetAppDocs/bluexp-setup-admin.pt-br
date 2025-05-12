@@ -63,6 +63,8 @@ Não suportado
 Docker Engine 23.0.6 a 26.0.0
 
 26.0.0 é suportado com _new_ Connector 3.9.44 ou instalações posteriores
+
+27.0.0 e 28.0.0 são suportados com _new_ Connector 3.9.52 ou instalações posteriores
  a| 
 Não suportado
 

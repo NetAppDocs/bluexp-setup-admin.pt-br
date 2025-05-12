@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-platform-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização. 
+---
+= Funções de acesso à plataforma BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  inclui duas funções de plataforma: *Administrador da organização* e *administrador de pasta ou projeto*. A principal diferença entre as duas funções da plataforma BlueXP  é o escopo no qual a função se aplica.
+
+.Exemplo para funções de organização em BlueXP  para uma grande organização multinacional
+A XYZ Corporation, uma empresa multinacional, tem como objetivo separar o acesso a recursos de storage de dados com base em regiões geográficas: América do Norte, Europa e Ásia-Pacífico. Eles querem que cada região tenha controle exclusivo sobre seus recursos, mantendo a supervisão centralizada.
+
+Para conseguir isso, uma pessoa atribuída à função *administrador da organização* no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O *administrador da organização* atribui a um usuário do BlueXP  em cada região a função *administrador de pasta ou projeto*.
+
+Uma vez concluída a configuração inicial, os administradores regionais com a função *Folder ou Project admin* podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O *Organization admin* herda permissões para quaisquer novos ambientes de trabalho ou recursos, mantendo a visibilidade do uso do armazenamento em toda a organização.
+
+A tabela a seguir indica as ações que cada função da plataforma BlueXP  pode executar.
+
+[cols="2,1,1"]
+|===
+| Tarefa | Administrador da organização | Administrador de pasta ou projeto 
+
+
+| Crie conetores | Sim | Não 
+
+
+| Criar, modificar ou excluir ambientes de trabalho (adicionar ou descobrir novos recursos usando a tela BlueXP ) | Sim | Sim 
+
+
+| Crie pastas e projetos, incluindo exclusão | Sim | Não 
+
+
+| Renomeie pastas e projetos existentes | Sim | Sim 
+
+
+| Atribua funções e adicione usuários | Sim | Sim 
+
+
+| Associar recursos a pastas e projetos | Sim | Sim 
+
+
+| Associar conetores a pastas e projetos | Sim | Não 
+
+
+| Remova os conetores de pastas e projetos | Sim | Não 
+
+
+| Gerenciar conetores (editar certificados, configurações e assim por diante) | Sim | Não 
+
+
+| Gerir credenciais a partir de Definições > credenciais | Sim | Sim 
+
+
+| Veja a linha do tempo do BlueXP  | Sim | Sim 
+
+
+| Use os serviços do BlueXP  | Sim | Sim 
+
+
+| Registre o BlueXP  para obter suporte e enviar casos | Sim | Sim 
+|===

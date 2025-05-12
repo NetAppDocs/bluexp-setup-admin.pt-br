@@ -482,8 +482,6 @@
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">Inscreva-se no BlueXP  no mercado do seu fornecedor de nuvem para pagar os serviços da BlueXP  a uma taxa por hora (PAYGO) ou por meio de um contrato anual. Se você comprou uma licença da NetApp (BYOL), também precisará se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar.</block>
   <block id="19584c42f9ee050980069e98aba18776" category="paragraph">Manter o sistema operacional no host do conetor é sua responsabilidade. Por exemplo, você deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.</block>
-  <block id="caf547270bba046bebc03d7ccf4b0203" category="paragraph">Observe que você não precisa interromper nenhum serviço no host do conetor ao aplicar pequenas atualizações de segurança.</block>
-  <block id="58eaadf4bb73c6121323ec8ad981c1bf" category="paragraph">Se você precisar parar e, em seguida, iniciar a VM do conetor, você deve fazê-lo a partir do console do seu provedor de nuvem ou usando os procedimentos padrão para gerenciamento no local.</block>
   <block id="239d1b40f08bc1656a0d7e74a463506d" category="summary">Saiba como o BlueXP  usa credenciais da AWS para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de uma ou mais contas da AWS no BlueXP . Por exemplo, você pode querer saber quando adicionar credenciais adicionais da AWS ao BlueXP .</block>
   <block id="e5fc05695d6d40579715f8fc43e17cf6" category="doc">Saiba mais sobre as credenciais e permissões da AWS</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">Credenciais iniciais da AWS</block>
@@ -1283,19 +1281,13 @@
   <block id="49193f8c0c9f916e42ecd0ff6595ef39" category="list-text"><block ref="49193f8c0c9f916e42ecd0ff6595ef39" category="inline-link-rx"></block></block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">O gerenciamento de identidade e acesso do BlueXP  inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização.</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">Administrador da organização</block>
-  <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">Gerencie todos os ambientes de trabalho nos projetos e pastas para os quais eles têm permissões</block>
   <block id="b510afc7b0f705daf7ba3b0e6a9509ab" category="list-text">Use todos os serviços do BlueXP </block>
   <block id="379e8cc7b99cd4d7696788fde49a89de" category="list-text">Gerir credenciais a partir de Definições &gt; credenciais</block>
   <block id="5c2549b200adb54fcf4ab1fa173b79b7" category="list-text">Veja a linha do tempo do BlueXP </block>
   <block id="ea6f3818343083288cee520c382ca65a" category="list-text">Registre o BlueXP  para obter suporte e enviar casos</block>
   <block id="36910b765d93c29f4611f725c05faabe" category="section-title">Administrador do SnapCenter</block>
-  <block id="9475c3d2084f0988bba4e27b2659a267" category="list-text">Permite fazer backup de snapshots de clusters ONTAP on-premises usando o backup e a recuperação do BlueXP  para aplicações.</block>
   <block id="b839a58c0750f04dc83675a2a8c1ba61" category="list-text">Conclua qualquer ação a partir de cópia de Segurança e recuperação &gt; aplicações</block>
-  <block id="1393a4279651a3334e20f39925a139f5" category="section-title">Visualizador de classificação</block>
-  <block id="4a7c2bc5a034a095b9cd966aff4637c5" category="list-text">Fornece os resultados do exame de classificação BlueXP  da vista de capacidade.</block>
-  <block id="84e4a7656b5466806bf9fbeda2eedd15" category="list-text">Visualize as informações de conformidade e gere relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados.</block>
-  <block id="5f8c43dca47697fafd9a89eae3ea6f82" category="paragraph">Nenhuma outra ação está disponível para um membro que tenha essa função.</block>
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limitações conhecidas</block>
@@ -4738,13 +4730,8 @@
   <block id="31e872437335d3d81483e87525b418b2" category="paragraph">Uma _organização_ é o nível superior do sistema IAM da BlueXP  e normalmente representa a sua empresa. Sua organização consiste em pastas, projetos, membros, funções e recursos. Os conetores estão associados a projetos específicos na organização.</block>
   <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">Ao se inscrever no BlueXP , você será solicitado a criar uma nova organização.</block>
   <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">Você não precisa criar pastas. Eles são opcionais.</block>
-  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">Funções predefinidas</block>
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">O BlueXP  suporta várias funções predefinidas que podem ser atribuídas aos membros da sua organização.</block>
-  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Saiba mais sobre as funções predefinidas do IAM</block>
-  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Funções da plataforma</block>
-  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados.</block>
-  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Tabela de comparação de funções da plataforma</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Exemplo para funções de organização em BlueXP  para uma grande organização multinacional</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessário, selecione *Adicionar um membro* para especificar membros adicionais da organização que devem ter acesso à pasta ou projeto e, em seguida, selecione uma função. Uma função define as permissões que os membros têm para a pasta ou projeto.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gerenciar permissões a partir da página Membros</block>
@@ -4763,9 +4750,6 @@
   <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Funções da aplicação</block>
   <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Funções do Keystone</block>
-  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">Você pode usar as funções a seguir para atribuir acesso aos usuários ao Keystone.</block>
-  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Admin do Keystone*: Gerencie a assinatura do Keystone e tome medidas em alertas, relatórios e assinaturas.</block>
-  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">*Keystone Viewer*: Visualize a assinatura do Keystone, além de exibir relatórios, alertas e ativos.</block>
   <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">A tabela a seguir indica as ações que cada função do Keystone pode executar.</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">Recurso e ação</block>
   <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Administrador do Keystone</block>
@@ -4787,10 +4771,6 @@
   <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">Crie relatórios para si mesmo</block>
   <block id="3b8988881170da948296006bcb3af098" category="cell">*Pedidos de serviço*:</block>
   <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">Criar solicitações de serviço</block>
-  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">A classificação não tem uma função de administrador.</block>
-  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">Você pode usar as funções a seguir para atribuir aos usuários acesso à proteção contra ransomware.</block>
-  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">* Administrador de proteção contra ransomware*: Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios.</block>
-  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">* Visualizador de proteção contra ransomware*: Visualize dados de carga de trabalho, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios.</block>
   <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.</block>
   <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">Administração de proteção contra ransomware</block>
   <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">Visualizador de proteção contra ransomware</block>
@@ -4839,20 +4819,15 @@
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configuração e administração do BlueXP</block>
   <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram nas seguintes categorias: Plataforma, aplicativo e serviço de dados.</block>
   <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.</block>
-  <block id="354b5c7e04f33eff066b4dc5b8104237" category="paragraph">Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos.</block>
-  <block id="ac6f21d3ccd4ab7c12a14f56f9a464bd" category="paragraph">A função de administrador de pasta ou projeto não pode criar conetores.</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">Crie conetores</block>
   <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">Crie pastas e projetos, incluindo exclusão</block>
   <block id="3e02e95230f791e515adffdd7086123c" category="cell">Renomeie pastas e projetos existentes</block>
   <block id="c9cff18229760a66e25f980da9c1850b" category="cell">Remova os conetores de pastas e projetos</block>
   <block id="b6f5b5483997d6dff9a8ee0bc1932433" category="cell">Gerenciar conetores (editar certificados, configurações e assim por diante)</block>
-  <block id="0600246627669cf56a49de00fb320e66" category="paragraph">Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.</block>
-  <block id="35a83113bde80420d7102c597d0dfac6" category="paragraph">Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador de pasta ou projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.</block>
   <block id="d76310e425debd9a2b76f8114d4c1d27" category="paragraph">A seguir está uma lista de funções na categoria de aplicativo. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de aplicativo necessária ou uma função de plataforma não poderão acessar o aplicativo.</block>
   <block id="4be5ebc45ada5051c97493c24dafb98f" category="admonition">O acesso ao Keystone por meio do BlueXP  está atualmente em fase beta. Se você quiser participar da versão beta do Keystone, entre em Contato com seu representante da NetApp.</block>
   <block id="124cd0f2df6f1c0e90303ec188b16200" category="cell">Ver subscrições</block>
   <block id="d01d98071916332acadef4e86c7ff279" category="cell">Alterar ou renovar subscrições</block>
-  <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">Solicitações de serviço CView criadas por qualquer usuário dentro da Organização</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Funções de serviço de dados</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">A seguir está uma lista de funções na categoria de serviço de dados. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de serviço de dados necessária ou uma função de plataforma não poderão acessar o serviço de dados.</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">O gerenciamento de sistemas Cloud Volumes ONTAP agora é suportado por conetores que têm o SELinux habilitado no sistema operacional.</block>
@@ -4874,8 +4849,113 @@
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">Para a conta NSS que você deseja atualizar, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Exibir endereço de e-mail*. Você pode usar o botão copiar para copiar o endereço de e-mail.</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Não é possível excluir uma conta que esteja atualmente associada a um ambiente de trabalho do Cloud Volumes ONTAP. Primeiro você precisa <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de fevereiro de 2025</block>
-  <block id="186343db38833a48df757e694e69337d" category="doc">Gerenciar credenciais NSS associadas ao BlueXP </block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Atualizações de licença em carteira digital, o que significa que você não poderá aproveitar a capacidade recém-adquirida.</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">Manter o sistema operacional no host do conetor é sua responsabilidade (do cliente). Por exemplo, você (cliente) deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.</block>
   <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">A partir do host Linux, remova os arquivos de imagem de contentor antigos, agora não utilizados. Isso garante que haja espaço suficiente no diretório /var para reinstalar.</block>
+  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0 e 28.0.0 são suportados com _new_ Connector 3.9.52 ou instalações posteriores</block>
+  <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">Observe que você (cliente) não precisa interromper nenhum serviço no host do conetor ao aplicar pequenas atualizações de segurança.</block>
+  <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">Se você (cliente) precisar parar e, em seguida, iniciar a VM do conetor, você deve fazê-lo a partir do console do seu provedor de nuvem ou usando os procedimentos padrão para gerenciamento no local.</block>
+  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">Conetor 3.9.52</block>
+  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs, bem como algumas atualizações adicionais.</block>
+  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">Neste momento, a versão 3.9.52 está disponível para o modo padrão e modo restrito.</block>
+  <block id="66b821747bf772a5a92a60270143558a" category="section-title">Suporte para Docker 27 e Docker 28</block>
+  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">Docker 27 e Docker 28 agora são suportados com o conetor.</block>
+  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Administração do Keystone disponível no BlueXP </block>
+  <block id="4359bea5882e2896e306955792589a33" category="paragraph">A versão beta para NetApp Keystone no BlueXP  adicionou acesso à administração do Keystone. Você pode acessar a página de inscrição para o NetApp Keystone beta na barra de navegação à esquerda do BlueXP .</block>
+  <block id="3c4f7accda6c4e5b05c122dfef01bebe" category="paragraph">As seções a seguir descrevem os diferentes componentes do uso do IAM no BlueXP .</block>
+  <block id="e95e1ea14aa7dd2b3186795a75b45b13" category="paragraph">Você pode organizar seus recursos em pastas quando precisar de separação de responsabilidade ou recursos de armazenamento.</block>
+  <block id="b1371d1a1eaa0db34a42be4569a94358" category="section-title">Funções de acesso</block>
+  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">O BlueXP  oferece suporte a várias funções de acesso que você pode atribuir aos membros da sua organização.</block>
+  <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">Funções de acesso</block>
+  <block id="481fde2b9d3163b5bc94a4f5d5a81c31" category="summary">O gerenciamento de identidade e acesso do BlueXP  fornece duas funções administrativas que podem ser atribuídas aos membros da sua organização.</block>
+  <block id="917ed85266888b2a7a9981b7b5a988fd" category="doc">Funções do Keystone Access para BlueXP </block>
+  <block id="8523ef412b93586e7483ff371da34a44" category="paragraph">As funções do Keystone fornecem acesso aos painéis do Keystone e permitem que os usuários visualizem e gerenciem a assinatura do Keystone. Há duas funções do Keystone: Administração do Keystone e visualizador do Keystone. A principal diferença entre as duas funções é as ações que podem ser executadas no Keystone. A função de administrador do Keystone é a única função que tem permissão para criar solicitações de serviço ou modificar assinaturas.</block>
+  <block id="cf05bacc5606910682219fb31232e8be" category="paragraph-title">Exemplo de funções do Keystone no BlueXP </block>
+  <block id="6711a14165f040e53c13e848daea3ef0" category="paragraph">Em uma subscrição do Keystone, a XYZ Corporation tem quatro engenheiros de storage de diferentes departamentos que visualizam informações sobre a assinatura do Keystone. Embora todos esses usuários precisem monitorar a assinatura do Keystone, apenas o líder da equipe pode fazer solicitações de serviço. Três dos membros da equipe recebem a função *Keystone Viewer*, enquanto o líder da equipe recebe a função *Keystone admin* para que haja um ponto de controle sobre as solicitações de serviço para a empresa.</block>
+  <block id="e9bbe4519d8938c73c2ce0dbaa4adf60" category="cell">Exibir solicitações de serviço criadas por qualquer usuário dentro da Organização</block>
+  <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">Funções de acesso à plataforma BlueXP </block>
+  <block id="2a80e7029e86e0b477bbea9ab387b5e3" category="paragraph">As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  inclui duas funções de plataforma: *Administrador da organização* e *administrador de pasta ou projeto*. A principal diferença entre as duas funções da plataforma BlueXP  é o escopo no qual a função se aplica.</block>
+  <block id="0a93e6a5a2b06eac2cb4370bc70d9a40" category="paragraph">Para conseguir isso, uma pessoa atribuída à função *administrador da organização* no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O *administrador da organização* atribui a um usuário do BlueXP  em cada região a função *administrador de pasta ou projeto*.</block>
+  <block id="14be76003904f893c083de9f6a193111" category="paragraph">Uma vez concluída a configuração inicial, os administradores regionais com a função *Folder ou Project admin* podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O *Organization admin* herda permissões para quaisquer novos ambientes de trabalho ou recursos, mantendo a visibilidade do uso do armazenamento em toda a organização.</block>
+  <block id="f7e279e88014dd7b5f4694b49a2c91f2" category="paragraph">A tabela a seguir indica as ações que cada função da plataforma BlueXP  pode executar.</block>
+  <block id="3aba2887bff41f744b43940b1b82080a" category="cell">Função da plataforma</block>
+  <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">Responsabilidades</block>
+  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">Org admin</block>
+  <block id="35ccbb635b1465432c3a19f88cbf034c" category="cell"><block ref="35ccbb635b1465432c3a19f88cbf034c" category="inline-link-macro-rx"></block></block>
+  <block id="6d67156c2e45db37cd67283f29d6768d" category="cell">Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados. Os usuários com essa função têm a tarefa de organizar e gerenciar todo o ambiente BlueXP . Eles podem criar pastas e projetos, atribuir funções e adicionar usuários a qualquer projeto ou pasta. Eles também podem gerenciar todos os ambientes de trabalho dentro da organização. Esta é a única função de acesso que pode criar conetores.</block>
+  <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
+  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos. A função de administrador de pasta ou projeto NÃO PODE criar conetores.</block>
+  <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Função de aplicação</block>
+  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
+  <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Usuários com a função de administrador do Keystone podem criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando.</block>
+  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
+  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Os usuários com a função de visualizador do Keystone NÃO PODEM fazer solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. ///</block>
+  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Administrador de storage</block>
+  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Administre funções de governança e integridade do storage, descubra recursos de storage e modifique e exclua ambientes de trabalho existentes.</block>
+  <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Visualizador de armazenamento</block>
+  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
+  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">Visualize as funções de governança e integridade do storage, bem como veja os recursos de storage descobertos anteriormente. Não é possível descobrir, modificar ou excluir ambientes de trabalho de armazenamento existentes.</block>
+  <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Especialista em saúde do sistema</block>
+  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
+  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">Administre funções de storage e integridade e governança, todas as permissões do administrador do Storage, exceto não podem modificar ou excluir ambientes de trabalho existentes. ///</block>
+  <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Função de serviço de dados</block>
+  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Administrador de classificação</block>
+  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">Fornece os resultados do exame de classificação BlueXP  da vista de capacidade. A classificação não tem uma função de visualizador. Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados.</block>
+  <block id="d9662380e44d74fee971f8bcdbb998ba" category="cell"><block ref="d9662380e44d74fee971f8bcdbb998ba" category="inline-link-macro-rx"></block></block>
+  <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios do serviço de proteção contra ransomware.</block>
+  <block id="61e1bc1deec24a3ec686d90d9df2cf23" category="cell"><block ref="61e1bc1deec24a3ec686d90d9df2cf23" category="inline-link-macro-rx"></block></block>
+  <block id="c449660979799948a46372470a0eddb9" category="cell">Visualize dados de workload, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios no serviço de proteção contra ransomware.</block>
+  <block id="7da7bcb3da6129c11bc8f0544e81beb1" category="paragraph">Permite fazer backup de snapshots de clusters ONTAP on-premises usando o backup e a recuperação do BlueXP  para aplicações. Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :</block>
+  <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">Funções de acesso à proteção contra ransomware do BlueXP </block>
+  <block id="47ecf80e12db1325b5156ff3a7d35b15" category="paragraph">As funções de ransomware são projetadas para fornecer acesso ao serviço de proteção contra ransomware. Os usuários podem ser atribuídos a uma função administrativa que lhes permite tomar medidas na proteção do ransomware ou a uma função de visualizador se eles apenas tiverem responsabilidades de monitoramento. As duas funções são o administrador de proteção contra ransomware e o visualizador de proteção contra ransomware. A principal diferença entre as duas funções é as ações que podem tomar na proteção contra ransomware.</block>
+  <block id="318302fa87b47b527d51268d94db7ea6" category="doc">Funções de acesso ao storage do BlueXP </block>
+  <block id="53105795a2d166c0331ae09564295071" category="paragraph">Você pode atribuir as funções a seguir aos usuários para fornecer acesso aos recursos de gerenciamento de storage no BlueXP  associados a recursos de storage compatíveis. Os usuários podem ser atribuídos a uma função administrativa que lhes permite tomar medidas no gerenciamento de armazenamento ou a uma função de visualizador se tiverem apenas responsabilidades de monitoramento.</block>
+  <block id="09e3c84fe1afd5eaa9fc94f8638d3695" category="paragraph">As funções de storage podem ser atribuídas aos usuários para os seguintes recursos e recursos de storage:</block>
+  <block id="2074db110c64e6023c79b620df0670af" category="paragraph">Recursos de armazenamento:</block>
+  <block id="8961844857d18125fa7300df96ad4e94" category="paragraph">Serviços e recursos do BlueXP :</block>
+  <block id="7d4d3675a79561800c46dfdad71222a2" category="paragraph-title">Exemplo de funções de storage no BlueXP </block>
+  <block id="47f8970af0c44342a763bfde8e222e13" category="paragraph">A XYZ Corporation, uma multinacional, tem uma grande equipe de engenheiros de storage e administradores de storage. Elas querem capacitar essa equipe para gerenciar os ativos de storage de suas respetivas regiões, mas restringir o acesso a tarefas básicas de administração do BlueXP , como gerenciamento de usuários, criação de conetores e ferramentas de gerenciamento de custos, como carteira digital.</block>
+  <block id="3917088f255e5877d39c6fe9da2e1f62" category="paragraph">Dentro de uma equipe de 12, dois usuários recebem a função *Visualizador de armazenamento*, que permite monitorar os recursos de armazenamento associados aos projetos BlueXP  aos quais são atribuídos. Os nove restantes recebem a função *administrador de armazenamento*, que inclui a capacidade de gerenciar atualizações de software, acessar o Gerenciador de sistema ONTAP por meio do BlueXP , bem como descobrir recursos de armazenamento (adicionar ambientes de trabalho). Uma pessoa da equipe recebe a função *System Health Specialist* para que possa gerenciar a integridade dos recursos de armazenamento em sua região, mas não modificar ou excluir nenhum ambiente de trabalho. Essa pessoa também pode executar atualizações de software nos recursos de storage para projetos que foram atribuídos.</block>
+  <block id="31fd11b2048f5356558b9e26634e67ce" category="paragraph">A organização tem dois usuários adicionais com a função *Administrador da Organização* que podem gerenciar todos os aspetos do BlueXP , incluindo gerenciamento de usuários, criação de conetores e ferramentas de gerenciamento de custos, como carteira digital, bem como vários usuários com a função *Administrador de pasta ou projeto* que podem executar tarefas de administração do BlueXP  para as pastas e projetos aos quais são atribuídos.</block>
+  <block id="294e40f9cc227c86e788ac8d546ddade" category="paragraph">A tabela a seguir indica que as ações que cada função de storage do BlueXP  pode executar.</block>
+  <block id="32d0b8cf78bc04242aed5ba6801818b6" category="cell">*Canvas*:</block>
+  <block id="eaef5d2ec844a2f5d6658bd86a05a85a" category="cell">Descubra novos recursos (crie um novo ambiente de trabalho)</block>
+  <block id="65075797bf35acb1b1da033d464a2127" category="cell">Veja os recursos descobertos</block>
+  <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">Eliminar ambientes de trabalho</block>
+  <block id="c7b18a0b4f7adea3bae003772260030d" category="cell">Modificar ambientes de trabalho</block>
+  <block id="a58bf8bc00d7951e76f88f0a279baa68" category="cell">*Criar conetor*</block>
+  <block id="8822cc008eedc76497bc19a6017e6e3c" category="cell">*Assessor digital*</block>
+  <block id="eab210dd297eed7a23f02ae9ff070512" category="cell">Ver todas as páginas e funções</block>
+  <block id="15f388beaad85e03ee21e73343d1f1e7" category="cell">*Carteira digital*</block>
+  <block id="5c079e1551d5969c8a448104c556be58" category="cell">*Atualizações de software*</block>
+  <block id="f65dcc1f4a8bfacd0a2da1809fb7646a" category="cell">Veja a página inicial e as recomendações</block>
+  <block id="b578911d78bfaf1e75bbe69b0a471d0b" category="cell">Reveja as recomendações de versão potenciais e os principais benefícios</block>
+  <block id="34153016d27f6bc08ca28afe350597f0" category="cell">Exibir detalhes da atualização de um cluster</block>
+  <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">Execute verificações de pré-atualização e transfira o plano de atualização</block>
+  <block id="26c438938da81386c731f3d387eda803" category="cell">Instale atualizações de software</block>
+  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*Resiliência operacional*</block>
+  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">Analisar problemas de risco de segurança</block>
+  <block id="0416203226164e8fc52087494d33b58d" category="cell">Baixe playbooks do Ansible</block>
+  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">Corrija problemas automaticamente</block>
+  <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*Eficiência econômica*</block>
+  <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">Revisar o status do Planejamento de capacidade</block>
+  <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">Escolha a próxima ação (prática recomendada, nível)</block>
+  <block id="80b117d13aeb1c0337cca44c4f432522" category="cell">Armazene dados inativos no storage de nuvem e libere o storage</block>
+  <block id="92232278439b322df2fe12388a374e65" category="cell">Configure lembretes</block>
+  <block id="b028539b680706e70a20202f01750b69" category="cell">*Sustentabilidade*</block>
+  <block id="912c827ef07339a2dbfe984d27d383f4" category="cell">Ver painel e recomendações</block>
+  <block id="7060312ff39606d1f6621f242cc6790b" category="cell">Transferir dados do relatório</block>
+  <block id="512234aa0dc7508aa0db235f9f41b384" category="cell">Editar percentagem de mitigação de carbono</block>
+  <block id="45ecf2d70851bc50cacb9f98bc2fea05" category="cell">Corrigir recomendações</block>
+  <block id="7aea1a17c89c2ee783bd1fa5128e24a4" category="cell">Adiar recomendações</block>
+  <block id="6223d9366b08aab00344df4d74ae6ef3" category="cell">*Acesso ao gestor do sistema*</block>
+  <block id="27f3006d10a705c76accae9904ea16cd" category="cell">Pode introduzir credenciais</block>
+  <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="cell">*Credenciais*</block>
+  <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">Credenciais do usuário</block>
+  <block id="6cf4eb09d2134609121513a507415999" category="doc">Gerencie credenciais NSS associadas com git BlueXP </block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">12 de maio de 2025</block>
+  <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Saiba mais sobre as funções do BlueXP  Access</block>
+  <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Funções de serviços de dados</block>
+  <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Funções de proteção contra ransomware</block>
 </blocks>

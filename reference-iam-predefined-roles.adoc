@@ -22,77 +22,16 @@ O BlueXP  Identity and Access Management (IAM) inclui várias funções predefi
 
 As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  IAM inclui duas funções de plataforma: Administrador da organização e administrador de pasta ou projeto. A principal diferença entre as duas funções da plataforma IAM do BlueXP  é o escopo.
 
-
-
-=== Administrador da organização
-
-Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados.
-
-
-
-=== Administrador de pasta ou projeto
-
-Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos.
-
-A função de administrador de pasta ou projeto não pode criar conetores.
-
-
-
-=== Tabela de comparação de funções da plataforma
-
-[cols="24,19,19"]
+[cols="1,2"]
 |===
-| Tarefa | Administrador da organização | Administrador de pasta ou projeto 
+| Função da plataforma | Responsabilidades 
 
 
-| Crie conetores | Sim | Não 
+| link:reference-iam-platform-roles.html["Org admin"^] | Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados. Os usuários com essa função têm a tarefa de organizar e gerenciar todo o ambiente BlueXP . Eles podem criar pastas e projetos, atribuir funções e adicionar usuários a qualquer projeto ou pasta. Eles também podem gerenciar todos os ambientes de trabalho dentro da organização. Esta é a única função de acesso que pode criar conetores. 
 
 
-| Criar, modificar ou excluir ambientes de trabalho (adicionar ou descobrir novos recursos usando a tela BlueXP ) | Sim | Sim 
-
-
-| Crie pastas e projetos, incluindo exclusão | Sim | Não 
-
-
-| Renomeie pastas e projetos existentes | Sim | Sim 
-
-
-| Atribua funções e adicione usuários | Sim | Sim 
-
-
-| Associar recursos a pastas e projetos | Sim | Sim 
-
-
-| Associar conetores a pastas e projetos | Sim | Não 
-
-
-| Remova os conetores de pastas e projetos | Sim | Não 
-
-
-| Gerenciar conetores (editar certificados, configurações e assim por diante) | Sim | Não 
-
-
-| Gerir credenciais a partir de Definições > credenciais | Sim | Sim 
-
-
-| Veja a linha do tempo do BlueXP  | Sim | Sim 
-
-
-| Use os serviços do BlueXP  | Sim | Sim 
-
-
-| Registre o BlueXP  para obter suporte e enviar casos | Sim | Sim 
+| link:reference-iam-platform-roles.html["Administrador de pasta ou projeto"^] | Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos. A função de administrador de pasta ou projeto NÃO PODE criar conetores. 
 |===
-Exemplo para funções de organização em BlueXP  para uma grande organização multinacional:: A XYZ Corporation, uma empresa multinacional, tem como objetivo separar o acesso a recursos de storage de dados com base em regiões geográficas: América do Norte, Europa e Ásia-Pacífico. Eles querem que cada região tenha controle exclusivo sobre seus recursos, mantendo a supervisão centralizada.
-+
---
-Para conseguir isso, uma pessoa atribuída à função de administrador da organização no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O administrador da organização atribui a um usuário BlueXP  em cada região respetiva a função de administrador de pasta/projeto.
-
-Quando a configuração inicial estiver concluída, os administradores regionais com a função de administrador de pasta ou projeto podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O administrador da organização herda permissões para quaisquer novos ambientes ou recursos de trabalho, mantendo a visibilidade do uso do storage em toda a organização.
-
---
-
-
 
 
 == Funções da aplicação
@@ -100,139 +39,26 @@ Quando a configuração inicial estiver concluída, os administradores regionais
 A seguir está uma lista de funções na categoria de aplicativo. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de aplicativo necessária ou uma função de plataforma não poderão acessar o aplicativo.
 
 
-
-=== Funções do Keystone
-
-Você pode usar as funções a seguir para atribuir acesso aos usuários ao Keystone.
-
-
 NOTE: O acesso ao Keystone por meio do BlueXP  está atualmente em fase beta. Se você quiser participar da versão beta do Keystone, entre em Contato com seu representante da NetApp.
 
-* * Admin do Keystone*: Gerencie a assinatura do Keystone e tome medidas em alertas, relatórios e assinaturas.
-* *Keystone Viewer*: Visualize a assinatura do Keystone, além de exibir relatórios, alertas e ativos.
-
-
-A tabela a seguir indica as ações que cada função do Keystone pode executar.
-
-[cols="40,20a,20a"]
+[cols="1,2"]
 |===
-| Recurso e ação | Administrador do Keystone | Visualizador Keystone 
+| Função de aplicação | Responsabilidades 
 
 
-| Veja as seguintes guias: Assinatura, ativos, Monitor e Administração  a| 
-Sim
- a| 
-Sim
+| link:reference-iam-keystone-roles.html["Administrador do Keystone"] | Usuários com a função de administrador do Keystone podem criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. 
 
 
-
-3+| *Página de assinatura Keystone*: 
-
-
-| Ver subscrições  a| 
-Sim
- a| 
-Sim
+| link:reference-iam-keystone-roles.html["Visualizador Keystone"] | Os usuários com a função de visualizador do Keystone NÃO PODEM fazer solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. /// 
 
 
-
-| Alterar ou renovar subscrições  a| 
-Sim
- a| 
-Não
+| link:reference-iam-storage-roles.html["Administrador de storage"] | Administre funções de governança e integridade do storage, descubra recursos de storage e modifique e exclua ambientes de trabalho existentes. 
 
 
-
-3+| *Keystone Assets page*: 
-
-
-| Ver ativos  a| 
-Sim
- a| 
-Sim
+| link:reference-iam-storage-roles.html["Visualizador de armazenamento"] | Visualize as funções de governança e integridade do storage, bem como veja os recursos de storage descobertos anteriormente. Não é possível descobrir, modificar ou excluir ambientes de trabalho de armazenamento existentes. 
 
 
-
-| Gerenciar ativos  a| 
-Sim
- a| 
-Não
-
-
-
-3+| *Página de alertas do Keystone*: 
-
-
-| Ver alertas  a| 
-Sim
- a| 
-Não
-
-
-
-| Gerenciar alertas  a| 
-Sim
- a| 
-Não
-
-
-
-| Crie alertas para si mesmo  a| 
-Sim
- a| 
-Sim
-
-
-
-3+| *Carteira digital*: 
-
-
-| Pode ver a carteira digital  a| 
-Sim
- a| 
-Sim
-
-
-
-3+| *Página de relatórios do Keystone*: 
-
-
-| Transferir relatórios  a| 
-Sim
- a| 
-Sim
-
-
-
-| Gerenciar relatórios  a| 
-Sim
- a| 
-Sim
-
-
-
-| Crie relatórios para si mesmo  a| 
-Sim
- a| 
-Sim
-
-
-
-3+| *Pedidos de serviço*: 
-
-
-| Criar solicitações de serviço  a| 
-Sim
- a| 
-Não
-
-
-
-| Solicitações de serviço CView criadas por qualquer usuário dentro da Organização  a| 
-Sim
- a| 
-Sim
-
+| link:reference-iam-storage-roles.html["Especialista em saúde do sistema"] | Administre funções de storage e integridade e governança, todas as permissões do administrador do Storage, exceto não podem modificar ou excluir ambientes de trabalho existentes. /// 
 |===
 
 
@@ -240,216 +66,31 @@ Sim
 
 A seguir está uma lista de funções na categoria de serviço de dados. Cada função concede permissões específicas dentro de seu escopo designado. Os usuários que não tiverem a função de serviço de dados necessária ou uma função de plataforma não poderão acessar o serviço de dados.
 
-
-
-=== Visualizador de classificação
-
-Fornece os resultados do exame de classificação BlueXP  da vista de capacidade.
-
-A classificação não tem uma função de administrador.
-
-Permissões:: Visualize as informações de conformidade e gere relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados.
-
-
-Nenhuma outra ação está disponível para um membro que tenha essa função.
-
-
-
-=== Proteção contra ransomware
-
-Você pode usar as funções a seguir para atribuir aos usuários acesso à proteção contra ransomware.
-
-* * Administrador de proteção contra ransomware*: Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios.
-* * Visualizador de proteção contra ransomware*: Visualize dados de carga de trabalho, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios.
-
-
-A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.
-
-[cols="40,20a,20a"]
+[cols="10,24"]
 |===
-| Recurso e ação | Administração de proteção contra ransomware | Visualizador de proteção contra ransomware 
+| Função de serviço de dados | Responsabilidades 
 
 
-| Visualize o painel e todas as guias  a| 
-Sim
- a| 
-Sim
+| Administrador de classificação | Fornece os resultados do exame de classificação BlueXP  da vista de capacidade. A classificação não tem uma função de visualizador. Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. 
 
 
+| link:reference-iam-ransomware-roles.html["Administração de proteção contra ransomware"^] | Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios do serviço de proteção contra ransomware. 
 
-| Inicie o teste gratuito  a| 
-Sim
- a| 
-Não
 
+| link:reference-iam-ransomware-roles.html["Visualizador de proteção contra ransomware"^] | Visualize dados de workload, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios no serviço de proteção contra ransomware. 
 
 
-| Inicie a descoberta de cargas de trabalho  a| 
-Sim
- a| 
-Não
+| Administrador do SnapCenter  a| 
+Permite fazer backup de snapshots de clusters ONTAP on-premises usando o backup e a recuperação do BlueXP  para aplicações. Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :
 
-
-
-3+| *Na guia proteger*: 
-
-
-| Adicionar, modificar ou eliminar políticas  a| 
-Sim
- a| 
-Não
-
-
-
-| Proteja workloads  a| 
-Sim
- a| 
-Não
-
-
-
-| Identificar dados confidenciais  a| 
-Sim
- a| 
-Não
-
-
-
-| Editar a proteção da carga de trabalho  a| 
-Sim
- a| 
-Não
-
-
-
-| Ver detalhes do workload  a| 
-Sim
- a| 
-Sim
-
-
-
-| Transferir dados  a| 
-Sim
- a| 
-Sim
-
-
-
-3+| *Na guia Alertas*: 
-
-
-| Veja os detalhes do alerta  a| 
-Sim
- a| 
-Sim
-
-
-
-| Editar o status do incidente  a| 
-Sim
- a| 
-Não
-
-
-
-| Ver detalhes do incidente  a| 
-Sim
- a| 
-Sim
-
-
-
-| Obtenha a lista completa dos arquivos afetados  a| 
-Sim
- a| 
-Não
-
-
-
-| Transferir dados de alertas  a| 
-Sim
- a| 
-Sim
-
-
-
-3+| *Na guia recuperar*: 
-
-
-| Transferir ficheiros afetados  a| 
-Sim
- a| 
-Não
-
-
-
-| Restaure o workload  a| 
-Sim
- a| 
-Não
-
-
-
-| Transferir dados de recuperação  a| 
-Sim
- a| 
-Sim
-
-
-
-| Transferir relatórios  a| 
-Sim
- a| 
-Sim
-
-
-
-3+| *Na guia Configurações*: 
-
-
-| Adicionar ou modificar destinos de cópia de segurança  a| 
-Sim
- a| 
-Não
-
-
-
-| Adicionar ou modificar alvos SIEM  a| 
-Sim
- a| 
-Não
-
-
-
-3+| *Na guia relatórios*: 
-
-
-| Transferir relatórios  a| 
-Sim
- a| 
-Sim
-
-|===
-
-
-=== Administrador do SnapCenter
-
-Permite fazer backup de snapshots de clusters ONTAP on-premises usando o backup e a recuperação do BlueXP  para aplicações.
-
-O SnapCenter não tem uma função de visualizador.
-
-Permissões:: Um membro que tenha essa função pode concluir as seguintes ações no BlueXP :
-+
---
 * Conclua qualquer ação a partir de cópia de Segurança e recuperação > aplicações
 * Gerencie todos os ambientes de trabalho nos projetos e pastas para os quais eles têm permissões
 * Use todos os serviços do BlueXP 
 
 
---
+O SnapCenter não tem uma função de visualizador.
 
-
+|===
 
 
 == Links relacionados

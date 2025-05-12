@@ -1,0 +1,186 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-ransomware-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: O gerenciamento de identidade e acesso do BlueXP  fornece duas funções administrativas que podem ser atribuídas aos membros da sua organização. 
+---
+= Funções de acesso à proteção contra ransomware do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+As funções de ransomware são projetadas para fornecer acesso ao serviço de proteção contra ransomware. Os usuários podem ser atribuídos a uma função administrativa que lhes permite tomar medidas na proteção do ransomware ou a uma função de visualizador se eles apenas tiverem responsabilidades de monitoramento. As duas funções são o administrador de proteção contra ransomware e o visualizador de proteção contra ransomware. A principal diferença entre as duas funções é as ações que podem tomar na proteção contra ransomware.
+
+A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.
+
+[cols="40,20a,20a"]
+|===
+| Recurso e ação | Administração de proteção contra ransomware | Visualizador de proteção contra ransomware 
+
+
+| Visualize o painel e todas as guias  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Inicie o teste gratuito  a| 
+Sim
+ a| 
+Não
+
+
+
+| Inicie a descoberta de cargas de trabalho  a| 
+Sim
+ a| 
+Não
+
+
+
+3+| *Na guia proteger*: 
+
+
+| Adicionar, modificar ou eliminar políticas  a| 
+Sim
+ a| 
+Não
+
+
+
+| Proteja workloads  a| 
+Sim
+ a| 
+Não
+
+
+
+| Identificar dados confidenciais  a| 
+Sim
+ a| 
+Não
+
+
+
+| Editar a proteção da carga de trabalho  a| 
+Sim
+ a| 
+Não
+
+
+
+| Ver detalhes do workload  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Transferir dados  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Na guia Alertas*: 
+
+
+| Veja os detalhes do alerta  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Editar o status do incidente  a| 
+Sim
+ a| 
+Não
+
+
+
+| Ver detalhes do incidente  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Obtenha a lista completa dos arquivos afetados  a| 
+Sim
+ a| 
+Não
+
+
+
+| Transferir dados de alertas  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Na guia recuperar*: 
+
+
+| Transferir ficheiros afetados  a| 
+Sim
+ a| 
+Não
+
+
+
+| Restaure o workload  a| 
+Sim
+ a| 
+Não
+
+
+
+| Transferir dados de recuperação  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Transferir relatórios  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Na guia Configurações*: 
+
+
+| Adicionar ou modificar destinos de cópia de segurança  a| 
+Sim
+ a| 
+Não
+
+
+
+| Adicionar ou modificar alvos SIEM  a| 
+Sim
+ a| 
+Não
+
+
+
+3+| *Na guia relatórios*: 
+
+
+| Transferir relatórios  a| 
+Sim
+ a| 
+Sim
+
+|===
