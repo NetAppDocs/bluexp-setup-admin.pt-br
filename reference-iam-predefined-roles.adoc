@@ -46,19 +46,10 @@ NOTE: O acesso ao Keystone por meio do BlueXP  está atualmente em fase beta. S
 | Função de aplicação | Responsabilidades 
 
 
-| link:reference-iam-keystone-roles.html["Administrador do Keystone"] | Usuários com a função de administrador do Keystone podem criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. 
+| link:reference-iam-keystone-roles.html["Administrador do Keystone"^] | Usuários com a função de administrador do Keystone podem criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. 
 
 
-| link:reference-iam-keystone-roles.html["Visualizador Keystone"] | Os usuários com a função de visualizador do Keystone NÃO PODEM fazer solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. /// 
-
-
-| link:reference-iam-storage-roles.html["Administrador de storage"] | Administre funções de governança e integridade do storage, descubra recursos de storage e modifique e exclua ambientes de trabalho existentes. 
-
-
-| link:reference-iam-storage-roles.html["Visualizador de armazenamento"] | Visualize as funções de governança e integridade do storage, bem como veja os recursos de storage descobertos anteriormente. Não é possível descobrir, modificar ou excluir ambientes de trabalho de armazenamento existentes. 
-
-
-| link:reference-iam-storage-roles.html["Especialista em saúde do sistema"] | Administre funções de storage e integridade e governança, todas as permissões do administrador do Storage, exceto não podem modificar ou excluir ambientes de trabalho existentes. /// 
+| link:reference-iam-keystone-roles.html["Visualizador Keystone"^] | Os usuários com a função de visualizador do Keystone NÃO PODEM criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando. 
 |===
 
 
