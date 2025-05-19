@@ -4952,4 +4952,7 @@
   <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
   <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Os usuários com a função de visualizador do Keystone NÃO PODEM criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando.</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Pontos de extremidade seguros para downloads de conetores agora compatíveis com backup e recuperação e proteção contra ransomware</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Saiba mais sobre endpoints seguros para downloads de conetores.</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se você estiver usando a proteção de backup e recuperação ou ransomware, agora você pode usar endpoints seguros para downloads de conetores. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
 </blocks>

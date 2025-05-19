@@ -12,6 +12,12 @@ Neste momento, a versão 3.9.51 está disponível para o modo padrão e modo res
 
 
 
+==== Pontos de extremidade seguros para downloads de conetores agora compatíveis com backup e recuperação e proteção contra ransomware
+
+Se você estiver usando a proteção de backup e recuperação ou ransomware, agora você pode usar endpoints seguros para downloads de conetores. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Saiba mais sobre endpoints seguros para downloads de conetores."^]
+
+
+
 === Gerenciamento de identidade e acesso do BlueXP  (IAM)
 
 * Os usuários sem o administrador Org ou pasta ou administrador de projeto devem ter uma função de proteção contra ransomware para ter acesso à proteção contra ransomware. Você pode atribuir a um usuário uma de duas funções: Administrador de proteção contra ransomware ou visualizador de proteção contra ransomware.
