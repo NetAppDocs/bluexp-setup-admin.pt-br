@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice' 
 summary: 'Saiba as novidades com os recursos de administração do BlueXP : BlueXP  IAM, conetores, credenciais de provedor de nuvem e muito mais.' 
 ---
 = O que há de novo
