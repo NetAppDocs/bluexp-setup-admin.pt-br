@@ -4,7 +4,7 @@ permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription, amazon 
 summary: Saiba como o BlueXP  usa credenciais da AWS para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de uma ou mais contas da AWS no BlueXP . Por exemplo, você pode querer saber quando adicionar credenciais adicionais da AWS ao BlueXP . 
 ---
-= Saiba mais sobre as credenciais e permissões da AWS
+= Saiba mais sobre credenciais e permissões da AWS no BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

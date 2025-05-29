@@ -152,11 +152,14 @@ Dependendo do seu sistema operacional, o Podman ou o Docker Engine são necessá
 --
 Siga estas etapas para instalar o Podman e configurá-lo para atender aos seguintes requisitos:
 
-* O serviço podman.socket deve ser ativado e iniciado
-* python3 deve ser instalado
-* O pacote podman-compose versão 1.0.6 deve ser instalado
-* Podman-compose deve ser adicionado à variável de ambiente PATH
+* Habilitar e iniciar o serviço podman.socket
+* Instale o python3
+* Instale o pacote podman-compose versão 1.0.6
+* Adicione podman-compose à variável de ambiente PATH
 
+
+
+NOTE: Ao usar o Podman, ajuste a porta de serviço aardvark-dns (padrão: 53) após instalar o Conector para evitar conflitos com a porta DNS no host. Siga as instruções para configurar a porta.
 
 .Passos
 . Remova o pacote podman-docker se ele estiver instalado no host.

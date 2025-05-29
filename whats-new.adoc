@@ -36,9 +36,62 @@ Docker 27 e Docker 28 agora são suportados com o conetor.
 
 
 
+==== Cloud Volumes ONTAP
+
+Os nós do Cloud Volumes ONTAP não serão mais desligados quando o Conector estiver fora de conformidade ou inativo por mais de 14 dias. O Cloud Volumes ONTAP ainda envia mensagens de Gerenciamento de Eventos quando perde o acesso ao Conector. Essa alteração garante que o Cloud Volumes ONTAP possa continuar operando mesmo se o Conector estiver inativo por um longo período. Isso não altera os requisitos de conformidade do Conector.
+
+
+
 === Administração do Keystone disponível no BlueXP 
 
 A versão beta para NetApp Keystone no BlueXP  adicionou acesso à administração do Keystone. Você pode acessar a página de inscrição para o NetApp Keystone beta na barra de navegação à esquerda do BlueXP .
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+
+
+==== Novas funções de gerenciamento de armazenamento
+
+As funções de administrador de armazenamento, especialista em integridade do sistema e visualizador de armazenamento estão disponíveis e podem ser atribuídas aos usuários.
+
+Essas funções permitem que você gerencie quem na sua organização pode descobrir e gerenciar recursos de armazenamento, bem como visualizar informações de integridade do armazenamento e executar atualizações de software.
+
+Essas funções são suportadas para controlar o acesso aos seguintes recursos de armazenamento:
+
+* Sistemas e-Series
+* Sistemas StorageGRID
+* Sistemas ONTAP no local
+
+
+Você também pode usar essas funções para controlar o acesso aos seguintes serviços BlueXP:
+
+* Atualizações de software
+* Consultor digital
+* Resiliência operacional
+* Eficiência económica
+* Sustentabilidade
+
+
+As seguintes funções foram adicionadas:
+
+* *Administrador de armazenamento*
++
+Administrar a integridade, a governança e a descoberta do armazenamento para os recursos de armazenamento na organização. Essa função também pode realizar atualizações de software nos recursos de armazenamento.
+
+* *Especialista em saúde sistêmica*
++
+Administrar a integridade e a governança do armazenamento para os recursos de armazenamento na organização. Esta função também pode realizar atualizações de software nos recursos de armazenamento. Esta função não pode modificar ou excluir ambientes de trabalho.
+
+* *Visualizador de armazenamento*
++
+Visualize informações sobre integridade do armazenamento e dados de governança.
+
++
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso."^]
+
+
 
 
 

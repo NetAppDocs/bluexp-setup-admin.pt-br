@@ -14,16 +14,16 @@ summary: O gerenciamento de identidade e acesso do BlueXP  permite que você re
 
 
 [role="lead"]
-O BlueXP  permite que você atribua funções aos usuários com base no que eles precisam fazer e onde.
+No BlueXP, você pode atribuir funções aos usuários com base no que eles precisam fazer e onde.
 
-Os usuários com as funções de administrador de organização ou pasta ou administrador de projeto têm a responsabilidade de atribuir funções a outros usuários. Você pode atribuir funções de acesso em uma base de projeto ou pasta. Por exemplo, você pode atribuir a um usuário a função de administrador de proteção contra ransomware para um projeto e a função de administrador do SnapCenter para um projeto diferente. Como alternativa, se um usuário exigir a função de administrador de classificação para todos os projetos dentro de uma pasta específica, você pode conceder a eles essa função de acesso no nível da pasta.
+Usuários com a função *Administrador da organização* ou *Administrador de pasta ou projeto* têm a responsabilidade de atribuir funções a outros usuários. Você pode atribuir funções de acesso em uma base de projeto ou pasta. Por exemplo, você pode atribuir a um usuário a função de administrador de proteção contra ransomware para um projeto e a função de administrador do SnapCenter para um projeto diferente. Como alternativa, se um usuário exigir a função de administrador de classificação para todos os projetos dentro de uma pasta específica, você pode conceder a eles essa função de acesso no nível da pasta.
 
 Use funções de acesso para atribuir acesso a recursos de storage com base nas tarefas específicas do BlueXP  que os usuários precisam executar. Por exemplo, se um usuário do BlueXP  precisar interagir com serviços de proteção contra ransomware, ele precisará ter uma função de acesso que inclua permissões de visualização ou administrativas para o serviço de proteção contra ransomware para o projeto para o qual a função de acesso é concedida.
 
 Atribua funções aos usuários com base na sua estratégia do IAM para maior segurança. As funções do BlueXP  IAM foram projetadas para garantir que os usuários tenham acesso apenas ao que precisam.
 
 
-NOTE: Lembre-se de que você não pode conceder diretamente aos recursos. Os recursos devem ser atribuídos primeiro aos projetos. Considere configurar sua hierarquia de recursos antes de atribuir acesso aos usuários. link:task-iam-manage-folders-projects.html["Saiba como organizar seus recursos no BlueXP  IAM com pastas e projetos."]
+NOTE: Lembre-se de que você não pode conceder acesso diretamente aos recursos. Os recursos devem ser atribuídos primeiro aos projetos. Considere configurar sua hierarquia de recursos antes de atribuir acesso aos usuários. link:task-iam-manage-folders-projects.html["Saiba como organizar seus recursos no BlueXP  IAM com pastas e projetos."]
 
 
 
@@ -39,7 +39,7 @@ Se você tiver a função _pasta ou admin_ do projeto, a página exibirá todos 
 
 
 
-== Adicione uma função de acesso a um membro
+== Adicionar uma função de acesso a um membro
 
 Normalmente, você atribuirá uma função ao membro ao adicioná-lo à sua organização. No entanto, você pode atualizar a função de um membro a qualquer momento, removendo uma função ou adicionando uma função diferente. Você pode remover o acesso de um usuário a um projeto removendo sua função.
 

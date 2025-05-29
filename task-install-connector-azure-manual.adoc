@@ -138,11 +138,14 @@ Dependendo do seu sistema operacional, o Podman ou o Docker Engine são necessá
 --
 Siga estas etapas para instalar o Podman e configurá-lo para atender aos seguintes requisitos:
 
-* O serviço podman.socket deve ser ativado e iniciado
-* python3 deve ser instalado
-* O pacote podman-compose versão 1.0.6 deve ser instalado
-* Podman-compose deve ser adicionado à variável de ambiente PATH
+* Habilitar e iniciar o serviço podman.socket
+* Instale o python3
+* Instale o pacote podman-compose versão 1.0.6
+* Adicione podman-compose à variável de ambiente PATH
 
+
+
+NOTE: Ao usar o Podman, ajuste a porta de serviço aardvark-dns (padrão: 53) após instalar o Conector para evitar conflitos com a porta DNS no host. Siga as instruções para configurar a porta.
 
 .Passos
 . Remova o pacote podman-docker se ele estiver instalado no host.
@@ -716,6 +719,27 @@ Por exemplo:
 +
 --cacert especifica um certificado assinado pela CA a ser usado para acesso HTTPS entre o conetor e o servidor proxy. Este parâmetro só é necessário se especificar um servidor proxy HTTPS ou se o proxy for um proxy intercetor.
 
+. Se você usou o Podman, precisará ajustar a porta aardvark-dns.
++
+.. SSH para a máquina virtual do BlueXP Connector.
+.. Abra o arquivo podman _/usr/share/containers/containers.conf_ e modifique a porta escolhida para o serviço DNS do Aardvark. Por exemplo, altere-a para 54.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. Reinicie a máquina virtual do Connector.
+
+
 . Aguarde até que a instalação seja concluída.
 +
 No final da instalação, o serviço de conetor (occm) será reiniciado duas vezes se você tiver especificado um servidor proxy.
@@ -736,9 +760,6 @@ Você deve manter o modo restrito desativado porque estas etapas descrevem como 
 
 
 
-
-.Resultado
-O conetor está agora instalado e está configurado com a sua organização BlueXP .
 
 Se você tiver o armazenamento de Blobs do Azure na mesma assinatura do Azure em que criou o conetor, verá um ambiente de trabalho de armazenamento de Blobs do Azure aparecer automaticamente na tela do BlueXP . https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Saiba como gerenciar o armazenamento de Blobs do Azure a partir do BlueXP "^]
 

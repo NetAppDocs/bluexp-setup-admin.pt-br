@@ -16,6 +16,9 @@ summary: O gerenciamento de identidade e acesso do BlueXP  fornece duas funçõ
 [role="lead"]
 Você pode atribuir as funções a seguir aos usuários para fornecer acesso aos recursos de gerenciamento de storage no BlueXP  associados a recursos de storage compatíveis. Os usuários podem ser atribuídos a uma função administrativa que lhes permite tomar medidas no gerenciamento de armazenamento ou a uma função de visualizador se tiverem apenas responsabilidades de monitoramento.
 
+
+NOTE: Essas funções não estão disponíveis na API de parceria do BlueXP.
+
 As funções de storage podem ser atribuídas aos usuários para os seguintes recursos e recursos de storage:
 
 Recursos de armazenamento:

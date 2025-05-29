@@ -4,7 +4,7 @@ permalink: concept-accounts-azure.html
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
 summary: Saiba como o BlueXP  usa as credenciais do Azure para executar ações em seu nome e como essas credenciais estão associadas às assinaturas do marketplace. Entender esses detalhes pode ser útil ao gerenciar as credenciais de uma ou mais assinaturas do Azure. Por exemplo, você pode querer saber quando adicionar credenciais adicionais do Azure ao BlueXP . 
 ---
-= Saiba mais sobre as credenciais e permissões do Azure
+= Saiba mais sobre credenciais e permissões do Azure no BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

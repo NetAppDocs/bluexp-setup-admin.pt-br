@@ -94,14 +94,6 @@ Esta documentação é regida pelo EULA. Se o produto não for operado de acordo
 
 
 
-=== Impacto no Cloud Volumes ONTAP
-
-Um conetor é um componente chave na integridade e funcionamento do Cloud Volumes ONTAP. Se um conetor for desligado, os sistemas Cloud Volumes ONTAP PAYGO e os sistemas BYOL baseados em capacidade serão desligados após perder a comunicação com um conetor por mais de 14 dias. Isso acontece porque o conetor atualiza o licenciamento no sistema todos os dias.
-
-Se o seu sistema Cloud Volumes ONTAP tiver uma licença BYOL baseada em nós, o sistema permanecerá em execução após 14 dias porque a licença é instalada no sistema Cloud Volumes ONTAP.
-
-
-
 == Locais suportados
 
 Um conetor é suportado nos seguintes locais:
