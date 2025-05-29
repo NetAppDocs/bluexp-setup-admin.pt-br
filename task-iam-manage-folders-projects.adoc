@@ -23,7 +23,7 @@ O BlueXP  Identity and Access Management (IAM) permite que você organize seus 
 Quando você cria sua organização do BlueXP , ele inclui um único projeto. Você pode criar projetos adicionais para gerenciar os recursos da sua organização. Opcionalmente, você pode criar pastas para agrupar projetos relacionados.
 
 .Sobre esta tarefa
-A profundidade da hierarquia de recursos da sua organização pode descer para 7 níveis. Como resultado, você pode criar pastas aninhadas até 6 níveis. A última pasta aninhada pode então incluir projetos no sétimo nível da hierarquia.
+A hierarquia de recursos da sua organização pode ter até 7 níveis, com pastas aninhadas em até 6 níveis e projetos no sétimo nível.
 
 A imagem a seguir ilustra a profundidade máxima da hierarquia de recursos da sua organização:
 
@@ -38,7 +38,7 @@ image:screenshot-iam-max-depth.png["Uma captura de tela que mostra uma organiza�
 ** *Nome e localização*: Insira um nome e escolha um local na hierarquia para a pasta ou projeto. Uma pasta ou projeto pode residir diretamente abaixo da organização ou dentro de uma pasta.
 ** *Recursos*: Selecione os recursos que você deseja associar a essa pasta ou projeto.
 +
-Você só pode selecionar a partir dos recursos que estão associados ao pai da pasta ou projeto. Se o pai for a organização, você poderá escolher entre qualquer recurso na organização. Se o pai for uma pasta, você só poderá selecionar os recursos associados à pasta.
+Você pode selecionar recursos associados à pasta pai ou projeto: todos os recursos para uma organização pai ou recursos específicos da pasta para uma pasta pai.
 
 +
 link:concept-identity-and-access-management.html#associate-resource-folder["Saiba quando você pode associar um recurso a uma pasta"].
@@ -64,11 +64,11 @@ Se você estiver usando a API do BlueXP , talvez seja necessário obter o ID de
 .Passos
 . Na página *Organização*, navegue até um projeto na tabela e selecione image:icon-action.png["Um ícone que é três pontos lado a lado"]
 +
-O ID do projeto é exibido.
+O sistema exibe o ID do projeto.
 
 . Para copiar a ID, selecione o botão Copy (cópia).
 +
-image:screenshot-iam-project-id.png["Uma captura de tela da tabela de pastas e projetos que mostra o remetente de ID do projeto selecionando o menu de ação para um projeto."]
+image:screenshot-iam-project-id.png["Uma captura de tela da tabela de pastas e projetos que mostra o ID do projeto depois de selecionar o menu de ação para um projeto."]
 
 
 
@@ -124,7 +124,7 @@ image:screenshot-iam-allocated-resources.png["Uma captura de tela da página Edi
 
 == Modifique os recursos associados a uma pasta ou projeto
 
-Você pode modificar os recursos associados a uma pasta ou projeto associando ou desassociando um recurso. Por exemplo, você pode querer associar um recurso a outro projeto porque esse recurso tem capacidade que outra equipe pode utilizar. Depois de associar um recurso a uma pasta ou projeto, os membros da organização que tenham permissões para essa pasta ou projeto podem acessar o recurso associado.
+Membros com permissões para uma pasta ou projeto podem acessar seus recursos associados.
 
 .Antes de começar
 link:concept-identity-and-access-management.html#associate-resource-folder["Saiba quando você pode associar um recurso a uma pasta"].
@@ -157,9 +157,9 @@ image:screenshot-iam-member-access.png["Uma captura de tela da página Editar pr
 
 == Modifique o acesso de membro a uma pasta ou projeto
 
-Modifique o acesso de membro a uma pasta ou projeto para garantir que os membros direitos tenham acesso aos recursos associados à pasta ou projeto.
+Modifique o acesso dos membros para garantir que os membros certos possam acessar os recursos associados.
 
-Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode link:task-iam-manage-roles.html#manage-permissions["Gerenciar permissões a partir da página Membros"].
+O acesso de membro fornecido em um nível hierárquico mais alto não pode ser alterado em níveis mais baixos. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode link:task-iam-manage-roles.html#manage-permissions["Gerenciar permissões a partir da página Membros"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Saiba mais sobre a herança de funções"].
 

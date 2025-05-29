@@ -2044,7 +2044,6 @@
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">Você não associou uma assinatura quando adicionou inicialmente as credenciais ao BlueXP .</block>
   <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">A substituição da assinatura atual do marketplace por uma nova assinatura altera a assinatura do marketplace para todos os ambientes de trabalho existentes da Cloud Volumes ONTAP e todos os novos ambientes de trabalho.</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Saiba como criar um conetor</block>
-  <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="d0ecf8e73b6ccfcf921b7f1d7a9f7aab" category="section-title">Associe uma assinatura existente à sua organização ou conta</block>
   <block id="3584c068f7259e26bf2cc7a1ba9ea2d5" category="paragraph">Quando você se inscreve no BlueXP  no AWS Marketplace, a última etapa do processo é associar a assinatura às suas contas do BlueXP  Organizations ou BlueXP  no site da BlueXP . Se você não concluiu esta etapa, não poderá usar a assinatura com sua organização ou conta do BlueXP .</block>
   <block id="8925ab51378f8cb5d967e8409c3769de" category="admonition">Se você estiver usando o BlueXP  no modo padrão, você terá uma organização _BlueXP _, que você gerencia usando o gerenciamento de identidade e acesso (IAM) do BlueXP . Mas se você estiver usando o BlueXP  no modo restrito ou no modo privado, então você terá uma conta _BlueXP _.</block>
@@ -2143,8 +2142,6 @@
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">Depois de adicionar suas credenciais do Azure ao BlueXP , você pode associar uma assinatura do Azure Marketplace a essas credenciais. A assinatura permite que você crie um sistema Cloud Volumes ONTAP com pagamento conforme o uso e use outros serviços do BlueXP .</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">Há dois cenários em que você pode associar uma assinatura do Azure Marketplace depois de já ter adicionado as credenciais ao BlueXP :</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Você deseja alterar a assinatura do Azure Marketplace associada às credenciais do Azure.</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Saiba como</block>
-  <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Edite suas credenciais do Azure no BlueXP  modificando os detalhes sobre suas credenciais de serviço do Azure. Por exemplo, você pode precisar atualizar o segredo do cliente se um novo segredo foi criado para o aplicativo principal do serviço.</block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você use a assinatura do mercado para pagar pelos serviços da BlueXP .</block>
   <block id="f691281f53b81c9f5d73a97dc7c334fd" category="doc">Gerenciar credenciais e assinaturas do Google Cloud para o BlueXP </block>
@@ -2354,8 +2351,6 @@
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">No canto superior direito do console BlueXP , <block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>selecione &gt; *Gerenciamento de identidade e acesso*.</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">Selecione *conetores*.</block>
   <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">Na tabela, localize o conetor que você deseja associar.</block>
-  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">Para encontrar um conetor específico, você pode usar a pesquisa acima da tabela e filtrar o conteúdo da tabela selecionando uma parte específica da hierarquia de recursos.</block>
-  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">Para exibir primeiro as pastas e projetos aos quais o conetor está associado, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Exibir detalhes*.</block>
   <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">O BlueXP  exibe detalhes sobre as pastas e projetos aos quais o conetor está associado.</block>
   <block id="7b0e84897f645e2241868699f64b6699" category="list-text">Selecione *associar à pasta ou projeto*.</block>
   <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">Selecione uma pasta ou projeto e, em seguida, selecione *Accept*.</block>
@@ -2419,7 +2414,6 @@
   <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">Forneça detalhes sobre a pasta ou projeto:</block>
   <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">*Nome e localização*: Insira um nome e escolha um local na hierarquia para a pasta ou projeto. Uma pasta ou projeto pode residir diretamente abaixo da organização ou dentro de uma pasta.</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*Recursos*: Selecione os recursos que você deseja associar a essa pasta ou projeto.</block>
-  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">Você só pode selecionar a partir dos recursos que estão associados ao pai da pasta ou projeto. Se o pai for a organização, você poderá escolher entre qualquer recurso na organização. Se o pai for uma pasta, você só poderá selecionar os recursos associados à pasta.</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">Saiba quando você pode associar um recurso a uma pasta</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>.</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*Access*: Visualize os membros que terão acesso à pasta ou projeto com base nas permissões existentes já definidas na hierarquia de recursos.</block>
@@ -2444,7 +2438,6 @@
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Selecione *aplicar*</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modifique o acesso de membro a uma pasta ou projeto</block>
-  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modifique o acesso de membro a uma pasta ou projeto para garantir que os membros direitos tenham acesso aos recursos associados à pasta ou projeto.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modificar acesso de membro:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Adicionar um membro*: Selecione o membro que você deseja adicionar à pasta ou projeto e atribua a ele uma função.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Alterar a função de um membro*: Para quaisquer membros com uma função diferente de Administrador da Organização, selecione sua função existente e, em seguida, escolha uma nova função.</block>
@@ -4165,8 +4158,6 @@
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">Na página *Organização*, navegue até um projeto na tabela e selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">O ID do projeto é exibido.</block>
   <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">Para copiar a ID, selecione o botão Copy (cópia).</block>
-  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Uma captura de tela da tabela de pastas e projetos que mostra o remetente de ID do projeto selecionando o menu de ação para um projeto.</block>
-  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de novembro de 2024</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">Lançamento do modo privado (3,9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">Uma nova versão do modo privado está agora disponível para transferência a partir do<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4302,11 +4293,9 @@
   <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Há dois cenários em que você pode configurar uma assinatura do AWS Marketplace depois de adicionar as credenciais ao BlueXP :</block>
   <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">Você não configurou uma assinatura quando adicionou inicialmente as credenciais ao BlueXP .</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Você deseja alterar a assinatura do AWS Marketplace configurada com as credenciais da AWS.</block>
-  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">A profundidade da hierarquia de recursos da sua organização pode descer para 7 níveis. Como resultado, você pode criar pastas aninhadas até 6 níveis. A última pasta aninhada pode então incluir projetos no sétimo nível da hierarquia.</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">A imagem a seguir ilustra a profundidade máxima da hierarquia de recursos da sua organização:</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Exibir os recursos associados a uma pasta ou projeto</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Na página *Editar*, você pode ver detalhes sobre a pasta ou projeto selecionado expandindo as seções *Resources* ou *Access*.</block>
-  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">Você pode modificar os recursos associados a uma pasta ou projeto associando ou desassociando um recurso. Por exemplo, você pode querer associar um recurso a outro projeto porque esse recurso tem capacidade que outra equipe pode utilizar. Depois de associar um recurso a uma pasta ou projeto, os membros da organização que tenham permissões para essa pasta ou projeto podem acessar o recurso associado.</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Exibir membros associados a uma pasta ou projeto</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Na página *Editar*, selecione *Access* para visualizar a lista de membros que têm acesso à pasta ou projeto selecionado.</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Quando você usa o gerenciamento de identidade e acesso do BlueXP  (IAM) para associar um membro à sua organização, você fornece permissões no nível da organização, pasta ou projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um recurso de armazenamento que o BlueXP  já gerencia ou conhece.</block>
@@ -4749,7 +4738,6 @@
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 de janeiro de 2025 (versão 1,39)</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Aceda ao<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e consulte as alterações incluídas na versão 1,39.</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">21 de fevereiro de 2025</block>
-  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">Se o acesso de membro foi fornecido em um nível mais alto da hierarquia (no nível da pasta ou da organização), então você não pode remover ou alterar o acesso de membro ao visualizar a pasta ou projeto de nível inferior. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
   <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">Adicione membros do BlueXP  e gerencie suas permissões</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
   <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">Saiba como usar funções para controlar o acesso aos recursos do BlueXP .</block>
@@ -4982,4 +4970,24 @@
   <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">Agora você pode gerenciar mais sistemas de armazenamento locais, como E-Series e StorageGRID.</block>
   <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
   <block id="6a3405f47013290acf99c18684c84269" category="list-text">O Cloud Tiering agora exibe se você tem algum cluster ONTAP local não descoberto para que você possa adicioná-lo ao Cloud Manager para habilitar o armazenamento em camadas ou outros serviços nesses clusters.</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="doc">Lançamento do modo privado (3,9.52)</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">A versão 3.9.52 inclui atualizações para os seguintes componentes e serviços do BlueXP.</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52, 3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">Vá para o <block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> e consulte as alterações incluídas nas versões 3.9.52 e 3.9.50.</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">Vá para o <block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e consulte as alterações incluídas no comunicado de maio de 2025.</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">12 de maio de 2025 (versão 1.43)</block>
+  <block id="e604d3f0ea5a3e895506b1c61f048b4d" category="paragraph">Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block>.</block>
+  <block id="5b5ddc8c08b78e13543c02ee18a88455" category="paragraph">Você precisa criar um Conector antes de poder alterar as configurações do BlueXP. <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block> .</block>
+  <block id="e049b2d97a8ed0a8d2e842c6e0c625b3" category="inline-image-macro">Ícone de configurações</block>
+  <block id="1ffc44d5620a15f62b04c6a8580e783a" category="list-text">No canto superior direito do console BlueXP , <block ref="c0116accfefd0197a42c99a28533a02c" category="inline-image-macro-rx" type="image"></block>selecione &gt; *Gerenciamento de identidade e acesso*.</block>
+  <block id="aa16286c48b235d2df04d578aeed8edb" category="paragraph">Use a pesquisa acima da tabela para encontrar um Conector específico ou filtre a tabela por hierarquia de recursos.</block>
+  <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">Um ícone com três pontos</block>
+  <block id="c16d0f9fc94c90341b26a5a3efda881c" category="list-text">Para visualizar as pastas e projetos vinculados ao Conector, selecione <block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block> e então selecione *Ver detalhes*.</block>
+  <block id="e91f37331347d046e8f84d619f57d7c8" category="paragraph">A hierarquia de recursos da sua organização pode ter até 7 níveis, com pastas aninhadas em até 6 níveis e projetos no sétimo nível.</block>
+  <block id="8d7e1bfd65485e98b0f12b20edd6d4b2" category="paragraph">Você pode selecionar recursos associados à pasta pai ou projeto: todos os recursos para uma organização pai ou recursos específicos da pasta para uma pasta pai.</block>
+  <block id="e6e4545a44f4062ee0d1ed5ca569ddc1" category="paragraph">O sistema exibe o ID do projeto.</block>
+  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">Membros com permissões para uma pasta ou projeto podem acessar seus recursos associados.</block>
+  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">Modifique o acesso dos membros para garantir que os membros certos possam acessar os recursos associados.</block>
+  <block id="a5adc30e4e36f3ae2a8e99ff0f19a490" category="paragraph">O acesso de membro fornecido em um nível hierárquico mais alto não pode ser alterado em níveis mais baixos. Você precisa mudar para essa parte da hierarquia e atualizar as permissões do membro lá. Alternativamente, você pode <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 de maio de 2025</block>
 </blocks>

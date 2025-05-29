@@ -235,7 +235,7 @@ A substituição da assinatura atual do marketplace por uma nova assinatura alte
 
 
 .Antes de começar
-Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#how-to-create-a-connector["Saiba como criar um conetor"].
+Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#connector-installation["Saiba como criar um conetor"].
 
 O vídeo a seguir mostra as etapas para se inscrever no BlueXP  no AWS Marketplace:
 

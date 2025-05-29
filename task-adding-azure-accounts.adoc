@@ -284,7 +284,7 @@ Depois de fornecer uma conta do Azure com as permissões necessárias, você pod
 Se você acabou de criar essas credenciais no seu provedor de nuvem, talvez demore alguns minutos até que elas estejam disponíveis para uso. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
 
 .Antes de começar
-Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#how-to-create-a-connector["Saiba como criar um conetor"].
+Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#connector-installation["Saiba como criar um conetor"].
 
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
@@ -334,7 +334,7 @@ A substituição da assinatura atual do marketplace por uma nova assinatura alte
 
 
 .Antes de começar
-Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#how-to-create-a-connector["Saiba como"].
+Você precisa criar um Conector antes de poder alterar as configurações do BlueXP. link:concept-connectors.html#connector-installation["Saiba como criar um conetor"] .
 
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.

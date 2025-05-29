@@ -22,13 +22,13 @@ Você deve entender como a associação de conetores funciona. link:concept-iden
 
 
 .Passos
-. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["Ícone de configurações"]selecione > *Gerenciamento de identidade e acesso*.
 . Selecione *conetores*.
 . Na tabela, localize o conetor que você deseja associar.
 +
-Para encontrar um conetor específico, você pode usar a pesquisa acima da tabela e filtrar o conteúdo da tabela selecionando uma parte específica da hierarquia de recursos.
+Use a pesquisa acima da tabela para encontrar um Conector específico ou filtre a tabela por hierarquia de recursos.
 
-. Para exibir primeiro as pastas e projetos aos quais o conetor está associado, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
+. Para visualizar as pastas e projetos vinculados ao Conector, selecione image:icon-action.png["Um ícone com três pontos"] e então selecione *Ver detalhes*.
 +
 O BlueXP  exibe detalhes sobre as pastas e projetos aos quais o conetor está associado.
 
