@@ -165,7 +165,7 @@ Suportado em regiões governamentais com modo restrito. Não suportado em regiõ
 | Carteira digital | Pode utilizar a carteira digital com as opções de licenciamento suportadas listadas abaixo para o modo restrito. 
 
 
-| Clusters ONTAP on-premises | A descoberta com um conetor e descoberta sem um conetor (descoberta direta) são suportadas. Quando você descobre um cluster no local com um conetor, a visualização avançada (System Manager) não é suportada. 
+| Clusters ONTAP on-premises | A descoberta com um conetor e descoberta sem um conetor (descoberta direta) são suportadas. Quando você descobre um cluster local com um conector, a exibição Avançada (Gerenciador do Sistema) não é suportada. 
 
 
 | Replicação | Suportado em regiões governamentais com modo restrito. Não suportado em regiões comerciais ou em regiões soberanas com modo restrito. 
@@ -246,7 +246,7 @@ Serviços BlueXP  compatíveis em implantações de nuvem:: O BlueXP  oferece 
 | Clusters ONTAP on-premises | Requer conectividade da nuvem (onde o conetor está instalado) para o ambiente local. A descoberta sem um conetor (descoberta direta) não é suportada. 
 |===
 --
-Serviços BlueXP  compatíveis em implantações locais:: O BlueXP  dá suporte aos seguintes serviços de storage e dados com modo privado quando o conetor é instalado em suas instalações:
+Serviços BlueXP suportados em implantações locais:: O BlueXP  dá suporte aos seguintes serviços de storage e dados com modo privado quando o conetor é instalado em suas instalações:
 +
 --
 [cols="2*"]
@@ -336,7 +336,7 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | Google Cloud Storage | Não | Não 
 
 
-| Clusters ONTAP no local | Sim | Sim 
+| Clusters ONTAP locais | Sim | Sim 
 
 
 | E-Series | Não | Não 

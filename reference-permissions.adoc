@@ -178,7 +178,7 @@ Ao usar o backup e a recuperação do BlueXP  para fazer backup do Cloud Volume
 
 
 
-| Fazer backup de clusters do ONTAP no local no Google Cloud | Ao usar o backup e a recuperação do BlueXP  para fazer backup de clusters ONTAP locais, você precisa adicionar permissões ao conetor para usar a funcionalidade "pesquisar e restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permissões para a funcionalidade Procurar  Restaurar"^] 
+| Fazer backup de clusters do ONTAP no local no Google Cloud | Ao usar o backup e a recuperação do BlueXP para fazer backup de clusters ONTAP locais, você precisa adicionar permissões ao Conector para usar a funcionalidade "Pesquisar e Restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permissões para a funcionalidade Procurar  Restaurar"^] 
 |===
 
 

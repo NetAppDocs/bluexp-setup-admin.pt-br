@@ -4,7 +4,7 @@ permalink: concept-connectors.html
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: Um conetor é o software NetApp executado em sua rede na nuvem ou na rede local. Ele executa as ações que o BlueXP  precisa executar para gerenciar sua infraestrutura de dados. O conetor constantemente pesquisa a camada SaaS do BlueXP  para quaisquer ações que ele precise tomar. Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP . 
 ---
-= Saiba mais sobre conetores
+= Saiba mais sobre conetores BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -48,7 +48,7 @@ A única vez que um conetor é necessário para adicionar uma licença à cartei
 Embora um conetor não seja necessário para a descoberta direta de um cluster ONTAP no local, um conetor é necessário se você quiser aproveitar os recursos adicionais do BlueXP .
 
 +
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Saiba mais sobre as opções de descoberta e gerenciamento para clusters ONTAP no local"^]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Saiba mais sobre opções de descoberta e gerenciamento para clusters ONTAP locais"^]
 
 * Atualizações de software
 * Sustentabilidade
@@ -90,7 +90,7 @@ Quando você usa o BlueXP  no modo padrão, um conetor é necessário para os s
 
 Os conetores são uma parte fundamental da arquitetura de serviços do BlueXP . É da sua responsabilidade garantir que os conetores relevantes estejam sempre ativos, operacionais e acessíveis. Embora o serviço seja projetado para superar interrupções curtas da disponibilidade do conetor, você precisa tomar medidas imediatas quando necessário para solucionar falhas de infraestrutura.
 
-Esta documentação é regida pelo EULA. Se o produto não for operado de acordo com a documentação, a funcionalidade e o funcionamento do produto, bem como os seus direitos ao abrigo do EULA, podem ser afetados negativamente.
+Esta documentação é regida pelo EULA. Se o produto não for operado de acordo com a documentação, a funcionalidade e a operação do produto, bem como seus direitos sob o CLUF, poderão ser afetados negativamente.
 
 
 
@@ -114,7 +114,7 @@ Se você quiser usar os serviços do BlueXP  com o Google Cloud, use um conetor
 
 == Comunicação com fornecedores de nuvem
 
-O conetor usa o TLS 1,2 para todas as comunicações com a AWS, o Azure e o Google Cloud.
+O conetor usa o TLS 1,3 para todas as comunicações com a AWS, o Azure e o Google Cloud.
 
 
 
@@ -126,9 +126,9 @@ link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
 
 
 
-== Como criar um conetor
+== Como instalar um conector
 
-Você pode criar um conetor diretamente do BlueXP , a partir do mercado do seu provedor de nuvem ou instalando manualmente o software em seu próprio host Linux. A forma como começar depende se está a utilizar o BlueXP  no modo padrão, no modo restrito ou no modo privado.
+Você pode instalar um Connector diretamente do BlueXP, do marketplace do seu provedor de nuvem ou instalando manualmente o software no seu próprio host Linux. A forma como começar depende se está a utilizar o BlueXP  no modo padrão, no modo restrito ou no modo privado.
 
 * link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"]
 * link:task-quick-start-standard-mode.html["Comece a usar o BlueXP  no modo padrão"]
@@ -171,7 +171,7 @@ Para ver as permissões exatas que o conetor precisa para operações diárias, 
 
 == Atualizações do conetor
 
-Normalmente, atualizamos o software Connector a cada mês para introduzir novos recursos e fornecer melhorias de estabilidade. Embora a maioria dos serviços e recursos na plataforma BlueXP  sejam oferecidos por software baseado em SaaS, alguns recursos dependem da versão do conetor. Isso inclui gerenciamento de Cloud Volumes ONTAP, gerenciamento de cluster do ONTAP no local, configurações e ajuda.
+Normalmente, atualizamos o software Connector a cada mês para introduzir novos recursos e fornecer melhorias de estabilidade. Embora a maioria dos serviços e recursos na plataforma BlueXP  sejam oferecidos por software baseado em SaaS, alguns recursos dependem da versão do conetor. Isso inclui gerenciamento ONTAP do Cloud Volumes, gerenciamento de cluster ONTAP local, configurações e ajuda.
 
 Quando você usa o BlueXP  no modo padrão ou no modo restrito, o conetor atualiza automaticamente seu software para a versão mais recente, desde que tenha acesso de saída à Internet para obter a atualização de software. Se você estiver usando o BlueXP  no modo privado, precisará atualizar manualmente o conetor.
 
@@ -201,6 +201,6 @@ Em alguns casos, você pode precisar apenas de um conetor, mas você pode encont
 
 Aqui estão alguns exemplos:
 
-* Você tem um ambiente multicloud (por exemplo, AWS e Azure) e prefere ter um conetor na AWS e outro no Azure. Cada um gerencia os sistemas Cloud Volumes ONTAP executados nesses ambientes.
+* Você tem um ambiente multicloud (por exemplo, AWS e Azure) e prefere ter um conector na AWS e outro no Azure. Cada um gerencia os sistemas Cloud Volumes ONTAP executados nesses ambientes.
 * Um provedor de serviços pode usar uma organização da BlueXP  para fornecer serviços para seus clientes, enquanto usa outra organização para fornecer recuperação de desastres para uma de suas unidades de negócios. Cada organização teria conetores separados.
 

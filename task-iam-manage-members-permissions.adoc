@@ -16,8 +16,7 @@ summary: Gerencie os membros da sua organização para fornecer permissões em d
 [role="lead"]
 O BlueXP  Identity and Access Management (IAM) permite adicionar membros à sua organização e atribuir-lhes uma ou mais funções na hierarquia de recursos. Um _role_ contém um conjunto de permissões que permite que um membro execute ações específicas em um nível específico da hierarquia de recursos. Você pode associar novas contas de usuário e contas de serviço, gerenciar funções de membro e muito mais.
 
-
-TIP: Para garantir que você não perca o acesso à sua organização do BlueXP , é uma prática recomendada ter dois membros com a função de administrador da organização.
+Sugestão: DICA: certifique-se de que dois membros tenham a função de administrador da organização para evitar perder o acesso à sua organização BlueXP.
 
 Para gerenciar usuários e suas permissões, você deve receber uma das seguintes funções:
 
@@ -27,11 +26,11 @@ Os usuários com essa função podem gerenciar todos os membros
 
 * Administrador de pasta ou projeto
 +
-Os usuários com essa função podem gerenciar membros apenas da pasta ou projeto designado
+Usuários com esta função podem gerenciar apenas membros de uma pasta ou projeto designado
 
++
+ _Folder or project admin_ can view all members on the *Members* page but manage permissions only for folders and projects they have access to. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
 
-
-Quando um _Folder ou administrador de projeto_ exibe a página *Membros*, a página exibe todos os membros da organização. No entanto, um membro com essa função só pode exibir e gerenciar permissões de membro para as pastas e projetos para os quais eles têm permissões. link:reference-iam-predefined-roles.html["Saiba mais sobre as ações que um _Folder ou administrador de projeto_ pode concluir"].
 
 
 
@@ -39,7 +38,7 @@ Quando um _Folder ou administrador de projeto_ exibe a página *Membros*, a pág
 
 Você pode adicionar dois tipos de membros à sua organização: Uma conta de usuário e uma conta de serviço. Uma conta de serviço é normalmente usada por um aplicativo para concluir tarefas especificadas sem intervenção humana.
 
-Você pode adicionar uma conta de serviço diretamente do BlueXP . No entanto, os usuários devem primeiro se inscrever na conta do BlueXP  antes de adicioná-los a uma organização ou atribuir uma função.
+Você pode adicionar uma conta de serviço diretamente do BlueXP . Os usuários devem criar uma conta BlueXP antes de serem adicionados a uma organização ou receberem uma função.
 
 Para gerenciar usuários e suas permissões, você deve ter a função *Administrador da organização* ou a função *Administrador de pasta ou projeto*. Lembre-se de que os usuários com a função *Folder ou Project admin* só podem gerenciar membros para a pasta ou projetos dos quais eles têm permissões de administrador.
 
@@ -50,7 +49,7 @@ Para gerenciar usuários e suas permissões, você deve ter a função *Administ
 .Passos
 . Se o utilizador ainda não o tiver feito, peça-lhe para ir ao https://bluexp.netapp.com/["Site da NetApp BlueXP"^] e se inscrever.
 +
-Quando o usuário se inscrever, ele deve preencher a página *Inscrever-se*, verificar seu endereço de e-mail e, em seguida, fazer login. Quando solicitado a criar uma organização, o usuário deve fechar o BlueXP  e informar que criou sua conta de usuário. Em seguida, você pode adicionar o usuário à sua organização BlueXP  existente.
+Após se inscrever, os usuários preenchem a página *Inscrever-se*, verificam seus e-mails e efetuam login. Se solicitado a criar uma organização, eles devem fechar o BlueXP e informar sobre a criação da conta. Em seguida, você pode adicionar o usuário à sua organização BlueXP  existente.
 
 +
 link:task-sign-up-saas.html["Saiba como se inscrever no BlueXP "].
@@ -84,7 +83,7 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acess
 
 . Selecione *Adicionar*.
 +
-O usuário deve receber um e-mail do NetApp BlueXP . O e-mail inclui informações que o membro pode usar para acessar o BlueXP .
+O usuário recebe um e-mail do NetApp BlueXP contendo informações que os membros usam para acessar o BlueXP.
 
 
 
@@ -121,7 +120,7 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefin
 
 . Baixe ou copie o ID do cliente e o segredo do cliente.
 +
-O segredo do cliente é visível apenas uma vez e não é armazenado em nenhum lugar pelo BlueXP . Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.
+O lueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.
 
 . Selecione *Fechar*.
 
@@ -140,7 +139,7 @@ TYou pode visualizar contas de usuário e contas de serviço na página *Membros
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
 . Selecione *Membros*.
 +
-Os membros da sua organização aparecem na tabela *Membros*.
+A tabela *Membros* exibe os membros da sua organização.
 
 . Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
 
@@ -149,9 +148,9 @@ Os membros da sua organização aparecem na tabela *Membros*.
 
 === Remova um membro da sua organização
 
-Talvez seja necessário remover um membro da sua organização, por exemplo, se ele deixou a sua empresa.
+Pode ser necessário remover um membro da sua organização, por exemplo, se ele sair da empresa.
 
-A remoção de um membro da sua organização não exclui a conta do BlueXP  ou a conta do site de suporte da NetApp. Ele simplesmente remove o membro e suas permissões associadas de sua organização.
+Remover um membro revoga suas permissões, mas mantém suas contas do BlueXP e do Site de Suporte da NetApp.
 
 .Passos
 . Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Excluir usuário*.
@@ -162,10 +161,10 @@ A remoção de um membro da sua organização não exclui a conta do BlueXP  ou
 
 === Recrie as credenciais de uma conta de serviço
 
-Você pode recriar as credenciais (ID do cliente e segredo do cliente) para uma conta de serviço a qualquer momento. Você pode recriar as credenciais se as perder ou se a sua empresa exigir que você gire as credenciais de segurança após um período de tempo.
+Crie novas credenciais se elas forem perdidas ou quando for necessário atualizar as credenciais de segurança.
 
 .Sobre esta tarefa
-Recriar as credenciais exclui as credenciais existentes para a conta de serviço e cria novas credenciais. Você não poderá usar as credenciais anteriores.
+Recriar as credenciais exclui as credenciais existentes para a conta de serviço e cria novas credenciais. Você não pode usar as credenciais anteriores.
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -174,7 +173,7 @@ Recriar as credenciais exclui as credenciais existentes para a conta de serviço
 . Selecione *recrie*.
 . Baixe ou copie o ID do cliente e o segredo do cliente.
 +
-O segredo do cliente é visível apenas uma vez e não é armazenado em nenhum lugar pelo BlueXP . Copie ou baixe o segredo e guarde-o em segurança.
+O BlueXP exibe o segredo do cliente apenas uma vez e não o armazena em lugar nenhum. Copie ou baixe o segredo e guarde-o em segurança.
 
 
 

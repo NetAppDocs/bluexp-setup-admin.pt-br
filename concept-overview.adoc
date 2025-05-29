@@ -79,10 +79,10 @@ O BlueXP  inclui um pacote abrangente de serviços de dados integrados para aju
 
 Alertas do BlueXP:: Veja problemas relacionados à capacidade, disponibilidade, performance, proteção e segurança no seu ambiente ONTAP.
 Catálogo de automação da BlueXP:: Use soluções com script para automatizar a implantação e a integração de produtos e serviços da NetApp.
-Backup e recuperação do BlueXP:: Faça backup e restauração de dados na nuvem e no local.
+Backup e recuperação do BlueXP:: Faça backup e restaure dados na nuvem e no local.
 Classificação BlueXP:: Prepare sua privacidade nos ambientes de nuvem e dados de aplicações.
 Operações de nuvem da BlueXP:: Obtenha visibilidade dos gastos da computação em nuvem e identifique possíveis economias.
-Cópia e sincronização do BlueXP:: Sincronize dados entre armazenamentos de dados no local e na nuvem.
+Cópia e sincronização do BlueXP:: Sincronize dados entre armazenamentos de dados locais e na nuvem.
 Consultor digital da BlueXP:: Use análises preditivas e suporte proativo para otimizar a infraestrutura de dados.
 Carteira digital BlueXP:: Gerencie e monitore suas licenças e assinaturas.
 Recuperação de desastres da BlueXP:: Proteja workloads da VMware no local usando o VMware Cloud no Amazon FSX for ONTAP como um site de recuperação de desastres.
@@ -92,7 +92,7 @@ Proteção contra ransomware da BlueXP:: Detectar anomalias que possam resultar 
 Replicação BlueXP:: Replique dados entre sistemas de storage para dar suporte a backup e recuperação de desastres.
 Atualizações de software BlueXP:: Automatize a avaliação, o Planejamento e a execução de atualizações do ONTAP.
 Painel de sustentabilidade do BlueXP:: Analise a sustentabilidade dos seus sistemas de storage.
-Disposição em camadas do BlueXP:: Estenda seu storage ONTAP no local para a nuvem.
+Disposição em camadas do BlueXP:: Amplie seu armazenamento ONTAP local para a nuvem.
 Armazenamento em cache de volume BlueXP:: Crie um volume de cache gravável para acelerar o acesso aos dados ou descarregar o tráfego de volumes acessados com muita facilidade.
 Carga de trabalho de fábrica da BlueXP:: Crie, configure e opere as principais cargas de trabalho usando o Amazon FSX for NetApp ONTAP.
 

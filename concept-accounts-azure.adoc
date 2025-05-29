@@ -96,7 +96,7 @@ Não, não é possível mover os recursos do Azure associados ao seu ambiente de
 
 
 
-=== Como as credenciais funcionam para implantações no mercado e implantações locais?
+=== Como as credenciais funcionam para implantações de mercado e implantações locais?
 
 As seções acima descrevem o método de implantação recomendado para o conetor, que é da BlueXP . Você também pode implantar um conetor no Azure a partir do Azure Marketplace, e você pode instalar o software Connector em seu próprio host Linux.
 

@@ -76,7 +76,7 @@ Além desses endpoints, você também precisa garantir que o conetor tenha acess
 ** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Configurar a rede AWS"]
 ** link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["Configurar a rede do Azure"]
 ** link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["Configurar a rede do Google Cloud"]
-** link:task-install-connector-on-prem.html#step-3-set-up-networking["Configurar redes locais"]
+** link:task-install-connector-on-prem.html#step-3-set-up-networking["Configurar rede local"]
 
 
 * Prepare a rede para os serviços BlueXP 

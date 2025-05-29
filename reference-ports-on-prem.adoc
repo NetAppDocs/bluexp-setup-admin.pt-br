@@ -4,7 +4,7 @@ permalink: reference-ports-on-prem.html
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
 summary: O conetor usa portas de entrada quando instaladas manualmente em um host Linux local. Talvez seja necessário consultar essas portas para fins de Planejamento. 
 ---
-= Portas para o conetor on-premise
+= Portas para o conector local
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

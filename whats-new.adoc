@@ -1216,10 +1216,10 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Saiba mais 
 +
 Observe que esse link também é acessível a partir da interface de usuário do BlueXP  na página linha do tempo.
 
-* Esta versão do conetor também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos de cluster do ONTAP no local.
+* Esta versão do Connector também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos do cluster ONTAP local.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Saiba mais sobre os aprimoramentos do Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Saiba mais sobre os aprimoramentos de cluster no ONTAP on-premise"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Saiba mais sobre os aprimoramentos do cluster local do ONTAP"^]
 
 
 
@@ -1381,10 +1381,10 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.ht
 +
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["Saiba como criar e gerenciar casos de suporte"].
 
-* Esta versão do conetor também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos de cluster do ONTAP no local.
+* Esta versão do Connector também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos do cluster ONTAP local.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Saiba mais sobre os aprimoramentos do Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["Saiba mais sobre os aprimoramentos de cluster no ONTAP on-premise"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["Saiba mais sobre os aprimoramentos do cluster local do ONTAP"^]
 
 
 
@@ -1498,10 +1498,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 * Atualizamos o URL para o console do BlueXP  https://console.bluexp.netapp.com[]
 * O conetor agora é suportado na região do Google Cloud Israel.
-* Esta versão do conetor também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos de cluster do ONTAP no local.
+* Esta versão do Connector também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos do cluster ONTAP local.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#4-december-2022["Saiba mais sobre os aprimoramentos do Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["Saiba mais sobre os aprimoramentos de cluster no ONTAP on-premise"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["Saiba mais sobre os aprimoramentos do cluster local do ONTAP"^]
 
 
 
@@ -1537,7 +1537,7 @@ O NetApp BlueXP  estende e aprimora as funcionalidades fornecidas pelo Cloud Ma
 Experiência de gerenciamento unificado:: O BlueXP  permite gerenciar todos os ativos de storage e dados em uma única interface.
 +
 --
-Use o BlueXP  para criar e administrar storage de nuvem (por exemplo, Cloud Volumes ONTAP e Azure NetApp Files), mover, proteger e analisar dados e controlar muitos dispositivos de storage no local e na borda.
+Você pode usar o BlueXP para criar e administrar armazenamento em nuvem (por exemplo, Cloud Volumes ONTAP e Azure NetApp Files), para mover, proteger e analisar dados e para controlar muitos dispositivos de armazenamento locais e de borda.
 
 https://bluexp.netapp.com["Saiba mais no site da BlueXP "^]
 
@@ -1552,7 +1552,7 @@ Integrações de novos produtos::
 +
 --
 * Agora você pode gerenciar os buckets do Amazon S3 nas contas da AWS onde o conetor está instalado.
-* Agora, você pode gerenciar mais sistemas de storage no local, como o e-Series e o StorageGRID.
+* Agora você pode gerenciar mais sistemas de armazenamento locais, como E-Series e StorageGRID.
 * Agora você pode usar serviços de dados anteriormente disponíveis apenas como um serviço autônomo com uma interface de usuário separada, como o BlueXP  digital ADVISOR (Active IQ).
 
 
@@ -1696,10 +1696,10 @@ NOTE: Os logins existentes que usam um endereço de e-mail e senha precisam cont
 
 * O conetor agora é suportado na região AWS Jakarta (ap-sudeste-3).
 * O conetor agora é suportado na região Sudeste do Azure Brasil.
-* Esta versão do conetor também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos de cluster do ONTAP no local.
+* Esta versão do Connector também inclui aprimoramentos do Cloud Volumes ONTAP e aprimoramentos do cluster ONTAP local.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["Saiba mais sobre os aprimoramentos do Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["Saiba mais sobre os aprimoramentos de cluster no ONTAP on-premise"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["Saiba mais sobre os aprimoramentos do cluster local do ONTAP"^]
 
 
 
@@ -2046,7 +2046,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 === Melhorias no Cloud Tiering
 
 * Ao dispor em camadas no Google Cloud Storage, você pode aplicar uma regra de ciclo de vida para que os dados em camadas façam a transição da classe de storage padrão para o storage Nearline, Coldline ou Archive de baixo custo após 30 dias.
-* A disposição em camadas na nuvem agora é exibida se você tiver clusters ONTAP no local não descobertos para que você possa adicioná-los ao Cloud Manager para habilitar a disposição em categorias ou outros serviços nesses clusters.
+* O Cloud Tiering agora exibe se você tem algum cluster ONTAP local não descoberto para que você possa adicioná-lo ao Cloud Manager para habilitar o armazenamento em camadas ou outros serviços nesses clusters.
 +
 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Saiba como descobrir esses clusters adicionais"^]
 

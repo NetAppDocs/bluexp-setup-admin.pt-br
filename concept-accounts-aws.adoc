@@ -131,7 +131,7 @@ Não, não é possível mover os recursos da AWS associados ao ambiente de traba
 
 
 
-=== Como as credenciais funcionam para implantações no mercado e implantações locais?
+=== Como as credenciais funcionam para implantações de mercado e implantações locais?
 
 As seções acima descrevem o método de implantação recomendado para o conetor, que é da BlueXP . Você também pode implantar um conetor na AWS a partir do AWS Marketplace e instalar manualmente o software Connector em seu próprio host Linux.
 

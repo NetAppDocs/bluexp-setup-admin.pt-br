@@ -221,7 +221,7 @@ sidebar:
         url: "/reference-ports-azure.html"
       - title: Regras de firewall do conetor no Google Cloud
         url: "/reference-ports-gcp.html"
-      - title: Portas para o conetor on-premise
+      - title: Portas para o conector local
         url: "/reference-ports-on-prem.html"
   - title: Conhecimento e apoio
     entries:
