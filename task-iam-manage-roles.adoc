@@ -16,20 +16,20 @@ summary: O gerenciamento de identidade e acesso do BlueXP  permite que você re
 [role="lead"]
 No BlueXP, você pode atribuir funções aos usuários com base no que eles precisam fazer e onde.
 
-Usuários com a função *Administrador da organização* ou *Administrador de pasta ou projeto* têm a responsabilidade de atribuir funções a outros usuários. Você pode atribuir funções de acesso em uma base de projeto ou pasta. Por exemplo, você pode atribuir a um usuário a função de administrador de proteção contra ransomware para um projeto e a função de administrador do SnapCenter para um projeto diferente. Como alternativa, se um usuário exigir a função de administrador de classificação para todos os projetos dentro de uma pasta específica, você pode conceder a eles essa função de acesso no nível da pasta.
+Usuários com a função *Administrador da organização* ou *Administrador de pasta ou projeto* têm a responsabilidade de atribuir funções a outros usuários. Você pode atribuir funções de acesso em uma base de projeto ou pasta. Por exemplo, você pode atribuir a um usuário a função de administrador de proteção contra ransomware para um projeto e a função de administrador do SnapCenter para um projeto diferente. Como alternativa, se um usuário precisar da função de administrador de classificação para todos os projetos dentro de uma pasta específica, você poderá atribuir essa função a ele no nível da pasta.
 
-Use funções de acesso para atribuir acesso a recursos de storage com base nas tarefas específicas do BlueXP  que os usuários precisam executar. Por exemplo, se um usuário do BlueXP  precisar interagir com serviços de proteção contra ransomware, ele precisará ter uma função de acesso que inclua permissões de visualização ou administrativas para o serviço de proteção contra ransomware para o projeto para o qual a função de acesso é concedida.
+Use funções de acesso para atribuir acesso a recursos de armazenamento com base nas tarefas específicas que os usuários precisam executar. Por exemplo, se um usuário precisar interagir com serviços de proteção contra ransomware, ele deverá receber uma função de acesso que inclua permissões de visualização ou administrativas para o serviço de proteção contra ransomware do projeto para o qual a função de acesso foi concedida.
 
-Atribua funções aos usuários com base na sua estratégia do IAM para maior segurança. As funções do BlueXP  IAM foram projetadas para garantir que os usuários tenham acesso apenas ao que precisam.
+Atribua funções aos usuários com base na sua estratégia do IAM para maior segurança. As funções do IAM garantem que os usuários tenham apenas o acesso necessário.
 
 
-NOTE: Lembre-se de que você não pode conceder acesso diretamente aos recursos. Os recursos devem ser atribuídos primeiro aos projetos. Considere configurar sua hierarquia de recursos antes de atribuir acesso aos usuários. link:task-iam-manage-folders-projects.html["Saiba como organizar seus recursos no BlueXP  IAM com pastas e projetos."]
+NOTE: Lembre-se de que você não pode conceder acesso diretamente aos recursos. Atribua recursos aos projetos primeiro. Considere configurar sua hierarquia de recursos antes de atribuir acesso aos usuários. link:task-iam-manage-folders-projects.html["Saiba como organizar seus recursos no BlueXP  IAM com pastas e projetos."]
 
 
 
 == Exibir papéis atribuídos a um membro
 
-Quando você adiciona um membro à sua organização do BlueXP , será solicitado que você atribua uma função a ele. É possível que os membros verifiquem quais funções eles estão atribuídos atualmente.
+Ao adicionar um membro à sua organização, você será solicitado a atribuir uma função a ele. É possível que os membros verifiquem quais funções eles estão atribuídos atualmente.
 
 Se você tiver a função _pasta ou admin_ do projeto, a página exibirá todos os membros da organização. No entanto, você só pode exibir e gerenciar permissões de membros para as pastas e projetos para os quais você tem permissões. link:reference-iam-predefined-roles.html["Saiba mais sobre as ações que um _Folder ou administrador de projeto_ pode concluir"].
 
@@ -41,16 +41,16 @@ Se você tiver a função _pasta ou admin_ do projeto, a página exibirá todos 
 
 == Adicionar uma função de acesso a um membro
 
-Normalmente, você atribuirá uma função ao membro ao adicioná-lo à sua organização. No entanto, você pode atualizar a função de um membro a qualquer momento, removendo uma função ou adicionando uma função diferente. Você pode remover o acesso de um usuário a um projeto removendo sua função.
+Normalmente, você atribui uma função ao adicionar um membro à sua organização, mas pode atualizá-la a qualquer momento removendo ou adicionando funções.
 
 Você pode atribuir a um usuário uma função de acesso para sua organização, pasta ou projeto.
 
-Os membros podem ter várias funções dentro do mesmo projeto e em projetos diferentes. Por exemplo, organizações menores podem atribuir todas as funções de acesso disponíveis ao mesmo usuário, enquanto organizações maiores podem fazer com que os usuários façam tarefas mais especializadas no BlueXP . Como alternativa, você também pode atribuir a um usuário a função de administrador de projeção do ransomware para a organização. Nesse exemplo, o usuário seria capaz de executar tarefas de proteção contra ransomware em todos os projetos da sua organização.
+Os membros podem ter várias funções dentro do mesmo projeto e em projetos diferentes. Por exemplo, organizações menores podem atribuir todas as funções de acesso disponíveis ao mesmo usuário, enquanto organizações maiores podem ter usuários executando tarefas mais especializadas. Como alternativa, você também pode atribuir a um usuário a função de administrador de proteção contra ransomware para uma organização. Nesse exemplo, o usuário seria capaz de executar tarefas de proteção contra ransomware em todos os projetos da sua organização.
 
-Sua estratégia de função de acesso deve estar alinhada à maneira como você organizou seus recursos do NetApp no BlueXP .
+Sua estratégia de função de acesso deve estar alinhada à maneira como você organizou seus recursos do NetApp.
 
 
-TIP: Um membro que tenha a função de administrador da organização não pode ser atribuído a nenhuma função adicional. Eles já têm permissões em toda a organização. Um membro com a função pasta ou projeto não pode ser atribuído a nenhuma outra função dentro da pasta ou projeto em que ele já tenha essa função. Ambas as funções fornecem acesso a todos os serviços do BlueXP  dentro do escopo que são atribuídos.
+TIP: Um membro que tenha a função de administrador da organização não pode ser atribuído a nenhuma função adicional. Eles já têm permissões em toda a organização. Um membro com a função pasta ou projeto não pode ser atribuído a nenhuma outra função dentro da pasta ou projeto em que ele já tenha essa função. Ambas as funções fornecem acesso a todos os serviços dentro do escopo que lhes é atribuído.
 
 .Passos
 . Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Adicionar uma função*.
@@ -60,7 +60,7 @@ TIP: Um membro que tenha a função de administrador da organização não pode 
 +
 Se você selecionar a organização ou uma pasta, o membro terá permissões para tudo o que reside dentro da organização ou pasta.
 
-** *Selecione uma categoria*: BlueXP  separe as funções em duas categorias: Plataforma e serviço de dados. link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso"^].
+** *Selecione uma categoria*: Escolha uma categoria de função. link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso"^].
 ** Selecione um *papel*: Escolha uma função que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto selecionado.
 
 
@@ -73,16 +73,19 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acess
 
 
 
-=== Altere a função atribuída a um membro
+== Altere a função atribuída a um membro
 
 Você pode alterar as funções atribuídas para um membro caso precise ajustar o acesso de um usuário.
+
+
+NOTE: Os usuários devem ter pelo menos uma função atribuída a eles. Não é possível remover todas as funções de um usuário. Se precisar remover todas as funções, você deverá excluir o usuário da sua organização.
 
 .Passos
 . Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
 . Na tabela, expanda a respetiva linha para organização, pasta ou projeto em que você deseja alterar a função atribuída ao membro e selecione *Exibir* na coluna *função* para exibir as funções atribuídas a esse membro.
 . Você pode alterar uma função existente para um membro ou remover uma função.
 +
-.. Para alterar a função de um membro, selecione *alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de serviço de dados para outra. Ser-lhe-á pedido que confirme a alteração.
+.. Para alterar a função de um membro, selecione *Alterar* ao lado da função que deseja alterar. Você só pode alterar essa função para uma função dentro da mesma categoria de função. Por exemplo, você pode mudar de uma função de serviço de dados para outra. Confirme a alteração.
 .. Para anular a atribuição da função de um membro, selecione image:icon-delete.png["Um ícone que se assemelha a uma lata de lixo"] ao lado da função para anular a atribuição do membro à respetiva função. Você será solicitado a confirmar a remoção.
 
 

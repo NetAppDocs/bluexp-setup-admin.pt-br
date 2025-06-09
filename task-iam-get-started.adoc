@@ -22,24 +22,24 @@ Siga estas etapas para configurar uma nova organização do BlueXP . A ordem em
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Edite o projeto padrão ou adicione à hierarquia da organização
 [role="quick-margin-para"]
-Você pode simplesmente usar o projeto padrão ou criar projetos e pastas adicionais que correspondam à hierarquia de sua empresa.
+Use o projeto padrão ou crie projetos e pastas adicionais que correspondam à hierarquia da sua empresa.
 
 [role="quick-margin-para"]
 link:task-iam-manage-folders-projects.html["Saiba como organizar seus recursos com pastas e projetos"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Associe membros à sua organização
 [role="quick-margin-para"]
-Se várias pessoas da sua empresa precisarem acessar e gerenciar recursos do BlueXP , você precisará associar suas contas de usuário à sua organização e fornecer as permissões apropriadas em toda a hierarquia de recursos. Você também tem a opção de adicionar contas de serviço à sua organização.
+Se várias pessoas na sua empresa precisarem de acesso ao BlueXP, associe as contas de usuário delas à sua organização e atribua as permissões necessárias. Você também tem a opção de adicionar contas de serviço à sua organização.
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html["Saiba como gerenciar membros e suas permissões"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Adicione ou descubra recursos
 [role="quick-margin-para"]
-Adicione ou descubra recursos no BlueXP  como _ambientes de trabalho_. Um ambiente de trabalho representa um sistema de storage que os membros da organização gerenciam dentro de um projeto. Por exemplo, um sistema Cloud Volumes ONTAP ou um cluster ONTAP no local.
+Adicione ou descubra recursos no BlueXP como _os ambientes de trabalho_. Os membros da organização gerenciam um ambiente de trabalho, que representa um sistema de armazenamento, de dentro de um projeto.
 
 [role="quick-margin-para"]
-Saiba como criar ou descobrir recursos a partir da tela BlueXP :
+Aprenda como criar ou descobrir recursos:
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX para NetApp ONTAP"^]
@@ -52,7 +52,7 @@ Saiba como criar ou descobrir recursos a partir da tela BlueXP :
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatro"] Associar recursos a projetos adicionais
 [role="quick-margin-para"]
-Quando você cria ou descobre um recurso no BlueXP , esse recurso é automaticamente associado ao projeto selecionado quando você criou ou descobriu o ambiente de trabalho. Se você quiser disponibilizar esse recurso para outro projeto em sua organização, precisará criar uma associação entre eles. Se o recurso for gerenciado por um conetor, você também precisará criar uma associação entre o projeto e o conetor associado.
+Quando você cria ou descobre um recurso no BlueXP , esse recurso é automaticamente associado ao projeto selecionado quando você criou ou descobriu o ambiente de trabalho. Se você quiser disponibilizar esse recurso para outro projeto em sua organização, precisará criar uma associação entre eles. Se um Conector gerencia o recurso, associe o Conector ao respectivo projeto.
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html["Saiba como gerenciar a hierarquia de recursos da sua organização"].

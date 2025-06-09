@@ -14,16 +14,16 @@ summary: Gerencie a hierarquia de recursos de sua organização associando recur
 
 
 [role="lead"]
-Quando você usa o gerenciamento de identidade e acesso do BlueXP  (IAM) para associar um membro à sua organização, você fornece permissões no nível da organização, pasta ou projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um recurso de armazenamento que o BlueXP  já gerencia ou conhece.
+Ao associar um membro à sua organização, você fornece permissões no nível da organização, da pasta ou do projeto. Para garantir que esses membros tenham permissões para acessar os recursos certos, você precisará gerenciar a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos. Um _resource_ é um recurso de armazenamento que o BlueXP  já gerencia ou conhece.
 
 
 
 == Veja os recursos na sua organização
 
-Você pode exibir recursos descobertos e não descobertos associados à sua organização. Os recursos não descobertos geralmente são recursos de storage conhecidos pelo consultor digital para os quais você não adicionou como ambientes de trabalho.
+Você pode exibir recursos descobertos e não descobertos associados à sua organização. Recursos não descobertos são recursos de armazenamento identificados pelo consultor digital, mas não adicionados como ambientes de trabalho.
 
 
-NOTE: Os recursos do Amazon FSX for NetApp ONTAP não são exibidos na página recursos do IAM, pois você não pode associá-los a uma função do IAM. Você pode visualizar esses recursos na respetiva tela ou nas cargas de trabalho.
+NOTE: A página de recursos do IAM não exibe recursos do Amazon FSx para NetApp ONTAP porque você não pode associá-los a uma função do IAM. Você pode visualizar esses recursos na respetiva tela ou nas cargas de trabalho.
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -44,7 +44,7 @@ NOTE: Os recursos do Amazon FSX for NetApp ONTAP não são exibidos na página r
 
 == Associar um recurso a pastas e projetos
 
-Se você quiser disponibilizar um recurso para pasta ou projeto em sua organização, precisará criar uma associação entre a pasta ou projeto e o recurso.
+Para disponibilizar um recurso para uma pasta ou projeto, associe o recurso à pasta ou projeto.
 
 .Antes de começar
 Você deve entender como a associação de recursos funciona. link:concept-identity-and-access-management.html#resources["Saiba mais sobre recursos, incluindo quando associar um recurso a uma pasta"].
@@ -93,7 +93,7 @@ NOTE: Se precisar determinar quais membros da organização têm acesso ao recur
 
 == Remover um recurso de uma pasta ou projeto
 
-Para remover um recurso de uma pasta ou projeto, você precisa remover a associação entre a pasta ou projeto e o recurso. Depois de remover a associação, os membros da organização não podem mais gerenciar o recurso da pasta ou do projeto.
+Para remover um recurso de uma pasta ou projeto, você precisa remover a associação entre a pasta ou projeto e o recurso. A remoção da associação impede que os membros da organização gerenciem o recurso na pasta ou no projeto.
 
 
 NOTE: Se você quiser remover um recurso descoberto de toda a organização, será necessário remover o ambiente de trabalho da tela BlueXP .

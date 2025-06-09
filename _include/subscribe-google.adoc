@@ -3,7 +3,7 @@
 
 
 .Passos
-. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 . Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*. Nova captura de tela necessária (TS) image:screenshot_gcp_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
 . Para configurar uma assinatura existente com as credenciais selecionadas, selecione um projeto e assinatura do Google Cloud na lista suspensa e selecione *Configurar*.
 +
@@ -15,7 +15,7 @@ image:screenshot_gcp_associate.gif["Uma captura de tela de um projeto e assinatu
 NOTE: Antes de concluir as etapas a seguir, certifique-se de que você tenha o Privileges de Administração de faturamento na sua conta do Google Cloud, bem como um login no BlueXP .
 
 +
-.. Depois de ser redirecionado para o https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página do NetApp BlueXP  no Google Cloud Marketplace"^], certifique-se de que o projeto correto está selecionado no menu de navegação superior.
+.. Depois de ser redirecionado para o https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página do NetApp Intelligent Services no Google Cloud Marketplace"^], certifique-se de que o projeto correto está selecionado no menu de navegação superior.
 +
 image:screenshot_gcp_cvo_marketplace.png["Uma captura de tela da página de mercado do Cloud Volumes ONTAP no Google Cloud."]
 

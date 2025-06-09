@@ -27,6 +27,9 @@ Você pode instalar manualmente um conetor em um host Linux em execução na AWS
 
 O software do conetor deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de porta, etc.
 
+
+NOTE: O Conector reserva o intervalo de UID e GID de 19000 a 19200. Esse intervalo é fixo e não pode ser modificado. Se algum software de terceiros no seu host estiver usando UIDs ou GIDs dentro desse intervalo, a instalação do Conector falhará. A NetApp recomenda usar um host livre de software de terceiros para evitar conflitos.
+
 Host dedicado:: O conetor não é suportado em um host que é compartilhado com outros aplicativos. O host deve ser um host dedicado.
 +
 --

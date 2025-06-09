@@ -16,9 +16,9 @@ summary: Se suas políticas corporativas exigirem que você use um servidor prox
 [role="lead"]
 Se suas políticas corporativas exigirem que você use um servidor proxy para toda a comunicação com a Internet, você precisará configurar seus conetores para usar esse servidor proxy. Se você não configurou um conetor para usar um servidor proxy durante a instalação, então você pode configurar o conetor para usar esse servidor proxy a qualquer momento.
 
-Configurar o conetor para usar um servidor proxy fornece acesso de saída à Internet se um endereço IP público ou um gateway NAT não estiver disponível. Este servidor proxy fornece apenas o conetor com uma conexão de saída. Ele não fornece nenhuma conetividade para sistemas Cloud Volumes ONTAP.
+Configurar o Conector para usar um servidor proxy permite o acesso de saída à internet quando um endereço IP público ou gateway NAT não estiver disponível. O servidor proxy fornece conectividade de saída apenas para o Conector, não para sistemas Cloud Volumes ONTAP.
 
-Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Você precisará abrir essa porta depois de implantar o conetor.
+Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Abra esta porta após implantar o conector.
 
 
 

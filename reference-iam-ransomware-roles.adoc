@@ -16,7 +16,7 @@ summary: O gerenciamento de identidade e acesso do BlueXP  fornece duas funçõ
 [role="lead"]
 As funções de ransomware fornecem aos usuários acesso ao serviço de proteção contra ransomware. Os usuários podem receber uma função administrativa, que lhes permite executar ações na proteção contra ransomware, ou uma função de visualizador, caso tenham apenas responsabilidades de monitoramento. As duas funções são o administrador de proteção contra ransomware e o visualizador de proteção contra ransomware. A principal diferença entre as duas funções é as ações que podem tomar na proteção contra ransomware.
 
-A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.
+A tabela a seguir mostra as ações que cada função de proteção contra ransomware BlueXP pode executar.
 
 [cols="40,20a,20a"]
 |===
@@ -37,7 +37,7 @@ Não
 
 
 
-| Inicie a descoberta de cargas de trabalho  a| 
+| Localizar workloads  a| 
 Sim
  a| 
 Não

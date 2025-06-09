@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você use a assinatura do mercado para pagar pelos serviços da BlueXP . 
+summary: Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você possa usar sua assinatura do marketplace para pagar por serviços de dados. 
 ---
 = Gerenciar credenciais e assinaturas do Google Cloud para o BlueXP 
 :hardbreaks:
@@ -14,18 +14,18 @@ summary: Você pode gerenciar as credenciais do Google Cloud associadas à inst�
 
 
 [role="lead"]
-Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você use a assinatura do mercado para pagar pelos serviços da BlueXP .
+Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você possa usar sua assinatura do marketplace para pagar por serviços de dados.
 
 
 
 == Associar uma assinatura do Marketplace às credenciais do Google Cloud
 
-Ao implantar um conetor no Google Cloud, o BlueXP  cria um conjunto padrão de credenciais associadas à instância de VM do Connector. A qualquer momento, você pode alterar a assinatura do Google Cloud Marketplace associada a essas credenciais. A assinatura permite que você crie um sistema Cloud Volumes ONTAP com pagamento conforme o uso e use outros serviços do BlueXP .
+Ao implantar um conetor no Google Cloud, o BlueXP  cria um conjunto padrão de credenciais associadas à instância de VM do Connector. A qualquer momento, você pode alterar a assinatura do Google Cloud Marketplace associada a essas credenciais. A assinatura permite que você crie um sistema Cloud Volumes ONTAP com pagamento conforme o uso e use outros serviços de dados.
 
 A substituição da assinatura atual do marketplace por uma nova assinatura altera a assinatura do marketplace para todos os ambientes de trabalho existentes da Cloud Volumes ONTAP e todos os novos ambientes de trabalho.
 
 .Passos
-. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 . Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*. Nova captura de tela necessária (TS) image:screenshot_gcp_add_subscription.png["Uma captura de tela do menu de ação para um conjunto de credenciais existentes."]
 . Para configurar uma assinatura existente com as credenciais selecionadas, selecione um projeto e assinatura do Google Cloud na lista suspensa e selecione *Configurar*.
 +
@@ -37,7 +37,7 @@ image:screenshot_gcp_associate.gif["Uma captura de tela de um projeto e assinatu
 NOTE: Antes de concluir as etapas a seguir, certifique-se de que você tenha o Privileges de Administração de faturamento na sua conta do Google Cloud, bem como um login no BlueXP .
 
 +
-.. Depois de ser redirecionado para o https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página do NetApp BlueXP  no Google Cloud Marketplace"^], certifique-se de que o projeto correto está selecionado no menu de navegação superior.
+.. Depois de ser redirecionado para o https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página do NetApp Intelligent Services no Google Cloud Marketplace"^], certifique-se de que o projeto correto está selecionado no menu de navegação superior.
 +
 image:screenshot_gcp_cvo_marketplace.png["Uma captura de tela da página de mercado do Cloud Volumes ONTAP no Google Cloud."]
 
@@ -89,7 +89,7 @@ image:screenshot_gcp_associate.gif["Uma captura de tela da página de atribuiç�
 
 == Solucionar problemas do processo de assinatura do Marketplace
 
-Às vezes, a assinatura do BlueXP  através do Google Cloud Marketplace pode se tornar fragmentada devido a permissões incorretas ou acidentalmente não seguir o redirecionamento para o site do BlueXP . Se isso acontecer, siga as etapas a seguir para concluir o processo de assinatura.
+Às vezes, a assinatura do NetApp Intelligent Services por meio do Google Cloud Marketplace pode ficar fragmentada devido a permissões incorretas ou ao não seguir acidentalmente o redirecionamento para o site do BlueXP. Se isso acontecer, siga as etapas a seguir para concluir o processo de assinatura.
 
 .Passos
 . Navegue até a https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página do NetApp BlueXP  no Google Cloud Marketplace"^] para verificar o estado da encomenda. Se a página indicar *Gerenciar no provedor*, role para baixo e selecione *Gerenciar pedidos*.

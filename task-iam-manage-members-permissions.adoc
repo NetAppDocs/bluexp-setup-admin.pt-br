@@ -4,7 +4,7 @@ permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
 summary: Gerencie os membros da sua organização para fornecer permissões em diferentes níveis da hierarquia de recursos da sua organização. 
 ---
-= Adicione membros do BlueXP  e gerencie suas permissões
+= Adicionar membros e contas de serviço do BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,8 @@ summary: Gerencie os membros da sua organização para fornecer permissões em d
 [role="lead"]
 O BlueXP  Identity and Access Management (IAM) permite adicionar membros à sua organização e atribuir-lhes uma ou mais funções na hierarquia de recursos. Um _role_ contém um conjunto de permissões que permite que um membro execute ações específicas em um nível específico da hierarquia de recursos. Você pode associar novas contas de usuário e contas de serviço, gerenciar funções de membro e muito mais.
 
-Sugestão: DICA: certifique-se de que dois membros tenham a função de administrador da organização para evitar perder o acesso à sua organização BlueXP.
+
+TIP: Certifique-se de que dois membros tenham a função de administrador da organização para evitar perder o acesso à sua organização BlueXP.
 
 Para gerenciar usuários e suas permissões, você deve receber uma das seguintes funções:
 
@@ -36,9 +37,9 @@ Usuários com esta função podem gerenciar apenas membros de uma pasta ou proje
 
 == Adicione membros à sua organização
 
-Você pode adicionar dois tipos de membros à sua organização: Uma conta de usuário e uma conta de serviço. Uma conta de serviço é normalmente usada por um aplicativo para concluir tarefas especificadas sem intervenção humana.
+Você pode adicionar dois tipos de membros à sua organização: Uma conta de usuário e uma conta de serviço. Uma conta de serviço normalmente é usada por um aplicativo para concluir tarefas específicas sem intervenção humana por meio da API do BlueXP. Uma conta de usuário normalmente é usada por uma pessoa para fazer login no BlueXP e gerenciar recursos.
 
-Você pode adicionar uma conta de serviço diretamente do BlueXP . Os usuários devem criar uma conta BlueXP antes de serem adicionados a uma organização ou receberem uma função.
+Os usuários precisam primeiro criar uma conta BlueXP para que você possa adicioná-los a uma organização ou atribuir uma função. No entanto, você pode criar contas de serviço diretamente no BlueXP.
 
 Para gerenciar usuários e suas permissões, você deve ter a função *Administrador da organização* ou a função *Administrador de pasta ou projeto*. Lembre-se de que os usuários com a função *Folder ou Project admin* só podem gerenciar membros para a pasta ou projetos dos quais eles têm permissões de administrador.
 
@@ -129,11 +130,14 @@ O lueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou b
 ====
 
 
-=== Veja os membros da organização
+== Veja os membros da organização
 
 Você pode exibir uma lista de todos os membros da sua organização do BlueXP . Para entender quais recursos e permissões estão disponíveis para um membro, você pode exibir as funções atribuídas ao membro em diferentes níveis da hierarquia de recursos da sua organização. link:task-iam-manage-roles.html["Saiba como usar funções para controlar o acesso aos recursos do BlueXP ."^]
 
-TYou pode visualizar contas de usuário e contas de serviço na página *Membros*.
+Você pode visualizar contas de usuário e contas de serviço na página *Membros*.
+
+
+NOTE: Você também pode visualizar todos os membros associados a uma pasta ou projeto específico. link:task-iam-manage-folders-projects.html#view-associated-resources-members["Saiba mais"].
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -146,7 +150,7 @@ A tabela *Membros* exibe os membros da sua organização.
 
 
 
-=== Remova um membro da sua organização
+== Remova um membro da sua organização
 
 Pode ser necessário remover um membro da sua organização, por exemplo, se ele sair da empresa.
 
@@ -159,7 +163,7 @@ Remover um membro revoga suas permissões, mas mantém suas contas do BlueXP e d
 
 
 
-=== Recrie as credenciais de uma conta de serviço
+== Recrie as credenciais de uma conta de serviço
 
 Crie novas credenciais se elas forem perdidas ou quando for necessário atualizar as credenciais de segurança.
 
@@ -177,24 +181,27 @@ O BlueXP exibe o segredo do cliente apenas uma vez e não o armazena em lugar ne
 
 
 
-.Informações relacionadas
-link:task-iam-manage-folders-projects.html#view-associated-resources-members["Veja todos os membros associados a uma pasta ou projeto específico"].
 
 
+== Gerenciar a autenticação multifator (MFA) de um usuário
 
-=== Anular a atribuição de uma função de um membro
+Se um usuário perder o acesso ao seu dispositivo MFA, você poderá remover ou desabilitar a configuração do MFA.
 
-Você pode remover as permissões de um membro para uma pasta ou projeto específico removendo sua função.
+Se você remover a configuração do MFA, o usuário precisará configurá-lo novamente ao efetuar login no BlueXP. Se o usuário perdeu o acesso ao dispositivo MFA apenas temporariamente, ele poderá usar o código de recuperação salvo ao configurar o MFA para efetuar login no BlueXP.
 
-Se um membro tiver permissões em sua organização para _somente_ uma pasta ou projeto, você não poderá remover essa função. Você tem duas opções:
+Caso o usuário não tenha acesso ao código de recuperação, você pode desativar temporariamente o MFA do usuário, permitindo que ele faça login sem o MFA. Ao desativar o MFA para um usuário, ele é desativado por apenas oito horas e, em seguida, reativado automaticamente. O usuário tem direito a um login sem o MFA durante esse período. Após as oito horas, o usuário deve usar o MFA para fazer login no BlueXP.
 
-* Se você quiser que o membro tenha permissões para outra parte da hierarquia de recursos, você precisa adicionar essa função primeiro e excluir a função existente.
-* Se você não quer que o membro tenha permissões para nada, então você deve remover o membro da sua organização.
 
+NOTE: Você deve ter um endereço de e-mail no mesmo domínio do usuário afetado para gerenciar a autenticação multifator desse usuário.
 
 .Passos
-. Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
-. Na tabela, navegue até a pasta ou o nível do projeto e image:icon-delete.png["Um ícone de uma lata de lixo"]selecione . Você será solicitado a confirmar a remoção.
+. No canto superior direito do console, selecione image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."] > *Gerenciamento de identidade e acesso*.
+. Selecione *Membros*.
++
+Os membros da sua organização aparecem na tabela *Membros*.
+
+. Na página *Membros*, navegue até um membro na tabela, selecione image:icon-action.png["Um ícone que é três pontos lado a lado"] e então selecione *Gerenciar autenticação multifator*.
+. Escolha se deseja remover ou desabilitar a configuração de MFA do usuário.
 
 
 

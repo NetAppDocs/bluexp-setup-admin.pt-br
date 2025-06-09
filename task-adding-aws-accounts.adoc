@@ -14,7 +14,7 @@ summary: Adicione e gerencie credenciais da AWS para que o BlueXP  tenha as per
 
 
 [role="lead"]
-Adicione e gerencie credenciais da AWS para que o BlueXP  tenha as permissões necessárias para implantar e gerenciar recursos de nuvem em suas contas da AWS. Se você gerenciar várias assinaturas do AWS Marketplace, poderá atribuir cada uma delas a diferentes credenciais da AWS na página credenciais.
+Adicione e gerencie credenciais da AWS para que você implante e gerencie recursos de nuvem em suas contas da AWS a partir do BlueXP. Se você gerenciar várias assinaturas do AWS Marketplace, poderá atribuir cada uma delas a diferentes credenciais da AWS na página credenciais.
 
 
 
@@ -24,7 +24,7 @@ Você pode adicionar credenciais da AWS a um conetor existente ou diretamente ao
 
 * Adicione credenciais adicionais da AWS a um conetor existente
 +
-A adição de credenciais da AWS a um conetor existente fornece as permissões necessárias para gerenciar recursos e processos em seu ambiente de nuvem pública. <<Adicione credenciais adicionais a um conetor,Saiba como adicionar credenciais da AWS a um conetor>>.
+Adicione credenciais da AWS a um conector para gerenciar recursos no seu ambiente de nuvem. <<Adicione credenciais adicionais a um conetor,Saiba como adicionar credenciais da AWS a um conetor>>.
 
 * Adicione credenciais da AWS ao BlueXP  para criar um conetor
 +
@@ -32,7 +32,7 @@ A adição de novas credenciais da AWS ao BlueXP  dá ao BlueXP  as permissõe
 
 * Adicione credenciais da AWS ao BlueXP  para o FSX for ONTAP
 +
-Adicionar novas credenciais da AWS ao BlueXP  dá ao BlueXP  as permissões necessárias para criar e gerenciar o FSX for ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Saiba como configurar permissões para o FSX for ONTAP"^]
+Adicione novas credenciais da AWS ao BlueXP para criar e gerenciar o FSx para ONTAP.  https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Saiba como configurar permissões para o FSX for ONTAP"^]
 
 
 
@@ -44,7 +44,7 @@ O BlueXP  permite que você forneça credenciais da AWS de algumas maneiras: Um
 
 Com as duas primeiras opções, o BlueXP  usa o Serviço de token de segurança da AWS para obter credenciais temporárias que rodam constantemente. Este processo é a melhor prática porque é automático e seguro.
 
-Se você fornecer ao BlueXP  as chaves de acesso da AWS, você deve girar as chaves atualizando-as no BlueXP  em um intervalo regular. Este é um processo completamente manual.
+Gire as chaves de acesso da AWS regularmente, atualizando-as no BlueXP. Este processo é manual.
 
 
 
@@ -58,10 +58,10 @@ Se você está apenas começando com BlueXP link:concept-accounts-aws.html["Sai
 
 === Conceder permissões
 
-Antes de adicionar credenciais da AWS a um conetor, você precisa fornecer as permissões necessárias. As permissões permitem que o BlueXP  gerencie recursos e processos dentro dessa conta da AWS. A forma como você fornece as permissões depende se deseja fornecer ao BlueXP  o ARN de uma função em uma conta confiável ou chaves da AWS.
+Forneça as permissões necessárias antes de adicionar credenciais da AWS a um Conector. As permissões permitem que o Conector gerencie recursos e processos dentro dessa conta da AWS. Você pode fornecer as permissões com o ARN de uma função em uma conta confiável ou chaves da AWS.
 
 
-NOTE: Se você implantou um conetor do BlueXP , o BlueXP  adicionou automaticamente credenciais da AWS para a conta na qual implantou o conetor. Essa conta inicial não será adicionada se você implantou o conetor do AWS Marketplace ou se instalou manualmente o software Connector em um sistema existente. link:concept-accounts-aws.html["Saiba mais sobre as credenciais e permissões da AWS"].
+NOTE: Se você implantou um conetor do BlueXP , o BlueXP  adicionou automaticamente credenciais da AWS para a conta na qual implantou o conetor. Isso garante que as permissões necessárias estejam em vigor para gerenciar recursos. link:concept-accounts-aws.html["Saiba mais sobre as credenciais e permissões da AWS"].
 
 *Escolhas*
 
@@ -126,11 +126,11 @@ A conta agora tem as permissões necessárias. <<add-the-credentials,Agora você
 Depois de fornecer uma conta da AWS com as permissões necessárias, você pode adicionar as credenciais dessa conta a um conetor existente. Isso permite que você inicie sistemas Cloud Volumes ONTAP nessa conta usando o mesmo conetor.
 
 .Antes de começar
-Se você acabou de criar essas credenciais no seu provedor de nuvem, talvez demore alguns minutos até que elas estejam disponíveis para uso. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
+Se você acabou de criar essas credenciais no seu provedor de nuvem, talvez demore alguns minutos até que elas estejam disponíveis para uso. Aguarde alguns minutos e adicione as credenciais.
 
 .Passos
-. Certifique-se de que o conetor correto está atualmente selecionado no BlueXP .
-. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. Use a barra de navegação superior para selecionar o Conector ao qual você deseja adicionar credenciais.
+. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 +
 image:screenshot-settings-icon-organization.png["Uma captura de tela que mostra o ícone Configurações no canto superior direito do console BlueXP ."]
 
@@ -140,7 +140,7 @@ image:screenshot-settings-icon-organization.png["Uma captura de tela que mostra 
 .. *Definir credenciais*: Forneça o ARN (Amazon Resource Name) de uma função IAM confiável ou insira uma chave de acesso e chave secreta da AWS.
 .. *Assinatura do Marketplace*: Associe uma assinatura do Marketplace a essas credenciais assinando agora ou selecionando uma assinatura existente.
 +
-Para pagar por serviços da BlueXP  por uma taxa horária (PAYGO) ou com um contrato anual, as credenciais da AWS precisam estar associadas a uma assinatura do AWS Marketplace.
+Para pagar por serviços por hora (PAYGO) ou com um contrato anual, você deve associar as credenciais da AWS à sua assinatura do AWS Marketplace.
 
 .. *Revisão*: Confirme os detalhes sobre as novas credenciais e selecione *Adicionar*.
 
@@ -156,7 +156,7 @@ image:screenshot_accounts_switch_aws.png["Uma captura de tela que mostra a sele�
 
 == Adicione credenciais ao BlueXP  para criar um conetor
 
-Adicione credenciais da AWS ao BlueXP  fornecendo o ARN de uma função do IAM que dá ao BlueXP  as permissões necessárias para criar um conetor. Você pode escolher essas credenciais ao criar um novo conetor.
+Adicione credenciais da AWS fornecendo o ARN de uma função do IAM que concede as permissões necessárias para criar um Conector. Você pode escolher essas credenciais ao criar um novo conetor.
 
 
 
@@ -210,9 +210,6 @@ image:screenshot-settings-icon-organization.png["Uma captura de tela que mostra 
 
 
 
-.Resultado
-Agora você pode usar as credenciais ao criar um novo conetor.
-
 
 
 == Adicione credenciais ao BlueXP  para o Amazon FSX for ONTAP
@@ -223,11 +220,11 @@ Para obter mais informações, consulte a. https://docs.netapp.com/us-en/bluexp-
 
 == Configurar uma assinatura da AWS
 
-Depois de adicionar suas credenciais da AWS ao BlueXP , você pode configurar uma assinatura do AWS Marketplace com essas credenciais. A assinatura permite que você pague pelo Cloud Volumes ONTAP a uma taxa por hora (PAYGO) ou usando um contrato anual e use outros serviços da BlueXP .
+Após adicionar suas credenciais da AWS, você poderá configurar uma assinatura do AWS Marketplace com essas credenciais. A assinatura permite que você pague pelo Cloud Volumes ONTAP por hora (PAYGO) ou por meio de um contrato anual, além de pagar por outros serviços de dados.
 
-Há dois cenários em que você pode configurar uma assinatura do AWS Marketplace depois de adicionar as credenciais ao BlueXP :
+Há dois cenários nos quais você pode configurar uma assinatura do AWS Marketplace depois de já ter adicionado as credenciais:
 
-* Você não configurou uma assinatura quando adicionou inicialmente as credenciais ao BlueXP .
+* Você não configurou uma assinatura quando adicionou as credenciais inicialmente.
 * Você deseja alterar a assinatura do AWS Marketplace configurada com as credenciais da AWS.
 +
 A substituição da assinatura atual do marketplace por uma nova assinatura altera a assinatura do marketplace para todos os ambientes de trabalho existentes da Cloud Volumes ONTAP e todos os novos ambientes de trabalho.
@@ -235,11 +232,11 @@ A substituição da assinatura atual do marketplace por uma nova assinatura alte
 
 
 .Antes de começar
-Você precisa criar um conetor antes de poder alterar as configurações do BlueXP . link:concept-connectors.html#connector-installation["Saiba como criar um conetor"].
+Você precisa criar um Conector antes de poder configurar uma assinatura. link:concept-connectors.html#connector-installation["Saiba como criar um conetor"].
 
-O vídeo a seguir mostra as etapas para se inscrever no BlueXP  no AWS Marketplace:
+O vídeo a seguir mostra as etapas para assinar o NetApp Intelligent Services no AWS Marketplace:
 
-.Inscreva-se no BlueXP  no AWS Marketplace
+.Assine o NetApp Intelligent Services no AWS Marketplace
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
@@ -280,33 +277,33 @@ Para todas as outras organizações ou contas, você precisará associar manualm
 
 == Associe uma assinatura existente à sua organização ou conta
 
-Quando você se inscreve no BlueXP  no AWS Marketplace, a última etapa do processo é associar a assinatura às suas contas do BlueXP  Organizations ou BlueXP  no site da BlueXP . Se você não concluiu esta etapa, não poderá usar a assinatura com sua organização ou conta do BlueXP .
+Ao assinar no AWS Marketplace, a última etapa do processo é associar a assinatura à sua organização. Se você não concluiu esta etapa, não poderá usar a assinatura com sua organização ou conta.
 
 
-TIP: Se você estiver usando o BlueXP  no modo padrão, você terá uma organização _BlueXP _, que você gerencia usando o gerenciamento de identidade e acesso (IAM) do BlueXP . Mas se você estiver usando o BlueXP  no modo restrito ou no modo privado, então você terá uma conta _BlueXP _.
+TIP: Se estiver usando o modo padrão ou restrito, você terá uma _organização BlueXP_, que você gerencia usando o gerenciamento de identidade e acesso (IAM) do BlueXP. Mas se você estiver usando o BlueXP  no modo privado, então você terá uma conta _BlueXP _.
 
 * link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"]
 * link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
 * link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]
 
 
-Siga as etapas abaixo se você se inscreveu no BlueXP  no AWS Marketplace, mas não conseguiu associar a assinatura à sua conta.
+Siga as etapas abaixo se você assinou os serviços de dados inteligentes da NetApp no AWS Marketplace, mas perdeu a etapa para associar a assinatura à sua conta.
 
 .Passos
-. Aceda à carteira digital da BlueXP  para confirmar que não associou a sua subscrição à sua organização ou conta BlueXP .
+. Acesse a carteira digital para confirmar que você não associou sua assinatura à sua organização ou conta BlueXP.
 +
-.. No menu de navegação BlueXP , selecione *Governança > carteira digital*.
+.. No menu de navegação, selecione *Governança > Carteira digital*.
 .. Selecione *Subscrições*.
-.. Verifique se sua assinatura do BlueXP  não é exibida.
+.. Verifique se sua assinatura não aparece.
 +
 Você verá apenas as assinaturas associadas à organização ou à conta que você está visualizando no momento. Se você não vir sua assinatura, prossiga com as etapas a seguir.
 
 
 
 . Faça login no Console da AWS e navegue até *assinaturas do AWS Marketplace*.
-. Encontre a assinatura do NetApp BlueXP .
+. Encontre a assinatura do NetApp Intelligent Data Services.
 +
-image:screenshot-aws-marketplace-bluexp-subscription.png["Uma captura de tela do AWS Marketplace mostrando uma assinatura do NetApp BlueXP ."]
+image:screenshot-aws-marketplace-bluexp-subscription.png["Uma captura de tela do AWS Marketplace mostrando uma assinatura do NetApp."]
 
 . Selecione *Configurar produto*.
 +
@@ -314,7 +311,7 @@ A página de oferta de assinatura deve ser carregada em uma nova guia ou janela 
 
 . Selecione *Configurar a sua conta*.
 +
-image:screenshot-aws-marketplace-set-up-account.png["Uma captura de tela do AWS Marketplace mostrando uma assinatura do NetApp BlueXP  e a opção Configurar sua conta que aparece no canto superior direito da página."]
+image:screenshot-aws-marketplace-set-up-account.png["Uma captura de tela do AWS Marketplace mostrando uma assinatura da NetApp e a opção Configurar sua conta que aparece no canto superior direito da página."]
 
 +
 A página *atribuição de assinatura* no NetApp.com deve ser carregada em uma nova guia ou janela do navegador.
@@ -337,16 +334,16 @@ image:screenshot-subscription-assignment.png["Uma captura de tela da página atr
 
 
 
-. Aceda à carteira digital BlueXP  para confirmar que a subscrição está associada à sua organização ou conta BlueXP .
+. Acesse a carteira digital para confirmar se a assinatura está associada à sua organização ou conta.
 +
-.. No menu de navegação BlueXP , selecione *Governança > carteira digital*.
+.. No menu de navegação, selecione *Governança > Carteira digital*.
 .. Selecione *Subscrições*.
-.. Verifique se sua assinatura do BlueXP  é exibida.
+.. Verifique se sua assinatura aparece.
 
 
 . Confirme se a assinatura está associada às suas credenciais da AWS.
 +
-.. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+.. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 .. Na página *credenciais da organização* ou *credenciais da conta*, verifique se a assinatura está associada às credenciais da AWS.
 +
 Aqui está um exemplo.
@@ -362,13 +359,13 @@ image:screenshot-credentials-with-subscription.png["Uma captura de tela da pági
 
 == Editar credenciais
 
-Edite suas credenciais da AWS no BlueXP  alterando o tipo de conta (chaves da AWS ou assumir função), editando o nome ou atualizando as próprias credenciais (as chaves ou a função ARN).
+Edite suas credenciais da AWS alterando o tipo de conta (chaves da AWS ou função assumida), editando o nome ou atualizando as próprias credenciais (as chaves ou o ARN da função).
 
 
-TIP: Não é possível editar as credenciais de um perfil de instância associado a uma instância de conetor.
+NOTE: Não é possível editar as credenciais de um perfil de instância associado a uma instância do Connector ou a uma instância do Amazon FSx for ONTAP.
 
 .Passos
-. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 . Na página *credenciais da organização* ou *credenciais da conta*, selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Editar credenciais*.
 . Faça as alterações necessárias e selecione *aplicar*.
 
@@ -377,13 +374,13 @@ TIP: Não é possível editar as credenciais de um perfil de instância associad
 
 == Eliminar credenciais
 
-Se você não precisar mais de um conjunto de credenciais, poderá excluí-las do BlueXP . Você só pode excluir credenciais que não estão associadas a um ambiente de trabalho.
+Se você não precisar mais de um conjunto de credenciais, poderá excluí-las. Você só pode excluir credenciais que não estão associadas a um ambiente de trabalho.
 
 
 TIP: Não é possível excluir as credenciais de um perfil de instância associado a uma instância de conetor.
 
 .Passos
-. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 . Na página *credenciais da organização* ou *credenciais da conta*, selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Excluir credenciais*.
 . Selecione *Eliminar* para confirmar.
 

@@ -1,0 +1,41 @@
+= Conetor 3.9.52
+:allow-uri-read: 
+
+
+
+
+=== Conetor 3.9.52
+
+Esta versão do conetor BlueXP  inclui pequenas melhorias de segurança e correções de bugs, bem como algumas atualizações adicionais.
+
+Neste momento, a versão 3.9.52 está disponível para o modo padrão e modo restrito.
+
+
+
+==== Suporte para Docker 27 e Docker 28
+
+Docker 27 e Docker 28 agora são suportados com o conetor.
+
+
+
+==== Cloud Volumes ONTAP
+
+Os nós baseados em capacidade do Cloud Volumes ONTAP não desligam mais quando o Conector não está em conformidade ou fica inativo por mais de 14 dias. O Cloud Volumes ONTAP ainda envia mensagens de Gerenciamento de Eventos quando perde o acesso ao Conector. Essa alteração garante que o Cloud Volumes ONTAP possa continuar operando mesmo se o Conector estiver inativo por um longo período. Isso não altera os requisitos de conformidade do Conector.
+
+
+
+=== Administração do Keystone disponível no BlueXP 
+
+A versão beta para NetApp Keystone no BlueXP  adicionou acesso à administração do Keystone. Você pode acessar a página de inscrição para o NetApp Keystone beta na barra de navegação à esquerda do BlueXP .
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+Os seguintes novos recursos estão disponíveis no BlueXP IAM.
+
+
+
+==== Autenticação multifator (MFA) para usuários locais
+
+Usuários locais (não federados e não associados a uma conta do site de suporte da NetApp) podem habilitar a autenticação multifator. Os administradores podem gerenciar as configurações de MFA dos usuários, como desativá-los temporariamente ou removê-los quando necessário.

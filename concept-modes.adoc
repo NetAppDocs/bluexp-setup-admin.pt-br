@@ -14,7 +14,7 @@ summary: O BlueXP  oferece vários modos de implantação que permitem que voc�
 
 
 [role="lead"]
-O BlueXP  oferece vários _modos de implantação_ que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O _modo padrão_ aproveita a camada de software como serviço (SaaS) do BlueXP  para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações que têm restrições de conetividade.
+O BlueXP oferece vários _modos de implantação_ que permitem que você atenda aos seus requisitos de negócios e segurança. O _modo padrão_ utiliza uma camada de software como serviço (SaaS) para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações com restrições de conectividade.
 
 Embora o BlueXP  iniba o fluxo de tráfego, comunicação e dados ao usar o modo restrito ou o modo privado, é sua responsabilidade garantir que seu ambiente (no local e na nuvem) esteja em conformidade com os regulamentos exigidos.
 
@@ -22,15 +22,15 @@ Embora o BlueXP  iniba o fluxo de tráfego, comunicação e dados ao usar o mod
 
 == Visão geral
 
-O BlueXP  oferece três modos de implantação. Cada modo difere em termos de requisitos de conetividade de saída, localização de implementação, processo de instalação, método de autenticação, serviços de dados e armazenamento disponíveis e métodos de carregamento.
+Cada modo de implantação difere em termos de requisitos de conectividade de saída, local de implantação, processo de instalação, método de autenticação, serviços de dados e armazenamento disponíveis e métodos de cobrança.
 
-Modo padrão:: O BlueXP  é acessível aos usuários como um serviço de nuvem a partir do console baseado na Web. Dependendo dos serviços do BlueXP  que você planeja usar, um administrador do BlueXP  cria um ou mais conetores para gerenciar dados em seu ambiente de nuvem híbrida.
+Modo padrão:: Use um serviço SaaS no console web. Dependendo dos serviços e recursos de dados que você planeja usar, um administrador do BlueXP cria um ou mais Conectores para gerenciar dados no seu ambiente de nuvem híbrida.
 +
 --
 Este modo utiliza a transmissão de dados encriptados através da Internet pública.
 
 --
-Modo restrito:: Um conetor BlueXP  é instalado na nuvem (em uma região do governo, região de nuvem soberana ou região comercial) e tem conetividade de saída limitada à camada BlueXP  SaaS. Os usuários acessam o BlueXP  localmente a partir do console baseado na Web que está disponível no conetor, não na camada SaaS.
+Modo restrito:: Você instala um BlueXP Connector na nuvem (em uma região governamental, região de nuvem soberana ou região comercial) e tem conectividade de saída limitada à camada BlueXP SaaS. Os usuários acessam o BlueXP  localmente a partir do console baseado na Web que está disponível no conetor, não na camada SaaS.
 +
 --
 Este modo é normalmente usado por governos estaduais e locais e empresas regulamentadas.
@@ -38,7 +38,7 @@ Este modo é normalmente usado por governos estaduais e locais e empresas regula
 <<Modo restrito,Saiba mais sobre a conetividade de saída à camada SaaS>>.
 
 --
-Modo privado:: Um conetor BlueXP  é instalado no local ou na nuvem (em uma região segura, região de nuvem soberana ou região comercial) e tem _no_ conetividade à camada SaaS do BlueXP . Os usuários acessam o BlueXP  localmente a partir do console baseado na Web que está disponível no conetor, não na camada SaaS.
+Modo privado:: Você instala um BlueXP Connector no local ou na nuvem (em uma região segura, região de nuvem soberana ou região comercial) e não tem _nenhuma_ conectividade com a camada BlueXP SaaS. Os usuários acessam o BlueXP  localmente a partir do console baseado na Web que está disponível no conetor, não na camada SaaS.
 +
 --
 Uma região segura inclui https://aws.amazon.com/federal/secret-cloud/["Nuvem secreta da AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Nuvem secreta principal da AWS"^] e https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -77,7 +77,7 @@ A tabela a seguir fornece uma comparação desses modos.
 | Serviços de storage e dados | Todos são suportados | Muitos são suportados | Vários são suportados 
 
 
-| Opções de licenciamento | Assinaturas de mercado e BYOL | Assinaturas de mercado e BYOL | BYOL 
+| Opções de licenciamento de serviços de dados | Assinaturas de mercado e BYOL | Assinaturas de mercado e BYOL | BYOL 
 |===
 Leia as seções a seguir para saber mais sobre esses modos, incluindo quais recursos e serviços do BlueXP  são suportados.
 

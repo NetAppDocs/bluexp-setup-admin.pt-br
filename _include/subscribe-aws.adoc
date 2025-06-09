@@ -2,9 +2,9 @@
 :allow-uri-read: 
 
 
-O vídeo a seguir mostra as etapas para se inscrever no BlueXP  no AWS Marketplace:
+O vídeo a seguir mostra as etapas para assinar o NetApp Intelligent Services no AWS Marketplace:
 
-.Inscreva-se no BlueXP  no AWS Marketplace
+.Assine o NetApp Intelligent Services no AWS Marketplace
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.

@@ -16,8 +16,6 @@ summary: A forma como inicia sessão no BlueXP  depende do modo de implementaç
 [role="lead"]
 A forma como inicia sessão no BlueXP  depende do modo de implementação do BlueXP  que está a utilizar para a sua conta.
 
-O conetor inclui uma IU local, acessível a partir do host do conetor. Esta interface de usuário é fornecida para clientes que estão usando o BlueXP  no modo restrito ou no modo privado. Quando utilizar o BlueXP  no modo padrão, deve aceder à interface do utilizador a partir do https://console.bluexp.netapp.com/["Console BlueXP  SaaS"^]
-
 link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
 
 [role="tabbed-block"]

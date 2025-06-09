@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-Inscreva-se no BlueXP  no mercado do seu fornecedor de nuvem para pagar os serviços da BlueXP  a uma taxa por hora (PAYGO) ou por meio de um contrato anual. Se você comprou uma licença da NetApp (BYOL), também precisará se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar.
+Assine o NetApp Intelligent Services no marketplace do seu provedor de nuvem para pagar por serviços de dados a uma taxa por hora (PAYGO) ou por meio de um contrato anual. Se você comprou uma licença da NetApp (BYOL), também precisará se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar.

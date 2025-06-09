@@ -59,7 +59,7 @@ image:diagram-iam-resource-hierarchy.png["Um diagrama conceitual que mostra a hi
 
 Uma _organização_ é o nível superior do sistema IAM da BlueXP  e normalmente representa a sua empresa. Sua organização consiste em pastas, projetos, membros, funções e recursos. Os conetores estão associados a projetos específicos na organização.
 
-Ao se inscrever no BlueXP , você será solicitado a criar uma nova organização.
+O BlueXP solicita que você crie uma nova organização quando você se inscreve.
 
 
 
@@ -108,7 +108,7 @@ O _Organization admin_ pode associar um recurso à pasta:
 
 image:diagram-iam-resource-association-folder-2.png["Um diagrama que mostra uma pasta, um recurso associado à pasta e dois projetos que residem na pasta: Projeto A e projeto B."]
 
-Associar o recurso à pasta não torna esse recurso automaticamente acessível a partir de todos os projetos na pasta. Mas a _pasta ou o administrador do projeto_ pode então decidir para quais projetos esse recurso deve ser disponibilizado. Depois de tomar essa decisão, o administrador pode então associar o recurso aos projetos certos.
+Associar um recurso a uma pasta não o torna automaticamente acessível a todos os projetos nela contidos. O administrador da pasta ou do projeto decide quais projetos podem acessar o recurso. Depois de tomar essa decisão, o administrador pode então associar o recurso aos projetos certos.
 
 Neste exemplo, o administrador associa o recurso ao Projeto A:
 
@@ -144,14 +144,14 @@ Quando você associa um membro a uma função, você precisa selecionar toda a o
 
 Quando você atribui uma função, a função é herdada pela hierarquia da organização:
 
-Organização:: As funções que você concede no nível da organização são herdadas por todas as pastas, projetos e recursos da organização. Isso significa que o membro tem permissões para tudo na organização.
-Pastas:: As funções que você concede no nível da pasta são herdadas por todas as pastas, projetos e recursos na pasta.
+Organização:: Quando você concede a um membro funções de acesso no nível da organização, todas as pastas, projetos e recursos na organização herdam essas funções. Isso significa que o membro tem permissões para tudo na organização.
+Pastas:: Quando você concede uma função de acesso no nível da pasta, todas as pastas, projetos e recursos na pasta herdam essa função.
 +
 --
 Por exemplo, se você atribuir uma função no nível da pasta e essa pasta tiver três projetos, o membro terá permissões para esses três projetos e quaisquer recursos associados.
 
 --
-Projetos:: As funções que você concede no nível do projeto são herdadas por todos os recursos associados a esse projeto.
+Projetos:: Quando você concede uma função de acesso no nível do projeto, todos os recursos associados a esse projeto herdam essa função.
 
 
 
@@ -174,12 +174,12 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acess
 
 Quando um _administrador da organização_ cria um conetor, o BlueXP  associa automaticamente esse conetor à organização e ao projeto atualmente selecionado. O _Organization admin_ tem acesso automaticamente a esse conetor de qualquer lugar da organização. Mas se você tiver outros membros em sua organização com funções diferentes, esses membros só poderão acessar esse conetor do projeto em que ele foi criado, a menos que você associe esse conetor a outros projetos.
 
-Você pode querer disponibilizar um conetor para uso com outro projeto nos seguintes casos:
+Você pode disponibilizar um Conector para outro projeto nestes casos:
 
 * Você deseja permitir que os membros da sua organização usem um conetor existente para criar ou descobrir ambientes de trabalho adicionais em outro projeto
 * Você associou um recurso existente a outro projeto e esse recurso é gerenciado por um conetor
 +
-Se um recurso associado a um projeto adicional for descoberto usando um conetor BlueXP , você também precisará associar o conetor ao projeto ao qual o recurso está agora associado. Caso contrário, o conetor e seu recurso associado não são acessíveis a partir da tela do BlueXP  por membros que não têm a função _administrador da organização_.
+Se um recurso que você associa a um projeto adicional for descoberto usando um Conector BlueXP, você também precisará associar o Conector ao projeto ao qual o recurso está associado. Caso contrário, o Conector e seu recurso associado não poderão ser acessados na tela do BlueXP por membros que não tenham a função _Administrador da organização_.
 
 
 

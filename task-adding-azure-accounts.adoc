@@ -337,7 +337,7 @@ A substituição da assinatura atual do marketplace por uma nova assinatura alte
 Você precisa criar um Conector antes de poder alterar as configurações do BlueXP. link:concept-connectors.html#connector-installation["Saiba como criar um conetor"] .
 
 .Passos
-. No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
+. No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.
 . Selecione o menu de ação para um conjunto de credenciais e, em seguida, selecione *Configurar assinatura*.
 +
 Você deve selecionar credenciais associadas a um conetor. Não é possível associar uma assinatura do marketplace a credenciais associadas ao BlueXP .
@@ -350,7 +350,7 @@ Você deve selecionar credenciais associadas a um conetor. Não é possível ass
 .. Preencha o formulário e selecione *Subscribe*.
 .. Depois que o processo de assinatura estiver concluído, selecione *Configurar conta agora*.
 +
-Você será redirecionado para o site da BlueXP .
+Você será redirecionado para o BlueXP.
 
 .. Na página *atribuição de assinatura*:
 +
@@ -367,7 +367,7 @@ Para todas as outras organizações ou contas, você precisará associar manualm
 O vídeo a seguir mostra as etapas para se inscrever no Azure Marketplace:
 
 +
-.Inscreva-se no BlueXP  a partir do Azure Marketplace
+.Assine o NetApp Intelligent Services no Azure Marketplace
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 

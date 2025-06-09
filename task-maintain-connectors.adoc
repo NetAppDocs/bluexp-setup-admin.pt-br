@@ -14,7 +14,7 @@ summary: Manter o sistema operacional no host do conetor é sua responsabilidade
 
 
 [role="lead"]
-Manter o sistema operacional no host do conetor é sua responsabilidade. Por exemplo, você deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.
+A manutenção do sistema operacional no host do Conector é de sua responsabilidade (do cliente). Por exemplo, você (o cliente) deve aplicar atualizações de segurança ao sistema operacional no host do Conector seguindo os procedimentos padrão da sua empresa para distribuição de sistemas operacionais.
 
 
 TIP: Se você tiver um conetor existente, você deve estar ciente link:reference-connector-operating-system-changes.html["Alterações nos sistemas operacionais Linux suportados"]do .

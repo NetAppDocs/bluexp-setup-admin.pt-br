@@ -14,7 +14,7 @@ summary: O BlueXP  atualiza automaticamente um conetor para a versão mais rece
 
 
 [role="lead"]
-Quando você usa o BlueXP  no modo padrão ou no modo restrito, o BlueXP  atualiza automaticamente seu conetor para a versão mais recente, desde que o conetor tenha acesso de saída à Internet para obter a atualização de software. Se você precisar gerenciar manualmente quando o conetor é atualizado, você pode desativar as atualizações automáticas para o modo padrão ou modo restrito.
+Quando você usa o modo padrão ou o modo restrito, o BlueXP atualiza automaticamente seu Connector para a versão mais recente, desde que o Connector tenha acesso de saída à Internet para obter a atualização de software. Se você precisar gerenciar manualmente quando o conetor é atualizado, você pode desativar as atualizações automáticas para o modo padrão ou modo restrito.
 
 
 NOTE: Ao executar o BlueXP  no modo privado, você deve sempre atualizar o conetor sozinho.

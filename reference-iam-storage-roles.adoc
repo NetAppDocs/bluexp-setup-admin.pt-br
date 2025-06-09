@@ -14,12 +14,12 @@ summary: O gerenciamento de identidade e acesso do BlueXP  fornece duas funçõ
 
 
 [role="lead"]
-Você pode atribuir as funções a seguir aos usuários para fornecer acesso aos recursos de gerenciamento de storage no BlueXP  associados a recursos de storage compatíveis. Os usuários podem ser atribuídos a uma função administrativa que lhes permite tomar medidas no gerenciamento de armazenamento ou a uma função de visualizador se tiverem apenas responsabilidades de monitoramento.
+Você pode atribuir as funções a seguir aos usuários para fornecer acesso aos recursos de gerenciamento de storage no BlueXP  associados a recursos de storage compatíveis. Você pode atribuir aos usuários uma função administrativa para gerenciar o armazenamento ou uma função de visualizador para monitoramento.
 
 
 NOTE: Essas funções não estão disponíveis na API de parceria do BlueXP.
 
-As funções de storage podem ser atribuídas aos usuários para os seguintes recursos e recursos de storage:
+Os administradores podem atribuir funções de armazenamento aos usuários para os seguintes recursos e funcionalidades de armazenamento:
 
 Recursos de armazenamento:
 
@@ -38,13 +38,13 @@ Serviços e recursos do BlueXP :
 
 
 .Exemplo de funções de storage no BlueXP 
-A XYZ Corporation, uma multinacional, tem uma grande equipe de engenheiros de storage e administradores de storage. Elas querem capacitar essa equipe para gerenciar os ativos de storage de suas respetivas regiões, mas restringir o acesso a tarefas básicas de administração do BlueXP , como gerenciamento de usuários, criação de conetores e ferramentas de gerenciamento de custos, como carteira digital.
+A XYZ Corporation, uma multinacional, tem uma grande equipe de engenheiros de storage e administradores de storage. Eles permitem que essa equipe gerencie ativos de armazenamento para suas regiões, ao mesmo tempo em que limitam o acesso às principais tarefas do BlueXP, como gerenciamento de usuários, criação de conectores e ferramentas de custo, como a carteira digital.
 
 Dentro de uma equipe de 12, dois usuários recebem a função *Visualizador de armazenamento*, que permite monitorar os recursos de armazenamento associados aos projetos BlueXP  aos quais são atribuídos. Os nove restantes recebem a função *administrador de armazenamento*, que inclui a capacidade de gerenciar atualizações de software, acessar o Gerenciador de sistema ONTAP por meio do BlueXP , bem como descobrir recursos de armazenamento (adicionar ambientes de trabalho). Uma pessoa da equipe recebe a função *System Health Specialist* para que possa gerenciar a integridade dos recursos de armazenamento em sua região, mas não modificar ou excluir nenhum ambiente de trabalho. Essa pessoa também pode executar atualizações de software nos recursos de storage para projetos que foram atribuídos.
 
 A organização tem dois usuários adicionais com a função *Administrador da Organização* que podem gerenciar todos os aspetos do BlueXP , incluindo gerenciamento de usuários, criação de conetores e ferramentas de gerenciamento de custos, como carteira digital, bem como vários usuários com a função *Administrador de pasta ou projeto* que podem executar tarefas de administração do BlueXP  para as pastas e projetos aos quais são atribuídos.
 
-A tabela a seguir indica que as ações que cada função de storage do BlueXP  pode executar.
+A tabela a seguir mostra as ações que cada função de armazenamento do BlueXP executa.
 
 [cols="40,20a,20a,20a"]
 |===

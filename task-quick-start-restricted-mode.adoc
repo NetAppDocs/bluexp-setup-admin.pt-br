@@ -14,7 +14,7 @@ summary: Comece a usar o BlueXP  no modo restrito, preparando seu ambiente, imp
 
 
 [role="lead"]
-Comece a usar o BlueXP  no modo restrito, preparando seu ambiente, implantando o conetor e assinando o BlueXP .
+Comece a usar o BlueXP no modo restrito preparando seu ambiente e implantando o Conector.
 
 O modo restrito geralmente é usado por governos estaduais e locais e empresas regulamentadas, incluindo implantações nas regiões do governo do AWS GovCloud e do Azure. Antes de começar, você deve ter uma compreensão de link:concept-netapp-accounts.html["Contas BlueXP "], link:concept-connectors.html["Conetores"]e link:concept-modes.html["modos de implantação"].
 
@@ -32,6 +32,6 @@ O modo restrito geralmente é usado por governos estaduais e locais e empresas r
 . Forneça ao BlueXP  as permissões que você configurou anteriormente.
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] link:task-subscribe-restricted-mode.html["Inscreva-se no BlueXP "]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] link:task-subscribe-restricted-mode.html["Assine o NetApp Intelligent Services (opcional)"]
 [role="quick-margin-para"]
-Inscreva-se no BlueXP  no mercado do seu fornecedor de nuvem para pagar os serviços da BlueXP  a uma taxa por hora (PAYGO) ou por meio de um contrato anual.
+Opcional: Assine o NetApp Intelligent Services no marketplace do seu provedor de nuvem para pagar por serviços de dados por hora (PAYGO) ou por meio de um contrato anual. O NetApp Intelligent Services inclui backup e recuperação, Cloud Volumes ONTAP, hierarquização, proteção contra ransomware e recuperação de desastres. A classificação está incluída na sua assinatura sem custo adicional.

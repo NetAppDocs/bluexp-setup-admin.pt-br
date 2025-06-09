@@ -71,7 +71,7 @@ sidebar:
             url: "/task-install-connector-google-manual.html"
         - title: On-premises
           url: "/task-install-connector-on-prem.html"
-      - title: Inscreva-se no BlueXP 
+      - title: Assine os Serviços Inteligentes da NetApp
         url: "/task-subscribe-standard-mode.html"
       - title: O que você pode fazer a seguir
         url: "/reference-whats-next.html"
@@ -83,7 +83,7 @@ sidebar:
         url: "/task-prepare-restricted-mode.html"
       - title: Implante o conetor
         url: "/task-install-restricted-mode.html"
-      - title: Inscreva-se no BlueXP 
+      - title: Assine os Serviços Inteligentes da NetApp
         url: "/task-subscribe-restricted-mode.html"
       - title: O que você pode fazer a seguir
         url: "/reference-whats-next-restricted-mode.html"
@@ -103,8 +103,12 @@ sidebar:
           url: "/task-managing-netapp-accounts.html"
       - title: O que você pode fazer a seguir
         url: "/reference-whats-next-private-mode.html"
+  - title: Use BlueXP
+    entries:
     - title: Inicie sessão no BlueXP 
       url: "/task-logging-in.html"
+    - title: Gerencie suas configurações de usuário do BlueXP
+      url: "/task-user-settings.html"
   - title: Administrar o BlueXP 
     entries:
     - title: Gerenciamento de identidade e acesso
@@ -115,7 +119,7 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: Organize seus recursos com pastas e projetos
         url: "/task-iam-manage-folders-projects.html"
-      - title: Adicione membros e contas de serviço
+      - title: Gerenciar membros e contas de serviço
         url: "/task-iam-manage-members-permissions.html"
       - title: Use funções para controlar o acesso dos membros aos recursos
         url: "/task-iam-manage-roles.html"

@@ -22,7 +22,7 @@ link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
 
 == Desinstale o conetor ao utilizar o modo padrão ou restrito
 
-Se você estiver usando o BlueXP  no modo padrão ou no modo restrito (em outras palavras, o host do conetor tem conetividade de saída), siga as etapas abaixo para desinstalar o software do conetor.
+Se estiver usando o modo padrão ou o modo restrito (em outras palavras, o host do Connector tem conectividade de saída), siga as etapas abaixo para desinstalar o software do Connector.
 
 .Passos
 . Conete-se à VM Linux para o conetor.
@@ -39,7 +39,7 @@ _silent_ executa o script sem solicitar confirmação.
 
 == Desinstale o conetor ao utilizar o modo privado
 
-Se você estiver usando o BlueXP  no modo privado (em outras palavras, o host do conetor tem conetividade _no_ de saída), siga as etapas abaixo para desinstalar o software do conetor.
+Se você estiver usando o modo privado (em outras palavras, o host do Connector não tem conectividade de saída), siga as etapas abaixo para desinstalar o software do Connector.
 
 .Passo
 . Conete-se à VM Linux para o conetor.
@@ -50,7 +50,7 @@ Se você estiver usando o BlueXP  no modo privado (em outras palavras, o host d
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. A partir do host Linux, remova os arquivos de imagem de contentor antigos, agora não utilizados. Isso garante que haja espaço suficiente no diretório /var para reinstalar.
+. No host Linux, exclua arquivos de imagem de contêiner antigos e não utilizados para liberar espaço no diretório /var para reinstalação.
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ Se um conetor estiver inativo, você pode removê-lo da lista de conetores no Bl
 Observe o seguinte sobre como remover um conetor:
 
 * Esta ação não exclui a máquina virtual.
-* Esta ação não pode ser revertida - uma vez que você remover um conetor do BlueXP , você não pode adicioná-lo de volta.
+* Esta ação não pode ser revertida: depois de remover um Conector, você não poderá adicioná-lo novamente.
 
 
 .Passos

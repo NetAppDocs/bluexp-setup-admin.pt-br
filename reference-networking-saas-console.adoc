@@ -14,11 +14,11 @@ summary: À medida que você usa o console baseado na Web do BlueXP  fornecido 
 
 
 [role="lead"]
-Quando você faz login e usa o console baseado na Web do BlueXP , o BlueXP  entra em Contato com vários endpoints para concluir as ações iniciadas. Os computadores que acessam o console BlueXP  devem ter conexões com esses endpoints.
+Ao efetuar login e usar o console web, o BlueXP contata diversos endpoints para concluir as ações que você inicia. Os computadores que acessam o console precisam ter conexões com esses endpoints.
 
 Esses endpoints são contatados em dois cenários:
 
-* A partir do computador de um usuário ao concluir ações específicas do https://console.bluexp.netapp.com["Console baseado na Web do BlueXP "^] que está disponível como software como serviço (SaaS).
+* Do computador de um usuário ao concluir ações do  https://console.bluexp.netapp.com["Console baseado na Web do BlueXP "^] que está disponível como software como serviço (SaaS).
 * No computador de um usuário ao abrir um navegador da Web, insira o endereço IP do host do conetor e, em seguida, efetue login e configure o conetor. Estes passos são necessários se instalar manualmente o conetor.
 
 
@@ -27,13 +27,13 @@ Esses endpoints são contatados em dois cenários:
 | Endpoints | Finalidade 
 
 
-| https://console.BlueXP .NetApp.com https://*.console.BlueXP .NetApp.com | Este é o ponto de extremidade que você insere no navegador da Web para usar o console baseado na Web do BlueXP . 
+| https://console.BlueXP .NetApp.com https://*.console.BlueXP .NetApp.com | Este é o ponto de extremidade que você insere no seu navegador da web para usar o console baseado na web. 
 
 
-| https://api.BlueXP .NetApp.com | O console baseado na Web do BlueXP  entra em Contato com esse endpoint para interagir com a API do BlueXP  para ações relacionadas a autorização, licenciamento, assinaturas, credenciais, notificações e muito mais. 
+| https://api.BlueXP .NetApp.com | O console baseado na Web contata esse ponto de extremidade para interagir com a API para ações relacionadas à autorização, licenciamento, assinaturas, credenciais, notificações e muito mais. 
 
 
-| https://aiq.NetApp.com | Necessário para acessar o consultor digital da BlueXP . 
+| https://aiq.NetApp.com | Necessário para acessar o consultor digital. 
 
 
  a| 
@@ -45,7 +45,7 @@ Serviços da AWS (amazonaws.com):
 * Serviço de token de segurança (STS)
 * Serviço de armazenamento simples (S3)
 
-| Necessário para implantar um conetor da BlueXP  na AWS. O ponto final exato depende da região em que você implementa o conetor. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte a documentação da AWS para obter detalhes."^] 
+| Necessário para implantar um conetor da BlueXP  na AWS. O ponto final exato depende da região em que você implementa o conetor. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte a documentação da AWS para obter detalhes."] Sugestão:  https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte a documentação da AWS para obter detalhes."] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com | Necessário para implantar um conetor da BlueXP  na maioria das regiões do Azure. 
@@ -66,9 +66,9 @@ Serviços da AWS (amazonaws.com):
 | https://NetApp-cloud-account.auth0.com \https://cdn.auth0.com https://services.cloud.NetApp.com | Seu navegador da Web se coneta a esses endpoints para autenticação de usuário centralizada por meio do BlueXP . 
 
 
-| \https://widget.intercom.io | Para um bate-papo no produto que permite conversar com especialistas em nuvem da NetApp. 
+| \https://widget.intercom.io | Para bate-papo no produto que permite que você fale com o suporte da NetApp. 
 |===
-Além desses endpoints, você também precisa garantir que o conetor tenha acesso de saída à Internet para contatar endpoints específicos para operações diárias. Você pode encontrar a lista desses endpoints seguindo os links na próxima seção abaixo.
+Certifique-se de que o Conector tenha acesso de saída à internet para contatar os endpoints para as operações diárias. Siga os links na próxima seção abaixo para encontrar a lista desses endpoints.
 
 .Informações relacionadas
 * Prepare a rede para o conetor
