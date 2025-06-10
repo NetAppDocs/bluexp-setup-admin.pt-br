@@ -26,7 +26,7 @@ O BlueXP  fornece controle unificado do storage na multicloud híbrida e nos se
 
 === Controle unificado do armazenamento a partir da tela BlueXP 
 
-A tela _BlueXP _ permite que você descubra, implante, otimize e gerencie o armazenamento na nuvem e no local. A tela fornece um único local para todo o gerenciamento de armazenamento.
+A _tela BlueXP_ permite que você descubra, implante e gerencie armazenamento na nuvem e no local. A tela fornece um único local para todo o gerenciamento de armazenamento.
 
 
 
@@ -67,7 +67,7 @@ Storage de objetos na nuvem::
 
 ==== Gerenciamento de storage a partir de ambientes de trabalho
 
-Na tela do BlueXP , _ambientes de trabalho_ representam o storage de nuvem e no local que você descobriu ou implantou. Você pode selecionar um ambiente de trabalho e integrá-lo aos serviços de dados do BlueXP  ou entrar no ambiente de trabalho para concluir ações de gerenciamento de storage, como a adição de volumes.
+Na tela do BlueXP, _ambientes de trabalho_ representam o armazenamento descoberto ou implantado. Você pode selecionar um _ambiente de trabalho_ para integrá-lo aos serviços de dados do BlueXP ou gerenciar o armazenamento, como adicionar volumes.
 
 image:screenshot-canvas.png["Uma captura de tela da tela BlueXP  que mostra vários ambientes de trabalho, um dos quais está selecionado e mostra a capacidade de habilitar serviços de dados do BlueXP  ou selecionar entrar em ambiente de trabalho para gerenciar o armazenamento."]
 
@@ -75,7 +75,7 @@ image:screenshot-canvas.png["Uma captura de tela da tela BlueXP  que mostra vá
 
 === Serviços integrados para proteger, proteger e otimizar dados
 
-O BlueXP  inclui um pacote abrangente de serviços de dados integrados para ajudar você a manter a segurança, integridade e disponibilidade dos dados em ambientes de storage de nuvem e no local.
+O BlueXP inclui serviços de dados integrados para manter a segurança e a disponibilidade dos seus dados no armazenamento local e na nuvem.
 
 Alertas do BlueXP:: Veja problemas relacionados à capacidade, disponibilidade, performance, proteção e segurança no seu ambiente ONTAP.
 Catálogo de automação da BlueXP:: Use soluções com script para automatizar a implantação e a integração de produtos e serviços da NetApp.
@@ -109,7 +109,7 @@ O BlueXP  permite que você gerencie o storage de nuvem e use serviços de nuve
 
 == Custo
 
-O preço do BlueXP  depende dos serviços que você planeja usar. https://bluexp.netapp.com/pricing["Saiba mais sobre os preços do BlueXP "^]
+O preço do BlueXP depende dos serviços que você usa. https://bluexp.netapp.com/pricing["Saiba mais sobre os preços do BlueXP "^]
 
 
 
@@ -135,7 +135,7 @@ O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de
 * O gerenciamento de acesso permite que você atribua uma função a membros em diferentes níveis da hierarquia da organização
 
 
-O BlueXP  IAM é suportado ao usar o BlueXP  no modo padrão. Se você estiver usando o BlueXP  no modo restrito ou privado, use uma conta _BlueXP _ para gerenciar espaços de trabalho, usuários e recursos.
+O BlueXP IAM é compatível ao usar o BlueXP no modo padrão ou restrito. Se você estiver usando o BlueXP no modo privado, use uma _conta_ do BlueXP para gerenciar espaços de trabalho, usuários e recursos.
 
 * link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"]
 * link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]

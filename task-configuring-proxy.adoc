@@ -16,9 +16,9 @@ summary: Se suas políticas corporativas exigirem que você use um servidor prox
 [role="lead"]
 Se suas políticas corporativas exigirem que você use um servidor proxy para toda a comunicação com a Internet, você precisará configurar seus conetores para usar esse servidor proxy. Se você não configurou um conetor para usar um servidor proxy durante a instalação, então você pode configurar o conetor para usar esse servidor proxy a qualquer momento.
 
-Configurar o Conector para usar um servidor proxy permite o acesso de saída à internet quando um endereço IP público ou gateway NAT não estiver disponível. O servidor proxy fornece conectividade de saída apenas para o Conector, não para sistemas Cloud Volumes ONTAP.
+Usar um servidor proxy com o Connector permite o acesso de saída à Internet quando nenhum IP público ou gateway NAT está disponível. O servidor proxy fornece conectividade de saída apenas para o Conector, não para sistemas Cloud Volumes ONTAP.
 
-Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Abra esta porta após implantar o conector.
+Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. Você deve garantir que o grupo de segurança do Conector permita conexões de entrada pela porta 3128. Abra essa porta depois de implantar o Conector.
 
 
 
@@ -35,12 +35,12 @@ Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Intern
 
 Quando você configura um conetor para usar um servidor proxy, esse conetor e os sistemas Cloud Volumes ONTAP que ele gerencia (incluindo quaisquer mediadores de HA), todos usam o servidor proxy.
 
-Tenha em atenção que esta operação reinicia o conetor. Certifique-se de que o conetor não está a efetuar quaisquer operações antes de prosseguir.
+Esta operação reinicia o Conector. Certifique-se de que o conetor não está a efetuar quaisquer operações antes de prosseguir.
 
 .Passos
 . Navegue até a página *Edit BlueXP  Connector*.
 +
-A forma como você navega depende se você está usando o BlueXP  no modo padrão (acessando a interface do BlueXP  a partir do site SaaS) ou usando o BlueXP  no modo restrito ou no modo privado (acessando a interface do BlueXP  localmente a partir do host do conetor).
+A navegação depende do seu modo BlueXP. No modo padrão, acesse a interface pelo site do SaaS. No modo restrito ou privado, acesse-a localmente pelo host do conector.
 
 +
 [role="tabbed-block"]
@@ -97,16 +97,16 @@ Por exemplo: NetApp%92proxy
 
 == Ative o tráfego direto da API
 
-Se você configurou um conetor para usar um servidor proxy, você pode habilitar o tráfego direto da API no conetor para enviar chamadas de API diretamente para os serviços do provedor de nuvem sem passar pelo proxy. Essa opção é compatível com conetores executados na AWS, no Azure ou no Google Cloud.
+Se você configurou um conetor para usar um servidor proxy, você pode habilitar o tráfego direto da API no conetor para enviar chamadas de API diretamente para os serviços do provedor de nuvem sem passar pelo proxy. Conectores em execução no AWS, Azure ou Google Cloud oferecem suporte a essa opção.
 
-Se você desativou o uso de links privados do Azure com o Cloud Volumes ONTAP e estiver usando endpoints de serviço, então você deverá habilitar o tráfego direto da API. Caso contrário, o tráfego não será encaminhado corretamente.
+Se você desabilitar o Azure Private Links com o Cloud Volumes ONTAP e usar pontos de extremidade de serviço, habilite o tráfego de API direto. Caso contrário, o tráfego não será encaminhado corretamente.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Saiba mais sobre como usar um link privado do Azure ou endpoints de serviço com o Cloud Volumes ONTAP"^]
 
 .Passos
 . Navegue até a página *Edit BlueXP  Connector*:
 +
-A forma como você navega depende se você está usando o BlueXP  no modo padrão (acessando a interface do BlueXP  a partir do site SaaS) ou usando o BlueXP  no modo restrito ou no modo privado (acessando a interface do BlueXP  localmente a partir do host do conetor).
+A navegação depende do seu modo BlueXP. No modo padrão, acesse a interface pelo site do SaaS. No modo restrito ou privado, acesse-a localmente pelo host do conector.
 
 +
 [role="tabbed-block"]

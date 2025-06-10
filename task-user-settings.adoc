@@ -34,7 +34,7 @@ Você pode alterar seu nome de exibição no console BlueXP. O nome de exibiçã
 
 == Configurar autenticação multifator
 
-Você pode configurar a autenticação multifator (MFA) para sua conta BlueXP. A MFA melhora a segurança da conta ao exigir uma segunda maneira de verificar sua identidade, além da sua senha.
+Configure a autenticação multifator (MFA) para aumentar a segurança da conta exigindo um segundo método de verificação com sua senha.
 
 Usuários que utilizam login único com um provedor de identidade externo ou o site de suporte da NetApp não podem habilitar a MFA. Se alguma dessas situações for aplicável, você não verá a opção de habilitar a MFA nas configurações do seu perfil.
 
@@ -52,9 +52,9 @@ NOTE: Se você não tiver acesso ao seu aplicativo de autenticação ou perder s
 . Selecione o ícone de perfil no canto superior direito do console BlueXP para visualizar o painel de configurações do usuário.
 . Selecione *Configurar* ao lado do cabeçalho *Autenticação multifator*.
 . Siga as instruções para configurar o MFA para sua conta.
-. Ao terminar, você será solicitado a salvar seu código de recuperação. Escolha entre copiar o código ou baixar um arquivo de texto contendo o código. Guarde este código em um local seguro. Você precisará dele caso perca o acesso ao seu aplicativo de autenticação.
+. Ao terminar, você será solicitado a salvar seu código de recuperação. Escolha entre copiar o código ou baixar um arquivo de texto contendo o código. Guarde este código em um local seguro. Você precisará do código de recuperação se perder o acesso ao seu aplicativo de autenticação.
 +
-Depois de configurar o MFA, você será solicitado a inserir um código único do seu aplicativo de autenticação sempre que fizer login no BlueXP.
+Após configurar o MFA, você será solicitado a inserir um código único do seu aplicativo de autenticação sempre que fizer login no BlueXP.
 
 
 
@@ -73,9 +73,24 @@ Você só pode usar os códigos de recuperação uma vez. Se usar ou perder o se
 
 
 
+== Excluir sua configuração de MFA
+
+Para parar de usar a autenticação multifator (MFA) na sua conta BlueXP, exclua a configuração da MFA. Isso elimina a necessidade de inserir um código único no seu aplicativo de autenticação ao fazer login.
+
+
+NOTE: Se você não conseguir acessar seu aplicativo de autenticação ou código de recuperação, precisará entrar em contato com o administrador do BlueXP para redefinir sua configuração de MFA.
+
+.Passos
+. Selecione o ícone de perfil no canto superior direito do console BlueXP para visualizar o painel de configurações do usuário.
+. Selecione image:icon-action.png["Um ícone que é três pontos lado a lado"] ao lado do cabeçalho *Autenticação Multifator*.
+. Selecione *Eliminar*.
+
+
+
+
 == Entre em contato com o administrador da sua organização
 
-Se precisar entrar em contato com o administrador da sua organização, envie um e-mail diretamente do BlueXP. O administrador é responsável por gerenciar contas de usuários e permissões dentro da sua organização.
+Se precisar entrar em contato com o administrador da sua organização, envie um e-mail diretamente do BlueXP. O administrador gerencia contas de usuários e permissões dentro da sua organização.
 
 
 NOTE: Você deve ter um aplicativo de e-mail padrão configurado no seu navegador para usar o recurso *Entrar em contato com administradores*.

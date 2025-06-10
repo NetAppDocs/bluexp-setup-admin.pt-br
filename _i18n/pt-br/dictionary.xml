@@ -305,7 +305,6 @@
   <block id="443d63c9ee87e9dac12aa2216b54f52d" category="inline-link-macro">Siga os passos para começar a utilizar o BlueXP  no modo restrito</block>
   <block id="47b475ce8fffd929f1fc89967e693fe0" category="paragraph">Você deve manter o modo restrito desativado porque estas etapas descrevem como usar o BlueXP  no modo padrão. Você deve habilitar o modo restrito somente se tiver um ambiente seguro e quiser desconetar essa conta dos serviços de back-end do BlueXP . Se for esse o caso<block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>, .</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">Selecione *vamos começar*.</block>
-  <block id="dedba3bd94f6a10ada9755fca9221d1e" category="paragraph">O conetor está agora instalado e está configurado com a sua organização BlueXP .</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">Host dedicado</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">O conetor não é suportado em um host que é compartilhado com outros aplicativos. O host deve ser um host dedicado.</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="list-text">VPC e sub-rede</block>
@@ -680,7 +679,6 @@
   <block id="8c992ea897689b69e58371da6a8ae5e6" category="list-text">Baixe e complete o.<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block></block>
   <block id="78080f8885ea72672a94d1643801d9cb" category="list-text">Envie o formulário para o endereço de e-mail especificado no formulário</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">Como funciona a federação de identidade</block>
-  <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">A configuração da federação de identidade cria uma conexão confiável entre o provedor de serviços de autenticação (auth0) da BlueXP  e seu próprio provedor de gerenciamento de identidade.</block>
   <block id="1c02ebd5b42ffd51f43e9e1999e816c6" category="paragraph">A imagem a seguir mostra como a federação de identidade funciona com o BlueXP :</block>
   <block id="b92fe45cc758eb55110c7cc104646651" category="inline-image-macro">Um diagrama que mostra um usuário autenticando com o BlueXP  e uma conexão entre o BlueXP  e um provedor de identidade que autentica o usuário.</block>
   <block id="a15274bd5ac488ac4d633fe751da2ff3" category="paragraph"><block ref="a15274bd5ac488ac4d633fe751da2ff3" category="inline-image-macro-rx" type="image"></block></block>
@@ -693,82 +691,44 @@
   <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">O BlueXP  oferece suporte aos seguintes provedores de identidade:</block>
   <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">Provedores de identidade SAML (Security Assertion Markup Language)</block>
   <block id="4df90909cc2d04997870c4949a39d14b" category="list-text">ID do Microsoft Entra</block>
-  <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Serviços de Federação do ative Directory (ADFS)</block>
   <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFederate</block>
-  <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">O BlueXP  oferece suporte apenas a SSO iniciado por provedor de serviços (iniciado por SP). SSO iniciado pelo provedor de identidade (iniciado por IDP) não é suportado.</block>
   <block id="2867eaf4d1bb2c7bca72acfc58e90e99" category="section-title">Visão geral do processo de configuração</block>
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">Saiba como configurar a federação de identidade com credenciais NSS</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">Essas etapas são específicas para usuários que fazem login no BlueXP  usando um login na nuvem do NetApp. Se você usar suas credenciais NSS para fazer login no BlueXP , <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>.</block>
   <block id="7994951112a259112c25d6b6556149a5" category="section-title">Provedor de identidade SAML</block>
-  <block id="f55a9b624a2373bae08878c0181a1092" category="paragraph">Em um alto nível, a configuração de uma conexão federada entre o BlueXP  e um provedor de identidade SAML inclui as seguintes etapas:</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="cell">Passo</block>
   <block id="3fa1942dfddcdac97191c621480a5ded" category="cell">Concluído por</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Descrição</block>
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1</block>
-  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Administrador do ative Directory (AD)</block>
-  <block id="17155619aa276262956a9169cbbc98ea" category="paragraph">Configure seu provedor de identidade SAML para habilitar a federação de identidade com o BlueXP .</block>
-  <block id="80723e7f2abf44c346356b58de5584bf" category="paragraph">Veja as instruções para o seu provedor de identidade SAML:</block>
   <block id="657ddf7370b0d5eff54a335127a66282" category="inline-link">ADFS</block>
-  <block id="c33ddb3734db9918c602b8a73eb3854a" category="list-text"><block ref="c33ddb3734db9918c602b8a73eb3854a" category="inline-link-rx"></block></block>
   <block id="9eddef35bc6181a35b1e146b9fbf2579" category="inline-link">Okta</block>
-  <block id="2619f78e3f38e67ac152c0efcc61ca3d" category="list-text"><block ref="2619f78e3f38e67ac152c0efcc61ca3d" category="inline-link-rx"></block></block>
   <block id="8b0462fd7af8f1da87014a1daa3319c6" category="inline-link">OneLogin</block>
-  <block id="d8543be54a4507e484f66e71d76ac57a" category="list-text"><block ref="d8543be54a4507e484f66e71d76ac57a" category="inline-link-rx"></block></block>
-  <block id="8b4801b0a2e5acb957a1eb9a5865893e" category="list-text"><block ref="8b4801b0a2e5acb957a1eb9a5865893e" category="inline-link-rx"></block></block>
   <block id="6391fa72874cbb87eccb79e2fcb2cd5c" category="inline-link">Salesforce</block>
-  <block id="82b805f6a7d8b50e7cf82e8f59f7f40e" category="list-text"><block ref="82b805f6a7d8b50e7cf82e8f59f7f40e" category="inline-link-rx"></block></block>
   <block id="b2ab9e36a31c68cc5a0abc6b9f7e6052" category="inline-link">SiteMinder</block>
-  <block id="93e1bb7fc338909c843a3179fcc558ea" category="list-text"><block ref="93e1bb7fc338909c843a3179fcc558ea" category="inline-link-rx"></block></block>
   <block id="c1e831a160e67d1ff6bfbd7f1e326ea6" category="inline-link">SSOCircle</block>
-  <block id="e784439ab583dc6269222d988a21051a" category="list-text"><block ref="e784439ab583dc6269222d988a21051a" category="inline-link-rx"></block></block>
   <block id="685a1bb94de19c84d18952bbd724e718" category="inline-link">siga estas instruções genéricas</block>
-  <block id="e1b2d18c713df40e0da0fb45bad9d9de" category="paragraph">Se o seu provedor de identidade não aparecer na lista acima,<block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block></block>
-  <block id="1660967ba9c7dec5ecf29538424c54a7" category="admonition">Execute _não_ as etapas que descrevem como criar uma conexão no auth0. Você criará essa conexão na próxima etapa.</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="9c9a7aca54b3b1227c02037ae00098e1" category="cell">Administrador do BlueXP </block>
   <block id="1dd36b1c601a7192a0dbb196db0dae1b" category="inline-link">Página Configuração da Federação NetApp</block>
   <block id="5876b7c2025f98810f3aceb0f477492f" category="paragraph">Aceda ao<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> e crie a ligação com o BlueXP .</block>
-  <block id="b86474abbb77ac0e71e576bfff42cc23" category="paragraph">Para concluir esta etapa, você precisa obter o seguinte do administrador do AD sobre o provedor de identidade:</block>
   <block id="e71fdf330ff74d0fdbe7b4b72bdd4fa3" category="list-text">URL de início de sessão</block>
   <block id="d42b45203591ce26ca6f367d3af6d372" category="list-text">Um certificado de assinatura X509 (formato PEM ou CER)</block>
   <block id="a310970f60e93893530d31ccf2574d6b" category="list-text">URL de saída (opcional)</block>
-  <block id="91306fbf01cd483884c64bd2f573aa2f" category="paragraph">Depois de criar a conexão usando essas informações, a página Configuração de Federação lista os parâmetros que você pode enviar para o administrador do AD para concluir a configuração na próxima etapa.</block>
-  <block id="0964ada151a483bdbffce0cc395edecc" category="admonition">Anote a data de validade do certificado. Você precisa retornar à página Configuração da Federação e atualizar o certificado _before_ que expira. Esta é a sua responsabilidade. O BlueXP  não rastreia a data de expiração. É melhor trabalhar com sua equipe do AD para receber alertas a tempo.</block>
   <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3</block>
-  <block id="2e227b32919705455ef0fe6fd61b669d" category="cell">AD admin</block>
   <block id="95df8937201a4d449c13b1649e9ba46d" category="cell">Conclua a configuração no provedor de identidade usando os parâmetros mostrados na página Configuração da Federação após concluir a etapa 2.</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">Teste e ative a conexão a partir da<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> Nota que a página é atualizada entre testar a conexão e ativar a conexão.</block>
-  <block id="f03abb60d67394fd935c0b64f6d1c3c1" category="paragraph">Em um alto nível, a configuração de uma conexão federada entre o BlueXP  e o Microsoft Entra ID inclui as seguintes etapas:</block>
-  <block id="4d78a4f82051c51790a4d6a1b19d7bf4" category="paragraph">Configure o ID do Microsoft Entra para ativar a federação de identidades com o BlueXP .</block>
   <block id="91b6e8c144e0b0c26485c1d90cdf8e9b" category="inline-link">Veja as instruções para registar a aplicação com o Microsoft Entra ID</block>
-  <block id="f56344318e894c9b20e07a08f6a512c3" category="paragraph"><block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block></block>
-  <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">Para concluir esta etapa, você precisa obter o seguinte de seu administrador do AD:</block>
-  <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">ID do cliente</block>
-  <block id="797685b539958d3786d560ae97430767" category="list-text">Valor secreto do cliente</block>
-  <block id="b1b357376edc356774ec099bb39e65b7" category="list-text">Domínio Microsoft Entra ID</block>
-  <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">Anote a data de expiração da chave secreta. Você precisa retornar à página Configuração da Federação e atualizar o certificado _before_ que expira. Esta é a sua responsabilidade. O BlueXP  não rastreia a data de expiração. É melhor trabalhar com sua equipe do AD para receber alertas a tempo.</block>
   <block id="bcf96e38858d09ccb3d335e0944d8a4a" category="cell">Conclua a configuração no Microsoft Entra ID usando os parâmetros mostrados na página Configuração da Federação depois de concluir a etapa 2.</block>
-  <block id="d39660f3085c958967d8d820464b4974" category="paragraph">Em um alto nível, a configuração de uma conexão federada entre o BlueXP  e o ADFS inclui as seguintes etapas:</block>
-  <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">Configure o servidor ADFS para habilitar a federação de identidade com o BlueXP .</block>
   <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">Veja as instruções para configurar o servidor ADFS com auth0</block>
-  <block id="774bae219d61ddaa3803a99b79315467" category="paragraph"><block ref="774bae219d61ddaa3803a99b79315467" category="inline-link-rx"></block></block>
-  <block id="ea984b58d998a6393b5a21a789c7b789" category="paragraph">Para concluir esta etapa, você precisa obter o seguinte do administrador do AD: O URL do servidor ADFS ou o arquivo de metadados de federação.</block>
   <block id="8d4a0cfaae04a0d29dc491b71ab5dcb1" category="cell">Conclua a configuração no servidor ADFS usando os parâmetros mostrados na página Configuração da Federação depois de concluir a etapa 2.</block>
-  <block id="9340450967aba985f2ce16f324a6284a" category="paragraph">Em um alto nível, a configuração de uma conexão federada entre o BlueXP  e um servidor PingFederate inclui as seguintes etapas:</block>
-  <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">Configure seu servidor PingFederate para habilitar a federação de identidade com o BlueXP .</block>
   <block id="bb6800676df1891c64f4c92dd2cf1c7e" category="inline-link">Veja as instruções para criar uma conexão</block>
-  <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
-  <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">O URL para o servidor PingFederate</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">Conclua a configuração no servidor PingFederate usando os parâmetros mostrados na página Configuração da Federação depois de concluir a etapa 2.</block>
   <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">Atualizando uma conexão federada</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">Depois que o administrador do BlueXP  ativar uma conexão, o administrador pode atualizar a conexão a qualquer momento a partir do<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">Por exemplo, talvez seja necessário atualizar a conexão carregando um novo certificado.</block>
-  <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">O administrador do BlueXP  que criou a conexão é o único usuário autorizado que pode atualizar a conexão. Se você quiser adicionar administradores adicionais, entre em Contato com o suporte da NetApp.</block>
   <block id="194f68541f58f6c331eacf4db74f4f78" category="summary">O BlueXP  Identity and Access Management (IAM) permite controlar o acesso aos recursos da sua organização.</block>
   <block id="d135d1b6a10879ca27887c632f4576d7" category="doc">Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP </block>
-  <block id="81ac1402c03d0a47ef27fe0243ef45dc" category="inline-link-macro">Saiba mais sobre a introdução do BlueXP  IAM</block>
-  <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">O BlueXP  IAM substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP . <block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>.</block>
   <block id="389368f5d98ef09e3dca047f7f72f270" category="inline-link-macro">Saiba mais sobre as contas do BlueXP </block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="03dc9106de5affc832d68c188393146d" category="section-title">Como o BlueXP  IAM funciona</block>
@@ -838,7 +798,6 @@
   <block id="b586758af094fc2bd17d0a7998a3c157" category="paragraph">Associar um conetor a uma pasta não torna esse conetor acessível automaticamente a partir de todos os projetos na pasta. Os membros da organização não podem acessar um conetor de um projeto até que você associe o conetor a esse projeto específico.</block>
   <block id="201614334b2723fd3338cf698f37ecd4" category="paragraph">Um _administrador da organização_ pode associar um conetor a uma pasta para que o _Folder ou o administrador do projeto_ possa tomar a decisão de associar esse conetor aos projetos apropriados que residem na pasta.</block>
   <block id="0561b5e58584cfa2d9e645e47c0c3bb1" category="section-title">Exemplos do IAM</block>
-  <block id="8ddebf391d7c6c8708071496ecce1bf7" category="paragraph">Os exemplos a seguir mostram como você pode configurar sua organização.</block>
   <block id="135b3c5ddb2b53a7189302bba4295fc6" category="section-title">Organização simples</block>
   <block id="bc43b12884b61655079a5a16d18ad9de" category="paragraph">O diagrama a seguir mostra um exemplo simples de uma organização que usa o projeto padrão e nenhuma pasta. Um único membro gerencia toda a organização.</block>
   <block id="a72765d3ccd5c52417f70bed4c7b5d10" category="inline-image-macro">Um diagrama conceitual que mostra uma organização com um projeto, recursos associados e um administrador de organização.</block>
@@ -906,7 +865,6 @@
   <block id="ab98f632a22cf265a09e9110157eba1f" category="list-text"><block ref="ab98f632a22cf265a09e9110157eba1f" category="inline-link-macro-rx"></block></block>
   <block id="aad2c066ffe748669f0919517c62b920" category="paragraph">A opção de instalação que você escolher afeta a forma como você se prepara para a instalação. Isso inclui como você fornece ao BlueXP  as permissões necessárias que ele precisa para autenticar e gerenciar recursos no Google Cloud.</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">O BlueXP  oferece vários modos de implantação que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O modo padrão aproveita a camada SaaS do BlueXP  para fornecer funcionalidade completa, enquanto o modo restrito e o modo privado estão disponíveis para organizações com restrições de conetividade.</block>
-  <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">Embora o BlueXP  iniba o fluxo de tráfego, comunicação e dados ao usar o modo restrito ou o modo privado, é sua responsabilidade garantir que seu ambiente (no local e na nuvem) esteja em conformidade com os regulamentos exigidos.</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">Visão geral</block>
   <block id="299192dda00d9cbb51cb176b72e6f464" category="paragraph">Este modo utiliza a transmissão de dados encriptados através da Internet pública.</block>
   <block id="e429f30641aba9e1fc7f2090cc77ce40" category="list-text">Modo restrito</block>
@@ -963,8 +921,6 @@
   <block id="46eb19bc7ffa54dcdb1974eae5e15a55" category="list-text"><block ref="46eb19bc7ffa54dcdb1974eae5e15a55" category="inline-link-macro-rx"></block></block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">Localização suportada para o conetor</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">No modo padrão, o conetor é compatível com a nuvem ou no local.</block>
-  <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">A instalação do conetor é possível a partir de um assistente de configuração no BlueXP , no AWS ou no Azure Marketplace, ou usando um instalador para instalar manualmente o conetor no seu próprio host Linux no data center ou na nuvem.</block>
-  <block id="da2db927706f6e576c7a34d9fa56eb3a" category="list-text">Atualizações automatizadas do software Connector estão disponíveis no BlueXP  com atualizações mensais.</block>
   <block id="bd521aa973861d923b4649240bf09964" category="list-text">Acesso à interface do utilizador</block>
   <block id="9ec70babf788035cb815ff42523734cc" category="list-text">A interface do usuário é acessível a partir do console baseado na Web que é fornecido através da camada SaaS.</block>
   <block id="cc4c115c548cda4d8d0ad55f7bef9d6c" category="list-text">As chamadas de API são feitas para o seguinte endpoint: https://cloudmanager.cloud.NetApp.com</block>
@@ -982,7 +938,6 @@
   <block id="7b076a1276b929fc2edb5555c49710e3" category="inline-image-macro">Uma imagem conceitual que mostra a internet pública onde a camada SaaS e a autenticação auth0 estão disponíveis, uma rede virtual na nuvem onde um conetor está sendo executado e fornecendo acesso ao console baseado na Web, e está gerenciando Cloud Volumes ONTAP e um cluster AFF em um data center local.</block>
   <block id="c97f19753c7808727aa46b10b2bd97ac" category="paragraph"><block ref="c97f19753c7808727aa46b10b2bd97ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8a086c636373dd6d27b6fa162da10ef9" category="paragraph">O BlueXP  funciona da seguinte forma no modo restrito:</block>
-  <block id="f203ea7d64b1254dcf8c55622a4f8e5a" category="list-text">A conectividade de saída é necessária do conetor à camada SaaS do BlueXP  para usar os serviços de dados do BlueXP , para habilitar atualizações automáticas de software do conetor, usar autenticação baseada em auth0 e enviar metadados para carregamento (nome da VM de storage, capacidade alocada e UID de volume, tipo e IOPS).</block>
   <block id="d439077c2b251f6970dca2790f55cf72" category="paragraph">A camada SaaS do BlueXP  não inicia a comunicação com o conetor. Toda a comunicação é iniciada pelo conetor, que pode extrair ou enviar dados da camada SaaS ou para a camada SaaS, conforme necessário.</block>
   <block id="572a35a7a9ed649cca9ec1cf347c9b9a" category="paragraph">Uma conexão também é necessária para os recursos do provedor de nuvem de dentro da região.</block>
   <block id="f987da77cc0f6de4634d1fa74f39b8bf" category="list-text">No modo restrito, o conetor é suportado na nuvem: Em uma região governamental, região soberana ou região comercial.</block>
@@ -1092,7 +1047,6 @@
   <block id="0cf89ba9f6178dc91d18ec5c2aec1c61" category="paragraph">O BlueXP  permite que você gerencie o storage de nuvem e use serviços de nuvem no Amazon Web Services, no Microsoft Azure e no Google Cloud.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Custo</block>
   <block id="586136b5d097497746a02a0ee9fbf106" category="inline-link">Saiba mais sobre os preços do BlueXP </block>
-  <block id="a3811f7a922aa3527f60315673066094" category="paragraph">O preço do BlueXP  depende dos serviços que você planeja usar.<block ref="75160bc8e8d9a72990607b919e54f0eb" category="inline-link-rx"></block></block>
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">Como o BlueXP  funciona</block>
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">Software como serviço</block>
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">console baseado na web</block>
@@ -1103,7 +1057,6 @@
   <block id="29235ad952255adaa81cebf92ab3a0f0" category="list-text">_Pastas_ permitem agrupar projetos relacionados</block>
   <block id="666d088bb19b110a528d20b21622daa9" category="list-text">O gerenciamento de recursos permite associar um recurso a uma ou mais pastas ou projetos</block>
   <block id="4c57f63e49ef8479b418a16f7d776ed6" category="list-text">O gerenciamento de acesso permite que você atribua uma função a membros em diferentes níveis da hierarquia da organização</block>
-  <block id="8c898441028bb7b6b2d1f2270d148587" category="paragraph">O BlueXP  IAM é suportado ao usar o BlueXP  no modo padrão. Se você estiver usando o BlueXP  no modo restrito ou privado, use uma conta _BlueXP _ para gerenciar espaços de trabalho, usuários e recursos.</block>
   <block id="b2bb1015f4cde818ea1f13912e4e1755" category="inline-link-macro">Saiba mais sobre o BlueXP  IAM</block>
   <block id="1c675fd28ce69ed7126f32d646676158" category="list-text"><block ref="1c675fd28ce69ed7126f32d646676158" category="inline-link-macro-rx"></block></block>
   <block id="8fbf37ccd9a099359c44e494e119477c" category="paragraph">Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP . Um conetor permite o gerenciamento de recursos e processos em ambientes locais e de nuvem. É necessário gerenciar ambientes de trabalho (por exemplo, Cloud Volumes ONTAP) e usar muitos serviços BlueXP .</block>
@@ -1182,7 +1135,6 @@
   <block id="895e31e93bd7a23981cc0cbeb5581840" category="summary">À medida que adicionamos e removemos suporte para o conetor em sistemas operacionais Linux específicos, você pode ter dúvidas sobre como esse suporte afeta suas implantações de conetores existentes.</block>
   <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">Alterações nos sistemas operacionais Linux suportados</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="section-title">Sistemas operacionais suportados</block>
-  <block id="231007fefc880f5d22c9c9bd81be28b3" category="paragraph">O conetor BlueXP  é compatível com os seguintes sistemas operacionais Linux.</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">Instalação manual</block>
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24,04 LTS</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22,04 LTS</block>
@@ -1194,10 +1146,8 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">Limitações</block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">A classificação BlueXP  é suportada se você instalar o conetor em um host RHEL 8 ou 9 que reside no local. Não será compatível se o host RHEL 8 ou 9 residir na AWS, Azure ou Google Cloud.</block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">Ferramenta de orquestração de contêineres</block>
-  <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">O Podman é necessário como a ferramenta de orquestração de contentores quando você instala o conetor em um host RHEL 8 ou 9. O Docker Engine não é compatível com RHEL 8 e 9.</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">Modo de implantação</block>
   <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">RHEL 8 e 9 são suportados quando se usa BlueXP  no modo padrão, modo restrito e modo privado.</block>
-  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">RHEL 8 e 9 são suportados a partir das seguintes versões do conetor:</block>
   <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 ao utilizar o BlueXP  no modo padrão ou no modo restrito</block>
   <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 ao usar o BlueXP  no modo privado</block>
   <block id="62ee52388b4c1539a4b357c9c16e57c6" category="list-text">Apenas novas instalações manuais</block>
@@ -1210,7 +1160,6 @@
   <block id="7eba69a7025f97bec42a74bd138b395e" category="inline-link">Red Hat: O que saber sobre o fim da manutenção do Red Hat Enterprise Linux 7</block>
   <block id="ebc4aba90c33f7558582b9bbf738fdd9" category="paragraph"><block ref="ebc4aba90c33f7558582b9bbf738fdd9" category="inline-link-rx"></block></block>
   <block id="673678917598778ddca4521cd7c53d87" category="section-title">Conetores existentes no RHEL 7 ou CentOS 7</block>
-  <block id="431ca930d765a9710ef05b1ce095bc0e" category="paragraph">Se você tiver um conetor existente em execução no RHEL 7 ou CentOS 7, não suportaremos a atualização ou conversão do sistema operacional para RHEL 8 ou 9. Para começar a executar um conetor em um host RHEL 8 ou 9, você precisa fazer o seguinte:</block>
   <block id="0f50cd1079cb24de2b4571c09546a2e1" category="list-text">Configure um host RHEL 8 ou 9.</block>
   <block id="5122aad3fbc28bb77264e99f11033279" category="list-text">Execute uma instalação do conetor _new_.</block>
   <block id="a9d10a06adb23581dce371f468ea4904" category="list-text">Configure o conetor para descobrir os ambientes de trabalho que o conetor antigo gerenciava.</block>
@@ -2183,9 +2132,7 @@
   <block id="8ddee083db5cf3707b8335f563d2c755" category="list-text">O BlueXP  não suporta servidores proxy transparentes.</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">Ative um proxy em um conetor</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">Quando você configura um conetor para usar um servidor proxy, esse conetor e os sistemas Cloud Volumes ONTAP que ele gerencia (incluindo quaisquer mediadores de HA), todos usam o servidor proxy.</block>
-  <block id="f5cfd333047dfa220ee8666d14286034" category="paragraph">Tenha em atenção que esta operação reinicia o conetor. Certifique-se de que o conetor não está a efetuar quaisquer operações antes de prosseguir.</block>
   <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">Navegue até a página *Edit BlueXP  Connector*.</block>
-  <block id="5682fb3f3dc6955b7e9d4b14adc8daa0" category="paragraph">A forma como você navega depende se você está usando o BlueXP  no modo padrão (acessando a interface do BlueXP  a partir do site SaaS) ou usando o BlueXP  no modo restrito ou no modo privado (acessando a interface do BlueXP  localmente a partir do host do conetor).</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">Selecione a lista suspensa *Connector* no cabeçalho BlueXP .</block>
   <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">Selecione *Gerenciar conetores*.</block>
   <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">Uma captura de tela que mostra a página Gerenciar conetores que está disponível após a seleção do conetor.</block>
@@ -2206,8 +2153,6 @@
   <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">Por exemplo: NetApp%92proxy</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="list-text">O BlueXP  não suporta senhas que incluem o caractere A.</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">Ative o tráfego direto da API</block>
-  <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">Se você configurou um conetor para usar um servidor proxy, você pode habilitar o tráfego direto da API no conetor para enviar chamadas de API diretamente para os serviços do provedor de nuvem sem passar pelo proxy. Essa opção é compatível com conetores executados na AWS, no Azure ou no Google Cloud.</block>
-  <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Se você desativou o uso de links privados do Azure com o Cloud Volumes ONTAP e estiver usando endpoints de serviço, então você deverá habilitar o tráfego direto da API. Caso contrário, o tráfego não será encaminhado corretamente.</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Saiba mais sobre como usar um link privado do Azure ou endpoints de serviço com o Cloud Volumes ONTAP</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
   <block id="7562ce5f768e11625bc10a4b9ebb71b0" category="list-text">Navegue até a página *Edit BlueXP  Connector*:</block>
@@ -2697,12 +2642,10 @@
   <block id="d0fb5ed733cfc3e5faf9cd5d96f676a9" category="paragraph">Agora que você instalou o conetor, você precisa fornecer ao BlueXP  as permissões do Azure que você configurou anteriormente. Com o fornecimento de permissões, o BlueXP  pode gerenciar sua infraestrutura de dados e storage no Azure.</block>
   <block id="2b27af8d5932753265ba5607c4aca373" category="summary">Para criar um conetor a partir do Azure Marketplace, você precisa configurar sua rede, preparar permissões do Azure, analisar os requisitos de instância e criar o conetor.</block>
   <block id="08162f5d2875618589001f4ce951b82d" category="section-title">Etapa 2: Revise os requisitos da VM</block>
-  <block id="67e296817a0a6c22fc1ef6d510785c4d" category="paragraph">Ao criar o conetor, você precisa escolher um tipo de máquina virtual que atenda aos seguintes requisitos.</block>
   <block id="5761fa91677853434e4537aeda21de63" category="section-title">Passo 3: Configurar permissões</block>
   <block id="2e8efb5a4d803004aa2f7b52e98e57e6" category="paragraph">Você pode fornecer permissões das seguintes maneiras:</block>
   <block id="4038d2f08625a8689610b527df3b8ded" category="paragraph">Siga estas etapas para configurar permissões para o BlueXP .</block>
   <block id="4ce58aed62ea94c374a38864c0fb4252" category="paragraph">Inicie o conetor diretamente do Azure Marketplace.</block>
-  <block id="d07ea60173f1265837ca53e342739d45" category="paragraph">A criação do conetor no Azure Marketplace implanta uma máquina virtual no Azure usando uma configuração padrão. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="40ca3108b6381f9eda9574daf00c3b01" category="list-text">Vá para a página VM do NetApp Connector no Azure Marketplace.</block>
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">Página do Azure Marketplace para regiões comerciais</block>
   <block id="5fb9ace1b2fee444b848b1ad1c5d886c" category="paragraph"><block ref="5fb9ace1b2fee444b848b1ad1c5d886c" category="inline-link-rx"></block></block>
@@ -4101,18 +4044,15 @@
   <block id="0c203240d7d7088c0a43d84641289267" category="summary">O NetApp BlueXP  oferece à sua organização um único painel de controle que ajuda a criar, proteger e governar os dados em ambientes locais e de nuvem.</block>
   <block id="1abbc9b3f7ef6da2c82af17a4e17d91d" category="paragraph">O BlueXP  fornece controle unificado do storage na multicloud híbrida e nos serviços de dados integrados para proteger, proteger e otimizar os dados.</block>
   <block id="3c916fa6dfbc9f3d399c969d9c767df5" category="section-title">Controle unificado do armazenamento a partir da tela BlueXP </block>
-  <block id="9feded36752088310319aa4add1d9bc6" category="paragraph">A tela _BlueXP _ permite que você descubra, implante, otimize e gerencie o armazenamento na nuvem e no local. A tela fornece um único local para todo o gerenciamento de armazenamento.</block>
   <block id="a7a49fddbe3307c59d164dd83ddf376d" category="section-title">Storage de nuvem e no local compatível</block>
   <block id="5a19e2344fd7397565c50e4554947edb" category="paragraph">O BlueXP  permite gerenciar os seguintes tipos de storage a partir da tela BlueXP :</block>
   <block id="165168c444979fab1fc4b5f5234e8edb" category="list-text">Soluções de storage em nuvem</block>
   <block id="a77255c8473fd0c82b986bb6ce8b7d4d" category="list-text">Storage de objetos e flash no local</block>
   <block id="b9c8cb06fa02abe70007fad1ae9d0b57" category="list-text">Storage de objetos na nuvem</block>
   <block id="00bb240da1e628695b0b4b9a35b415e9" category="section-title">Gerenciamento de storage a partir de ambientes de trabalho</block>
-  <block id="d5d09c8a04d93eaf08592bf42a80b066" category="paragraph">Na tela do BlueXP , _ambientes de trabalho_ representam o storage de nuvem e no local que você descobriu ou implantou. Você pode selecionar um ambiente de trabalho e integrá-lo aos serviços de dados do BlueXP  ou entrar no ambiente de trabalho para concluir ações de gerenciamento de storage, como a adição de volumes.</block>
   <block id="7eea8ba09f9fe322cb11baf7a5867123" category="inline-image-macro">Uma captura de tela da tela BlueXP  que mostra vários ambientes de trabalho, um dos quais está selecionado e mostra a capacidade de habilitar serviços de dados do BlueXP  ou selecionar entrar em ambiente de trabalho para gerenciar o armazenamento.</block>
   <block id="3b5e2810d2c4d23cff3f78705d592aaa" category="paragraph"><block ref="3b5e2810d2c4d23cff3f78705d592aaa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="23f9f5b793c30aaa036bf6bf045da10f" category="section-title">Serviços integrados para proteger, proteger e otimizar dados</block>
-  <block id="98165eb3dfced987bf0a8b76a2804492" category="paragraph">O BlueXP  inclui um pacote abrangente de serviços de dados integrados para ajudar você a manter a segurança, integridade e disponibilidade dos dados em ambientes de storage de nuvem e no local.</block>
   <block id="f7ce517e0d71a43254b7a55670a9b018" category="list-text">Alertas do BlueXP</block>
   <block id="2d5c8aeda2ab373d4a288e3bb0e951b0" category="list-text">Veja problemas relacionados à capacidade, disponibilidade, performance, proteção e segurança no seu ambiente ONTAP.</block>
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="list-text">Catálogo de automação da BlueXP</block>
@@ -4190,7 +4130,6 @@
   <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">Se você usar o conetor com backup e recuperação do BlueXP  ou com proteção contra ransomware BlueXP .</block>
   <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">Para ambos os cenários, pode continuar a utilizar os endpoints existentes.</block>
   <block id="f75f2bfc89f28bf6c3d0cd6ecc334d38" category="paragraph">Quando o BlueXP  implanta a máquina virtual Connector no Azure, ele ativa um<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> na máquina virtual, cria uma função personalizada e a atribui à máquina virtual. A função fornece ao BlueXP  as permissões necessárias para gerenciar recursos e processos dentro dessa assinatura do Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
-  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">Informações relacionadas</block>
   <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">Configurar uma assinatura da AWS</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Você deseja alterar a assinatura do AWS Marketplace configurada com as credenciais da AWS.</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">A imagem a seguir ilustra a profundidade máxima da hierarquia de recursos da sua organização:</block>
@@ -4859,27 +4798,17 @@
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Autenticação multifator (MFA)</block>
   <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">Usuários não federados agora podem habilitar a autenticação multifator (MFA) para suas contas BlueXP, aumentando a segurança da conta. Os administradores do BlueXP podem gerenciar as configurações de MFA para seus usuários, redefinindo ou desativando a MFA para usuários individuais, conforme necessário.</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Saiba mais sobre como configurar a autenticação multifator para você.</block>
-  <block id="bf6be3832a1adb81fee91d5a372e6c58" category="inline-link-macro">Saiba mais sobre como gerenciar a autenticação multifator para usuários.</block>
-  <block id="e0ed5326b71029939b219048d45d36b8" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="3f9491f03691dee79279bcce7d70fa28" category="inline-link-macro-rx"></block></block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Workloads</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">Agora você pode visualizar e excluir credenciais do Amazon FSx para NetApp ONTAP na página Credenciais no BlueXP.</block>
   <block id="ab7b4bc3c1371fe89a3ea52a6a5b39c0" category="paragraph">_Federação de identidade_ ativa o logon único com o BlueXP  para que os usuários possam fazer login usando credenciais de sua identidade corporativa. Para começar, aprenda como a federação de identidades funciona e depois revise uma visão geral do processo de configuração.</block>
-  <block id="6b0b102933a9be071f218c04b6933b57" category="paragraph">A equipe de gerenciamento de identidade e acesso da NetApp analisa sua solicitação.</block>
   <block id="3a589040e88b242371caa452ff52644d" category="list-text">O usuário insere seu endereço de e-mail na página de login do BlueXP.</block>
   <block id="db463570dbbbbfba65175c56f93e3afa" category="paragraph">Antes de configurar uma conexão entre o BlueXP e seu provedor de gerenciamento de identidade, entenda as etapas necessárias para se preparar.</block>
   <block id="43d8a6033ac1e22623cc7444b2fbd60d" category="admonition">Anote a data de validade do certificado. Você precisa retornar à página Configuração da Federação e atualizar o certificado _before_ que expira. Esta é a sua responsabilidade. O BlueXP não rastreia a data de expiração, então você deve monitorar e atualizar o certificado antes que ele expire. É melhor trabalhar com sua equipe do IT para receber alertas a tempo.</block>
   <block id="a945298807cc3bf3df429116d788d2c4" category="paragraph">O BlueXP solicita que você crie uma nova organização quando você se inscreve.</block>
-  <block id="9a6228fbc2e9d21b80753e94a7b6e8f3" category="paragraph">Associar um recurso a uma pasta não o torna automaticamente acessível a todos os projetos nela contidos. O administrador da pasta ou do projeto decide quais projetos podem acessar o recurso. Depois de tomar essa decisão, o administrador pode então associar o recurso aos projetos certos.</block>
-  <block id="378ca9d331e5ed4027f617c07fd21bbe" category="list-text">Quando você concede a um membro funções de acesso no nível da organização, todas as pastas, projetos e recursos na organização herdam essas funções. Isso significa que o membro tem permissões para tudo na organização.</block>
   <block id="f4a866cc8d962c94d7c7fd8decdd7e6c" category="list-text">Quando você concede uma função de acesso no nível da pasta, todas as pastas, projetos e recursos na pasta herdam essa função.</block>
   <block id="34aee3ad45d37ad6cf603311eb0838fb" category="list-text">Quando você concede uma função de acesso no nível do projeto, todos os recursos associados a esse projeto herdam essa função.</block>
-  <block id="1bce07c38663e50bd2002abeaa9fff4f" category="paragraph">Você pode disponibilizar um Conector para outro projeto nestes casos:</block>
   <block id="b65cc9ab2327fd85f7b0e7503c06a66f" category="paragraph">Se um recurso que você associa a um projeto adicional for descoberto usando um Conector BlueXP, você também precisará associar o Conector ao projeto ao qual o recurso está associado. Caso contrário, o Conector e seu recurso associado não poderão ser acessados na tela do BlueXP por membros que não tenham a função _Administrador da organização_.</block>
   <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">O BlueXP oferece vários _modos de implantação_ que permitem que você atenda aos seus requisitos de negócios e segurança. O _modo padrão_ utiliza uma camada de software como serviço (SaaS) para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações com restrições de conectividade.</block>
-  <block id="2660b3353488b0c34e80937df83bb51d" category="paragraph">Cada modo de implantação difere em termos de requisitos de conectividade de saída, local de implantação, processo de instalação, método de autenticação, serviços de dados e armazenamento disponíveis e métodos de cobrança.</block>
-  <block id="9a53d34a78d4de240f566b18e7207a88" category="list-text">Use um serviço SaaS no console web. Dependendo dos serviços e recursos de dados que você planeja usar, um administrador do BlueXP cria um ou mais Conectores para gerenciar dados no seu ambiente de nuvem híbrida.</block>
-  <block id="804e9eba54dfad8157ace4068a829a5e" category="list-text">Você instala um BlueXP Connector na nuvem (em uma região governamental, região de nuvem soberana ou região comercial) e tem conectividade de saída limitada à camada BlueXP SaaS. Os usuários acessam o BlueXP  localmente a partir do console baseado na Web que está disponível no conetor, não na camada SaaS.</block>
-  <block id="7c6fa336a8c480dbf689de203cc914cc" category="list-text">Você instala um BlueXP Connector no local ou na nuvem (em uma região segura, região de nuvem soberana ou região comercial) e não tem _nenhuma_ conectividade com a camada BlueXP SaaS. Os usuários acessam o BlueXP  localmente a partir do console baseado na Web que está disponível no conetor, não na camada SaaS.</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">Opções de licenciamento de serviços de dados</block>
   <block id="da3a71a6a101e5ce1488cbbb02a56811" category="paragraph">Ao usar o modo privado, você usará uma _conta BlueXP_ para gerenciar usuários e organizar recursos em um _espaço de trabalho_ isolado.</block>
   <block id="73ed026560226caf4536c90af5181235" category="paragraph">Se estiver usando o modo padrão ou o modo restrito, você não terá uma conta. Em vez disso, você terá uma _organização_ que gerencia usando o gerenciamento de identidade e acesso (IAM).</block>
@@ -4940,8 +4869,6 @@
   <block id="f54a1ada6e84cbd77add137de73fe499" category="summary">Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você possa usar sua assinatura do marketplace para pagar por serviços de dados.</block>
   <block id="0e46c1615780fb701a31f342948323ee" category="paragraph">Ao implantar um conetor no Google Cloud, o BlueXP  cria um conjunto padrão de credenciais associadas à instância de VM do Connector. A qualquer momento, você pode alterar a assinatura do Google Cloud Marketplace associada a essas credenciais. A assinatura permite que você crie um sistema Cloud Volumes ONTAP com pagamento conforme o uso e use outros serviços de dados.</block>
   <block id="2e38f18f531fa28a560e832f829a6961" category="paragraph">Às vezes, a assinatura do NetApp Intelligent Services por meio do Google Cloud Marketplace pode ficar fragmentada devido a permissões incorretas ou ao não seguir acidentalmente o redirecionamento para o site do BlueXP. Se isso acontecer, siga as etapas a seguir para concluir o processo de assinatura.</block>
-  <block id="bce4b2f944e26241929cb412598dc72a" category="paragraph">Configurar o Conector para usar um servidor proxy permite o acesso de saída à internet quando um endereço IP público ou gateway NAT não estiver disponível. O servidor proxy fornece conectividade de saída apenas para o Conector, não para sistemas Cloud Volumes ONTAP.</block>
-  <block id="5ec63ed83d1fa6fea36745e1f71fa8e8" category="paragraph">Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. O único requisito é garantir que o grupo de segurança do conetor permita conexões de entrada pela porta 3128. Abra esta porta após implantar o conector.</block>
   <block id="c10c892886acddf2e2cadd07adf17f76" category="paragraph">Use o projeto padrão ou crie projetos e pastas adicionais que correspondam à hierarquia da sua empresa.</block>
   <block id="3ef0bce1ffcb82589ba8b3b82854784c" category="paragraph">Se várias pessoas na sua empresa precisarem de acesso ao BlueXP, associe as contas de usuário delas à sua organização e atribua as permissões necessárias. Você também tem a opção de adicionar contas de serviço à sua organização.</block>
   <block id="87e40e0223c47575a5a3e84a25973703" category="paragraph">Adicione ou descubra recursos no BlueXP como _os ambientes de trabalho_. Os membros da organização gerenciam um ambiente de trabalho, que representa um sistema de armazenamento, de dentro de um projeto.</block>
@@ -5046,7 +4973,6 @@
   <block id="befac70fd40711c428906b0a641dd516" category="list-text">Selecione o ícone *Editar* ao lado do seu nome.</block>
   <block id="a4f6cc91409a8e534a14d0b5e0cfef8f" category="list-text">Digite seu novo nome de exibição no campo *Nome*.</block>
   <block id="a7c8edfd028f355b86456c7117112269" category="section-title">Configurar autenticação multifator</block>
-  <block id="33113e956b37d95ea0a647427a36d6dd" category="paragraph">Você pode configurar a autenticação multifator (MFA) para sua conta BlueXP. A MFA melhora a segurança da conta ao exigir uma segunda maneira de verificar sua identidade, além da sua senha.</block>
   <block id="9aadafb8c17cf5f4596ee01261ed6396" category="paragraph">Usuários que utilizam login único com um provedor de identidade externo ou o site de suporte da NetApp não podem habilitar a MFA. Se alguma dessas situações for aplicável, você não verá a opção de habilitar a MFA nas configurações do seu perfil.</block>
   <block id="bee20cf8e1c07904eb9f214aeefc4d26" category="paragraph">Não habilite a autenticação multifator (MFA) se sua conta de usuário for para acesso à API do BlueXP. A autenticação multifator interrompe o acesso à API quando habilitada para uma conta de usuário. Use contas de serviço para todos os acessos à API.</block>
   <block id="6d168c0cfcd90046f487062da3a74001" category="list-text">Você já deve ter baixado um aplicativo de autenticação, como o Google Authenticator ou o Microsoft Authenticator, para o seu dispositivo.</block>
@@ -5054,15 +4980,12 @@
   <block id="fc612e539b3652966735109fc9377251" category="admonition">Se você não tiver acesso ao seu aplicativo de autenticação ou perder seu código de recuperação, entre em contato com o administrador do BlueXP para obter ajuda.</block>
   <block id="f1ae01eb785f4bb9eb914c3fc8608eb3" category="list-text">Selecione *Configurar* ao lado do cabeçalho *Autenticação multifator*.</block>
   <block id="0c8e2a853d24021dbfc66a9993fb05fd" category="list-text">Siga as instruções para configurar o MFA para sua conta.</block>
-  <block id="e9f4ecb3d4c11807b70baf29cec2cc83" category="list-text">Ao terminar, você será solicitado a salvar seu código de recuperação. Escolha entre copiar o código ou baixar um arquivo de texto contendo o código. Guarde este código em um local seguro. Você precisará dele caso perca o acesso ao seu aplicativo de autenticação.</block>
-  <block id="817abe5190825ceb292746cd482c1bc1" category="paragraph">Depois de configurar o MFA, você será solicitado a inserir um código único do seu aplicativo de autenticação sempre que fizer login no BlueXP.</block>
   <block id="85abfea9292794a037b216152d68a42c" category="section-title">Regenere seu código de recuperação MFA</block>
   <block id="6487608bf6fe028f1ce57da2db423d90" category="paragraph">Você só pode usar os códigos de recuperação uma vez. Se usar ou perder o seu, crie um novo.</block>
   <block id="c5f7c138da6978f74df8212e9af75a79" category="list-text">Selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> ao lado do cabeçalho *Autenticação Multifator*.</block>
   <block id="45c07fa99050f57de53fb4ff89fd7cab" category="list-text">Selecione *Regenerar código de recuperação*.</block>
   <block id="2332588943c47002d7d4b6b185a7aa0c" category="list-text">Copie o código de recuperação gerado e salve-o em um local seguro.</block>
   <block id="8b473423c18a9814010c33fe5e039084" category="section-title">Entre em contato com o administrador da sua organização</block>
-  <block id="5933c7ac58e5a1a4a01a2a264a8716fe" category="paragraph">Se precisar entrar em contato com o administrador da sua organização, envie um e-mail diretamente do BlueXP. O administrador é responsável por gerenciar contas de usuários e permissões dentro da sua organização.</block>
   <block id="a6e24730e5ea1331a6bae995d45563be" category="admonition">Você deve ter um aplicativo de e-mail padrão configurado no seu navegador para usar o recurso *Entrar em contato com administradores*.</block>
   <block id="3314b51d8bf7d2ebba73be57ad95a719" category="list-text">Selecione *Entrar em contato com administradores* para enviar um e-mail ao administrador da sua organização.</block>
   <block id="c516f74c4acd83ce009737361f8f15e2" category="list-text">Selecione o aplicativo de e-mail a ser usado.</block>
@@ -5070,4 +4993,74 @@
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">Assine os Serviços Inteligentes da NetApp</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">Use BlueXP</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">Gerenciar membros e contas de serviço</block>
+  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">Saiba mais sobre como gerenciar a autenticação multifator para usuários.</block>
+  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
+  <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">A equipe de suporte da NetApp analisará e processará sua solicitação.</block>
+  <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">A configuração da federação de identidade cria uma conexão confiável entre o provedor de serviços de autenticação (Auth0) da BlueXP  e seu próprio provedor de gerenciamento de identidade.</block>
+  <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">Serviços de Federação do Active Directory (AD FS)</block>
+  <block id="d83b89b045c8e624c65e5bdd1df739a2" category="paragraph">O BlueXP oferece suporte somente a SSO iniciado pelo provedor de serviços (iniciado pelo SP).</block>
+  <block id="d2d94334dfcb8951175c03542424e8f6" category="paragraph">A configuração de uma conexão federada com um provedor de identidade SAML envolve estas etapas:</block>
+  <block id="d0695a9880ba108c088e6b238dbe5a0f" category="cell">Administrador IdP</block>
+  <block id="bee02c363deaf6f0dd8aea6e9d720071" category="cell">Configure seu provedor de identidade SAML para habilitar a federação de identidade com o BlueXP . Veja as instruções para seu provedor de identidade SAML: * <block ref="ca3b480f7232aaaec3d2e53215742b63" category="inline-link-rx"></block> * <block ref="04811ba5bf74ab176cfd1cedb7bb94cf" category="inline-link-rx"></block> * <block ref="020f578557ba151dd4cd527703db067a" category="inline-link-rx"></block> * <block ref="c81ec8faa017852bd966e5611ad36b8e" category="inline-link-rx"></block> * <block ref="f2af21e38ad0fe2bcc560174b4a6827e" category="inline-link-rx"></block> * <block ref="7e43b1e9e620eb33d11e55cc9bd68362" category="inline-link-rx"></block> * <block ref="254df073ce11dc90920c494367029dbf" category="inline-link-rx"></block> Se o seu provedor de identidade não aparecer na lista acima, <block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block> DICA: _Não_ conclua as etapas que descrevem como criar uma conexão no auth0. Você criará essa conexão na próxima etapa.</block>
+  <block id="60fd679e445671946a2cb7a040195db7" category="paragraph">Para concluir esta etapa, você precisa obter as seguintes informações do seu administrador do IdP sobre o provedor de identidade:</block>
+  <block id="2818574f22d1ca2014d9c6297c70cb14" category="paragraph">Depois de criar a conexão usando essas informações, a página Configuração de Federação lista os parâmetros que você pode enviar ao seu administrador do IdP para concluir a configuração na próxima etapa.</block>
+  <block id="209399d6970d476ce09a20df36b98cbe" category="cell">Teste e habilite a conexão do <block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> A página é atualizada entre o teste da conexão e a ativação da conexão.</block>
+  <block id="c093b7d72f16361293aa5e883e689483" category="paragraph">A configuração de uma conexão federada entre o BlueXP e o Microsoft Entra ID inclui as seguintes etapas:</block>
+  <block id="c3c1b902a3dea2443da1b448acedac00" category="cell">Configure o ID do Microsoft Entra para ativar a federação de identidades com o BlueXP . <block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block> DICA: _Não_ conclua as etapas que descrevem como criar uma conexão no auth0. Você criará essa conexão na próxima etapa.</block>
+  <block id="696c0e631bde1717a03f5a795947ba6b" category="cell">Aceda ao<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> e crie a ligação com o BlueXP . Para concluir esta etapa, você precisa obter o seguinte do seu administrador do IdP: * ID do cliente * Valor secreto do cliente * Domínio do ID da Microsoft Entra. Após criar a conexão usando essas informações, a página Configuração de Federação lista os parâmetros que você pode enviar ao seu administrador do AD para concluir a configuração na próxima etapa. OBSERVAÇÃO: Anote a data de validade da chave secreta. Você precisa retornar à página Configuração da Federação e atualizar o certificado _before_ que expira. Esta é a sua responsabilidade. O BlueXP  não rastreia a data de expiração. É melhor trabalhar com sua equipe do AD para receber alertas a tempo.</block>
+  <block id="41279beddd4264b4e59684bfcd3d3c7c" category="section-title">AD FS</block>
+  <block id="41a90fe3ab9f4194a42660fd91d2c204" category="paragraph">A configuração de uma conexão federada entre o BlueXP e o AD FS inclui as seguintes etapas:</block>
+  <block id="9a8accdeee46ee20c2fb41fea1fa3d07" category="cell">Configure o servidor AD FS para habilitar a federação de identidades com o BlueXP. <block ref="774bae219d61ddaa3803a99b79315467" category="inline-link-rx"></block></block>
+  <block id="8ffdfb431e8a931f28d7864a9fc960c8" category="paragraph">Para concluir esta etapa, você precisa obter o seguinte do seu administrador do IdP: a URL do servidor AD FS ou o arquivo de metadados da federação.</block>
+  <block id="3aacbc4eecedf44590227e1f9aa5b2ff" category="admonition">Acompanhe a data de expiração do certificado. Atualize o certificado na página de Configuração da Federação _antes_ de expirar. Esta é a sua responsabilidade. O BlueXP  não rastreia a data de expiração. É melhor trabalhar com sua equipe do AD para receber alertas a tempo.</block>
+  <block id="460bb3da9e31da624dfbccdc0f9abcb3" category="cell">Teste e habilite a conexão do <block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> A página é atualizada entre o teste e a ativação da conexão.</block>
+  <block id="e59b261e6596f0a0c77328042128f40a" category="paragraph">A configuração de uma conexão federada entre o BlueXP e um servidor PingFederate inclui as seguintes etapas:</block>
+  <block id="d757fda1e28328e25cb79ea4b1a5cde1" category="cell">Configure seu servidor PingFederate para habilitar a federação de identidade com o BlueXP . <block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block> DICA: _Não_ conclua as etapas que descrevem como criar uma conexão no auth0. Você criará essa conexão na próxima etapa.</block>
+  <block id="b525988db77a87baf322d6e304902f31" category="cell">Aceda ao<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> e crie a ligação com o BlueXP . Para concluir esta etapa, você precisa obter o seguinte do seu administrador do AD: * A URL do servidor PingFederate * Um certificado de assinatura X509 (formato PEM ou CER) Após criar a conexão usando essas informações, a página "Configuração da Federação" lista os parâmetros que você pode enviar ao seu administrador do AD para concluir a configuração na próxima etapa. OBSERVAÇÃO: Acompanhe a data de expiração do certificado. Atualize o certificado na página "Configuração da Federação" _antes_ de expirar. Esta é a sua responsabilidade. O BlueXP  não rastreia a data de expiração. É melhor trabalhar com sua equipe de IdP para receber alertas a tempo.</block>
+  <block id="1f69ef95344bd24f30451a2bea83a62f" category="paragraph">Somente o administrador do BlueXP que criou a conexão pode atualizá-la. Se desejar adicionar outros administradores, entre em contato com o Suporte da NetApp.</block>
+  <block id="9721505e7e43ce5787dd83a03fd9b2f3" category="paragraph">As pastas podem conter projetos, outras pastas ou ambos.</block>
+  <block id="e28a25c8a8e098506ce17a3272017a72" category="paragraph">Ao associar um recurso a uma pasta, ele não se torna automaticamente acessível a todos os projetos; apenas o _administrador da pasta ou do projeto_ pode vê-lo. O _administrador da pasta ou do projeto_ decide quais projetos podem acessá-lo e associa o recurso aos projetos apropriados.</block>
+  <block id="cd9ef73e5fc3d459d72b97b04b52b7b5" category="paragraph">Cada organização inclui pelo menos um usuário com a função _Administrador da organização_ (o BlueXP atribui automaticamente essa função ao usuário que cria a organização). Você pode adicionar outros membros à organização e atribuir permissões diferentes em diferentes níveis da hierarquia de recursos.</block>
+  <block id="7e5a81668c826cd6eb55e2a526c3b3fc" category="list-text">Conceder a um membro uma função de acesso no nível da organização dá a ele permissões para todas as pastas, projetos e recursos.</block>
+  <block id="6ec4c0cd3ae01264f6d6d1b85b395706" category="paragraph">Você disponibiliza um Conector para outro projeto nestes casos:</block>
+  <block id="5f340589d07c141520bb25fe26a78177" category="paragraph">Esses exemplos demonstram como você pode configurar sua organização.</block>
+  <block id="aca510c2eaf184f2e01b23903d684793" category="paragraph">Embora o BlueXP iniba o fluxo de tráfego, comunicação e dados ao usar o modo restrito ou privado, é sua responsabilidade garantir que seu ambiente (no local e na nuvem) esteja em conformidade com as regulamentações exigidas para o seu negócio.</block>
+  <block id="579f2ccfa8f6ecb1be46c191e6f51980" category="paragraph">Cada modo de implantação difere em conectividade de saída, localização, instalação, autenticação, serviços de dados e métodos de cobrança.</block>
+  <block id="9ce975b748ffa315e5b5bd641ca33677" category="list-text">Use um serviço SaaS no console web. Dependendo dos serviços e recursos de dados que você planeja usar, um administrador do BlueXP cria um ou mais Conectores para gerenciar dados dentro do seu ambiente de nuvem híbrida.</block>
+  <block id="d98e43e441401fe4017234de6c129578" category="list-text">Você instala um BlueXP Connector na nuvem (em uma região governamental, soberana ou comercial) e ele tem conectividade de saída limitada à camada BlueXP SaaS.</block>
+  <block id="972cb60287da31b9611be433ee2ad762" category="list-text">Você instala um BlueXP Connector no local ou na nuvem (em uma região segura, região de nuvem soberana ou região comercial) e não tem _nenhuma_ conectividade com a camada BlueXP SaaS. Os usuários acessam o console BlueXP fornecido pelo Conector localmente, não pela camada SaaS.</block>
+  <block id="94eb1ccf1329f0bd1dd8b5cc79bc7e79" category="list-text">Você pode instalar o Connector usando o assistente de configuração do BlueXP, o AWS ou o Azure Marketplace, o Google Cloud SDK ou um instalador manual em um host Linux no seu data center ou nuvem.</block>
+  <block id="ab8c1039b8f699a1415c125a23a9d144" category="list-text">O BlueXP fornece atualizações automatizadas do software Connector com atualizações mensais.</block>
+  <block id="7aa15e6ec73e28acfb62cd888de11955" category="list-text">O conector requer conectividade de saída com a camada BlueXP SaaS para serviços de dados, atualizações de software, autenticação e transmissão de metadados.</block>
+  <block id="4978b7ac6e381a736fb52cb5a230ac40" category="paragraph">A _tela BlueXP_ permite que você descubra, implante e gerencie armazenamento na nuvem e no local. A tela fornece um único local para todo o gerenciamento de armazenamento.</block>
+  <block id="5da0188845ba244ca142b57361e9f357" category="paragraph">Na tela do BlueXP, _ambientes de trabalho_ representam o armazenamento descoberto ou implantado. Você pode selecionar um _ambiente de trabalho_ para integrá-lo aos serviços de dados do BlueXP ou gerenciar o armazenamento, como adicionar volumes.</block>
+  <block id="53fa882650f8f65752ae862a7746b468" category="paragraph">O BlueXP inclui serviços de dados integrados para manter a segurança e a disponibilidade dos seus dados no armazenamento local e na nuvem.</block>
+  <block id="36899c5a148a3acea0bffdd254136e52" category="paragraph">O preço do BlueXP depende dos serviços que você usa. <block ref="ada12ee0075a75d68914f8fcd2a0e2e5" category="inline-link-rx"></block></block>
+  <block id="0c9b2bd18ffa4ce7cda040e3c61a866c" category="paragraph">O BlueXP IAM é compatível ao usar o BlueXP no modo padrão ou restrito. Se você estiver usando o BlueXP no modo privado, use uma _conta_ do BlueXP para gerenciar espaços de trabalho, usuários e recursos.</block>
+  <block id="51091fafc49a0babdea6002d621423fa" category="paragraph">A NetApp oferece suporte ao BlueXP Connector com os seguintes sistemas operacionais Linux.</block>
+  <block id="a535dcda7766e51e31ffd3df4317f44a" category="list-text">Você deve usar a ferramenta Podman como ferramenta de orquestração de contêineres ao instalar o Connector em um host RHEL 8 ou 9. O Docker Engine não é compatível com RHEL 8 e 9.</block>
+  <block id="0f8aaf2eb0ff59886835b54d84602b70" category="list-text">A NetApp oferece suporte ao RHEL 8 e 9 a partir das seguintes versões do Connector:</block>
+  <block id="f632c8a5c18ef59037a7fe9cfc7dc711" category="paragraph">Se você tiver um conetor existente em execução no RHEL 7 ou CentOS 7, não suportaremos a atualização ou conversão do sistema operacional para RHEL 8 ou 9. Você precisa criar um novo Conector em um sistema operacional compatível.</block>
+  <block id="b5914a3931a82c5a178c54880f2cc01a" category="paragraph">Usar um servidor proxy com o Connector permite o acesso de saída à Internet quando nenhum IP público ou gateway NAT está disponível. O servidor proxy fornece conectividade de saída apenas para o Conector, não para sistemas Cloud Volumes ONTAP.</block>
+  <block id="cd7e4cb1c707ce97cf277c3b4bc321ef" category="paragraph">Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Internet para enviar mensagens AutoSupport, o BlueXP  configurará automaticamente esses sistemas Cloud Volumes ONTAP para usar um servidor proxy incluído no conetor. Você deve garantir que o grupo de segurança do Conector permita conexões de entrada pela porta 3128. Abra essa porta depois de implantar o Conector.</block>
+  <block id="4603c55afe11b15b9d5b31093abf5cf2" category="paragraph">Esta operação reinicia o Conector. Certifique-se de que o conetor não está a efetuar quaisquer operações antes de prosseguir.</block>
+  <block id="f9a3c12ec1399cd9b9113713fa630c13" category="paragraph">A navegação depende do seu modo BlueXP. No modo padrão, acesse a interface pelo site do SaaS. No modo restrito ou privado, acesse-a localmente pelo host do conector.</block>
+  <block id="c9803632fd35e898738b44182cde6082" category="paragraph">Se você configurou um conetor para usar um servidor proxy, você pode habilitar o tráfego direto da API no conetor para enviar chamadas de API diretamente para os serviços do provedor de nuvem sem passar pelo proxy. Conectores em execução no AWS, Azure ou Google Cloud oferecem suporte a essa opção.</block>
+  <block id="c37870a98a047f7cae1ee48e164d5230" category="paragraph">Se você desabilitar o Azure Private Links com o Cloud Volumes ONTAP e usar pontos de extremidade de serviço, habilite o tráfego de API direto. Caso contrário, o tráfego não será encaminhado corretamente.</block>
+  <block id="e31ce4330cd7a4e20e0b7b591f8ebfd4" category="list-text">Revisão <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>.</block>
+  <block id="7eea6497e8ea70d59d972ac97c28360e" category="paragraph">Certifique-se de que o local de rede onde você planeja instalar o Connector atenda aos seguintes requisitos. Esses requisitos permitem que o Connector gerencie recursos na sua nuvem híbrida.</block>
+  <block id="ed2437f594e8009c1fc5e8aacacb130e" category="paragraph">Implemente os requisitos de rede após criar o Conector.</block>
+  <block id="3cc20ba39cd607f2a81f29cdf9061945" category="paragraph">Ao criar o Conector, escolha um tipo de máquina virtual que atenda aos seguintes requisitos.</block>
+  <block id="70ed5cd5c43989bfdca05cdead4bdb9f" category="paragraph">A criação do Conector no Azure Marketplace configura uma máquina virtual com uma configuração padrão. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
+  <block id="45d0d4be100539c356e8f9492bb2d5f1" category="paragraph">O Azure implanta a máquina virtual com as configurações especificadas. Você deverá ver a máquina virtual e o software Connector em execução em cerca de cinco minutos.</block>
+  <block id="74bda14a2271ace9bb470b0150286873" category="paragraph">Mantenha o modo restrito desabilitado para usar o BlueXP no modo padrão. Você deve habilitar o modo restrito somente se tiver um ambiente seguro e quiser desconetar essa conta dos serviços de back-end do BlueXP . Se for esse o caso<block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>, .</block>
+  <block id="f475e498e375ea618760c62b16000e58" category="paragraph">Agora você instalou o Connector e o configurou com sua organização BlueXP.</block>
+  <block id="7f467e0b21a7ed92d9a599ed385d6b85" category="paragraph">Configure a autenticação multifator (MFA) para aumentar a segurança da conta exigindo um segundo método de verificação com sua senha.</block>
+  <block id="6e33dfc363e882bdf66901c2b11df727" category="list-text">Ao terminar, você será solicitado a salvar seu código de recuperação. Escolha entre copiar o código ou baixar um arquivo de texto contendo o código. Guarde este código em um local seguro. Você precisará do código de recuperação se perder o acesso ao seu aplicativo de autenticação.</block>
+  <block id="4e6656a8f3f39a1c10345bb992a1b43d" category="paragraph">Após configurar o MFA, você será solicitado a inserir um código único do seu aplicativo de autenticação sempre que fizer login no BlueXP.</block>
+  <block id="671e07801d48dec4b74d96f219be7477" category="section-title">Excluir sua configuração de MFA</block>
+  <block id="45d1a6f833be54e5c76a6425a1bc3d64" category="paragraph">Para parar de usar a autenticação multifator (MFA) na sua conta BlueXP, exclua a configuração da MFA. Isso elimina a necessidade de inserir um código único no seu aplicativo de autenticação ao fazer login.</block>
+  <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">Se você não conseguir acessar seu aplicativo de autenticação ou código de recuperação, precisará entrar em contato com o administrador do BlueXP para redefinir sua configuração de MFA.</block>
+  <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">Se precisar entrar em contato com o administrador da sua organização, envie um e-mail diretamente do BlueXP. O administrador gerencia contas de usuários e permissões dentro da sua organização.</block>
+  <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 de junho de 2025</block>
 </blocks>

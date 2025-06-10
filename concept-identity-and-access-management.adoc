@@ -16,8 +16,6 @@ summary: 'O BlueXP  Identity and Access Management (IAM) permite controlar o ac
 [role="lead"]
 O BlueXP  Identity and Access Management (IAM) permite organizar e controlar o acesso aos seus recursos do NetApp. Você pode organizar seus recursos de acordo com a hierarquia da sua organização. Por exemplo, você pode organizar recursos por localização geográfica, local ou unidade de negócios. Em seguida, você pode atribuir funções do IAM a membros em partes específicas da hierarquia, o que impede o acesso a recursos em outras partes da hierarquia.
 
-O BlueXP  IAM substitui e aprimora a funcionalidade anterior fornecida pelas contas do BlueXP . link:whats-new.html#iam["Saiba mais sobre a introdução do BlueXP  IAM"].
-
 O BlueXP  IAM é suportado quando se utiliza o BlueXP  no modo padrão e no modo restrito. Se você estiver usando o BlueXP  no modo privado, use uma conta _BlueXP _ para gerenciar usuários e recursos.
 
 * link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]
@@ -67,7 +65,7 @@ O BlueXP solicita que você crie uma nova organização quando você se inscreve
 
 Uma _folder_ permite agrupar projetos relacionados e separá-los de outros projetos em sua organização. Por exemplo, uma pasta pode representar uma localização geográfica (UE ou Leste dos EUA), um site (Londres ou Toronto) ou uma unidade de negócios (engenharia ou marketing).
 
-As pastas podem conter projetos, outras pastas ou uma combinação de ambos.
+As pastas podem conter projetos, outras pastas ou ambos.
 
 Você não precisa criar pastas. Eles são opcionais.
 
@@ -108,7 +106,7 @@ O _Organization admin_ pode associar um recurso à pasta:
 
 image:diagram-iam-resource-association-folder-2.png["Um diagrama que mostra uma pasta, um recurso associado à pasta e dois projetos que residem na pasta: Projeto A e projeto B."]
 
-Associar um recurso a uma pasta não o torna automaticamente acessível a todos os projetos nela contidos. O administrador da pasta ou do projeto decide quais projetos podem acessar o recurso. Depois de tomar essa decisão, o administrador pode então associar o recurso aos projetos certos.
+Ao associar um recurso a uma pasta, ele não se torna automaticamente acessível a todos os projetos; apenas o _administrador da pasta ou do projeto_ pode vê-lo. O _administrador da pasta ou do projeto_ decide quais projetos podem acessá-lo e associa o recurso aos projetos apropriados.
 
 Neste exemplo, o administrador associa o recurso ao Projeto A:
 
@@ -122,7 +120,7 @@ Os membros que têm permissões para o projeto A agora podem acessar o recurso.
 
 Os membros da sua organização são contas de utilizador ou contas de serviço. Uma conta de serviço é normalmente usada por um aplicativo para concluir tarefas especificadas sem intervenção humana.
 
-Uma organização tem pelo menos um usuário com a função _Organization admin_ (o usuário que cria a organização recebe essa função automaticamente). Você pode adicionar outros membros à organização e atribuir permissões diferentes em diferentes níveis da hierarquia de recursos.
+Cada organização inclui pelo menos um usuário com a função _Administrador da organização_ (o BlueXP atribui automaticamente essa função ao usuário que cria a organização). Você pode adicionar outros membros à organização e atribuir permissões diferentes em diferentes níveis da hierarquia de recursos.
 
 
 
@@ -144,7 +142,7 @@ Quando você associa um membro a uma função, você precisa selecionar toda a o
 
 Quando você atribui uma função, a função é herdada pela hierarquia da organização:
 
-Organização:: Quando você concede a um membro funções de acesso no nível da organização, todas as pastas, projetos e recursos na organização herdam essas funções. Isso significa que o membro tem permissões para tudo na organização.
+Organização:: Conceder a um membro uma função de acesso no nível da organização dá a ele permissões para todas as pastas, projetos e recursos.
 Pastas:: Quando você concede uma função de acesso no nível da pasta, todas as pastas, projetos e recursos na pasta herdam essa função.
 +
 --
@@ -174,7 +172,7 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acess
 
 Quando um _administrador da organização_ cria um conetor, o BlueXP  associa automaticamente esse conetor à organização e ao projeto atualmente selecionado. O _Organization admin_ tem acesso automaticamente a esse conetor de qualquer lugar da organização. Mas se você tiver outros membros em sua organização com funções diferentes, esses membros só poderão acessar esse conetor do projeto em que ele foi criado, a menos que você associe esse conetor a outros projetos.
 
-Você pode disponibilizar um Conector para outro projeto nestes casos:
+Você disponibiliza um Conector para outro projeto nestes casos:
 
 * Você deseja permitir que os membros da sua organização usem um conetor existente para criar ou descobrir ambientes de trabalho adicionais em outro projeto
 * Você associou um recurso existente a outro projeto e esse recurso é gerenciado por um conetor
@@ -202,7 +200,7 @@ Um _administrador da organização_ pode associar um conetor a uma pasta para qu
 
 == Exemplos do IAM
 
-Os exemplos a seguir mostram como você pode configurar sua organização.
+Esses exemplos demonstram como você pode configurar sua organização.
 
 
 
