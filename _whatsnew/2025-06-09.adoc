@@ -18,9 +18,9 @@ No momento, a versão 3.9.53 está disponível para modo padrão e modo restrito
 
 ==== Autenticação multifator (MFA)
 
-Usuários não federados agora podem habilitar a autenticação multifator (MFA) para suas contas BlueXP, aumentando a segurança da conta. Os administradores do BlueXP podem gerenciar as configurações de MFA para seus usuários, redefinindo ou desativando a MFA para usuários individuais, conforme necessário.
+Usuários não federados agora podem habilitar a autenticação multifator (MFA) para suas contas BlueXP, aumentando a segurança da conta. Os administradores do BlueXP podem gerenciar as configurações de MFA para seus usuários, redefinindo ou desativando a MFA para usuários individuais, conforme necessário. Isso é suportado apenas no modo padrão.
 
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Saiba mais sobre como configurar a autenticação multifator para você."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Saiba mais sobre como gerenciar a autenticação multifator para usuários."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Saiba mais sobre como configurar a autenticação multifator para você."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Saiba mais sobre como administrar a autenticação multifator para usuários."^]
 
 
 

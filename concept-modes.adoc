@@ -74,6 +74,9 @@ A tabela a seguir fornece uma comparação desses modos.
 | Autenticação | Por meio de SaaS usando auth0, login NSS ou federação de identidade | Por meio de SaaS usando auth0 ou federação de identidade | Autenticação de usuário local 
 
 
+| Autenticação de vários fatores | Disponível para usuários locais | Não disponível | Não disponível 
+
+
 | Serviços de storage e dados | Todos são suportados | Muitos são suportados | Vários são suportados 
 
 

@@ -4788,15 +4788,10 @@
   <block id="12cae065030aa4e0842692035a8202bd" category="inline-link">Página do NetApp Intelligent Services no Google Cloud Marketplace</block>
   <block id="6e7edd679a9a95191eb6b90ce6943fe5" category="list-text">Depois de ser redirecionado para o<block ref="e3f48af04aeab9b1f546df3c8b75ea2a" category="inline-link-rx"></block>, certifique-se de que o projeto correto está selecionado no menu de navegação superior.</block>
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">Assine o NetApp Intelligent Services no marketplace do seu provedor de nuvem para pagar por serviços de dados a uma taxa por hora (PAYGO) ou por meio de um contrato anual. Se você comprou uma licença da NetApp (BYOL), também precisará se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar.</block>
-  <block id="4f8b575844fe92cc4a57a5823b2c4c6f" category="paragraph">Os nós baseados em capacidade do Cloud Volumes ONTAP não desligam mais quando o Conector não está em conformidade ou fica inativo por mais de 14 dias. O Cloud Volumes ONTAP ainda envia mensagens de Gerenciamento de Eventos quando perde o acesso ao Conector. Essa alteração garante que o Cloud Volumes ONTAP possa continuar operando mesmo se o Conector estiver inativo por um longo período. Isso não altera os requisitos de conformidade do Conector.</block>
-  <block id="078afc7a02a9e486708bde9dd30391e7" category="paragraph">Os seguintes novos recursos estão disponíveis no BlueXP IAM.</block>
-  <block id="6b83d0ae16acd42e6178ac5dde77e977" category="section-title">Autenticação multifator (MFA) para usuários locais</block>
-  <block id="e79a1a29d1adbbfc3e2d52a916a22b07" category="paragraph">Usuários locais (não federados e não associados a uma conta do site de suporte da NetApp) podem habilitar a autenticação multifator. Os administradores podem gerenciar as configurações de MFA dos usuários, como desativá-los temporariamente ou removê-los quando necessário.</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">Conector 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Esta versão do BlueXP Connector inclui melhorias de segurança e correções de bugs.</block>
   <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">No momento, a versão 3.9.53 está disponível para modo padrão e modo restrito.</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Autenticação multifator (MFA)</block>
-  <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">Usuários não federados agora podem habilitar a autenticação multifator (MFA) para suas contas BlueXP, aumentando a segurança da conta. Os administradores do BlueXP podem gerenciar as configurações de MFA para seus usuários, redefinindo ou desativando a MFA para usuários individuais, conforme necessário.</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Saiba mais sobre como configurar a autenticação multifator para você.</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Workloads</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">Agora você pode visualizar e excluir credenciais do Amazon FSx para NetApp ONTAP na página Credenciais no BlueXP.</block>
@@ -4993,8 +4988,6 @@
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">Assine os Serviços Inteligentes da NetApp</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">Use BlueXP</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">Gerenciar membros e contas de serviço</block>
-  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">Saiba mais sobre como gerenciar a autenticação multifator para usuários.</block>
-  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
   <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">A equipe de suporte da NetApp analisará e processará sua solicitação.</block>
   <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">A configuração da federação de identidade cria uma conexão confiável entre o provedor de serviços de autenticação (Auth0) da BlueXP  e seu próprio provedor de gerenciamento de identidade.</block>
   <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">Serviços de Federação do Active Directory (AD FS)</block>
@@ -5063,4 +5056,10 @@
   <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">Se você não conseguir acessar seu aplicativo de autenticação ou código de recuperação, precisará entrar em contato com o administrador do BlueXP para redefinir sua configuração de MFA.</block>
   <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">Se precisar entrar em contato com o administrador da sua organização, envie um e-mail diretamente do BlueXP. O administrador gerencia contas de usuários e permissões dentro da sua organização.</block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 de junho de 2025</block>
+  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">Usuários não federados agora podem habilitar a autenticação multifator (MFA) para suas contas BlueXP, aumentando a segurança da conta. Os administradores do BlueXP podem gerenciar as configurações de MFA para seus usuários, redefinindo ou desativando a MFA para usuários individuais, conforme necessário. Isso é suportado apenas no modo padrão.</block>
+  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">Saiba mais sobre como administrar a autenticação multifator para usuários.</block>
+  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
+  <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">Autenticação de vários fatores</block>
+  <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">Disponível para usuários locais</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">Não disponível</block>
 </blocks>
