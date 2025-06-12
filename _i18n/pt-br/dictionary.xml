@@ -4790,7 +4790,6 @@
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">Assine o NetApp Intelligent Services no marketplace do seu provedor de nuvem para pagar por serviços de dados a uma taxa por hora (PAYGO) ou por meio de um contrato anual. Se você comprou uma licença da NetApp (BYOL), também precisará se inscrever na oferta de mercado. A sua licença é sempre cobrada primeiro, mas você será cobrado à taxa por hora se exceder a sua capacidade licenciada ou se o prazo da licença expirar.</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">Conector 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Esta versão do BlueXP Connector inclui melhorias de segurança e correções de bugs.</block>
-  <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">No momento, a versão 3.9.53 está disponível para modo padrão e modo restrito.</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Autenticação multifator (MFA)</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Saiba mais sobre como configurar a autenticação multifator para você.</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Workloads</block>
@@ -5062,4 +5061,11 @@
   <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">Autenticação de vários fatores</block>
   <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">Disponível para usuários locais</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">Não disponível</block>
+  <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">A versão 3.9.53 está disponível para modo padrão e modo restrito.</block>
+  <block id="39615b94cc2fe576502275ed459d404b" category="section-title">Alertas de uso de espaço em disco</block>
+  <block id="0b6d76bd9d461e2dc31436ce64d71b70" category="paragraph">O Centro de Notificações agora inclui alertas para uso de espaço em disco no Conector. <block ref="f731d1927408fd2f4c1db9e73951a633" category="inline-link-macro-rx"></block></block>
+  <block id="797f681b34046f4455905e56cb5d8cd4" category="section-title">Monitorar espaço em disco</block>
+  <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">Revise o artigo da Base de conhecimento da NetApp</block>
+  <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">O BlueXP notifica você quando o espaço em disco da VM do Conector estiver baixo. Monitore essas notificações na Central de Notificações ou configure-a para enviar alertas por e-mail. Resolver problemas de espaço em disco é sua responsabilidade. <block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>.</block>
+  <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
 </blocks>
