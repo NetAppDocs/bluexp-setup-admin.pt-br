@@ -18,6 +18,20 @@ O Centro de Notificações agora inclui alertas para uso de espaço em disco no 
 
 
 
+=== Melhorias de auditoria
+
+A Linha do Tempo agora inclui eventos de login para usuários. Isso permite que você veja quando os usuários efetuaram login no BlueXP, o que pode ajudar na auditoria e no monitoramento de segurança. Usuários da API com a função de administrador da organização podem visualizar o endereço de e-mail do usuário que efetuou login, incluindo o  `includeUserData=true`` parâmetro como no seguinte:  `/audit/<account_id>?includeUserData=true` .
+
+
+
+=== Gerenciamento de assinaturas Keystone disponível no BlueXP
+
+Você pode gerenciar sua assinatura do NetApp Keystone pelo BlueXP.
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["Saiba mais sobre o gerenciamento de assinaturas do Keystone no BlueXP."^]
+
+
+
 === Gerenciamento de identidade e acesso do BlueXP  (IAM)
 
 

@@ -3050,11 +3050,9 @@
   <block id="1d1dac548e3d665ab4cf5a5684666609" category="list-text">Digite um novo nome de conta e selecione *Salvar*.</block>
   <block id="b89af40709c02abb8e0b01ae305dfd7f" category="summary">Você pode monitorar o status das operações que o BlueXP  está executando para ver se há algum problema que você precisa resolver. Você pode exibir o status na linha do tempo, na Central de notificações ou ter notificações enviadas para seu e-mail.</block>
   <block id="57bee919903f0c92a41c5582519db779" category="doc">Monitorar operações do BlueXP </block>
-  <block id="5d4df6d8936b94b888789b2712dcb953" category="paragraph">A tabela a seguir fornece uma comparação entre a linha do tempo e a Central de notificações para que você possa entender o que cada um tem a oferecer.</block>
   <block id="9085e5686dfeb6405cc2917702710ed3" category="cell">Centro de notificações</block>
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">Mostra o status de alto nível para eventos e ações</block>
   <block id="c32042b6c968f47ecb4422de1d828cb1" category="cell">Fornece detalhes para cada evento ou ação para investigação adicional</block>
-  <block id="2ddcf1998aac047c3f06e0a1fcf978b5" category="cell">Mostra o status da sessão de login atual (as informações não aparecerão no Centro de notificações após o logout)</block>
   <block id="2fe85263c62b0b870277c30652459354" category="cell">Mantém o status do último mês</block>
   <block id="b2d8a4e919485c2282a84ad3f4408095" category="cell">Mostra apenas ações iniciadas na interface do usuário</block>
   <block id="8c6775236733a876a2482bf9932cd018" category="cell">Mostra todas as ações da IU ou APIs</block>
@@ -3065,12 +3063,9 @@
   <block id="a7eb158a02fb55f7c66bb86081e76732" category="cell">Fornece a capacidade de enviar notificações por e-mail para usuários e para outros</block>
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">Sem capacidade de e-mail</block>
   <block id="5059f2db2465d7555c44d131a23b2fdb" category="section-title">Auditar a atividade do usuário a partir da linha do tempo do BlueXP </block>
-  <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">Verificar a linha do tempo pode ser útil se você precisar identificar quem executou uma ação específica ou se precisar identificar o status de uma ação.</block>
   <block id="e8bcacc75837d7d116d27b0912ef8827" category="list-text">Use os filtros acima da tabela para alterar as ações exibidas na tabela.</block>
   <block id="76bf1023f56feea71963b97c682ddeec" category="paragraph">Por exemplo, você pode usar o filtro *Serviço* para mostrar ações relacionadas a um serviço BlueXP  específico ou usar o filtro *Usuário* para mostrar ações relacionadas a uma conta de usuário específica.</block>
-  <block id="706ba753310eea4d62504cab3d622cb4" category="paragraph">A linha do tempo é atualizada para mostrar as ações de gerenciamento concluídas.</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">Monitore atividades usando o Centro de notificações</block>
-  <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">As notificações rastreiam o progresso das operações iniciadas no BlueXP  para que você possa verificar se a operação foi bem-sucedida ou não. Eles permitem que você visualize o status de muitas ações do BlueXP  iniciadas durante sua sessão de login atual. Neste momento, nem todos os serviços BlueXP  reportam informações na Central de notificações.</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">campainha de notificação</block>
   <block id="2a8d5c29022382dfb4cb321383f29d88" category="paragraph">É possível exibir as notificações selecionando o sino de notificação (<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>) na barra de menus. A cor da pequena bolha no sino indica a notificação de gravidade de nível mais alto que está ativa. Então, se você vir uma bolha vermelha, isso significa que há uma notificação importante que você deve olhar.</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">Uma captura de tela mostrando a lista de notificações atuais no Centro de notificações.</block>
@@ -3082,7 +3077,6 @@
   <block id="ccb5b6f0987c177f05a95659600aac02" category="inline-link">Saiba mais sobre os alertas do BlueXP </block>
   <block id="14b4187954e8d9dac531afa88b0f92d1" category="paragraph"><block ref="14b4187954e8d9dac531afa88b0f92d1" category="inline-link-rx"></block></block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">Tipos de notificação</block>
-  <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">As notificações são classificadas nas seguintes categorias:</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">Tipo de notificação</block>
   <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">Crítico</block>
   <block id="0b68cecd3f3f6281c0b25a5c4847524e" category="cell">Ocorreu um problema que pode levar à interrupção do serviço se não forem tomadas medidas corretivas imediatamente.</block>
@@ -3102,7 +3096,6 @@
   <block id="86a2197cbddea56be1e7cc24be3d4916" category="paragraph"><block ref="86a2197cbddea56be1e7cc24be3d4916" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4815e02c8d3314e19dd0c9f88070f95e" category="paragraph">Por exemplo, se você quiser ver apenas notificações de "erro" e "Aviso" para operações do BlueXP , selecione essas entradas e você verá apenas esses tipos de notificações.</block>
   <block id="f56df3affea06e9aeedc9830da1f0d91" category="section-title">Ignorar notificações</block>
-  <block id="e438ae665566728a83af19e41ac9ac6d" category="paragraph">Você pode remover notificações da página se não precisar mais vê-las. Você pode ignorar todas as notificações de uma só vez ou ignorar notificações individuais.</block>
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">um ícone com três pontos verticais</block>
   <block id="ca1c9774b98be72a0f55d88b3579e19c" category="inline-image-macro">Uma captura de tela mostrando o menu notificações para selecionar configurações e ignorar todas as opções.</block>
   <block id="fd0bf9d17b691309acb1c6ef4b12bd43" category="paragraph">Para ignorar todas as notificações, na Central de notificações, <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Descartar tudo*. <block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
@@ -4907,8 +4900,6 @@
   <block id="559bd85dc0b5b9d897cd8986e9388b2b" category="paragraph">As credenciais no nível da conta NSS são diferentes da conta NSS associada ao seu login no BlueXP . As credenciais de nível de conta do NSS permitem que você implante o Cloud Volumes ONTAP com BYOL, registre sistemas PAYGO e atualize seu software.</block>
   <block id="5c6dd86ba1cfb5c1af500970adb2daaa" category="paragraph">O BlueXP atualiza suas credenciais e você vê as alterações ao acessar o cluster ONTAP, o consultor digital ou a página de Gerenciamento de Casos.</block>
   <block id="521c45217c3b337424dd8adb5c5179b2" category="paragraph">A Linha do tempo mostra as ações que os usuários concluíram para gerenciar sua organização ou conta. Isso inclui ações de gerenciamento, como associar usuários, criar ambientes de trabalho, criar conetores e muito mais.</block>
-  <block id="575fd6319f836c10418c8e0f6cdd8167" category="list-text">As notificações são enviadas por e-mail para os seguintes recursos e serviços: Conector, carteira digital, cópia e sincronização, backup e recuperação.</block>
-  <block id="72cda922628bc633fbe14c3e16ca18f4" category="paragraph">Você deve ter a função de administrador da organização para personalizar as configurações de notificações.</block>
   <block id="1d0dc238d165f094b64e86313624b2d9" category="paragraph">Os usuários que aparecem na aba _Usuários_ são preenchidos automaticamente entre os usuários da sua organização ou conta. Você pode adicionar endereços de e-mail na guia _destinatários adicionais_ para outras pessoas, ou grupos, que não têm acesso ao BlueXP , mas que precisam ser notificados sobre certos tipos de alertas e notificações.</block>
   <block id="6eee4754146b2d969d2a7e90197130a3" category="paragraph">Por padrão, as credenciais do Conector permitem que os usuários acessem a Visualização Avançada (Gerenciador de Sistema ONTAP). Em vez disso, você pode solicitar aos usuários as credenciais do ONTAP. Isso garante que as permissões de ONTAP de um usuário sejam aplicadas ao trabalhar com clusters do ONTAP em clusters locais do Cloud Volumes ONTAP e do ONTAP.</block>
   <block id="00acd0a6ea62c6d6fd734cfcb2850d1f" category="admonition">Você deve ter a função de administrador da organização para editar as configurações do conector.</block>
@@ -5068,4 +5059,21 @@
   <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">Revise o artigo da Base de conhecimento da NetApp</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">O BlueXP notifica você quando o espaço em disco da VM do Conector estiver baixo. Monitore essas notificações na Central de Notificações ou configure-a para enviar alertas por e-mail. Resolver problemas de espaço em disco é sua responsabilidade. <block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>.</block>
   <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
+  <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">Melhorias de auditoria</block>
+  <block id="37e905ff49f6da834567cfa78667e2b7" category="paragraph">A Linha do Tempo agora inclui eventos de login para usuários. Isso permite que você veja quando os usuários efetuaram login no BlueXP, o que pode ajudar na auditoria e no monitoramento de segurança. Usuários da API com a função de administrador da organização podem visualizar o endereço de e-mail do usuário que efetuou login, incluindo o <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block> parâmetro como no seguinte: <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> .</block>
+  <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">Gerenciamento de assinaturas Keystone disponível no BlueXP</block>
+  <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">Você pode gerenciar sua assinatura do NetApp Keystone pelo BlueXP.</block>
+  <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">Saiba mais sobre o gerenciamento de assinaturas do Keystone no BlueXP.</block>
+  <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
+  <block id="edf88e3025787a448a9dd00447a52f8b" category="paragraph">A tabela compara a Linha do tempo e a Central de notificações para destacar seus recursos.</block>
+  <block id="b89956868ff9efb9e5c6419d523fce3a" category="cell">Mostra o status da sessão de login atual (as informações não aparecem na Central de Notificações depois que você faz logout)</block>
+  <block id="4219da23ef386f3439d954a399b71bf7" category="paragraph">A Linha do tempo ajuda a identificar quem executou uma ação ou seu status.</block>
+  <block id="7e141c8ec6a4f5611124b9a17fc58d90" category="section-title">Baixe os logs de auditoria da Linha do Tempo</block>
+  <block id="818dacbccd1bb52d545879ff94db3fb8" category="paragraph">Você pode baixar os logs de auditoria da Linha do Tempo para um arquivo CSV. Isso permite que você mantenha um registro das ações que os usuários realizaram na sua organização. O arquivo CSV baixado contém todas as colunas disponíveis na Linha do Tempo, independentemente de quais você esteja filtrando ou exibindo na Linha do Tempo.</block>
+  <block id="5ed869e88cbd6968dfbc3468b7f488e9" category="list-text">Na Linha do tempo, selecione o ícone de download no canto superior direito da tabela.</block>
+  <block id="4a299decaff59944c828ad4546959edb" category="paragraph">As notificações rastreiam o progresso das suas operações BlueXP para verificar o sucesso. Eles permitem que você visualize o status de muitas ações do BlueXP  iniciadas durante sua sessão de login atual. Neste momento, nem todos os serviços BlueXP  reportam informações na Central de notificações.</block>
+  <block id="9cb953f0886e30994918dec9a83c9369" category="paragraph">O BlueXP classifica as notificações nas seguintes categorias:</block>
+  <block id="5c978e399a8f1d0acd4407aa13d8eb47" category="paragraph">Você pode remover notificações da página se não precisar mais vê-las. Você pode descartar notificações individualmente ou todas de uma vez.</block>
+  <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">O BlueXP envia notificações por e-mail para o Conector, carteira digital, cópia e sincronização, backup e recuperação.</block>
+  <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">Você deve ter a função de administrador da organização para personalizar as configurações de notificações.</block>
 </blocks>

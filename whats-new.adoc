@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice, releases' 
 summary: 'Saiba as novidades com os recursos de administração do BlueXP : BlueXP  IAM, conetores, credenciais de provedor de nuvem e muito mais.' 
 ---
 = O que há de novo
@@ -33,6 +33,20 @@ A versão 3.9.53 está disponível para modo padrão e modo restrito.
 === Alertas de uso de espaço em disco
 
 O Centro de Notificações agora inclui alertas para uso de espaço em disco no Conector. link:task-maintain-connectors.html#monitor-disk-space["Saiba mais."^]
+
+
+
+=== Melhorias de auditoria
+
+A Linha do Tempo agora inclui eventos de login para usuários. Isso permite que você veja quando os usuários efetuaram login no BlueXP, o que pode ajudar na auditoria e no monitoramento de segurança. Usuários da API com a função de administrador da organização podem visualizar o endereço de e-mail do usuário que efetuou login, incluindo o  `includeUserData=true`` parâmetro como no seguinte:  `/audit/<account_id>?includeUserData=true` .
+
+
+
+=== Gerenciamento de assinaturas Keystone disponível no BlueXP
+
+Você pode gerenciar sua assinatura do NetApp Keystone pelo BlueXP.
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["Saiba mais sobre o gerenciamento de assinaturas do Keystone no BlueXP."^]
 
 
 
