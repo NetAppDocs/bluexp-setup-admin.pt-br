@@ -5054,7 +5054,6 @@
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">Não disponível</block>
   <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">A versão 3.9.53 está disponível para modo padrão e modo restrito.</block>
   <block id="39615b94cc2fe576502275ed459d404b" category="section-title">Alertas de uso de espaço em disco</block>
-  <block id="0b6d76bd9d461e2dc31436ce64d71b70" category="paragraph">O Centro de Notificações agora inclui alertas para uso de espaço em disco no Conector. <block ref="f731d1927408fd2f4c1db9e73951a633" category="inline-link-macro-rx"></block></block>
   <block id="797f681b34046f4455905e56cb5d8cd4" category="section-title">Monitorar espaço em disco</block>
   <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">Revise o artigo da Base de conhecimento da NetApp</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">O BlueXP notifica você quando o espaço em disco da VM do Conector estiver baixo. Monitore essas notificações na Central de Notificações ou configure-a para enviar alertas por e-mail. Resolver problemas de espaço em disco é sua responsabilidade. <block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>.</block>
@@ -5076,4 +5075,5 @@
   <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">O BlueXP envia notificações por e-mail para o Conector, carteira digital, cópia e sincronização, backup e recuperação.</block>
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">Você deve ter a função de administrador da organização para personalizar as configurações de notificações.</block>
   <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">A Linha do Tempo agora inclui eventos de login e logout para usuários. Você pode ver a atividade de login, o que pode ajudar na auditoria e no monitoramento de segurança. Usuários da API com a função de administrador da organização podem visualizar o endereço de e-mail do usuário que efetuou login, incluindo o <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block> parâmetro como no seguinte: <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> .</block>
+  <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">O Centro de Notificações agora inclui alertas para uso de espaço em disco no Conector. <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
 </blocks>
