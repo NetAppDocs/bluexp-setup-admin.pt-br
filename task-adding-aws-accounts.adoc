@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["Uma captura de tela da pági
 Edite suas credenciais da AWS alterando o tipo de conta (chaves da AWS ou função assumida), editando o nome ou atualizando as próprias credenciais (as chaves ou o ARN da função).
 
 
-NOTE: Não é possível editar as credenciais de um perfil de instância associado a uma instância do Connector ou a uma instância do Amazon FSx for ONTAP.
+NOTE: Não é possível editar as credenciais de um perfil de instância associado a uma instância do Connector ou a uma instância do Amazon FSx for ONTAP. Você só pode renomear as credenciais de uma instância do FSx for ONTAP.
 
 .Passos
 . No canto superior direito do console, selecione o ícone Configurações e selecione *Credenciais*.

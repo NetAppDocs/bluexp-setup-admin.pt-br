@@ -4849,7 +4849,6 @@
   <block id="b3dcf4c270625912aa46f11d96df2bae" category="list-text">Acesse a carteira digital para confirmar se a assinatura está associada à sua organização ou conta.</block>
   <block id="63efa257b0b77bd676137930df4d9b38" category="list-text">Verifique se sua assinatura aparece.</block>
   <block id="62ce53ce4e7e424908529a45cc3ea1d3" category="paragraph">Edite suas credenciais da AWS alterando o tipo de conta (chaves da AWS ou função assumida), editando o nome ou atualizando as próprias credenciais (as chaves ou o ARN da função).</block>
-  <block id="0da97e00ea780b9865f7c3ffbb4c3271" category="admonition">Não é possível editar as credenciais de um perfil de instância associado a uma instância do Connector ou a uma instância do Amazon FSx for ONTAP.</block>
   <block id="f6e35353d921e75b732126993889eaf7" category="paragraph">Se você não precisar mais de um conjunto de credenciais, poderá excluí-las. Você só pode excluir credenciais que não estão associadas a um ambiente de trabalho.</block>
   <block id="f54a1ada6e84cbd77add137de73fe499" category="summary">Você pode gerenciar as credenciais do Google Cloud associadas à instância da VM Connector associando uma assinatura do marketplace e solucionando problemas no processo de assinatura. Ambas as tarefas garantem que você possa usar sua assinatura do marketplace para pagar por serviços de dados.</block>
   <block id="0e46c1615780fb701a31f342948323ee" category="paragraph">Ao implantar um conetor no Google Cloud, o BlueXP  cria um conjunto padrão de credenciais associadas à instância de VM do Connector. A qualquer momento, você pode alterar a assinatura do Google Cloud Marketplace associada a essas credenciais. A assinatura permite que você crie um sistema Cloud Volumes ONTAP com pagamento conforme o uso e use outros serviços de dados.</block>
@@ -5076,4 +5075,5 @@
   <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">O Centro de Notificações agora inclui alertas para uso de espaço em disco no Conector. <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
   <block id="8d6b52099b0900a6f09e2d0ebba1cd5a" category="paragraph">Docker Engine 23.06 para 28.0.0.</block>
   <block id="0930e6e62078c5446e99045f0a678607" category="paragraph">Docker Engine 23.0.6 para 28.0.0.</block>
+  <block id="457d598af578e6f47129cba886b757ba" category="admonition">Não é possível editar as credenciais de um perfil de instância associado a uma instância do Connector ou a uma instância do Amazon FSx for ONTAP. Você só pode renomear as credenciais de uma instância do FSx for ONTAP.</block>
 </blocks>
