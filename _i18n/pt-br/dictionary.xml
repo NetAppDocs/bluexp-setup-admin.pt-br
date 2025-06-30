@@ -364,7 +364,6 @@
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
   <block id="4cb2cce5e859bbc5a24d65a5385fba47" category="paragraph">24,04 LTS</block>
   <block id="8be08c10396c9c621de2a80e7ee83e4b" category="paragraph">3.9.45 ou posterior com BlueXP  no modo padrão ou modo restrito</block>
-  <block id="e8ad09ce82a676af682d64048bfaccdf" category="paragraph">Docker Engine 26.0.0</block>
   <block id="aa7f77e663b832d5b0e544c5511e680c" category="paragraph">Não suportado</block>
   <block id="2464b5a925b66efe79da228156bcf8ec" category="paragraph">22,04 LTS</block>
   <block id="607262a04e5c4340fc8d641e874a5695" category="paragraph">3.9.29 ou posterior</block>
@@ -4575,7 +4574,6 @@
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de fevereiro de 2025</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Atualizações de licença em carteira digital, o que significa que você não poderá aproveitar a capacidade recém-adquirida.</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">Manter o sistema operacional no host do conetor é sua responsabilidade (do cliente). Por exemplo, você (cliente) deve aplicar atualizações de segurança ao sistema operacional no host do conetor seguindo os procedimentos padrão da sua empresa para distribuição do sistema operacional.</block>
-  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0 e 28.0.0 são suportados com _new_ Connector 3.9.52 ou instalações posteriores</block>
   <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">Observe que você (cliente) não precisa interromper nenhum serviço no host do conetor ao aplicar pequenas atualizações de segurança.</block>
   <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">Se você (cliente) precisar parar e, em seguida, iniciar a VM do conetor, você deve fazê-lo a partir do console do seu provedor de nuvem ou usando os procedimentos padrão para gerenciamento no local.</block>
   <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">Conetor 3.9.52</block>
@@ -5076,4 +5074,6 @@
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">Você deve ter a função de administrador da organização para personalizar as configurações de notificações.</block>
   <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">A Linha do Tempo agora inclui eventos de login e logout para usuários. Você pode ver a atividade de login, o que pode ajudar na auditoria e no monitoramento de segurança. Usuários da API com a função de administrador da organização podem visualizar o endereço de e-mail do usuário que efetuou login, incluindo o <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block> parâmetro como no seguinte: <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> .</block>
   <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">O Centro de Notificações agora inclui alertas para uso de espaço em disco no Conector. <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
+  <block id="8d6b52099b0900a6f09e2d0ebba1cd5a" category="paragraph">Docker Engine 23.06 para 28.0.0.</block>
+  <block id="0930e6e62078c5446e99045f0a678607" category="paragraph">Docker Engine 23.0.6 para 28.0.0.</block>
 </blocks>
