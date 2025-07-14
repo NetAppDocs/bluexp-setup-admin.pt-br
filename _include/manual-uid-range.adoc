@@ -10,9 +10,6 @@ Você deve ter o seguinte:
 +
 Você tem a opção de configurar um servidor proxy após a instalação, mas isso requer a reinicialização do conetor.
 
-+
-Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
-
 * Um certificado assinado pela CA, se o servidor proxy usar HTTPS ou se o proxy for um proxy intercetor.
 
 

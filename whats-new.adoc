@@ -18,6 +18,74 @@ Saiba o que há de novo com os recursos de administração do BlueXP : Gerencia
 
 
 
+== 14 de julho de 2025
+
+
+
+=== Conector 3.9.54
+
+Esta versão do BlueXP Connector inclui melhorias de segurança, correções de bugs e os seguintes novos recursos:
+
+* Suporte para proxies transparentes para conectores dedicados ao suporte de serviços Cloud Volumes ONTAP . link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html["Saiba mais sobre como configurar um proxy transparente."]
+* Capacidade de usar tags de rede para ajudar a rotear o tráfego do Connector quando o Connector é implantado em um ambiente do Google Cloud.
+* Notificações adicionais no produto para monitoramento de integridade do Connector, incluindo uso de CPU e RAM.
+
+
+No momento, a versão 3.9.54 está disponível para modo padrão e modo restrito.
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+O Gerenciamento de Identidade e Acesso no BlueXP agora oferece os seguintes recursos:
+
+* Suporte para IAM no modo privado, permitindo que você gerencie o acesso do usuário e as permissões para serviços e aplicativos BlueXP .
+* Gerenciamento simplificado de federações de identidade, incluindo navegação mais fácil, opções mais claras para configurar conexões federadas e melhor visibilidade das federações existentes.
+* Funções de acesso para BlueXP backup and recovery, BlueXP disaster recovery e gerenciamento de federação.
+
+
+
+
+==== Suporte para IAM em modo privado
+
+O BlueXP agora oferece suporte ao IAM em modo privado, permitindo que você gerencie o acesso e as permissões dos usuários para serviços e aplicativos BlueXP . Essa melhoria permite que clientes em modo privado utilizem o controle de acesso baseado em função (RBAC) para maior segurança e conformidade.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam["Saiba mais sobre o IAM no BlueXP."]
+
+
+
+==== Gerenciamento simplificado de federações de identidade
+
+O BlueXP agora oferece uma interface mais intuitiva para gerenciar a federação de identidades. Isso inclui navegação mais fácil, opções mais claras para configurar conexões federadas e melhor visibilidade das federações existentes.
+
+Habilitar o login único (SSO) por meio da federação de identidades permite que os usuários efetuem login no BlueXP com suas credenciais corporativas. Isso aumenta a segurança, reduz o uso de senhas e simplifica a integração.
+
+Você será solicitado a importar todas as conexões federadas existentes para a nova interface para obter acesso aos novos recursos de gerenciamento. Isso permite que você aproveite as melhorias mais recentes sem precisar recriar suas conexões federadas. link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html["Saiba mais sobre como importar sua conexão federada existente para o BlueXP."]
+
+O gerenciamento aprimorado da federação permite que você:
+
+* Adicione mais de um domínio verificado a uma conexão federada, permitindo que você use vários domínios com o mesmo provedor de identidade (IdP).
+* Desabilite ou exclua conexões federadas quando necessário, dando a você controle sobre o acesso e a segurança do usuário.
+* Controle o acesso ao gerenciamento da federação com funções do IAM.
+
+
+link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html["Saiba mais sobre federação de identidades no BlueXP."]
+
+
+
+==== Novas funções de acesso para BlueXP backup and recovery, BlueXP disaster recovery e gerenciamento de federação
+
+O BlueXP agora oferece suporte ao uso de funções do IAM para os seguintes recursos e serviços de dados:
+
+* Backup e recuperação do BlueXP
+* Recuperação de desastres da BlueXP
+* Federação
+
+
+link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["Saiba mais sobre o uso de funções de acesso."]
+
+
+
 == 9 de junho de 2025
 
 
@@ -56,7 +124,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["Saiba mais sobre o
 
 ==== Autenticação multifator (MFA)
 
-Usuários não federados agora podem habilitar a autenticação multifator (MFA) para suas contas BlueXP, aumentando a segurança da conta. Os administradores do BlueXP podem gerenciar as configurações de MFA para seus usuários, redefinindo ou desativando a MFA para usuários individuais, conforme necessário. Isso é suportado apenas no modo padrão.
+Usuários não federados podem habilitar a MFA para suas contas BlueXP para aumentar a segurança. Os administradores podem gerenciar as configurações de MFA, incluindo redefini-la ou desativá-la para os usuários, conforme necessário. Isso é suportado apenas no modo padrão.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Saiba mais sobre como configurar a autenticação multifator para você."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Saiba mais sobre como administrar a autenticação multifator para usuários."^]
 

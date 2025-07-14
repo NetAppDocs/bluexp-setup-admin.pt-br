@@ -14,7 +14,7 @@ summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funç
 
 
 [role="lead"]
-O BlueXP  Identity and Access Management (IAM) inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram nas seguintes categorias: Plataforma, aplicativo e serviço de dados.
+O gerenciamento de identidade e acesso (IAM) do BlueXP inclui funções predefinidas que você pode atribuir aos membros da sua organização em diferentes níveis da hierarquia de recursos. Antes de atribuir essas funções, você deve entender as permissões que cada função inclui. As funções se enquadram nas seguintes categorias: Plataforma, aplicativo e serviço de dados.
 
 
 
@@ -31,6 +31,12 @@ As funções da plataforma concedem todas as permissões para administração do
 
 
 | link:reference-iam-platform-roles.html["Administrador de pasta ou projeto"] | Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos. A função de administrador de pasta ou projeto NÃO PODE criar conetores. 
+
+
+| link:reference-iam-platform-roles.html["Administrador da Federação"] | Permite que um usuário crie e gerencie federações com o BlueXP, o que permite logon único (SSO). 
+
+
+| link:reference-iam-platform-roles.html["Visualizador da Federação"] | Permite que um usuário visualize federações existentes com o BlueXP. Não é possível criar ou gerenciar federações. 
 |===
 
 
@@ -66,6 +72,33 @@ A seguir está uma lista de funções na categoria de serviço de dados. Cada fu
 [cols="10,24"]
 |===
 | Função de serviço de dados | Responsabilidades 
+
+
+| link:reference-iam-backup-rec-roles.html["Superadministrador de backup e recuperação"] | Execute quaisquer ações no serviço de backup e recuperação. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrador de backup e recuperação"] | Faça backups em instantâneos locais, replique para armazenamento secundário e faça backup no armazenamento de objetos. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administração de restauração de backup e recuperação"] | Restaure cargas de trabalho no serviço de backup e recuperação. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrador clone de backup e recuperação"] | Clone aplicativos e dados no serviço de backup e recuperação. 
+
+
+| link:reference-iam-backup-rec-roles.html["Visualizador de backup e recuperação"] | Ver informações de backup e recuperação. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrador de recuperação de desastres"] | Execute quaisquer ações no serviço de recuperação de desastres. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrador de failover de recuperação de desastres"] | Execute failover e migrações. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrador do aplicativo de recuperação de desastres"] | Crie planos de replicação, modifique planos de replicação e inicie failovers de teste. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Visualizador de recuperação de desastres"] | Ver apenas informações. 
 
 
 | Administrador de classificação | Fornece os resultados do exame de classificação BlueXP  da vista de capacidade. A classificação não tem uma função de visualizador. Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. 

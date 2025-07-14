@@ -18,7 +18,7 @@ Comece a usar o BlueXP  no modo privado, preparando seu ambiente e implantando 
 
 O modo privado é normalmente utilizado com ambientes locais que não têm ligação à Internet e com regiões de nuvem seguras, que incluem https://aws.amazon.com/federal/secret-cloud/["Nuvem secreta da AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Nuvem secreta principal da AWS"^] e. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
-Antes de começar, você deve ter uma compreensão de link:concept-netapp-accounts.html["Contas BlueXP "], link:concept-connectors.html["Conetores"]e link:concept-modes.html["modos de implantação"].
+Antes de começar, você deve ter uma compreensão de link:concept-connectors.html["Conetores"] e link:concept-modes.html["modos de implantação"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] link:task-prepare-private-mode.html["Prepare-se para a implantação"]
 [role="quick-margin-list"]

@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: task-federation-saml.html 
+keywords: federation, SAML protocol, SAML, federation services,  federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Federe com seu provedor de IdP SAML 2.0 para habilitar o logon único (SSO) para o BlueXP. Isso permite que os usuários façam login usando suas credenciais corporativas.' 
+---
+= Federe com um provedor de identidade SAML
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Federe com seu provedor de IdP SAML 2.0 para habilitar o logon único (SSO) para o BlueXP. Isso permite que os usuários façam login usando suas credenciais corporativas.
+
+.Função necessária
+Administrador da organização. link:reference-iam-predefined-roles.html["Saiba mais sobre funções de acesso."]
+
+
+NOTE: Você pode federar com seu IdP corporativo ou com o site de suporte da NetApp . Não é possível federar com ambos.
+
+O NetApp oferece suporte apenas a SSO iniciado pelo provedor de serviços (iniciado pelo SP). Primeiro, você precisa configurar o provedor de identidade para confiar no NetApp como provedor de serviços. Em seguida, você pode criar uma conexão no BlueXP que use a configuração do provedor de identidade.
+
+Você pode configurar uma conexão federada com seu provedor SAML 2.0 para habilitar o logon único (SSO) para o BlueXP. O processo envolve configurar seu provedor para confiar na NetApp como provedora de serviços e, em seguida, criar a conexão no BlueXP.
+
+.Antes de começar
+* É necessária uma conta IdP com privilégios administrativos. Coordene com o administrador do seu IdP para concluir as etapas.
+* Identifique o domínio que deseja usar para a federação. Você pode usar o seu domínio de e-mail ou um domínio diferente do seu. Se quiser usar um domínio diferente do seu domínio de e-mail, primeiro verifique o domínio no BlueXP. Você pode fazer isso seguindo as etapas em link:task-federation-verify-domain.html["Verifique seu domínio no BlueXP"] tópico.
+
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Selecione a aba *Federação*.
+. Selecione *Configurar nova federação*.
+. Insira os detalhes do seu domínio:
++
+.. Escolha se deseja usar um domínio verificado ou o seu domínio de e-mail. O domínio de e-mail é o domínio associado à conta com a qual você está conectado.
+.. Digite o nome da federação que você está configurando.
+.. Se você escolher um domínio verificado, selecione o domínio na lista.
+
+
+. Selecione *seguinte*.
+. Para seu método de conexão, escolha *Protocolo* e depois selecione *Provedor de identidade SAML*.
+. Selecione *seguinte*.
+. Configure seu provedor de identidade SAML para confiar na NetApp como provedora de serviços. Você precisa executar esta etapa no servidor do seu provedor SAML.
++
+.. Certifique-se de que seu IdP tenha o atributo  `email` definido como o endereço de e-mail do usuário. Isso é necessário para que o BlueXP identifique os usuários corretamente:
++
+[source, xml]
+----
+<saml:AttributeStatement xmlns:x500="urn:oasis:names:tc:SAML:2.0:profiles:attribute:X500" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <saml:Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">
+        <saml:AttributeValue xsi:type="xs:string">email@domain.com</saml:AttributeValue>
+    </saml:Attribute>
+</saml:AttributeStatement>
+----
+.. Use os seguintes valores ao registrar seu aplicativo SAML com o BlueXP:
++
+*** Para o *URL de resposta* ou *URL do serviço de consumidor de declaração (ACS)*, use  `https://netapp-cloud-account.auth0.com/login/callback`
+*** Para o *URL de logout*, use  `https://netapp-cloud-account.auth0.com/logout`
+*** Para *ID do público/entidade*, use  `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` onde <fed-domain-name-saml> é o nome de domínio que você deseja usar para a federação. Por exemplo, se o seu domínio for  `example.com` , o ID do público/entidade seria  `urn:auth0:netapp-cloud-account:fed-example-com-samlp` .
+
+
+.. Depois de criar a confiança, copie os seguintes valores do servidor do seu provedor SAML:
++
+*** URL de login
+*** URL de saída (opcional)
+
+
+.. Baixe o certificado X.509 do servidor do seu provedor SAML. Ele precisa estar no formato PEM, CER ou CRT.
+
+
+. Retorne ao BlueXP e selecione *Avançar* para criar a conexão.
+. Crie a conexão com SAML.
++
+.. Digite o *URL de login* do seu servidor SAML.
+.. Carregue o certificado X.509 que você baixou do servidor do seu provedor SAML.
+.. Opcionalmente, insira o *URL de saída* do seu servidor SAML.
+
+
+. Selecione *Criar conexão*. O sistema criará a conexão em poucos segundos.
+. Selecione *seguinte*.
+. Selecione *Testar conexão* para testar sua conexão. Você será direcionado para uma página de login do seu servidor IdP. Efetue login com suas credenciais do IdP para concluir o teste e retorne ao BlueXP para habilitar a conexão.
+. Selecione *seguinte*.
+. Na página *Ativar federação*, revise os detalhes da federação e selecione *Ativar federação*.
+. Selecione *Concluir* para finalizar o processo.
+
+
+Depois de habilitar a federação, os usuários podem efetuar login no BlueXP usando suas credenciais corporativas.

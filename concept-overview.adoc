@@ -26,7 +26,7 @@ O BlueXP  fornece controle unificado do storage na multicloud híbrida e nos se
 
 === Controle unificado do armazenamento a partir da tela BlueXP 
 
-A _tela BlueXP_ permite que você descubra, implante e gerencie armazenamento na nuvem e no local. A tela fornece um único local para todo o gerenciamento de armazenamento.
+A _tela BlueXP_ permite que você descubra, implante e gerencie armazenamento na nuvem e no local. A tela centraliza o gerenciamento de armazenamento.
 
 
 
@@ -75,13 +75,12 @@ image:screenshot-canvas.png["Uma captura de tela da tela BlueXP  que mostra vá
 
 === Serviços integrados para proteger, proteger e otimizar dados
 
-O BlueXP inclui serviços de dados integrados para manter a segurança e a disponibilidade dos seus dados no armazenamento local e na nuvem.
+O BlueXP inclui serviços de dados para proteger e manter a disponibilidade de dados em todo o armazenamento.
 
 Alertas do BlueXP:: Veja problemas relacionados à capacidade, disponibilidade, performance, proteção e segurança no seu ambiente ONTAP.
 Catálogo de automação da BlueXP:: Use soluções com script para automatizar a implantação e a integração de produtos e serviços da NetApp.
 Backup e recuperação do BlueXP:: Faça backup e restaure dados na nuvem e no local.
 Classificação BlueXP:: Prepare sua privacidade nos ambientes de nuvem e dados de aplicações.
-Operações de nuvem da BlueXP:: Obtenha visibilidade dos gastos da computação em nuvem e identifique possíveis economias.
 Cópia e sincronização do BlueXP:: Sincronize dados entre armazenamentos de dados locais e na nuvem.
 Consultor digital da BlueXP:: Use análises preditivas e suporte proativo para otimizar a infraestrutura de dados.
 Carteira digital BlueXP:: Gerencie e monitore suas licenças e assinaturas.
@@ -138,14 +137,13 @@ O BlueXP  Identity and Access Management (IAM) é um modelo de gerenciamento de
 O BlueXP IAM é compatível ao usar o BlueXP no modo padrão ou restrito. Se você estiver usando o BlueXP no modo privado, use uma _conta_ do BlueXP para gerenciar espaços de trabalho, usuários e recursos.
 
 * link:concept-identity-and-access-management.html["Saiba mais sobre o BlueXP  IAM"]
-* link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]
 
 
 
 
 === Conetores
 
-Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP . Um conetor permite o gerenciamento de recursos e processos em ambientes locais e de nuvem. É necessário gerenciar ambientes de trabalho (por exemplo, Cloud Volumes ONTAP) e usar muitos serviços BlueXP .
+Você não precisa de um conetor para começar a usar o BlueXP , mas precisará criar um conetor para desbloquear todos os recursos e serviços do BlueXP . Um Conector permite que você gerencie recursos e processos em seus ambientes locais e na nuvem. Você precisa dele para gerenciar ambientes de trabalho (por exemplo, Cloud Volumes ONTAP) e usar muitos serviços BlueXP .
 
 link:concept-connectors.html["Saiba mais sobre conetores"].
 
@@ -161,6 +159,6 @@ link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"].
 
 == Certificação SOC 2 tipo 2
 
-Uma empresa de contabilidade pública certificada independente e auditor de serviços examinou a BlueXP  e afirmou que alcançou relatórios SOC 2 tipo 2 com base nos critérios de Serviços de confiança aplicáveis.
+Uma empresa de contabilidade pública certificada independente e auditora de serviços examinou a BlueXP e afirmou que a BlueXP obteve relatórios SOC 2 Tipo 2 com base nos critérios aplicáveis aos Serviços Fiduciários.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["Veja os relatórios SOC 2 da NetApp"^]

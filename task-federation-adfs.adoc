@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-federation-adfs.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Federe com os Serviços de Federação do Active Directory (AD FS) para habilitar o logon único (SSO) para o BlueXP. Isso permite que os usuários façam login usando suas credenciais corporativas.' 
+---
+= Federe o BlueXP com os Serviços de Federação do Active Directory (AD FS)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Federe seus Serviços de Federação do Active Directory (AD FS) com o BlueXP para habilitar o logon único (SSO) para o BlueXP. Isso permite que os usuários efetuem login no BlueXP usando suas credenciais corporativas.
+
+.Funções necessárias
+É necessário um administrador da organização ou da federação para criar e gerenciar federações. O visualizador da federação pode visualizar a página da federação. link:reference-iam-predefined-roles.html["Saiba mais sobre funções de acesso."]
+
+
+NOTE: Você pode federar com seu IdP corporativo ou com o site de suporte da NetApp . A NetApp recomenda escolher um ou outro, mas não ambos.
+
+A NetApp oferece suporte apenas a SSO iniciado pelo provedor de serviços (iniciado SP). Primeiro, configure o provedor de identidade para confiar no BlueXP como provedor de serviços. Em seguida, crie uma conexão no BlueXP usando a configuração do seu provedor de identidade.
+
+Você pode configurar a federação com seu servidor AD FS para habilitar o logon único (SSO) para o BlueXP. O processo envolve configurar seu AD FS para confiar no BlueXP como provedor de serviços e, em seguida, criar a conexão no BlueXP.
+
+.Antes de começar
+* É necessária uma conta IdP com privilégios administrativos. Coordene com o administrador do seu IdP para concluir as etapas.
+* Identifique o domínio que deseja usar para a federação. Você pode usar o seu domínio de e-mail ou um domínio diferente do seu. Se quiser usar um domínio diferente do seu domínio de e-mail, primeiro verifique o domínio no BlueXP. Você pode fazer isso seguindo as etapas em link:task-federation-verify-domain.html["Verifique seu domínio no BlueXP"] tópico.
+
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Selecione a aba *Federação*.
+. Selecione *Configurar nova federação*.
+. Insira os detalhes do seu domínio:
++
+.. Escolha se deseja usar um domínio verificado ou o seu domínio de e-mail. O domínio de e-mail é o domínio associado à conta com a qual você está conectado.
+.. Digite o nome da federação que você está configurando.
+.. Se você escolher um domínio verificado, selecione o domínio na lista.
+
+
+. Selecione *seguinte*.
+. Para seu método de conexão, escolha *Protocolo* e depois selecione *Serviços de Federação do Active Directory (AD FS)*.
+. Selecione *seguinte*.
+. Crie uma relação de confiança de terceira parte confiável no seu servidor AD FS. Você pode usar o PowerShell ou configurá-la manualmente no seu servidor AD FS. Consulte a documentação do AD FS para obter detalhes sobre como criar uma relação de confiança de terceira parte confiável.
++
+.. Crie a confiança usando o PowerShell usando o seguinte script:
++
+[source, powershell]
+----
+(new-object Net.WebClient -property @{Encoding = [Text.Encoding]::UTF8}).DownloadString("https://raw.github.com/auth0/AD FS-auth0/master/AD FS.ps1") | iex
+AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.auth0.com/login/callback"
+----
+.. Como alternativa, você pode criar a relação de confiança manualmente no console de gerenciamento do AD FS. Use os seguintes valores do BlueXP ao criar a relação de confiança:
++
+*** Ao criar o Relying Trust Identifier, use o valor **YOUR_TENANT**:  `netapp-cloud-account`
+*** Ao selecionar *Ativar suporte para WS-Federation*, use o valor **YOUR_AUTH0_DOMAIN**:  `netapp-cloud-account.auth0.com`
+
+
+.. Após criar a relação de confiança, copie a URL de metadados do seu servidor AD FS ou baixe o arquivo de metadados da federação. Você precisará dessa URL ou arquivo para concluir a conexão no BlueXP.
+
+
+
+
++ A NetApp recomenda usar a URL de metadados para permitir que o BlueXP recupere automaticamente a configuração mais recente do AD FS. Se você baixar o arquivo de metadados da federação, precisará atualizá-lo manualmente no BlueXP sempre que houver alterações na sua configuração do AD FS.
+
+. Retorne ao BlueXP e selecione *Avançar* para criar a conexão.
+. Crie a conexão com o AD FS.
++
+.. Insira o *URL do AD FS* que você copiou do seu servidor AD FS na etapa anterior ou carregue o arquivo de metadados da federação que você baixou do seu servidor AD FS.
+
+
+. Selecione *Criar conexão*. A criação da conexão pode levar alguns segundos.
+. Selecione *seguinte*.
+. Selecione *Testar conexão* para testar sua conexão. Você será direcionado para uma página de login do seu servidor IdP. Efetue login com suas credenciais do IdP para concluir o teste e retorne ao BlueXP para habilitar a conexão.
+. Selecione *seguinte*.
+. Na página *Ativar federação*, revise os detalhes da federação e selecione *Ativar federação*.
+. Selecione *Concluir* para finalizar o processo.
+
+
+Depois de habilitar a federação, os usuários podem efetuar login no BlueXP usando suas credenciais corporativas.

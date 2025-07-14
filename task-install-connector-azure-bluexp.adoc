@@ -116,7 +116,7 @@ link:reference-networking-saas-console.html["Veja a lista de endpoints contactad
 --
 
 
-Servidor proxy:: Se a sua empresa exigir a implantação de um servidor proxy para todo o tráfego de saída da Internet, obtenha as seguintes informações sobre o proxy HTTP ou HTTPS. Você precisará fornecer essas informações durante a instalação. Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
+Servidor proxy:: A NetApp oferece suporte a configurações de proxy explícitas e transparentes. Se estiver usando um proxy transparente, você só precisará fornecer o certificado para o servidor proxy. Se estiver usando um proxy explícito, também precisará do endereço IP e das credenciais.
 +
 --
 * Endereço IP

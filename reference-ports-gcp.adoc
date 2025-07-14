@@ -38,7 +38,7 @@ As regras de firewall do Google Cloud para o conetor exigem regras de entrada e 
 | HTTPS | 443 | Fornece acesso HTTPS a partir de navegadores da Web cliente para a interface de usuário local 
 
 
-| TCP | 3128 | Fornece ao Cloud Volumes ONTAP acesso à Internet para enviar mensagens AutoSupport para o suporte da NetApp. Você deve abrir manualmente essa porta após a implantação. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Saiba como o conetor é usado como proxy para mensagens AutoSupport"^] 
+| TCP | 3128 | Fornece acesso à internet ao Cloud Volumes ONTAP . Você deve abrir esta porta manualmente após a implantação. 
 |===
 
 

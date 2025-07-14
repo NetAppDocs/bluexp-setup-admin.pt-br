@@ -279,12 +279,8 @@ Para todas as outras organizações ou contas, você precisará associar manualm
 
 Ao assinar no AWS Marketplace, a última etapa do processo é associar a assinatura à sua organização. Se você não concluiu esta etapa, não poderá usar a assinatura com sua organização ou conta.
 
-
-TIP: Se estiver usando o modo padrão ou restrito, você terá uma _organização BlueXP_, que você gerencia usando o gerenciamento de identidade e acesso (IAM) do BlueXP. Mas se você estiver usando o BlueXP  no modo privado, então você terá uma conta _BlueXP _.
-
 * link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"]
 * link:concept-identity-and-access-management.html["Saiba mais sobre o gerenciamento de identidades e acesso do BlueXP "]
-* link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]
 
 
 Siga as etapas abaixo se você assinou os serviços de dados inteligentes da NetApp no AWS Marketplace, mas perdeu a etapa para associar a assinatura à sua conta.

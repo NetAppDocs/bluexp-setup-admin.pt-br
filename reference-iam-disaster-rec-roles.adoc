@@ -1,0 +1,262 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-disaster-rec-roles.html 
+keywords: disaster recovery, role-based access control, failover admin, replication plans, job- monitoring, business continuity, compliance- management, operational governance, access delegation, rbac, IAM roles 
+summary: O gerenciamento de identidade e acesso do BlueXP fornece várias funções que você pode atribuir aos membros da sua organização que usam o serviço de recuperação de desastres. 
+---
+= Funções de BlueXP disaster recovery
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode atribuir as seguintes funções aos usuários para fornecer acesso ao serviço de backup e recuperação no BlueXP. As funções de backup e recuperação oferecem a flexibilidade de atribuir aos usuários uma função específica para as tarefas que eles precisam realizar na sua organização. A forma como você atribui funções depende das suas práticas de negócios e gerenciamento de armazenamento.
+
+A recuperação de desastres utiliza as seguintes funções:
+
+* *Administrador de recuperação de desastres*: Execute quaisquer ações.
+* *Administrador de failover de recuperação de desastres*: Execute failover e migrações.
+* *Administrador do aplicativo de recuperação de desastres*: Criar planos de replicação. Modificar planos de replicação. Iniciar testes de failover.
+* *Visualizador de recuperação de desastres*: Exibe somente informações.
+
+
+A tabela a seguir indica as ações que cada função pode executar.
+
+[cols="30,20a,20a,20a,20a"]
+|===
+| Recurso e ação | Administrador de recuperação de desastres | Administrador de failover de recuperação de desastres | Administrador do aplicativo de recuperação de desastres | Visualizador de recuperação de desastres 
+
+
+| Visualize o painel e todas as guias  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Inicie o teste gratuito  a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+ a| 
+Não
+
+
+
+| Inicie a descoberta de cargas de trabalho  a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+ a| 
+Não
+
+
+
+| Ver informações da licença  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Ativar licença  a| 
+Sim
+ a| 
+Não
+ a| 
+Sim
+ a| 
+Não
+
+
+
+5+| *Na aba Sites*: 
+
+
+| Ver sites  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Adicionar, modificar ou excluir sites  a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+ a| 
+Não
+
+
+
+5+| *Na aba Planos de replicação*: 
+
+
+| Ver planos de replicação  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Ver detalhes do plano de replicação  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Criar ou modificar planos de replicação  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+
+
+
+| Crie relatórios  a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+ a| 
+Não
+
+
+
+| Ver instantâneos  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Executar testes de failover  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+
+
+
+| Executar failovers  a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+
+
+
+| Executar failbacks  a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+
+
+
+| Executar migrações  a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+ a| 
+Não
+
+
+
+5+| *Na aba Grupos de recursos*: 
+
+
+| Exibir grupos de recursos  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Criar, modificar ou excluir grupos de recursos  a| 
+Sim
+ a| 
+Não
+ a| 
+Sim
+ a| 
+Não
+
+
+
+5+| *Na aba Monitoramento de Tarefas*: 
+
+
+| Ver trabalhos  a| 
+Sim
+ a| 
+Não
+ a| 
+Sim
+ a| 
+Sim
+
+
+
+| Cancelar trabalhos  a| 
+Sim
+ a| 
+Sim
+ a| 
+Sim
+ a| 
+Não
+
+|===

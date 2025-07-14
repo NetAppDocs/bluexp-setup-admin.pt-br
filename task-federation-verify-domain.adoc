@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Federe com os Serviços de Federação do Active Directory (AD FS) para habilitar o logon único (SSO) para o BlueXP. Isso permite que os usuários façam login usando suas credenciais corporativas.' 
+---
+= Verifique o domínio de e-mail para sua conexão federada
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se quiser federar com um domínio diferente do seu domínio de e-mail, primeiro você precisa verificar se é o proprietário do domínio. Você só pode usar domínios verificados para federação.
+
+.Funções necessárias
+Administrador da organização ou administrador da federação. link:reference-iam-predefined-roles.html["Saiba mais sobre funções de acesso."]
+
+A verificação do seu domínio envolve a adição de um registro TXT às configurações de DNS do seu domínio. Esse registro é usado para comprovar que você é o proprietário do domínio e permite que o BlueXP confie nele para fins de federação. Talvez seja necessário coordenar com seu administrador de TI ou de rede para concluir esta etapa.
+
+.Passos
+. No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
+. Selecione a aba *Federação*.
+. Selecione *Configurar nova federação*.
+. Selecione *Verificar propriedade do domínio*.
+. Digite o domínio que você deseja verificar e selecione *Continuar*.
+. Copie o registro TXT fornecido.
+. Acesse as configurações de DNS do seu domínio e configure o valor TXT fornecido como registro TXT para o seu domínio. Consulte o seu administrador de TI ou de rede, se necessário.
+. Após o registro TXT ser adicionado, retorne ao BlueXP e selecione *Verificar*.
+

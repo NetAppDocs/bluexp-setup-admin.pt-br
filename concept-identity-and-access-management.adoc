@@ -16,9 +16,6 @@ summary: 'O BlueXP  Identity and Access Management (IAM) permite controlar o ac
 [role="lead"]
 O BlueXP  Identity and Access Management (IAM) permite organizar e controlar o acesso aos seus recursos do NetApp. Você pode organizar seus recursos de acordo com a hierarquia da sua organização. Por exemplo, você pode organizar recursos por localização geográfica, local ou unidade de negócios. Em seguida, você pode atribuir funções do IAM a membros em partes específicas da hierarquia, o que impede o acesso a recursos em outras partes da hierarquia.
 
-O BlueXP  IAM é suportado quando se utiliza o BlueXP  no modo padrão e no modo restrito. Se você estiver usando o BlueXP  no modo privado, use uma conta _BlueXP _ para gerenciar usuários e recursos.
-
-* link:concept-netapp-accounts.html["Saiba mais sobre as contas do BlueXP "]
 * link:concept-modes.html["Saiba mais sobre os modos de implantação do BlueXP"]
 
 
@@ -26,7 +23,7 @@ O BlueXP  IAM é suportado quando se utiliza o BlueXP  no modo padrão e no mo
 
 == Como o BlueXP  IAM funciona
 
-O BlueXP  IAM permite que você conceda acesso aos recursos da sua organização, definindo quais membros têm permissões para partes específicas da hierarquia da organização. Por exemplo, um membro pode ter permissões de administrador de projeto para um projeto que tenha cinco recursos associados.
+O BlueXP IAM permite que você conceda acesso a recursos atribuindo funções de acesso aos usuários a partes específicas da hierarquia. Por exemplo, um membro pode receber a função de administrador de pasta ou projeto para um projeto com cinco recursos.
 
 Ao usar o BlueXP  IAM, você gerenciará os seguintes componentes:
 
@@ -57,17 +54,13 @@ image:diagram-iam-resource-hierarchy.png["Um diagrama conceitual que mostra a hi
 
 Uma _organização_ é o nível superior do sistema IAM da BlueXP  e normalmente representa a sua empresa. Sua organização consiste em pastas, projetos, membros, funções e recursos. Os conetores estão associados a projetos específicos na organização.
 
-O BlueXP solicita que você crie uma nova organização quando você se inscreve.
-
 
 
 === Pastas
 
 Uma _folder_ permite agrupar projetos relacionados e separá-los de outros projetos em sua organização. Por exemplo, uma pasta pode representar uma localização geográfica (UE ou Leste dos EUA), um site (Londres ou Toronto) ou uma unidade de negócios (engenharia ou marketing).
 
-As pastas podem conter projetos, outras pastas ou ambos.
-
-Você não precisa criar pastas. Eles são opcionais.
+Os arquivos podem conter projetos, outras pastas ou ambos. A criação de pastas é opcional.
 
 
 
@@ -96,7 +89,7 @@ TIP: Você também pode associar um conetor a outra pasta ou projeto em sua orga
 
 Você também tem a opção de associar um recurso a uma pasta, mas isso é opcional e atende às necessidades de um caso de uso específico.
 
-Um _administrador da organização_ pode associar um recurso a uma pasta para que um _Folder ou administrador de projeto_ possa associar esse recurso aos projetos apropriados que residem na pasta.
+Um _Administrador da organização_ pode associar um recurso a uma pasta para permitir que um _Administrador de pasta ou projeto_ vincule esse recurso aos projetos apropriados na pasta.
 
 Por exemplo, digamos que você tem uma pasta que contém dois projetos:
 
@@ -106,7 +99,7 @@ O _Organization admin_ pode associar um recurso à pasta:
 
 image:diagram-iam-resource-association-folder-2.png["Um diagrama que mostra uma pasta, um recurso associado à pasta e dois projetos que residem na pasta: Projeto A e projeto B."]
 
-Ao associar um recurso a uma pasta, ele não se torna automaticamente acessível a todos os projetos; apenas o _administrador da pasta ou do projeto_ pode vê-lo. O _administrador da pasta ou do projeto_ decide quais projetos podem acessá-lo e associa o recurso aos projetos apropriados.
+Associar um recurso a uma pasta não o torna acessível a todos os projetos; somente o _administrador da pasta ou do projeto_ pode vê-lo. O _administrador da pasta ou do projeto_ decide quais projetos podem acessá-lo e associa o recurso aos projetos apropriados.
 
 Neste exemplo, o administrador associa o recurso ao Projeto A:
 
@@ -128,7 +121,7 @@ Cada organização inclui pelo menos um usuário com a função _Administrador d
 
 No BlueXP  IAM, você não concede permissões diretamente aos membros da organização. Em vez disso, você concede a cada membro uma função. Uma função contém um conjunto de permissões que permite que um membro execute ações específicas em um nível específico da hierarquia de recursos.
 
-Ao fornecer permissões em uma parte específica da hierarquia de recursos, você pode restringir os direitos de acesso apenas aos recursos que um membro precisa para concluir suas tarefas.
+Conceder permissões em um nível de hierarquia específico restringe o acesso aos recursos de que um membro precisa e aos serviços que ele pode usar com esses recursos.
 
 
 

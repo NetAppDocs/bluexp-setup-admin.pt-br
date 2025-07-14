@@ -25,7 +25,7 @@ Você pode criar um conetor no Google Cloud a partir do BlueXP  ou usando o Goo
 
 == Passo 1: Configurar a rede
 
-Configure sua rede para que o conetor possa gerenciar recursos e processos em seu ambiente de nuvem híbrida. Por exemplo, você precisa garantir que as conexões estejam disponíveis para redes de destino e que o acesso de saída à Internet esteja disponível.
+Configure a rede para garantir que o Conector possa gerenciar recursos, com conexões a redes de destino e acesso de saída à Internet.
 
 VPC e sub-rede:: Ao criar o conetor, você precisa especificar a VPC e a sub-rede onde o conetor deve residir.
 
@@ -101,7 +101,7 @@ link:reference-networking-saas-console.html["Veja a lista de endpoints contactad
 --
 
 
-Servidor proxy:: Se a sua empresa exigir a implantação de um servidor proxy para todo o tráfego de saída da Internet, obtenha as seguintes informações sobre o proxy HTTP ou HTTPS. Você precisará fornecer essas informações durante a instalação. Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
+Servidor proxy:: A NetApp oferece suporte a configurações de proxy explícitas e transparentes. Se estiver usando um proxy transparente, você só precisará fornecer o certificado para o servidor proxy. Se estiver usando um proxy explícito, também precisará do endereço IP e das credenciais.
 +
 --
 * Endereço IP
@@ -129,7 +129,7 @@ Se os sistemas Cloud Volumes ONTAP não tiverem uma conexão de saída à Intern
 Ativar NTP:: Se estiver a planear utilizar a classificação BlueXP  para analisar as suas fontes de dados empresariais, deve ativar um serviço de Protocolo de tempo de rede (NTP) no sistema de conetores BlueXP  e no sistema de classificação BlueXP  para que o tempo seja sincronizado entre os sistemas. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Saiba mais sobre a classificação BlueXP"^]
 +
 --
-Você precisará implementar esse requisito de rede depois de criar o conetor.
+Implemente este requisito de rede depois de criar o Conector.
 
 --
 
@@ -227,9 +227,6 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud docs: Conceda uma única função"^]
 
 
-
-.Resultado
-O usuário do Google Cloud agora tem as permissões necessárias para criar o conetor.
 
 
 
@@ -347,7 +344,7 @@ Notas:
 
 == Etapa 5: Habilite as APIs do Google Cloud
 
-Várias APIs do Google Cloud devem estar ativadas antes de implantar o Connector e o Cloud Volumes ONTAP no Google Cloud.
+Você deve habilitar várias APIs do Google Cloud antes de implantar o Connector e o Cloud Volumes ONTAP.
 
 .Passo
 . Ative as seguintes APIs do Google Cloud em seu projeto:
@@ -374,7 +371,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentação
 Crie um conetor diretamente do console baseado na Web do BlueXP  ou usando o gcloud.
 
 .Sobre esta tarefa
-A criação do conetor implanta uma instância de máquina virtual no Google Cloud usando uma configuração padrão. Depois de criar o conetor, você não deve mudar para uma instância de VM menor que tenha menos CPU ou RAM. link:reference-connector-default-config.html["Saiba mais sobre a configuração padrão do conetor"].
+A criação do conetor implanta uma instância de máquina virtual no Google Cloud usando uma configuração padrão. Não altere o Conector para uma instância de VM menor com menos CPU ou RAM após a criação. link:reference-connector-default-config.html["Saiba mais sobre a configuração padrão do conetor"].
 
 [role="tabbed-block"]
 ====
@@ -409,6 +406,7 @@ O formulário é de propriedade e hospedado pelo Google. Suas credenciais não s
 ** *Detalhes*: Insira um nome para a instância da máquina virtual, especifique tags, selecione um projeto e, em seguida, selecione a conta de serviço que tem as permissões necessárias (consulte a seção acima para obter detalhes).
 ** *Localização*: Especifique uma região, zona, VPC e sub-rede para a instância.
 ** *Rede*: Escolha se deseja ativar um endereço IP público e, opcionalmente, especificar uma configuração de proxy.
+** *Tags de rede*: Adicione uma tag de rede à instância do Conector se estiver usando um proxy transparente. As tags de rede devem começar com uma letra minúscula e podem conter letras minúsculas, números e hifens. As tags devem terminar com uma letra minúscula ou um número. Por exemplo, você pode usar a tag "connector-proxy".
 ** *Política de firewall*: Escolha se deseja criar uma nova política de firewall ou se deseja selecionar uma política de firewall existente que permita as regras de entrada e saída necessárias.
 +
 link:reference-ports-gcp.html["Regras de firewall no Google Cloud"]
@@ -418,12 +416,12 @@ link:reference-ports-gcp.html["Regras de firewall no Google Cloud"]
 
 . Selecione *Adicionar*.
 +
-A instância deve estar pronta em cerca de 7 minutos. Você deve permanecer na página até que o processo esteja concluído.
+A instância estará pronta em aproximadamente 7 minutos; permaneça na página até que o processo seja concluído.
 
 
 
 .Resultado
-Após o processo ser concluído, o conetor está disponível para uso no BlueXP .
+Após a conclusão do processo, o Conector estará disponível para uso no BlueXP.
 
 Se você tiver buckets do Google Cloud Storage na mesma conta do Google Cloud onde criou o conetor, verá um ambiente de trabalho do Google Cloud Storage aparecer automaticamente na tela do BlueXP . https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Saiba como gerenciar o Google Cloud Storage da BlueXP "^]
 
@@ -448,7 +446,7 @@ O conetor é compatível com o Google Cloud em uma instância de VM com um siste
 
 
 .Passos
-. Faça login no SDK do gcloud usando sua metodologia preferida.
+. Faça login no gcloud SDK usando seu método preferido.
 +
 Em nossos exemplos, usaremos um shell local com o gcloud SDK instalado, mas você pode usar o Google Cloud Shell nativo no console do Google Cloud.
 

@@ -17,7 +17,7 @@ summary: Instale um conetor no local e, em seguida, faça login e configure-o pa
 Você pode instalar um conetor em uma de suas máquinas locais. Para executar o conetor no local, você precisa analisar os requisitos de host, configurar sua rede, preparar permissões de nuvem, instalar o conetor, configurar o conetor e, em seguida, fornecer as permissões que você preparou.
 
 .Antes de começar
-* Você deve ter um link:concept-connectors.html["Compreensão dos conetores"].
+* Revise as informações sobre link:concept-connectors.html["Conetores"] .
 * Você deve rever link:reference-limitations.html["Limitações do conetor"].
 
 
@@ -25,7 +25,7 @@ Você pode instalar um conetor em uma de suas máquinas locais. Para executar o 
 
 == Etapa 1: Revise os requisitos do host
 
-O software do conetor deve ser executado em um host que atenda a requisitos específicos do sistema operacional, requisitos de RAM, requisitos de porta, etc. Certifique-se de que o seu host atenda a esses requisitos antes de instalar o conetor.
+Execute o software Connector em um host que atenda aos requisitos de sistema operacional, RAM e porta. Certifique-se de que o seu host atenda a esses requisitos antes de instalar o conetor.
 
 
 NOTE: O Conector reserva o intervalo de UID e GID de 19000 a 19200. Esse intervalo é fixo e não pode ser modificado. Se algum software de terceiros no seu host estiver usando UIDs ou GIDs dentro desse intervalo, a instalação do Conector falhará. A NetApp recomenda usar um host livre de software de terceiros para evitar conflitos.
@@ -247,7 +247,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == Passo 3: Configurar a rede
 
-Configure sua rede para que o conetor possa gerenciar recursos e processos em seu ambiente de nuvem híbrida. Por exemplo, você precisa garantir que as conexões estejam disponíveis para redes de destino e que o acesso de saída à Internet esteja disponível.
+Configure a rede para garantir que o Conector possa gerenciar recursos, com conexões a redes de destino e acesso de saída à Internet.
 
 Conexões com redes de destino:: Um conetor requer uma conexão de rede com o local onde você está planejando criar e gerenciar ambientes de trabalho. Por exemplo, a rede em que você planeja criar sistemas Cloud Volumes ONTAP ou um sistema de storage em seu ambiente local.
 
@@ -389,7 +389,7 @@ Para obter imagens para atualizações de conetores.
 --
 
 
-Servidor proxy:: Se a sua empresa exigir a implantação de um servidor proxy para todo o tráfego de saída da Internet, obtenha as seguintes informações sobre o proxy HTTP ou HTTPS. Você precisará fornecer essas informações durante a instalação. Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
+Servidor proxy:: A NetApp oferece suporte a configurações de proxy explícitas e transparentes. Se estiver usando um proxy transparente, você só precisará fornecer o certificado para o servidor proxy. Se estiver usando um proxy explícito, também precisará do endereço IP e das credenciais.
 +
 --
 * Endereço IP
@@ -424,7 +424,7 @@ Ativar NTP:: Se estiver a planear utilizar a classificação BlueXP  para anali
 Se você quiser usar os serviços do BlueXP  na AWS ou no Azure com um conetor no local, precisará configurar permissões no seu provedor de nuvem para que você possa adicionar as credenciais ao conetor depois de instalá-lo.
 
 
-TIP: Por que não o Google Cloud? Quando o conetor é instalado em suas instalações, ele não pode gerenciar seus recursos no Google Cloud. O conetor precisa ser instalado no Google Cloud para gerenciar todos os recursos que residem lá.
+TIP: Por que não o Google Cloud? Quando o conetor é instalado em suas instalações, ele não pode gerenciar seus recursos no Google Cloud. Você deve instalar o Connector no Google Cloud para gerenciar quaisquer recursos que residam lá.
 
 [role="tabbed-block"]
 ====
@@ -459,7 +459,7 @@ Para regiões padrão, as permissões são distribuídas em duas políticas. Dua
 
 
 .Resultado
-Agora você deve ter chaves de acesso para um usuário do IAM que tenha as permissões necessárias. Depois de instalar o conetor, você precisará associar essas credenciais ao conetor do BlueXP .
+Agora você deve ter chaves de acesso para um usuário do IAM que tenha as permissões necessárias. Depois de instalar o Connector, associe essas credenciais ao Connector do BlueXP.
 
 --
 .Azure
@@ -609,9 +609,6 @@ Agora você tem um segredo de cliente que o BlueXP  pode usá-lo para autentica
 
 
 
-.Resultado
-Seu responsável de serviço está configurado e você deve ter copiado o ID do aplicativo (cliente), o ID do diretório (locatário) e o valor do segredo do cliente. Depois de instalar o conetor, você precisará associar essas credenciais ao conetor do BlueXP .
-
 --
 ====
 
@@ -628,11 +625,11 @@ Você deve ter o seguinte:
 +
 Você tem a opção de configurar um servidor proxy após a instalação, mas isso requer a reinicialização do conetor.
 
-+
-Observe que o BlueXP  não oferece suporte a servidores proxy transparentes.
-
 * Um certificado assinado pela CA, se o servidor proxy usar HTTPS ou se o proxy for um proxy intercetor.
 
+
+
+NOTE: Não é possível definir um certificado para um servidor proxy transparente ao instalar manualmente o Conector. Se precisar definir um certificado para um servidor proxy transparente, use o Console de Manutenção após a instalação. Saiba mais sobre o link:reference-connector-maint-console.html["Console de manutenção do conector"].
 
 .Sobre esta tarefa
 O instalador disponível no site de suporte da NetApp pode ser uma versão anterior. Após a instalação, o conetor se atualiza automaticamente se uma nova versão estiver disponível.
@@ -668,10 +665,10 @@ Onde <version> é a versão do conetor que você baixou.
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-Os parâmetros --proxy e --cacert são opcionais. Se você tiver um servidor proxy, será necessário inserir os parâmetros como mostrado. O instalador não solicita que você forneça informações sobre um proxy.
+Você precisará adicionar informações de proxy se a sua rede exigir um proxy para acesso à internet. Você pode adicionar um proxy transparente ou explícito. Os parâmetros --proxy e --cacert são opcionais e você não será solicitado a adicioná-los. Se você tiver um servidor proxy, será necessário inserir os parâmetros como mostrado.
 
 +
-Aqui está um exemplo do comando usando ambos os parâmetros opcionais:
+Aqui está um exemplo de configuração de um servidor proxy explícito com um certificado assinado por uma CA:
 
 +
 [source, cli]
@@ -702,13 +699,21 @@ Por exemplo:
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+--cacert especifica um certificado assinado pela CA a ser usado para acesso HTTPS entre o conetor e o servidor proxy. Este parâmetro é necessário para servidores proxy HTTPS, servidores proxy de interceptação e servidores proxy transparentes.
 
 
 
 +
---cacert especifica um certificado assinado pela CA a ser usado para acesso HTTPS entre o conetor e o servidor proxy. Este parâmetro só é necessário se especificar um servidor proxy HTTPS ou se o proxy for um proxy intercetor.
+Aqui está um exemplo de configuração de um servidor proxy transparente. Ao configurar um proxy transparente, você não precisa definir o servidor proxy. Basta adicionar um certificado assinado pela CA ao seu host do Conector:
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . Se você usou o Podman, precisará ajustar a porta aardvark-dns.
 +
 .. SSH para a máquina virtual do BlueXP Connector.
@@ -733,13 +738,13 @@ Esc:wq
 
 
 .Resultado
-O conetor está agora instalado. No final da instalação, o serviço de conetor (occm) será reiniciado duas vezes se você tiver especificado um servidor proxy.
+No final da instalação, o serviço de conetor (occm) será reiniciado duas vezes se você tiver especificado um servidor proxy.
 
 
 
-== Passo 6: Configure o conetor
+== Etapa 6: Registre o conector com o BlueXP
 
-Inscreva-se ou inicie sessão e, em seguida, configure o conetor para trabalhar com a sua organização BlueXP .
+Efetue login no BlueXP e associe o Conector à sua organização. O modo de login depende do modo em que você estiver usando o BlueXP. Se estiver usando o BlueXP no modo padrão, faça login pelo site SaaS. Se estiver usando o BlueXP no modo restrito ou privado, faça login localmente a partir do host do Conector.
 
 .Passos
 . Abra um navegador da Web e insira o seguinte URL:
@@ -756,15 +761,12 @@ _Ipaddress_ pode ser localhost, um endereço IP privado ou um endereço IP públ
 .. Introduza um nome para o sistema.
 .. Em *você está executando em um ambiente seguro?* mantenha o modo restrito desativado.
 +
-Você deve manter o modo restrito desativado porque estas etapas descrevem como usar o BlueXP  no modo padrão. (Além disso, o modo restrito não é suportado quando o conetor é instalado no local.)
+Mantenha o modo restrito desabilitado porque essas etapas usam o BlueXP no modo padrão. (Além disso, o modo restrito não é suportado quando o conetor é instalado no local.)
 
 .. Selecione *vamos começar*.
 
 
 
-
-.Resultado
-O BlueXP  está agora configurado com o conetor que acabou de instalar.
 
 
 
@@ -777,7 +779,7 @@ Depois de instalar e configurar o conetor, adicione suas credenciais de nuvem pa
 .AWS
 --
 .Antes de começar
-Se você acabou de criar essas credenciais na AWS, pode levar alguns minutos até que elas estejam disponíveis para uso. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
+Se você acabou de criar essas credenciais da AWS, elas podem levar alguns minutos para ficarem disponíveis. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
 
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.
@@ -803,7 +805,7 @@ Agora você pode ir para o https://console.bluexp.netapp.com["Consola BlueXP"^] 
 .Azure
 --
 .Antes de começar
-Se você acabou de criar essas credenciais no Azure, pode levar alguns minutos até que elas estejam disponíveis para uso. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
+Se você acabou de criar essas credenciais do Azure, elas podem levar alguns minutos para ficarem disponíveis. Aguarde alguns minutos antes de adicionar as credenciais ao BlueXP .
 
 .Passos
 . No canto superior direito do console BlueXP , selecione o ícone Configurações e selecione *credenciais*.

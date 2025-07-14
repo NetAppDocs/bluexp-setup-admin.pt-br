@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-maint-console.html 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy 
+summary: Use o Console de Manutenção para configurar o Conector para usar um servidor proxy transparente. 
+---
+= Console de manutenção do conector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode usar o Console de Manutenção para configurar o Conector para usar um servidor proxy transparente.
+
+
+
+== Acesse o console de manutenção
+
+Você pode acessar o Console de Manutenção a partir do host do Conector. Navegue até o seguinte diretório:
+
+[source, CLI]
+----
+/opt/application/netapp/service-manager-2/connector-maint-console
+----
+
+
+== Comandos de proxy transparentes
+
+O Console de Manutenção fornece comandos para configurar o Conector para usar um servidor proxy transparente.
+
+
+
+=== Visualizar a configuração atual do proxy transparente
+
+Para visualizar a configuração atual do proxy transparente, use o seguinte comando:
+
+[source, CLI]
+----
+./connector-maint-console proxy get
+----
+
+
+=== Adicionar um servidor proxy transparente
+
+Para adicionar um servidor proxy transparente, use o seguinte comando, onde  `/home/ubuntu/myCA1.pem` é o caminho para o arquivo de certificado do servidor proxy. O arquivo de certificado deve estar no formato PEM:
+
+[source, CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/myCA1.pem
+----
+Certifique-se de que o arquivo de certificado esteja no mesmo diretório que o comando ou especifique o caminho completo para o arquivo de certificado.
+
+
+
+=== Atualizar o certificado para um servidor proxy transparente
+
+Para atualizar o certificado de um servidor proxy transparente, use o seguinte comando, onde  `/home/ubuntu/myCA1.pem` é o caminho para o novo arquivo de certificado do servidor proxy. O arquivo de certificado deve estar no formato PEM:
+
+[source, CLI]
+----
+./connector-maint-console proxy update -c /home/ubuntu/myCA1.pem
+----
+Certifique-se de que o arquivo de certificado esteja no mesmo diretório que o comando ou especifique o caminho completo para o arquivo de certificado.
+
+
+
+=== Remover um servidor proxy transparente
+
+Para remover o servidor proxy transparente, use o seguinte comando:
+
+[source, CLI]
+----
+./connector-maint-console proxy remove
+----
+
+
+=== Ver ajuda para qualquer comando
+
+Para visualizar a ajuda de qualquer comando, anexe  `--help` para o comando. Por exemplo, para ver a ajuda para o  `proxy add` comando, use o seguinte comando:
+
+[source, CLI]
+----
+./connector-maint-console proxy add --help
+----

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-platform-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
-summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização. 
+summary: Atribua funções de plataforma aos usuários para conceder permissões para gerenciar o BlueXP, atribuir funções, adicionar usuários, criar conectores e gerenciar federações. 
 ---
 = Funções de acesso à plataforma BlueXP 
 :hardbreaks:
@@ -14,16 +14,22 @@ summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funç
 
 
 [role="lead"]
-As funções de plataforma são as funções mais amplas que você pode atribuir aos usuários e permitir todas as permissões para administração do BlueXP, incluindo a atribuição de funções e a adição de usuários. Usuários com funções de plataforma têm acesso a todos os serviços e aplicações de dados no BlueXP . O BlueXP  inclui duas funções de plataforma: *Administrador da organização* e *administrador de pasta ou projeto*. A principal diferença entre as duas funções da plataforma BlueXP  é o escopo no qual a função se aplica.
+Atribua funções de plataforma aos usuários para conceder permissões para gerenciar o BlueXP, atribuir funções, adicionar usuários, criar conectores e gerenciar federações.
 
 .Exemplo para funções de organização em BlueXP  para uma grande organização multinacional
-A XYZ Corporation, uma empresa multinacional, tem como objetivo separar o acesso a recursos de storage de dados com base em regiões geográficas: América do Norte, Europa e Ásia-Pacífico. Eles querem que cada região tenha controle exclusivo sobre seus recursos, mantendo a supervisão centralizada.
+A XYZ Corporation organiza o acesso ao armazenamento de dados por região — América do Norte, Europa e Ásia-Pacífico — dando a cada região controle e garantindo supervisão centralizada.
 
-Para conseguir isso, uma pessoa atribuída à função *administrador da organização* no BlueXP  da XYZ Corporation cria um ambiente de trabalho inicial e, em seguida, cria pastas separadas no BlueXP  para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O *administrador da organização* atribui a um usuário do BlueXP  em cada região a função *administrador de pasta ou projeto*.
+O *administrador da organização* no BlueXP da XYZ Corporation cria uma organização inicial e pastas separadas para cada região. A pasta de cada região contém projetos (com recursos associados) relacionados a essa região. O *administrador da organização* atribui a um usuário do BlueXP  em cada região a função *administrador de pasta ou projeto*.
 
-Uma vez concluída a configuração inicial, os administradores regionais com a função *Folder ou Project admin* podem criar novos ambientes de trabalho e adicionar usuários em suas regiões. Esses administradores regionais também podem adicionar/remover/renomear pastas e projetos aos quais são atribuídos. O *Organization admin* herda permissões para quaisquer novos ambientes de trabalho ou recursos, mantendo a visibilidade do uso do armazenamento em toda a organização.
+Administradores regionais com a função *Administrador de pasta ou projeto* gerenciam suas regiões (pastas) adicionando novos recursos e usuários. Esses administradores regionais também podem adicionar, remover ou renomear pastas e projetos que gerenciam. O *Administrador da organização* herda permissões para quaisquer novos recursos, mantendo a visibilidade do uso do armazenamento em toda a organização.
 
-A tabela a seguir indica as ações que cada função da plataforma BlueXP  pode executar.
+Dentro da mesma organização, um usuário recebe a função *Administrador da Federação* para gerenciar a federação da organização com seu IdP corporativo. Esse usuário pode adicionar ou remover organizações federadas, mas não pode gerenciar usuários ou recursos dentro da organização. A organização atribui a um usuário a função *Visualizador da Federação* para verificar o status da federação e visualizar organizações federadas sem fazer alterações.
+
+As tabelas a seguir indicam as ações que cada função da plataforma BlueXP pode executar.
+
+
+
+== Funções de administração da organização
 
 [cols="2,1,1"]
 |===
@@ -60,11 +66,40 @@ A tabela a seguir indica as ações que cada função da plataforma BlueXP  pod
 | Gerir credenciais a partir de Definições > credenciais | Sim | Sim 
 
 
-| Veja a linha do tempo do BlueXP  | Sim | Sim 
+| Criar, gerenciar e visualizar federações | Sim | Não 
 
 
-| Use os serviços do BlueXP  | Sim | Sim 
+| Registre-se para obter suporte e enviar casos | Sim | Sim 
 
 
-| Registre o BlueXP  para obter suporte e enviar casos | Sim | Sim 
+| Usar serviços de dados | Sim | Sim 
+
+
+| Veja o cronograma e as notificações do BlueXP | Sim | Sim 
+|===
+
+
+== Funções da federação
+
+[cols="2,1,1"]
+|===
+| Tarefa | Administrador da Federação | Visualizador da Federação 
+
+
+| Criar uma federação | Sim | Não 
+
+
+| Verificar um domínio | Sim | Não 
+
+
+| Adicionar um domínio a uma federação | Sim | Não 
+
+
+| Desabilitar e excluir federações | Sim | Não 
+
+
+| Federações de teste | Sim | Não 
+
+
+| Ver federações e seus detalhes | Sim | Sim 
 |===
