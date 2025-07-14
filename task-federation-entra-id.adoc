@@ -87,7 +87,7 @@ Você pode configurar uma conexão federada com o ID Microsoft Entra para habili
 
 
 [discrete]
-====== testar e habilitar a conexão
+====== Teste e habilite a conexão
 
 . Selecione *seguinte*.
 . Selecione *Testar conexão* para testar sua conexão. Você será direcionado para uma página de login do seu servidor IdP. Efetue login com suas credenciais do IdP para concluir o teste e retorne ao BlueXP para habilitar a conexão.
