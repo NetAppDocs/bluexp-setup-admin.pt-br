@@ -5106,7 +5106,6 @@
   <block id="0de6f673e972fb67cc36c32ad5fcb898" category="list-text">Você não usa o Conector para nenhum serviço de dados NetApp além do Cloud Volumes ONTAP.</block>
   <block id="ee8603a5f78124f751bd9a36bb2f1053" category="paragraph">Para configurar um Conector existente para usar um servidor proxy transparente, use a ferramenta de manutenção do Conector que está disponível na linha de comando no host do Conector.</block>
   <block id="66f1817e95be4137166f119a89852722" category="paragraph">Ao configurar um servidor proxy, o Conector é reiniciado. Verifique se o Conector está ocioso antes de prosseguir.</block>
-  <block id="e1a3bbb95e9e5f5476f81f3831fe98de" category="paragraph">+ Certifique-se de ter um arquivo de certificado no formato PEM para o servidor proxy. Caso não tenha um certificado, entre em contato com o administrador da rede para obtê-lo.</block>
   <block id="040c90d5413009e841ba3cc3b521d699" category="list-text">Abra uma interface de linha de comando no host do conector.</block>
   <block id="2bc1351fc63f28a1cf5ed4c899d4fc35" category="list-text">Navegue até o diretório da ferramenta de manutenção do conector: <block ref="ea59a49bc639b17bbbe69f3540f9f07c" prefix=" " category="inline-code"></block></block>
   <block id="05c44d09b879c8fb4432a79dc845c0f5" category="list-text">Execute o seguinte comando para habilitar o proxy transparente, onde <block ref="d2d60207eee35ee99f434fbad44a604c" prefix=" " category="inline-code"></block> é o diretório e o arquivo de certificado de nome que você tem para o servidor proxy:</block>
@@ -5304,4 +5303,5 @@
   <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">A NetApp recomenda usar o URL de metadados para permitir que o BlueXP recupere automaticamente a configuração mais recente do AD FS. Se você baixar o arquivo de metadados da federação, precisará atualizá-lo manualmente no BlueXP sempre que houver alterações na sua configuração do AD FS.</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">Teste e habilite a conexão</block>
+  <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Certifique-se de ter um arquivo de certificado no formato PEM para o servidor proxy. Caso não tenha um certificado, entre em contato com o administrador da rede para obtê-lo.</block>
 </blocks>

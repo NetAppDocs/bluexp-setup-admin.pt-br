@@ -112,7 +112,7 @@ Para configurar um Conector existente para usar um servidor proxy transparente, 
 Ao configurar um servidor proxy, o Conector é reiniciado. Verifique se o Conector está ocioso antes de prosseguir.
 
 .Passos
-+ Certifique-se de ter um arquivo de certificado no formato PEM para o servidor proxy. Caso não tenha um certificado, entre em contato com o administrador da rede para obtê-lo.
+Certifique-se de ter um arquivo de certificado no formato PEM para o servidor proxy. Caso não tenha um certificado, entre em contato com o administrador da rede para obtê-lo.
 
 . Abra uma interface de linha de comando no host do conector.
 . Navegue até o diretório da ferramenta de manutenção do conector:  `/opt/application/netapp/service-manager-2/connector-maint-console`
