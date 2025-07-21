@@ -18,6 +18,31 @@ Saiba o que há de novo com os recursos de administração do BlueXP : Gerencia
 
 
 
+== 21 de julho de 2025
+
+
+
+=== Suporte para Google Cloud NetApp Volumes
+
+Agora você pode visualizar o Google Cloud NetApp Volumes no BlueXP. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html["Saiba mais sobre o Google Cloud NetApp Volumes."]
+
+
+
+=== Gerenciamento de identidade e acesso do BlueXP  (IAM)
+
+
+
+==== Nova função de acesso para o Google Cloud NetApp Volumes
+
+O BlueXP agora oferece suporte ao uso de uma função de acesso para o seguinte sistema de armazenamento:
+
+* Google Cloud NetApp volumes
+
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["Saiba mais sobre o uso de funções de acesso."]
+
+
+
 == 14 de julho de 2025
 
 
