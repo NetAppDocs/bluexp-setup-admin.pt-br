@@ -5324,4 +5324,5 @@
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Selecione uma categoria* e depois selecione uma *Função* que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto que você selecionou.</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">O BlueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Na página *Membros*, navegue até um membro na tabela, selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> então selecione *Excluir usuário*.</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>
