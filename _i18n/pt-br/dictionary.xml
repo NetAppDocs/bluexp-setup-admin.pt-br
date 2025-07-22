@@ -5315,7 +5315,6 @@
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Fornece a capacidade de visualizar os resultados da verificação de BlueXP classification . Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. A classificação não tem uma função de visualizador.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 de julho de 2025</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">Agora você pode visualizar o Google Cloud NetApp Volumes no BlueXP. <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
-  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">Os usuários com a função de visualizador do Keystone NÃO PODEM criar solicitações de serviço. Permite que os usuários monitorem e visualizem o consumo, os ativos e as informações administrativas dentro do locatário do Keystone ao qual eles têm acesso.</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">Função de configuração do mediador ONTAP</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">Mediador de Nuvem ONTAP</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">Contas de serviço com a função de configuração de Mediador ONTAP podem criar solicitações de serviço. Essa função é necessária em uma conta de serviço para configurar uma instância do <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> .</block>
@@ -5325,4 +5324,5 @@
   <block id="65c825984634823998b7cac205641007" category="paragraph">O BlueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Na página *Membros*, navegue até um membro na tabela, selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> então selecione *Excluir usuário*.</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Os usuários com a função de visualizador do Keystone NÃO PODEM criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando.</block>
 </blocks>
