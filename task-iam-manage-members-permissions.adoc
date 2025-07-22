@@ -108,7 +108,7 @@ Observe o seguinte:
 *** Se você selecionar a organização ou uma pasta, o membro terá permissões para tudo o que reside dentro da organização ou pasta.
 
 
-** *Selecione uma categoria* e selecione uma *função* que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto selecionado.
+** *Selecione uma categoria* e depois selecione uma *Função* que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto que você selecionou.
 +
 *** Se você selecionou uma pasta ou projeto, você pode escolher entre qualquer função que não seja *Organization admin*.
 +
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefin
 
 . Baixe ou copie o ID do cliente e o segredo do cliente.
 +
-O lueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.
+O BlueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.
 
 . Selecione *Fechar*.
 
@@ -157,7 +157,7 @@ Pode ser necessário remover um membro da sua organização, por exemplo, se ele
 Remover um membro revoga suas permissões, mas mantém suas contas do BlueXP e do Site de Suporte da NetApp.
 
 .Passos
-. Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Excluir usuário*.
+. Na página *Membros*, navegue até um membro na tabela, selecione image:icon-action.png["Um ícone que é três pontos lado a lado"] então selecione *Excluir usuário*.
 . Confirme se deseja remover o membro da sua organização.
 
 

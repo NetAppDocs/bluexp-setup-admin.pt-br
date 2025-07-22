@@ -2091,7 +2091,6 @@
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Para obter suporte técnico relacionado a um serviço de arquivo de provedor de nuvem, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação do BlueXP  para esse produto.</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Para receber suporte técnico específico da BlueXP  e de suas soluções e serviços de storage, use as opções de suporte descritas abaixo.</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Use opções de suporte autônomo</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Estas opções estão disponíveis gratuitamente, 24 horas por dia, 7 dias por semana:</block>
@@ -2303,7 +2302,6 @@
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">Na tabela *Membros*, navegue até uma conta de serviço, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *recriar segredos*.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">Selecione *recrie*.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">Remova um membro da sua organização</block>
-  <block id="0479745abf593369ddbda5e8df849e57" category="list-text">Na página *Membros*, navegue até um membro na tabela, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>selecione e selecione *Excluir usuário*.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confirme se deseja remover o membro da sua organização.</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gerencie a hierarquia de recursos de sua organização associando recursos a projetos e pastas específicos.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Veja os recursos na sua organização</block>
@@ -4472,7 +4470,6 @@
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Saiba mais sobre as funções do BlueXP  Access</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Funções de serviços de dados</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Funções de proteção contra ransomware</block>
-  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Os usuários com a função de visualizador do Keystone NÃO PODEM criar solicitações de serviço. Permite que os usuários monitorem e visualizem informações de consumo, ativos e administrativas no locatário do Keystone que estão acessando.</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Pontos de extremidade seguros para downloads de conetores agora compatíveis com backup e recuperação e proteção contra ransomware</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Saiba mais sobre endpoints seguros para downloads de conetores.</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se você estiver usando a proteção de backup e recuperação ou ransomware, agora você pode usar endpoints seguros para downloads de conetores. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
@@ -4544,7 +4541,6 @@
   <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">Usuários com esta função podem gerenciar apenas membros de uma pasta ou projeto designado</block>
   <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">Após se inscrever, os usuários preenchem a página *Inscrever-se*, verificam seus e-mails e efetuam login. Se solicitado a criar uma organização, eles devem fechar o BlueXP e informar sobre a criação da conta. Em seguida, você pode adicionar o usuário à sua organização BlueXP  existente.</block>
   <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">O usuário recebe um e-mail do NetApp BlueXP contendo informações que os membros usam para acessar o BlueXP.</block>
-  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">O lueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.</block>
   <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">A tabela *Membros* exibe os membros da sua organização.</block>
   <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">Pode ser necessário remover um membro da sua organização, por exemplo, se ele sair da empresa.</block>
   <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">Remover um membro revoga suas permissões, mas mantém suas contas do BlueXP e do Site de Suporte da NetApp.</block>
@@ -5319,4 +5315,13 @@
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Fornece a capacidade de visualizar os resultados da verificação de BlueXP classification . Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. A classificação não tem uma função de visualizador.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 de julho de 2025</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">Agora você pode visualizar o Google Cloud NetApp Volumes no BlueXP. <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
+  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">Os usuários com a função de visualizador do Keystone NÃO PODEM criar solicitações de serviço. Permite que os usuários monitorem e visualizem o consumo, os ativos e as informações administrativas dentro do locatário do Keystone ao qual eles têm acesso.</block>
+  <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">Função de configuração do mediador ONTAP</block>
+  <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">Mediador de Nuvem ONTAP</block>
+  <block id="04799ba9193d1752205122631a125181" category="cell">Contas de serviço com a função de configuração de Mediador ONTAP podem criar solicitações de serviço. Essa função é necessária em uma conta de serviço para configurar uma instância do <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> .</block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Administre funções de governança e integridade do storage, descubra recursos de storage e modifique e exclua ambientes de trabalho existentes.</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Selecione uma categoria* e depois selecione uma *Função* que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto que você selecionou.</block>
+  <block id="65c825984634823998b7cac205641007" category="paragraph">O BlueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.</block>
+  <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Na página *Membros*, navegue até um membro na tabela, selecione <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> então selecione *Excluir usuário*.</block>
 </blocks>
