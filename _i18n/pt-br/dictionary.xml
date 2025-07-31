@@ -5321,4 +5321,13 @@
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">Uma captura de tela que mostra um número de série da conta, uma caixa de seleção verde e o texto Registrado para suporte.</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="639e89a5be71c4602c59d165b598d738" category="paragraph">Agora você pode visualizar o Google Cloud NetApp Volumes no BlueXP.<block ref="dbbb7a4d531819b88c662793ae2a1ef8" category="inline-link-macro-rx"></block></block>
+  <block id="e57098a6bb00611fdfd163e39e3448e8" category="paragraph">A versão 3.9.54 inclui atualizações para os seguintes componentes e serviços do BlueXP .</block>
+  <block id="9cc4b579fbb9d233102b44ff5119e060" category="cell">3.9.54, 3.9.53</block>
+  <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">o que há de novo na página BlueXP</block>
+  <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">Vá para o<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block> e consulte as alterações incluídas nas versões 3.9.54 e 3.9.53.</block>
+  <block id="1caea5bc420fef9b14013d5029b5ada8" category="cell">22 de julho de 2025</block>
+  <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">Vá para o<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e consulte as alterações incluídas no comunicado de julho de 2025.</block>
+  <block id="9285fd96738351d44da30f801dea109b" category="cell">14 de julho de 2025 (versão 1.45)</block>
+  <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">Vá para o<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> .</block>
+  <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">31 de julho de 2025</block>
 </blocks>
