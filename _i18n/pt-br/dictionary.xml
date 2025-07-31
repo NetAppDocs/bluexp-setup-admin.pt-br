@@ -5303,7 +5303,6 @@
   <block id="afa251e583f752e51e3383587060e30b" category="cell">Administre funções de governança e integridade de armazenamento, descubra recursos de armazenamento e altere e remova ambientes de trabalho existentes.</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Fornece a capacidade de visualizar os resultados da verificação de BlueXP classification . Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. A classificação não tem uma função de visualizador.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 de julho de 2025</block>
-  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">Agora você pode visualizar o Google Cloud NetApp Volumes no BlueXP. <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">Função de configuração do mediador ONTAP</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">Mediador de Nuvem ONTAP</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">Contas de serviço com a função de configuração de Mediador ONTAP podem criar solicitações de serviço. Essa função é necessária em uma conta de serviço para configurar uma instância do <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> .</block>
@@ -5321,4 +5320,5 @@
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">A NetApp oferece suporte para o BlueXP e seus serviços de nuvem de diversas maneiras. Oferecemos amplas opções gratuitas de autossuporte 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. Seu cadastro no suporte inclui suporte técnico remoto por meio de tickets online.</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">Uma captura de tela que mostra um número de série da conta, uma caixa de seleção verde e o texto Registrado para suporte.</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="639e89a5be71c4602c59d165b598d738" category="paragraph">Agora você pode visualizar o Google Cloud NetApp Volumes no BlueXP.<block ref="dbbb7a4d531819b88c662793ae2a1ef8" category="inline-link-macro-rx"></block></block>
 </blocks>
