@@ -45,7 +45,7 @@ O BlueXP  requer permissões da AWS para o conetor e para serviços individuais
 | Meta | Descrição | Link 
 
 
-| Fazer backup de clusters ONTAP on-premises para o Amazon S3 | Ao ativar backups em seus volumes do ONTAP, o backup e a recuperação do BlueXP  solicita que você insira uma chave de acesso e um segredo para um usuário do IAM com permissões específicas. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Configurar permissões S3 para backups"^] 
+| Faça backup de clusters ONTAP locais no Amazon S3 com BlueXP backup and recovery | Ao ativar backups em seus volumes do ONTAP, o backup e a recuperação do BlueXP  solicita que você insira uma chave de acesso e um segredo para um usuário do IAM com permissões específicas. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html["Configurar permissões S3 para backups"^] 
 |===
 
 
@@ -127,6 +127,29 @@ link:reference-permissions-azure.html["Permissões do Azure para o conetor"]
 |===
 
 
+=== Backup e recuperação
+
+[cols="20,60,20"]
+|===
+| Meta | Descrição | Link 
+
+
+| Fazer backup do Cloud Volumes ONTAP no armazenamento de blobs do Azure  a| 
+Ao usar o backup e a recuperação do BlueXP  para fazer backup do Cloud Volumes ONTAP, você precisa adicionar permissões ao conetor nos seguintes cenários:
+
+* Pretende utilizar a funcionalidade "Procurar e Restaurar"
+* Você deseja usar chaves de criptografia gerenciadas pelo cliente (CMEK)
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-azure.html["Faça backup dos dados do Cloud Volumes ONTAP no armazenamento de Blobs do Azure com Backup e Recuperação"^]
+
+
+
+
+| Fazer backup de clusters ONTAP locais no armazenamento de blobs do Azure | Ao usar o backup e a recuperação do BlueXP para fazer backup de clusters ONTAP locais, você precisa adicionar permissões ao Conector para usar a funcionalidade "Pesquisar e Restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-azure.html["Faça backup de dados ONTAP locais no armazenamento de Blobs do Azure com Backup e Recuperação"^] 
+|===
+
+
 === Copiar e sincronizar
 
 [cols="20,60,20"]
@@ -172,13 +195,12 @@ Ao usar o backup e a recuperação do BlueXP  para fazer backup do Cloud Volume
 * Você deseja usar chaves de criptografia gerenciadas pelo cliente (CMEK)
 
  a| 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["Permissões para a funcionalidade Procurar  Restaurar"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["Permissões para CMEKs"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["Faça backup dos dados do Cloud Volumes ONTAP no Google Cloud Storage com Backup e Recuperação"^]
 
 
 
 
-| Fazer backup de clusters do ONTAP no local no Google Cloud | Ao usar o backup e a recuperação do BlueXP para fazer backup de clusters ONTAP locais, você precisa adicionar permissões ao Conector para usar a funcionalidade "Pesquisar e Restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permissões para a funcionalidade Procurar  Restaurar"^] 
+| Fazer backup de clusters do ONTAP no local no Google Cloud | Ao usar o backup e a recuperação do BlueXP para fazer backup de clusters ONTAP locais, você precisa adicionar permissões ao Conector para usar a funcionalidade "Pesquisar e Restaurar". | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["Faça backup de dados ONTAP locais no Google Cloud Storage com Backup e Recuperação"^] 
 |===
 
 
@@ -220,7 +242,7 @@ O BlueXP  requer permissões StorageGRID para dois serviços.
 | Meta | Descrição | Link 
 
 
-| Fazer backup de clusters ONTAP on-premises para o StorageGRID | Quando você prepara o StorageGRID como destino de backup para clusters do ONTAP, o backup e a recuperação do BlueXP  solicitará que você insira uma chave de acesso e um segredo para um usuário do IAM com permissões específicas. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Prepare o StorageGRID como destino do backup"^] 
+| Fazer backup de clusters ONTAP on-premises para o StorageGRID | Quando você prepara o StorageGRID como destino de backup para clusters do ONTAP, o backup e a recuperação do BlueXP  solicitará que você insira uma chave de acesso e um segredo para um usuário do IAM com permissões específicas. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["Prepare o StorageGRID como destino do backup"^] 
 |===
 
 

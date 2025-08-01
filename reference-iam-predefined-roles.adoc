@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac 
 summary: O gerenciamento de identidade e acesso do BlueXP  inclui várias funções predefinidas que podem ser atribuídas aos membros da sua organização. 
 ---
 = Saiba mais sobre as funções do BlueXP  Access
@@ -36,7 +36,7 @@ As funções de plataforma concedem todas as permissões de administração do B
 | link:reference-iam-platform-roles.html["Administrador da Federação"] | Permite que um usuário crie e gerencie federações com o BlueXP, o que permite logon único (SSO). 
 
 
-| link:reference-iam-platform-roles.html["Visualizador da Federação"] | Permite que um usuário visualize federações existentes com o BlueXP. Não é possível criar ou gerenciar federações. 
+| link:reference-iam-platform-roles.html["Visualizador da Federação"] | Permite que um usuário visualize federações existentes com o BlueXP.  Não é possível criar ou gerenciar federações 
 |===
 
 
@@ -62,9 +62,6 @@ A seguir está uma lista de funções na categoria de aplicativo. Cada função 
 
 
 | link:reference-iam-storage-roles.html["Administrador de storage"] | Administre funções de governança e integridade do storage, descubra recursos de storage e modifique e exclua ambientes de trabalho existentes. 
-
-
-| link:reference-iam-storage-roles.html["Administrador de storage"] | Administre funções de governança e integridade de armazenamento, descubra recursos de armazenamento e altere e remova ambientes de trabalho existentes. 
 
 
 | link:reference-iam-storage-roles.html["Visualizador de armazenamento"] | Visualize as funções de governança e integridade do storage, bem como veja os recursos de storage descobertos anteriormente. Não é possível descobrir, modificar ou excluir ambientes de trabalho de armazenamento existentes. 
@@ -110,7 +107,7 @@ A seguir está uma lista de funções na categoria de serviço de dados. Cada fu
 | link:reference-iam-disaster-rec-roles.html["Visualizador de recuperação de desastres"] | Ver apenas informações. 
 
 
-| Administrador de classificação | Fornece a capacidade de visualizar os resultados da verificação de BlueXP classification . Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. A classificação não tem uma função de visualizador. 
+| Visualizador de classificação | Fornece a capacidade de visualizar os resultados da verificação de BlueXP classification . Os usuários com essa função podem visualizar informações de conformidade e gerar relatórios para recursos que eles têm permissão para acessar. Esses usuários não podem ativar ou desativar a digitalização de volumes, buckets ou esquemas de banco de dados. A classificação não tem uma função de visualizador. 
 
 
 | link:reference-iam-ransomware-roles.html["Administração de proteção contra ransomware"] | Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios do serviço de proteção contra ransomware. 

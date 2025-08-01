@@ -351,7 +351,7 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 .17+| *Serviços* | Alertas | Não | Não 
 
 
-| Backup e recuperação | Sim https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] | Sim https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] 
+| Backup e recuperação | Simhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] | Simhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] 
 
 
 | Classificação | Sim | Sim 
