@@ -27,7 +27,7 @@ As funções de plataforma concedem todas as permissões de administração do B
 | Função da plataforma | Responsabilidades 
 
 
-| link:reference-iam-platform-roles.html["Org admin"] | Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados. Usuários com essa função organizam e gerenciam sua organização BlueXP . Eles criam pastas e projetos, atribuem funções, adicionam usuários e podem gerenciar todos os ambientes de trabalho, se tiverem as credenciais para isso. Esta é a única função de acesso que pode criar conetores. 
+| link:reference-iam-platform-roles.html["Administrador da organização"] | Permite a um usuário acesso irrestrito a todos os projetos e pastas dentro de uma organização, adicionar membros a qualquer projeto ou pasta, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados. Usuários com essa função organizam e gerenciam sua organização BlueXP . Eles criam pastas e projetos, atribuem funções, adicionam usuários e podem gerenciar todos os ambientes de trabalho, se tiverem as credenciais para isso. Esta é a única função de acesso que pode criar conetores. 
 
 
 | link:reference-iam-platform-roles.html["Administrador de pasta ou projeto"] | Permite a um usuário acesso irrestrito a projetos e pastas específicos aos quais eles são atribuídos. Pode adicionar membros a pastas ou projetos que gerenciam, bem como executar qualquer tarefa do BlueXP  e usar qualquer serviço de dados ou aplicativo em recursos dentro da pasta ou projeto que são atribuídos. Administradores de pastas ou projetos não podem criar Conectores. 
