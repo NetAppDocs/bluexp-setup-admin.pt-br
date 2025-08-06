@@ -14,7 +14,7 @@ summary: Importe sua conexão federada existente para o BlueXP para gerenciá-la
 
 
 [role="lead"]
-Importe sua conexão federada existente para o BlueXP para gerenciá-la na nova interface. Isso permite que você aproveite as melhorias mais recentes sem precisar recriar suas conexões federadas.
+Se você tiver configurado a federação anteriormente por meio do NetApp Cloud Central (um aplicativo externo ao BlueXP), a página Federação solicitará que você importe sua conexão federada existente para o BlueXP para gerenciá-la na nova interface.  Isso permite que você aproveite os aprimoramentos mais recentes sem precisar recriar suas conexões federadas.
 
 Clientes que já configuraram conexões federadas com o BlueXP podem importar suas federações existentes para a nova interface. Isso permite que você gerencie suas conexões federadas na nova página de Federações sem precisar recriá-las.
 
