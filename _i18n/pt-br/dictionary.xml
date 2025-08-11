@@ -3498,8 +3498,6 @@
   <block id="c7b1fe992423d57d0e492585ff631c02" category="list-text">Proteja workloads da VMware no local usando o VMware Cloud no Amazon FSX for ONTAP como um site de recuperação de desastres.</block>
   <block id="71bd4794c020a7645a4cfe74173f4058" category="list-text">Eficiência econômica da BlueXP</block>
   <block id="068ff21264880d35ad4153fad90e3828" category="list-text">Identificar clusters com baixa capacidade atual ou prevista e implementar categorias de dados ou recomendações de capacidade adicional.</block>
-  <block id="dd7c710b103a018a2046baa2f5052ed9" category="list-text">Resiliência operacional da BlueXP</block>
-  <block id="00ac035a0893138aed2f04da8c8223d3" category="list-text">Implemente correções automatizadas de risco de configuração de software e firmware para manter a integridade dos clusters do ONTAP.</block>
   <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">Proteção contra ransomware da BlueXP</block>
   <block id="a8dd42d088a97f32bf9a4c69abc2517a" category="list-text">Detectar anomalias que possam resultar em ataques de ransomware. Proteja e recupere workloads.</block>
   <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="list-text">Replicação BlueXP</block>
@@ -3754,7 +3752,6 @@
   <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">A única vez que um conetor é necessário para adicionar uma licença à carteira digital é para licenças Cloud Volumes ONTAP _node-based_. Neste caso, é necessário um conetor porque os dados são retirados das licenças instaladas em sistemas Cloud Volumes ONTAP.</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">Quando você usa o BlueXP  no modo padrão, um conetor é necessário para os seguintes recursos e serviços no BlueXP :</block>
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">Eficiência econômica 1</block>
-  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">Resiliência operacional 1</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">1 enquanto você pode acessar esses serviços sem um conetor, um conetor é necessário para iniciar ações a partir dos serviços.</block>
   <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">É necessário um conetor para utilizar o BlueXP  no modo restrito ou no modo privado.</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">Os conetores são uma parte fundamental da arquitetura de serviços do BlueXP . É da sua responsabilidade garantir que os conetores relevantes estejam sempre ativos, operacionais e acessíveis. Embora o serviço seja projetado para superar interrupções curtas da disponibilidade do conetor, você precisa tomar medidas imediatas quando necessário para solucionar falhas de infraestrutura.</block>
@@ -3931,10 +3928,6 @@
   <block id="34153016d27f6bc08ca28afe350597f0" category="cell">Exibir detalhes da atualização de um cluster</block>
   <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">Execute verificações de pré-atualização e transfira o plano de atualização</block>
   <block id="26c438938da81386c731f3d387eda803" category="cell">Instale atualizações de software</block>
-  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*Resiliência operacional*</block>
-  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">Analisar problemas de risco de segurança</block>
-  <block id="0416203226164e8fc52087494d33b58d" category="cell">Baixe playbooks do Ansible</block>
-  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">Corrija problemas automaticamente</block>
   <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*Eficiência econômica*</block>
   <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">Revisar o status do Planejamento de capacidade</block>
   <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">Escolha a próxima ação (prática recomendada, nível)</block>
@@ -4862,4 +4855,6 @@
   <block id="a99608db4d85374403174f1119cac088" category="list-text">Mova o controle deslizante *Tema escuro* para ativá-lo.</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11 de agosto de 2025</block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">Analista de suporte de operações</block>
+  <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">Recurso de resiliência operacional</block>
+  <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">O recurso de resiliência operacional foi removido do BlueXP.  Entre em contato com o suporte da NetApp se tiver problemas.</block>
 </blocks>

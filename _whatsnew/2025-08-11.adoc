@@ -18,6 +18,12 @@ A interface do usuário do BlueXP agora está disponível em japonês.  Se o idi
 
 
 
+=== Recurso de resiliência operacional
+
+O recurso de resiliência operacional foi removido do BlueXP.  Entre em contato com o suporte da NetApp se tiver problemas.
+
+
+
 === Gerenciamento de identidade e acesso do BlueXP  (IAM)
 
 O Gerenciamento de Identidade e Acesso no BlueXP agora oferece o seguinte recurso.

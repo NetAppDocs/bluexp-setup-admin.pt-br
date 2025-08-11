@@ -375,9 +375,6 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | Eficiência económica | Não | Não 
 
 
-| Resiliência operacional | Não | Não 
-
-
 | Proteção contra ransomware | Não | Não 
 
 
@@ -399,20 +396,20 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | Fábrica de carga de trabalho | Não | Não 
 
 
-.7+| *Caraterísticas* | Gerenciamento de identidade e acesso do BlueXP | Sim | Sim 
+.7+| *Caraterísticas* | Gerenciamento de identidade e acesso do BlueXP | Sim 
 
 
-| Credenciais | Sim | Sim 
+| Sim | Credenciais | Sim 
 
 
-| Contas NSS | Sim | Não 
+| Sim | Contas NSS | Sim 
 
 
-| Notificações | Sim | Não 
+| Não | Notificações | Sim 
 
 
-| Pesquisa | Sim | Não 
+| Não | Pesquisa | Sim 
 
 
-| Linha do tempo | Sim | Sim 
+| Não | Linha do tempo | Sim 
 |===

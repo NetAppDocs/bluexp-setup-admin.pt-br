@@ -32,7 +32,6 @@ Serviços e recursos do BlueXP :
 
 * Consultor digital
 * Atualizações de software
-* Resiliência operacional
 * Eficiência económica
 * Sustentabilidade
 
@@ -163,36 +162,6 @@ Sim
 
 
 | Instale atualizações de software  a| 
-Sim
- a| 
-Sim
- a| 
-Não
-
-
-
-4+| *Resiliência operacional* 
-
-
-| Analisar problemas de risco de segurança  a| 
-Sim
- a| 
-Sim
- a| 
-Sim
-
-
-
-| Baixe playbooks do Ansible  a| 
-Sim
- a| 
-Sim
- a| 
-Não
-
-
-
-| Corrija problemas automaticamente  a| 
 Sim
  a| 
 Sim
