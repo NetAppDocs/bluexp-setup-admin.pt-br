@@ -24,19 +24,11 @@ Essas limitações são específicas para a configuração e administração do 
 
 
 
-=== Servidores proxy transparentes não são suportados
-
-O BlueXP  não suporta servidores proxy transparentes com o conetor.
-
-link:task-configuring-proxy.html["Saiba mais sobre como usar um servidor proxy com o conetor"].
-
-
-
 === Possível conflito com endereços IP no intervalo 172
 
 O BlueXP  implanta o conetor com duas interfaces que têm endereços IP nos intervalos 172.17.0.0/16 e 172.18.0.0/16.
 
-Se a rede tiver uma sub-rede configurada com qualquer um desses intervalos, poderá ocorrer falhas de conetividade do BlueXP . Por exemplo, a descoberta de clusters ONTAP locais no BlueXP pode falhar.
+Se sua rede tiver uma sub-rede configurada com qualquer um desses intervalos, você poderá enfrentar falhas de conectividade do BlueXP.  Por exemplo, a descoberta de clusters ONTAP locais no BlueXP pode falhar.
 
 Consulte o artigo da base de dados de Conhecimento link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Conflito de IP do conetor BlueXP  com a rede existente"]para obter instruções sobre como alterar o endereço IP das interfaces do conetor.
 

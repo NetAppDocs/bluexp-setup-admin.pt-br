@@ -39,7 +39,7 @@ _silent_ executa o script sem solicitar confirmação.
 
 == Desinstale o conetor ao utilizar o modo privado
 
-Se você estiver usando o modo privado (em outras palavras, o host do Connector não tem conectividade de saída), siga as etapas abaixo para desinstalar o software do Connector.
+Se você estiver usando o modo privado (onde o host do Connector _não_ tem conectividade de saída), siga as etapas abaixo para desinstalar o software do Connector.
 
 .Passo
 . Conete-se à VM Linux para o conetor.
@@ -75,7 +75,7 @@ docker system prune -a
 
 == Remova os conetores do BlueXP 
 
-Se um conetor estiver inativo, você pode removê-lo da lista de conetores no BlueXP . Pode fazê-lo se tiver eliminado a máquina virtual do conetor ou se tiver desinstalado o software do conetor.
+Se um Conector estiver inativo, você poderá removê-lo da lista de Conectores no BlueXP.  Você pode fazer isso se excluir a máquina virtual do Connector ou se desinstalar o software do Connector.
 
 Observe o seguinte sobre como remover um conetor:
 

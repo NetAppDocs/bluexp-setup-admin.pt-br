@@ -64,4 +64,4 @@ O BlueXP agora oferece suporte ao uso de funções do IAM para os seguintes recu
 * Federação
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["Saiba mais sobre o uso de funções de acesso."]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre o uso de funções de acesso."]

@@ -17,7 +17,7 @@ summary: Gerencie os membros da sua organização para fornecer permissões em d
 O BlueXP  Identity and Access Management (IAM) permite adicionar membros à sua organização e atribuir-lhes uma ou mais funções na hierarquia de recursos. Um _role_ contém um conjunto de permissões que permite que um membro execute ações específicas em um nível específico da hierarquia de recursos. Você pode associar novas contas de usuário e contas de serviço, gerenciar funções de membro e muito mais.
 
 
-TIP: Certifique-se de que dois membros tenham a função de administrador da organização para evitar perder o acesso à sua organização BlueXP.
+NOTE: Certifique-se de que dois membros tenham a função de administrador da organização para evitar perder o acesso à sua organização BlueXP.
 
 Para gerenciar usuários e suas permissões, você deve receber uma das seguintes funções:
 
@@ -37,9 +37,9 @@ Usuários com esta função podem gerenciar apenas membros de uma pasta ou proje
 
 == Adicione membros à sua organização
 
-Você pode adicionar dois tipos de membros à sua organização: Uma conta de usuário e uma conta de serviço. Uma conta de serviço normalmente é usada por um aplicativo para concluir tarefas específicas sem intervenção humana por meio da API do BlueXP. Uma conta de usuário normalmente é usada por uma pessoa para fazer login no BlueXP e gerenciar recursos.
+Você pode adicionar dois tipos de membros à sua organização: uma conta de usuário e uma conta de serviço.  Uma conta de serviço é usada por aplicativos para executar tarefas por meio da API BlueXP sem intervenção humana.  Uma conta de usuário normalmente é usada por uma pessoa para fazer login no BlueXP e gerenciar recursos.
 
-Os usuários precisam primeiro criar uma conta BlueXP para que você possa adicioná-los a uma organização ou atribuir uma função. No entanto, você pode criar contas de serviço diretamente no BlueXP.
+Os usuários devem se inscrever no BlueXP antes de serem adicionados a uma organização ou receberem uma função.  No entanto, você pode criar contas de serviço diretamente do BlueXP.
 
 Para gerenciar usuários e suas permissões, você deve ter a função *Administrador da organização* ou a função *Administrador de pasta ou projeto*. Lembre-se de que os usuários com a função *Folder ou Project admin* só podem gerenciar membros para a pasta ou projetos dos quais eles têm permissões de administrador.
 
@@ -48,9 +48,9 @@ Para gerenciar usuários e suas permissões, você deve ter a função *Administ
 .Conta de utilizador
 --
 .Passos
-. Se o utilizador ainda não o tiver feito, peça-lhe para ir ao https://bluexp.netapp.com/["Site da NetApp BlueXP"^] e se inscrever.
+. Direcionar o usuário para visitar https://bluexp.netapp.com/["Site da NetApp BlueXP"^] para se inscrever.
 +
-Após se inscrever, os usuários preenchem a página *Inscrever-se*, verificam seus e-mails e efetuam login. Se solicitado a criar uma organização, eles devem fechar o BlueXP e informar sobre a criação da conta. Em seguida, você pode adicionar o usuário à sua organização BlueXP  existente.
+Depois que os usuários se inscrevem, eles preenchem a página *Inscrever-se*, verificam seus e-mails e efetuam login. Se o BlueXP solicitar que os usuários criem uma organização, eles a fecham e notificam você sobre a criação da conta.  Você pode então adicionar o usuário à sua organização BlueXP existente.
 
 +
 link:task-sign-up-saas.html["Saiba como se inscrever no BlueXP "].
@@ -68,7 +68,7 @@ Observe o seguinte:
 
 +
 *** Você só pode selecionar a partir das pastas e projetos para os quais você tem permissões de administrador.
-*** Se você selecionar a organização ou uma pasta, o membro terá permissões para tudo o que reside dentro da organização ou pasta.
+*** Selecionar uma organização ou pasta concede ao membro permissões para todo o seu conteúdo.
 
 
 ** *Selecione uma categoria* e selecione uma *função* que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto selecionado.
@@ -84,7 +84,7 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções de acess
 
 . Selecione *Adicionar*.
 +
-O usuário recebe um e-mail do NetApp BlueXP contendo informações que os membros usam para acessar o BlueXP.
+O NetApp BlueXP envia ao usuário um e-mail com informações sobre como acessar o BlueXP.
 
 
 
@@ -105,7 +105,7 @@ Observe o seguinte:
 
 +
 *** Você só pode selecionar a partir das pastas e projetos para os quais você tem permissões de administrador.
-*** Se você selecionar a organização ou uma pasta, o membro terá permissões para tudo o que reside dentro da organização ou pasta.
+*** Selecionar uma organização ou pasta concede ao membro permissões para todo o seu conteúdo.
 
 
 ** *Selecione uma categoria* e depois selecione uma *Função* que forneça ao membro permissões para os recursos associados à organização, pasta ou projeto que você selecionou.
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Saiba mais sobre as funções predefin
 
 . Baixe ou copie o ID do cliente e o segredo do cliente.
 +
-O BlueXP mostra o segredo do cliente apenas uma vez e não o armazena. Copie ou baixe o segredo e guarde-o em segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.
+O BlueXP exibe o segredo do cliente apenas uma vez.  Copie ou baixe e armazene com segurança. Observe que você pode recriar o ID do cliente e o segredo do cliente mais tarde, conforme necessário.
 
 . Selecione *Fechar*.
 
@@ -143,7 +143,7 @@ NOTE: Você também pode visualizar todos os membros associados a uma pasta ou p
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
 . Selecione *Membros*.
 +
-A tabela *Membros* exibe os membros da sua organização.
+A tabela *Membros* lista os membros da sua organização.
 
 . Na página *Membros*, navegue até um membro na tabela, image:icon-action.png["Um ícone que é três pontos lado a lado"]selecione e selecione *Exibir detalhes*.
 
@@ -154,7 +154,7 @@ A tabela *Membros* exibe os membros da sua organização.
 
 Pode ser necessário remover um membro da sua organização, por exemplo, se ele sair da empresa.
 
-Remover um membro revoga suas permissões, mas mantém suas contas do BlueXP e do Site de Suporte da NetApp.
+Remover um membro remove suas permissões, mas mantém suas contas do BlueXP e do Site de Suporte da NetApp .
 
 .Passos
 . Na página *Membros*, navegue até um membro na tabela, selecione image:icon-action.png["Um ícone que é três pontos lado a lado"] então selecione *Excluir usuário*.
@@ -168,7 +168,7 @@ Remover um membro revoga suas permissões, mas mantém suas contas do BlueXP e d
 Crie novas credenciais se elas forem perdidas ou quando for necessário atualizar as credenciais de segurança.
 
 .Sobre esta tarefa
-Recriar as credenciais exclui as credenciais existentes para a conta de serviço e cria novas credenciais. Você não pode usar as credenciais anteriores.
+Ao recriar as credenciais, você exclui as credenciais existentes da conta de serviço e cria novas.  Você não pode usar as credenciais anteriores.
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -177,7 +177,7 @@ Recriar as credenciais exclui as credenciais existentes para a conta de serviço
 . Selecione *recrie*.
 . Baixe ou copie o ID do cliente e o segredo do cliente.
 +
-O BlueXP exibe o segredo do cliente apenas uma vez e não o armazena em lugar nenhum. Copie ou baixe o segredo e guarde-o em segurança.
+O BlueXP exibe o segredo do cliente apenas uma vez.  Copie ou baixe e armazene com segurança.
 
 
 
@@ -189,10 +189,10 @@ Se um usuário perder o acesso ao seu dispositivo MFA, você poderá remover ou 
 
 Se você remover a configuração do MFA, o usuário precisará configurá-lo novamente ao efetuar login no BlueXP. Se o usuário perdeu o acesso ao dispositivo MFA apenas temporariamente, ele poderá usar o código de recuperação salvo ao configurar o MFA para efetuar login no BlueXP.
 
-Caso o usuário não tenha acesso ao código de recuperação, você pode desativar temporariamente o MFA do usuário, permitindo que ele faça login sem o MFA. Ao desativar o MFA para um usuário, ele é desativado por apenas oito horas e, em seguida, reativado automaticamente. O usuário tem direito a um login sem o MFA durante esse período. Após as oito horas, o usuário deve usar o MFA para fazer login no BlueXP.
+Caso não tenham o código de recuperação, desative temporariamente o MFA para permitir o login.  Quando você desabilita o MFA para um usuário, ele é desabilitado por apenas oito horas e depois reabilitado automaticamente.  O usuário tem direito a apenas um login durante esse período, sem MFA.  Após as oito horas, o usuário deve usar o MFA para efetuar login no BlueXP.
 
 
-NOTE: Você deve ter um endereço de e-mail no mesmo domínio do usuário afetado para gerenciar a autenticação multifator desse usuário.
+NOTE: Você deve ter um endereço de e-mail no mesmo domínio que o usuário afetado para gerenciar a autenticação multifator desse usuário.
 
 .Passos
 . No canto superior direito do console, selecione image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."] > *Gerenciamento de identidade e acesso*.

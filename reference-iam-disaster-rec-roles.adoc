@@ -12,7 +12,7 @@ summary: O gerenciamento de identidade e acesso do BlueXP fornece várias funç�
 
 
 [role="lead"]
-Você pode atribuir as seguintes funções aos usuários para fornecer acesso ao serviço de backup e recuperação no BlueXP. As funções de backup e recuperação oferecem a flexibilidade de atribuir aos usuários uma função específica para as tarefas que eles precisam realizar na sua organização. A forma como você atribui funções depende das suas práticas de negócios e gerenciamento de armazenamento.
+Você pode atribuir as seguintes funções aos usuários para fornecer a eles acesso à recuperação do Diaster no BlueXP.  As funções de recuperação de desastres oferecem a flexibilidade de atribuir aos usuários uma função específica para as tarefas que eles precisam realizar na sua organização.  A maneira como você atribui funções depende das suas próprias práticas de negócios e gerenciamento de armazenamento.
 
 A recuperação de desastres utiliza as seguintes funções:
 

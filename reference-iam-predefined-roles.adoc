@@ -61,6 +61,9 @@ A seguir está uma lista de funções na categoria de aplicativo. Cada função 
 | Função de configuração do mediador ONTAP | Contas de serviço com a função de configuração de Mediador ONTAP podem criar solicitações de serviço. Essa função é necessária em uma conta de serviço para configurar uma instância do link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Mediador de Nuvem ONTAP"^] . 
 
 
+| link:reference-iam-analyst-roles.html["Analista de suporte operacional"] | Fornece acesso a alertas e ferramentas de monitoramento, além da capacidade de inserir e gerenciar casos de suporte. 
+
+
 | link:reference-iam-storage-roles.html["Administrador de storage"] | Administre funções de governança e integridade do storage, descubra recursos de storage e modifique e exclua ambientes de trabalho existentes. 
 
 

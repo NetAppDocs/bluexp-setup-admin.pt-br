@@ -253,5 +253,5 @@ O BlueXP  requer permissões StorageGRID para dois serviços.
 | Meta | Descrição | Link 
 
 
-| Colocar clusters ONTAP on-premises em categorias no StorageGRID | Ao configurar a disposição em camadas do BlueXP  no StorageGRID, você precisa fornecer a disposição em camadas do BlueXP  com uma chave de acesso S3 e uma chave secreta. A disposição em camadas do BlueXP  usa as chaves para acessar seus buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparar a disposição em camadas no StorageGRID"^] 
+| Colocar clusters ONTAP on-premises em categorias no StorageGRID | Ao configurar a disposição em camadas do BlueXP  no StorageGRID, você precisa fornecer a disposição em camadas do BlueXP  com uma chave de acesso S3 e uma chave secreta. A disposição em camadas do BlueXP  usa as chaves para acessar seus buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["Preparar a disposição em camadas no StorageGRID"^] 
 |===

@@ -20,10 +20,10 @@ Ao associar um membro à sua organização, você fornece permissões no nível 
 
 == Veja os recursos na sua organização
 
-Você pode exibir recursos descobertos e não descobertos associados à sua organização. Recursos não descobertos são recursos de armazenamento identificados pelo consultor digital, mas não adicionados como ambientes de trabalho.
+Você pode visualizar recursos descobertos e não descobertos associados à sua organização.  Recursos não descobertos são recursos de armazenamento identificados pelo consultor digital, mas não adicionados como ambientes de trabalho.
 
 
-NOTE: A página de recursos do IAM não exibe recursos do Amazon FSx para NetApp ONTAP porque você não pode associá-los a uma função do IAM. Você pode visualizar esses recursos na respetiva tela ou nas cargas de trabalho.
+NOTE: A página de recursos do IAM exclui os recursos do Amazon FSx for NetApp ONTAP porque você não pode associá-los a uma função do IAM.  Visualize esses recursos em suas respectivas telas ou em cargas de trabalho.
 
 .Passos
 . No canto superior direito do console BlueXP , image:icon-settings-option.png["O ícone de configurações que é exibido no canto superior direito do console da Web do BlueXP ."]selecione > *Gerenciamento de identidade e acesso*.
@@ -44,7 +44,7 @@ NOTE: A página de recursos do IAM não exibe recursos do Amazon FSx para NetApp
 
 == Associar um recurso a pastas e projetos
 
-Para disponibilizar um recurso para uma pasta ou projeto, associe o recurso à pasta ou projeto.
+Associe um recurso a uma pasta ou projeto para torná-lo disponível.
 
 .Antes de começar
 Você deve entender como a associação de recursos funciona. link:concept-identity-and-access-management.html#resources["Saiba mais sobre recursos, incluindo quando associar um recurso a uma pasta"].
@@ -65,7 +65,7 @@ Observe que você só pode selecionar a partir das pastas e projetos para os qua
 
 
 .Depois de terminar
-Se o recurso associado for descoberto usando um BlueXP  Connector e tiver outros membros em sua organização, você também precisará associar o conetor ao projeto ao qual o recurso está agora associado. Caso contrário, o conetor e seu recurso associado não são acessíveis a partir da tela do BlueXP  por membros que não têm a função _administrador da organização_.
+Se você descobrir um recurso usando um Conector BlueXP , associe o Conector ao projeto para conceder acesso a ele.  Caso contrário, o Conector e seu recurso associado não poderão ser acessados na tela do BlueXP por membros sem a função _Administrador da organização_.
 
 link:task-iam-associate-connectors.html["Saiba como associar um conetor a uma pasta ou projeto"].
 
@@ -93,7 +93,7 @@ NOTE: Se precisar determinar quais membros da organização têm acesso ao recur
 
 == Remover um recurso de uma pasta ou projeto
 
-Para remover um recurso de uma pasta ou projeto, você precisa remover a associação entre a pasta ou projeto e o recurso. A remoção da associação impede que os membros da organização gerenciem o recurso na pasta ou no projeto.
+Para remover um recurso de uma pasta ou projeto, você precisa remover a associação entre a pasta ou projeto e o recurso.  Remover a associação impede que os membros gerenciem o recurso na pasta ou no projeto.
 
 
 NOTE: Se você quiser remover um recurso descoberto de toda a organização, será necessário remover o ambiente de trabalho da tela BlueXP .
