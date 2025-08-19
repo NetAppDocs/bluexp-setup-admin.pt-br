@@ -18,7 +18,7 @@ Ao efetuar login e usar o console web, o BlueXP contata diversos endpoints para 
 
 Esses endpoints são contatados em dois cenários:
 
-* Do computador de um usuário ao concluir ações do  https://console.bluexp.netapp.com["Console baseado na Web do BlueXP "^] que está disponível como software como serviço (SaaS).
+* Do computador de um usuário ao completar seções do https://console.bluexp.netapp.com["Console baseado na Web do BlueXP "^] que está disponível como software como serviço (SaaS).
 * No computador de um usuário ao abrir um navegador da Web, insira o endereço IP do host do conetor e, em seguida, efetue login e configure o conetor. Estes passos são necessários se instalar manualmente o conetor.
 
 

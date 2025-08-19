@@ -4063,7 +4063,6 @@
   <block id="6c5717b14632d720938288e07cadd604" category="paragraph">A XYZ Corporation, uma multinacional, tem uma grande equipe de engenheiros de storage e administradores de storage. Eles permitem que essa equipe gerencie ativos de armazenamento para suas regiões, ao mesmo tempo em que limitam o acesso às principais tarefas do BlueXP, como gerenciamento de usuários, criação de conectores e ferramentas de custo, como a carteira digital.</block>
   <block id="496d5f930a1daf128efdaf083cd8dcbb" category="paragraph">A tabela a seguir mostra as ações que cada função de armazenamento do BlueXP executa.</block>
   <block id="f427e4ecee2d5f4a7a3729b4087d142b" category="paragraph">Ao efetuar login e usar o console web, o BlueXP contata diversos endpoints para concluir as ações que você inicia. Os computadores que acessam o console precisam ter conexões com esses endpoints.</block>
-  <block id="6c5ff8f0129671982d1831fd73cf4dc0" category="list-text">Do computador de um usuário ao concluir ações do <block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block> que está disponível como software como serviço (SaaS).</block>
   <block id="6f7595410ecabe6d611ded757d1f969c" category="cell">Este é o ponto de extremidade que você insere no seu navegador da web para usar o console baseado na web.</block>
   <block id="3e692c92398b899f8bef9e541b9e153b" category="cell">O console baseado na Web contata esse ponto de extremidade para interagir com a API para ações relacionadas à autorização, licenciamento, assinaturas, credenciais, notificações e muito mais.</block>
   <block id="f3000ad965f0ab15a5956bdd572c01d0" category="cell">Necessário para acessar o consultor digital.</block>
@@ -4857,4 +4856,5 @@
   <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">Recurso de resiliência operacional</block>
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">O recurso de resiliência operacional foi removido do BlueXP.  Entre em contato com o suporte da NetApp se tiver problemas.</block>
   <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">O BlueXP oferece _modos de implantação_ que permitem que você atenda aos seus requisitos comerciais e de segurança.  O _modo padrão_ utiliza uma camada de software como serviço (SaaS) para fornecer funcionalidade completa, enquanto o _modo restrito_ e o _modo privado_ estão disponíveis para organizações com restrições de conectividade.</block>
+  <block id="123a6b352fe45a0ef3d13dd5def43f93" category="list-text">Do computador de um usuário ao completar seções do<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block> que está disponível como software como serviço (SaaS).</block>
 </blocks>

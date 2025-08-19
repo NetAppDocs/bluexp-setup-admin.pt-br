@@ -396,7 +396,7 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | Fábrica de carga de trabalho | Não | Não 
 
 
-.7+| *Caraterísticas* | Gerenciamento de identidade e acesso do BlueXP | Sim 
+.6+| *Caraterísticas* | Gerenciamento de identidade e acesso do BlueXP | Sim 
 
 
 | Sim | Credenciais | Sim 
