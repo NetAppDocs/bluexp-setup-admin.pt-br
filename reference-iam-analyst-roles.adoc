@@ -20,7 +20,7 @@ Você pode atribuir a seguinte função aos usuários para fornecer a eles acess
 
 == Analista de suporte operacional
 
-[cols="1,1"]
+[cols="1,2"]
 |===
 | Tarefa | Pode executar 
 
@@ -34,8 +34,8 @@ Você pode atribuir a seguinte função aos usuários para fornecer a eles acess
 | Registre-se para obter suporte e envie casos através do BlueXP | Sim 
 
 
-| Sim | Veja o cronograma e as notificações do BlueXP 
+| Veja o cronograma e as notificações do BlueXP | Sim 
 
 
-| Sim | Visualizar, baixar e configurar alertas 
+| Visualizar, baixar e configurar alertas | Sim 
 |===
