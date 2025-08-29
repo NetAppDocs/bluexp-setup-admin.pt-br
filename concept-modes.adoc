@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
 summary: O BlueXP  oferece vários modos de implantação que permitem que você use o BlueXP  de uma forma que atenda aos requisitos de negócios e segurança. O modo padrão aproveita a camada SaaS do BlueXP  para fornecer funcionalidade completa, enquanto o modo restrito e o modo privado estão disponíveis para organizações com restrições de conetividade. 
 ---
 = Saiba mais sobre os modos de implantação do BlueXP
@@ -348,10 +348,10 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | StorageGRID | Não | Não 
 
 
-.16+| *Serviços* | Alertas | Não | Não 
+.15+| *Serviços* | Alertas | Não | Não 
 
 
-| Backup e recuperação | Simhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[] a lista de destinos de backup suportados para dados de volume ONTAP ^] | Simhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] 
+| Backup e recuperação | Simhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] | Simhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Veja a lista de destinos de backup suportados para dados de volume do ONTAP"^] 
 
 
 | Classificação | Sim | Sim 
@@ -393,20 +393,26 @@ Observe que alguns serviços podem ser suportados com limitações. Para obter m
 | Fábrica de carga de trabalho | Não | Não 
 
 
-.6+| *Caraterísticas* | Gerenciamento de identidade e acesso | Sim 
+.8+| *Caraterísticas* | Gerenciamento de identidade e acesso | Sim | Sim 
 
 
-| Sim | Credenciais | Sim 
+| Credenciais | Sim | Sim 
 
 
-| Sim | Contas NSS | Sim 
+| Federação | Sim | Não 
 
 
-| Não | Notificações | Sim 
+| Autenticação de vários fatores | Sim | Não 
 
 
-| Não | Pesquisa | Sim 
+| Contas NSS | Sim | Não 
 
 
-| Não | Linha do tempo | Sim 
+| Notificações | Sim | Não 
+
+
+| Pesquisa | Sim | Não 
+
+
+| Linha do tempo | Sim | Sim 
 |===
